@@ -16,7 +16,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>The result of a <see cref="M:System.IO.Pipelines.PipeReader.ReadAsync(System.Threading.CancellationToken)" /> call.</summary>
+    <summary>
+            The result of a <see cref="M:System.IO.Pipelines.PipeReader.ReadAsync(System.Threading.CancellationToken)" /> call.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -43,7 +45,9 @@
         <param name="buffer">To be added.</param>
         <param name="isCanceled">To be added.</param>
         <param name="isCompleted">To be added.</param>
-        <summary>Creates a new instance of <see cref="T:System.IO.Pipelines.ReadResult" /> setting <see cref="P:System.IO.Pipelines.ReadResult.IsCanceled" /> and <see cref="P:System.IO.Pipelines.ReadResult.IsCompleted" /> flags.</summary>
+        <summary>
+            Creates a new instance of <see cref="T:System.IO.Pipelines.ReadResult" /> setting <see cref="P:System.IO.Pipelines.ReadResult.IsCanceled" /> and <see cref="P:System.IO.Pipelines.ReadResult.IsCompleted" /> flags.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -65,7 +69,9 @@
         <ReturnType>System.Buffers.ReadOnlySequence&lt;System.Byte&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Buffers.ReadOnlySequence`1" /> that was read.</summary>
+        <summary>
+            The <see cref="T:System.Buffers.ReadOnlySequence`1" /> that was read.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -89,7 +95,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <see langword="true" /> if the current <see cref="M:System.IO.Pipelines.PipeReader.ReadAsync(System.Threading.CancellationToken)" /> operation was canceled; otherwise, <see langword="false" />.</summary>
+            True if the current <see cref="M:System.IO.Pipelines.PipeReader.ReadAsync(System.Threading.CancellationToken)" /> operation was canceled, otherwise false.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -113,7 +120,8 @@
       </ReturnValue>
       <Docs>
         <summary>
-          <see langword="true" /> if the <see cref="T:System.IO.Pipelines.PipeReader" /> is complete; otherwise, <see langword="false" />.</summary>
+            True if the <see cref="T:System.IO.Pipelines.PipeReader" /> is complete.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

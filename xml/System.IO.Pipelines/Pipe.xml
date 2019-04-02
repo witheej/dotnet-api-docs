@@ -16,7 +16,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Default <see cref="T:System.IO.Pipelines.PipeWriter" /> and <see cref="T:System.IO.Pipelines.PipeReader" /> implementation.</summary>
+    <summary>
+            Default <see cref="T:System.IO.Pipelines.PipeWriter" /> and <see cref="T:System.IO.Pipelines.PipeReader" /> implementation.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -35,7 +37,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes the <see cref="T:System.IO.Pipelines.Pipe" /> using <see cref="P:System.IO.Pipelines.PipeOptions.Default" /> as options.</summary>
+        <summary>
+            Initializes the <see cref="T:System.IO.Pipelines.Pipe" /> using <see cref="P:System.IO.Pipelines.PipeOptions.Default" /> as options.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -58,7 +62,9 @@
       </Parameters>
       <Docs>
         <param name="options">To be added.</param>
-        <summary>Initializes the <see cref="T:System.IO.Pipelines.Pipe" /> with the specified <see cref="T:System.IO.Pipelines.PipeOptions" />.</summary>
+        <summary>
+            Initializes the <see cref="T:System.IO.Pipelines.Pipe" /> with the specified <see cref="T:System.IO.Pipelines.PipeOptions" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,7 +86,9 @@
         <ReturnType>System.IO.Pipelines.PipeReader</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.IO.Pipelines.PipeReader" /> for this pipe.</summary>
+        <summary>
+            Gets the <see cref="T:System.IO.Pipelines.PipeReader" /> for this pipe.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -104,7 +112,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Resets the pipe.</summary>
+        <summary>
+            Resets the pipe
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -126,7 +136,9 @@
         <ReturnType>System.IO.Pipelines.PipeWriter</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.IO.Pipelines.PipeWriter" /> for this pipe.</summary>
+        <summary>
+            Gets the <see cref="T:System.IO.Pipelines.PipeWriter" /> for this pipe.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -16,7 +16,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Abstraction for running <see cref="T:System.IO.Pipelines.PipeReader" /> and <see cref="T:System.IO.Pipelines.PipeWriter" /> callbacks and continuations.</summary>
+    <summary>
+            Abstraction for running <see cref="T:System.IO.Pipelines.PipeReader" /> and <see cref="T:System.IO.Pipelines.PipeWriter" /> callbacks and continuations
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -57,7 +59,9 @@
         <ReturnType>System.IO.Pipelines.PipeScheduler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.IO.Pipelines.PipeScheduler" /> implementation that runs callbacks inline.</summary>
+        <summary>
+            The <see cref="T:System.IO.Pipelines.PipeScheduler" /> implementation that runs callbacks inline
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -86,7 +90,9 @@
       <Docs>
         <param name="action">To be added.</param>
         <param name="state">To be added.</param>
-        <summary>Requests <paramref name="action" /> to be run on scheduler with <paramref name="state" /> being passed in.</summary>
+        <summary>
+            Requests <paramref name="action" /> to be run on scheduler with <paramref name="state" /> being passed in
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -108,7 +114,9 @@
         <ReturnType>System.IO.Pipelines.PipeScheduler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The <see cref="T:System.IO.Pipelines.PipeScheduler" /> implementation that queues callbacks to thread pool.</summary>
+        <summary>
+            The <see cref="T:System.IO.Pipelines.PipeScheduler" /> implementation that queues callbacks to thread pool
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>

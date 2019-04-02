@@ -20,7 +20,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Defines a class that provides a pipeline to which data can be written.</summary>
+    <summary>
+            Defines a class that provides a pipeline to which data can be written.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -90,8 +92,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Returns a <see cref="T:System.IO.Stream" /> that wraps the <see cref="T:System.IO.Pipelines.PipeWriter" />.
+            </summary>
+        <returns>The <see cref="T:System.IO.Stream" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,7 +118,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Cancels the pending <see cref="M:System.IO.Pipelines.PipeWriter.FlushAsync(System.Threading.CancellationToken)" /> operation. If there is none, cancels next <see cref="M:System.IO.Pipelines.PipeWriter.FlushAsync(System.Threading.CancellationToken)" /> operation, without completing the <see cref="T:System.IO.Pipelines.PipeWriter" />.</summary>
+        <summary>
+            Cancel the pending <see cref="M:System.IO.Pipelines.PipeWriter.FlushAsync(System.Threading.CancellationToken)" /> operation. If there is none, cancels next <see cref="M:System.IO.Pipelines.PipeWriter.FlushAsync(System.Threading.CancellationToken)" /> operation, without completing the <see cref="T:System.IO.Pipelines.PipeWriter" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -138,7 +144,9 @@
       </Parameters>
       <Docs>
         <param name="exception">Optional <see cref="T:System.Exception" /> indicating a failure that's causing the pipeline to complete.</param>
-        <summary>Marks the <see cref="T:System.IO.Pipelines.PipeWriter" /> as being complete, meaning no more items will be written to it.</summary>
+        <summary>
+            Marks the <see cref="T:System.IO.Pipelines.PipeWriter" /> as being complete, meaning no more items will be written to it.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -160,10 +168,12 @@
         <Parameter Name="cancellationToken" Type="System.Threading.CancellationToken" Index="1" FrameworkAlternate="dotnet-plat-ext-3.0" />
       </Parameters>
       <Docs>
-        <param name="source">To be added.</param>
-        <param name="cancellationToken">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="source">The stream from which the contents will be copied.</param>
+        <param name="cancellationToken">The token to monitor for cancellation requests. The default value is <see cref="P:System.Threading.CancellationToken.None" />.</param>
+        <summary>
+            Asynchronously reads the bytes from the specified stream and writes them to the <see cref="T:System.IO.Pipelines.PipeWriter" />.
+            </summary>
+        <returns>A task that represents the asynchronous copy operation.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -187,7 +197,9 @@
       </Parameters>
       <Docs>
         <param name="cancellationToken">To be added.</param>
-        <summary>Makes bytes written available to <see cref="T:System.IO.Pipelines.PipeReader" /> and runs <see cref="M:System.IO.Pipelines.PipeReader.ReadAsync(System.Threading.CancellationToken)" /> continuation.</summary>
+        <summary>
+            Makes bytes written available to <see cref="T:System.IO.Pipelines.PipeReader" /> and runs <see cref="M:System.IO.Pipelines.PipeReader.ReadAsync(System.Threading.CancellationToken)" /> continuation.
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -276,7 +288,9 @@
       <Docs>
         <param name="callback">To be added.</param>
         <param name="state">To be added.</param>
-        <summary>Registers a callback that gets executed when the <see cref="T:System.IO.Pipelines.PipeReader" /> side of the pipe is completed.</summary>
+        <summary>
+            Registers a callback that gets executed when the <see cref="T:System.IO.Pipelines.PipeReader" /> side of the pipe is completed
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -302,7 +316,8 @@
       <Docs>
         <param name="source">To be added.</param>
         <param name="cancellationToken">To be added.</param>
-        <summary>Writes <paramref name="source" /> to the pipe and makes data accessible to <see cref="T:System.IO.Pipelines.PipeReader" /></summary>
+        <summary>
+            Writes <paramref name="source" /> to the pipe and makes data accessible to <see cref="T:System.IO.Pipelines.PipeReader" /></summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>

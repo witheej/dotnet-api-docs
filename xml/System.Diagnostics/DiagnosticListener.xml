@@ -26,7 +26,25 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>To be added.</summary>
+    <summary>
+            A DiagnosticListener is something that forwards on events written with DiagnosticSource.
+            It is an IObservable (has Subscribe method), and it also has a Subscribe overloads that
+            lets you specify a 'IsEnabled' predicate that users of DiagnosticSource will use for 
+            'quick checks'.   
+            
+            The item in the stream is a KeyValuePair[string, object] where the string is the name
+            of the diagnostic item and the object is the payload (typically an anonymous type).  
+            
+            There may be many DiagnosticListeners in the system, but we encourage the use of
+            The DiagnosticSource.DefaultSource which goes to the DiagnosticListener.DefaultListener.
+            
+            If you need to see 'everything' you can subscribe to the 'AllListeners' event that
+            will fire for every live DiagnosticListener in the appdomain (past or present). 
+            
+            Please See the DiagnosticSource Users Guide 
+            https://github.com/dotnet/corefx/blob/master/src/System.Diagnostics.DiagnosticSource/src/DiagnosticSourceUsersGuide.md
+            for instructions on its use.  
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -52,7 +70,13 @@
       </Parameters>
       <Docs>
         <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            Make a new DiagnosticListener, it is a NotificationSource, which means the returned result can be used to 
+            log notifications, but it also has a Subscribe method so notifications can be forwarded
+            arbitrarily.  Thus its job is to forward things from the producer to all the listeners
+            (multi-casting).    Generally you should not be making your own DiagnosticListener but use the
+            DiagnosticListener.Default, so that notifications are as 'public' as possible.  
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -77,7 +101,10 @@
         <ReturnType>System.IObservable&lt;System.Diagnostics.DiagnosticListener&gt;</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            When you subscribe to this you get callbacks for all NotificationListeners in the appdomain
+            as well as those that occurred in the past, and all future Listeners created in the future. 
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -107,7 +134,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Clean up the NotificationListeners.   Notification listeners do NOT DIE ON THEIR OWN
+            because they are in a global list (for discoverability).  You must dispose them explicitly. 
+            Note that we do not do the Dispose(bool) pattern because we frankly don't want to support
+            subclasses that have non-managed state.   
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -131,9 +163,14 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Determines whether there are any registered subscribers
+            </summary>
         <returns>To be added.</returns>
-        <remarks>To be added.</remarks>
+        <remarks> If there is an expensive setup for the notification,
+            you may call IsEnabled() as the first and most efficient check before doing this setup. 
+            Producers may optionally use this check before IsEnabled(string) in the most performance-critical parts of the system
+            to ensure somebody listens to the DiagnosticListener at all.</remarks>
       </Docs>
     </Member>
     <Member MemberName="IsEnabled">
@@ -161,7 +198,9 @@
       </Parameters>
       <Docs>
         <param name="name">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            Override abstract method
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -192,7 +231,9 @@
         <param name="name">To be added.</param>
         <param name="arg1">To be added.</param>
         <param name="arg2">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            Override abstract method
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -218,7 +259,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            When a DiagnosticListener is created it is given a name.   Return this.  
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -251,7 +294,9 @@
       </Parameters>
       <Docs>
         <param name="observer">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            Same as other Subscribe overload where the predicate is assumed to always return true.  
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -279,9 +324,34 @@
         <Parameter Name="isEnabled" Type="System.Func&lt;System.String,System.Object,System.Object,System.Boolean&gt;" Index="1" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
       </Parameters>
       <Docs>
-        <param name="observer">To be added.</param>
-        <param name="isEnabled">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="observer">Subscriber (IObserver)</param>
+        <param name="isEnabled">Filters events based on their name (string) and up to two context object (which can be null).  
+            
+            A particular instrumentation site HAS THE OPTION of calling one or more 'IsEnabled' overloads  in which
+            it passes the name of the event and up to two other (instrumentation site specific) objects as arguments.
+            If any of these 'IsEnabled' calls are made then this 'isEnabled' predicate is invoked with passed values
+            (if shorter overloads are used, null is passed for missing context objects).   
+            
+            This gives any particular instrumentation site the ability to pass up to two pieces of information to the 
+            subscriber to do sophisticated, efficient filtering.  This requires more coupling between the instrumentation
+            site and the subscriber code.  
+            
+            It IS expected that a particular instrumentation site may call different overloads of IsEnabled for the 
+            same event, first calling IsEnable(string) which calls the filter with two null context objects and if
+            'isEnabled' returns true calling again with context objects.   The isEnabled filter should be designed 
+            with this in mind. 
+            
+            Note that the isEnabled predicate is an OPTIONAL OPTIMIZATION to allow the instrumentation site to avoid 
+            setting up the payload and calling 'Write' when no subscriber cares about it. In particular the 
+            instrumentation site has the option of ignoring the IsEnabled() predicate (not calling it) and simply
+            calling Write().   Thus if the subscriber requires the filtering, it needs to do it itself.  
+            
+            If this parameter is null, no filtering is done (all overloads of DiagnosticSource.IsEnabled return true).   
+            </param>
+        <summary>
+            Add a subscriber (Observer).  If the isEnabled parameter is non-null indicates that some events are 
+            uninteresting can be skipped for efficiency.  
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -311,9 +381,20 @@
         <Parameter Name="isEnabled" Type="System.Predicate&lt;System.String&gt;" />
       </Parameters>
       <Docs>
-        <param name="observer">To be added.</param>
-        <param name="isEnabled">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="observer">Subscriber (IObserver)</param>
+        <param name="isEnabled">Filters events based on their name (string). Should return true if the event is enabled.  
+            
+            Note that the isEnabled predicate is an OPTIONAL OPTIMIZATION to allow the instrumentation site to avoid 
+            setting up the payload and calling 'Write' when no subscriber cares about it. In particular the 
+            instrumentation site has the option of ignoring the IsEnabled() predicate (not calling it) and simply
+            calling Write().   Thus if the subscriber requires the filtering, it needs to do it itself. 
+            
+            If this parameter is null, no filtering is done (all overloads of DiagnosticSource.IsEnabled return true).   
+            </param>
+        <summary>
+            Add a subscriber (Observer).  If the isEnabled parameter is non-null it indicates that some events are 
+            uninteresting and can be skipped for efficiency.  
+            </summary>
         <returns>To be added.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -337,8 +418,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <summary>
+            Return the name for the ToString() to aid in debugging.  
+            </summary>
+        <returns />
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -354,7 +437,7 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override void Write(System::String ^ name, System::Object ^ parameters);" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2" />
       <MemberSignature Language="DocId" Value="M:System.Diagnostics.DiagnosticListener.Write(System.String,System.Object)" FrameworkAlternate="netcore-2.0" />
       <MemberSignature Language="F#" Value="override this.Write : string * obj -&gt; unit" Usage="diagnosticListener.Write (name, parameters)" FrameworkAlternate="netcore-2.0;netcore-2.1;netcore-2.2;netcore-3.0" />
-      <MemberSignature Language="F#" Value="override this.Write : string * obj -&gt; unit" Usage="diagnosticListener.Write (name, parameters)" FrameworkAlternate="netcore-2.0;netcore-1.0;netcore-1.1" />
+      <MemberSignature Language="F#" Value="override this.Write : string * obj -&gt; unit" Usage="diagnosticListener.Write (name, parameters)" FrameworkAlternate="netcore-2.0" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Diagnostics.DiagnosticSource</AssemblyName>
@@ -376,7 +459,9 @@
         <param name="name">To be added.</param>
         <param name="value">To be added.</param>
         <param name="parameters">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+            Override abstract method
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
