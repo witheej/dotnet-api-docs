@@ -15,12 +15,12 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="dotnet-uwp-10.0">
+    <Attribute>
       <AttributeName>System.Security.SecurityCritical</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the duration of time that a <see cref="T:Windows.UI.Xaml.Media.Animation.Timeline" /> is active.</summary>
+    <summary>Represents the duration of time that a Windows.UI.Xaml.Media.Animation.Timeline is active.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -40,8 +40,8 @@
         <Parameter Name="timeSpan" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="timeSpan">The initial time interval of this duration.</param>
-        <summary>Initializes a new instance of the <see cref="T:Windows.UI.Xaml.Duration" /> struct with the specified <see cref="T:System.TimeSpan" /> value.</summary>
+        <param name="timeSpan">Represents the initial time interval of this duration.</param>
+        <summary>Initializes a new instance of the <see cref="T:Windows.UI.Xaml.Duration" /> structure with the supplied <see cref="T:System.TimeSpan" /> value.</summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
           <paramref name="timeSpan" /> evaluates as less than <see cref="F:System.TimeSpan.Zero" />.</exception>
@@ -66,9 +66,9 @@
         <Parameter Name="duration" Type="Windows.UI.Xaml.Duration" />
       </Parameters>
       <Docs>
-        <param name="duration">The value of the current instance plus <paramref name="duration" />.</param>
+        <param name="duration">An instance of <see cref="T:Windows.UI.Xaml.Duration" /> that represents the value of the current instance plus <paramref name="duration" />.</param>
         <summary>Adds the value of the specified <see cref="T:Windows.UI.Xaml.Duration" /> to this <see cref="T:Windows.UI.Xaml.Duration" />.</summary>
-        <returns>If each involved <see cref="T:Windows.UI.Xaml.Duration" /> has values, a <see cref="T:Windows.UI.Xaml.Duration" /> that represents the combined values. Otherwise this method returns <see langword="null" />.</returns>
+        <returns>If each involved <see cref="T:Windows.UI.Xaml.Duration" /> has values, a <see cref="T:Windows.UI.Xaml.Duration" /> that represents the combined values. Otherwise this method returns null.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -136,7 +136,7 @@
         <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="dotnet-uwp-10.0">
+        <Attribute>
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -149,7 +149,7 @@
       <Docs>
         <param name="value">Object to check for equality.</param>
         <summary>Determines whether a specified object is equal to a <see cref="T:Windows.UI.Xaml.Duration" />.</summary>
-        <returns><see langword="true" /> if value is equal to this <see cref="T:Windows.UI.Xaml.Duration" />; otherwise, <see langword="false" />.</returns>
+        <returns>true if value is equal to this <see cref="T:Windows.UI.Xaml.Duration" />; otherwise, false.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -174,7 +174,7 @@
       <Docs>
         <param name="duration">The <see cref="T:Windows.UI.Xaml.Duration" /> to check for equality.</param>
         <summary>Determines whether a specified <see cref="T:Windows.UI.Xaml.Duration" /> is equal to this <see cref="T:Windows.UI.Xaml.Duration" />.</summary>
-        <returns><see langword="true" /> if <paramref name="duration" /> is equal to this <see cref="T:Windows.UI.Xaml.Duration" />; otherwise, <see langword="false" />.</returns>
+        <returns>true if <paramref name="duration" /> is equal to this <see cref="T:Windows.UI.Xaml.Duration" />; otherwise, false.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -202,7 +202,7 @@
         <param name="t1">First <see cref="T:Windows.UI.Xaml.Duration" /> to compare.</param>
         <param name="t2">Second <see cref="T:Windows.UI.Xaml.Duration" /> to compare.</param>
         <summary>Determines whether two <see cref="T:Windows.UI.Xaml.Duration" /> values are equal.</summary>
-        <returns><see langword="true" /> if <paramref name="t1" /> is equal to <paramref name="t2" />; otherwise, <see langword="false" />.</returns>
+        <returns>true if <paramref name="t1" /> is equal to <paramref name="t2" />; otherwise, false.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -242,7 +242,7 @@
         <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="dotnet-uwp-10.0">
+        <Attribute>
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -274,7 +274,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets a value that indicates if this <see cref="T:Windows.UI.Xaml.Duration" /> represents a <see cref="T:System.TimeSpan" /> value.</summary>
-        <value><see langword="true" /> if this <see cref="T:Windows.UI.Xaml.Duration" /> is a <see cref="T:System.TimeSpan" /> value; otherwise, <see langword="false" />.</value>
+        <value>true if this <see cref="T:Windows.UI.Xaml.Duration" /> is a <see cref="T:System.TimeSpan" /> value; otherwise, false.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -302,7 +302,7 @@
         <param name="t1">The first <see cref="T:Windows.UI.Xaml.Duration" /> to add.</param>
         <param name="t2">The second <see cref="T:Windows.UI.Xaml.Duration" /> to add.</param>
         <summary>Adds two <see cref="T:Windows.UI.Xaml.Duration" /> values together.</summary>
-        <returns>If both <see cref="T:Windows.UI.Xaml.Duration" /> values have <see cref="T:System.TimeSpan" /> values, this method returns the sum of those two values. If either value is set to <see cref="P:Windows.UI.Xaml.Duration.Automatic" />, the method returns <see cref="P:Windows.UI.Xaml.Duration.Automatic" />. If either value is set to <see cref="P:Windows.UI.Xaml.Duration.Forever" />, the method returns <see cref="P:Windows.UI.Xaml.Duration.Forever" />. If either <paramref name="t1" /> or <paramref name="t2" /> has no value, this method returns <see langword="null" />.</returns>
+        <returns>If both <see cref="T:Windows.UI.Xaml.Duration" /> values have <see cref="T:System.TimeSpan" /> values, this method returns the sum of those two values. If either value is set to <see cref="P:Windows.UI.Xaml.Duration.Automatic" />, the method returns <see cref="P:Windows.UI.Xaml.Duration.Automatic" />. If either value is set to <see cref="P:Windows.UI.Xaml.Duration.Forever" />, the method returns <see cref="P:Windows.UI.Xaml.Duration.Forever" />.If either <paramref name="t1" /> or <paramref name="t2" /> has no value, this method returns null.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -330,7 +330,7 @@
         <param name="t1">The first <see cref="T:Windows.UI.Xaml.Duration" /> to compare.</param>
         <param name="t2">The second <see cref="T:Windows.UI.Xaml.Duration" /> to compare.</param>
         <summary>Determines whether two <see cref="T:Windows.UI.Xaml.Duration" /> cases are equal.</summary>
-        <returns><see langword="true" /> if both <see cref="T:Windows.UI.Xaml.Duration" /> values have equal property values, or if all <see cref="T:Windows.UI.Xaml.Duration" /> values are <see langword="null" />; otherwise, <see langword="false" />.</returns>
+        <returns>true if both <see cref="T:Windows.UI.Xaml.Duration" /> values have equal property values, or if all <see cref="T:Windows.UI.Xaml.Duration" /> values are null. Otherwise, this method returns false.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -358,7 +358,7 @@
         <param name="t1">The <see cref="T:Windows.UI.Xaml.Duration" /> value to compare.</param>
         <param name="t2">The second <see cref="T:Windows.UI.Xaml.Duration" /> value to compare.</param>
         <summary>Determines if one <see cref="T:Windows.UI.Xaml.Duration" /> is greater than another.</summary>
-        <returns><see langword="true" /> if both <paramref name="t1" /> and <paramref name="t2" /> have values and <paramref name="t1" /> is greater than <paramref name="t2" />; otherwise, <see langword="false" />.</returns>
+        <returns>true if both <paramref name="t1" /> and <paramref name="t2" /> have values and <paramref name="t1" /> is greater than <paramref name="t2" />; otherwise, false.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -386,7 +386,7 @@
         <param name="t1">The first instance of <see cref="T:Windows.UI.Xaml.Duration" /> to compare.</param>
         <param name="t2">The second instance of <see cref="T:Windows.UI.Xaml.Duration" /> to compare.</param>
         <summary>Determines whether a <see cref="T:Windows.UI.Xaml.Duration" /> is greater than or equal to another.</summary>
-        <returns><see langword="true" /> if both <paramref name="t1" /> and <paramref name="t2" /> have values and <paramref name="t1" /> is greater than or equal to <paramref name="t2" />; otherwise, <see langword="false" />.</returns>
+        <returns>true if both <paramref name="t1" /> and <paramref name="t2" /> have values and <paramref name="t1" /> is greater than or equal to <paramref name="t2" />; otherwise, false.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -409,7 +409,8 @@
         <Parameter Name="timeSpan" Type="System.TimeSpan" />
       </Parameters>
       <Docs>
-        <param name="timeSpan"><see cref="T:System.TimeSpan" /> from which a <see cref="T:Windows.UI.Xaml.Duration" /> is implicitly created.</param>
+        <param name="timeSpan">
+          <see cref="T:System.TimeSpan" /> from which a <see cref="T:Windows.UI.Xaml.Duration" /> is implicitly created.</param>
         <summary>Implicitly creates a <see cref="T:Windows.UI.Xaml.Duration" /> from a given <see cref="T:System.TimeSpan" />.</summary>
         <returns>A created <see cref="T:Windows.UI.Xaml.Duration" />.</returns>
         <remarks>To be added.</remarks>
@@ -441,7 +442,7 @@
         <param name="t1">The first <see cref="T:Windows.UI.Xaml.Duration" /> to compare.</param>
         <param name="t2">The second <see cref="T:Windows.UI.Xaml.Duration" /> to compare.</param>
         <summary>Determines if two <see cref="T:Windows.UI.Xaml.Duration" /> cases are not equal.</summary>
-        <returns><see langword="true" /> if exactly one of <paramref name="t1" /> or <paramref name="t2" /> represent a value, or if they both represent values that are not equal; otherwise, <see langword="false" />.</returns>
+        <returns>true if exactly one of <paramref name="t1" /> or <paramref name="t2" /> represent a value, or if they both represent values that are not equal; otherwise, false.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -469,7 +470,7 @@
         <param name="t1">The first <see cref="T:Windows.UI.Xaml.Duration" /> to compare.</param>
         <param name="t2">The second <see cref="T:Windows.UI.Xaml.Duration" /> to compare.</param>
         <summary>Determines if a <see cref="T:Windows.UI.Xaml.Duration" /> is less than the value of another instance.</summary>
-        <returns><see langword="true" /> if both <paramref name="t1" /> and <paramref name="t2" /> have values and <paramref name="t1" /> is less than <paramref name="t2" />; otherwise, <see langword="false" />.</returns>
+        <returns>true if both <paramref name="t1" /> and <paramref name="t2" /> have values and <paramref name="t1" /> is less than <paramref name="t2" />; otherwise, false.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -497,7 +498,7 @@
         <param name="t1">The <see cref="T:Windows.UI.Xaml.Duration" /> to compare.</param>
         <param name="t2">The <see cref="T:Windows.UI.Xaml.Duration" /> to compare.</param>
         <summary>Determines if a <see cref="T:Windows.UI.Xaml.Duration" /> is less than or equal to another.</summary>
-        <returns><see langword="true" /> if both <paramref name="t1" /> and <paramref name="t2" /> have values and <paramref name="t1" /> is less than or equal to <paramref name="t2" />; otherwise, <see langword="false" />.</returns>
+        <returns>true if both <paramref name="t1" /> and <paramref name="t2" /> have values and <paramref name="t1" /> is less than or equal to <paramref name="t2" />; otherwise, false.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -525,7 +526,7 @@
         <param name="t1">The first <see cref="T:Windows.UI.Xaml.Duration" />.</param>
         <param name="t2">The <see cref="T:Windows.UI.Xaml.Duration" /> to subtract.</param>
         <summary>Subtracts the value of one <see cref="T:Windows.UI.Xaml.Duration" /> from another.</summary>
-        <returns>If each <see cref="T:Windows.UI.Xaml.Duration" /> has values, a <see cref="T:Windows.UI.Xaml.Duration" /> that represents the value of <paramref name="t1" /> minus <paramref name="t2" />. If <paramref name="t1" /> has a value of <see cref="P:Windows.UI.Xaml.Duration.Forever" /> and <paramref name="t2" /> has a value of <see cref="P:Windows.UI.Xaml.Duration.TimeSpan" />, this method returns <see cref="P:Windows.UI.Xaml.Duration.Forever" />. Otherwise this method returns <see langword="null" />.</returns>
+        <returns>If each <see cref="T:Windows.UI.Xaml.Duration" /> has values, a <see cref="T:Windows.UI.Xaml.Duration" /> that represents the value of <paramref name="t1" /> minus <paramref name="t2" />. If <paramref name="t1" /> has a value of <see cref="P:Windows.UI.Xaml.Duration.Forever" /> and <paramref name="t2" /> has a value of <see cref="P:Windows.UI.Xaml.Duration.TimeSpan" />, this method returns <see cref="P:Windows.UI.Xaml.Duration.Forever" />. Otherwise this method returns null.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -616,7 +617,7 @@
         <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="dotnet-uwp-10.0">
+        <Attribute>
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>

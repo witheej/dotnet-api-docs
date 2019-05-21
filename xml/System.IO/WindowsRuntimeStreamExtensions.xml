@@ -15,7 +15,7 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="dotnet-uwp-10.0">
+    <Attribute>
       <AttributeName>System.Security.SecurityCritical</AttributeName>
     </Attribute>
   </Attributes>
@@ -82,7 +82,7 @@ Here's the XAML code that is associated with the previous example.
       <Docs>
         <param name="stream">The stream to convert.</param>
         <summary>Converts a managed stream in the .NET for Windows Store apps to an input stream in the Windows Runtime.</summary>
-        <returns>A Windows Runtime <see cref="T:Windows.Storage.Streams.IInputStream" /> object that represents the converted stream.</returns>
+        <returns>A Windows Runtime IInputStream object that represents the converted stream.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[
 
@@ -105,7 +105,7 @@ Here's the XAML code that is associated with the previous example.
 ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="stream" /> is <see langword="null" />.</exception>
+          <paramref name="stream" /> is null.</exception>
         <exception cref="T:System.NotSupportedException">The stream does not support reading.</exception>
       </Docs>
     </Member>
@@ -135,7 +135,7 @@ Here's the XAML code that is associated with the previous example.
       <Docs>
         <param name="stream">The stream to convert.</param>
         <summary>Converts a managed stream in the .NET for Windows Store apps to an output stream in the Windows Runtime.</summary>
-        <returns>A Windows Runtime <see cref="T:Windows.Storage.Streams.IOutputStream" /> object that represents the converted stream.</returns>
+        <returns>A Windows Runtime IOutputStream object that represents the converted stream.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[
 
@@ -158,8 +158,8 @@ Here's the XAML code that is associated with the previous example.
 ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="stream" /> is <see langword="null" />.</exception>
-        <exception cref="T:System.NotSupportedException">The stream does not support reading.</exception>
+          <paramref name="stream" /> is null.</exception>
+        <exception cref="T:System.NotSupportedException">The stream does not support writing.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsRandomAccessStream">
@@ -188,7 +188,7 @@ Here's the XAML code that is associated with the previous example.
       <Docs>
         <param name="stream">The stream to convert.</param>
         <summary>Converts the specified stream to a random access stream.</summary>
-        <returns>A Windows Runtime <see cref="T:Windows.Storage.Streams.IRandomAccessStream" />, which represents the converted stream.</returns>
+        <returns>A Windows Runtime RandomAccessStream, which represents the converted stream.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[
 
@@ -227,7 +227,7 @@ Here's the XAML code that is associated with the previous example.
         <Parameter Name="windowsRuntimeStream" Type="Windows.Storage.Streams.IRandomAccessStream" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="windowsRuntimeStream">The Windows Runtime <see cref="T:Windows.Storage.Streams.IRandomAccessStream" /> object to convert.</param>
+        <param name="windowsRuntimeStream">The Windows Runtime IRandomAccessStream object to convert.</param>
         <summary>Converts a random access stream in the Windows Runtime to a managed stream in the .NET for Windows Store apps.</summary>
         <returns>The converted stream.</returns>
         <remarks>
@@ -243,7 +243,7 @@ A default buffer size of 16,384 bytes is used when converting the stream. To spe
 ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="windowsRuntimeStream" /> is <see langword="null" />.</exception>
+          <paramref name="windowsRuntimeStream" /> is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsStream">
@@ -272,7 +272,7 @@ A default buffer size of 16,384 bytes is used when converting the stream. To spe
         <Parameter Name="bufferSize" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="windowsRuntimeStream">The Windows Runtime <see cref="T:Windows.Storage.Streams.IRandomAccessStream" /> object to convert.</param>
+        <param name="windowsRuntimeStream">The Windows Runtime IRandomAccessStream object to convert.</param>
         <param name="bufferSize">The size, in bytes, of the buffer. This value cannot be negative, but it can be 0 (zero) to disable buffering.</param>
         <summary>Converts a random access stream in the Windows Runtime to a managed stream in the .NET for Windows Store apps using the specified buffer size.</summary>
         <returns>The converted stream.</returns>
@@ -291,7 +291,7 @@ In most situations, buffering improves the performance of stream operations. You
 ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="windowsRuntimeStream" /> is <see langword="null" />.</exception>
+          <paramref name="windowsRuntimeStream" /> is null.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="bufferSize" /> is negative.</exception>
       </Docs>
@@ -321,8 +321,8 @@ In most situations, buffering improves the performance of stream operations. You
         <Parameter Name="windowsRuntimeStream" Type="Windows.Storage.Streams.IInputStream" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="windowsRuntimeStream">The Windows Runtime <see cref="T:Windows.Storage.Streams.IInputStream" /> object to convert.</param>
-        <summary>Converts an input stream in the Windows Runtime to a managed stream in the .NET for Windows Store apps.</summary>
+        <param name="windowsRuntimeStream">The Windows Runtime IInputStream object to convert.</param>
+        <summary>Converts an input stream in the Windows Runtime  to a managed stream in the .NET for Windows Store apps.</summary>
         <returns>The converted stream.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[
@@ -348,7 +348,7 @@ Here's the XAML code that is associated with the previous example.
 ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="windowsRuntimeStream" /> is <see langword="null" />.</exception>
+          <paramref name="windowsRuntimeStream" /> is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsStreamForRead">
@@ -377,9 +377,9 @@ Here's the XAML code that is associated with the previous example.
         <Parameter Name="bufferSize" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="windowsRuntimeStream">The Windows Runtime <see xref="T:Windows.Storage.Streams.IInputStream" /> object to convert.</param>
+        <param name="windowsRuntimeStream">The Windows Runtime IInputStream object to convert.</param>
         <param name="bufferSize">The size, in bytes, of the buffer. This value cannot be negative, but it can be 0 (zero) to disable buffering.</param>
-        <summary>Converts an input stream in the Windows Runtime to a managed stream in the .NET for Windows 8.x Store apps using the specified buffer size.</summary>
+        <summary>Converts an input stream in the Windows Runtime  to a managed stream in the .NET for Windows Store apps using the specified buffer size.</summary>
         <returns>The converted stream.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[
@@ -395,7 +395,7 @@ In most situations, buffering improves the performance of stream operations. You
 ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="windowsRuntimeStream" /> is <see langword="null" />.</exception>
+          <paramref name="windowsRuntimeStream" /> is null.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="bufferSize" /> is negative.</exception>
       </Docs>
@@ -425,8 +425,8 @@ In most situations, buffering improves the performance of stream operations. You
         <Parameter Name="windowsRuntimeStream" Type="Windows.Storage.Streams.IOutputStream" RefType="this" />
       </Parameters>
       <Docs>
-        <param name="windowsRuntimeStream">The Windows Runtime <see xref="T:Windows.Storage.Streams.IOutputStream" /> object to convert.</param>
-        <summary>Converts an output stream in the Windows Runtime to a managed stream in the .NET for Windows 8.x Store apps.</summary>
+        <param name="windowsRuntimeStream">The Windows Runtime IOutputStream object to convert.</param>
+        <summary>Converts an output stream in the Windows Runtime  to a managed stream in the .NET for Windows Store apps.</summary>
         <returns>The converted stream.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[
@@ -450,7 +450,7 @@ Here's the XAML code that is associated with the previous example.
 ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="windowsRuntimeStream" /> is <see langword="null" />.</exception>
+          <paramref name="windowsRuntimeStream" /> is null.</exception>
       </Docs>
     </Member>
     <Member MemberName="AsStreamForWrite">
@@ -479,9 +479,9 @@ Here's the XAML code that is associated with the previous example.
         <Parameter Name="bufferSize" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="windowsRuntimeStream">The Windows Runtime <see cref="T:Windows.Storage.Streams.IOutputStream" /> object to convert.</param>
+        <param name="windowsRuntimeStream">The Windows Runtime IOutputStream object to convert.</param>
         <param name="bufferSize">The size, in bytes, of the buffer. This value cannot be negative, but it can be 0 (zero) to disable buffering.</param>
-        <summary>Converts an output stream in the Windows Runtime to a managed stream in the .NET for Windows Store apps using the specified buffer size.</summary>
+        <summary>Converts an output stream in the Windows Runtime  to a managed stream in the .NET for Windows Store apps using the specified buffer size.</summary>
         <returns>The converted stream.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[
@@ -498,7 +498,7 @@ In most situations, buffering improves the performance of stream operations. You
 ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentNullException">
-          <paramref name="windowsRuntimeStream" /> is <see langword="null" />.</exception>
+          <paramref name="windowsRuntimeStream" /> is null.</exception>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="bufferSize" /> is negative.</exception>
       </Docs>

@@ -14,7 +14,7 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Attributes>
-    <Attribute FrameworkAlternate="dotnet-uwp-10.0">
+    <Attribute>
       <AttributeName>System.Security.SecurityCritical</AttributeName>
     </Attribute>
   </Attributes>
@@ -41,7 +41,7 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>The size is determined by the size properties of the content object.</summary>
+        <summary>The size is determined by the size properties of the content object. </summary>
       </Docs>
     </Member>
     <Member MemberName="Pixel">
@@ -62,7 +62,7 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The value is expressed in pixels.</summary>
+        <summary>The value is expressed in pixels. </summary>
       </Docs>
     </Member>
     <Member MemberName="Star">
@@ -83,7 +83,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>The value is expressed as a weighted proportion of available space.</summary>
+        <summary>The value is expressed as a weighted proportion of available space. </summary>
       </Docs>
     </Member>
   </Members>

@@ -15,12 +15,12 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="dotnet-uwp-10.0">
+    <Attribute>
       <AttributeName>System.Security.SecurityCritical</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Describes the characteristics of a rounded corner, such as can be applied to a <see cref="T:Windows.UI.Xaml.Controls.Border" />.</summary>
+    <summary>Describes the characteristics of a rounded corner, such as can be applied to a Windows.UI.Xaml.Controls.Border.</summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -66,11 +66,11 @@
         <Parameter Name="bottomLeft" Type="System.Double" />
       </Parameters>
       <Docs>
-        <param name="topLeft">The initial <see cref="P:Windows.UI.Xaml.CornerRadius.TopLeft" /> value.</param>
-        <param name="topRight">The initial <see cref="P:Windows.UI.Xaml.CornerRadius.TopRight" /> value.</param>
-        <param name="bottomRight">The initial <see cref="P:Windows.UI.Xaml.CornerRadius.BottomRight" /> value.</param>
-        <param name="bottomLeft">The initial <see cref="P:Windows.UI.Xaml.CornerRadius.BottomLeft" /> value.</param>
-        <summary>Initializes a new instance of the <see cref="T:Windows.UI.Xaml.CornerRadius" /> struct, applying specific radius values to its corners.</summary>
+        <param name="topLeft">Sets the initial <see cref="P:Windows.UI.Xaml.CornerRadius.TopLeft" />.</param>
+        <param name="topRight">Sets the initial <see cref="P:Windows.UI.Xaml.CornerRadius.TopRight" />.</param>
+        <param name="bottomRight">Sets the initial <see cref="P:Windows.UI.Xaml.CornerRadius.BottomLeft" />.</param>
+        <param name="bottomLeft">Sets the initial <see cref="P:Windows.UI.Xaml.CornerRadius.BottomRight" />.</param>
+        <summary>Initializes a new instance of the <see cref="T:Windows.UI.Xaml.CornerRadius" /> structure, applying specific radius values to its corners.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,7 +92,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the radius of rounding, in pixels, of the bottom left corner of the object where a <see cref="T:Windows.UI.Xaml.CornerRadius" /> is applied.</summary>
-        <value>The radius of rounding, in pixels, of the bottom left corner of the object where a <see cref="T:Windows.UI.Xaml.CornerRadius" /> is applied. The default is 0.</value>
+        <value>A <see cref="T:System.Double" /> that represents the radius of rounding, in pixels, of the bottom left corner of the object where a <see cref="T:Windows.UI.Xaml.CornerRadius" /> is applied. The default is 0.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -114,7 +114,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the radius of rounding, in pixels, of the bottom right corner of the object where a <see cref="T:Windows.UI.Xaml.CornerRadius" /> is applied.</summary>
-        <value>The radius of rounding, in pixels, of the bottom right corner of the object where a <see cref="T:Windows.UI.Xaml.CornerRadius" /> is applied. The default is 0.</value>
+        <value>A <see cref="T:System.Double" /> that represents the radius of rounding, in pixels, of the bottom right corner of the object where a <see cref="T:Windows.UI.Xaml.CornerRadius" /> is applied. The default is 0.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -132,7 +132,7 @@
         <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="dotnet-uwp-10.0">
+        <Attribute>
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -144,8 +144,8 @@
       </Parameters>
       <Docs>
         <param name="obj">The object to compare.</param>
-        <summary>Compares this <see cref="T:Windows.UI.Xaml.CornerRadius" /> struct to another object for equality.</summary>
-        <returns><see langword="true" /> if the two objects are equal; otherwise, <see langword="false" />.</returns>
+        <summary>Compares this <see cref="T:Windows.UI.Xaml.CornerRadius" /> structure to another object for equality.</summary>
+        <returns>true if the two objects are equal; otherwise, false.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -169,8 +169,8 @@
       </Parameters>
       <Docs>
         <param name="cornerRadius">An instance of <see cref="T:Windows.UI.Xaml.CornerRadius" /> to compare for equality.</param>
-        <summary>Compares this <see cref="T:Windows.UI.Xaml.CornerRadius" /> struct to another <see cref="T:Windows.UI.Xaml.CornerRadius" /> structure for equality.</summary>
-        <returns><see langword="true" /> if the two instances of <see cref="T:Windows.UI.Xaml.CornerRadius" /> are equal; otherwise, <see langword="false" />.</returns>
+        <summary>Compares this <see cref="T:Windows.UI.Xaml.CornerRadius" /> structure to another <see cref="T:Windows.UI.Xaml.CornerRadius" /> structure for equality.</summary>
+        <returns>true if the two instances of <see cref="T:Windows.UI.Xaml.CornerRadius" />  are equal; otherwise, false.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -188,7 +188,7 @@
         <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="dotnet-uwp-10.0">
+        <Attribute>
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -223,10 +223,10 @@
         <Parameter Name="cr2" Type="Windows.UI.Xaml.CornerRadius" />
       </Parameters>
       <Docs>
-        <param name="cr1">The first struct to compare.</param>
-        <param name="cr2">The other struct to compare.</param>
-        <summary>Compares the value of two <see cref="T:Windows.UI.Xaml.CornerRadius" /> structs for equality.</summary>
-        <returns><see langword="true" /> if the two instances of <see cref="T:Windows.UI.Xaml.CornerRadius" /> are equal; otherwise, <see langword="false" />.</returns>
+        <param name="cr1">The first structure to compare.</param>
+        <param name="cr2">The other structure to compare.</param>
+        <summary>Compares the value of two <see cref="T:Windows.UI.Xaml.CornerRadius" /> structures for equality.</summary>
+        <returns>true if the two instances of <see cref="T:Windows.UI.Xaml.CornerRadius" /> are equal; otherwise, false.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -251,10 +251,10 @@
         <Parameter Name="cr2" Type="Windows.UI.Xaml.CornerRadius" />
       </Parameters>
       <Docs>
-        <param name="cr1">The first struct to compare.</param>
-        <param name="cr2">The other struct to compare.</param>
-        <summary>Compares two <see cref="T:Windows.UI.Xaml.CornerRadius" /> structs for inequality.</summary>
-        <returns><see langword="true" /> if the two instances of <see cref="T:Windows.UI.Xaml.CornerRadius" /> are not equal; otherwise, <see langword="false" />.</returns>
+        <param name="cr1">The first structure to compare.</param>
+        <param name="cr2">The other structure to compare.</param>
+        <summary>Compares two <see cref="T:Windows.UI.Xaml.CornerRadius" /> structures for inequality. </summary>
+        <returns>true if the two instances of <see cref="T:Windows.UI.Xaml.CornerRadius" /> are not equal; otherwise, false.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -276,7 +276,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the radius of rounding, in pixels, of the top left corner of the object where a <see cref="T:Windows.UI.Xaml.CornerRadius" /> is applied.</summary>
-        <value>The radius of rounding, in pixels, of the top left corner of the object where a <see cref="T:Windows.UI.Xaml.CornerRadius" /> is applied. The default is 0.</value>
+        <value>A <see cref="T:System.Double" /> that represents the radius of rounding, in pixels, of the top left corner of the object where a <see cref="T:Windows.UI.Xaml.CornerRadius" /> is applied. The default is 0.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -298,7 +298,7 @@
       </ReturnValue>
       <Docs>
         <summary>Gets or sets the radius of rounding, in pixels, of the top right corner of the object where a <see cref="T:Windows.UI.Xaml.CornerRadius" /> is applied.</summary>
-        <value>The radius of rounding, in pixels, of the top right corner of the object where a <see cref="T:Windows.UI.Xaml.CornerRadius" /> is applied. The default is 0.</value>
+        <value>A <see cref="T:System.Double" /> that represents the radius of rounding, in pixels, of the top right corner of the object where a <see cref="T:Windows.UI.Xaml.CornerRadius" /> is applied. The default is 0.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -316,7 +316,7 @@
         <AssemblyVersion>4.0.4.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="dotnet-uwp-10.0">
+        <Attribute>
           <AttributeName>System.Security.SecuritySafeCritical</AttributeName>
         </Attribute>
       </Attributes>
@@ -326,7 +326,7 @@
       <Parameters />
       <Docs>
         <summary>Returns the string representation of the <see cref="T:Windows.UI.Xaml.CornerRadius" /> structure.</summary>
-        <returns>A string that represents the <see cref="T:Windows.UI.Xaml.CornerRadius" /> value.</returns>
+        <returns>A <see cref="T:System.String" /> that represents the <see cref="T:Windows.UI.Xaml.CornerRadius" /> value.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
