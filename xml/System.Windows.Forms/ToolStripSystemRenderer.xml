@@ -1,4 +1,4 @@
-﻿<Type Name="ToolStripSystemRenderer" FullName="System.Windows.Forms.ToolStripSystemRenderer">
+<Type Name="ToolStripSystemRenderer" FullName="System.Windows.Forms.ToolStripSystemRenderer">
   <TypeSignature Language="C#" Value="public class ToolStripSystemRenderer : System.Windows.Forms.ToolStripRenderer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolStripSystemRenderer extends System.Windows.Forms.ToolStripRenderer" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripSystemRenderer" />
@@ -40,11 +40,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripSystemRenderer" /> class.</summary>
@@ -64,11 +59,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -77,7 +67,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.ToolStripRenderEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripRenderer.RenderButtonBackground" /> event.</summary>
+        <summary>
+             Draw the button background
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.ToolStripRenderer.OnRenderButtonBackground(System.Windows.Forms.ToolStripItemRenderEventArgs)" />
       </Docs>
@@ -95,11 +87,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -108,7 +95,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemRenderEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripRenderer.RenderDropDownButtonBackground" /> event.</summary>
+        <summary>
+             Draw the button background
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.ToolStripRenderer.OnRenderDropDownButtonBackground(System.Windows.Forms.ToolStripItemRenderEventArgs)" />
       </Docs>
@@ -134,7 +123,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.ToolStripGripRenderEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripRenderer.RenderGrip" /> event.</summary>
+        <summary>
+             Draw the grip.  ToolStrip users should override this if they want to draw differently.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.ToolStripRenderer.OnRenderGrip(System.Windows.Forms.ToolStripGripRenderEventArgs)" />
       </Docs>
@@ -160,7 +151,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.ToolStripRenderEventArgs" /> that contains the event data.</param>
-        <summary>Draws the item background.</summary>
+        <summary>
+             Draw the items background
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.ToolStripRenderer.OnRenderImageMargin(System.Windows.Forms.ToolStripRenderEventArgs)" />
       </Docs>
@@ -186,7 +179,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemRenderEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="M:System.Windows.Forms.ToolStripSystemRenderer.OnRenderItemBackground(System.Windows.Forms.ToolStripItemRenderEventArgs)" /> event.</summary>
+        <summary>
+             Draw the items background
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.ToolStripRenderer.OnRenderItemBackground(System.Windows.Forms.ToolStripItemRenderEventArgs)" />
       </Docs>
@@ -204,11 +199,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -217,7 +207,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemRenderEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripRenderer.RenderLabelBackground" /> event.</summary>
+        <summary>
+             Draw the button background
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.ToolStripRenderer.OnRenderLabelBackground(System.Windows.Forms.ToolStripItemRenderEventArgs)" />
       </Docs>
@@ -243,7 +235,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemRenderEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripRenderer.RenderMenuItemBackground" /> event.</summary>
+        <summary>
+             Draw the items background
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.ToolStripRenderer.OnRenderMenuItemBackground(System.Windows.Forms.ToolStripItemRenderEventArgs)" />
       </Docs>
@@ -269,7 +263,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemRenderEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripRenderer.RenderOverflowButtonBackground" /> event.</summary>
+        <summary>
+             Draw the button background
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.ToolStripRenderer.OnRenderOverflowButtonBackground(System.Windows.Forms.ToolStripItemRenderEventArgs)" />
       </Docs>
@@ -295,7 +291,10 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.ToolStripSeparatorRenderEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripRenderer.RenderSeparator" /> event.</summary>
+        <summary>
+             Draws a toolbar separator. ToolStrip users should override this function to change the
+             drawing of all separators.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.ToolStripRenderer.OnRenderSeparator(System.Windows.Forms.ToolStripSeparatorRenderEventArgs)" />
       </Docs>
@@ -321,7 +320,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemRenderEventArgs" /> that contains the event data.</param>
-        <summary>Raises the OnRenderSplitButtonBackground event.</summary>
+        <summary>
+             Draw the item's background.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.ToolStripRenderer.OnRenderSplitButtonBackground(System.Windows.Forms.ToolStripItemRenderEventArgs)" />
       </Docs>
@@ -347,7 +348,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.ToolStripRenderEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripRenderer.RenderToolStripBackground" /> event.</summary>
+        <summary>
+             Draw the ToolStrip background.  ToolStrip users should override this if they want to draw differently.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.ToolStripRenderer.OnRenderToolStripBackground(System.Windows.Forms.ToolStripRenderEventArgs)" />
       </Docs>
@@ -373,7 +376,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.ToolStripRenderEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripRenderer.RenderToolStripBorder" /> event.</summary>
+        <summary>
+             Draw the border around the ToolStrip.  This should be done as the last step.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.ToolStripRenderer.OnRenderToolStripBorder(System.Windows.Forms.ToolStripRenderEventArgs)" />
       </Docs>

@@ -1,4 +1,4 @@
-﻿<Type Name="FontDialog" FullName="System.Windows.Forms.FontDialog">
+<Type Name="FontDialog" FullName="System.Windows.Forms.FontDialog">
   <TypeSignature Language="C#" Value="public class FontDialog : System.Windows.Forms.CommonDialog" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FontDialog extends System.Windows.Forms.CommonDialog" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FontDialog" />
@@ -24,7 +24,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Prompts the user to choose a font from among those installed on the local computer.</summary>
+    <summary>
+             Represents
+             a common dialog box that displays a list of fonts that are currently installed
+             on
+             the system.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -63,7 +68,10 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.FontDialog" /> class.</summary>
+        <summary>
+             Initializes a new instance of the <see cref="T:System.Windows.Forms.FontDialog" />
+             class.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -116,7 +124,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the user can change the character set specified in the **Script** combo box to display a character set other than the one currently displayed.</summary>
+        <summary>
+             Gets
+             or sets a value indicating whether the user can change the character set specified
+             in the Script combo box to display a character set other than the one
+             currently displayed.
+            </summary>
         <value>
           <see langword="true" /> if the user can change the character set specified in the **Script** combo box; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
         <remarks>
@@ -155,7 +168,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the dialog box allows graphics device interface (GDI) font simulations.</summary>
+        <summary>
+             Gets or sets a value indicating whether the dialog box allows graphics device interface
+             (GDI) font simulations.
+            </summary>
         <value>
           <see langword="true" /> if font simulations are allowed; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
@@ -187,7 +203,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the dialog box allows vector font selections.</summary>
+        <summary>
+             Gets or sets a value indicating whether the dialog box allows vector font selections.
+            </summary>
         <value>
           <see langword="true" /> if vector fonts are allowed; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
@@ -219,7 +237,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the dialog box displays both vertical and horizontal fonts or only horizontal fonts.</summary>
+        <summary>
+             Gets or sets a value indicating whether
+             the dialog box displays both vertical and horizontal fonts or only
+             horizontal fonts.
+            </summary>
         <value>
           <see langword="true" /> if both vertical and horizontal fonts are allowed; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
@@ -246,7 +268,10 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the user clicks the **Apply** button in the font dialog box.</summary>
+        <summary>
+             Occurs when the user clicks the Apply button in the font
+             dialog box.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -287,15 +312,14 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "Black")</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the selected font color.</summary>
+        <summary>
+             Gets or sets a value indicating the selected font color.
+            </summary>
         <value>The color of the selected font. The default value is <see cref="P:System.Drawing.Color.Black" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -354,18 +378,15 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the dialog box allows only the selection of fixed-pitch fonts.</summary>
+        <summary>
+             Gets or sets
+             a value indicating whether the dialog box allows only the selection of fixed-pitch fonts.
+            </summary>
         <value>
           <see langword="true" /> if only fixed-pitch fonts can be selected; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -387,16 +408,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the selected font.</summary>
+        <summary>
+             Gets or sets a value indicating the selected font.
+            </summary>
         <value>The selected font.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -432,18 +450,15 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the dialog box specifies an error condition if the user attempts to select a font or style that does not exist.</summary>
+        <summary>
+             Gets or sets a value indicating whether the dialog box specifies an error condition if the
+             user attempts to select a font or style that does not exist.
+            </summary>
         <value>
           <see langword="true" /> if the dialog box specifies an error condition when the user tries to select a font or style that does not exist; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
@@ -490,7 +505,10 @@
         <param name="msg">The message being received.</param>
         <param name="wparam">Additional information about the message.</param>
         <param name="lparam">Additional information about the message.</param>
-        <summary>Specifies the common dialog box hook procedure that is overridden to add specific functionality to a common dialog box.</summary>
+        <summary>
+             Specifies the common dialog box hook procedure that is overridden to add
+             specific functionality to a common dialog box.
+            </summary>
         <returns>A zero value if the default dialog box procedure processes the message; a nonzero value if the default dialog box procedure ignores the message.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -533,15 +551,15 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum point size a user can select.</summary>
+        <summary>
+             Gets or sets the maximum
+             point size a user can select.
+            </summary>
         <value>The maximum point size a user can select. The default is 0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -585,15 +603,14 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the minimum point size a user can select.</summary>
+        <summary>
+             Gets or sets a value indicating the minimum point size a user can select.
+            </summary>
         <value>The minimum point size a user can select. The default is 0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -641,7 +658,9 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.FontDialog.Apply" /> event.</summary>
+        <summary>
+             Raises the <see cref="E:System.Windows.Forms.FontDialog.Apply" /> event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -670,16 +689,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets values to initialize the <see cref="T:System.Windows.Forms.FontDialog" />.</summary>
+        <summary>
+             Gets the value passed to CHOOSEFONT.Flags.
+            </summary>
         <value>A bitwise combination of internal values that initializes the <see cref="T:System.Windows.Forms.FontDialog" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -710,7 +726,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Resets all dialog box options to their default values.</summary>
+        <summary>
+             Resets all dialog box options to their default values.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -743,7 +761,11 @@
       </Parameters>
       <Docs>
         <param name="hWndOwner">The window handle of the owner window for the common dialog box.</param>
-        <summary>Specifies a file dialog box.</summary>
+        <summary>
+             The actual implementation of running the dialog. Inheriting classes
+             should override this if they want to add more functionality, and call
+             base.runDialog() if necessary
+            </summary>
         <returns>
           <see langword="true" /> if the dialog box was successfully run; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -774,18 +796,16 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the dialog box allows selection of fonts for all non-OEM and Symbol character sets, as well as the ANSI character set.</summary>
+        <summary>
+             Gets or sets a
+             value indicating whether the dialog box allows selection of fonts for all non-OEM and Symbol character
+             sets, as well as the ----n National Standards Institute (ANSI) character set.
+            </summary>
         <value>
           <see langword="true" /> if selection of fonts for all non-OEM and Symbol character sets, as well as the ANSI character set, is allowed; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -811,18 +831,14 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the dialog box contains an **Apply** button.</summary>
+        <summary>
+             Gets or sets a value indicating whether the dialog box contains an Apply button.
+            </summary>
         <value>
           <see langword="true" /> if the dialog box contains an **Apply** button; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
@@ -860,18 +876,14 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the dialog box displays the color choice.</summary>
+        <summary>
+             Gets or sets a value indicating whether the dialog box displays the color choice.
+            </summary>
         <value>
           <see langword="true" /> if the dialog box displays the color choice; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
@@ -910,18 +922,15 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the dialog box contains controls that allow the user to specify strikethrough, underline, and text color options.</summary>
+        <summary>
+             Gets or sets a value indicating whether the dialog box contains controls that allow the
+             user to specify strikethrough, underline, and text color options.
+            </summary>
         <value>
           <see langword="true" /> if the dialog box contains controls to set strikethrough, underline, and text color options; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
         <remarks>
@@ -959,18 +968,14 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the dialog box displays a Help button.</summary>
+        <summary>
+             Gets or sets a value indicating whether the dialog box displays a Help button.
+            </summary>
         <value>
           <see langword="true" /> if the dialog box displays a Help button; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -998,7 +1003,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves a string that includes the name of the current font selected in the dialog box.</summary>
+        <summary>
+             Retrieves a string that includes the name of the current font selected in
+             the dialog box.
+            </summary>
         <returns>A string that includes the name of the currently selected font.</returns>
         <remarks>To be added.</remarks>
       </Docs>

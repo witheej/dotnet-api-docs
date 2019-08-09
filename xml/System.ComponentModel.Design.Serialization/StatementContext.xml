@@ -1,4 +1,4 @@
-﻿<Type Name="StatementContext" FullName="System.ComponentModel.Design.Serialization.StatementContext">
+<Type Name="StatementContext" FullName="System.ComponentModel.Design.Serialization.StatementContext">
   <TypeSignature Language="C#" Value="public sealed class StatementContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit StatementContext extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.StatementContext" />
@@ -19,7 +19,18 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a location into which statements can be serialized. This class cannot be inherited.</summary>
+    <summary>
+             This object can be placed on the context stack to provide a place for
+             statements to be serialized into. Normally, statements are serialized
+             into whatever statement collection that is on the context stack. You
+             can modify this behavior by creating a statement context and calling
+             Populate with a collection of objects whose statements you would like
+             stored in the statement table. As each object is serialized in
+             SerializeToExpression it will have its contents placed in the statement
+             table. saved in a table within the context. If you push this object on
+             the stack it is your responsibility to integrate the statements added
+             to it into your own collection of statements.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -49,11 +60,6 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Serialization.StatementContext" /> class.</summary>
@@ -81,7 +87,9 @@
         <ReturnType>System.ComponentModel.Design.Serialization.ObjectStatementCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of statements offered by the statement context.</summary>
+        <summary>
+             This is a table of statements that is offered by the statement context.
+            </summary>
         <value>An <see cref="T:System.ComponentModel.Design.Serialization.ObjectStatementCollection" /> containing statements offered by the statement context.</value>
         <remarks>To be added.</remarks>
       </Docs>

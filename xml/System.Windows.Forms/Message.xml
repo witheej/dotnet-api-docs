@@ -1,4 +1,4 @@
-﻿<Type Name="Message" FullName="System.Windows.Forms.Message">
+<Type Name="Message" FullName="System.Windows.Forms.Message">
   <TypeSignature Language="C#" Value="public struct Message" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit Message extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Message" />
@@ -16,7 +16,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Implements a Windows message.</summary>
+    <summary>
+             Implements a Windows message.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -69,7 +71,9 @@
         <param name="msg">The message ID.</param>
         <param name="wparam">The message <paramref name="wparam" /> field.</param>
         <param name="lparam">The message <paramref name="lparam" /> field.</param>
-        <summary>Creates a new <see cref="T:System.Windows.Forms.Message" />.</summary>
+        <summary>
+             Creates a new <see cref="T:System.Windows.Forms.Message" /> object.
+            </summary>
         <returns>A <see cref="T:System.Windows.Forms.Message" /> that represents the message that was created.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -156,7 +160,9 @@
       </Parameters>
       <Docs>
         <param name="cls">The type to use to create an instance. This type must be declared as a structure type.</param>
-        <summary>Gets the <see cref="P:System.Windows.Forms.Message.LParam" /> value and converts the value to an object.</summary>
+        <summary>
+             Gets the <see cref="!:Message.lparam" /> value, and converts the value to an object.
+            </summary>
         <returns>An <see cref="T:System.Object" /> that represents an instance of the class specified by the <paramref name="cls" /> parameter, with the data from the <see cref="P:System.Windows.Forms.Message.LParam" /> field of the message.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -183,13 +189,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netcore-3.0">
+        <Attribute>
           <AttributeName>get: System.Runtime.CompilerServices.IsReadOnly</AttributeName>
         </Attribute>
       </Attributes>
@@ -225,13 +225,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netcore-3.0">
+        <Attribute>
           <AttributeName>get: System.Runtime.CompilerServices.IsReadOnly</AttributeName>
         </Attribute>
       </Attributes>
@@ -239,7 +233,9 @@
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the <see cref="P:System.Windows.Forms.Message.LParam" /> field of the message.</summary>
+        <summary>
+             Specifies the <see cref="!:Message.lparam" /> of the message.
+            </summary>
         <value>The <see cref="P:System.Windows.Forms.Message.LParam" /> field of the message.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -269,13 +265,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netcore-3.0">
+        <Attribute>
           <AttributeName>get: System.Runtime.CompilerServices.IsReadOnly</AttributeName>
         </Attribute>
       </Attributes>
@@ -319,8 +309,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="a" Type="System.Windows.Forms.Message" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="b" Type="System.Windows.Forms.Message" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="a" Type="System.Windows.Forms.Message" />
+        <Parameter Name="b" Type="System.Windows.Forms.Message" />
       </Parameters>
       <Docs>
         <param name="a">A <see cref="T:System.Windows.Forms.Message" /> to compare to <paramref name="b" />.</param>
@@ -350,8 +340,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="a" Type="System.Windows.Forms.Message" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="b" Type="System.Windows.Forms.Message" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="a" Type="System.Windows.Forms.Message" />
+        <Parameter Name="b" Type="System.Windows.Forms.Message" />
       </Parameters>
       <Docs>
         <param name="a">A <see cref="T:System.Windows.Forms.Message" /> to compare to <paramref name="b" />.</param>
@@ -379,13 +369,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netcore-3.0">
+        <Attribute>
           <AttributeName>get: System.Runtime.CompilerServices.IsReadOnly</AttributeName>
         </Attribute>
       </Attributes>
@@ -437,13 +421,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netcore-3.0">
+        <Attribute>
           <AttributeName>get: System.Runtime.CompilerServices.IsReadOnly</AttributeName>
         </Attribute>
       </Attributes>
@@ -451,7 +429,9 @@
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="P:System.Windows.Forms.Message.WParam" /> field of the message.</summary>
+        <summary>
+             Specifies the <see cref="!:Message.wparam" /> of the message.
+            </summary>
         <value>The <see cref="P:System.Windows.Forms.Message.WParam" /> field of the message.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

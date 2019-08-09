@@ -1,4 +1,4 @@
-﻿<Type Name="FormBorderStyle" FullName="System.Windows.Forms.FormBorderStyle">
+<Type Name="FormBorderStyle" FullName="System.Windows.Forms.FormBorderStyle">
   <TypeSignature Language="C#" Value="public enum FormBorderStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FormBorderStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FormBorderStyle" />
@@ -20,7 +20,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the border styles for a form.</summary>
+    <summary>
+             Specifies the border styles for a form.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -60,7 +62,9 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>A fixed, three-dimensional border.</summary>
+        <summary>
+             A fixed, three-dimensional border.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="FixedDialog">
@@ -82,7 +86,9 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>A thick, fixed dialog-style border.</summary>
+        <summary>
+             A thick, fixed dialog-style border.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="FixedSingle">
@@ -104,7 +110,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>A fixed, single-line border.</summary>
+        <summary>
+             A fixed, single line border.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="FixedToolWindow">
@@ -126,7 +134,9 @@
       </ReturnValue>
       <MemberValue>5</MemberValue>
       <Docs>
-        <summary>A tool window border that is not resizable. A tool window does not appear in the taskbar or in the window that appears when the user presses ALT+TAB. Although forms that specify <see cref="F:System.Windows.Forms.FormBorderStyle.FixedToolWindow" /> typically are not shown in the taskbar, you must also ensure that the <see cref="P:System.Windows.Forms.Form.ShowInTaskbar" /> property is set to <see langword="false" />, since its default value is <see langword="true" />.</summary>
+        <summary>
+             A tool window border that is not resizable.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -148,7 +158,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>No border.</summary>
+        <summary>
+             No border.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Sizable">
@@ -170,7 +182,9 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>A resizable border.</summary>
+        <summary>
+             A resizable border.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="SizableToolWindow">
@@ -192,7 +206,9 @@
       </ReturnValue>
       <MemberValue>6</MemberValue>
       <Docs>
-        <summary>A resizable tool window border. A tool window does not appear in the taskbar or in the window that appears when the user presses ALT+TAB.</summary>
+        <summary>
+             A resizable tool window border.
+            </summary>
       </Docs>
     </Member>
   </Members>

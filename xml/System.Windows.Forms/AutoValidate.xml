@@ -1,4 +1,4 @@
-﻿<Type Name="AutoValidate" FullName="System.Windows.Forms.AutoValidate">
+<Type Name="AutoValidate" FullName="System.Windows.Forms.AutoValidate">
   <TypeSignature Language="C#" Value="public enum AutoValidate" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AutoValidate extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.AutoValidate" />
@@ -14,7 +14,10 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Determines how a control validates its data when it loses user input focus.</summary>
+    <summary>
+             For a given container control, determines whether the data in child controls
+             will automatically be validated when the user attempts to change the focus.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -55,7 +58,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Implicit validation will not occur. Setting this value will not interfere with explicit calls to <see cref="M:System.Windows.Forms.ContainerControl.Validate" /> or <see cref="M:System.Windows.Forms.ContainerControl.ValidateChildren" />.</summary>
+        <summary>
+             Controls in this container will not be validated when the focus changes.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="EnableAllowFocusChange">
@@ -76,7 +81,11 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Implicit validation occurs, but if validation fails, focus will still change to the new control. If validation fails, the <see cref="E:System.Windows.Forms.Control.Validated" /> event will not fire.</summary>
+        <summary>
+             Controls in this container will be validated when the focus changes.
+             If a validation error occurs, the focus is allowed to move to the other
+             control.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="EnablePreventFocusChange">
@@ -97,7 +106,11 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Implicit validation occurs when the control loses focus.</summary>
+        <summary>
+             Controls in this container will be validated when the focus changes.
+             If a validation error occurs, the focus is forced to stay in the
+             current control.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Inherit">
@@ -118,7 +131,9 @@
       </ReturnValue>
       <MemberValue>-1</MemberValue>
       <Docs>
-        <summary>The control inherits its <see cref="T:System.Windows.Forms.AutoValidate" /> behavior from its container (such as a form or another control). If there is no container control, it defaults to <see cref="F:System.Windows.Forms.AutoValidate.EnablePreventFocusChange" />.</summary>
+        <summary>
+             AutoValidate setting for this container is determined by its parent container.
+            </summary>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="ToolStripItemImageRenderEventHandler" FullName="System.Windows.Forms.ToolStripItemImageRenderEventHandler">
+<Type Name="ToolStripItemImageRenderEventHandler" FullName="System.Windows.Forms.ToolStripItemImageRenderEventHandler">
   <TypeSignature Language="C#" Value="public delegate void ToolStripItemImageRenderEventHandler(object sender, ToolStripItemImageRenderEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ToolStripItemImageRenderEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripItemImageRenderEventHandler" />
@@ -23,7 +23,9 @@
   <Docs>
     <param name="sender">The source of the event.</param>
     <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemImageRenderEventArgs" /> that contains the event data.</param>
-    <summary>Represents the method that will handle the <see cref="E:System.Windows.Forms.ToolStripRenderer.RenderItemImage" /> event or <see cref="E:System.Windows.Forms.ToolStripRenderer.RenderItemCheck" /> event of a <see cref="T:System.Windows.Forms.ToolStripRenderer" />.</summary>
+    <summary>
+             Called when the background of a ToolStrip item is being rendered
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

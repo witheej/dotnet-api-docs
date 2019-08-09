@@ -1,4 +1,4 @@
-﻿<Type Name="ToolStripRenderer" FullName="System.Windows.Forms.ToolStripRenderer">
+<Type Name="ToolStripRenderer" FullName="System.Windows.Forms.ToolStripRenderer">
   <TypeSignature Language="C#" Value="public abstract class ToolStripRenderer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ToolStripRenderer extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripRenderer" />
@@ -61,11 +61,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripRenderer" /> class.</summary>
@@ -158,7 +153,9 @@
       </Parameters>
       <Docs>
         <param name="e">The <see cref="T:System.Windows.Forms.ToolStripItemRenderEventArgs" /> that contains data to draw the button's background.</param>
-        <summary>Draws the background for a <see cref="T:System.Windows.Forms.ToolStripButton" />.</summary>
+        <summary>
+             Draw the item's background.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -190,7 +187,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemRenderEventArgs" /> that contains the data to draw the drop-down button's background.</param>
-        <summary>Draws the background for a <see cref="T:System.Windows.Forms.ToolStripDropDownButton" />.</summary>
+        <summary>
+             Draw the item's background.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -222,7 +221,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.ToolStripGripRenderEventArgs" /> that contains the data to draw the move handle.</param>
-        <summary>Draws a move handle on a <see cref="T:System.Windows.Forms.ToolStrip" />.</summary>
+        <summary>
+             Draw the background color
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -254,7 +255,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.ToolStripRenderEventArgs" /> that contains the data to draw the space around the image.</param>
-        <summary>Draws the space around an image on a <see cref="T:System.Windows.Forms.ToolStrip" />.</summary>
+        <summary>
+             Draw the background color
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -286,7 +289,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemRenderEventArgs" /> that contains the data to draw the background of the item.</param>
-        <summary>Draws the background for a <see cref="T:System.Windows.Forms.ToolStripItem" />.</summary>
+        <summary>
+             Draw the item's background.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -318,7 +323,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemImageRenderEventArgs" /> that contains the data to draw the selected image.</param>
-        <summary>Draws an image on a <see cref="T:System.Windows.Forms.ToolStripItem" /> that indicates the item is in a selected state.</summary>
+        <summary>
+             Draw image
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -350,7 +357,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemImageRenderEventArgs" /> that contains the data to draw the image.</param>
-        <summary>Draws an image on a <see cref="T:System.Windows.Forms.ToolStripItem" />.</summary>
+        <summary>
+             Draw image
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -382,7 +391,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemTextRenderEventArgs" /> that contains the data to draw the text.</param>
-        <summary>Draws text on a <see cref="T:System.Windows.Forms.ToolStripItem" />.</summary>
+        <summary>
+             Draw text
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -414,7 +425,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemRenderEventArgs" /> that contains the data to draw the background for the label.</param>
-        <summary>Draws the background for a <see cref="T:System.Windows.Forms.ToolStripLabel" />.</summary>
+        <summary>
+             Draw the background color
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -446,7 +459,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemRenderEventArgs" /> that contains the data to draw the background for the menu item.</param>
-        <summary>Draws the background for a <see cref="T:System.Windows.Forms.ToolStripMenuItem" />.</summary>
+        <summary>
+             Draw the item's background.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -478,7 +493,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemRenderEventArgs" /> that contains the event data.</param>
-        <summary>Draws the background for an overflow button.</summary>
+        <summary>
+             Draw the item's background.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -510,7 +527,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.ToolStripSeparatorRenderEventArgs" /> that contains the data to draw the <see cref="T:System.Windows.Forms.ToolStripSeparator" />.</param>
-        <summary>Draws a <see cref="T:System.Windows.Forms.ToolStripSeparator" />.</summary>
+        <summary>
+             Draw the separator
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -542,7 +561,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemRenderEventArgs" /> that contains the event data.</param>
-        <summary>Draws a <see cref="T:System.Windows.Forms.ToolStripSplitButton" />.</summary>
+        <summary>
+             Draw the background color
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -599,7 +620,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.ToolStripRenderEventArgs" /> that contains the data to draw the background for the <see cref="T:System.Windows.Forms.ToolStrip" />.</param>
-        <summary>Draws the background for a <see cref="T:System.Windows.Forms.ToolStrip" />.</summary>
+        <summary>
+             Draw the background color
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -713,7 +736,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemRenderEventArgs" /> that contains the event data.</param>
-        <summary>Draws the background of the <see cref="T:System.Windows.Forms.ToolStripStatusLabel" />.</summary>
+        <summary>
+             Draw the background color
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -913,6 +938,8 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.ToolStripRenderer.OnRenderArrow(System.Windows.Forms.ToolStripArrowRenderEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ToolStripRenderer.OnRenderArrow(System.Windows.Forms.ToolStripArrowRenderEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <!-- Failed to insert some or all of included XML -->
+        <include file="doc\WinBarRenderer.uex" path="docs/doc[@for=&quot;ToolStripRenderer.OnRenderArrow&quot;]/*" />
       </Docs>
     </Member>
     <Member MemberName="OnRenderButtonBackground">
@@ -936,7 +963,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.ToolStripRenderEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripRenderer.RenderButtonBackground" /> event.</summary>
+        <summary>
+             Draw the button background
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -982,7 +1011,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemRenderEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripRenderer.RenderDropDownButtonBackground" /> event.</summary>
+        <summary>
+             Draw the button background
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1019,7 +1050,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.ToolStripGripRenderEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripRenderer.RenderGrip" /> event.</summary>
+        <summary>
+             Draw the grip.  ToolStrip users should override this if they want to draw differently.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1056,7 +1089,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.ToolStripRenderEventArgs" /> that contains the event data.</param>
-        <summary>Draws the item background.</summary>
+        <summary>
+             Draw the items background
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1093,7 +1128,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemRenderEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="M:System.Windows.Forms.ToolStripSystemRenderer.OnRenderItemBackground(System.Windows.Forms.ToolStripItemRenderEventArgs)" /> event.</summary>
+        <summary>
+             Draw the items background
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1167,7 +1204,10 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemImageRenderEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripRenderer.RenderItemImage" /> event.</summary>
+        <summary>
+             Draw the item'si mage.  ToolStrip users should override this function to change the
+             drawing of all images.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1204,7 +1244,10 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemTextRenderEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripRenderer.RenderItemText" /> event.</summary>
+        <summary>
+             Draw the item's text.  ToolStrip users should override this function to change the
+             drawing of all text.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1241,7 +1284,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemRenderEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripRenderer.RenderLabelBackground" /> event.</summary>
+        <summary>
+             Draw the button background
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1278,7 +1323,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemRenderEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripRenderer.RenderMenuItemBackground" /> event.</summary>
+        <summary>
+             Draw the items background
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1315,7 +1362,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemRenderEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripRenderer.RenderOverflowButtonBackground" /> event.</summary>
+        <summary>
+             Draw the button background
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1352,7 +1401,10 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.ToolStripSeparatorRenderEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripRenderer.RenderSeparator" /> event.</summary>
+        <summary>
+             Draws a toolbar separator. ToolStrip users should override this function to change the
+             drawing of all separators.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1389,7 +1441,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemRenderEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="M:System.Windows.Forms.ToolStripRenderer.OnRenderSplitButtonBackground(System.Windows.Forms.ToolStripItemRenderEventArgs)" /> event.</summary>
+        <summary>
+             Draw the item's background.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1463,7 +1517,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.ToolStripRenderEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripRenderer.RenderToolStripBackground" /> event.</summary>
+        <summary>
+             Draw the ToolStrip background.  ToolStrip users should override this if they want to draw differently.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1509,7 +1565,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.ToolStripRenderEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripRenderer.RenderToolStripBorder" /> event.</summary>
+        <summary>
+             Draw the border around the ToolStrip.  This should be done as the last step.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1700,7 +1758,9 @@
         <ReturnType>System.Windows.Forms.ToolStripItemRenderEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the background for a <see cref="T:System.Windows.Forms.ToolStripButton" /> is rendered</summary>
+        <summary>
+             Occurs when the display style has changed
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1738,7 +1798,9 @@
         <ReturnType>System.Windows.Forms.ToolStripItemRenderEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the background for a <see cref="T:System.Windows.Forms.ToolStripDropDownButton" /> is rendered.</summary>
+        <summary>
+             Occurs when the display style has changed
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1776,7 +1838,9 @@
         <ReturnType>System.Windows.Forms.ToolStripGripRenderEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the move handle for a <see cref="T:System.Windows.Forms.ToolStrip" /> is rendered.</summary>
+        <summary>
+             Occurs when the display style has changed
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1852,7 +1916,9 @@
         <ReturnType>System.Windows.Forms.ToolStripItemRenderEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the background for a <see cref="T:System.Windows.Forms.ToolStripItem" /> is rendered.</summary>
+        <summary>
+             Occurs when the display style has changed
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1890,7 +1956,9 @@
         <ReturnType>System.Windows.Forms.ToolStripItemImageRenderEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the image for a selected <see cref="T:System.Windows.Forms.ToolStripItem" /> is rendered.</summary>
+        <summary>
+             Draws the checkmark
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1928,7 +1996,9 @@
         <ReturnType>System.Windows.Forms.ToolStripItemImageRenderEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the image for a <see cref="T:System.Windows.Forms.ToolStripItem" /> is rendered.</summary>
+        <summary>
+             Draws the split button
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1966,7 +2036,9 @@
         <ReturnType>System.Windows.Forms.ToolStripItemTextRenderEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the text for a <see cref="T:System.Windows.Forms.ToolStripItem" /> is rendered.</summary>
+        <summary>
+             Draws the split button
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2004,7 +2076,9 @@
         <ReturnType>System.Windows.Forms.ToolStripItemRenderEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the background for a <see cref="T:System.Windows.Forms.ToolStripLabel" /> is rendered.</summary>
+        <summary>
+             Occurs when the display style has changed
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2042,7 +2116,9 @@
         <ReturnType>System.Windows.Forms.ToolStripItemRenderEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the background for a <see cref="T:System.Windows.Forms.ToolStripMenuItem" /> is rendered.</summary>
+        <summary>
+             Occurs when the display style has changed
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2080,7 +2156,9 @@
         <ReturnType>System.Windows.Forms.ToolStripItemRenderEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the background for an overflow button is rendered.</summary>
+        <summary>
+             Occurs when the display style has changed
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2156,7 +2234,9 @@
         <ReturnType>System.Windows.Forms.ToolStripItemRenderEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the background for a <see cref="T:System.Windows.Forms.ToolStripSplitButton" /> is rendered.</summary>
+        <summary>
+             Draws the split button
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2194,7 +2274,9 @@
         <ReturnType>System.Windows.Forms.ToolStripRenderEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the display style changes.</summary>
+        <summary>
+             Occurs when the display style has changed
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2232,7 +2314,9 @@
         <ReturnType>System.Windows.Forms.ToolStripRenderEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the background for a <see cref="T:System.Windows.Forms.ToolStrip" /> is rendered.</summary>
+        <summary>
+             Occurs when the display style has changed
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2270,7 +2354,9 @@
         <ReturnType>System.Windows.Forms.ToolStripRenderEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the border for a <see cref="T:System.Windows.Forms.ToolStrip" /> is rendered.</summary>
+        <summary>
+             Occurs when the display style has changed
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2384,7 +2470,9 @@
         <ReturnType>System.Windows.Forms.ToolStripItemRenderEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Draws the background of a <see cref="T:System.Windows.Forms.ToolStripStatusLabel" />.</summary>
+        <summary>
+             Draws the split button
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2442,7 +2530,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="dpi" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.8" />
+        <Parameter Name="dpi" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="dpi">The DPI value to use for scaling.</param>

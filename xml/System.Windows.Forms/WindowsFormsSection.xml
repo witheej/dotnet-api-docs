@@ -1,10 +1,10 @@
-﻿<Type Name="WindowsFormsSection" FullName="System.Windows.Forms.WindowsFormsSection">
-  <TypeSignature Language="C#" Value="public sealed class WindowsFormsSection : System.Configuration.ConfigurationSection" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WindowsFormsSection extends System.Configuration.ConfigurationSection" />
+<Type Name="WindowsFormsSection" FullName="System.Windows.Forms.WindowsFormsSection">
+  <TypeSignature Language="C#" Value="public sealed class WindowsFormsSection" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit WindowsFormsSection extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.WindowsFormsSection" />
-  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WindowsFormsSection&#xA;Inherits ConfigurationSection" />
-  <TypeSignature Language="C++ CLI" Value="public ref class WindowsFormsSection sealed : System::Configuration::ConfigurationSection" />
-  <TypeSignature Language="F#" Value="type WindowsFormsSection = class&#xA;    inherit ConfigurationSection" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class WindowsFormsSection" />
+  <TypeSignature Language="C++ CLI" Value="public ref class WindowsFormsSection sealed" />
+  <TypeSignature Language="F#" Value="type WindowsFormsSection = class" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -12,6 +12,7 @@
   </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Configuration.ConfigurationSection</BaseTypeName>
+    <BaseTypeName FrameworkAlternate="netcore-3.0">System.Object</BaseTypeName>
   </Base>
   <Interfaces />
   <Docs>
@@ -57,11 +58,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.Configuration.ConfigurationProperty("jitDebugging", DefaultValue=Mono.Cecil.CustomAttributeArgument)</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -69,33 +65,6 @@
         <summary>Gets or sets a value indicating whether just-in-time (JIT) debugging is used.</summary>
         <value>
           <see langword="true" /> if JIT debugging is used; otherwise, <see langword="false" />.</value>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Properties">
-      <MemberSignature Language="C#" Value="protected override System.Configuration.ConfigurationPropertyCollection Properties { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Configuration.ConfigurationPropertyCollection Properties" />
-      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.WindowsFormsSection.Properties" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides ReadOnly Property Properties As ConfigurationPropertyCollection" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual property System::Configuration::ConfigurationPropertyCollection ^ Properties { System::Configuration::ConfigurationPropertyCollection ^ get(); };" />
-      <MemberSignature Language="F#" Value="member this.Properties : System.Configuration.ConfigurationPropertyCollection" Usage="System.Windows.Forms.WindowsFormsSection.Properties" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
-      <ReturnValue>
-        <ReturnType>System.Configuration.ConfigurationPropertyCollection</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>To be added.</summary>
-        <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

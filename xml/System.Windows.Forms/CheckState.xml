@@ -1,4 +1,4 @@
-﻿<Type Name="CheckState" FullName="System.Windows.Forms.CheckState">
+<Type Name="CheckState" FullName="System.Windows.Forms.CheckState">
   <TypeSignature Language="C#" Value="public enum CheckState" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CheckState extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.CheckState" />
@@ -15,7 +15,10 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the state of a control, such as a check box, that can be checked, unchecked, or set to an indeterminate state.</summary>
+    <summary>
+             Specifies the state of a control,  such as a check box, that can be
+             checked, unchecked, or set to an indeterminate state.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -57,7 +60,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The control is checked.</summary>
+        <summary>
+             The control is checked.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Indeterminate">
@@ -79,7 +84,10 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>The control is indeterminate. An indeterminate control generally has a shaded appearance.</summary>
+        <summary>
+             The control is indeterminate. An indeterminate control generally has
+             a shaded appearance.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Unchecked">
@@ -101,7 +109,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>The control is unchecked.</summary>
+        <summary>
+             The control is unchecked.
+            </summary>
       </Docs>
     </Member>
   </Members>

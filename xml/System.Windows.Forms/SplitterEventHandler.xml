@@ -1,4 +1,4 @@
-﻿<Type Name="SplitterEventHandler" FullName="System.Windows.Forms.SplitterEventHandler">
+<Type Name="SplitterEventHandler" FullName="System.Windows.Forms.SplitterEventHandler">
   <TypeSignature Language="C#" Value="public delegate void SplitterEventHandler(object sender, SplitterEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SplitterEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.SplitterEventHandler" />
@@ -24,7 +24,9 @@
   <Docs>
     <param name="sender">The source of the event.</param>
     <param name="e">A <see cref="T:System.Windows.Forms.SplitterEventArgs" /> that contains the event data.</param>
-    <summary>Represents the method that will handle the <see cref="E:System.Windows.Forms.Splitter.SplitterMoving" /> and <see cref="E:System.Windows.Forms.Splitter.SplitterMoved" /> events of a <see cref="T:System.Windows.Forms.Splitter" />.</summary>
+    <summary>
+             Represents a method that will handle splitter events.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

@@ -1,4 +1,4 @@
-﻿<Type Name="IMultitargetHelperService" FullName="System.ComponentModel.Design.IMultitargetHelperService">
+<Type Name="IMultitargetHelperService" FullName="System.ComponentModel.Design.IMultitargetHelperService">
   <TypeSignature Language="C#" Value="public interface IMultitargetHelperService" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMultitargetHelperService" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.IMultitargetHelperService" />
@@ -15,7 +15,9 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>Defines multi-target type name resolution services in a design-time environment.</summary>
+    <summary>
+             Provides multitarget type name resolution services in a design-time environment.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -42,7 +44,9 @@
       </Parameters>
       <Docs>
         <param name="type">The type to resolve.</param>
-        <summary>Resolves a type for the target framework to an assembly-qualified name.</summary>
+        <summary>
+             To be implemented by a VS component that can get resolve a Type for the target framework and return type.AssemblyQualifiedName.
+            </summary>
         <returns>The <see cref="P:System.Type.AssemblyQualifiedName" /> for <paramref name="type" /> in the target framework.</returns>
         <remarks>To be added.</remarks>
       </Docs>

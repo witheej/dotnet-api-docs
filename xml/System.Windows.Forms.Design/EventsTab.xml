@@ -1,4 +1,4 @@
-﻿<Type Name="EventsTab" FullName="System.Windows.Forms.Design.EventsTab">
+<Type Name="EventsTab" FullName="System.Windows.Forms.Design.EventsTab">
   <TypeSignature Language="C#" Value="public class EventsTab : System.Windows.Forms.Design.PropertyTab" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit EventsTab extends System.Windows.Forms.Design.PropertyTab" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.EventsTab" />
@@ -16,7 +16,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a <see cref="T:System.Windows.Forms.Design.PropertyTab" /> that can display events for selection and linking.</summary>
+    <summary>
+             Provides a tab on the property browser to display events for selection and linking.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -44,17 +46,14 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="sp" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
         <param name="sp">An <see cref="T:System.IServiceProvider" /> to use.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.EventsTab" /> class.</summary>
+        <summary>
+             Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.EventsTab" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -80,7 +79,9 @@
       </Parameters>
       <Docs>
         <param name="extendee">The object to test for extensibility.</param>
-        <summary>Gets a value indicating whether the specified object can be extended.</summary>
+        <summary>
+             Gets a value indicating whether the specified object can be extended.
+            </summary>
         <returns>
           <see langword="true" /> if the specified object can be extended; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -108,7 +109,9 @@
       </Parameters>
       <Docs>
         <param name="obj">The object to retrieve the default property of.</param>
-        <summary>Gets the default property from the specified object.</summary>
+        <summary>
+             Gets the default property from the specified object.
+            </summary>
         <returns>A <see cref="T:System.ComponentModel.PropertyDescriptor" /> indicating the default property.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -146,7 +149,9 @@
       <Docs>
         <param name="component">The component to retrieve the properties of.</param>
         <param name="attributes">An array of <see cref="T:System.Attribute" /> that indicates the attributes of the event properties to retrieve.</param>
-        <summary>Gets all the properties of the event tab that match the specified attributes.</summary>
+        <summary>
+             Gets all the properties of the tab.
+            </summary>
         <returns>A <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> that contains the properties. This will be an empty <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> if the component does not implement an event service.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -184,7 +189,9 @@
         <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that can be used to gain context information.</param>
         <param name="component">The component to retrieve the properties of.</param>
         <param name="attributes">An array of type <see cref="T:System.Attribute" /> that indicates the attributes of the event properties to retrieve.</param>
-        <summary>Gets all the properties of the event tab that match the specified attributes and context.</summary>
+        <summary>
+             Gets the properties of the specified component.
+            </summary>
         <returns>A <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> that contains the properties. This will be an empty <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> if the component does not implement an event service.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -207,7 +214,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Help keyword for the tab.</summary>
+        <summary>
+             Gets or sets the help keyword for the tab.
+            </summary>
         <value>The Help keyword for the tab.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -230,7 +239,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of the tab.</summary>
+        <summary>
+             Gets or sets the name of the tab.
+            </summary>
         <value>The name of the tab.</value>
         <remarks>To be added.</remarks>
       </Docs>

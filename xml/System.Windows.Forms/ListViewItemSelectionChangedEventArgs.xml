@@ -1,4 +1,4 @@
-﻿<Type Name="ListViewItemSelectionChangedEventArgs" FullName="System.Windows.Forms.ListViewItemSelectionChangedEventArgs">
+<Type Name="ListViewItemSelectionChangedEventArgs" FullName="System.Windows.Forms.ListViewItemSelectionChangedEventArgs">
   <TypeSignature Language="C#" Value="public class ListViewItemSelectionChangedEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ListViewItemSelectionChangedEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ListViewItemSelectionChangedEventArgs" />
@@ -15,7 +15,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.Forms.ListView.ItemSelectionChanged" /> event.</summary>
+    <summary>
+             The event class that is created when the selection state of a ListViewItem is changed.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -49,11 +51,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="item" Type="System.Windows.Forms.ListViewItem" />
         <Parameter Name="itemIndex" Type="System.Int32" />
@@ -64,7 +61,9 @@
         <param name="itemIndex">The index of the <see cref="T:System.Windows.Forms.ListViewItem" /> whose selection state has changed.</param>
         <param name="isSelected">
           <see langword="true" /> to indicate the item's state has changed to selected; <see langword="false" /> to indicate the item's state has changed to deselected.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListViewItemSelectionChangedEventArgs" /> class.</summary>
+        <summary>
+             Constructs a ListViewItemSelectionChangedEventArgs object.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,16 +80,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the item's state has changed to selected.</summary>
+        <summary>
+             Return true if the item is selected
+            </summary>
         <value>
           <see langword="true" /> if the item's state has changed to selected; <see langword="false" /> if the item's state has changed to deselected.</value>
         <remarks>
@@ -121,16 +117,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ListViewItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the item whose selection state has changed.</summary>
+        <summary>
+             The list view item whose selection changed
+            </summary>
         <value>The <see cref="T:System.Windows.Forms.ListViewItem" /> whose selection state has changed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -160,16 +153,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the index of the item whose selection state has changed.</summary>
+        <summary>
+             The list view item's index
+            </summary>
         <value>The index of the <see cref="T:System.Windows.Forms.ListViewItem" /> whose selection state has changed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -1,4 +1,4 @@
-﻿<Type Name="ToolStripSeparatorRenderEventArgs" FullName="System.Windows.Forms.ToolStripSeparatorRenderEventArgs">
+<Type Name="ToolStripSeparatorRenderEventArgs" FullName="System.Windows.Forms.ToolStripSeparatorRenderEventArgs">
   <TypeSignature Language="C#" Value="public class ToolStripSeparatorRenderEventArgs : System.Windows.Forms.ToolStripItemRenderEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolStripSeparatorRenderEventArgs extends System.Windows.Forms.ToolStripItemRenderEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripSeparatorRenderEventArgs" />
@@ -15,7 +15,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.Forms.ToolStripRenderer.RenderGrip" /> event.</summary>
+    <summary>
+             This class represents all the information to render the ToolStrip
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -44,11 +46,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="g" Type="System.Drawing.Graphics" />
         <Parameter Name="separator" Type="System.Windows.Forms.ToolStripSeparator" />
@@ -58,7 +55,9 @@
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> to paint with.</param>
         <param name="separator">The <see cref="T:System.Windows.Forms.ToolStripSeparator" /> to be painted.</param>
         <param name="vertical">A value indicating whether or not the <see cref="T:System.Windows.Forms.ToolStripSeparator" /> is to be drawn vertically.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripSeparatorRenderEventArgs" /> class.</summary>
+        <summary>
+             This class represents all the information to render the ToolStrip
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,11 +74,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>

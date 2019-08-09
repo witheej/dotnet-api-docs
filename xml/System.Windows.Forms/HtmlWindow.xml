@@ -1,4 +1,4 @@
-﻿<Type Name="HtmlWindow" FullName="System.Windows.Forms.HtmlWindow">
+<Type Name="HtmlWindow" FullName="System.Windows.Forms.HtmlWindow">
   <TypeSignature Language="C#" Value="public sealed class HtmlWindow" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HtmlWindow extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.HtmlWindow" />
@@ -290,11 +290,6 @@ The following example displays a <xref:System.Windows.Forms.HtmlWindow.Confirm%2
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -703,7 +698,9 @@ The following example displays a <xref:System.Windows.Forms.HtmlWindow.Confirm%2
       </Parameters>
       <Docs>
         <param name="point">The x- and y-coordinates of the window's upper-left corner.</param>
-        <summary>Moves the window to the specified coordinates on the screen.</summary>
+        <summary>
+             Moves the Window to the point requested
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -741,7 +738,9 @@ The following example displays a <xref:System.Windows.Forms.HtmlWindow.Confirm%2
       <Docs>
         <param name="x">The x-coordinate of the window's upper-left corner.</param>
         <param name="y">The y-coordinate of the window's upper-left corner.</param>
-        <summary>Moves the window to the specified coordinates on the screen.</summary>
+        <summary>
+             Moves the Window to the position requested
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -772,7 +771,9 @@ The following example displays a <xref:System.Windows.Forms.HtmlWindow.Confirm%2
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the window.</summary>
+        <summary>
+             Name of the NativeHtmlWindow
+            </summary>
         <value>A <see cref="T:System.String" /> representing the name.</value>
         <remarks>To be added.</remarks>
         <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/ms534187.aspx">name Property</related>
@@ -1417,7 +1418,9 @@ The following example displays a <xref:System.Windows.Forms.HtmlWindow.Confirm%2
       </Parameters>
       <Docs>
         <param name="size">A <see cref="T:System.Drawing.Size" /> describing the desired width and height of the window, in pixels. Must be 100 pixels or more in both dimensions.</param>
-        <summary>Changes the size of the window to the specified dimensions.</summary>
+        <summary>
+             Resize the window to the Size requested
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1456,7 +1459,9 @@ The following example displays a <xref:System.Windows.Forms.HtmlWindow.Confirm%2
       <Docs>
         <param name="width">Describes the desired width of the window, in pixels. Must be 100 pixels or more.</param>
         <param name="height">Describes the desired height of the window, in pixels. Must be 100 pixels or more.</param>
-        <summary>Changes the size of the window to the specified dimensions.</summary>
+        <summary>
+             Resize the window to the width/height requested
+            </summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.UnauthorizedAccessException">The window you are trying to resize is in a different domain than its parent window. This restriction is part of cross-frame scripting security; for more information, see [About Cross-Frame Scripting and Security](https://msdn.microsoft.com/library/ms533028.aspx).</exception>
       </Docs>
@@ -1524,7 +1529,9 @@ The following example displays a <xref:System.Windows.Forms.HtmlWindow.Confirm%2
       </Parameters>
       <Docs>
         <param name="point">The x- and y-coordinates, relative to the top-left corner of the current window, toward which the page should scroll.</param>
-        <summary>Moves the window to the specified coordinates.</summary>
+        <summary>
+             Scroll the window to the point requested
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1567,7 +1574,9 @@ The following example displays a <xref:System.Windows.Forms.HtmlWindow.Confirm%2
       <Docs>
         <param name="x">The x-coordinate, relative to the top-left corner of the current window, toward which the page should scroll.</param>
         <param name="y">The y-coordinate, relative to the top-left corner of the current window, toward which the page should scroll.</param>
-        <summary>Scrolls the window to the designated position.</summary>
+        <summary>
+             Scroll the window to the position requested
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1595,7 +1604,9 @@ The following example displays a <xref:System.Windows.Forms.HtmlWindow.Confirm%2
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the size of the current window.</summary>
+        <summary>
+             Gets or sets size for the window
+            </summary>
         <value>A <see cref="T:System.Drawing.Size" /> describing the size of the window in pixels.</value>
         <remarks>To be added.</remarks>
       </Docs>

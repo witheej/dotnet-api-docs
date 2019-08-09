@@ -1,4 +1,4 @@
-﻿<Type Name="DrawMode" FullName="System.Windows.Forms.DrawMode">
+<Type Name="DrawMode" FullName="System.Windows.Forms.DrawMode">
   <TypeSignature Language="C#" Value="public enum DrawMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DrawMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DrawMode" />
@@ -15,7 +15,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies how the elements of a control are drawn.</summary>
+    <summary>
+             Specifies responsibility for drawing a control or portion of a control.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -63,7 +65,10 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>All the elements in a control are drawn by the operating system and are of the same size.</summary>
+        <summary>
+             The operating system paints the items in the control, and the items
+             are each the same height.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="OwnerDrawFixed">
@@ -85,7 +90,10 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>All the elements in the control are drawn manually and are of the same size.</summary>
+        <summary>
+             The programmer explicitly paints the items in the control, and the
+             items are each the same height.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="OwnerDrawVariable">
@@ -107,7 +115,10 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>All the elements in the control are drawn manually and can differ in size.</summary>
+        <summary>
+             The programmer explicitly paints the items in the control manually,
+             and they may be different heights.
+            </summary>
       </Docs>
     </Member>
   </Members>

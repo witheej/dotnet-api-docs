@@ -1,4 +1,4 @@
-﻿<Type Name="PropertyValueUIItem" FullName="System.Drawing.Design.PropertyValueUIItem">
+<Type Name="PropertyValueUIItem" FullName="System.Drawing.Design.PropertyValueUIItem">
   <TypeSignature Language="C#" Value="public class PropertyValueUIItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PropertyValueUIItem extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Design.PropertyValueUIItem" />
@@ -20,7 +20,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides information about a property displayed in the Properties window, including the associated event handler, pop-up information string, and the icon to display for the property.</summary>
+    <summary>
+             Provides information about the property value UI including the invoke handler, tool tip and glyph icon.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -61,10 +63,11 @@
         <Parameter Name="tooltip" Type="System.String" />
       </Parameters>
       <Docs>
-        <param name="uiItemImage">The icon to display. The image must be 8 x 8 pixels.</param>
-        <param name="handler">The handler to invoke when the image is double-clicked.</param>
-        <param name="tooltip">The <see cref="P:System.Drawing.Design.PropertyValueUIItem.ToolTip" /> to display for the property that this <see cref="T:System.Drawing.Design.PropertyValueUIItem" /> is associated with.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Design.PropertyValueUIItem" /> class.</summary>
+        <param name="uiItemImage">
+          <see cref="T:System.Drawing.Image" /> representing the 8 x 8 icon to display.</param>
+        <param name="handler">The <see cref="T:System.Drawing.Design.PropertyValueUIItemInvokeHandler" /> to invoke when the item is double clicked.</param>
+        <param name="tooltip">The ToolTip to display for this item.</param>
+        <summary>Constructor that accepts the necessary information to display this item.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -101,16 +104,11 @@
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Image</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the 8 x 8 pixel image that will be drawn in the Properties window.</summary>
+        <summary>Gets the 8 x 8 pixel image that will be drawn on the properties window.</summary>
         <value>The image to use for the property icon.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -141,16 +139,11 @@
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Design.PropertyValueUIItemInvokeHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the handler that is raised when a user double-clicks this item.</summary>
+        <summary>Gets the handler that will be raised when this item is double clicked.</summary>
         <value>A <see cref="T:System.Drawing.Design.PropertyValueUIItemInvokeHandler" /> indicating the event handler for this user interface (UI) item.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Drawing.Design.IPropertyValueUIService" />
@@ -180,7 +173,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Resets the user interface (UI) item.</summary>
+        <summary>Resets the UI item.</summary>
         <remarks>To be added.</remarks>
         <block subset="none" type="overrides">
           <para>Derived classes can override this member to implement the redrawing of the UI item.</para>
@@ -205,16 +198,11 @@
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the information string to display for this item.</summary>
+        <summary>Gets the ToolTip to display for this item.</summary>
         <value>A string containing the information string to display for this item.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Drawing.Design.IPropertyValueUIService" />

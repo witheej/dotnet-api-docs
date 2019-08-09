@@ -1,4 +1,4 @@
-﻿<Type Name="IContainerControl" FullName="System.Windows.Forms.IContainerControl">
+<Type Name="IContainerControl" FullName="System.Windows.Forms.IContainerControl">
   <TypeSignature Language="C#" Value="public interface IContainerControl" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IContainerControl" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.IContainerControl" />
@@ -13,7 +13,9 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>Provides the functionality for a control to act as a parent for other controls.</summary>
+    <summary>
+             Provides functionality for a control to parent other controls.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -57,7 +59,9 @@
       </Parameters>
       <Docs>
         <param name="active">The <see cref="T:System.Windows.Forms.Control" /> being activated.</param>
-        <summary>Activates a specified control.</summary>
+        <summary>
+             Activates the specified control.
+            </summary>
         <returns>
           <see langword="true" /> if the control is successfully activated; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -97,7 +101,9 @@
         <ReturnType>System.Windows.Forms.Control</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the control that is active on the container control.</summary>
+        <summary>
+             Indicates the control that is currently active on the container control.
+            </summary>
         <value>The <see cref="T:System.Windows.Forms.Control" /> that is currently active on the container control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

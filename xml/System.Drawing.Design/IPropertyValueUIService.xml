@@ -1,4 +1,4 @@
-﻿<Type Name="IPropertyValueUIService" FullName="System.Drawing.Design.IPropertyValueUIService">
+<Type Name="IPropertyValueUIService" FullName="System.Drawing.Design.IPropertyValueUIService">
   <TypeSignature Language="C#" Value="public interface IPropertyValueUIService" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IPropertyValueUIService" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Design.IPropertyValueUIService" />
@@ -17,7 +17,9 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>Provides an interface to manage the images, ToolTips, and event handlers for the properties of a component displayed in a property browser.</summary>
+    <summary>
+             Provides an interface to manage the images, ToolTips, and event handlers for the properties of a component displayed in a property browser.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -70,8 +72,10 @@
         <Parameter Name="newHandler" Type="System.Drawing.Design.PropertyValueUIHandler" />
       </Parameters>
       <Docs>
-        <param name="newHandler">The property value UI handler to add.</param>
-        <summary>Adds the specified <see cref="T:System.Drawing.Design.PropertyValueUIHandler" /> to this service.</summary>
+        <param name="newHandler">The UI handler to add. </param>
+        <summary>
+             Adds the specified <see cref="T:System.Drawing.Design.PropertyValueUIHandler" /> to this service.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -109,9 +113,11 @@
         <Parameter Name="propDesc" Type="System.ComponentModel.PropertyDescriptor" />
       </Parameters>
       <Docs>
-        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that can be used to gain additional context information.</param>
-        <param name="propDesc">A <see cref="T:System.ComponentModel.PropertyDescriptor" /> that indicates the property to match with the properties to return.</param>
-        <summary>Gets the <see cref="T:System.Drawing.Design.PropertyValueUIItem" /> objects that match the specified context and property descriptor characteristics.</summary>
+        <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that can be used to gain additional context information. </param>
+        <param name="propDesc">A <see cref="T:System.ComponentModel.PropertyDescriptor" /> that indicates the property to match with the properties to return. </param>
+        <summary>
+             Gets the <see cref="T:System.Drawing.Design.PropertyValueUIItem" /> objects that match the specified context and property descriptor characteristics.
+            </summary>
         <returns>An array of <see cref="T:System.Drawing.Design.PropertyValueUIItem" /> objects that match the specified parameters.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -139,7 +145,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Notifies the <see cref="T:System.Drawing.Design.IPropertyValueUIService" /> implementation that the global list of <see cref="T:System.Drawing.Design.PropertyValueUIItem" /> objects has been modified.</summary>
+        <summary>
+             Notifies the <see cref="T:System.Drawing.Design.IPropertyValueUIService" /> implementation that the global list of <see cref="T:System.Drawing.Design.PropertyValueUIItem" /> has been modified.
+             </summary>
         <remarks>To be added.</remarks>
         <altmember cref="E:System.Drawing.Design.IPropertyValueUIService.PropertyUIValueItemsChanged" />
       </Docs>
@@ -166,7 +174,9 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the list of <see cref="T:System.Drawing.Design.PropertyValueUIItem" /> objects is modified.</summary>
+        <summary>
+             Adds or removes an <see cref="T:System.EventHandler" /> that will be invoked when the global list of <see cref="T:System.Drawing.Design.PropertyValueUIItem" /> is modified.
+             </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -204,7 +214,9 @@
       </Parameters>
       <Docs>
         <param name="newHandler">The handler to remove.</param>
-        <summary>Removes the specified <see cref="T:System.Drawing.Design.PropertyValueUIHandler" /> from the property value UI service.</summary>
+        <summary>
+             Removes a <see cref="T:System.Drawing.Design.PropertyValueUIHandler" /> from this service.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Drawing.Design.PropertyValueUIHandler" />
       </Docs>

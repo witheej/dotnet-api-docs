@@ -1,4 +1,4 @@
-﻿<Type Name="OSFeature" FullName="System.Windows.Forms.OSFeature">
+<Type Name="OSFeature" FullName="System.Windows.Forms.OSFeature">
   <TypeSignature Language="C#" Value="public class OSFeature : System.Windows.Forms.FeatureSupport" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit OSFeature extends System.Windows.Forms.FeatureSupport" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.OSFeature" />
@@ -16,7 +16,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides operating-system specific feature queries.</summary>
+    <summary>
+             Provides operating-system specific feature queries.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -57,14 +59,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.OSFeature" /> class.</summary>
+        <summary>
+             Initializes a new instance of the <see cref="T:System.Windows.Forms.OSFeature" /> class.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -94,7 +93,10 @@
         <ReturnType>System.Windows.Forms.OSFeature</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see langword="static" /> instance of the <see cref="T:System.Windows.Forms.OSFeature" /> class to use for feature queries. This property is read-only.</summary>
+        <summary>
+             Represents the <see langword="static" /> instance of <see cref="T:System.Windows.Forms.OSFeature" />
+             to use for feature queries. This property is read-only.
+            </summary>
         <value>An instance of the <see cref="T:System.Windows.Forms.OSFeature" /> class.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -143,7 +145,9 @@
       </Parameters>
       <Docs>
         <param name="feature">The feature whose version is requested, either <see cref="F:System.Windows.Forms.OSFeature.LayeredWindows" /> or <see cref="F:System.Windows.Forms.OSFeature.Themes" />.</param>
-        <summary>Retrieves the version of the specified feature currently available on the system.</summary>
+        <summary>
+             Retrieves the version of the specified feature currently available on the system.
+            </summary>
         <returns>A <see cref="T:System.Version" /> representing the version of the specified operating system feature currently available on the system; or <see langword="null" /> if the feature cannot be found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -185,11 +189,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="enumVal" Type="System.Windows.Forms.SystemParameter" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="enumVal" Type="System.Windows.Forms.SystemParameter" />
       </Parameters>
       <Docs>
         <param name="enumVal">A <see cref="T:System.Windows.Forms.SystemParameter" /> representing the feature to search for.</param>
-        <summary>Retrieves a value indicating whether the operating system supports the specified feature or metric.</summary>
+        <summary>
+             Retrieves whether SystemParameterType is supported on the Current OS version.
+            </summary>
         <returns>
           <see langword="true" /> if the feature is available on the system; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -236,7 +242,10 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the layered, top-level windows feature. This field is read-only.</summary>
+        <summary>
+             Represents the layered, top-level windows feature. This <see langword="static" /> field
+             is read-only.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -281,7 +290,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the operating system themes feature. This field is read-only.</summary>
+        <summary>
+             Determines if the OS supports themes
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

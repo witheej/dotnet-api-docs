@@ -1,4 +1,4 @@
-﻿<Type Name="PropertyGrid+PropertyTabCollection" FullName="System.Windows.Forms.PropertyGrid+PropertyTabCollection">
+<Type Name="PropertyGrid+PropertyTabCollection" FullName="System.Windows.Forms.PropertyGrid+PropertyTabCollection">
   <TypeSignature Language="C#" Value="public class PropertyGrid.PropertyTabCollection : System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit PropertyGrid/PropertyTabCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PropertyGrid.PropertyTabCollection" />
@@ -121,7 +121,10 @@
       </Parameters>
       <Docs>
         <param name="tabScope">The scope of the tabs to clear.</param>
-        <summary>Removes all the **Property** tabs of the specified scope from the collection.</summary>
+        <summary>
+             Clears the tabs of the given scope or smaller.
+             tabScope must be PropertyTabScope.Component or PropertyTabScope.Document.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -154,7 +157,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of **Property** tabs in the collection.</summary>
+        <summary>
+             Retrieves the number of member attributes.
+            </summary>
         <value>The number of **Property** tabs in the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -181,7 +186,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an enumeration of all the **Property** tabs in the collection.</summary>
+        <summary>
+             Creates and retrieves a new enumerator for this collection.
+            </summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> for the <see cref="T:System.Windows.Forms.PropertyGrid.PropertyTabCollection" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -217,7 +224,9 @@
       </Parameters>
       <Docs>
         <param name="index">The index of the <see cref="T:System.Windows.Forms.Design.PropertyTab" /> to return.</param>
-        <summary>Gets the <see cref="T:System.Windows.Forms.Design.PropertyTab" /> at the specified index.</summary>
+        <summary>
+             Retrieves the member attribute with the specified index.
+            </summary>
         <value>The <see cref="T:System.Windows.Forms.Design.PropertyTab" /> at the specified index.</value>
         <remarks>To be added.</remarks>
       </Docs>

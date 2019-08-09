@@ -1,4 +1,4 @@
-﻿<Type Name="CollectionEditor" FullName="System.ComponentModel.Design.CollectionEditor">
+<Type Name="CollectionEditor" FullName="System.ComponentModel.Design.CollectionEditor">
   <TypeSignature Language="C#" Value="public class CollectionEditor : System.Drawing.Design.UITypeEditor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CollectionEditor extends System.Drawing.Design.UITypeEditor" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.CollectionEditor" />
@@ -20,7 +20,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a user interface that can edit most types of collections at design time.</summary>
+    <summary>
+             Provides a generic editor for most any collection.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -56,17 +58,14 @@
         <AssemblyName>System.Windows.Forms.Design.Editors</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
         <param name="type">The type of the collection for this editor to edit.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.CollectionEditor" /> class using the specified collection type.</summary>
+        <summary>
+             Initializes a new instance of the <see cref="T:System.ComponentModel.Design.CollectionEditor" /> class using the specified collection type.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,7 +91,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Cancels changes to the collection.</summary>
+        <summary>
+             Useful for derived classes to do processing when cancelling changes
+            </summary>
         <remarks>To be added.</remarks>
         <block subset="none" type="overrides">
           <para>Override this method if you need to perform additional processing when changes to the collection are canceled.</para>
@@ -125,7 +126,9 @@
       </Parameters>
       <Docs>
         <param name="value">The value to remove.</param>
-        <summary>Indicates whether original members of the collection can be removed.</summary>
+        <summary>
+             Gets or sets a value indicating whether original members of the collection can be removed.
+            </summary>
         <returns>
           <see langword="true" /> if it is permissible to remove this value from the collection; otherwise, <see langword="false" />. The default implementation always returns <see langword="true" />.</returns>
         <remarks>
@@ -163,7 +166,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Indicates whether multiple collection items can be selected at once.</summary>
+        <summary>
+             Gets or sets a value indicating whether multiple collection members can be selected.
+            </summary>
         <returns>
           <see langword="true" /> if it multiple collection members can be selected at the same time; otherwise, <see langword="false" />. By default, this returns <see langword="true" />.</returns>
         <remarks>
@@ -198,7 +203,9 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the data type of each item in the collection.</summary>
+        <summary>
+             Gets or sets the data type of each item in the collection.
+            </summary>
         <value>The data type of the collection items.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -228,16 +235,13 @@
         <AssemblyName>System.Windows.Forms.Design.Editors</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the data type of the collection object.</summary>
+        <summary>
+             Gets or sets the type of the collection.
+            </summary>
         <value>The data type of the collection object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -267,16 +271,13 @@
         <AssemblyName>System.Windows.Forms.Design.Editors</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.ComponentModel.ITypeDescriptorContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a type descriptor that indicates the current context.</summary>
+        <summary>
+             Gets or sets a type descriptor that indicates the current context.
+            </summary>
         <value>An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that indicates the context currently in use, or <see langword="null" /> if no context is available.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -304,7 +305,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a new form to display and edit the current collection.</summary>
+        <summary>
+             Creates a new form to show the current collection.
+            </summary>
         <returns>A <see cref="T:System.ComponentModel.Design.CollectionEditor.CollectionForm" /> to provide as the user interface for editing the collection.</returns>
         <remarks>To be added.</remarks>
         <block subset="none" type="overrides">
@@ -335,7 +338,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the data type that this collection contains.</summary>
+        <summary>
+             Gets an instance of the data type this collection contains.
+            </summary>
         <returns>The data type of the items in the collection, or an <see cref="T:System.Object" /> if no <see langword="Item" /> property can be located on the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -380,7 +385,9 @@
       </Parameters>
       <Docs>
         <param name="itemType">The type of item to create.</param>
-        <summary>Creates a new instance of the specified collection item type.</summary>
+        <summary>
+             Creates a new instance of the specified collection item type.
+            </summary>
         <returns>A new instance of the specified object.</returns>
         <remarks>To be added.</remarks>
         <block subset="none" type="overrides">
@@ -411,7 +418,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the data types that this collection editor can contain.</summary>
+        <summary>
+             Gets the data types this collection editor can create.
+            </summary>
         <returns>An array of data types that this collection can contain.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -456,7 +465,9 @@
       </Parameters>
       <Docs>
         <param name="instance">The object to destroy.</param>
-        <summary>Destroys the specified instance of the object.</summary>
+        <summary>
+             Destroys the specified instance of the object.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -490,7 +501,9 @@
         <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that can be used to gain additional context information.</param>
         <param name="provider">A service provider object through which editing services can be obtained.</param>
         <param name="value">The object to edit the value of.</param>
-        <summary>Edits the value of the specified object using the specified service provider and context.</summary>
+        <summary>
+             Edits the specified object value using the editor style  provided by <see cref="M:System.ComponentModel.Design.CollectionEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)" />.
+            </summary>
         <returns>The new value of the object. If the value of the object has not changed, this should return the same object it was passed.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ComponentModel.Design.CheckoutException">An attempt to check out a file that is checked into a source code management program did not succeed.</exception>
@@ -517,11 +530,13 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Object" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
         <param name="value">The list item for which to retrieve display text.</param>
-        <summary>Retrieves the display text for the given list item.</summary>
+        <summary>
+             Retrieves the display text for the given list item.
+            </summary>
         <returns>The display text for <paramref name="value" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -552,7 +567,9 @@
       </Parameters>
       <Docs>
         <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that can be used to gain additional context information.</param>
-        <summary>Gets the edit style used by the <see cref="M:System.ComponentModel.Design.CollectionEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)" /> method.</summary>
+        <summary>
+             Gets the editing style of the Edit method.
+            </summary>
         <returns>A <see cref="T:System.Drawing.Design.UITypeEditorEditStyle" /> enumeration value indicating the provided editing style. If the method is not supported in the specified context, this method will return the <see cref="F:System.Drawing.Design.UITypeEditorEditStyle.None" /> identifier.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -583,7 +600,9 @@
       </Parameters>
       <Docs>
         <param name="editValue">The collection to edit.</param>
-        <summary>Gets an array of objects containing the specified collection.</summary>
+        <summary>
+             Converts the specified collection into an array of objects.
+            </summary>
         <returns>An array containing the collection objects, or an empty object array if the specified collection does not inherit from <see cref="T:System.Collections.ICollection" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -609,11 +628,14 @@
         <ReturnType>System.Collections.IList</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="instance" Type="System.Object" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="instance" Type="System.Object" />
       </Parameters>
       <Docs>
         <param name="instance">An <see cref="T:System.Collections.ArrayList" /> returned as an object.</param>
-        <summary>Returns a list containing the given object</summary>
+        <summary>
+             This Function gets the object from the givem object. The input is an arrayList returned as an Object.
+             The output is a arraylist which contains the individual objects that need to be created.
+            </summary>
         <returns>An <see cref="T:System.Collections.ArrayList" /> which contains the individual objects to be created.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -644,7 +666,9 @@
       </Parameters>
       <Docs>
         <param name="serviceType">The type of service to retrieve.</param>
-        <summary>Gets the requested service, if it is available.</summary>
+        <summary>
+             Gets the requested service, if it is available.
+            </summary>
         <returns>An instance of the service, or <see langword="null" /> if the service cannot be found.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -671,7 +695,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Help keyword to display the Help topic or topic list for when the editor's dialog box Help button or the F1 key is pressed.</summary>
+        <summary>
+             Gets the help topic to display for the dialog help button or pressing F1. Override to display a different help topic.
+            </summary>
         <value>The Help keyword to display the Help topic or topic list for when Help is requested from the editor.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -705,7 +731,9 @@
         <ReturnType>System.Type[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the available types of items that can be created for this collection.</summary>
+        <summary>
+             Gets or sets the available item types that can be created for this collection.
+            </summary>
         <value>The types of items that can be created.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -745,7 +773,9 @@
       <Docs>
         <param name="editValue">The collection to edit.</param>
         <param name="value">An array of objects to set as the collection items.</param>
-        <summary>Sets the specified array as the items of the collection.</summary>
+        <summary>
+             Sets the specified collection to have the specified array of items.
+            </summary>
         <returns>The newly created collection object or, otherwise, the collection indicated by the <paramref name="editValue" /> parameter.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -780,7 +810,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Displays the default Help topic for the collection editor.</summary>
+        <summary>
+             Called when the help button is clicked.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

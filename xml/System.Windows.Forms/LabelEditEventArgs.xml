@@ -1,4 +1,4 @@
-﻿<Type Name="LabelEditEventArgs" FullName="System.Windows.Forms.LabelEditEventArgs">
+<Type Name="LabelEditEventArgs" FullName="System.Windows.Forms.LabelEditEventArgs">
   <TypeSignature Language="C#" Value="public class LabelEditEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit LabelEditEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.LabelEditEventArgs" />
@@ -16,7 +16,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.Forms.ListView.BeforeLabelEdit" /> and <see cref="E:System.Windows.Forms.ListView.AfterLabelEdit" /> events.</summary>
+    <summary>
+             Provides data for the <see cref="P:System.Windows.Forms.ListView.LabelEdit" /> event.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -71,7 +73,11 @@
       </Parameters>
       <Docs>
         <param name="item">The zero-based index of the <see cref="T:System.Windows.Forms.ListViewItem" />, containing the label to edit.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.LabelEditEventArgs" /> class with the specified index to the <see cref="T:System.Windows.Forms.ListViewItem" /> to edit.</summary>
+        <summary>
+             Initializes a new instance of the <see cref="T:System.Windows.Forms.LabelEditEventArgs" />
+             class with the specified index to the <see cref="T:System.Windows.Forms.ListViewItem" />
+             to edit.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -96,11 +102,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="item" Type="System.Int32" />
         <Parameter Name="label" Type="System.String" />
@@ -108,7 +109,11 @@
       <Docs>
         <param name="item">The zero-based index of the <see cref="T:System.Windows.Forms.ListViewItem" />, containing the label to edit.</param>
         <param name="label">The new text assigned to the label of the <see cref="T:System.Windows.Forms.ListViewItem" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.LabelEditEventArgs" /> class with the specified index to the <see cref="T:System.Windows.Forms.ListViewItem" /> being edited and the new text for the label of the <see cref="T:System.Windows.Forms.ListViewItem" />.</summary>
+        <summary>
+             Initializes a new instance of the <see cref="T:System.Windows.Forms.LabelEditEventArgs" />
+             class with the specified index to the <see cref="T:System.Windows.Forms.ListViewItem" />
+             being edited and the new text for the label of the <see cref="T:System.Windows.Forms.ListViewItem" />.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -133,19 +138,14 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether changes made to the label of the <see cref="T:System.Windows.Forms.ListViewItem" /> should be canceled.</summary>
+        <summary>
+             Gets or sets a value indicating whether changes made to the label of the
+            <see cref="T:System.Windows.Forms.ListViewItem" /> should be canceled.
+            </summary>
         <value>
           <see langword="true" /> if the edit operation of the label for the <see cref="T:System.Windows.Forms.ListViewItem" /> should be canceled; otherwise <see langword="false" />.</value>
         <remarks>
@@ -181,16 +181,14 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the zero-based index of the <see cref="T:System.Windows.Forms.ListViewItem" /> containing the label to edit.</summary>
+        <summary>
+             Gets the zero-based index of the <see cref="T:System.Windows.Forms.ListViewItem" /> containing
+             the label to edit.
+            </summary>
         <value>The zero-based index of the <see cref="T:System.Windows.Forms.ListViewItem" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -220,16 +218,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the new text assigned to the label of the <see cref="T:System.Windows.Forms.ListViewItem" />.</summary>
+        <summary>
+             Gets the new text assigned to the label of the <see cref="T:System.Windows.Forms.ListViewItem" />.
+            </summary>
         <value>The new text to associate with the <see cref="T:System.Windows.Forms.ListViewItem" /> or <see langword="null" /> if the text is unchanged.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

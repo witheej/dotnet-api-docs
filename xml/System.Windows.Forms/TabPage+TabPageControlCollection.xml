@@ -1,4 +1,4 @@
-﻿<Type Name="TabPage+TabPageControlCollection" FullName="System.Windows.Forms.TabPage+TabPageControlCollection">
+<Type Name="TabPage+TabPageControlCollection" FullName="System.Windows.Forms.TabPage+TabPageControlCollection">
   <TypeSignature Language="C#" Value="public class TabPage.TabPageControlCollection : System.Windows.Forms.Control.ControlCollection" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit TabPage/TabPageControlCollection extends System.Windows.Forms.Control/ControlCollection" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TabPage.TabPageControlCollection" />
@@ -21,7 +21,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Contains the collection of controls that the <see cref="T:System.Windows.Forms.TabPage" /> uses.</summary>
+    <summary>
+             Our control collection will throw an exception if you try to add other tab pages.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -39,17 +41,14 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="owner" Type="System.Windows.Forms.TabPage" />
       </Parameters>
       <Docs>
         <param name="owner">The <see cref="T:System.Windows.Forms.TabPage" /> that contains this collection of controls.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TabPage.TabPageControlCollection" /> class.</summary>
+        <summary>
+             Creates a new TabPageControlCollection.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -75,7 +74,13 @@
       </Parameters>
       <Docs>
         <param name="value">The control to add.</param>
-        <summary>Adds a control to the collection.</summary>
+        <summary>
+             Adds a child control to this control. The control becomes the last control
+             in the child control list. If the control is already a child of another
+             control it is first removed from that control. The tab page overrides
+             this method to ensure that child tab pages are not added to it, as these
+             are illegal.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

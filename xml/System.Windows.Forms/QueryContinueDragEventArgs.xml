@@ -1,4 +1,4 @@
-﻿<Type Name="QueryContinueDragEventArgs" FullName="System.Windows.Forms.QueryContinueDragEventArgs">
+<Type Name="QueryContinueDragEventArgs" FullName="System.Windows.Forms.QueryContinueDragEventArgs">
   <TypeSignature Language="C#" Value="public class QueryContinueDragEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit QueryContinueDragEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.QueryContinueDragEventArgs" />
@@ -21,7 +21,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.Forms.Control.QueryContinueDrag" /> event.</summary>
+    <summary>
+             Provides data for the <see cref="E:System.Windows.Forms.Control.QueryContinueDrag" /> event.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -61,11 +63,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="keyState" Type="System.Int32" />
         <Parameter Name="escapePressed" Type="System.Boolean" />
@@ -76,7 +73,9 @@
         <param name="escapePressed">
           <see langword="true" /> if the ESC key was pressed; otherwise, <see langword="false" />.</param>
         <param name="action">A <see cref="T:System.Windows.Forms.DragAction" /> value.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.QueryContinueDragEventArgs" /> class.</summary>
+        <summary>
+             Initializes a new instance of the <see cref="T:System.Windows.Forms.QueryContinueDragEventArgs" /> class.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Windows.Forms.DragAction" />
         <altmember cref="M:System.Windows.Forms.Control.DoDragDrop(System.Object,System.Windows.Forms.DragDropEffects)" />
@@ -96,19 +95,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DragAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the status of a drag-and-drop operation.</summary>
+        <summary>
+             Gets or sets the status of a drag-and-drop operation.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.DragAction" /> value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -145,16 +138,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets whether the user pressed the ESC key.</summary>
+        <summary>
+             Gets a value indicating whether the user pressed the ESC key.
+            </summary>
         <value>
           <see langword="true" /> if the ESC key was pressed; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -192,16 +182,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current state of the SHIFT, CTRL, and ALT keys.</summary>
+        <summary>
+             Gets a value indicating the current state of the SHIFT, CTRL, and ALT keys.
+            </summary>
         <value>The current state of the SHIFT, CTRL, and ALT keys.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

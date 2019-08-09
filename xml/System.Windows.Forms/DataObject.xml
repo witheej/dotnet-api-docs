@@ -1,4 +1,4 @@
-﻿<Type Name="DataObject" FullName="System.Windows.Forms.DataObject">
+<Type Name="DataObject" FullName="System.Windows.Forms.DataObject">
   <TypeSignature Language="C#" Value="public class DataObject : System.Runtime.InteropServices.ComTypes.IDataObject, System.Windows.Forms.IDataObject" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataObject extends System.Object implements class System.Runtime.InteropServices.ComTypes.IDataObject, class System.Windows.Forms.IDataObject" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataObject" />
@@ -28,7 +28,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Implements a basic data transfer mechanism.</summary>
+    <summary>
+             Implements a basic data transfer mechanism.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -98,7 +100,10 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataObject" /> class.</summary>
+        <summary>
+             Initializes a new instance of the <see cref="T:System.Windows.Forms.DataObject" />
+             class, which can store arbitrary data.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -135,7 +140,9 @@
       </Parameters>
       <Docs>
         <param name="data">The data to store.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataObject" /> class and adds the specified object to it.</summary>
+        <summary>
+             Initializes a new instance of the <see cref="T:System.Windows.Forms.DataObject" /> class, containing the specified data.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -181,7 +188,10 @@
       <Docs>
         <param name="format">The format of the specified data. See <see cref="T:System.Windows.Forms.DataFormats" /> for predefined formats.</param>
         <param name="data">The data to store.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataObject" /> class and adds the specified object in the specified format.</summary>
+        <summary>
+             Initializes a new instance of the <see cref="T:System.Windows.Forms.DataObject" /> class, containing the specified data and its
+             associated format.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -328,11 +338,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -371,7 +376,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="format" Type="System.Windows.Forms.TextDataFormat" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="format" Type="System.Windows.Forms.TextDataFormat" />
       </Parameters>
       <Docs>
         <param name="format">One of the <see cref="T:System.Windows.Forms.TextDataFormat" /> values.</param>
@@ -460,11 +465,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -473,7 +473,10 @@
       </Parameters>
       <Docs>
         <param name="format">The format of the data to retrieve. See <see cref="T:System.Windows.Forms.DataFormats" /> for predefined formats.</param>
-        <summary>Returns the data associated with the specified data format.</summary>
+        <summary>
+             Retrieves the data associated with the specified data
+             format.
+            </summary>
         <returns>The data associated with the specified format, or <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -532,7 +535,10 @@
       </Parameters>
       <Docs>
         <param name="format">A <see cref="T:System.Type" /> representing the format of the data to retrieve.</param>
-        <summary>Returns the data associated with the specified class type format.</summary>
+        <summary>
+             Retrieves the data associated with the specified class
+             type format.
+            </summary>
         <returns>The data associated with the specified format, or <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -593,7 +599,11 @@
         <param name="format">The format of the data to retrieve. See <see cref="T:System.Windows.Forms.DataFormats" /> for predefined formats.</param>
         <param name="autoConvert">
           <see langword="true" /> to the convert data to the specified format; otherwise, <see langword="false" />.</param>
-        <summary>Returns the data associated with the specified data format, using an automated conversion parameter to determine whether to convert the data to the format.</summary>
+        <summary>
+             Retrieves the data associated with the specified data
+             format, using an automated conversion parameter to determine whether to convert
+             the data to the format.
+            </summary>
         <returns>The data associated with the specified format, or <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -671,7 +681,11 @@
       </Parameters>
       <Docs>
         <param name="format">The format to check for. See <see cref="T:System.Windows.Forms.DataFormats" /> for predefined formats.</param>
-        <summary>Determines whether data stored in this <see cref="T:System.Windows.Forms.DataObject" /> is associated with, or can be converted to, the specified format.</summary>
+        <summary>
+             Determines whether data stored in this instance is
+             associated with, or can be converted to, the specified
+             format.
+            </summary>
         <returns>
           <see langword="true" /> if data stored in this <see cref="T:System.Windows.Forms.DataObject" /> is associated with, or can be converted to, the specified format; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -728,7 +742,11 @@
       </Parameters>
       <Docs>
         <param name="format">A <see cref="T:System.Type" /> representing the format to check for.</param>
-        <summary>Determines whether data stored in this <see cref="T:System.Windows.Forms.DataObject" /> is associated with, or can be converted to, the specified format.</summary>
+        <summary>
+             Determines whether data stored in this instance is
+             associated with, or can be converted to, the specified
+             format.
+            </summary>
         <returns>
           <see langword="true" /> if data stored in this <see cref="T:System.Windows.Forms.DataObject" /> is associated with, or can be converted to, the specified format; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -789,7 +807,11 @@
         <param name="format">The format to check for. See <see cref="T:System.Windows.Forms.DataFormats" /> for predefined formats.</param>
         <param name="autoConvert">
           <see langword="true" /> to determine whether data stored in this <see cref="T:System.Windows.Forms.DataObject" /> can be converted to the specified format; <see langword="false" /> to check whether the data is in the specified format.</param>
-        <summary>Determines whether this <see cref="T:System.Windows.Forms.DataObject" /> contains data in the specified format or, optionally, contains data that can be converted to the specified format.</summary>
+        <summary>
+             Determines whether data stored in this instance is
+             associated with the specified format, using an automatic conversion
+             parameter to determine whether to convert the data to the format.
+            </summary>
         <returns>
           <see langword="true" /> if the data is in, or can be converted to, the specified format; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -903,17 +925,15 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a list of all formats that data stored in this <see cref="T:System.Windows.Forms.DataObject" /> is associated with or can be converted to.</summary>
+        <summary>
+             Gets a list of all formats that data stored in this instance is associated
+             with or can be converted to.
+            </summary>
         <returns>An array of type <see cref="T:System.String" />, containing a list of all formats that are supported by the data stored in this object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -967,7 +987,13 @@
       <Docs>
         <param name="autoConvert">
           <see langword="true" /> to retrieve all formats that data stored in this <see cref="T:System.Windows.Forms.DataObject" /> is associated with, or can be converted to; <see langword="false" /> to retrieve only native data formats.</param>
-        <summary>Returns a list of all formats that data stored in this <see cref="T:System.Windows.Forms.DataObject" /> is associated with or can be converted to, using an automatic conversion parameter to determine whether to retrieve only native data formats or all formats that the data can be converted to.</summary>
+        <summary>
+             Gets a list of all formats that data stored in this
+             instance is associated with or can be converted to, using an automatic
+             conversion parameter <paramref name="autoConvert" /> to
+             determine whether to retrieve all formats that the data can be converted to or
+             only native data formats.
+            </summary>
         <returns>An array of type <see cref="T:System.String" />, containing a list of all formats that are supported by the data stored in this object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1058,11 +1084,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -1102,7 +1123,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="format" Type="System.Windows.Forms.TextDataFormat" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="format" Type="System.Windows.Forms.TextDataFormat" />
       </Parameters>
       <Docs>
         <param name="format">One of the <see cref="T:System.Windows.Forms.TextDataFormat" /> values.</param>
@@ -1154,7 +1175,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="audioBytes" Type="System.Byte[]" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="audioBytes" Type="System.Byte[]" />
       </Parameters>
       <Docs>
         <param name="audioBytes">A <see cref="T:System.Byte" /> array containing the audio data.</param>
@@ -1191,7 +1212,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="audioStream" Type="System.IO.Stream" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="audioStream" Type="System.IO.Stream" />
       </Parameters>
       <Docs>
         <param name="audioStream">A <see cref="T:System.IO.Stream" /> containing the audio data.</param>
@@ -1245,7 +1266,10 @@
       </Parameters>
       <Docs>
         <param name="data">The data to store.</param>
-        <summary>Adds the specified object to the <see cref="T:System.Windows.Forms.DataObject" /> using the object type as the data format.</summary>
+        <summary>
+             Stores the specified data in
+             this instance, using the class of the data for the format.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1303,7 +1327,10 @@
       <Docs>
         <param name="format">The format associated with the data. See <see cref="T:System.Windows.Forms.DataFormats" /> for predefined formats.</param>
         <param name="data">The data to store.</param>
-        <summary>Adds the specified object to the <see cref="T:System.Windows.Forms.DataObject" /> using the specified format.</summary>
+        <summary>
+             Stores the specified data and its associated format in this
+             instance.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1363,7 +1390,11 @@
       <Docs>
         <param name="format">A <see cref="T:System.Type" /> representing the format associated with the data.</param>
         <param name="data">The data to store.</param>
-        <summary>Adds the specified object to the <see cref="T:System.Windows.Forms.DataObject" /> using the specified type as the format.</summary>
+        <summary>
+             Stores the specified data and
+             its
+             associated class type in this instance.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1425,7 +1456,12 @@
         <param name="autoConvert">
           <see langword="true" /> to allow the data to be converted to another format; otherwise, <see langword="false" />.</param>
         <param name="data">The data to store.</param>
-        <summary>Adds the specified object to the <see cref="T:System.Windows.Forms.DataObject" /> using the specified format and indicating whether the data can be converted to another format.</summary>
+        <summary>
+             Stores the specified data and its associated format in
+             this instance, using the automatic conversion parameter
+             to specify whether the
+             data can be converted to another format.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1475,7 +1511,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="filePaths" Type="System.Collections.Specialized.StringCollection" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="filePaths" Type="System.Collections.Specialized.StringCollection" />
       </Parameters>
       <Docs>
         <param name="filePaths">A <see cref="T:System.Collections.Specialized.StringCollection" /> containing the file names.</param>
@@ -1515,7 +1551,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="image" Type="System.Drawing.Image" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="image" Type="System.Drawing.Image" />
       </Parameters>
       <Docs>
         <param name="image">The <see cref="T:System.Drawing.Image" /> to add to the data object.</param>
@@ -1560,16 +1596,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="textData" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="textData" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="textData">The text to add to the data object.</param>
@@ -1606,8 +1637,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="textData" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="format" Type="System.Windows.Forms.TextDataFormat" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="textData" Type="System.String" />
+        <Parameter Name="format" Type="System.Windows.Forms.TextDataFormat" />
       </Parameters>
       <Docs>
         <param name="textData">The text to add to the data object.</param>
@@ -1636,9 +1667,6 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataObject.System#Runtime#InteropServices#ComTypes#IDataObject#DAdvise(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.ADVF,System.Runtime.InteropServices.ComTypes.IAdviseSink,System.Int32@)" />
       <MemberSignature Language="C++ CLI" Value=" virtual int System.Runtime.InteropServices.ComTypes.IDataObject.DAdvise(System::Runtime::InteropServices::ComTypes::FORMATETC % pFormatetc, System::Runtime::InteropServices::ComTypes::ADVF advf, System::Runtime::InteropServices::ComTypes::IAdviseSink ^ pAdvSink, [Runtime::InteropServices::Out] int % pdwConnection) = System::Runtime::InteropServices::ComTypes::IDataObject::DAdvise;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.IDataObject.DAdvise(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.ADVF,System.Runtime.InteropServices.ComTypes.IAdviseSink,System.Int32@)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1648,10 +1676,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="pFormatetc" Type="System.Runtime.InteropServices.ComTypes.FORMATETC" RefType="ref" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="advf" Type="System.Runtime.InteropServices.ComTypes.ADVF" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="pAdvSink" Type="System.Runtime.InteropServices.ComTypes.IAdviseSink" Index="2" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="pdwConnection" Type="System.Int32" RefType="out" Index="3" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="pFormatetc" Type="System.Runtime.InteropServices.ComTypes.FORMATETC" RefType="ref" />
+        <Parameter Name="advf" Type="System.Runtime.InteropServices.ComTypes.ADVF" />
+        <Parameter Name="pAdvSink" Type="System.Runtime.InteropServices.ComTypes.IAdviseSink" />
+        <Parameter Name="pdwConnection" Type="System.Int32" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pFormatetc">A <see cref="T:System.Runtime.InteropServices.ComTypes.FORMATETC" /> structure, passed by reference, that defines the format, target device, aspect, and medium that will be used for future notifications.</param>
@@ -1704,9 +1732,6 @@
       <MemberSignature Language="VB.NET" Value="Sub DUnadvise (dwConnection As Integer) Implements IDataObject.DUnadvise" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices.ComTypes.IDataObject.DUnadvise(int dwConnection) = System::Runtime::InteropServices::ComTypes::IDataObject::DUnadvise;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.IDataObject.DUnadvise(System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1716,7 +1741,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="dwConnection" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="dwConnection" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="dwConnection">A DWORD token that specifies the connection to remove. Use the value returned by <see cref="M:System.Runtime.InteropServices.ComTypes.IDataObject.DAdvise(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.ADVF,System.Runtime.InteropServices.ComTypes.IAdviseSink,System.Int32@)" /> when the connection was originally established.</param>
@@ -1739,9 +1764,6 @@
       <MemberSignature Language="VB.NET" Value="Function EnumDAdvise (ByRef enumAdvise As IEnumSTATDATA) As Integer Implements IDataObject.EnumDAdvise" />
       <MemberSignature Language="C++ CLI" Value=" virtual int System.Runtime.InteropServices.ComTypes.IDataObject.EnumDAdvise([Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::IEnumSTATDATA ^ % enumAdvise) = System::Runtime::InteropServices::ComTypes::IDataObject::EnumDAdvise;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.IDataObject.EnumDAdvise(System.Runtime.InteropServices.ComTypes.IEnumSTATDATA@)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1751,7 +1773,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="enumAdvise" Type="System.Runtime.InteropServices.ComTypes.IEnumSTATDATA" RefType="out" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="enumAdvise" Type="System.Runtime.InteropServices.ComTypes.IEnumSTATDATA" RefType="out" />
       </Parameters>
       <Docs>
         <param name="enumAdvise">When this method returns, contains an <see cref="T:System.Runtime.InteropServices.ComTypes.IEnumSTATDATA" /> that receives the interface pointer to the new enumerator object. If the implementation sets <paramref name="enumAdvise" /> to <see langword="null" />, there are no connections to advisory sinks at this time. This parameter is passed uninitialized.</param>
@@ -1789,9 +1811,6 @@
       <MemberSignature Language="VB.NET" Value="Function EnumFormatEtc (dwDirection As DATADIR) As IEnumFORMATETC Implements IDataObject.EnumFormatEtc" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Runtime::InteropServices::ComTypes::IEnumFORMATETC ^ System.Runtime.InteropServices.ComTypes.IDataObject.EnumFormatEtc(System::Runtime::InteropServices::ComTypes::DATADIR dwDirection) = System::Runtime::InteropServices::ComTypes::IDataObject::EnumFormatEtc;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.IDataObject.EnumFormatEtc(System.Runtime.InteropServices.ComTypes.DATADIR)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1801,7 +1820,7 @@
         <ReturnType>System.Runtime.InteropServices.ComTypes.IEnumFORMATETC</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="dwDirection" Type="System.Runtime.InteropServices.ComTypes.DATADIR" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="dwDirection" Type="System.Runtime.InteropServices.ComTypes.DATADIR" />
       </Parameters>
       <Docs>
         <param name="dwDirection">One of the <see cref="T:System.Runtime.InteropServices.ComTypes.DATADIR" /> values that specifies the direction of the data.</param>
@@ -1843,9 +1862,6 @@
       <MemberSignature Language="VB.NET" Value="Function GetCanonicalFormatEtc (ByRef pformatetcIn As FORMATETC, ByRef pformatetcOut As FORMATETC) As Integer Implements IDataObject.GetCanonicalFormatEtc" />
       <MemberSignature Language="C++ CLI" Value=" virtual int System.Runtime.InteropServices.ComTypes.IDataObject.GetCanonicalFormatEtc(System::Runtime::InteropServices::ComTypes::FORMATETC % pformatetcIn, [Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::FORMATETC % pformatetcOut) = System::Runtime::InteropServices::ComTypes::IDataObject::GetCanonicalFormatEtc;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.IDataObject.GetCanonicalFormatEtc(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.FORMATETC@)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1855,8 +1871,8 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="pformatetcIn" Type="System.Runtime.InteropServices.ComTypes.FORMATETC" RefType="ref" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="pformatetcOut" Type="System.Runtime.InteropServices.ComTypes.FORMATETC" RefType="out" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="pformatetcIn" Type="System.Runtime.InteropServices.ComTypes.FORMATETC" RefType="ref" />
+        <Parameter Name="pformatetcOut" Type="System.Runtime.InteropServices.ComTypes.FORMATETC" RefType="out" />
       </Parameters>
       <Docs>
         <param name="pformatetcIn">A pointer to a <see cref="T:System.Runtime.InteropServices.ComTypes.FORMATETC" /> structure, passed by reference, that defines the format, medium, and target device that the caller would like to use to retrieve data in a subsequent call such as <see cref="M:System.Runtime.InteropServices.ComTypes.IDataObject.GetData(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.STGMEDIUM@)" />. The <see cref="T:System.Runtime.InteropServices.ComTypes.TYMED" /> member is not significant in this case and should be ignored.</param>
@@ -1907,9 +1923,6 @@
       <MemberSignature Language="VB.NET" Value="Sub GetData (ByRef formatetc As FORMATETC, ByRef medium As STGMEDIUM) Implements IDataObject.GetData" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices.ComTypes.IDataObject.GetData(System::Runtime::InteropServices::ComTypes::FORMATETC % formatetc, [Runtime::InteropServices::Out] System::Runtime::InteropServices::ComTypes::STGMEDIUM % medium) = System::Runtime::InteropServices::ComTypes::IDataObject::GetData;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.IDataObject.GetData(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.STGMEDIUM@)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1919,8 +1932,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="formatetc" Type="System.Runtime.InteropServices.ComTypes.FORMATETC" RefType="ref" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="medium" Type="System.Runtime.InteropServices.ComTypes.STGMEDIUM" RefType="out" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="formatetc" Type="System.Runtime.InteropServices.ComTypes.FORMATETC" RefType="ref" />
+        <Parameter Name="medium" Type="System.Runtime.InteropServices.ComTypes.STGMEDIUM" RefType="out" />
       </Parameters>
       <Docs>
         <param name="formatetc">A pointer to a <see cref="T:System.Runtime.InteropServices.ComTypes.FORMATETC" /> structure, passed by reference, that defines the format, medium, and target device to use when passing the data. It is possible to specify more than one medium by using the Boolean OR operator, allowing the method to choose the best medium among those specified.</param>
@@ -1945,9 +1958,6 @@
       <MemberSignature Language="VB.NET" Value="Sub GetDataHere (ByRef formatetc As FORMATETC, ByRef medium As STGMEDIUM) Implements IDataObject.GetDataHere" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices.ComTypes.IDataObject.GetDataHere(System::Runtime::InteropServices::ComTypes::FORMATETC % formatetc, System::Runtime::InteropServices::ComTypes::STGMEDIUM % medium) = System::Runtime::InteropServices::ComTypes::IDataObject::GetDataHere;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.IDataObject.GetDataHere(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.STGMEDIUM@)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1957,8 +1967,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="formatetc" Type="System.Runtime.InteropServices.ComTypes.FORMATETC" RefType="ref" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="medium" Type="System.Runtime.InteropServices.ComTypes.STGMEDIUM" RefType="ref" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="formatetc" Type="System.Runtime.InteropServices.ComTypes.FORMATETC" RefType="ref" />
+        <Parameter Name="medium" Type="System.Runtime.InteropServices.ComTypes.STGMEDIUM" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="formatetc">A pointer to a <see cref="T:System.Runtime.InteropServices.ComTypes.FORMATETC" /> structure, passed by reference, that defines the format, medium, and target device to use when passing the data. Only one medium can be specified in <see cref="T:System.Runtime.InteropServices.ComTypes.TYMED" />, and only the following <see cref="T:System.Runtime.InteropServices.ComTypes.TYMED" /> values are valid: <see cref="F:System.Runtime.InteropServices.ComTypes.TYMED.TYMED_ISTORAGE" />, <see cref="F:System.Runtime.InteropServices.ComTypes.TYMED.TYMED_ISTREAM" />, <see cref="F:System.Runtime.InteropServices.ComTypes.TYMED.TYMED_HGLOBAL" />, or <see cref="F:System.Runtime.InteropServices.ComTypes.TYMED.TYMED_FILE" />.</param>
@@ -1982,9 +1992,6 @@
       <MemberSignature Language="VB.NET" Value="Function QueryGetData (ByRef formatetc As FORMATETC) As Integer Implements IDataObject.QueryGetData" />
       <MemberSignature Language="C++ CLI" Value=" virtual int System.Runtime.InteropServices.ComTypes.IDataObject.QueryGetData(System::Runtime::InteropServices::ComTypes::FORMATETC % formatetc) = System::Runtime::InteropServices::ComTypes::IDataObject::QueryGetData;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.IDataObject.QueryGetData(System.Runtime.InteropServices.ComTypes.FORMATETC@)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1994,7 +2001,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="formatetc" Type="System.Runtime.InteropServices.ComTypes.FORMATETC" RefType="ref" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="formatetc" Type="System.Runtime.InteropServices.ComTypes.FORMATETC" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="formatetc">A pointer to a <see cref="T:System.Runtime.InteropServices.ComTypes.FORMATETC" /> structure, passed by reference, that defines the format, medium, and target device to use for the query.</param>
@@ -2048,9 +2055,6 @@
       <MemberSignature Language="VB.NET" Value="Sub SetData (ByRef pFormatetcIn As FORMATETC, ByRef pmedium As STGMEDIUM, fRelease As Boolean) Implements IDataObject.SetData" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Runtime.InteropServices.ComTypes.IDataObject.SetData(System::Runtime::InteropServices::ComTypes::FORMATETC % pFormatetcIn, System::Runtime::InteropServices::ComTypes::STGMEDIUM % pmedium, bool fRelease) = System::Runtime::InteropServices::ComTypes::IDataObject::SetData;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.Runtime.InteropServices.ComTypes.IDataObject.SetData(System.Runtime.InteropServices.ComTypes.FORMATETC@,System.Runtime.InteropServices.ComTypes.STGMEDIUM@,System.Boolean)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -2060,9 +2064,9 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="pFormatetcIn" Type="System.Runtime.InteropServices.ComTypes.FORMATETC" RefType="ref" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="pmedium" Type="System.Runtime.InteropServices.ComTypes.STGMEDIUM" RefType="ref" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="fRelease" Type="System.Boolean" Index="2" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="pFormatetcIn" Type="System.Runtime.InteropServices.ComTypes.FORMATETC" RefType="ref" />
+        <Parameter Name="pmedium" Type="System.Runtime.InteropServices.ComTypes.STGMEDIUM" RefType="ref" />
+        <Parameter Name="fRelease" Type="System.Boolean" />
       </Parameters>
       <Docs>
         <param name="pFormatetcIn">A <see cref="T:System.Runtime.InteropServices.ComTypes.FORMATETC" /> structure, passed by reference, that defines the format used by the data object when interpreting the data contained in the storage medium.</param>

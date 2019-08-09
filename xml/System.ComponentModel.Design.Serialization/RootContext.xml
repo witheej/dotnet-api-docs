@@ -1,4 +1,4 @@
-﻿<Type Name="RootContext" FullName="System.ComponentModel.Design.Serialization.RootContext">
+<Type Name="RootContext" FullName="System.ComponentModel.Design.Serialization.RootContext">
   <TypeSignature Language="C#" Value="public sealed class RootContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RootContext extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.RootContext" />
@@ -19,7 +19,10 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>A <see cref="T:System.ComponentModel.Design.Serialization.CodeDomSerializer" /> adds a root context to provide a definition of the root object. This class cannot be inherited</summary>
+    <summary>
+             The root context is added by a type code dom serailizier to provide a
+             definiton of the "root" object.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -57,7 +60,12 @@
       <Docs>
         <param name="expression">The expression representing the root object in the object graph.</param>
         <param name="value">The root object of the object graph.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Serialization.RootContext" /> class.</summary>
+        <summary>
+             This object can be placed on the context stack to represent the
+             object that is the root of the serialization hierarchy. In addition
+             to this instance, the RootContext also  contains an expression that
+             can be used to reference the RootContext.
+            </summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="expression" /> or <paramref name="value" /> is <see langword="null" />.</exception>
@@ -82,16 +90,13 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.CodeDom.CodeExpression</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the expression representing the root object in the object graph.</summary>
+        <summary>
+             The expression representing the root object in the object graph.
+            </summary>
         <value>A <see cref="T:System.CodeDom.CodeExpression" /> representing the root object in the object graph.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -113,16 +118,13 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the root object of the object graph.</summary>
+        <summary>
+             The root object of the object graph.
+            </summary>
         <value>The root object of the object graph.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.ComponentModel.Design.Serialization.CodeDomSerializer" />

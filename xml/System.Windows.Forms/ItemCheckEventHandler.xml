@@ -1,4 +1,4 @@
-﻿<Type Name="ItemCheckEventHandler" FullName="System.Windows.Forms.ItemCheckEventHandler">
+<Type Name="ItemCheckEventHandler" FullName="System.Windows.Forms.ItemCheckEventHandler">
   <TypeSignature Language="C#" Value="public delegate void ItemCheckEventHandler(object sender, ItemCheckEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ItemCheckEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ItemCheckEventHandler" />
@@ -24,7 +24,10 @@
   <Docs>
     <param name="sender">The source of the event.</param>
     <param name="e">An <see cref="T:System.Windows.Forms.ItemCheckEventArgs" /> that contains the event data.</param>
-    <summary>Represents the method that will handle the <see langword="ItemCheck" /> event of a <see cref="T:System.Windows.Forms.CheckedListBox" /> or <see cref="T:System.Windows.Forms.ListView" /> control.</summary>
+    <summary>
+             Represents a method that will handle the <c>ItemCheck</c>
+             event of a  <see cref="T:System.Windows.Forms.CheckedListBox" /> or <see cref="T:System.Windows.Forms.ListView" />.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

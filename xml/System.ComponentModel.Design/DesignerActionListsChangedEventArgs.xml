@@ -1,4 +1,4 @@
-﻿<Type Name="DesignerActionListsChangedEventArgs" FullName="System.ComponentModel.Design.DesignerActionListsChangedEventArgs">
+<Type Name="DesignerActionListsChangedEventArgs" FullName="System.ComponentModel.Design.DesignerActionListsChangedEventArgs">
   <TypeSignature Language="C#" Value="public class DesignerActionListsChangedEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DesignerActionListsChangedEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignerActionListsChangedEventArgs" />
@@ -19,7 +19,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.ComponentModel.Design.DesignerActionService.DesignerActionListsChanged" /> event.</summary>
+    <summary>
+             This EventArgs class is used by the DesignerActionService to signify that there has been a change in DesignerActionLists (added or removed) on the related object.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -54,11 +56,6 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="relatedObject" Type="System.Object" />
         <Parameter Name="changeType" Type="System.ComponentModel.Design.DesignerActionListsChangedType" />
@@ -68,7 +65,9 @@
         <param name="relatedObject">The object that is associated with the collection.</param>
         <param name="changeType">A value that specifies whether a <see cref="T:System.ComponentModel.Design.DesignerActionList" /> has been added or removed from the collection.</param>
         <param name="actionLists">The collection of list elements after the action has been applied.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerActionListsChangedEventArgs" /> class.</summary>
+        <summary>
+             Constructor that requires the object in question, the type of change and the remaining actionlists left for the object. on the related object.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -101,16 +100,13 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.DesignerActionListCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of <see cref="T:System.ComponentModel.Design.DesignerActionList" /> objects associated with this event.</summary>
+        <summary>
+             The remaining actionlists left for the related object.
+            </summary>
         <value>A <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> that represents the current state of the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -141,16 +137,13 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.DesignerActionListsChangedType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a flag indicating whether an element has been added or removed from the collection of <see cref="T:System.ComponentModel.Design.DesignerActionList" /> objects.</summary>
+        <summary>
+             The type of changed that caused the related event to be thrown.
+            </summary>
         <value>A <see cref="T:System.ComponentModel.Design.DesignerActionListsChangedType" /> that indicates the type of change.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -182,16 +175,13 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the object that is associated with the collection of <see cref="T:System.ComponentModel.Design.DesignerActionList" /> objects.</summary>
+        <summary>
+             The object this change is related to.
+            </summary>
         <value>The <see cref="T:System.Object" /> associated with the managed <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

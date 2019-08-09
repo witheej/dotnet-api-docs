@@ -1,10 +1,10 @@
-﻿<Type Name="BindingSource" FullName="System.Windows.Forms.BindingSource">
-  <TypeSignature Language="C#" Value="public class BindingSource : System.ComponentModel.Component, System.Collections.IList, System.ComponentModel.IBindingListView, System.ComponentModel.ICancelAddNew, System.ComponentModel.ISupportInitializeNotification, System.ComponentModel.ITypedList, System.Windows.Forms.ICurrencyManagerProvider" />
+<Type Name="BindingSource" FullName="System.Windows.Forms.BindingSource">
+  <TypeSignature Language="C#" Value="public class BindingSource : System.ComponentModel.Component, System.Collections.IList, System.ComponentModel.IBindingList, System.ComponentModel.IBindingListView, System.ComponentModel.ICancelAddNew, System.ComponentModel.ISupportInitialize, System.ComponentModel.ISupportInitializeNotification, System.ComponentModel.ITypedList, System.Windows.Forms.ICurrencyManagerProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BindingSource extends System.ComponentModel.Component implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList, class System.ComponentModel.IBindingList, class System.ComponentModel.IBindingListView, class System.ComponentModel.ICancelAddNew, class System.ComponentModel.ISupportInitialize, class System.ComponentModel.ISupportInitializeNotification, class System.ComponentModel.ITypedList, class System.Windows.Forms.ICurrencyManagerProvider" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.BindingSource" />
-  <TypeSignature Language="VB.NET" Value="Public Class BindingSource&#xA;Inherits Component&#xA;Implements IBindingListView, ICancelAddNew, ICurrencyManagerProvider, IList, ISupportInitializeNotification, ITypedList" />
-  <TypeSignature Language="C++ CLI" Value="public ref class BindingSource : System::ComponentModel::Component, System::Collections::IList, System::ComponentModel::IBindingListView, System::ComponentModel::ICancelAddNew, System::ComponentModel::ISupportInitializeNotification, System::ComponentModel::ITypedList, System::Windows::Forms::ICurrencyManagerProvider" />
-  <TypeSignature Language="F#" Value="type BindingSource = class&#xA;    inherit Component&#xA;    interface IBindingListView&#xA;    interface IBindingList&#xA;    interface IList&#xA;    interface ICollection&#xA;    interface IEnumerable&#xA;    interface ITypedList&#xA;    interface ICancelAddNew&#xA;    interface ISupportInitializeNotification&#xA;    interface ISupportInitialize&#xA;    interface ICurrencyManagerProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Class BindingSource&#xA;Inherits Component&#xA;Implements IBindingList, IBindingListView, ICancelAddNew, ICurrencyManagerProvider, IList, ISupportInitialize, ISupportInitializeNotification, ITypedList" />
+  <TypeSignature Language="C++ CLI" Value="public ref class BindingSource : System::ComponentModel::Component, System::Collections::IList, System::ComponentModel::IBindingList, System::ComponentModel::IBindingListView, System::ComponentModel::ICancelAddNew, System::ComponentModel::ISupportInitialize, System::ComponentModel::ISupportInitializeNotification, System::ComponentModel::ITypedList, System::Windows::Forms::ICurrencyManagerProvider" />
+  <TypeSignature Language="F#" Value="type BindingSource = class&#xA;    inherit Component&#xA;    interface IBindingListView&#xA;    interface ICollection&#xA;    interface IEnumerable&#xA;    interface IList&#xA;    interface IBindingList&#xA;    interface ITypedList&#xA;    interface ICancelAddNew&#xA;    interface ISupportInitializeNotification&#xA;    interface ISupportInitialize&#xA;    interface ICurrencyManagerProvider" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -57,9 +57,6 @@
     </Attribute>
     <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
       <AttributeName>System.ComponentModel.Designer("System.Windows.Forms.Design.BindingSourceDesigner, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
-    </Attribute>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
-      <AttributeName>System.ComponentModel.Designer("System.Windows.Forms.Design.BindingSourceDesigner, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -316,9 +313,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::Object ^ AddNew();" />
       <MemberSignature Language="F#" Value="abstract member AddNew : unit -&gt; obj&#xA;override this.AddNew : unit -&gt; obj" Usage="bindingSource.AddNew " />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.IBindingList.AddNew</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -378,9 +372,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AllowEdit { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.AllowEdit : bool" Usage="System.Windows.Forms.BindingSource.AllowEdit" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.IBindingList.AllowEdit</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -421,11 +412,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -483,9 +469,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool AllowRemove { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.AllowRemove : bool" Usage="System.Windows.Forms.BindingSource.AllowRemove" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.IBindingList.AllowRemove</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -530,9 +513,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ApplySort(System::ComponentModel::ListSortDescriptionCollection ^ sorts);" />
       <MemberSignature Language="F#" Value="abstract member ApplySort : System.ComponentModel.ListSortDescriptionCollection -&gt; unit&#xA;override this.ApplySort : System.ComponentModel.ListSortDescriptionCollection -&gt; unit" Usage="bindingSource.ApplySort sorts" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.IBindingListView.ApplySort(System.ComponentModel.ListSortDescriptionCollection)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -540,7 +520,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -571,9 +551,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void ApplySort(System::ComponentModel::PropertyDescriptor ^ property, System::ComponentModel::ListSortDirection sort);" />
       <MemberSignature Language="F#" Value="abstract member ApplySort : System.ComponentModel.PropertyDescriptor * System.ComponentModel.ListSortDirection -&gt; unit&#xA;override this.ApplySort : System.ComponentModel.PropertyDescriptor * System.ComponentModel.ListSortDirection -&gt; unit" Usage="bindingSource.ApplySort (property, sort)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.IBindingList.ApplySort(System.ComponentModel.PropertyDescriptor,System.ComponentModel.ListSortDirection)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -581,7 +558,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1072,14 +1049,8 @@
         <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataMemberListEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
-          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.DataMemberListEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
-        </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1158,9 +1129,6 @@
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1264,7 +1232,13 @@
       <Docs>
         <param name="disposing">
           <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.BindingSource" /> and optionally releases the managed resources.</summary>
+        <summary>
+             Unhook BindingSource from its data source, since the data source could be some
+             global object who's lifetime exceeds the lifetime of the parent form. Otherwise
+             the BindingSource (and any components bound through it) will end up in limbo,
+             still processing list change events, etc. And when unhooking from the data source,
+             take care not to trigger any events that could confuse compoents bound to us.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1328,9 +1302,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::String ^ Filter { System::String ^ get(); void set(System::String ^ value); };" />
       <MemberSignature Language="F#" Value="member this.Filter : string with get, set" Usage="System.Windows.Forms.BindingSource.Filter" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.IBindingListView.Filter</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1339,9 +1310,6 @@
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1396,9 +1364,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual int Find(System::ComponentModel::PropertyDescriptor ^ prop, System::Object ^ key);" />
       <MemberSignature Language="F#" Value="abstract member Find : System.ComponentModel.PropertyDescriptor * obj -&gt; int&#xA;override this.Find : System.ComponentModel.PropertyDescriptor * obj -&gt; int" Usage="bindingSource.Find (prop, key)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.IBindingList.Find(System.ComponentModel.PropertyDescriptor,System.Object)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1466,7 +1431,10 @@
       <Docs>
         <param name="propertyName">The name of the property to search for.</param>
         <param name="key">The value of the item with the specified <paramref name="propertyName" /> to find.</param>
-        <summary>Returns the index of the item in the list with the specified property name and value.</summary>
+        <summary>
+             Overload of IBindingList.Find that takes a string instead of a property
+             descriptor (for convenience).
+            </summary>
         <returns>The zero-based index of the item with the specified property name and value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1819,9 +1787,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool IsSorted { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.IsSorted : bool" Usage="System.Windows.Forms.BindingSource.IsSorted" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.IBindingList.IsSorted</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1997,9 +1962,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual event System::ComponentModel::ListChangedEventHandler ^ ListChanged;" />
       <MemberSignature Language="F#" Value="member this.ListChanged : System.ComponentModel.ListChangedEventHandler " Usage="member this.ListChanged : System.ComponentModel.ListChangedEventHandler " />
       <MemberType>Event</MemberType>
-      <Implements>
-        <InterfaceMember>E:System.ComponentModel.IBindingList.ListChanged</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -2050,11 +2012,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -2669,9 +2626,6 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -2844,9 +2798,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveFilter();" />
       <MemberSignature Language="F#" Value="abstract member RemoveFilter : unit -&gt; unit&#xA;override this.RemoveFilter : unit -&gt; unit" Usage="bindingSource.RemoveFilter " />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.IBindingListView.RemoveFilter</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -2880,9 +2831,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void RemoveSort();" />
       <MemberSignature Language="F#" Value="abstract member RemoveSort : unit -&gt; unit&#xA;override this.RemoveSort : unit -&gt; unit" Usage="bindingSource.RemoveSort " />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.IBindingList.RemoveSort</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -2923,7 +2871,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3123,9 +3071,6 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
@@ -3176,9 +3121,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::ListSortDescriptionCollection ^ SortDescriptions { System::ComponentModel::ListSortDescriptionCollection ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.SortDescriptions : System.ComponentModel.ListSortDescriptionCollection" Usage="System.Windows.Forms.BindingSource.SortDescriptions" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.IBindingListView.SortDescriptions</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -3189,7 +3131,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3218,9 +3160,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::ListSortDirection SortDirection { System::ComponentModel::ListSortDirection get(); };" />
       <MemberSignature Language="F#" Value="member this.SortDirection : System.ComponentModel.ListSortDirection" Usage="System.Windows.Forms.BindingSource.SortDirection" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.IBindingList.SortDirection</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -3231,7 +3170,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3258,9 +3197,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::PropertyDescriptor ^ SortProperty { System::ComponentModel::PropertyDescriptor ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.SortProperty : System.ComponentModel.PropertyDescriptor" Usage="System.Windows.Forms.BindingSource.SortProperty" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.IBindingList.SortProperty</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -3271,7 +3207,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3298,9 +3234,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsAdvancedSorting { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.SupportsAdvancedSorting : bool" Usage="System.Windows.Forms.BindingSource.SupportsAdvancedSorting" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.IBindingListView.SupportsAdvancedSorting</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -3336,9 +3269,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsChangeNotification { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.SupportsChangeNotification : bool" Usage="System.Windows.Forms.BindingSource.SupportsChangeNotification" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.IBindingList.SupportsChangeNotification</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -3367,9 +3297,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsFiltering { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.SupportsFiltering : bool" Usage="System.Windows.Forms.BindingSource.SupportsFiltering" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.IBindingListView.SupportsFiltering</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -3405,9 +3332,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsSearching { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.SupportsSearching : bool" Usage="System.Windows.Forms.BindingSource.SupportsSearching" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.IBindingList.SupportsSearching</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -3451,9 +3375,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property bool SupportsSorting { bool get(); };" />
       <MemberSignature Language="F#" Value="member this.SupportsSorting : bool" Usage="System.Windows.Forms.BindingSource.SupportsSorting" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.IBindingList.SupportsSorting</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -3551,9 +3472,6 @@
       <MemberSignature Language="VB.NET" Value="Sub AddIndex (property As PropertyDescriptor) Implements IBindingList.AddIndex" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.IBindingList.AddIndex(System::ComponentModel::PropertyDescriptor ^ property) = System::ComponentModel::IBindingList::AddIndex;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.IBindingList.AddIndex(System.ComponentModel.PropertyDescriptor)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -3586,9 +3504,6 @@
       <MemberSignature Language="VB.NET" Value="Sub RemoveIndex (prop As PropertyDescriptor) Implements IBindingList.RemoveIndex" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.IBindingList.RemoveIndex(System::ComponentModel::PropertyDescriptor ^ prop) = System::ComponentModel::IBindingList::RemoveIndex;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.IBindingList.RemoveIndex(System.ComponentModel.PropertyDescriptor)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -3620,9 +3535,6 @@
       <MemberSignature Language="VB.NET" Value="Sub CancelNew (position As Integer) Implements ICancelAddNew.CancelNew" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.ICancelAddNew.CancelNew(int position) = System::ComponentModel::ICancelAddNew::CancelNew;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.ICancelAddNew.CancelNew(System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -3655,9 +3567,6 @@
       <MemberSignature Language="VB.NET" Value="Sub EndNew (position As Integer) Implements ICancelAddNew.EndNew" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.ICancelAddNew.EndNew(int position) = System::ComponentModel::ICancelAddNew::EndNew;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.ICancelAddNew.EndNew(System.Int32)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -3703,7 +3612,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Signals the <see cref="T:System.Windows.Forms.BindingSource" /> that initialization is starting.</summary>
+        <summary>
+             Begin bulk member initialization - deferring calculation of inner list until
+             EndInit is reached
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3727,37 +3639,15 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Signals the <see cref="T:System.Windows.Forms.BindingSource" /> that initialization is complete.</summary>
+        <summary>
+             Check to see if DataSource has completed its initialization, before ending our
+             initialization.
+             If DataSource is still initializing, hook its Initialized event and wait for it
+             to signal completion.
+             If DataSource is already initialized, just go ahead and complete our
+             initialization now.
+            </summary>
         <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="System.ComponentModel.ISupportInitializeNotification.Initialized">
-      <MemberSignature Language="C#" Value="event EventHandler System.ComponentModel.ISupportInitializeNotification.Initialized;" />
-      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler System.ComponentModel.ISupportInitializeNotification.Initialized" />
-      <MemberSignature Language="DocId" Value="E:System.Windows.Forms.BindingSource.System#ComponentModel#ISupportInitializeNotification#Initialized" />
-      <MemberSignature Language="VB.NET" Value="Custom Event Initialized As EventHandler Implements System.ComponentModel.ISupportInitializeNotification" />
-      <MemberType>Event</MemberType>
-      <Implements>
-        <InterfaceMember>E:System.ComponentModel.ISupportInitializeNotification.Initialized</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.EventHandler</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Occurs when the <see cref="T:System.Windows.Forms.BindingSource" /> is initialized.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[
-
-## Remarks  
-This member is an explicit interface member implementation. It can be used only when the <xref:System.Windows.Forms.BindingSource> instance is cast to an <xref:System.ComponentModel.ISupportInitializeNotification> interface.
-
-]]></format>
-        </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.ComponentModel.ISupportInitializeNotification.IsInitialized">
@@ -3768,9 +3658,6 @@ This member is an explicit interface member implementation. It can be used only 
       <MemberSignature Language="C++ CLI" Value="property bool System::ComponentModel::ISupportInitializeNotification::IsInitialized { bool get(); };" />
       <MemberSignature Language="F#" Usage="System.ComponentModel.ISupportInitializeNotification.IsInitialized" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.ISupportInitializeNotification.IsInitialized</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -3780,7 +3667,9 @@ This member is an explicit interface member implementation. It can be used only 
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="T:System.Windows.Forms.BindingSource" /> is initialized.</summary>
+        <summary>
+             Report to any dependents whether we are still in bulk member initialization
+            </summary>
         <value>
           <see langword="true" /> to indicate the <see cref="T:System.Windows.Forms.BindingSource" /> is initialized; otherwise, <see langword="false" />.</value>
         <remarks>

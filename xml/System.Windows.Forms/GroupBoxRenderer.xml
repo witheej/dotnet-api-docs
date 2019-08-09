@@ -1,4 +1,4 @@
-﻿<Type Name="GroupBoxRenderer" FullName="System.Windows.Forms.GroupBoxRenderer">
+<Type Name="GroupBoxRenderer" FullName="System.Windows.Forms.GroupBoxRenderer">
   <TypeSignature Language="C#" Value="public sealed class GroupBoxRenderer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit GroupBoxRenderer extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.GroupBoxRenderer" />
@@ -15,7 +15,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides methods used to render a group box control with or without visual styles. This class cannot be inherited.</summary>
+    <summary>
+             This is a rendering class for the GroupBox control.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -77,7 +79,9 @@
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the group box.</param>
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the group box.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.GroupBoxState" /> values that specifies the visual state of the group box.</param>
-        <summary>Draws a group box control in the specified state and bounds.</summary>
+        <summary>
+             Renders a GroupBox control.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -109,11 +113,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -130,7 +129,9 @@
         <param name="groupBoxText">The <see cref="T:System.String" /> to draw with the group box.</param>
         <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <paramref name="groupBoxText" />.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.GroupBoxState" /> values that specifies the visual state of the group box.</param>
-        <summary>Draws a group box control in the specified state and bounds, with the specified text and font.</summary>
+        <summary>
+             Renders a GroupBox control. Uses the text color specified by the theme.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -162,11 +163,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -185,7 +181,9 @@
         <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <paramref name="groupBoxText" />.</param>
         <param name="textColor">The <see cref="T:System.Drawing.Color" /> to apply to <paramref name="groupBoxText" />.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.GroupBoxState" /> values that specifies the visual state of the group box.</param>
-        <summary>Draws a group box control in the specified state and bounds, with the specified text, font, and color.</summary>
+        <summary>
+             Renders a GroupBox control.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -226,7 +224,9 @@
         <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <paramref name="groupBoxText" />.</param>
         <param name="flags">A bitwise combination of the <see cref="T:System.Windows.Forms.TextFormatFlags" /> values.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.GroupBoxState" /> values that specifies the visual state of the group box.</param>
-        <summary>Draws a group box control in the specified state and bounds, with the specified text, font, and text formatting.</summary>
+        <summary>
+             Renders a GroupBox control. Uses the text color specified by the theme.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -269,7 +269,9 @@
         <param name="textColor">The <see cref="T:System.Drawing.Color" /> to apply to <paramref name="groupBoxText" />.</param>
         <param name="flags">A bitwise combination of the <see cref="T:System.Windows.Forms.TextFormatFlags" /> values.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.GroupBoxState" /> values that specifies the visual state of the group box.</param>
-        <summary>Draws a group box control in the specified state and bounds, with the specified text, font, color, and text formatting.</summary>
+        <summary>
+             Renders a GroupBox control.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -305,7 +307,10 @@
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the background of the parent of <paramref name="childControl" />.</param>
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> in which to draw the parent control's background. This rectangle should be inside the child control's bounds.</param>
         <param name="childControl">The control whose parent's background will be drawn.</param>
-        <summary>Draws the background of a control's parent in the specified area.</summary>
+        <summary>
+             This is just a convenience wrapper for VisualStyleRenderer.DrawThemeParentBackground. For downlevel,
+             this isn't required and does nothing.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -330,7 +335,9 @@
       </Parameters>
       <Docs>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.GroupBoxState" /> values that specifies the visual state of the group box.</param>
-        <summary>Indicates whether the background of the group box has any semitransparent or alpha-blended pieces.</summary>
+        <summary>
+             Returns true if the background corresponding to the given state is partially transparent, else false.
+            </summary>
         <returns>
           <see langword="true" /> if the background of the group box has semitransparent or alpha-blended pieces; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -349,19 +356,15 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the renderer uses the application state to determine rendering style.</summary>
+        <summary>
+             If this property is true, then the renderer will use the setting from Application.RenderWithVisualStyles to
+             determine how to render.
+             If this property is false, the renderer will always render with visualstyles.
+            </summary>
         <value>
           <see langword="true" /> if the application state is used to determine rendering style; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>

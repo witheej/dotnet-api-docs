@@ -1,4 +1,4 @@
-﻿<Type Name="HandledMouseEventArgs" FullName="System.Windows.Forms.HandledMouseEventArgs">
+<Type Name="HandledMouseEventArgs" FullName="System.Windows.Forms.HandledMouseEventArgs">
   <TypeSignature Language="C#" Value="public class HandledMouseEventArgs : System.Windows.Forms.MouseEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HandledMouseEventArgs extends System.Windows.Forms.MouseEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.HandledMouseEventArgs" />
@@ -55,11 +55,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="button" Type="System.Windows.Forms.MouseButtons" />
         <Parameter Name="clicks" Type="System.Int32" />
@@ -90,11 +85,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="button" Type="System.Windows.Forms.MouseButtons" />
         <Parameter Name="clicks" Type="System.Int32" />
@@ -128,19 +118,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets whether this event should be forwarded to the control's parent container.</summary>
+        <summary>
+             Gets or sets a value indicating whether the event is handled.
+            </summary>
         <value>
           <see langword="true" /> if the mouse event should go to the parent control; otherwise, <see langword="false" />.</value>
         <remarks>

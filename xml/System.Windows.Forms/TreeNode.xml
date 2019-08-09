@@ -1,4 +1,4 @@
-﻿<Type Name="TreeNode" FullName="System.Windows.Forms.TreeNode">
+<Type Name="TreeNode" FullName="System.Windows.Forms.TreeNode">
   <TypeSignature Language="C#" Value="public class TreeNode : MarshalByRefObject, ICloneable, System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit TreeNode extends System.MarshalByRefObject implements class System.ICloneable, class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TreeNode" />
@@ -34,7 +34,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a node of a <see cref="T:System.Windows.Forms.TreeView" />.</summary>
+    <summary>
+             Implements a node of a <see cref="T:System.Windows.Forms.TreeView" />.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -91,7 +93,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TreeNode" /> class.</summary>
+        <summary>
+             Creates a TreeNode object.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -122,17 +126,14 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="text">The label <see cref="P:System.Windows.Forms.TreeNode.Text" /> of the new tree node.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TreeNode" /> class with the specified label text.</summary>
+        <summary>
+             Creates a TreeNode object.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -167,8 +168,8 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="serializationInfo" Type="System.Runtime.Serialization.SerializationInfo" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="serializationInfo" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
         <param name="serializationInfo">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that contains the data to deserialize the class.</param>
@@ -198,7 +199,9 @@
       <Docs>
         <param name="text">The label <see cref="P:System.Windows.Forms.TreeNode.Text" /> of the new tree node.</param>
         <param name="children">An array of child <see cref="T:System.Windows.Forms.TreeNode" /> objects.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TreeNode" /> class with the specified label text and child tree nodes.</summary>
+        <summary>
+             Creates a TreeNode object.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -243,7 +246,9 @@
         <param name="text">The label <see cref="P:System.Windows.Forms.TreeNode.Text" /> of the new tree node.</param>
         <param name="imageIndex">The index value of <see cref="T:System.Drawing.Image" /> to display when the tree node is unselected.</param>
         <param name="selectedImageIndex">The index value of <see cref="T:System.Drawing.Image" /> to display when the tree node is selected.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TreeNode" /> class with the specified label text and images to display when the tree node is in a selected and unselected state.</summary>
+        <summary>
+             Creates a TreeNode object.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -290,7 +295,9 @@
         <param name="imageIndex">The index value of <see cref="T:System.Drawing.Image" /> to display when the tree node is unselected.</param>
         <param name="selectedImageIndex">The index value of <see cref="T:System.Drawing.Image" /> to display when the tree node is selected.</param>
         <param name="children">An array of child <see cref="T:System.Windows.Forms.TreeNode" /> objects.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TreeNode" /> class with the specified label text, child tree nodes, and images to display when the tree node is in a selected and unselected state.</summary>
+        <summary>
+             Creates a TreeNode object.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -330,7 +337,11 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the background color of the tree node.</summary>
+        <summary>
+             The background color of this node.
+             If null, the color used will be the default color from the TreeView control that this
+             node is attached to
+            </summary>
         <value>The background <see cref="T:System.Drawing.Color" /> of the tree node. The default is <see cref="F:System.Drawing.Color.Empty" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -371,7 +382,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Initiates the editing of the tree node label.</summary>
+        <summary>
+             Initiate editing of the node's label.
+             Only effective if LabelEdit property is true.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -421,7 +435,10 @@
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the bounds of the tree node.</summary>
+        <summary>
+             The bounding rectangle for the node (text area only). The coordinates
+             are relative to the upper left corner of the TreeView control.
+            </summary>
         <value>The <see cref="T:System.Drawing.Rectangle" /> that represents the bounds of the tree node.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -460,15 +477,14 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the tree node is in a checked state.</summary>
+        <summary>	
+             Indicates whether the node's checkbox is checked.
+            </summary>
         <value>
           <see langword="true" /> if the tree node is in a checked state; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -508,7 +524,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Copies the tree node and the entire subtree rooted at this tree node.</summary>
+        <summary>
+             Clone the entire subtree rooted at this node.
+            </summary>
         <returns>The <see cref="T:System.Object" /> that represents the cloned <see cref="T:System.Windows.Forms.TreeNode" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -555,17 +573,14 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Collapses the tree node.</summary>
+        <summary>
+             Collapse the node.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -605,21 +620,18 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ignoreChildren" Type="System.Boolean" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="ignoreChildren" Type="System.Boolean" />
       </Parameters>
       <Docs>
         <param name="ignoreChildren">
           <see langword="true" /> to leave the child nodes in their current state; <see langword="false" /> to collapse the child nodes.</param>
-        <summary>Collapses the <see cref="T:System.Windows.Forms.TreeNode" /> and optionally collapses its children.</summary>
+        <summary>
+             Collapse the node ignoring its children while collapsing the parent
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -647,18 +659,15 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ContextMenu</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the shortcut menu that is associated with this tree node.</summary>
+        <summary>
+             The contextMenu associated with this tree node. The contextMenu
+             will be shown when the user right clicks the mouse on the control.
+            </summary>
         <value>The <see cref="T:System.Windows.Forms.ContextMenu" /> that is associated with the tree node.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -686,12 +695,6 @@
       <Attributes>
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -726,8 +729,8 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="serializationInfo" Type="System.Runtime.Serialization.SerializationInfo" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="serializationInfo" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
         <param name="serializationInfo">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that describes the <see cref="T:System.Windows.Forms.TreeNode" />.</param>
@@ -759,7 +762,9 @@
       <Docs>
         <param name="cancel">
           <see langword="true" /> if the editing of the tree node label text was canceled without being saved; otherwise, <see langword="false" />.</param>
-        <summary>Ends the editing of the tree node label.</summary>
+        <summary>
+             Terminate the editing of any tree view item's label.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -795,7 +800,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Ensures that the tree node is visible, expanding tree nodes and scrolling the tree view control as necessary.</summary>
+        <summary>
+             Ensure that the node is visible, expanding nodes and scrolling the
+             TreeView control as necessary.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -840,7 +848,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Expands the tree node.</summary>
+        <summary>
+             Expand the node.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -886,7 +896,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Expands all the child tree nodes.</summary>
+        <summary>
+             Expand the node.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -936,7 +948,9 @@
         <ReturnType>System.Windows.Forms.TreeNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the first child tree node in the tree node collection.</summary>
+        <summary>
+             The first child node of this node.
+            </summary>
         <value>The first child <see cref="T:System.Windows.Forms.TreeNode" /> in the <see cref="P:System.Windows.Forms.TreeNode.Nodes" /> collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -975,7 +989,11 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the foreground color of the tree node.</summary>
+        <summary>
+             The foreground color of this node.
+             If null, the color used will be the default color from the TreeView control that this
+             node is attached to
+            </summary>
         <value>The foreground <see cref="T:System.Drawing.Color" /> of the tree node.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1021,7 +1039,9 @@
       <Docs>
         <param name="tree">The <see cref="T:System.Windows.Forms.TreeView" /> that contains the tree node.</param>
         <param name="handle">The handle of the tree node.</param>
-        <summary>Returns the tree node with the specified handle and assigned to the specified tree view control.</summary>
+        <summary>
+             Returns a TreeNode object for the given HTREEITEM handle
+            </summary>
         <returns>A <see cref="T:System.Windows.Forms.TreeNode" /> that represents the tree node assigned to the specified <see cref="T:System.Windows.Forms.TreeView" /> control with the specified handle.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1067,7 +1087,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the path from the root tree node to the current tree node.</summary>
+        <summary>
+             Returns the full path of this node.
+             The path consists of the labels of each of the nodes from the root to this node,
+             each separated by the pathSeperator.
+            </summary>
         <value>The path from the root tree node to the current tree node.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1113,7 +1137,9 @@
       <Docs>
         <param name="includeSubTrees">
           <see langword="true" /> if the resulting count includes all tree nodes indirectly rooted at this tree node; otherwise, <see langword="false" />.</param>
-        <summary>Returns the number of child tree nodes.</summary>
+        <summary>
+             Returns number of child nodes.
+            </summary>
         <returns>The number of child tree nodes assigned to the <see cref="P:System.Windows.Forms.TreeNode.Nodes" /> collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1154,7 +1180,10 @@
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the handle of the tree node.</summary>
+        <summary>
+             The HTREEITEM handle associated with this node.  If the handle
+             has not yet been created, this will force handle creation.
+            </summary>
         <value>The tree node handle.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1205,9 +1234,6 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.Windows.Forms.RelatedImageList("TreeView.ImageList")</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
-          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.ImageIndexEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
-        </Attribute>
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
         </Attribute>
@@ -1216,7 +1242,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the image list index value of the image displayed when the tree node is in the unselected state.</summary>
+        <summary>
+             The index of the image to be displayed when the node is in the unselected state.
+             The image is contained in the ImageList referenced by the imageList property.
+            </summary>
         <value>A zero-based index value that represents the image position in the assigned <see cref="T:System.Windows.Forms.ImageList" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1274,9 +1303,6 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.Windows.Forms.RelatedImageList("TreeView.ImageList")</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
-          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.ImageIndexEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
-        </Attribute>
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
         </Attribute>
@@ -1285,7 +1311,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the key for the image associated with this tree node when the node is in an unselected state.</summary>
+        <summary>
+             The index of the image to be displayed when the node is in the unselected state.
+             The image is contained in the ImageList referenced by the imageList property.
+            </summary>
         <value>The key for the image associated with this tree node when the node is in an unselected state.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1315,16 +1344,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the position of the tree node in the tree node collection.</summary>
+        <summary>
+             Returns the position of this node in relation to its siblings
+            </summary>
         <value>A zero-based index value that represents the position of the tree node in the <see cref="P:System.Windows.Forms.TreeNode.Nodes" /> collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1363,7 +1389,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the tree node is in an editable state.</summary>
+        <summary>
+             Specifies whether this node is being edited by the user.
+            </summary>
         <value>
           <see langword="true" /> if the tree node is in editable state; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -1405,7 +1433,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the tree node is in the expanded state.</summary>
+        <summary>
+             Specifies whether this node is in the expanded state.
+            </summary>
         <value>
           <see langword="true" /> if the tree node is in the expanded state; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -1447,7 +1477,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the tree node is in the selected state.</summary>
+        <summary>
+             Specifies whether this node is in the selected state.
+            </summary>
         <value>
           <see langword="true" /> if the tree node is in the selected state; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -1488,7 +1520,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the tree node is visible or partially visible.</summary>
+        <summary>
+             Specifies whether this node is visible.
+            </summary>
         <value>
           <see langword="true" /> if the tree node is visible or partially visible; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -1530,7 +1564,9 @@
         <ReturnType>System.Windows.Forms.TreeNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the last child tree node.</summary>
+        <summary>
+             The last child node of this node.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.TreeNode" /> that represents the last child tree node.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1576,7 +1612,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the zero-based depth of the tree node in the <see cref="T:System.Windows.Forms.TreeView" /> control.</summary>
+        <summary>
+             This denotes the depth of nesting of the treenode.
+            </summary>
         <value>The zero-based depth of the tree node in the <see cref="T:System.Windows.Forms.TreeView" /> control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1601,16 +1639,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the tree node.</summary>
+        <summary>
+             The name for the tree node - useful for indexing.
+            </summary>
         <value>A <see cref="T:System.String" /> that represents the name of the tree node.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1645,7 +1680,9 @@
         <ReturnType>System.Windows.Forms.TreeNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the next sibling tree node.</summary>
+        <summary>
+             The next sibling node.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.TreeNode" /> that represents the next sibling tree node.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1692,7 +1729,10 @@
         <ReturnType>System.Windows.Forms.TreeNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the next visible tree node.</summary>
+        <summary>
+             The next visible node.  It may be a child, sibling,
+             or a node from another branch.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.TreeNode" /> that represents the next visible tree node.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1741,7 +1781,13 @@
         <ReturnType>System.Drawing.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the font that is used to display the text on the tree node label.</summary>
+        <summary>
+             The font that will be used to draw this node
+             If null, the font used will be the default font from the TreeView control that this
+             node is attached to.
+             NOTE: If the node font is larger than the default font from the TreeView control, then
+             the node will be clipped.
+            </summary>
         <value>The <see cref="T:System.Drawing.Font" /> that is used to display the text on the tree node label.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1839,7 +1885,9 @@
         <ReturnType>System.Windows.Forms.TreeNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the parent tree node of the current tree node.</summary>
+        <summary>
+             Retrieves parent node.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.TreeNode" /> that represents the parent of the current tree node.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1883,7 +1931,9 @@
         <ReturnType>System.Windows.Forms.TreeNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the previous sibling tree node.</summary>
+        <summary>
+             The previous sibling node.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.TreeNode" /> that represents the previous sibling tree node.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1930,7 +1980,10 @@
         <ReturnType>System.Windows.Forms.TreeNode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the previous visible tree node.</summary>
+        <summary>
+             The next visible node.  It may be a parent, sibling,
+             or a node from another branch.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.TreeNode" /> that represents the previous visible tree node.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1967,17 +2020,15 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes the current tree node from the tree view control.</summary>
+        <summary>
+             Remove this node from the TreeView control.  Child nodes are also removed from the
+             TreeView, but are still attached to this node.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2029,9 +2080,6 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.Windows.Forms.RelatedImageList("TreeView.ImageList")</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
-          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.ImageIndexEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
-        </Attribute>
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
         </Attribute>
@@ -2040,7 +2088,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the image list index value of the image that is displayed when the tree node is in the selected state.</summary>
+        <summary>
+             The index of the image displayed when the node is in the selected state.
+             The image is contained in the ImageList referenced by the imageList property.
+            </summary>
         <value>A zero-based index value that represents the image position in an <see cref="T:System.Windows.Forms.ImageList" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2094,9 +2145,6 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.Windows.Forms.RelatedImageList("TreeView.ImageList")</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
-          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.ImageIndexEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
-        </Attribute>
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
         </Attribute>
@@ -2105,7 +2153,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the key of the image displayed in the tree node when it is in a selected state.</summary>
+        <summary>
+             The index of the image displayed when the node is in the selected state.
+             The image is contained in the ImageList referenced by the imageList property.
+            </summary>
         <value>The key of the image displayed when the tree node is in a selected state.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2134,13 +2185,15 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="si" Type="System.Runtime.Serialization.SerializationInfo" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="si" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
         <param name="si">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that describes the <see cref="T:System.Windows.Forms.TreeNode" />.</param>
         <param name="context">The <see cref="T:System.Runtime.Serialization.StreamingContext" /> that indicates the state of the stream during serialization</param>
-        <summary>Saves the state of the <see cref="T:System.Windows.Forms.TreeNode" /> to the specified <see cref="T:System.Runtime.Serialization.SerializationInfo" />.</summary>
+        <summary>
+              Saves this TreeNode object to the given data stream.
+             </summary>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for serialization services. Associated enumeration: <see cref="P:System.Security.Permissions.SecurityPermissionAttribute.SerializationFormatter" /></permission>
       </Docs>
@@ -2173,9 +2226,6 @@
         </Attribute>
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.Windows.Forms.RelatedImageList("TreeView.StateImageList")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
-          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.ImageIndexEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
         </Attribute>
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
@@ -2232,9 +2282,6 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.Windows.Forms.RelatedImageList("TreeView.StateImageList")</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
-          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.ImageIndexEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
-        </Attribute>
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
         </Attribute>
@@ -2243,7 +2290,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the key of the image that is used to indicate the state of the <see cref="T:System.Windows.Forms.TreeNode" /> when the parent <see cref="T:System.Windows.Forms.TreeView" /> has its <see cref="P:System.Windows.Forms.TreeView.CheckBoxes" /> property set to <see langword="false" />.</summary>
+        <summary>
+             The key of the StateImage that the user want to display.
+            </summary>
         <value>The key of the image that is used to indicate the state of the <see cref="T:System.Windows.Forms.TreeNode" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2276,11 +2325,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -2291,7 +2335,9 @@
       <Docs>
         <param name="si">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> that contains the data to serialize the <see cref="T:System.Windows.Forms.TreeNode" />.</param>
         <param name="context">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> that contains the destination information for this serialization.</param>
-        <summary>Populates a serialization information object with the data needed to serialize the <see cref="T:System.Windows.Forms.TreeNode" />.</summary>
+        <summary>
+             ISerializable private implementation
+            </summary>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for serialization services. Associated enumeration: <see cref="P:System.Security.Permissions.SecurityPermissionAttribute.SerializationFormatter" /></permission>
       </Docs>
@@ -2322,12 +2368,6 @@
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ComponentModel.StringConverter))</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2382,7 +2422,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text displayed in the label of the tree node.</summary>
+        <summary>
+             The label text for the tree node
+            </summary>
         <value>The text displayed in the label of the tree node.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2427,7 +2469,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Toggles the tree node to either the expanded or collapsed state.</summary>
+        <summary>
+             Toggle the state of the node. Expand if collapsed or collapse if
+             expanded.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2474,18 +2519,14 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.Localizable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text that appears when the mouse pointer hovers over a <see cref="T:System.Windows.Forms.TreeNode" />.</summary>
+        <summary>
+             The ToolTip text that will be displayed when the mouse hovers over the node.
+            </summary>
         <value>Gets the text that appears when the mouse pointer hovers over a <see cref="T:System.Windows.Forms.TreeNode" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2526,7 +2567,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a string that represents the current object.</summary>
+        <summary>
+             Returns the label text for the tree node
+            </summary>
         <returns>A string that represents the current object.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Object.ToString" />
@@ -2555,7 +2598,9 @@
         <ReturnType>System.Windows.Forms.TreeView</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the parent tree view that the tree node is assigned to.</summary>
+        <summary>
+             Return the TreeView control this node belongs to.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.TreeView" /> that represents the parent tree view that the tree node is assigned to, or <see langword="null" /> if the node has not been assigned to a tree view.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

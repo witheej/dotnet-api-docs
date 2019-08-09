@@ -1,9 +1,9 @@
-﻿<Type Name="GridTablesFactory" FullName="System.Windows.Forms.GridTablesFactory">
-  <TypeSignature Language="C#" Value="public sealed class GridTablesFactory" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit GridTablesFactory extends System.Object" />
+<Type Name="GridTablesFactory" FullName="System.Windows.Forms.GridTablesFactory">
+  <TypeSignature Language="C#" Value="public static class GridTablesFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit GridTablesFactory extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.GridTablesFactory" />
-  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class GridTablesFactory" />
-  <TypeSignature Language="C++ CLI" Value="public ref class GridTablesFactory sealed" />
+  <TypeSignature Language="VB.NET" Value="Public Class GridTablesFactory" />
+  <TypeSignature Language="C++ CLI" Value="public ref class GridTablesFactory abstract sealed" />
   <TypeSignature Language="F#" Value="type GridTablesFactory = class" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -49,7 +49,10 @@
         <param name="dataSource">An <see cref="T:System.Object" />.</param>
         <param name="dataMember">A <see cref="T:System.String" />.</param>
         <param name="bindingManager">A <see cref="T:System.Windows.Forms.BindingContext" />.</param>
-        <summary>Returns the specified <see cref="P:System.Windows.Forms.DataGridColumnStyle.DataGridTableStyle" /> in a one-element array.</summary>
+        <summary>
+             Takes a DataView and creates an intelligent mapping of DataView storage
+             types into available DataColumn types.
+            </summary>
         <returns>An array of <see cref="T:System.Windows.Forms.DataGridTableStyle" /> objects.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />

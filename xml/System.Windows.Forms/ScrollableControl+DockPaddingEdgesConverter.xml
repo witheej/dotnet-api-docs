@@ -1,4 +1,4 @@
-﻿<Type Name="ScrollableControl+DockPaddingEdgesConverter" FullName="System.Windows.Forms.ScrollableControl+DockPaddingEdgesConverter">
+<Type Name="ScrollableControl+DockPaddingEdgesConverter" FullName="System.Windows.Forms.ScrollableControl+DockPaddingEdgesConverter">
   <TypeSignature Language="C#" Value="public class ScrollableControl.DockPaddingEdgesConverter : System.ComponentModel.TypeConverter" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit ScrollableControl/DockPaddingEdgesConverter extends System.ComponentModel.TypeConverter" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ScrollableControl.DockPaddingEdgesConverter" />
@@ -34,11 +34,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ScrollableControl.DockPaddingEdgesConverter" /> class.</summary>
@@ -72,7 +67,11 @@
         <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
         <param name="value">An object that specifies the type of array for which to get properties.</param>
         <param name="attributes">An array of type attribute that is used as a filter.</param>
-        <summary>Returns a collection of properties for the type of array specified by the value parameter, using the specified context and attributes.</summary>
+        <summary>
+             Retrieves the set of properties for this type. By default, a type has does
+             not return any properties. An easy implementation of this method can just
+             call TypeDescriptor.GetProperties for the correct data type.
+            </summary>
         <returns>A <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> with the properties that are exposed for the <see cref="T:System.Windows.Forms.ScrollableControl" />.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
@@ -100,7 +99,9 @@
       </Parameters>
       <Docs>
         <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
-        <summary>Returns whether the current object supports properties, using the specified context.</summary>
+        <summary>
+             Determines if this object supports properties. By default, this is false.
+            </summary>
         <returns>
           <see langword="true" /> in all cases.</returns>
         <remarks>To be added.</remarks>

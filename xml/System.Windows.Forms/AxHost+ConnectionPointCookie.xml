@@ -1,4 +1,4 @@
-﻿<Type Name="AxHost+ConnectionPointCookie" FullName="System.Windows.Forms.AxHost+ConnectionPointCookie">
+<Type Name="AxHost+ConnectionPointCookie" FullName="System.Windows.Forms.AxHost+ConnectionPointCookie">
   <TypeSignature Language="C#" Value="public class AxHost.ConnectionPointCookie" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit AxHost/ConnectionPointCookie extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.AxHost.ConnectionPointCookie" />
@@ -15,11 +15,6 @@
     <BaseTypeName>System.Object</BaseTypeName>
   </Base>
   <Interfaces />
-  <Attributes>
-    <Attribute FrameworkAlternate="netframework-1.1">
-      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
     <summary>Connects an ActiveX control to a client that handles the control's events.</summary>
     <remarks>
@@ -49,11 +44,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="source" Type="System.Object" />
         <Parameter Name="sink" Type="System.Object" />
@@ -63,7 +53,10 @@
         <param name="source">A connectable object that contains connection points.</param>
         <param name="sink">The client's sink which receives outgoing calls from the connection point.</param>
         <param name="eventInterface">The outgoing interface whose connection point object is being requested.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.AxHost.ConnectionPointCookie" /> class.</summary>
+        <summary>
+             Creates a connection point to of the given interface type.
+             which will call on a managed code sink that implements that interface.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -103,7 +96,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Disconnects the ActiveX control from the client.</summary>
+        <summary>
+             Disconnect the current connection point.  If the object is not connected,
+             this method will do nothing.
+            </summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>

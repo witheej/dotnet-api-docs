@@ -1,4 +1,4 @@
-﻿<Type Name="DesignerActionListsChangedType" FullName="System.ComponentModel.Design.DesignerActionListsChangedType">
+<Type Name="DesignerActionListsChangedType" FullName="System.ComponentModel.Design.DesignerActionListsChangedType">
   <TypeSignature Language="C#" Value="public enum DesignerActionListsChangedType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DesignerActionListsChangedType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignerActionListsChangedType" />
@@ -23,7 +23,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the type of change occurring in a collection of <see cref="T:System.ComponentModel.Design.DesignerActionList" /> objects.</summary>
+    <summary>
+             An enum that defines what time of action happend to the related object's DesignerActionLists collection.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -64,7 +66,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>One or more <see cref="T:System.ComponentModel.Design.DesignerActionList" /> objects have been added to the collection.</summary>
+        <summary>
+             Signifies that one or more DesignerActionList was added.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="ActionListsRemoved">
@@ -89,7 +93,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>One or more <see cref="T:System.ComponentModel.Design.DesignerActionList" /> objects have been removed from the collection.</summary>
+        <summary>
+             Signifies that one or more DesignerActionList was removed.
+            </summary>
       </Docs>
     </Member>
   </Members>

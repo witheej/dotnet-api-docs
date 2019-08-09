@@ -1,4 +1,4 @@
-﻿<Type Name="WebBrowser" FullName="System.Windows.Forms.WebBrowser">
+<Type Name="WebBrowser" FullName="System.Windows.Forms.WebBrowser">
   <TypeSignature Language="C#" Value="public class WebBrowser : System.Windows.Forms.WebBrowserBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebBrowser extends System.Windows.Forms.WebBrowserBase" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.WebBrowser" />
@@ -30,15 +30,14 @@
     <Attribute>
       <AttributeName>System.Windows.Forms.Docking(System.Windows.Forms.DockingBehavior.AutoDock)</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
-      <AttributeName>System.ComponentModel.Designer("System.Windows.Forms.Design.WebBrowserDesigner, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
-    </Attribute>
     <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
       <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Enables the user to navigate Web pages inside your form.</summary>
+    <summary>
+             This is a wrapper over the native WebBrowser control implemented in shdocvw.dll.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -113,7 +112,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.WebBrowser" /> class.</summary>
+        <summary>
+             Creates an instance of the <see cref="T:System.Windows.Forms.WebBrowser" /> control.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -156,7 +157,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the control can navigate to another page after its initial page has been loaded.</summary>
+        <summary>
+             Specifies whether the WebBrowser control may navigate to another page once
+             it has been loaded.  NOTE: it will always be able to navigate before being loaded.
+             "Loaded" here means setting Url, DocumentText, or DocumentStream.
+            </summary>
         <value>
           <see langword="true" /> if the control can navigate to another page; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -192,7 +197,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the <see cref="T:System.Windows.Forms.WebBrowser" /> control navigates to documents that are dropped onto it.</summary>
+        <summary>
+             Specifies whether the WebBrowser control will receive drop notifcations.
+             Maps to IWebBrowser2:RegisterAsDropTarget.
+             Note that this does not mean that the WebBrowser control integrates with
+             Windows Forms drag/drop i.e. the DragDrop event does not fire.  It does
+             control whether you can drag new documents into the browser control.
+            </summary>
         <value>
           <see langword="true" /> if the control accepts documents that are dropped onto it; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
@@ -246,7 +257,9 @@
       </Parameters>
       <Docs>
         <param name="nativeActiveXObject">An object that represents the underlying ActiveX control.</param>
-        <summary>Called by the control when the underlying ActiveX control is created.</summary>
+        <summary>
+             Retrieves IWebBrowser2 from the native object. Overriding classes should first call base.AttachInterfaces.
+            </summary>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; <see href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/4652tyx7(v=vs.100)">Named Permission Sets</see>: <see langword="FullTrust" />.</permission>
         <block subset="none" type="overrides">
@@ -274,15 +287,16 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether a previous page in navigation history is available, which allows the <see cref="M:System.Windows.Forms.WebBrowser.GoBack" /> method to succeed.</summary>
+        <summary>
+             If true, there is navigation history such that calling GoBack() will succeed.
+             Defaults to false.  After that it's value is kept up to date by hooking the
+             DWebBrowserEvents2:CommandStateChange.
+            </summary>
         <value>
           <see langword="true" /> if the control can navigate backward; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -333,7 +347,10 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="P:System.Windows.Forms.WebBrowser.CanGoBack" /> property value changes.</summary>
+        <summary>
+             Occurs when the IE back button would change from enabled to disabled or vice versa.
+             Maps to DWebBrowserEvents2:CommandStateChange w/ CSC_NAVIGATEBACK.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -382,15 +399,16 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether a subsequent page in navigation history is available, which allows the <see cref="M:System.Windows.Forms.WebBrowser.GoForward" /> method to succeed.</summary>
+        <summary>
+             If true, there is navigation history such that calling GoForward() will succeed.
+             Defaults to false.  After that it's value is kept up to date by hooking the
+             DWebBrowserEvents2:CommandStateChange.
+            </summary>
         <value>
           <see langword="true" /> if the control can navigate forward; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -443,7 +461,10 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="P:System.Windows.Forms.WebBrowser.CanGoForward" /> property value changes.</summary>
+        <summary>
+             Occurs when the IE forward button would change from enabled to disabled or vice versa.
+             Maps to DWebBrowserEvents2:CommandStateChange w/ CSC_NAVIGATEFORWARD.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -490,7 +511,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Associates the underlying ActiveX control with a client that can handle control events.</summary>
+        <summary>
+             Attaches to the DWebBrowserEvents2 connection point.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -531,7 +554,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a reference to the unmanaged <see langword="WebBrowser" /> ActiveX control site, which you can extend to customize the managed <see cref="T:System.Windows.Forms.WebBrowser" /> control.</summary>
+        <summary>
+             Returns a WebBrowserSite object.
+            </summary>
         <returns>A <see cref="T:System.Windows.Forms.WebBrowser.WebBrowserSite" /> that represents the <see langword="WebBrowser" /> ActiveX control site.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -569,7 +594,9 @@
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the default size of the control.</summary>
+        <summary>
+             Overrides the default size property of Control to specify a bigger default size of 250 x 250.
+            </summary>
         <value>Gets the default size of the control.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -592,7 +619,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Called by the control when the underlying ActiveX control is discarded.</summary>
+        <summary>
+             Discards the IWebBrowser2 reference. Overriding classes should call base.DetachInterfaces.
+            </summary>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for immediate callers to use this control. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />; <see href="https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/4652tyx7(v=vs.100)">Named Permission Sets</see>: <see langword="FullTrust" />.</permission>
         <block subset="none" type="overrides">
@@ -618,7 +647,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases the event-handling client attached in the <see cref="M:System.Windows.Forms.WebBrowser.CreateSink" /> method from the underlying ActiveX control.</summary>
+        <summary>
+             Releases the DWebBrowserEvents2 connection point.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -694,7 +725,10 @@
         <ReturnType>System.Windows.Forms.HtmlDocument</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an <see cref="T:System.Windows.Forms.HtmlDocument" /> representing the Web page currently displayed in the <see cref="T:System.Windows.Forms.WebBrowser" /> control.</summary>
+        <summary>
+             The HtmlDocument for page hosted in the html page.  If no page is loaded, it returns null.
+             Maps to IWebBrowser2:Document.
+            </summary>
         <value>An <see cref="T:System.Windows.Forms.HtmlDocument" /> representing the current page, or <see langword="null" /> if no page is loaded.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -747,7 +781,12 @@
         <ReturnType>System.Windows.Forms.WebBrowserDocumentCompletedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="T:System.Windows.Forms.WebBrowser" /> control finishes loading a document.</summary>
+        <summary>
+             Occurs when the document hosted in the web browser control is fully loaded.
+             This is conceptially similar to Form.Load().  You need to wait until this event fires
+             before doing anything that manipulates the html page, ex. reading the Document
+             property of the webbrowser control. Maps to DWebBrowserEvents2:DocumentComplete.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -826,7 +865,10 @@
         <ReturnType>System.IO.Stream</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a stream containing the contents of the Web page displayed in the <see cref="T:System.Windows.Forms.WebBrowser" /> control.</summary>
+        <summary>
+             Get/sets the stream for the html document.
+             Uses the IPersisteStreamInit interface on the HtmlDocument to set/retrieve the html stream.
+            </summary>
         <value>A <see cref="T:System.IO.Stream" /> containing the contents of the current Web page, or <see langword="null" /> if no page is loaded. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -876,7 +918,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the HTML contents of the page displayed in the <see cref="T:System.Windows.Forms.WebBrowser" /> control.</summary>
+        <summary>
+             Sets/sets the text of the contained html page.
+            </summary>
         <value>The HTML text of the displayed page, or the empty string ("") if no document is loaded.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -934,7 +978,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the title of the document currently displayed in the <see cref="T:System.Windows.Forms.WebBrowser" /> control.</summary>
+        <summary>
+             The title of the html page currently loaded. If none are loaded, returns empty string.
+             Maps to IWebBrowser2:LocationName.
+            </summary>
         <value>The title of the current document, or the empty string ("") if no document is loaded.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -987,7 +1034,12 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="P:System.Windows.Forms.WebBrowser.DocumentTitle" /> property value changes.</summary>
+        <summary>
+             Occurs whenever the title text changes. The Title is the html page title
+             or the file path/url if not title is available. This is the text you see as
+             the title of the IE window preceeding "Microsoft Internet Explorer".
+             Maps to DWebBrowserEvents2:TitleChange.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1040,7 +1092,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type of the document currently displayed in the <see cref="T:System.Windows.Forms.WebBrowser" /> control.</summary>
+        <summary>
+             A string containing the MIME type of the document hosted in the browser control.
+             If none are loaded, returns empty string.  Maps to IHTMLDocument2:mimeType.
+            </summary>
         <value>The type of the current document.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1082,7 +1137,10 @@
         <ReturnType>System.Windows.Forms.WebBrowserEncryptionLevel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating the encryption method used by the document currently displayed in the <see cref="T:System.Windows.Forms.WebBrowser" /> control.</summary>
+        <summary>
+             Initially set to WebBrowserEncryptionLevel.Insecure.
+             After that it's kept up to date by hooking the DWebBrowserEvents2:SetSecureLockIcon.
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.WebBrowserEncryptionLevel" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1123,7 +1181,11 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="T:System.Windows.Forms.WebBrowser" /> control navigates to or away from a Web site that uses encryption.</summary>
+        <summary>
+             Occurs whenever encryption level changes.
+             Can be used to set a custom security lock icon similar to what IE shows when
+             you go to an https site. Maps to DWebBrowserEvents2:SetSecureLockIcon.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1167,7 +1229,10 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="T:System.Windows.Forms.WebBrowser" /> control downloads a file.</summary>
+        <summary>
+             Occurs when a file download occurs.
+             Can be used to cancel file downloads. Maps to DWebBrowserEvents2:FileDownload.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1208,7 +1273,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the control or any of its child windows has input focus.</summary>
+        <summary>
+             Returns true if this control (or any of its child windows) has focus.
+            </summary>
         <value>
           <see langword="true" /> if the control or any of its child windows has input focus; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -1236,7 +1303,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Navigates the <see cref="T:System.Windows.Forms.WebBrowser" /> control to the previous page in the navigation history, if one is available.</summary>
+        <summary>
+             Navigates the browser to the previous page in the navigation history list.
+             Maps to IWebBrowser2:GoBack.
+             Returns true if the operation succeeds, else returns false.  It will return
+             false if there is no page in the navigation history to go back to.
+            </summary>
         <returns>
           <see langword="true" /> if the navigation succeeds; <see langword="false" /> if a previous page in the navigation history is not available.</returns>
         <remarks>
@@ -1288,7 +1360,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Navigates the <see cref="T:System.Windows.Forms.WebBrowser" /> control to the next page in the navigation history, if one is available.</summary>
+        <summary>
+             Navigates the browser to the next page in the navigation history list.
+             Maps to IWebBrowser2:GoForward.
+             Returns true if the operation succeeds, else returns false.  It will return
+             false if there is no page in the navigation history to go forward to.
+            </summary>
         <returns>
           <see langword="true" /> if the navigation succeeds; <see langword="false" /> if a subsequent page in the navigation history is not available.</returns>
         <remarks>
@@ -1340,7 +1417,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Navigates the <see cref="T:System.Windows.Forms.WebBrowser" /> control to the home page of the current user.</summary>
+        <summary>
+             Navigates the browser to user's homepage.  Maps to IWebBrowser2:GoHome.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1390,7 +1469,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Navigates the <see cref="T:System.Windows.Forms.WebBrowser" /> control to the default search page of the current user.</summary>
+        <summary>
+             Navigates the browser to user's default search page.  Maps to IWebBrowser2:GoSearch.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1451,7 +1532,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="T:System.Windows.Forms.WebBrowser" /> control is currently loading a new document.</summary>
+        <summary>
+             True if the browser is engaged in navigation or download.  Maps to IWebBrowser2:Busy.
+            </summary>
         <value>
           <see langword="true" /> if the control is busy loading a document; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -1496,7 +1579,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="T:System.Windows.Forms.WebBrowser" /> control is in offline mode.</summary>
+        <summary>
+             Gets the offline state of the browser control. Maps to IWebBrowser2:Offline.
+            </summary>
         <value>
           <see langword="true" /> if the <see cref="T:System.Windows.Forms.WebBrowser" /> control is in offline mode; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -1592,7 +1677,9 @@
       </Parameters>
       <Docs>
         <param name="urlString">The URL of the document to load.</param>
-        <summary>Loads the document at the specified Uniform Resource Locator (URL) into the <see cref="T:System.Windows.Forms.WebBrowser" /> control, replacing the previous document.</summary>
+        <summary>
+             String overload for Navigate(Uri)
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1628,11 +1715,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1641,7 +1723,9 @@
       </Parameters>
       <Docs>
         <param name="url">A <see cref="T:System.Uri" /> representing the URL of the document to load.</param>
-        <summary>Loads the document at the location indicated by the specified <see cref="T:System.Uri" /> into the <see cref="T:System.Windows.Forms.WebBrowser" /> control, replacing the previous document.</summary>
+        <summary>
+             Navigates to the specified Uri's AbsolutePath
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1700,7 +1784,9 @@
         <param name="urlString">The URL of the document to load.</param>
         <param name="newWindow">
           <see langword="true" /> to load the document into a new browser window; <see langword="false" /> to load the document into the <see cref="T:System.Windows.Forms.WebBrowser" /> control.</param>
-        <summary>Loads the document at the specified Uniform Resource Locator (URL) into a new browser window or into the <see cref="T:System.Windows.Forms.WebBrowser" /> control.</summary>
+        <summary>
+             String overload for Navigate(Uri, bool)
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1745,7 +1831,9 @@
       <Docs>
         <param name="urlString">The URL of the document to load.</param>
         <param name="targetFrameName">The name of the frame in which to load the document.</param>
-        <summary>Loads the document at the specified Uniform Resource Locator (URL) into the <see cref="T:System.Windows.Forms.WebBrowser" /> control, replacing the contents of the Web page frame with the specified name.</summary>
+        <summary>
+             String overload for Navigate(Uri, string)
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1792,7 +1880,9 @@
         <param name="url">A <see cref="T:System.Uri" /> representing the URL of the document to load.</param>
         <param name="newWindow">
           <see langword="true" /> to load the document into a new browser window; <see langword="false" /> to load the document into the <see cref="T:System.Windows.Forms.WebBrowser" /> control.</param>
-        <summary>Loads the document at the location indicated by the specified <see cref="T:System.Uri" /> into a new browser window or into the <see cref="T:System.Windows.Forms.WebBrowser" /> control.</summary>
+        <summary>
+             Opens a new window if newWindow is true, navigating it to the specified URL. Maps to IWebBrowser2:Navigate.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1838,7 +1928,11 @@
       <Docs>
         <param name="url">A <see cref="T:System.Uri" /> representing the URL of the document to load.</param>
         <param name="targetFrameName">The name of the frame in which to load the document.</param>
-        <summary>Loads the document at the location indicated by the specified <see cref="T:System.Uri" /> into the <see cref="T:System.Windows.Forms.WebBrowser" /> control, replacing the contents of the Web page frame with the specified name.</summary>
+        <summary>
+             Navigates the specified frame to the specified URL.
+             If the frame name is invalid, it opens a new window (not ideal, but it's the current behavior).
+             Maps to IWebBrowser2:Navigate.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1889,7 +1983,9 @@
         <param name="targetFrameName">The name of the frame in which to load the document.</param>
         <param name="postData">HTTP POST data such as form data.</param>
         <param name="additionalHeaders">HTTP headers to add to the default headers.</param>
-        <summary>Loads the document at the specified Uniform Resource Locator (URL) into the <see cref="T:System.Windows.Forms.WebBrowser" /> control, requesting it using the specified HTTP data and replacing the contents of the Web page frame with the specified name.</summary>
+        <summary>
+             String overload for Navigate(Uri, string, byte[], string)
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1939,7 +2035,9 @@
         <param name="targetFrameName">The name of the frame in which to load the document.</param>
         <param name="postData">HTTP POST data such as form data.</param>
         <param name="additionalHeaders">HTTP headers to add to the default headers.</param>
-        <summary>Loads the document at the location indicated by the specified <see cref="T:System.Uri" /> into the <see cref="T:System.Windows.Forms.WebBrowser" /> control, requesting it using the specified HTTP data and replacing the contents of the Web page frame with the specified name.</summary>
+        <summary>
+             Navigates to the specified Uri's AbsolutePath with specified args
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1980,7 +2078,10 @@
         <ReturnType>System.Windows.Forms.WebBrowserNavigatedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="T:System.Windows.Forms.WebBrowser" /> control has navigated to a new document and has begun loading it.</summary>
+        <summary>
+             Occurs after browser control navigation occurs.
+             Fires after browser navigation is complete. Maps to DWebBrowserEvents2:NavigateComplete.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2054,7 +2155,11 @@
         <ReturnType>System.Windows.Forms.WebBrowserNavigatingEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs before the <see cref="T:System.Windows.Forms.WebBrowser" /> control navigates to a new document.</summary>
+        <summary>
+             Occurs before browser control navigation occurs.
+             Fires before browser navigation occurs. Allows navigation to be canceled if
+             NavigatingEventArgs.Cancel is set to false. Maps to DWebBrowserEvents2:BeforeNavigate2.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2129,7 +2234,10 @@
         <ReturnType>System.ComponentModel.CancelEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs before a new browser window is opened.</summary>
+        <summary>
+             Occurs when a new browser window is created.
+             Can be used to cancel the creation of the new browser window. Maps to DWebBrowserEvents2:NewWindow2.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2179,15 +2287,17 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets an object that can be accessed by scripting code that is contained within a Web page displayed in the <see cref="T:System.Windows.Forms.WebBrowser" /> control.</summary>
+        <summary>
+             Allows the host application to provide an object that the contained html
+             pages can access programatically in script.  The object specified here
+             will be accessible in script as the "window.external" object via IDispatch
+             COM interop. Maps to an implementation of the IDocUIHandler.GetExternal event.
+            </summary>
         <value>The object being made available to the scripting code.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2240,7 +2350,9 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.WebBrowser.CanGoBackChanged" /> event.</summary>
+        <summary>
+             Raises the <see cref="E:System.Windows.Forms.WebBrowser.CanGoBackChanged" /> event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2280,7 +2392,9 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.WebBrowser.CanGoForwardChanged" /> event.</summary>
+        <summary>
+             Raises the <see cref="E:System.Windows.Forms.WebBrowser.CanGoForwardChanged" /> event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2320,7 +2434,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.WebBrowserDocumentCompletedEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.WebBrowser.DocumentCompleted" /> event.</summary>
+        <summary>
+             Raises the <see cref="E:System.Windows.Forms.WebBrowser.DocumentCompleted" /> event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2364,7 +2480,9 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.WebBrowser.DocumentTitleChanged" /> event.</summary>
+        <summary>
+             Raises the <see cref="E:System.Windows.Forms.WebBrowser.DocumentTitleChanged" /> event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2404,7 +2522,9 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.WebBrowser.EncryptionLevelChanged" /> event.</summary>
+        <summary>
+             Raises the <see cref="E:System.Windows.Forms.WebBrowser.EncryptionLevelChanged" /> event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2444,7 +2564,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.ComponentModel.CancelEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.WebBrowser.FileDownload" /> event.</summary>
+        <summary>
+             Raises the <see cref="E:System.Windows.Forms.WebBrowser.FileDownload" /> event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2483,7 +2605,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.WebBrowserNavigatedEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.WebBrowser.Navigated" /> event.</summary>
+        <summary>
+             Raises the <see cref="E:System.Windows.Forms.WebBrowser.Navigated" /> event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2523,7 +2647,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.WebBrowserNavigatingEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.WebBrowser.Navigating" /> event.</summary>
+        <summary>
+             Raises the <see cref="E:System.Windows.Forms.WebBrowser.Navigating" /> event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2563,7 +2689,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.ComponentModel.CancelEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.WebBrowser.NewWindow" /> event.</summary>
+        <summary>
+             Raises the <see cref="E:System.Windows.Forms.WebBrowser.NewWindow" /> event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2602,7 +2730,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.WebBrowserProgressChangedEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.WebBrowser.ProgressChanged" /> event.</summary>
+        <summary>
+             Raises the <see cref="E:System.Windows.Forms.WebBrowser.ProgressChanged" /> event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2642,7 +2772,9 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.WebBrowser.StatusTextChanged" /> event.</summary>
+        <summary>
+             Raises the <see cref="E:System.Windows.Forms.WebBrowser.StatusTextChanged" /> event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2682,7 +2814,7 @@
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2718,7 +2850,7 @@
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2798,7 +2930,12 @@
         <ReturnType>System.Windows.Forms.WebBrowserProgressChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="T:System.Windows.Forms.WebBrowser" /> control has updated information on the download progress of a document it is navigating to.</summary>
+        <summary>
+             Occurs when an update to the progress of a download occurs.
+             Fires whenever the browser control has updated info on the download. Can be
+             used to provide a download status bar and display the number of bytes downloaded.
+             Maps to DWebBrowserEvents2:ProgressChange.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2849,7 +2986,10 @@
         <ReturnType>System.Windows.Forms.WebBrowserReadyState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating the current state of the <see cref="T:System.Windows.Forms.WebBrowser" /> control.</summary>
+        <summary>
+             Gets the ReadyState of the browser control. (ex.. document loading vs. load complete).
+             Maps to IWebBrowser2:ReadyState.
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.WebBrowserReadyState" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2897,7 +3037,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Reloads the document currently displayed in the <see cref="T:System.Windows.Forms.WebBrowser" /> control by checking the server for an updated version.</summary>
+        <summary>
+             Refreshes the current page.  Maps to IWebBrowser2:Refresh.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2949,7 +3091,11 @@
       </Parameters>
       <Docs>
         <param name="opt">One of the <see cref="T:System.Windows.Forms.WebBrowserRefreshOption" /> values.</param>
-        <summary>Reloads the document currently displayed in the <see cref="T:System.Windows.Forms.WebBrowser" /> control using the specified refresh options.</summary>
+        <summary>
+             Refreshes the current page w/ the specified refresh option. The refresh option
+             controls how much is loaded out of the browser cache vs. rechecking the server for.
+             Maps to IWebBrowser2:Refresh2
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2991,7 +3137,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the <see cref="T:System.Windows.Forms.WebBrowser" /> displays dialog boxes such as script error messages.</summary>
+        <summary>
+             Specifies whether the browser control shows script errors in dialogs or not.
+             Maps to IWebBrowser2:Silent.
+            </summary>
         <value>
           <see langword="true" /> if the control does not display its dialog boxes; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
@@ -3042,7 +3191,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether scroll bars are displayed in the <see cref="T:System.Windows.Forms.WebBrowser" /> control.</summary>
+        <summary>
+             Enables/disables the webbrowser's scrollbars.
+            </summary>
         <value>
           <see langword="true" /> if scroll bars are displayed in the control; otherwise, <see langword="false" />. The default is true.</value>
         <remarks>
@@ -3158,7 +3309,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Opens the Internet Explorer **Print Preview** dialog box.</summary>
+        <summary>
+             Opens the IE print preview dialog.  Maps to IWebBrowser2:ExecWebBrowser w/ IDM_PRINTPREVIEW flag.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3292,7 +3445,12 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the status text of the <see cref="T:System.Windows.Forms.WebBrowser" /> control.</summary>
+        <summary>
+             The text that would be displayed in the IE status bar.
+             There is no direct WebBrowser property that maps to this. This property is
+             initially an empty string.  After that the value is kept up to date via the
+             DWebBrowserEvents2:StatusTextChange event.
+            </summary>
         <value>The status text.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3343,7 +3501,11 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="P:System.Windows.Forms.WebBrowser.StatusText" /> property value changes.</summary>
+        <summary>
+             Occurs whenever the status text changes.
+             Can be used to keep a status bar populated with uptodate text.
+             Maps to DWebBrowserEvents2:StatusTextChange.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3389,7 +3551,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Cancels any pending navigation and stops any dynamic page elements, such as background sounds and animations.</summary>
+        <summary>
+             Stops the current navigation.  Maps to IWebBrowser2:Stop.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3506,7 +3670,10 @@
         <ReturnType>System.Version</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the version of Internet Explorer installed.</summary>
+        <summary>
+             Returns the version property of IE.
+             Determined by reading the file version of mshtml.dll in the %system% directory.
+            </summary>
         <value>A <see cref="T:System.Version" /> object representing the version of Internet Explorer installed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3542,7 +3709,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether keyboard shortcuts are enabled within the <see cref="T:System.Windows.Forms.WebBrowser" /> control.</summary>
+        <summary>
+             Specifies whether the browser control Shortcuts are enabled.
+             Maps to IDocHostUIHandler:TranslateAccelerator event.
+            </summary>
         <value>
           <see langword="true" /> if keyboard shortcuts are enabled within the control; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>

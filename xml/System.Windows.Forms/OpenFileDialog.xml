@@ -1,4 +1,4 @@
-﻿<Type Name="OpenFileDialog" FullName="System.Windows.Forms.OpenFileDialog">
+<Type Name="OpenFileDialog" FullName="System.Windows.Forms.OpenFileDialog">
   <TypeSignature Language="C#" Value="public sealed class OpenFileDialog : System.Windows.Forms.FileDialog" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit OpenFileDialog extends System.Windows.Forms.FileDialog" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.OpenFileDialog" />
@@ -15,13 +15,12 @@
     <BaseTypeName>System.Windows.Forms.FileDialog</BaseTypeName>
   </Base>
   <Interfaces />
-  <Attributes>
-    <Attribute FrameworkAlternate="netframework-1.1">
-      <AttributeName>System.ComponentModel.Designer("System.Windows.Forms.Design.OpenFileDialogDesigner, System.Design, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
-    <summary>Displays a standard dialog box that prompts the user to open a file. This class cannot be inherited.</summary>
+    <summary>
+             Represents a common dialog box
+             that displays the control that allows the user to open a file. This class
+             cannot be inherited.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -64,11 +63,6 @@ On a right-to-left operating system, setting the containing form's <xref:System.
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes an instance of the <see cref="T:System.Windows.Forms.OpenFileDialog" /> class.</summary>
@@ -105,7 +99,10 @@ On a right-to-left operating system, setting the containing form's <xref:System.
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the dialog box displays a warning if the user specifies a file name that does not exist.</summary>
+        <summary>
+             Gets or sets a value indicating whether the dialog box displays a
+             warning if the user specifies a file name that does not exist.
+            </summary>
         <value>
           <see langword="true" /> if the dialog box displays a warning when the user specifies a file name that does not exist; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
@@ -136,7 +133,10 @@ On a right-to-left operating system, setting the containing form's <xref:System.
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the dialog box allows multiple files to be selected.</summary>
+        <summary>
+             Gets or sets a value
+             indicating whether the dialog box allows multiple files to be selected.
+            </summary>
         <value>
           <see langword="true" /> if the dialog box allows multiple files to be selected together or concurrently; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
@@ -178,7 +178,10 @@ On a right-to-left operating system, setting the containing form's <xref:System.
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Opens the file selected by the user, with read-only permission. The file is specified by the <see cref="P:System.Windows.Forms.FileDialog.FileName" /> property.</summary>
+        <summary>
+             Opens the file selected by the user with read-only permission.  The file
+             attempted is specified by the <see cref="P:System.Windows.Forms.FileDialog.FileName" /> property.
+            </summary>
         <returns>A <see cref="T:System.IO.Stream" /> that specifies the read-only file selected by the user.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -227,7 +230,10 @@ On a right-to-left operating system, setting the containing form's <xref:System.
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the read-only check box is selected.</summary>
+        <summary>
+             Gets or sets a value indicating whether
+             the read-only check box is selected.
+            </summary>
         <value>
           <see langword="true" /> if the read-only check box is selected; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
@@ -271,7 +277,9 @@ On a right-to-left operating system, setting the containing form's <xref:System.
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Resets all properties to their default values.</summary>
+        <summary>
+             Resets all properties to their default values.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -372,7 +380,9 @@ On a right-to-left operating system, setting the containing form's <xref:System.
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the dialog box contains a read-only check box.</summary>
+        <summary>
+             Gets or sets a value indicating whether the dialog contains a read-only check box.
+            </summary>
         <value>
           <see langword="true" /> if the dialog box contains a read-only check box; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>

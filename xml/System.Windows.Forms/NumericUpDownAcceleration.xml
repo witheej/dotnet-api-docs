@@ -1,4 +1,4 @@
-﻿<Type Name="NumericUpDownAcceleration" FullName="System.Windows.Forms.NumericUpDownAcceleration">
+<Type Name="NumericUpDownAcceleration" FullName="System.Windows.Forms.NumericUpDownAcceleration">
   <TypeSignature Language="C#" Value="public class NumericUpDownAcceleration" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NumericUpDownAcceleration extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.NumericUpDownAcceleration" />
@@ -15,7 +15,11 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides information specifying how acceleration should be performed on a spin box (also known as an up-down control) when the up or down button is pressed for specified time period.</summary>
+    <summary>
+             Comprises the information specifying how acceleration should be performed
+             on a Windows up-down control when the up/down button is pressed for certain
+             amount of time.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -75,16 +79,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Decimal</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the quantity to increment or decrement the displayed value during acceleration.</summary>
+        <summary>
+             Determines the amount to increment by.
+            </summary>
         <value>The quantity to increment or decrement the displayed value during acceleration.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The set value is less than 0.</exception>
@@ -103,16 +104,14 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the number of seconds the up or down button must be pressed before the acceleration starts.</summary>
+        <summary>
+             Determines the amount of time for the UpDown control to wait to set the increment
+             step when holding the up/down button.
+            </summary>
         <value>Gets or sets the number of seconds the up or down button must be pressed before the acceleration starts.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The set value is less than 0.</exception>

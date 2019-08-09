@@ -1,4 +1,4 @@
-﻿<Type Name="TreeNodeMouseClickEventArgs" FullName="System.Windows.Forms.TreeNodeMouseClickEventArgs">
+<Type Name="TreeNodeMouseClickEventArgs" FullName="System.Windows.Forms.TreeNodeMouseClickEventArgs">
   <TypeSignature Language="C#" Value="public class TreeNodeMouseClickEventArgs : System.Windows.Forms.MouseEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TreeNodeMouseClickEventArgs extends System.Windows.Forms.MouseEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TreeNodeMouseClickEventArgs" />
@@ -15,7 +15,10 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.Forms.TreeView.NodeMouseClick" /> and <see cref="E:System.Windows.Forms.TreeView.NodeMouseDoubleClick" /> events.</summary>
+    <summary>
+             Provides data for the <see cref="!:TreeView.TreeNodeMouseClickEventArgs" />
+             or <see cref="M:System.Windows.Forms.TreeView.OnNodeMouseClick(System.Windows.Forms.TreeNodeMouseClickEventArgs)" /> event.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -73,11 +76,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TreeNode</ReturnType>
       </ReturnValue>

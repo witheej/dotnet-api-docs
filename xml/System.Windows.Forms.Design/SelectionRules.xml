@@ -1,4 +1,4 @@
-﻿<Type Name="SelectionRules" FullName="System.Windows.Forms.Design.SelectionRules">
+<Type Name="SelectionRules" FullName="System.Windows.Forms.Design.SelectionRules">
   <TypeSignature Language="C#" Value="public enum SelectionRules" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SelectionRules extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.SelectionRules" />
@@ -24,7 +24,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines identifiers that are used to indicate selection rules for a component.</summary>
+    <summary>
+             Specifies a set of selection rule identifiers that can be used to indicate attributes for a selected component.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -58,7 +60,9 @@
       </ReturnValue>
       <MemberValue>15</MemberValue>
       <Docs>
-        <summary>Indicates the component supports sizing in all directions.</summary>
+        <summary>
+             Indicates the given component supports sizing in all directions, and the selection service is not currently locked.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="BottomSizeable">
@@ -84,7 +88,9 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Indicates the component supports resize from the bottom.</summary>
+        <summary>
+             Indicates the given component supports resize from the bottom. This bit will be ignored unless the Sizeable bit is also set.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="LeftSizeable">
@@ -110,7 +116,9 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>Indicates the component supports resize from the left.</summary>
+        <summary>
+             Indicates the given component supports resize from the left. This bit will be ignored unless the Sizeable bit is also set.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Locked">
@@ -136,7 +144,9 @@
       </ReturnValue>
       <MemberValue>-2147483648</MemberValue>
       <Docs>
-        <summary>Indicates the component is locked to its container. Overrides the <see cref="F:System.Windows.Forms.Design.SelectionRules.Moveable" />, <see cref="F:System.Windows.Forms.Design.SelectionRules.AllSizeable" />, <see cref="F:System.Windows.Forms.Design.SelectionRules.BottomSizeable" />, <see cref="F:System.Windows.Forms.Design.SelectionRules.LeftSizeable" />, <see cref="F:System.Windows.Forms.Design.SelectionRules.RightSizeable" />, and <see cref="F:System.Windows.Forms.Design.SelectionRules.TopSizeable" /> bit flags of this enumeration.</summary>
+        <summary>
+             Indicates the given component is locked to its container. Overrides the moveable and sizeable properties of this enum.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Moveable">
@@ -162,7 +172,9 @@
       </ReturnValue>
       <MemberValue>268435456</MemberValue>
       <Docs>
-        <summary>Indicates the component supports a location property that allows it to be moved on the screen.</summary>
+        <summary>
+             Indicates the given component supports a location property that allows it to be moved on the screen, and that the selection service is not currently locked.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -188,7 +200,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Indicates no special selection attributes.</summary>
+        <summary>
+             Indicates no special selection attributes.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="RightSizeable">
@@ -214,7 +228,9 @@
       </ReturnValue>
       <MemberValue>8</MemberValue>
       <Docs>
-        <summary>Indicates the component supports resize from the right.</summary>
+        <summary>
+             Indicates the given component supports resize from the right. This bit will be ignored unless the Sizeable bit is also set.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="TopSizeable">
@@ -240,7 +256,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Indicates the component supports resize from the top.</summary>
+        <summary>
+             Indicates the given component supports resize from the top. This bit will be ignored unless the Sizeable bit is also set.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -266,7 +284,9 @@
       </ReturnValue>
       <MemberValue>1073741824</MemberValue>
       <Docs>
-        <summary>Indicates the component has some form of visible user interface and the selection service is drawing a selection border around this user interface. If a selected component has this rule set, you can assume that the component implements <see cref="T:System.ComponentModel.IComponent" /> and that it is associated with a corresponding designer instance.</summary>
+        <summary>
+             Indicates the given component has some form of visible user interface and the selection service is drawing a selection border around this user interface. If a selected component has this rule set, you can assume that the component implements <see cref="T:System.ComponentModel.IComponent" /> and that it is associated with a corresponding design instance.
+            </summary>
       </Docs>
     </Member>
   </Members>

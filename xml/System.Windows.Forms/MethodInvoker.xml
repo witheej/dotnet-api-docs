@@ -1,4 +1,4 @@
-﻿<Type Name="MethodInvoker" FullName="System.Windows.Forms.MethodInvoker">
+<Type Name="MethodInvoker" FullName="System.Windows.Forms.MethodInvoker">
   <TypeSignature Language="C#" Value="public delegate void MethodInvoker();" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MethodInvoker extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MethodInvoker" />
@@ -19,7 +19,9 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <summary>Represents a delegate that can execute any method in managed code that is declared void and takes no parameters.</summary>
+    <summary>
+             Represents a delegate that can execute any method in managed code that is declared void and takes no parameters.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

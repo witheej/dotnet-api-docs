@@ -1,4 +1,4 @@
-﻿<Type Name="AxHost+InvalidActiveXStateException" FullName="System.Windows.Forms.AxHost+InvalidActiveXStateException">
+<Type Name="AxHost+InvalidActiveXStateException" FullName="System.Windows.Forms.AxHost+InvalidActiveXStateException">
   <TypeSignature Language="C#" Value="public class AxHost.InvalidActiveXStateException : Exception" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit AxHost/InvalidActiveXStateException extends System.Exception" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.AxHost.InvalidActiveXStateException" />
@@ -56,11 +56,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.AxHost.InvalidActiveXStateException" /> class without specifying information about the member that referenced the ActiveX control.</summary>
@@ -81,11 +76,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="kind" Type="System.Windows.Forms.AxHost+ActiveXInvokeKind" />

@@ -1,4 +1,4 @@
-﻿<Type Name="AutoCompleteSource" FullName="System.Windows.Forms.AutoCompleteSource">
+<Type Name="AutoCompleteSource" FullName="System.Windows.Forms.AutoCompleteSource">
   <TypeSignature Language="C#" Value="public enum AutoCompleteSource" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AutoCompleteSource extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.AutoCompleteSource" />
@@ -14,7 +14,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the source for <see cref="T:System.Windows.Forms.ComboBox" /> and <see cref="T:System.Windows.Forms.TextBox" /> automatic completion functionality.</summary>
+    <summary>
+             Specifies the AutoCompleteSource for ComboBox and TextBox AutoComplete Feature.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,7 +38,10 @@
       </ReturnValue>
       <MemberValue>7</MemberValue>
       <Docs>
-        <summary>Specifies the equivalent of <see cref="F:System.Windows.Forms.AutoCompleteSource.FileSystem" /> and <see cref="F:System.Windows.Forms.AutoCompleteSource.AllUrl" /> as the source. This is the default value when <see cref="T:System.Windows.Forms.AutoCompleteMode" /> has been set to a value other than the default.</summary>
+        <summary>
+             This option is equivalent to FILESYSTEM | AllUrl. This is the default
+             value when the AutoCompleteMode has been set to a non default value.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="AllUrl">
@@ -57,7 +62,9 @@
       </ReturnValue>
       <MemberValue>6</MemberValue>
       <Docs>
-        <summary>Specifies the equivalent of <see cref="F:System.Windows.Forms.AutoCompleteSource.HistoryList" /> and <see cref="F:System.Windows.Forms.AutoCompleteSource.RecentlyUsedList" /> as the source.</summary>
+        <summary>
+             This option is equivalent to HistoryList | RecentlyUsedList.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CustomSource">
@@ -78,7 +85,9 @@
       </ReturnValue>
       <MemberValue>64</MemberValue>
       <Docs>
-        <summary>Specifies strings from a built-in <see cref="T:System.Windows.Forms.AutoCompleteStringCollection" /> as the source.</summary>
+        <summary>
+             This option includes stirngs from a built in String Collection object.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="FileSystem">
@@ -99,7 +108,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Specifies the file system as the source.</summary>
+        <summary>
+             This option includes the file system as the source.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="FileSystemDirectories">
@@ -120,7 +131,10 @@
       </ReturnValue>
       <MemberValue>32</MemberValue>
       <Docs>
-        <summary>Specifies that only directory names and not file names will be automatically completed.</summary>
+        <summary>
+             This option is allows to autoComplete just directory names and not
+             the files inside.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="HistoryList">
@@ -141,7 +155,9 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Includes the Uniform Resource Locators (URLs) in the history list.</summary>
+        <summary>
+             This option includes the URL's in the users history list.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="ListItems">
@@ -162,7 +178,9 @@
       </ReturnValue>
       <MemberValue>256</MemberValue>
       <Docs>
-        <summary>Specifies that the items of the <see cref="T:System.Windows.Forms.ComboBox" /> represent the source.</summary>
+        <summary>
+             The items of the combobox represent the source.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -183,7 +201,10 @@
       </ReturnValue>
       <MemberValue>128</MemberValue>
       <Docs>
-        <summary>Specifies that no <see cref="T:System.Windows.Forms.AutoCompleteSource" /> is currently in use. This is the default value of <see cref="T:System.Windows.Forms.AutoCompleteSource" />.</summary>
+        <summary>
+             The default value specifying the no AutoCompleteSource is currently
+             in use.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="RecentlyUsedList">
@@ -204,7 +225,9 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>Includes the Uniform Resource Locators (URLs) in the list of those URLs most recently used.</summary>
+        <summary>
+             This option includes the URL's in the users recently used list.
+            </summary>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="CodeDomSerializerBase" FullName="System.ComponentModel.Design.Serialization.CodeDomSerializerBase">
+<Type Name="CodeDomSerializerBase" FullName="System.ComponentModel.Design.Serialization.CodeDomSerializerBase">
   <TypeSignature Language="C#" Value="public abstract class CodeDomSerializerBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit CodeDomSerializerBase extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.CodeDomSerializerBase" />
@@ -20,11 +20,14 @@
   <Interfaces />
   <Attributes>
     <Attribute>
-      <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+      <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides a base class for <see cref="T:System.ComponentModel.Design.Serialization.CodeDomSerializer" /> classes.</summary>
+    <summary>
+             This base class is used as a shared base between CodeDomSerializer and TypeCodeDomSerializer.
+             It is not meant to be publicly derived from.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -69,7 +72,11 @@
         <param name="manager">The <see cref="T:System.ComponentModel.Design.Serialization.IDesignerSerializationManager" /> to use for serialization.</param>
         <param name="name">The name of the object that results from the expression. Can be <see langword="null" /> if there is no need to name the object.</param>
         <param name="expression">The <see cref="T:System.CodeDom.CodeExpression" /> to interpret.</param>
-        <summary>Deserializes the given expression into an in-memory object.</summary>
+        <summary>
+             This is a helper method that will deserialize a given expression.  It deserializes
+             the statement by interpreting and executing the CodeDom expression, returning
+             the results.
+            </summary>
         <returns>An object resulting from interpretation of <paramref name="expression" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -131,7 +138,10 @@
         <param name="name">The name of the deserialized object.</param>
         <param name="addToContainer">
           <see langword="true" /> to add this object to the design container; otherwise, <see langword="false" />. The object must implement <see cref="T:System.ComponentModel.IComponent" /> for this to have any effect.</param>
-        <summary>Returns an instance of the given type.</summary>
+        <summary>
+             This method is invoked during deserialization to obtain an instance of an object.  When this is called, an instance
+             of the requested type should be returned.  The default implementation invokes manager.CreateInstance.
+            </summary>
         <returns>An instance of <paramref name="type" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -176,7 +186,11 @@
         <param name="manager">The <see cref="T:System.ComponentModel.Design.Serialization.IDesignerSerializationManager" /> to use for serialization.</param>
         <param name="value">The object from which the properties are to be deserialized.</param>
         <param name="filter">An <see cref="T:System.Attribute" /> array that filters which properties will be deserialized.</param>
-        <summary>Deserializes properties on the given object from the invariant culture's resource bundle.</summary>
+        <summary>
+             This method will inspect all of the properties on the given object fitting the filter, and check for that
+             property in a resource blob.  This is useful for deserializing properties that cannot be represented
+             in code, such as design-time properties.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -220,7 +234,10 @@
       <Docs>
         <param name="manager">The <see cref="T:System.ComponentModel.Design.Serialization.IDesignerSerializationManager" /> to use for serialization.</param>
         <param name="statement">The <see cref="T:System.CodeDom.CodeStatement" /> to deserialize.</param>
-        <summary>Deserializes a statement by interpreting and executing a CodeDOM statement.</summary>
+        <summary>
+             This is a helper method that will deserialize a given statement.  It deserializes
+             the statement by interpreting and executing the CodeDom statement.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -255,13 +272,15 @@
         <ReturnType>System.ComponentModel.AttributeCollection</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="manager" Type="System.ComponentModel.Design.Serialization.IDesignerSerializationManager" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="type" Type="System.Type" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="manager" Type="System.ComponentModel.Design.Serialization.IDesignerSerializationManager" />
+        <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
         <param name="manager">The serialization manager.</param>
         <param name="type">The target type.</param>
-        <summary>Gets a collection of attributes as defined in the project's target version of the .NET Framework.</summary>
+        <summary>
+             Get attributes collection as defined in the project target framework
+            </summary>
         <returns>A collection of attributes as defined in the project's target version of the .NET Framework.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -286,13 +305,15 @@
         <ReturnType>System.ComponentModel.AttributeCollection</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="manager" Type="System.ComponentModel.Design.Serialization.IDesignerSerializationManager" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="instance" Type="System.Object" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="manager" Type="System.ComponentModel.Design.Serialization.IDesignerSerializationManager" />
+        <Parameter Name="instance" Type="System.Object" />
       </Parameters>
       <Docs>
         <param name="manager">The serialization manager.</param>
         <param name="instance">An object of the target type.</param>
-        <summary>Gets a collection of attributes as defined in the project's target version of the .NET Framework.</summary>
+        <summary>
+             Get attributes collection as defined in the project target framework
+            </summary>
         <returns>A collection of attributes as defined in the project's target version of the .NET Framework.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -317,15 +338,17 @@
         <ReturnType>System.ComponentModel.EventDescriptorCollection</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="manager" Type="System.ComponentModel.Design.Serialization.IDesignerSerializationManager" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="instance" Type="System.Object" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="attributes" Type="System.Attribute[]" Index="2" FrameworkAlternate="netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="manager" Type="System.ComponentModel.Design.Serialization.IDesignerSerializationManager" />
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="attributes" Type="System.Attribute[]" />
       </Parameters>
       <Docs>
         <param name="manager">The serialization manager.</param>
         <param name="instance">An object of the target type.</param>
         <param name="attributes">An array of attributes to pass to the target version of the .NET Framework.</param>
-        <summary>Gets a collection of events as defined in the project's target version of the .NET Framework.</summary>
+        <summary>
+             Get events collection as defined in the project target framework
+            </summary>
         <returns>A collection of events as defined in the project's target version of the .NET Framework.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -357,7 +380,22 @@
       <Docs>
         <param name="manager">The <see cref="T:System.ComponentModel.Design.Serialization.IDesignerSerializationManager" /> to use for serialization.</param>
         <param name="value">The object for which to get an expression.</param>
-        <summary>Returns an expression for the given object.</summary>
+        <summary>
+             This method returns an expression representing the given object.  It may return null, indicating that
+             no expression has been set that describes the object.  Expressions are aquired in one of three ways:
+             1.   The expression could be the result of a prior SetExpression call.
+             2.   The expression could have been found in the RootContext.
+             3.   The expression could be derived through IReferenceService.
+             4.   The current expression on the context stack has a PresetValue == value.
+             To derive expressions through IReferenceService, GetExpression asks the reference service if there
+             is a name for the given object.  If the expression service returns a valid name, it checks to see if
+             there is a '.' in the name.  This indicates that the expression service found this object as the return
+             value of a read only property on another object.  If there is a '.', GetExpression will split the reference
+             into sub-parts.  The leftmost part is a name that will be evalulated via manager.GetInstance.  For each
+             subsequent part, a property reference expression will be built.  The final expression will then be returned.
+             If the object did not have an expression set, or the object was not found in the reference service, null will
+             be returned from GetExpression, indicating there is no existing expression for the object.
+            </summary>
         <returns>A <see cref="T:System.CodeDom.CodeExpression" /> representing <paramref name="value" />, or <see langword="null" /> if there is no existing expression for <paramref name="value" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -404,15 +442,17 @@
         <ReturnType>System.ComponentModel.PropertyDescriptorCollection</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="manager" Type="System.ComponentModel.Design.Serialization.IDesignerSerializationManager" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="instance" Type="System.Object" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="attributes" Type="System.Attribute[]" Index="2" FrameworkAlternate="netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="manager" Type="System.ComponentModel.Design.Serialization.IDesignerSerializationManager" />
+        <Parameter Name="instance" Type="System.Object" />
+        <Parameter Name="attributes" Type="System.Attribute[]" />
       </Parameters>
       <Docs>
         <param name="manager">The serialization manager.</param>
         <param name="instance">An object of the target type.</param>
         <param name="attributes">An array of attributes to pass to the target version of the .NET Framework.</param>
-        <summary>Gets a collection of properties as defined in the project's target version of the .NET Framework.</summary>
+        <summary>
+             Get properties collection as defined in the project target framework
+            </summary>
         <returns>A collection of properties as defined in the project's target version of the .NET Framework.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -436,13 +476,17 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="manager" Type="System.ComponentModel.Design.Serialization.IDesignerSerializationManager" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="type" Type="System.Type" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="manager" Type="System.ComponentModel.Design.Serialization.IDesignerSerializationManager" />
+        <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
         <param name="manager">The serialization manager.</param>
         <param name="type">The type to use metadata from.</param>
-        <summary>Gets a reflection type generated from type metadata.</summary>
+        <summary>
+             Get a faux type which is generated from the metadata, which is
+             looked up on the target framerwork assembly. Be careful to not use mix
+             this type with runtime types in comparisons!
+            </summary>
         <returns>A reflection type generated from the metadata of <paramref name="type" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -474,13 +518,18 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="manager" Type="System.ComponentModel.Design.Serialization.IDesignerSerializationManager" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="instance" Type="System.Object" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="manager" Type="System.ComponentModel.Design.Serialization.IDesignerSerializationManager" />
+        <Parameter Name="instance" Type="System.Object" />
       </Parameters>
       <Docs>
         <param name="manager">The serialization manager.</param>
         <param name="instance">The object to use metadata from.</param>
-        <summary>Gets a reflection type generated from object metadata.</summary>
+        <summary>
+             Get a faux type which is generated based on the metadata
+             looked up on the target framework assembly.
+             Never pass a type returned from GetReflectionType to runtime APIs that need a type.
+             Call GetRuntimeType first to unwrap the reflection type.
+            </summary>
         <returns>A reflection type generated from the metadata of <paramref name="object" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -528,7 +577,12 @@
       <Docs>
         <param name="manager">The <see cref="T:System.ComponentModel.Design.Serialization.IDesignerSerializationManager" /> to use for serialization.</param>
         <param name="value">The object specifying the serializer to retrieve.</param>
-        <summary>Locates a serializer for the given object value.</summary>
+        <summary>
+             Returns the serializer for the given value.  This is cognizant that instance
+             attributes may be different from type attributes and will use a custom serializer
+             on the instance if it is present.  If not, it will delegate to the serialization
+             manager.
+            </summary>
         <returns>A <see cref="T:System.ComponentModel.Design.Serialization.CodeDomSerializer" /> that is appropriate for <paramref name="value" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -571,7 +625,12 @@
       <Docs>
         <param name="manager">The <see cref="T:System.ComponentModel.Design.Serialization.IDesignerSerializationManager" /> to use for serialization.</param>
         <param name="valueType">The <see cref="T:System.Type" /> specifying the serializer to retrieve.</param>
-        <summary>Locates a serializer for the given type.</summary>
+        <summary>
+             Returns the serializer for the given value.  This is cognizant that instance
+             attributes may be different from type attributes and will use a custom serializer
+             on the instance if it is present.  If not, it will delegate to the serialization
+             manager.
+            </summary>
         <returns>A <see cref="T:System.ComponentModel.Design.Serialization.CodeDomSerializer" /> that is appropriate for <paramref name="valueType" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -607,13 +666,15 @@
         <ReturnType>System.ComponentModel.TypeDescriptionProvider</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="provider" Type="System.IServiceProvider" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="instance" Type="System.Object" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="provider" Type="System.IServiceProvider" />
+        <Parameter Name="instance" Type="System.Object" />
       </Parameters>
       <Docs>
         <param name="provider">The type description provider service.</param>
         <param name="instance">An object from which the type description provider service can be derived, if <paramref name="provider" /> is <see langword="null" />.</param>
-        <summary>Gets a <see cref="T:System.ComponentModel.TypeDescriptionProvider" /> that is aware of the target version of the .NET Framework, for use in type filtering.</summary>
+        <summary>
+             Return a target framework-aware TypeDescriptionProvider which can be used for type filtering
+            </summary>
         <returns>A .NET Framework-aware type description provider.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -645,7 +706,14 @@
       <Docs>
         <param name="manager">The <see cref="T:System.ComponentModel.Design.Serialization.IDesignerSerializationManager" /> to use for serialization.</param>
         <param name="value">The object for which the name will be retrieved.</param>
-        <summary>Returns a unique name for the given object.</summary>
+        <summary>
+             This method returns a unique name for the given object.  It first calls GetName from the serialization
+             manager, and if this does not return a name if fabricates a name for the object.  To fabricate a name
+             it uses the INameCreationService to create valid names.  If the service is not available instead the
+             method will fabricate a name based on the short type name combined with an index number to make
+             it unique. The resulting name is associated with the serialization manager by calling SetName before
+             the new name is returned.
+            </summary>
         <returns>A unique name for <paramref name="value" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -688,11 +756,6 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -750,7 +813,11 @@
         <param name="value">The object to test for previous serialization.</param>
         <param name="honorPreset">
           <see langword="true" /> to include preset expressions; otherwise, <see langword="false" />.</param>
-        <summary>Returns a value indicating whether the given object has been serialized, optionally considering preset expressions.</summary>
+        <summary>
+             This method returns true if the given value has been serialized before.  For an object to
+             be considered serialized either it or another serializer must have called SetExpression, creating
+             a relationship between that object and a referring expression.
+            </summary>
         <returns>
           <see langword="true" /> if <paramref name="value" /> has been serialized; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -797,7 +864,11 @@
         <param name="value">The object to serialize.</param>
         <param name="isComplete">
           <see langword="true" /> if <paramref name="value" /> was fully serialized; otherwise, <see langword="false" />.</param>
-        <summary>Returns an expression representing the creation of the given object.</summary>
+        <summary>
+             This method can be used to serialize an expression that represents the creation of the given object.
+             It is aware of instance descriptors and will return true for isComplete if the entire configuration for the
+             instance could be achieved.
+            </summary>
         <returns>An expression representing the creation of <paramref name="value" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -846,7 +917,9 @@
         <param name="statements">The <see cref="T:System.CodeDom.CodeStatementCollection" /> into which the event will be serialized.</param>
         <param name="value">The object to which <paramref name="descriptor" /> is bound.</param>
         <param name="descriptor">An <see cref="T:System.ComponentModel.EventDescriptor" /> specifying the event to serialize.</param>
-        <summary>Serializes the given event into the given statement collection.</summary>
+        <summary>
+             This serializes a single event for the given object.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -897,7 +970,7 @@
         <Parameter Name="value" Type="System.Object" />
         <Parameter Name="filter" Type="System.Attribute[]">
           <Attributes>
-            <Attribute FrameworkAlternate="netcore-3.0">
+            <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -908,7 +981,9 @@
         <param name="statements">The <see cref="T:System.CodeDom.CodeStatementCollection" /> into which the event will be serialized.</param>
         <param name="value">The object on which events will be serialized.</param>
         <param name="filter">An <see cref="T:System.Attribute" /> array that filters which events will be serialized.</param>
-        <summary>Serializes the specified events into the given statement collection.</summary>
+        <summary>
+             This serializes all events for the given object.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -958,7 +1033,9 @@
         <param name="statements">The <see cref="T:System.CodeDom.CodeStatementCollection" /> into which the properties will be serialized.</param>
         <param name="value">The object on which the properties will be serialized.</param>
         <param name="filter">An <see cref="T:System.Attribute" /> array that filters which properties will be serialized.</param>
-        <summary>Serializes the properties on the given object into the given statement collection.</summary>
+        <summary>
+             This serializes all properties for the given object, using the provided filter.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1008,7 +1085,11 @@
         <param name="statements">Not used.</param>
         <param name="value">The object whose properties will be serialized.</param>
         <param name="filter">An <see cref="T:System.Attribute" /> array that filters which properties will be serialized.</param>
-        <summary>Serializes the properties on the given object into the invariant culture's resource bundle.</summary>
+        <summary>
+             This method will inspect all of the properties on the given object fitting the filter, and check for that
+             property in a resource blob.  This is useful for deserializing properties that cannot be represented
+             in code, such as design-time properties.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1062,7 +1143,9 @@
         <param name="statements">The <see cref="T:System.CodeDom.CodeStatementCollection" /> into which the property will be serialized.</param>
         <param name="value">The object on which the property will be serialized.</param>
         <param name="propertyToSerialize">The property to serialize.</param>
-        <summary>Serializes a property on the given object.</summary>
+        <summary>
+             This serializes the given proeprty for the given object.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1110,7 +1193,10 @@
         <param name="manager">The <see cref="T:System.ComponentModel.Design.Serialization.IDesignerSerializationManager" /> to use for serialization.</param>
         <param name="resourceName">The name of the resource bundle into which <paramref name="value" /> will be serialized.</param>
         <param name="value">The object to serialize.</param>
-        <summary>Serializes the given object into a resource bundle using the given resource name.</summary>
+        <summary>
+             Writes the given resource value under the given name.  The resource is written to the
+             current CultureInfo the user is using to design with.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1160,7 +1246,10 @@
         <param name="manager">The <see cref="T:System.ComponentModel.Design.Serialization.IDesignerSerializationManager" /> to use for serialization.</param>
         <param name="resourceName">The name of the resource bundle into which <paramref name="value" /> will be serialized.</param>
         <param name="value">The object to serialize.</param>
-        <summary>Serializes the given object into a resource bundle using the given resource name.</summary>
+        <summary>
+             Writes the given resource value under the given name.  The resource is written to the
+             invariant culture.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1204,7 +1293,21 @@
       <Docs>
         <param name="manager">The <see cref="T:System.ComponentModel.Design.Serialization.IDesignerSerializationManager" /> to use for serialization.</param>
         <param name="value">The object to serialize. Can be <see langword="null" />.</param>
-        <summary>Serializes the given object into an expression.</summary>
+        <summary>
+             This is a helper method that serializes a value to an expression.  It will return a CodeExpression if the
+             value can be serialized, or null if it can't.  SerializeToExpression uses the following rules for serializing
+             types:
+             1.   It first calls GetExpression to see if an expression has already been created for the object.  If so, it
+             returns the existing expression.
+             2.   It then locates the object's serializer, and asks it to serialize.
+             3.   If the return value of the object's serializer is a CodeExpression, the expression is returned.
+             4.   It finally makes one last call to GetExpression to see if the serializer added an expression.
+             5.   Finally, it returns null.
+             If no expression could be created and no suitable serializer could be found, an error will be
+             reported through the serialization manager.  No error will be reported if a serializer was found
+             but it failed to produce an expression.  It is assumed that the serializer either already reported
+             the error, or does not wish to serialize the object.
+            </summary>
         <returns>A <see cref="T:System.CodeDom.CodeExpression" /> object if <paramref name="value" /> can be serialized; otherwise, <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1268,11 +1371,6 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.CodeDom.CodeExpression</ReturnType>
       </ReturnValue>
@@ -1283,7 +1381,14 @@
       <Docs>
         <param name="manager">The <see cref="T:System.ComponentModel.Design.Serialization.IDesignerSerializationManager" /> to use for serialization.</param>
         <param name="value">The object to serialize.</param>
-        <summary>Serializes the given object into an expression.</summary>
+        <summary>
+             Serializes the given object to a resource and returns a code expression that represents the resource.
+             This will return null if the value cannot be serialized.  If ensureInvariant is true, this will ensure that
+             new values make their way into the invariant culture.  Normally, this is desirable. Otherwise a resource
+             GetValue call could fail if reading from a culture that doesn't have a value.  You should only pass
+             false to ensureInvariant when you intend to read resources differently than directly asking for a value.
+             The default value of insureInvariant is true.
+            </summary>
         <returns>A <see cref="T:System.CodeDom.CodeExpression" /> containing <paramref name="value" /> as a serialized expression.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1338,7 +1443,14 @@
         <param name="value">The object to serialize.</param>
         <param name="ensureInvariant">
           <see langword="true" /> to serialize into the invariant culture; otherwise, <see langword="false" />.</param>
-        <summary>Serializes the given object into an expression appropriate for the invariant culture.</summary>
+        <summary>
+             Serializes the given object to a resource and returns a code expression that represents the resource.
+             This will return null if the value cannot be serialized.  If ensureInvariant is true, this will ensure that
+             new values make their way into the invariant culture.  Normally, this is desirable. Otherwise a resource
+             GetValue call could fail if reading from a culture that doesn't have a value.  You should only pass
+             false to ensureInvariant when you intend to read resources differently than directly asking for a value.
+             The default value of insureInvariant is true.
+            </summary>
         <returns>A <see cref="T:System.CodeDom.CodeExpression" /> containing <paramref name="value" /> as a serialized expression.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1381,11 +1493,6 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1446,7 +1553,12 @@
         <param name="expression">The <see cref="T:System.CodeDom.CodeExpression" /> with which to associate <paramref name="value" />.</param>
         <param name="isPreset">
           <see langword="true" /> to specify a preset expression; otherwise, <see langword="false" />.</param>
-        <summary>Associates an object with an expression, optionally specifying a preset expression.</summary>
+        <summary>
+             This is a helper method that associates a CodeExpression with an object.  Objects that have been associated
+             with expressions in this way are accessible through the GetExpression method.  SetExpression stores its
+             expression table as an appended object on the context stack so it is accessible by any serializer's
+             GetExpression method.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -1,4 +1,4 @@
-﻿<Type Name="TrackBarRenderer" FullName="System.Windows.Forms.TrackBarRenderer">
+<Type Name="TrackBarRenderer" FullName="System.Windows.Forms.TrackBarRenderer">
   <TypeSignature Language="C#" Value="public sealed class TrackBarRenderer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TrackBarRenderer extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TrackBarRenderer" />
@@ -15,7 +15,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides methods used to render a track bar control with visual styles. This class cannot be inherited.</summary>
+    <summary>
+             This is a rendering class for the TrackBar control.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -66,7 +68,9 @@
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the track bar slider.</param>
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the track bar slider.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.TrackBarThumbState" /> values that specifies the visual state of the track bar slider.</param>
-        <summary>Draws a downward-pointing track bar slider (also known as the thumb) with visual styles.</summary>
+        <summary>
+             Renders a constant size bottom pointing thumb centered in the given bounds.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -111,7 +115,9 @@
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the track bar slider.</param>
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the track bar slider.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.TrackBarThumbState" /> values that specifies the visual state of the track bar slider.</param>
-        <summary>Draws a horizontal track bar slider (also known as the thumb) with visual styles.</summary>
+        <summary>
+             Renders a horizontal thumb.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -157,7 +163,9 @@
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the ticks.</param>
         <param name="numTicks">The number of ticks to draw.</param>
         <param name="edgeStyle">One of the <see cref="T:System.Windows.Forms.VisualStyles.EdgeStyle" /> values.</param>
-        <summary>Draws the specified number of horizontal track bar ticks with visual styles.</summary>
+        <summary>
+             Renders a horizontal tick.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -202,7 +210,9 @@
       <Docs>
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the track.</param>
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the track.</param>
-        <summary>Draws the track for a horizontal track bar with visual styles.</summary>
+        <summary>
+             Renders a horizontal track.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -256,7 +266,9 @@
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the track bar slider.</param>
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the track bar slider.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.TrackBarThumbState" /> values that specifies the visual state of the track bar slider.</param>
-        <summary>Draws a left-pointing track bar slider (also known as the thumb) with visual styles.</summary>
+        <summary>
+             Renders a constant size left pointing thumb centered in the given bounds.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -301,7 +313,9 @@
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the track bar slider.</param>
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the track bar slider.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.TrackBarThumbState" /> values that specifies the visual state of the track bar slider.</param>
-        <summary>Draws a right-pointing track bar slider (also known as the thumb) with visual styles.</summary>
+        <summary>
+             Renders a constant size right pointing thumb centered in the given bounds.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -346,7 +360,9 @@
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the track bar slider.</param>
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the track bar slider.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.TrackBarThumbState" /> values that specifies the visual state of the track bar slider.</param>
-        <summary>Draws an upward-pointing track bar slider (also known as the thumb) with visual styles.</summary>
+        <summary>
+             Renders a constant size top pointing thumb centered in the given bounds.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -400,7 +416,9 @@
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the track bar slider.</param>
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the track bar slider.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.TrackBarThumbState" /> values that specifies the visual state of the track bar slider.</param>
-        <summary>Draws a vertical track bar slider (also known as the thumb) with visual styles.</summary>
+        <summary>
+             Renders a vertical thumb.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -446,7 +464,9 @@
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the ticks.</param>
         <param name="numTicks">The number of ticks to draw.</param>
         <param name="edgeStyle">One of the <see cref="T:System.Windows.Forms.VisualStyles.EdgeStyle" /> values.</param>
-        <summary>Draws the specified number of vertical track bar ticks with visual styles.</summary>
+        <summary>
+             Renders a vertical tick.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -491,7 +511,9 @@
       <Docs>
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the track.</param>
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the track.</param>
-        <summary>Draws the track for a vertical track bar with visual styles.</summary>
+        <summary>
+             Renders a vertical track.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -534,7 +556,9 @@
       <Docs>
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> this operation will use.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.TrackBarThumbState" /> values that specifies the visual state of the track bar slider.</param>
-        <summary>Returns the size, in pixels, of the track bar slider (also known as the thumb) that points down.</summary>
+        <summary>
+             Returns the size of a bottom pointing thumb.
+            </summary>
         <returns>A <see cref="T:System.Drawing.Size" /> that specifies the size, in pixels, of the slider.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -580,7 +604,9 @@
       <Docs>
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> this operation will use.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.TrackBarThumbState" /> values that specifies the visual state of the slider.</param>
-        <summary>Returns the size, in pixels, of the track bar slider (also known as the thumb) that points to the left.</summary>
+        <summary>
+             Returns the size of a left pointing thumb.
+            </summary>
         <returns>A <see cref="T:System.Drawing.Size" /> that specifies the size, in pixels, of the slider.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -626,7 +652,9 @@
       <Docs>
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> this operation will use.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.TrackBarThumbState" /> values that specifies the visual state of the slider.</param>
-        <summary>Returns the size, in pixels, of the track bar slider (also known as the thumb) that points to the right.</summary>
+        <summary>
+             Returns the size of a right pointing thumb.
+            </summary>
         <returns>A <see cref="T:System.Drawing.Size" /> that specifies the size, in pixels, of the slider.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -672,7 +700,9 @@
       <Docs>
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> this operation will use.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.TrackBarThumbState" /> values that specifies the visual state of the slider.</param>
-        <summary>Returns the size, in pixels, of the track bar slider (also known as the thumb) that points up.</summary>
+        <summary>
+             Returns the size of a top pointing thumb.
+            </summary>
         <returns>A <see cref="T:System.Drawing.Size" /> that specifies the size, in pixels, of the slider.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -721,7 +751,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="T:System.Windows.Forms.TrackBarRenderer" /> class can be used to draw a track bar with visual styles.</summary>
+        <summary>
+             Returns true if this class is supported for the current OS and user/application settings,
+             otherwise returns false.
+            </summary>
         <value>
           <see langword="true" /> if the user has enabled visual styles in the operating system and visual styles are applied to the client area of application windows; otherwise, <see langword="false" />.</value>
         <remarks>

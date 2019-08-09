@@ -1,4 +1,4 @@
-﻿<Type Name="GridItemCollection" FullName="System.Windows.Forms.GridItemCollection">
+<Type Name="GridItemCollection" FullName="System.Windows.Forms.GridItemCollection">
   <TypeSignature Language="C#" Value="public class GridItemCollection : System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GridItemCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.GridItemCollection" />
@@ -23,7 +23,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Contains a collection of <see cref="T:System.Windows.Forms.GridItem" /> objects.</summary>
+    <summary>
+             A read-only collection of GridItem objects
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -57,7 +59,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of grid items in the collection.</summary>
+        <summary>
+             Retrieves the number of member attributes.
+            </summary>
         <value>The number of grid items in the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -106,7 +110,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an enumeration of all the grid items in the collection.</summary>
+        <summary>
+             Creates and retrieves a new enumerator for this collection.
+            </summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> for the <see cref="T:System.Windows.Forms.GridItemCollection" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -142,7 +148,9 @@
       </Parameters>
       <Docs>
         <param name="index">The index of the grid item to return.</param>
-        <summary>Gets the <see cref="T:System.Windows.Forms.GridItem" /> at the specified index.</summary>
+        <summary>
+             Retrieves the member attribute with the specified index.
+            </summary>
         <value>The <see cref="T:System.Windows.Forms.GridItem" /> at the specified index.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,4 +1,4 @@
-﻿<Type Name="BindingContext" FullName="System.Windows.Forms.BindingContext">
+<Type Name="BindingContext" FullName="System.Windows.Forms.BindingContext">
   <TypeSignature Language="C#" Value="public class BindingContext : System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BindingContext extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.BindingContext" />
@@ -28,7 +28,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Manages the collection of <see cref="T:System.Windows.Forms.BindingManagerBase" /> objects for any object that inherits from the <see cref="T:System.Windows.Forms.Control" /> class.</summary>
+    <summary>
+             Manages the collection of System.Windows.Forms.BindingManagerBase
+             objects for a Win Form.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -154,7 +157,9 @@ this->BindingContext->get_Item(dataSet1->Customers)->Position = 1;
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.BindingContext" /> class.</summary>
+        <summary>
+             Initializes a new instance of the System.Windows.Forms.BindingContext class.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -199,8 +204,16 @@ this->BindingContext->get_Item(dataSet1->Customers)->Position = 1;
       <Docs>
         <param name="dataSource">The <see cref="T:System.Object" /> associated with the <see cref="T:System.Windows.Forms.BindingManagerBase" />.</param>
         <param name="listManager">The <see cref="T:System.Windows.Forms.BindingManagerBase" /> to add.</param>
-        <summary>Adds the <see cref="T:System.Windows.Forms.BindingManagerBase" /> associated with a specific data source to the collection.</summary>
-        <remarks>To be added.</remarks>
+        <summary>
+             Adds the listManager to the collection. An ArgumentNullException is thrown if this
+             listManager is null. An exception is thrown if a listManager to the same target
+             and Property as an existing listManager or if the listManager's column isn't a
+             valid column given this DataSource.Table's schema.
+             Fires the CollectionChangedEvent.
+            </summary>
+        <remarks>
+             This method is obsolete and unused.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="AddCore">
@@ -228,7 +241,9 @@ this->BindingContext->get_Item(dataSet1->Customers)->Position = 1;
         <param name="dataSource">The object associated with the <see cref="T:System.Windows.Forms.BindingManagerBase" />.</param>
         <param name="listManager">The <see cref="T:System.Windows.Forms.BindingManagerBase" /> to add.</param>
         <summary>Adds the <see cref="T:System.Windows.Forms.BindingManagerBase" /> associated with a specific data source to the collection.</summary>
-        <remarks>To be added.</remarks>
+        <remarks>
+             This method is obsolete and unused.
+            </remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="dataSource" /> is <see langword="null" />.  
   
@@ -256,8 +271,13 @@ this->BindingContext->get_Item(dataSet1->Customers)->Position = 1;
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Clears the collection of any <see cref="T:System.Windows.Forms.BindingManagerBase" /> objects.</summary>
-        <remarks>To be added.</remarks>
+        <summary>
+             Clears the collection of any bindings.
+             Fires the CollectionChangedEvent.
+            </summary>
+        <remarks>
+             This method is obsolete and unused.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="ClearCore">
@@ -279,8 +299,12 @@ this->BindingContext->get_Item(dataSet1->Customers)->Position = 1;
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Clears the collection.</summary>
-        <remarks>To be added.</remarks>
+        <summary>
+             Clears the collection.
+            </summary>
+        <remarks>
+             This method is obsolete and unused.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="CollectionChanged">
@@ -301,23 +325,20 @@ this->BindingContext->get_Item(dataSet1->Customers)->Position = 1;
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.ComponentModel.CollectionChangeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Always raises a <see cref="T:System.NotImplementedException" /> when handled.</summary>
+        <summary>
+             Occurs when the collection has changed.
+            </summary>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.BindingContext.CollectionChanged> event is obsolete and always raises a <xref:System.NotImplementedException> when handled. For more information about handling events, see [Handling and Raising Events](~/docs/standard/events/index.md).  
-  
- ]]></format>
-        </remarks>
+             This method is obsolete and unused.
+            </remarks>
         <exception cref="T:System.NotImplementedException">Occurs in all cases.</exception>
       </Docs>
     </Member>
@@ -344,11 +365,6 @@ this->BindingContext->get_Item(dataSet1->Customers)->Position = 1;
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -357,7 +373,10 @@ this->BindingContext->get_Item(dataSet1->Customers)->Position = 1;
       </Parameters>
       <Docs>
         <param name="dataSource">An <see cref="T:System.Object" /> that represents the data source.</param>
-        <summary>Gets a value indicating whether the <see cref="T:System.Windows.Forms.BindingContext" /> contains the <see cref="T:System.Windows.Forms.BindingManagerBase" /> associated with the specified data source.</summary>
+        <summary>
+             Gets a value indicating whether the System.Windows.Forms.BindingContext contains
+             the specified data source.
+            </summary>
         <returns>
           <see langword="true" /> if the <see cref="T:System.Windows.Forms.BindingContext" /> contains the specified <see cref="T:System.Windows.Forms.BindingManagerBase" />; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -406,7 +425,10 @@ this->BindingContext->get_Item(dataSet1->Customers)->Position = 1;
       <Docs>
         <param name="dataSource">An <see cref="T:System.Object" /> that represents the data source.</param>
         <param name="dataMember">The information needed to resolve to a specific <see cref="T:System.Windows.Forms.BindingManagerBase" />.</param>
-        <summary>Gets a value indicating whether the <see cref="T:System.Windows.Forms.BindingContext" /> contains the <see cref="T:System.Windows.Forms.BindingManagerBase" /> associated with the specified data source and data member.</summary>
+        <summary>
+             Gets a value indicating whether the System.Windows.Forms.BindingContext
+             contains the specified data source and data member.
+            </summary>
         <returns>
           <see langword="true" /> if the <see cref="T:System.Windows.Forms.BindingContext" /> contains the specified <see cref="T:System.Windows.Forms.BindingManagerBase" />; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -449,7 +471,9 @@ this->BindingContext->get_Item(dataSet1->Customers)->Position = 1;
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the collection is read-only.</summary>
+        <summary>
+             Gets a value indicating whether the collection is read-only.
+            </summary>
         <value>
           <see langword="true" /> if the collection is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -485,11 +509,6 @@ this->BindingContext->get_Item(dataSet1->Customers)->Position = 1;
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.BindingManagerBase</ReturnType>
       </ReturnValue>
@@ -498,7 +517,10 @@ this->BindingContext->get_Item(dataSet1->Customers)->Position = 1;
       </Parameters>
       <Docs>
         <param name="dataSource">The data source associated with a particular <see cref="T:System.Windows.Forms.BindingManagerBase" />.</param>
-        <summary>Gets the <see cref="T:System.Windows.Forms.BindingManagerBase" /> that is associated with the specified data source.</summary>
+        <summary>
+             Gets the System.Windows.Forms.BindingManagerBase associated with the specified
+             data source.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.BindingManagerBase" /> for the specified data source.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -540,11 +562,6 @@ this->BindingContext->get_Item(dataSet1->Customers)->Position = 1;
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.BindingManagerBase</ReturnType>
       </ReturnValue>
@@ -555,7 +572,10 @@ this->BindingContext->get_Item(dataSet1->Customers)->Position = 1;
       <Docs>
         <param name="dataSource">The data source associated with a particular <see cref="T:System.Windows.Forms.BindingManagerBase" />.</param>
         <param name="dataMember">A navigation path containing the information that resolves to a specific <see cref="T:System.Windows.Forms.BindingManagerBase" />.</param>
-        <summary>Gets a <see cref="T:System.Windows.Forms.BindingManagerBase" /> that is associated with the specified data source and data member.</summary>
+        <summary>
+             Gets the System.Windows.Forms.BindingManagerBase associated with the specified
+             data source and data member.
+            </summary>
         <value>The <see cref="T:System.Windows.Forms.BindingManagerBase" /> for the specified data source and data member.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -620,7 +640,10 @@ BindingManagerBase bmOrders = this.BindingContext
       </Parameters>
       <Docs>
         <param name="ccevent">A <see cref="T:System.ComponentModel.CollectionChangeEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.BindingContext.CollectionChanged" /> event.</summary>
+        <summary>
+             This method is called whenever the collection changes. Overriders of this method
+             should call the base implementation of this method.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -658,8 +681,15 @@ BindingManagerBase bmOrders = this.BindingContext
       </Parameters>
       <Docs>
         <param name="dataSource">The data source associated with the <see cref="T:System.Windows.Forms.BindingManagerBase" /> to remove.</param>
-        <summary>Deletes the <see cref="T:System.Windows.Forms.BindingManagerBase" /> associated with the specified data source.</summary>
-        <remarks>To be added.</remarks>
+        <summary>
+             Removes the given listManager from the collection.
+             An ArgumentNullException is thrown if this listManager is null. An ArgumentException
+             is thrown if this listManager doesn't belong to this collection.
+             The CollectionChanged event is fired if it succeeds.
+            </summary>
+        <remarks>
+             This method is obsolete and unused.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveCore">
@@ -685,7 +715,9 @@ BindingManagerBase bmOrders = this.BindingContext
       <Docs>
         <param name="dataSource">The data source associated with the <see cref="T:System.Windows.Forms.BindingManagerBase" /> to remove.</param>
         <summary>Removes the <see cref="T:System.Windows.Forms.BindingManagerBase" /> associated with the specified data source.</summary>
-        <remarks>To be added.</remarks>
+        <remarks>
+             This method is obsolete and unused.
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="System.Collections.ICollection.CopyTo">
@@ -714,7 +746,10 @@ BindingManagerBase bmOrders = this.BindingContext
       <Docs>
         <param name="ar">An <see cref="T:System.Array" /> to copy into.</param>
         <param name="index">The collection index to begin copying from.</param>
-        <summary>Copies the elements of the collection into a specified array, starting at the collection index.</summary>
+        <summary>
+             Copies the elements of the collection into a specified array, starting
+             at the collection index.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -747,7 +782,9 @@ BindingManagerBase bmOrders = this.BindingContext
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the total number of <see cref="T:System.Windows.Forms.CurrencyManager" /> objects managed by the <see cref="T:System.Windows.Forms.BindingContext" />.</summary>
+        <summary>
+             Gets the total number of System.Windows.Forms.BindingManagerBases objects.
+            </summary>
         <value>The number of data sources managed by the <see cref="T:System.Windows.Forms.BindingContext" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -783,7 +820,9 @@ BindingManagerBase bmOrders = this.BindingContext
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the collection is synchronized.</summary>
+        <summary>
+             Gets a value indicating whether the collection is synchronized.
+            </summary>
         <value>
           <see langword="true" /> if the collection is thread safe; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -816,7 +855,9 @@ BindingManagerBase bmOrders = this.BindingContext
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an object to use for synchronization (thread safety).</summary>
+        <summary>
+             Gets an object to use for synchronization (thread safety).
+            </summary>
         <value>This property is derived from <see cref="T:System.Collections.ICollection" />, and is overridden to always return <see langword="null" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -842,7 +883,9 @@ BindingManagerBase bmOrders = this.BindingContext
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets an enumerator for the collection.</summary>
+        <summary>
+             Gets an enumerator for the collection.
+            </summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> for the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -879,13 +922,17 @@ BindingManagerBase bmOrders = this.BindingContext
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="newBindingContext" Type="System.Windows.Forms.BindingContext" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="binding" Type="System.Windows.Forms.Binding" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="newBindingContext" Type="System.Windows.Forms.BindingContext" />
+        <Parameter Name="binding" Type="System.Windows.Forms.Binding" />
       </Parameters>
       <Docs>
         <param name="newBindingContext">The new <see cref="T:System.Windows.Forms.BindingContext" /> to associate with the <see cref="T:System.Windows.Forms.Binding" />.</param>
         <param name="binding">The <see cref="T:System.Windows.Forms.Binding" /> to associate with the new <see cref="T:System.Windows.Forms.BindingContext" />.</param>
-        <summary>Associates a <see cref="T:System.Windows.Forms.Binding" /> with a new <see cref="T:System.Windows.Forms.BindingContext" />.</summary>
+        <summary>
+             Associates a Binding with a different BindingContext. Intended for use by components
+             that support IBindableComponent, to update their Bindings when the value of
+             IBindableComponent.BindingContext is changed.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -1,4 +1,4 @@
-﻿<Type Name="DataGridViewComboBoxCell+ObjectCollection" FullName="System.Windows.Forms.DataGridViewComboBoxCell+ObjectCollection">
+<Type Name="DataGridViewComboBoxCell+ObjectCollection" FullName="System.Windows.Forms.DataGridViewComboBoxCell+ObjectCollection">
   <TypeSignature Language="C#" Value="public class DataGridViewComboBoxCell.ObjectCollection : System.Collections.IList" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit DataGridViewComboBoxCell/ObjectCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewComboBoxCell.ObjectCollection" />
@@ -30,7 +30,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the collection of selection choices in a <see cref="T:System.Windows.Forms.DataGridViewComboBoxCell" />.</summary>
+    <summary>
+             A collection that stores objects.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -58,11 +60,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="owner" Type="System.Windows.Forms.DataGridViewComboBoxCell" />
       </Parameters>
@@ -98,7 +95,13 @@
       </Parameters>
       <Docs>
         <param name="item">An object representing the item to add to the collection.</param>
-        <summary>Adds an item to the list of items for a <see cref="T:System.Windows.Forms.DataGridViewComboBoxCell" />.</summary>
+        <summary>
+             Adds an item to the collection. For an unsorted combo box, the item is
+             added to the end of the existing list of items. For a sorted combo box,
+             the item is inserted into the list according to its sorted position.
+             The item's ToString() method is called to obtain the string that is
+             displayed in the combo box.
+            </summary>
         <returns>The position into which the new element was inserted.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -139,7 +142,7 @@
       <Parameters>
         <Parameter Name="items" Type="System.Object[]">
           <Attributes>
-            <Attribute FrameworkAlternate="netcore-3.0">
+            <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -223,7 +226,9 @@ The cell is in a shared row.</exception>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Clears all items from the collection.</summary>
+        <summary>
+             Removes all items from the collection.
+            </summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">The collection contains at least one item and the cell's <see cref="P:System.Windows.Forms.DataGridViewComboBoxCell.DataSource" /> property value is not <see langword="null" />.</exception>
         <exception cref="T:System.InvalidOperationException">The collection contains at least one item and the cell is in a shared row.</exception>
@@ -288,7 +293,9 @@ The cell is in a shared row.</exception>
       <Docs>
         <param name="destination">The destination array to which the contents will be copied.</param>
         <param name="arrayIndex">The index of the element in <paramref name="destination" /> at which to start copying.</param>
-        <summary>Copies the entire collection into an existing array of objects at a specified location within the array.</summary>
+        <summary>
+             Copies the DataGridViewComboBoxCell Items collection to a destination array.
+            </summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="destination" /> is <see langword="null" />.</exception>
@@ -324,7 +331,9 @@ The cell is in a shared row.</exception>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of items in the collection.</summary>
+        <summary>
+             Retrieves the number of items.
+            </summary>
         <value>The number of items in the collection.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
@@ -352,7 +361,9 @@ The cell is in a shared row.</exception>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an enumerator that can iterate through a <see cref="T:System.Windows.Forms.DataGridViewComboBoxCell.ObjectCollection" />.</summary>
+        <summary>
+             Returns an enumerator for the DataGridViewComboBoxCell Items collection.
+            </summary>
         <returns>An enumerator of type <see cref="T:System.Collections.IEnumerator" />.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
@@ -418,7 +429,13 @@ The cell is in a shared row.</exception>
       <Docs>
         <param name="index">The zero-based index at which to place <paramref name="item" /> within an unsorted <see cref="T:System.Windows.Forms.DataGridViewComboBoxCell" />.</param>
         <param name="item">An object representing the item to insert.</param>
-        <summary>Inserts an item into the collection at the specified index.</summary>
+        <summary>
+             Adds an item to the collection. For an unsorted combo box, the item is
+             added to the end of the existing list of items. For a sorted combo box,
+             the item is inserted into the list according to its sorted position.
+             The item's toString() method is called to obtain the string that is
+             displayed in the combo box.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -489,7 +506,9 @@ The cell is in a shared row.</exception>
       </Parameters>
       <Docs>
         <param name="index">The zero-based index of the element to get or set.</param>
-        <summary>Gets or sets the item at the current index location. In C#, this property is the indexer for the <see cref="T:System.Windows.Forms.DataGridViewComboBoxCell.ObjectCollection" /> class.</summary>
+        <summary>
+             Retrieves the item with the specified index.
+            </summary>
         <value>The <see cref="T:System.Object" /> stored at the given index.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -525,7 +544,10 @@ The cell is in a shared row.</exception>
       </Parameters>
       <Docs>
         <param name="value">An object representing the item to remove from the collection.</param>
-        <summary>Removes the specified object from the collection.</summary>
+        <summary>
+             Removes the given item from the collection, provided that it is
+             actually in the list.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -564,7 +586,9 @@ The cell is in a shared row.</exception>
       </Parameters>
       <Docs>
         <param name="index">The zero-based index of the object to be removed.</param>
-        <summary>Removes the object at the specified index.</summary>
+        <summary>
+             Removes an item from the collection at the given index.
+            </summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
           <paramref name="index" /> is less than 0 or greater than the number of items in the collection minus one.</exception>
@@ -709,11 +733,6 @@ The cell is in a shared row.</exception>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>

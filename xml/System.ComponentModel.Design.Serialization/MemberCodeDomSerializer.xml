@@ -1,4 +1,4 @@
-﻿<Type Name="MemberCodeDomSerializer" FullName="System.ComponentModel.Design.Serialization.MemberCodeDomSerializer">
+<Type Name="MemberCodeDomSerializer" FullName="System.ComponentModel.Design.Serialization.MemberCodeDomSerializer">
   <TypeSignature Language="C#" Value="public abstract class MemberCodeDomSerializer : System.ComponentModel.Design.Serialization.CodeDomSerializerBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit MemberCodeDomSerializer extends System.ComponentModel.Design.Serialization.CodeDomSerializerBase" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.MemberCodeDomSerializer" />
@@ -19,7 +19,8 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides the base class for serializing a reflection primitive within the object graph.</summary>
+    <summary> This is a special type of code dom serializer that is used to serialize members. For example, when a CodeDomSerializer wishes to serialize a property, it looks for a MemberCodeDomSerializer for the property descriptor, and invokes that serializer to serialize the property. MemberCodeDomSerializers are used both for properties and events and allow serialization decisions to be controlled without changing the code in CodeDomSerializer.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -51,11 +52,6 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Serialization.MemberCodeDomSerializer" /> class.</summary>
@@ -93,7 +89,9 @@
         <param name="value">The object to which the member is bound.</param>
         <param name="descriptor">The descriptor of the member to serialize.</param>
         <param name="statements">The <see cref="T:System.CodeDom.CodeStatementCollection" /> into which <paramref name="descriptor" /> is serialized.</param>
-        <summary>Serializes the given member descriptor on the given value to a statement collection.</summary>
+        <summary>
+             This method actually performs the serialization.  When the member is serialized the necessary statements will be added to the statements collection.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -138,7 +136,9 @@
         <param name="manager">The serialization manager to use for serialization.</param>
         <param name="value">The object to which the member is bound.</param>
         <param name="descriptor">The descriptor of the member to serialize.</param>
-        <summary>Determines if the given member should be serialized.</summary>
+        <summary>
+             This method returns true if the given member descriptor should be serialized, or false if there is no need to serialize the member.
+            </summary>
         <returns>
           <see langword="true" />, if the member described by <paramref name="descriptor" /> should be serialized; otherwise, <see langword="false" />.</returns>
         <remarks>

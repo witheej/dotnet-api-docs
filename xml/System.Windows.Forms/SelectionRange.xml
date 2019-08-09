@@ -1,4 +1,4 @@
-﻿<Type Name="SelectionRange" FullName="System.Windows.Forms.SelectionRange">
+<Type Name="SelectionRange" FullName="System.Windows.Forms.SelectionRange">
   <TypeSignature Language="C#" Value="public sealed class SelectionRange" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SelectionRange extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.SelectionRange" />
@@ -21,7 +21,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a date selection range in a month calendar control.</summary>
+    <summary>
+             This is a class that represents the date selection range of a MonthCalendar control.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -67,7 +69,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.SelectionRange" /> class.</summary>
+        <summary>
+             Create a new SelectionRange object with the range [null, null].
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -106,7 +110,9 @@
       </Parameters>
       <Docs>
         <param name="range">The existing <see cref="T:System.Windows.Forms.SelectionRange" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.SelectionRange" /> class with the specified selection range.</summary>
+        <summary>
+             Create a new SelectionRange object given an existing SelectionRange object.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -149,7 +155,9 @@
       <Docs>
         <param name="lower">The starting date in the <see cref="T:System.Windows.Forms.SelectionRange" />.</param>
         <param name="upper">The ending date in the <see cref="T:System.Windows.Forms.SelectionRange" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.SelectionRange" /> class with the specified beginning and ending dates.</summary>
+        <summary>
+             Create a new SelectionRange object with the given range.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -187,16 +195,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the ending date and time of the selection range.</summary>
+        <summary>
+             Returns the ending time of this range.
+            </summary>
         <value>The ending <see cref="T:System.DateTime" /> value of the range.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -227,16 +232,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the starting date and time of the selection range.</summary>
+        <summary>
+             Starting time of this range
+            </summary>
         <value>The starting <see cref="T:System.DateTime" /> value of the range.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -272,7 +274,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a string that represents the <see cref="T:System.Windows.Forms.SelectionRange" />.</summary>
+        <summary>
+             Returns a string representation for this control.
+            </summary>
         <returns>A string that represents the current <see cref="T:System.Windows.Forms.SelectionRange" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

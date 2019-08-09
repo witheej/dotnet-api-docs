@@ -1,4 +1,4 @@
-﻿<Type Name="MaskedTextBox" FullName="System.Windows.Forms.MaskedTextBox">
+<Type Name="MaskedTextBox" FullName="System.Windows.Forms.MaskedTextBox">
   <TypeSignature Language="C#" Value="public class MaskedTextBox : System.Windows.Forms.TextBoxBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MaskedTextBox extends System.Windows.Forms.TextBoxBase" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MaskedTextBox" />
@@ -30,15 +30,16 @@
     <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
-      <AttributeName>System.ComponentModel.Designer("System.Windows.Forms.Design.MaskedTextBoxDesigner, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
-    </Attribute>
     <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
       <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Uses a mask to distinguish between proper and improper user input.</summary>
+    <summary>
+             MaskedTextBox control definition class.
+             Uses the services from the System.ComponentModel.MaskedTextBoxProvider class.
+             See spec at http://dotnetclient/whidbey/Specs/MaskEdit.doc
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -132,7 +133,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.MaskedTextBox" /> class using defaults.</summary>
+        <summary>
+             Constructs the MaskedTextBox with the specified MaskedTextProvider object.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -162,7 +165,9 @@
       </Parameters>
       <Docs>
         <param name="maskedTextProvider">A custom mask language provider, derived from the <see cref="T:System.ComponentModel.MaskedTextProvider" /> class.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.MaskedTextBox" /> class using the specified custom mask language provider.</summary>
+        <summary>
+             Constructs the MaskedTextBox with the specified MaskedTextProvider object.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -198,7 +203,9 @@
       </Parameters>
       <Docs>
         <param name="mask">A <see cref="T:System.String" /> representing the input mask. The initial value of the <see cref="P:System.Windows.Forms.MaskedTextBox.Mask" /> property.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.MaskedTextBox" /> class using the specified input mask.</summary>
+        <summary>
+             Constructs the MaskedTextBox with the specified MaskedTextProvider object.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -236,14 +243,16 @@
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value determining how TAB keys are handled for multiline configurations. This property is not supported by <see cref="T:System.Windows.Forms.MaskedTextBox" />.</summary>
+        <summary>
+              Unsupported method/property.
+             </summary>
         <value>
           <see langword="false" /> in all cases.</value>
         <remarks>
@@ -280,14 +289,16 @@
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.MaskedTextBox.AcceptsTab" /> property has changed. This event is not raised by <see cref="T:System.Windows.Forms.MaskedTextBox" />.</summary>
+        <summary>
+             Unsupported method/property.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -323,7 +334,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether <see cref="P:System.Windows.Forms.MaskedTextBox.PromptChar" /> can be entered as valid data by the user.</summary>
+        <summary>
+             Specifies whether the prompt character should be treated as a valid input character or not.
+             The setter resets the underlying MaskedTextProvider object and attempts
+             to add the existing input text (if any) using the new mask, failure is ignored.
+             This property has no particular effect if no mask has been set.
+            </summary>
         <value>
           <see langword="true" /> if the user can enter the prompt character into the control; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
@@ -366,7 +382,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the <see cref="T:System.Windows.Forms.MaskedTextBox" /> control accepts characters outside of the ASCII character set.</summary>
+        <summary>
+             Specifies whether only ASCII characters are accepted as valid input.
+             This property has no particular effect if no mask has been set.
+            </summary>
         <value>
           <see langword="true" /> if only ASCII is accepted; <see langword="false" /> if the <see cref="T:System.Windows.Forms.MaskedTextBox" /> control can accept any arbitrary Unicode character. The default is <see langword="false" />.</value>
         <remarks>
@@ -403,7 +422,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the masked text box control raises the system beep for each user key stroke that it rejects.</summary>
+        <summary>
+             Specifies whether to play a beep when the input is not valid according to the mask.
+            </summary>
         <value>
           <see langword="true" /> if the <see cref="T:System.Windows.Forms.MaskedTextBox" /> control should beep on invalid input; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
@@ -439,14 +460,18 @@
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the user can undo the previous operation. This property is not supported by <see cref="T:System.Windows.Forms.MaskedTextBox" />.</summary>
+        <summary>
+             Gets a value indicating whether the user can undo the previous operation in a text box control.
+             Unsupported method/property.
+             WndProc ignores EM_CANUNDO.
+            </summary>
         <value>
           <see langword="false" /> in all cases.</value>
         <remarks>
@@ -476,7 +501,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -484,7 +509,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Clears information about the most recent operation from the undo buffer of the text box. This method is not supported by <see cref="T:System.Windows.Forms.MaskedTextBox" />.</summary>
+        <summary>
+             Clears information about the most recent operation from the undo buffer of the control.
+             Unsupported property/method.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -512,7 +540,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -520,7 +548,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a handle for the control.</summary>
+        <summary>
+             Creates a handle for this control. This method is called by the .NET.
+             Inheriting classes should always call base.createHandle when overriding this method.
+             Overridden to be able to set the control text with the masked (passworded) value when recreating
+             handle, since the underlying native edit control is not aware of it.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -541,7 +574,12 @@
         <ReturnType>System.Windows.Forms.CreateParams</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the required creation parameters when the control handle is created.</summary>
+        <summary>
+             Returns the parameters needed to create the handle. Inheriting classes
+             can override this to provide extra functionality. They should not,
+             however, forget to call base.getCreateParams() first to get the struct
+             filled up with the basic info.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.CreateParams" /> representing the information needed when creating a control.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Windows.Forms.TextBoxBase.CreateParams" />
@@ -569,7 +607,9 @@
         <ReturnType>System.Globalization.CultureInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the culture information associated with the masked text box.</summary>
+        <summary>
+             The culture that determines the value of the localizable mask language separators and placeholders.
+            </summary>
         <value>A <see cref="T:System.Globalization.CultureInfo" /> representing the culture supported by the <see cref="T:System.Windows.Forms.MaskedTextBox" />.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -602,7 +642,11 @@
         <ReturnType>System.Windows.Forms.MaskFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that determines whether literals and prompt characters are copied to the clipboard.</summary>
+        <summary>
+             Specifies the formatting options for text cut/copited to the clipboard (Whether the mask returned from the Text
+             property includes Literals and/or prompt characters).
+             When prompt characters are excluded, theyare returned as spaces in the string returned.
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.MaskFormat" /> values. The default is <see cref="F:System.Windows.Forms.MaskFormat.IncludeLiterals" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -643,18 +687,14 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.IFormatProvider</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.IFormatProvider" /> to use when performing type validation.</summary>
+        <summary>
+             Specifies the IFormatProvider to be used when parsing the string to the ValidatingType.
+            </summary>
         <value>An object that implements the <see cref="T:System.IFormatProvider" /> interface.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -689,7 +729,9 @@
       </Parameters>
       <Docs>
         <param name="pt">The location from which to seek the nearest character.</param>
-        <summary>Retrieves the character that is closest to the specified location within the control.</summary>
+        <summary>
+             Returns the character nearest to the given point.
+            </summary>
         <returns>The character at the specified location.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.TextBoxBase.GetCharFromPosition(System.Drawing.Point)" />
@@ -716,7 +758,9 @@
       </Parameters>
       <Docs>
         <param name="pt">The location to search.</param>
-        <summary>Retrieves the index of the character nearest to the specified location.</summary>
+        <summary>
+             Returns the index of the character nearest to the given point.
+            </summary>
         <returns>The zero-based character index at the specified location.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.TextBoxBase.GetCharIndexFromPosition(System.Drawing.Point)" />
@@ -737,7 +781,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -748,7 +792,9 @@
       </Parameters>
       <Docs>
         <param name="lineNumber">This parameter is not used.</param>
-        <summary>Retrieves the index of the first character of a given line. This method is not supported by <see cref="T:System.Windows.Forms.MaskedTextBox" />.</summary>
+        <summary>
+             Unsupported method/property.
+            </summary>
         <returns>This method will always return 0.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -778,7 +824,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -786,7 +832,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves the index of the first character of the current line. This method is not supported by <see cref="T:System.Windows.Forms.MaskedTextBox" />.</summary>
+        <summary>
+             Unsupported method/property.
+            </summary>
         <returns>This method will always return 0.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -816,7 +864,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -827,7 +875,10 @@
       </Parameters>
       <Docs>
         <param name="index">This parameter is not used.</param>
-        <summary>Retrieves the line number from the specified character position within the text of the control. This method is not supported by <see cref="T:System.Windows.Forms.MaskedTextBox" />.</summary>
+        <summary>
+             Unsupported method/property.
+             virtual method.
+            </summary>
         <returns>This method will always return 0.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -863,7 +914,9 @@
       </Parameters>
       <Docs>
         <param name="index">The index of the character for which to retrieve the location.</param>
-        <summary>Retrieves the location within the control at the specified character index.</summary>
+        <summary>
+             Returns the location of the character at the given index.
+            </summary>
         <returns>The location of the specified character within the client rectangle of the control.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.TextBoxBase.GetPositionFromCharIndex(System.Int32)" />
@@ -894,7 +947,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the prompt characters in the input mask are hidden when the masked text box loses focus.</summary>
+        <summary>
+             Specifies whether the PromptCharacter is displayed when the control loses focus.
+            </summary>
         <value>
           <see langword="true" /> if <see cref="P:System.Windows.Forms.MaskedTextBox.PromptChar" /> is hidden when <see cref="T:System.Windows.Forms.MaskedTextBox" /> does not have focus; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -921,15 +976,16 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.InsertKeyMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text insertion mode of the masked text box control.</summary>
+        <summary>
+             Specifies the text insertion mode of the text box.  This can be used to simulated the Access masked text
+             control behavior where insertion is set to TextInsertionMode.AlwaysOverwrite
+             This property has no particular effect if no mask has been set.
+            </summary>
         <value>An <see cref="T:System.Windows.Forms.InsertKeyMode" /> value that indicates the current insertion mode. The default is <see cref="F:System.Windows.Forms.InsertKeyMode.Default" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -969,7 +1025,9 @@
       </Parameters>
       <Docs>
         <param name="keyData">One of the <see cref="T:System.Windows.Forms.Keys" /> values.</param>
-        <summary>Determines whether the specified key is an input key or a special key that requires preprocessing.</summary>
+        <summary>
+             Overridden to handle unsupported RETURN key.
+            </summary>
         <returns>
           <see langword="true" /> if the specified key is an input key; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -997,7 +1055,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that specifies whether new user input overwrites existing input.</summary>
+        <summary>
+             Specifies whether text insertion mode in 'on' or not.
+            </summary>
         <value>
           <see langword="true" /> if <see cref="T:System.Windows.Forms.MaskedTextBox" /> will overwrite existing characters as the user enters new ones; <see langword="false" /> if <see cref="T:System.Windows.Forms.MaskedTextBox" /> will shift existing characters forward. The default is <see langword="false" />.</value>
         <remarks>
@@ -1031,7 +1091,9 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs after the insert mode has changed.</summary>
+        <summary>
+             Event to notify when the insert mode has changed.  This is required for data binding.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1077,14 +1139,16 @@
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the lines of text in multiline configurations. This property is not supported by <see cref="T:System.Windows.Forms.MaskedTextBox" />.</summary>
+        <summary>
+             Unsupported method/property.
+            </summary>
         <value>An array of type <see cref="T:System.String" /> that contains a single line.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1125,9 +1189,6 @@
         <Attribute>
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
-          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.MaskPropertyEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
-        </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
         </Attribute>
@@ -1136,7 +1197,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the input mask to use at run time.</summary>
+        <summary>
+             The mask applied to this control.  The setter resets the underlying MaskedTextProvider object and attempts
+             to add the existing input text (if any) using the new mask, failure is ignored.
+            </summary>
         <value>A <see cref="T:System.String" /> representing the current mask. The default value is the empty string which allows any input.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1213,7 +1277,9 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs after the input mask is changed.</summary>
+        <summary>
+             Event to notify when the mask has changed.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1259,7 +1325,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether all required inputs have been entered into the input mask.</summary>
+        <summary>
+             Specifies whether the test string required input positions, as specified by the mask, have
+             all been assigned.
+            </summary>
         <value>
           <see langword="true" /> if all required input has been entered into the mask; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -1301,7 +1370,11 @@
         <ReturnType>System.ComponentModel.MaskedTextProvider</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a clone of the mask provider associated with this instance of the masked text box control.</summary>
+        <summary>
+             Returns a copy of the control's internal MaskedTextProvider.  This is useful for user's to provide
+             cloning semantics for the control (we don't want to do it) w/o incurring in any perf penalty since
+             some of the properties require recreating the underlying provider when they are changed.
+            </summary>
         <value>A masking language provider of type <see cref="P:System.Windows.Forms.MaskedTextBox.MaskedTextProvider" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1339,7 +1412,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether all required and optional inputs have been entered into the input mask.</summary>
+        <summary>
+             Specifies whether all inputs (required and optional) have been provided into the mask successfully.
+            </summary>
         <value>
           <see langword="true" /> if all required and optional inputs have been entered; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -1382,7 +1457,9 @@
         <ReturnType>System.Windows.Forms.MaskInputRejectedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the user's input or assigned character does not match the corresponding format element of the input mask.</summary>
+        <summary>
+             Event to notify when an input has been rejected according to the mask.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1446,7 +1523,7 @@
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1488,14 +1565,17 @@
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether this is a multiline text box control. This property is not fully supported by <see cref="T:System.Windows.Forms.MaskedTextBox" />.</summary>
+        <summary>
+             Unsupported method/property.
+             virtual method.
+            </summary>
         <value>This property always returns <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1531,14 +1611,16 @@
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Typically occurs when the value of the <see cref="P:System.Windows.Forms.MaskedTextBox.Multiline" /> property has changed; however, this event is not raised by <see cref="T:System.Windows.Forms.MaskedTextBox" />.</summary>
+        <summary>
+             Unsupported method/property.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1597,7 +1679,10 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.HandleCreated" /> event.</summary>
+        <summary>
+             Overridden to update the newly created handle with the settings of the PasswordChar properties
+             if no mask has been set.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1616,7 +1701,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1627,7 +1712,9 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.MaskedTextBox.IsOverwriteModeChanged" /> event.</summary>
+        <summary>
+             Raises the IsOverwriteModeChanged event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1666,7 +1753,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.KeyEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.KeyDown" /> event.</summary>
+        <summary>
+             Raises the <see cref="E:System.Windows.Forms.Control.KeyDown" /> event.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.Control.OnKeyDown(System.Windows.Forms.KeyEventArgs)" />
       </Docs>
@@ -1692,7 +1781,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.KeyPressEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.KeyPress" /> event.</summary>
+        <summary>
+             Raises the <see cref="E:System.Windows.Forms.Control.KeyPress" /> event.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.Control.OnKeyPress(System.Windows.Forms.KeyPressEventArgs)" />
       </Docs>
@@ -1718,7 +1809,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.KeyEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.KeyUp" /> event.</summary>
+        <summary>
+             Raises the <see cref="E:System.Windows.Forms.Control.KeyUp" /> event.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.Control.OnKeyUp(System.Windows.Forms.KeyEventArgs)" />
       </Docs>
@@ -1738,7 +1831,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1749,7 +1842,9 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.MaskedTextBox.MaskChanged" /> event.</summary>
+        <summary>
+             Raises the MaskChanged event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1782,7 +1877,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1793,7 +1888,10 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains event data.</param>
-        <summary>Typically raises the <see cref="E:System.Windows.Forms.MaskedTextBox.MultilineChanged" /> event, but disabled for <see cref="T:System.Windows.Forms.MaskedTextBox" />.</summary>
+        <summary>
+             Unsupported method/property.
+             virtual method.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1827,7 +1925,9 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.MaskedTextBox.TextAlignChanged" /> event.</summary>
+        <summary>
+             Raises the TextAlignChanged event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1866,7 +1966,10 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.TextChanged" /> event.</summary>
+        <summary>
+             Raises the TextChanged event and related Input/Output text events when mask is null.
+             Overriden here to be able to control order of text changed events.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1899,7 +2002,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1910,7 +2013,11 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.ComponentModel.CancelEventArgs" /> that contains event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Validating" /> event.</summary>
+        <summary>
+             Raises the  System.Windows.Forms.Control.Validating event.
+             Overridden here to be able to control the order validating events are
+             raised [TypeValidationCompleted - Validating - Validated - Leave - KillFocus]
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1960,7 +2067,11 @@
         <ReturnType>System.Char</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the character to be displayed in substitute for user input.</summary>
+        <summary>
+             Specifies the character to be used in the formatted string in place of editable characters, if
+             set to any printable character, the text box becomes a password text box, to reset it use the null
+             character.
+            </summary>
         <value>The <see cref="T:System.Char" /> value used as the password character.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2033,7 +2144,11 @@
       </Parameters>
       <Docs>
         <param name="m">A <see cref="T:System.Windows.Forms.Message" />, passed by reference that represents the window message to process.</param>
-        <summary>Overrides the base implementation of this method to handle input language changes.</summary>
+        <summary>
+             We need to override this method so we can handle input language changes properly.  Control
+             doesn't handle the WM_CHAR messages generated after WM_IME_CHAR messages, it passes them
+             to DefWndProc (the characters would be displayed in the text box always).
+            </summary>
         <returns>
           <see langword="true" /> if the message was processed by the control; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -2074,7 +2189,9 @@
         <ReturnType>System.Char</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the character used to represent the absence of user input in <see cref="T:System.Windows.Forms.MaskedTextBox" />.</summary>
+        <summary>
+             Specifies the prompt character to be used in the formatted string for unsupplied characters.
+            </summary>
         <value>The character used to prompt the user for input. The default is an underscore (_).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2112,7 +2229,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether text in the text box is read-only.</summary>
+        <summary>
+             Overwrite base class' property.
+            </summary>
         <value>
           <see langword="true" /> to indicate the text is read only; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -2140,7 +2259,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the parsing of user input should stop after the first invalid character is reached.</summary>
+        <summary>
+             Specifies whether to include the mask prompt character when formatting the text in places
+             where an edit char has not being assigned.
+            </summary>
         <value>
           <see langword="true" /> if processing of the input string should be terminated at the first parsing error; otherwise, <see langword="false" /> if processing should ignore all errors. The default is <see langword="false" />.</value>
         <remarks>
@@ -2191,7 +2313,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that determines how an input character that matches the prompt character should be handled.</summary>
+        <summary>
+             Specifies whether to reset and skip the current position if editable, when the input character
+             has the same value as the prompt.  This property takes precedence over AllowPromptAsInput.
+            </summary>
         <value>
           <see langword="true" /> if the prompt character entered as input causes the current editable position in the mask to be reset; otherwise, <see langword="false" /> to indicate that the prompt character is to be processed as a normal input character. The default is <see langword="true" />.</value>
         <remarks>
@@ -2239,7 +2364,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that determines how a space input character should be handled.</summary>
+        <summary>
+             Specifies whether to reset and skip the current position if editable, when the input
+             is the space character.
+            </summary>
         <value>
           <see langword="true" /> if the space input character causes the current editable position in the mask to be reset; otherwise, <see langword="false" /> to indicate that it is to be processed as a normal input character. The default is <see langword="true" />.</value>
         <remarks>
@@ -2270,7 +2398,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2278,7 +2406,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Scrolls the contents of the control to the current caret position. This method is not supported by <see cref="T:System.Windows.Forms.MaskedTextBox" />.</summary>
+        <summary>
+             Unsupported method/property.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2307,7 +2437,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the current selection in the <see cref="T:System.Windows.Forms.MaskedTextBox" /> control.</summary>
+        <summary>
+             The currently selected text (if any) in the control.
+            </summary>
         <value>The currently selected text as a <see cref="T:System.String" />. If no text is currently selected, this property resolves to an empty string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2346,7 +2478,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the user is allowed to reenter literal values.</summary>
+        <summary>
+             Specifies whether to skip the current position if non-editable and the input character has
+             the same value as the literal at that position.
+            </summary>
         <value>
           <see langword="true" /> to allow literals to be reentered; otherwise, <see langword="false" /> to prevent the user from overwriting literal characters. The default is <see langword="true" />.</value>
         <remarks>
@@ -2398,9 +2533,6 @@
         <Attribute>
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
-          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.MaskedTextBoxTextEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
-        </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
         </Attribute>
@@ -2409,7 +2541,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text as it is currently displayed to the user.</summary>
+        <summary>
+             The Text setter validates the input char by char, raising the MaskInputRejected event for invalid chars.
+             The Text getter returns the formatted text according to the IncludeLiterals and IncludePrompt properties.
+            </summary>
         <value>A <see cref="T:System.String" /> containing the text currently displayed by the control. The default is an empty string.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2463,15 +2598,15 @@
         <Attribute>
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.HorizontalAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets how text is aligned in a masked text box control.</summary>
+        <summary>
+             Gets or sets how text is aligned in the control.
+             Note: This code is duplicated in TextBox for simplicity.
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.HorizontalAlignment" /> enumeration values that specifies how text is aligned relative to the control. The default is <see cref="F:System.Windows.Forms.HorizontalAlignment.Left" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2505,7 +2640,9 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the text alignment is changed.</summary>
+        <summary>
+             Event to notify the text alignment has changed.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2550,7 +2687,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the length of the displayed text.</summary>
+        <summary>
+             Returns the length of the displayed text.
+            </summary>
         <value>An Int32 representing the number of characters in the <see cref="P:System.Windows.Forms.MaskedTextBox.Text" /> property. <see cref="P:System.Windows.Forms.MaskedTextBox.TextLength" /> respects properties such as <see cref="P:System.Windows.Forms.MaskedTextBox.HidePromptOnLeave" />, which means that the return results may be different depending on whether the control has focus.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2580,7 +2719,11 @@
         <ReturnType>System.Windows.Forms.MaskFormat</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that determines whether literals and prompt characters are included in the formatted string.</summary>
+        <summary>
+             Specifies the formatting options for text output (Whether the mask returned from the Text
+             property includes Literals and/or prompt characters).
+             When prompt characters are excluded, theyare returned as spaces in the string returned.
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.MaskFormat" /> values. The default is <see cref="F:System.Windows.Forms.MaskFormat.IncludeLiterals" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2619,7 +2762,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a string that represents the current masked text box. This method overrides <see cref="M:System.Windows.Forms.TextBoxBase.ToString" />.</summary>
+        <summary>
+             Provides some interesting information for the TextBox control in String form.
+             Returns the test string (no password, including literals and prompt).
+            </summary>
         <returns>A <see cref="T:System.String" /> that contains information about the current <see cref="T:System.Windows.Forms.MaskedTextBox" />. The string includes the type, a simplified view of the input string, and the formatted input string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2656,7 +2802,9 @@
         <ReturnType>System.Windows.Forms.TypeValidationEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when <see cref="T:System.Windows.Forms.MaskedTextBox" /> has finished parsing the current value using the <see cref="P:System.Windows.Forms.MaskedTextBox.ValidatingType" /> property.</summary>
+        <summary>
+             Event to notify when the validating object completes parsing the formatted text.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2712,7 +2860,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2720,7 +2868,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Undoes the last edit operation in the text box. This method is not supported by <see cref="T:System.Windows.Forms.MaskedTextBox" />.</summary>
+        <summary>
+             Undoes the last edit operation in the text box.
+             Unsupported property/method.
+             WndProc ignores EM_UNDO.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2758,7 +2910,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the operating system-supplied password character should be used.</summary>
+        <summary>
+             Indicates if the text in the edit control should appear as the default password character.
+             This property has precedence over the PasswordChar property.
+            </summary>
         <value>
           <see langword="true" /> if the system password should be used as the prompt character; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
@@ -2791,17 +2946,14 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Converts the user input string to an instance of the validating type.</summary>
+        <summary>
+             Forces type validation.  Returns the validated text value.
+            </summary>
         <returns>If successful, an <see cref="T:System.Object" /> of the type specified by the <see cref="P:System.Windows.Forms.MaskedTextBox.ValidatingType" /> property; otherwise, <see langword="null" /> to indicate conversion failure.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2840,15 +2992,18 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the data type used to verify the data input by the user.</summary>
+        <summary>
+             Type of the object to be used to parse the text when the user leaves the control.
+             A ValidatingType object must implement a method with one fo the following signature:
+             public static Object Parse(string)
+             public static Object Parse(string, IFormatProvider)
+             See DateTime.Parse(...) for an example.
+            </summary>
         <value>A <see cref="T:System.Type" /> representing the data type used in validation. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2910,7 +3065,10 @@ maskedTextBox1.Mask = "99/99/9999";
       </Parameters>
       <Docs>
         <param name="m">The Windows <see cref="T:System.Windows.Forms.Message" /> to process.</param>
-        <summary>Processes Windows messages.</summary>
+        <summary>
+             We need to override the WndProc method to have full control over what characters can be
+             displayed in the text box; particularly, we have special handling when IME is turned on.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.TextBoxBase.WndProc(System.Windows.Forms.Message@)" />
       </Docs>
@@ -2936,14 +3094,16 @@ maskedTextBox1.Mask = "99/99/9999";
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether a multiline text box control automatically wraps words to the beginning of the next line when necessary. This property is not supported by <see cref="T:System.Windows.Forms.MaskedTextBox" />.</summary>
+        <summary>
+             Unsupported method/property.
+            </summary>
         <value>The <see cref="P:System.Windows.Forms.MaskedTextBox.WordWrap" /> property always returns <see langword="false" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

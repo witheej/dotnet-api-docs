@@ -1,4 +1,4 @@
-﻿<Type Name="AnchorStyles" FullName="System.Windows.Forms.AnchorStyles">
+<Type Name="AnchorStyles" FullName="System.Windows.Forms.AnchorStyles">
   <TypeSignature Language="C#" Value="public enum AnchorStyles" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AnchorStyles extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.AnchorStyles" />
@@ -21,15 +21,11 @@
     <Attribute>
       <AttributeName>System.Flags</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-1.1">
-      <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.AnchorEditor, System.Design, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
-    </Attribute>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
-      <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.AnchorEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
-    </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies how a control anchors to the edges of its container.</summary>
+    <summary>
+             Specifies how a control anchors to the edges of its container.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -69,7 +65,9 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>The control is anchored to the bottom edge of its container.</summary>
+        <summary>
+             The control is anchored to the bottom edge of its container.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -91,7 +89,9 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>The control is anchored to the left edge of its container.</summary>
+        <summary>
+             The control is anchored to the left edge of its container.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -113,7 +113,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>The control is not anchored to any edges of its container.</summary>
+        <summary>
+             The control is not anchored to any edges of its container.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -135,7 +137,9 @@
       </ReturnValue>
       <MemberValue>8</MemberValue>
       <Docs>
-        <summary>The control is anchored to the right edge of its container.</summary>
+        <summary>
+             The control is anchored to the right edge of its container.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -157,7 +161,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The control is anchored to the top edge of its container.</summary>
+        <summary>
+             The control is anchored to the top edge of its container.
+            </summary>
       </Docs>
     </Member>
   </Members>

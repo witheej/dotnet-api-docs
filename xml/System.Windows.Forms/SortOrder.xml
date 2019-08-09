@@ -1,4 +1,4 @@
-﻿<Type Name="SortOrder" FullName="System.Windows.Forms.SortOrder">
+<Type Name="SortOrder" FullName="System.Windows.Forms.SortOrder">
   <TypeSignature Language="C#" Value="public enum SortOrder" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SortOrder extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.SortOrder" />
@@ -15,7 +15,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies how items in a list are sorted.</summary>
+    <summary>
+             Specifies how items in a list are sorted.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -46,7 +48,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The items are sorted in ascending order.</summary>
+        <summary>
+             The items are sorted in ascending order.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Descending">
@@ -68,7 +72,9 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>The items are sorted in descending order.</summary>
+        <summary>
+             The items are sorted in descending order.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -90,7 +96,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>The items are not sorted.</summary>
+        <summary>
+             The items are not sorted.
+            </summary>
       </Docs>
     </Member>
   </Members>

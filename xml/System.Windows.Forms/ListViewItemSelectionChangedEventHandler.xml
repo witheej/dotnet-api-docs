@@ -1,4 +1,4 @@
-﻿<Type Name="ListViewItemSelectionChangedEventHandler" FullName="System.Windows.Forms.ListViewItemSelectionChangedEventHandler">
+<Type Name="ListViewItemSelectionChangedEventHandler" FullName="System.Windows.Forms.ListViewItemSelectionChangedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void ListViewItemSelectionChangedEventHandler(object sender, ListViewItemSelectionChangedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ListViewItemSelectionChangedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ListViewItemSelectionChangedEventHandler" />
@@ -23,7 +23,10 @@
   <Docs>
     <param name="sender">The source of the event.</param>
     <param name="e">An <see cref="E:System.Windows.Forms.ListView.ItemSelectionChanged" /> that contains the event data.</param>
-    <summary>Represents the method that will handle the <see cref="E:System.Windows.Forms.ListView.ItemSelectionChanged" /> event of a <see cref="T:System.Windows.Forms.ListView" />.</summary>
+    <summary>
+             Represents a method that will handle the <see cref="E:System.Windows.Forms.ListView.ItemSelectionChanged" />
+             event of a <see cref="T:System.Windows.Forms.ListView" />.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

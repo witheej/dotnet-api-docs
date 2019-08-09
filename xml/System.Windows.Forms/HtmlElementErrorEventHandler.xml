@@ -1,4 +1,4 @@
-﻿<Type Name="HtmlElementErrorEventHandler" FullName="System.Windows.Forms.HtmlElementErrorEventHandler">
+<Type Name="HtmlElementErrorEventHandler" FullName="System.Windows.Forms.HtmlElementErrorEventHandler">
   <TypeSignature Language="C#" Value="public delegate void HtmlElementErrorEventHandler(object sender, HtmlElementErrorEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HtmlElementErrorEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.HtmlElementErrorEventHandler" />
@@ -23,7 +23,9 @@
   <Docs>
     <param name="sender">The source of the event.</param>
     <param name="e">An <see cref="T:System.Windows.Forms.HtmlElementErrorEventArgs" /> that contains the event data.</param>
-    <summary>Represents the method that will handle the <see cref="E:System.Windows.Forms.HtmlWindow.Error" /> event of an <see cref="T:System.Windows.Forms.HtmlWindow" />.</summary>
+    <summary>
+             EventHandler for HtmlElementErrorEventArgs
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

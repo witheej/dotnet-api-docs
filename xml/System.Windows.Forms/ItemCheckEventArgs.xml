@@ -1,4 +1,4 @@
-﻿<Type Name="ItemCheckEventArgs" FullName="System.Windows.Forms.ItemCheckEventArgs">
+<Type Name="ItemCheckEventArgs" FullName="System.Windows.Forms.ItemCheckEventArgs">
   <TypeSignature Language="C#" Value="public class ItemCheckEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ItemCheckEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ItemCheckEventArgs" />
@@ -21,7 +21,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.Forms.CheckedListBox.ItemCheck" /> event of the <see cref="T:System.Windows.Forms.CheckedListBox" /> and <see cref="T:System.Windows.Forms.ListView" /> controls.</summary>
+    <summary>
+             Provides data for the <see cref="E:System.Windows.Forms.CheckedListBox.ItemCheck" /> event.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -62,11 +64,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="index" Type="System.Int32" />
         <Parameter Name="newCheckValue" Type="System.Windows.Forms.CheckState" />
@@ -95,16 +92,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.CheckState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating the current state of the item's check box.</summary>
+        <summary>
+             The current state of the CheckBox.
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.CheckState" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -143,16 +137,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the zero-based index of the item to change.</summary>
+        <summary>
+             The index of the item that is about to change.
+            </summary>
         <value>The zero-based index of the item to change.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -190,19 +181,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.CheckState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether to set the check box for the item to be checked, unchecked, or indeterminate.</summary>
+        <summary>
+             The proposed new value of the CheckBox.
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.CheckState" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

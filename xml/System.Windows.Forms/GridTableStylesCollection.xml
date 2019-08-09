@@ -1,4 +1,4 @@
-﻿<Type Name="GridTableStylesCollection" FullName="System.Windows.Forms.GridTableStylesCollection">
+<Type Name="GridTableStylesCollection" FullName="System.Windows.Forms.GridTableStylesCollection">
   <TypeSignature Language="C#" Value="public class GridTableStylesCollection : System.Windows.Forms.BaseCollection, System.Collections.IList" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit GridTableStylesCollection extends System.Windows.Forms.BaseCollection implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.GridTableStylesCollection" />
@@ -31,7 +31,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a collection of <see cref="T:System.Windows.Forms.DataGridTableStyle" /> objects in the <see cref="T:System.Windows.Forms.DataGrid" /> control.</summary>
+    <summary>
+             Represents a collection of <see cref="T:System.Windows.Forms.DataGridTableStyle" /> objects in the <see cref="T:System.Windows.Forms.DataGrid" />
+             control.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -82,7 +85,9 @@
       </Parameters>
       <Docs>
         <param name="table">The <see cref="T:System.Windows.Forms.DataGridTableStyle" /> to add to the collection.</param>
-        <summary>Adds a <see cref="T:System.Windows.Forms.DataGridTableStyle" /> to this collection.</summary>
+        <summary>
+             Adds a <see cref="T:System.Windows.Forms.DataGridTableStyle" /> to this collection.
+            </summary>
         <returns>The index of the newly added object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -241,7 +246,10 @@
       </Parameters>
       <Docs>
         <param name="name">The <see cref="P:System.Windows.Forms.DataGridTableStyle.MappingName" /> of the <see cref="T:System.Windows.Forms.DataGridTableStyle" /> to look for.</param>
-        <summary>Gets a value indicating whether the <see cref="T:System.Windows.Forms.GridTableStylesCollection" /> contains the <see cref="T:System.Windows.Forms.DataGridTableStyle" /> specified by name.</summary>
+        <summary>
+             Checks to see if a <see cref="T:System.Windows.Forms.DataGridTableStyle" /> with the given name
+             is contained in this collection.
+            </summary>
         <returns>
           <see langword="true" /> if the specified table style exists in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -280,7 +288,9 @@
       </Parameters>
       <Docs>
         <param name="table">The <see cref="T:System.Windows.Forms.DataGridTableStyle" /> to look for.</param>
-        <summary>Gets a value indicating whether the <see cref="T:System.Windows.Forms.GridTableStylesCollection" /> contains the specified <see cref="T:System.Windows.Forms.DataGridTableStyle" />.</summary>
+        <summary>
+             Checks to see if a DataGridTableStyle is contained in this collection.
+            </summary>
         <returns>
           <see langword="true" /> if the specified table style exists in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -317,7 +327,9 @@
       </Parameters>
       <Docs>
         <param name="index">The index of the <see cref="T:System.Windows.Forms.DataGridTableStyle" /> to get.</param>
-        <summary>Gets the <see cref="T:System.Windows.Forms.DataGridTableStyle" /> specified by index.</summary>
+        <summary>
+             Retrieves the DataGridTable with the specified index.
+            </summary>
         <value>The <see cref="T:System.Windows.Forms.DataGridTableStyle" /> at the specified index.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -361,7 +373,9 @@
       </Parameters>
       <Docs>
         <param name="tableName">The <see cref="P:System.Windows.Forms.DataGridTableStyle.MappingName" /> of the <see cref="T:System.Windows.Forms.DataGridTableStyle" /> to retrieve.</param>
-        <summary>Gets the <see cref="T:System.Windows.Forms.DataGridTableStyle" /> with the specified name.</summary>
+        <summary>
+             Retrieves the DataGridTable with the name provided.
+            </summary>
         <value>The <see cref="T:System.Windows.Forms.DataGridTableStyle" /> with the specified <see cref="P:System.Windows.Forms.DataGridTableStyle.MappingName" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -398,11 +412,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.ArrayList</ReturnType>
       </ReturnValue>
@@ -415,10 +424,10 @@
     <Member MemberName="OnCollectionChanged">
       <MemberSignature Language="C#" Value="protected void OnCollectionChanged (System.ComponentModel.CollectionChangeEventArgs ccevent);" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void OnCollectionChanged(class System.ComponentModel.CollectionChangeEventArgs ccevent) cil managed" FrameworkAlternate="netframework-1.1" />
-      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.GridTableStylesCollection.OnCollectionChanged(System.ComponentModel.CollectionChangeEventArgs)" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.GridTableStylesCollection.OnCollectionChanged(System.ComponentModel.CollectionChangeEventArgs)" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       <MemberSignature Language="VB.NET" Value="Protected Sub OnCollectionChanged (ccevent As CollectionChangeEventArgs)" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void OnCollectionChanged(System::ComponentModel::CollectionChangeEventArgs ^ ccevent);" FrameworkAlternate="netframework-1.1" />
-      <MemberSignature Language="F#" Value="member this.OnCollectionChanged : System.ComponentModel.CollectionChangeEventArgs -&gt; unit" Usage="gridTableStylesCollection.OnCollectionChanged ccevent" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="F#" Value="member this.OnCollectionChanged : System.ComponentModel.CollectionChangeEventArgs -&gt; unit" Usage="gridTableStylesCollection.OnCollectionChanged ccevent" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       <MemberSignature Language="C#" Value="protected void OnCollectionChanged (System.ComponentModel.CollectionChangeEventArgs e);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void OnCollectionChanged(class System.ComponentModel.CollectionChangeEventArgs e) cil managed" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       <MemberSignature Language="VB.NET" Value="Protected Sub OnCollectionChanged (e As CollectionChangeEventArgs)" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
@@ -436,12 +445,10 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.ComponentModel.CollectionChangeEventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="ccevent" Type="System.ComponentModel.CollectionChangeEventArgs" Index="0" FrameworkAlternate="netframework-1.1" />
+        <Parameter Name="e" Type="System.ComponentModel.CollectionChangeEventArgs" />
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.ComponentModel.CollectionChangeEventArgs" /> containing the event data.</param>
-        <param name="ccevent">A <see cref="T:System.ComponentModel.CollectionChangeEventArgs" /> containing the event data.</param>
         <summary>Raises the <see cref="E:System.Windows.Forms.GridTableStylesCollection.CollectionChanged" /> event.</summary>
         <remarks>To be added.</remarks>
       </Docs>
@@ -718,11 +725,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -901,7 +903,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="index">The zero-based index of the element.</param>
@@ -957,11 +959,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>

@@ -1,4 +1,4 @@
-﻿<Type Name="StatusBarDrawItemEventArgs" FullName="System.Windows.Forms.StatusBarDrawItemEventArgs">
+<Type Name="StatusBarDrawItemEventArgs" FullName="System.Windows.Forms.StatusBarDrawItemEventArgs">
   <TypeSignature Language="C#" Value="public class StatusBarDrawItemEventArgs : System.Windows.Forms.DrawItemEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StatusBarDrawItemEventArgs extends System.Windows.Forms.DrawItemEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.StatusBarDrawItemEventArgs" />
@@ -16,7 +16,10 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.Forms.StatusBar.DrawItem" /> event.</summary>
+    <summary>
+             Provides data for the <see cref="M:System.Windows.Forms.StatusBar.OnDrawItem(System.Windows.Forms.StatusBarDrawItemEventArgs)" />
+             event.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -62,11 +65,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="g" Type="System.Drawing.Graphics" />
         <Parameter Name="font" Type="System.Drawing.Font" />
@@ -82,7 +80,10 @@
         <param name="itemId">The zero-based index of the panel in the <see cref="T:System.Windows.Forms.StatusBar.StatusBarPanelCollection" /> of the <see cref="T:System.Windows.Forms.StatusBar" /> control.</param>
         <param name="itemState">One of the <see cref="T:System.Windows.Forms.DrawItemState" /> values that represents state information about the <see cref="T:System.Windows.Forms.StatusBarPanel" />.</param>
         <param name="panel">A <see cref="T:System.Windows.Forms.StatusBarPanel" /> that represents the panel to draw.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.StatusBarDrawItemEventArgs" /> class without specifying a background and foreground color for the <see cref="T:System.Windows.Forms.StatusBarPanel" />.</summary>
+        <summary>
+             Initializes a new instance of the <see cref="T:System.Windows.Forms.StatusBarDrawItemEventArgs" />
+             class.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Windows.Forms.DrawItemState" />
         <altmember cref="T:System.Drawing.Font" />
@@ -104,11 +105,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="g" Type="System.Drawing.Graphics" />
         <Parameter Name="font" Type="System.Drawing.Font" />
@@ -128,7 +124,10 @@
         <param name="panel">A <see cref="T:System.Windows.Forms.StatusBarPanel" /> that represents the panel to draw.</param>
         <param name="foreColor">One of the <see cref="T:System.Drawing.Color" /> values that represents the foreground color of the panel to draw.</param>
         <param name="backColor">One of the <see cref="T:System.Drawing.Color" /> values that represents the background color of the panel to draw.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.StatusBarDrawItemEventArgs" /> class with a specified background and foreground color for the <see cref="T:System.Windows.Forms.StatusBarPanel" />.</summary>
+        <summary>
+             Initializes a new instance of the <see cref="T:System.Windows.Forms.StatusBarDrawItemEventArgs" />
+             class using the Forecolor and Backcolor.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -146,16 +145,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.StatusBarPanel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Forms.StatusBarPanel" /> to draw.</summary>
+        <summary>
+             Specifies the <see cref="T:System.Windows.Forms.StatusBarPanel" /> to draw.
+            </summary>
         <value>The <see cref="T:System.Windows.Forms.StatusBarPanel" /> to draw.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

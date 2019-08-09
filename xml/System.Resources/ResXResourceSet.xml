@@ -1,4 +1,4 @@
-﻿<Type Name="ResXResourceSet" FullName="System.Resources.ResXResourceSet">
+<Type Name="ResXResourceSet" FullName="System.Resources.ResXResourceSet">
   <TypeSignature Language="C#" Value="public class ResXResourceSet : System.Resources.ResourceSet" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ResXResourceSet extends System.Resources.ResourceSet" />
   <TypeSignature Language="DocId" Value="T:System.Resources.ResXResourceSet" />
@@ -16,7 +16,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents all resources in an XML resource (.resx) file.</summary>
+    <summary>
+             ResX resource set.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -75,7 +77,9 @@
       </Parameters>
       <Docs>
         <param name="stream">The <see cref="T:System.IO.Stream" /> of resources to be read. The stream should refer to an existing resource file.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Resources.ResXResourceSet" /> class using the system default <see cref="T:System.Resources.ResXResourceReader" /> to read resources from the specified stream.</summary>
+        <summary>
+             Creates a resource set for the specified stream.
+            </summary>
         <remarks>To be added.</remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
         <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for the immediate caller. This member cannot be inherited by partially trusted code.</permission>
@@ -100,7 +104,9 @@
       </Parameters>
       <Docs>
         <param name="fileName">The name of the file to read resources from.</param>
-        <summary>Initializes a new instance of a <see cref="T:System.Resources.ResXResourceSet" /> class using the system default <see cref="T:System.Resources.ResXResourceReader" /> that opens and reads resources from the specified file.</summary>
+        <summary>
+             Creates a resource set for the specified file.
+            </summary>
         <remarks>To be added.</remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
         <permission cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand">for full trust for the immediate caller. This member cannot be inherited by partially trusted code.</permission>
@@ -112,7 +118,7 @@
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXResourceSet.GetDefaultReader" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDefaultReader () As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override Type ^ GetDefaultReader();" />
-      <MemberSignature Language="F#" Value="override this.GetDefaultReader : unit -&gt; Type" Usage="resXResourceSet.GetDefaultReader " />
+      <MemberSignature Language="F#" Value="abstract member GetDefaultReader : unit -&gt; Type&#xA;override this.GetDefaultReader : unit -&gt; Type" Usage="resXResourceSet.GetDefaultReader " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -125,7 +131,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the preferred resource reader class for this kind of <see cref="T:System.Resources.ResXResourceSet" />.</summary>
+        <summary>
+             Gets the default reader type associated with this set.
+            </summary>
         <returns>The <see cref="T:System.Type" /> of the preferred resource reader for this kind of <see cref="T:System.Resources.ResXResourceSet" />.</returns>
         <remarks>To be added.</remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>
@@ -141,7 +149,7 @@
       <MemberSignature Language="DocId" Value="M:System.Resources.ResXResourceSet.GetDefaultWriter" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function GetDefaultWriter () As Type" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override Type ^ GetDefaultWriter();" />
-      <MemberSignature Language="F#" Value="override this.GetDefaultWriter : unit -&gt; Type" Usage="resXResourceSet.GetDefaultWriter " />
+      <MemberSignature Language="F#" Value="abstract member GetDefaultWriter : unit -&gt; Type&#xA;override this.GetDefaultWriter : unit -&gt; Type" Usage="resXResourceSet.GetDefaultWriter " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -154,7 +162,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the preferred resource writer class for this kind of <see cref="T:System.Resources.ResXResourceSet" />.</summary>
+        <summary>
+             Gets the default writer type associated with this set.
+            </summary>
         <returns>The <see cref="T:System.Type" /> of the preferred resource writer for this kind of <see cref="T:System.Resources.ResXResourceSet" />.</returns>
         <remarks>To be added.</remarks>
         <permission cref="F:System.Security.Permissions.SecurityAction.LinkDemand">for full trust for the immediate caller. This member cannot be used by partially trusted code.</permission>

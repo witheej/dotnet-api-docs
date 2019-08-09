@@ -1,4 +1,4 @@
-﻿<Type Name="ControlBodyGlyph" FullName="System.Windows.Forms.Design.Behavior.ControlBodyGlyph">
+<Type Name="ControlBodyGlyph" FullName="System.Windows.Forms.Design.Behavior.ControlBodyGlyph">
   <TypeSignature Language="C#" Value="public class ControlBodyGlyph : System.Windows.Forms.Design.Behavior.ComponentGlyph" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ControlBodyGlyph extends System.Windows.Forms.Design.Behavior.ComponentGlyph" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.Behavior.ControlBodyGlyph" />
@@ -19,7 +19,10 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Associates a <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> with its control.</summary>
+    <summary>
+             This Glyph is placed on every control sized to the exact bounds of
+             the control.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -55,11 +58,6 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="bounds" Type="System.Drawing.Rectangle" />
         <Parameter Name="cursor" Type="System.Windows.Forms.Cursor" />
@@ -102,7 +100,9 @@
         <param name="cursor">A <see cref="T:System.Windows.Forms.Cursor" /> that represents the cursor to display when the mouse pointer is over the <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" />.</param>
         <param name="relatedComponent">The component with which the <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> is associated.</param>
         <param name="designer">A <see cref="T:System.Windows.Forms.Design.ControlDesigner" /> with which the <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> is associated.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.Behavior.ControlBodyGlyph" /> class.</summary>
+        <summary>
+             Standard Constructor.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,16 +123,13 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the bounds of the <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" />.</summary>
+        <summary>
+             The bounds of this glyph.
+            </summary>
         <value>A <see cref="T:System.Drawing.Rectangle" /> representing the bounds of the <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -162,7 +159,11 @@
       </Parameters>
       <Docs>
         <param name="p">A point to hit test.</param>
-        <summary>Indicates whether a mouse click at the specified point should be handled by the <see cref="T:System.Windows.Forms.Design.Behavior.ControlBodyGlyph" />.</summary>
+        <summary>
+             Simple hit test rule: if the point is contained within the bounds
+             AND the component is Visible (controls on some tab pages may
+             not be, for ex) then it is a positive hit test.
+            </summary>
         <returns>A <see cref="T:System.Windows.Forms.Cursor" /> if the <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> is associated with <paramref name="p" />; otherwise, <see langword="null" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>

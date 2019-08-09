@@ -1,4 +1,4 @@
-﻿<Type Name="QueryContinueDragEventHandler" FullName="System.Windows.Forms.QueryContinueDragEventHandler">
+<Type Name="QueryContinueDragEventHandler" FullName="System.Windows.Forms.QueryContinueDragEventHandler">
   <TypeSignature Language="C#" Value="public delegate void QueryContinueDragEventHandler(object sender, QueryContinueDragEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed QueryContinueDragEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.QueryContinueDragEventHandler" />
@@ -24,7 +24,10 @@
   <Docs>
     <param name="sender">The source of an event.</param>
     <param name="e">A <see cref="T:System.Windows.Forms.QueryContinueDragEventArgs" /> that contains the event data.</param>
-    <summary>Represents the method that will handle the <see cref="E:System.Windows.Forms.Control.QueryContinueDrag" /> event of a <see cref="T:System.Windows.Forms.Control" />.</summary>
+    <summary>
+             Represents a method that will handle the <see cref="E:System.Windows.Forms.Control.QueryContinueDrag" />
+             event of a <see cref="T:System.Windows.Forms.Control" />.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

@@ -1,4 +1,4 @@
-﻿<Type Name="TableLayoutSettings" FullName="System.Windows.Forms.TableLayoutSettings">
+<Type Name="TableLayoutSettings" FullName="System.Windows.Forms.TableLayoutSettings">
   <TypeSignature Language="C#" Value="public sealed class TableLayoutSettings : System.Windows.Forms.LayoutSettings, System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit TableLayoutSettings extends System.Windows.Forms.LayoutSettings implements class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TableLayoutSettings" />
@@ -27,7 +27,7 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Collects the characteristics associated with table layouts.</summary>
+    <summary>this is a wrapper class to expose interesting properties of TableLayout</summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -80,7 +80,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum number of columns allowed in the table layout.</summary>
+        <summary>
+             This sets the maximum number of columns allowed on this table instead of allocating
+             actual spaces for these columns. So it is OK to set ColumnCount to Int32.MaxValue without
+             causing out of memory exception
+            </summary>
         <value>The maximum number of columns allowed in the table layout. The default is 0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -168,7 +172,9 @@
       </Parameters>
       <Docs>
         <param name="control">A control contained within a cell.</param>
-        <summary>Gets the <see cref="T:System.Windows.Forms.TableLayoutPanelCellPosition" /> that represents the row and the column of the cell.</summary>
+        <summary>
+             Get the column position of the element
+            </summary>
         <returns>A <see cref="T:System.Windows.Forms.TableLayoutPanelCellPosition" /> that represents the cell position.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -212,7 +218,9 @@
       </Parameters>
       <Docs>
         <param name="control">A control contained within a cell.</param>
-        <summary>Gets the column position of the specified child control.</summary>
+        <summary>
+             Get the column position of the element
+            </summary>
         <returns>The column position of the specified child control.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -273,7 +281,9 @@
       </Parameters>
       <Docs>
         <param name="control">A control contained within a cell.</param>
-        <summary>Gets the row position of the specified child control.</summary>
+        <summary>
+             Get the row position of the element
+            </summary>
         <returns>The row position of the specified child control.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -330,7 +340,11 @@
         <ReturnType>System.Windows.Forms.TableLayoutPanelGrowStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating how the table layout should expand to accommodate new cells when all existing cells are occupied.</summary>
+        <summary>
+             Specifies if a TableLayoutPanel will gain additional rows or columns once its existing cells
+             become full.  If the value is 'FixedSize' then the TableLayoutPanel will throw an exception
+             when the TableLayoutPanel is over-filled.
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.TableLayoutPanelGrowStyle" /> values. The default is <see cref="F:System.Windows.Forms.TableLayoutPanelGrowStyle.AddRows" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -358,11 +372,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Layout.LayoutEngine</ReturnType>
       </ReturnValue>
@@ -407,7 +416,11 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum number of rows allowed in the table layout.</summary>
+        <summary>
+             This sets the maximum number of rows allowed on this table instead of allocating
+             actual spaces for these rows. So it is OK to set RowCount to Int32.MaxValue without
+             causing out of memory exception
+            </summary>
         <value>The maximum number of rows allowed in the table layout. The default is 0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -497,7 +510,9 @@
       <Docs>
         <param name="control">A control contained within a cell.</param>
         <param name="cellPosition">A <see cref="T:System.Windows.Forms.TableLayoutPanelCellPosition" /> that represents the cell position.</param>
-        <summary>Sets the <see cref="T:System.Windows.Forms.TableLayoutPanelCellPosition" /> that represents the row and the column of the cell.</summary>
+        <summary>
+             Set the column position of the element
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -537,7 +552,11 @@
       <Docs>
         <param name="control">A control contained within a cell.</param>
         <param name="column">The column position for the specified child control.</param>
-        <summary>Sets the column position for the specified child control.</summary>
+        <summary>
+             Set the column position of the element
+             If we set the column position to -1, it will automatically switch the control from
+             absolutely positioned to non-absolutely positioned
+            </summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="control" /> is <see langword="null" />.</exception>
@@ -601,7 +620,11 @@
       <Docs>
         <param name="control">A control contained within a cell.</param>
         <param name="row">The row position of the specified child control.</param>
-        <summary>Sets the row position of the specified child control.</summary>
+        <summary>
+             Set the row position of the element
+             If we set the row position to -1, it will automatically switch the control from
+             absolutely positioned to non-absolutely positioned
+            </summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="control" /> is <see langword="null" />.</exception>

@@ -1,4 +1,4 @@
-﻿<Type Name="ItemCheckedEventArgs" FullName="System.Windows.Forms.ItemCheckedEventArgs">
+<Type Name="ItemCheckedEventArgs" FullName="System.Windows.Forms.ItemCheckedEventArgs">
   <TypeSignature Language="C#" Value="public class ItemCheckedEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ItemCheckedEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ItemCheckedEventArgs" />
@@ -15,7 +15,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.Forms.ListView.ItemChecked" /> event of the <see cref="T:System.Windows.Forms.ListView" /> control.</summary>
+    <summary>
+             Provides data for the <see cref="E:System.Windows.Forms.CheckedListBox.ItemCheck" /> event.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -44,11 +46,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="item" Type="System.Windows.Forms.ListViewItem" />
       </Parameters>
@@ -71,16 +68,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ListViewItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Forms.ListViewItem" /> whose checked state is changing.</summary>
+        <summary>
+             The index of the item that is about to change.
+            </summary>
         <value>The <see cref="T:System.Windows.Forms.ListViewItem" /> whose checked state is changing.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

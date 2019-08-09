@@ -1,4 +1,4 @@
-﻿<Type Name="ToolboxComponentsCreatingEventArgs" FullName="System.Drawing.Design.ToolboxComponentsCreatingEventArgs">
+<Type Name="ToolboxComponentsCreatingEventArgs" FullName="System.Drawing.Design.ToolboxComponentsCreatingEventArgs">
   <TypeSignature Language="C#" Value="public class ToolboxComponentsCreatingEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolboxComponentsCreatingEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Design.ToolboxComponentsCreatingEventArgs" />
@@ -20,7 +20,10 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Drawing.Design.ToolboxItem.ComponentsCreating" /> event that occurs when components are added to the toolbox.</summary>
+    <summary>
+             Provides data for the 'ToolboxComponentsCreatingEventArgs' event that occurs
+             when components are added to the toolbox.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -59,17 +62,14 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="host" Type="System.ComponentModel.Design.IDesignerHost" />
       </Parameters>
       <Docs>
         <param name="host">The designer host that is making the request.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Design.ToolboxComponentsCreatingEventArgs" /> class.</summary>
+        <summary>
+             Initializes a new instance of the <see cref="T:System.Drawing.Design.ToolboxComponentsCreatingEventArgs" /> object.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -91,16 +91,14 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.IDesignerHost</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets an instance of the <see cref="T:System.ComponentModel.Design.IDesignerHost" /> that made the request to create toolbox components.</summary>
+        <summary>
+             An instance of IDesignerHost that has made the creat request.
+             This can be null if no designer host was provided to the toolbox item.
+            </summary>
         <value>The <see cref="T:System.ComponentModel.Design.IDesignerHost" /> that made the request to create toolbox components, or <see langword="null" /> if no designer host was provided to the toolbox item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

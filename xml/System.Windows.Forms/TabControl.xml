@@ -1,4 +1,4 @@
-﻿<Type Name="TabControl" FullName="System.Windows.Forms.TabControl">
+<Type Name="TabControl" FullName="System.Windows.Forms.TabControl">
   <TypeSignature Language="C#" Value="public class TabControl : System.Windows.Forms.Control" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TabControl extends System.Windows.Forms.Control" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TabControl" />
@@ -28,18 +28,15 @@
     <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-1.1">
-      <AttributeName>System.ComponentModel.Designer("System.Windows.Forms.Design.TabControlDesigner, System.Design, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
-    </Attribute>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
-      <AttributeName>System.ComponentModel.Designer("System.Windows.Forms.Design.TabControlDesigner, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
-    </Attribute>
     <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
       <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Manages a related set of tab pages.</summary>
+    <summary>
+             The TabControl.  This control has a lot of the functionality of a TabStrip
+             but manages a list of TabPages which are the 'pages' that appear on each tab.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -108,7 +105,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TabControl" /> class.</summary>
+        <summary>
+             Constructs a TabBase object, usually as the base class for a TabStrip or TabControl.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -147,15 +146,18 @@
         <Attribute>
           <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TabAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the area of the control (for example, along the top) where the tabs are aligned.</summary>
+        <summary>
+             Returns on what area of the control the tabs reside on (A TabAlignment value).
+             The possibilities are Top (the default), Bottom, Left, and Right.  When alignment
+             is left or right, the Multiline property is ignored and Multiline is implicitly on.
+             If the alignment is anything other than top, TabAppearance.FlatButtons degenerates
+             to TabAppearance.Buttons.
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.TabAlignment" /> values. The default is <see langword="Top" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -213,7 +215,12 @@
         <ReturnType>System.Windows.Forms.TabAppearance</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the visual appearance of the control's tabs.</summary>
+        <summary>
+             Indicates whether the tabs in the tabstrip look like regular tabs, or if they look
+             like buttons as seen in the Windows 95 taskbar.
+             If the alignment is anything other than top, TabAppearance.FlatButtons degenerates
+             to TabAppearance.Buttons.
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.TabAppearance" /> values. The default is <see langword="Normal" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -259,7 +266,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -290,7 +297,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -320,7 +327,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -351,7 +358,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -386,8 +393,8 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -416,8 +423,8 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -500,7 +507,12 @@
         <ReturnType>System.Windows.Forms.CreateParams</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This member overrides <see cref="P:System.Windows.Forms.Control.CreateParams" />.</summary>
+        <summary>
+             Returns the parameters needed to create the handle.  Inheriting classes
+             can override this to provide extra functionality.  They should not,
+             however, forget to call base.getCreateParams() first to get the struct
+             filled up with the basic info.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.CreateParams" /> that contains the required creation parameters when the handle to the control is created.</value>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for calling unmanaged code. Demand value: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />. Permission value: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
@@ -524,7 +536,10 @@
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the default size of the control.</summary>
+        <summary>
+             Deriving classes can override this to configure a default size for their control.
+             This is more efficient than setting the size in the control's constructor.
+            </summary>
         <value>The default <see cref="T:System.Drawing.Size" /> of the control.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -546,7 +561,9 @@
         <ReturnType>System.Windows.Forms.TabControlEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a tab is deselected.</summary>
+        <summary>
+             Occurs after the visible property of the top tabpage is set to false.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -604,7 +621,9 @@
         <ReturnType>System.Windows.Forms.TabControlCancelEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs before a tab is deselected, enabling a handler to cancel the tab change.</summary>
+        <summary>
+             Occurs before the visible property of the top tabpage is set to false.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -679,11 +698,13 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="index">The index in the <see cref="P:System.Windows.Forms.TabControl.TabPages" /> collection of the tab to deselect.</param>
-        <summary>Makes the tab following the tab with the specified index the current tab.</summary>
+        <summary>
+             Allows the user to specify the index in Tabcontrol.TabPageCollection of the tabpage to be hidden.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -721,11 +742,13 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="tabPageName" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="tabPageName" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="tabPageName">The <see cref="P:System.Windows.Forms.Control.Name" /> of the tab to deselect.</param>
-        <summary>Makes the tab following the tab with the specified name the current tab.</summary>
+        <summary>
+             Allows the user to specify the name of the tabpage in Tabcontrol.TabPageCollection to be hidden.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -766,11 +789,13 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="tabPage" Type="System.Windows.Forms.TabPage" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="tabPage" Type="System.Windows.Forms.TabPage" />
       </Parameters>
       <Docs>
         <param name="tabPage">The <see cref="T:System.Windows.Forms.TabPage" /> to deselect.</param>
-        <summary>Makes the tab following the specified <see cref="T:System.Windows.Forms.TabPage" /> the current tab.</summary>
+        <summary>
+             Allows the user to specify the tabpage in Tabcontrol.TabPageCollection  to be hidden.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -815,7 +840,12 @@
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the display area of the control's tab pages.</summary>
+        <summary>
+             The rectangle that represents the Area of the tab strip not
+             taken up by the tabs, borders, or anything else owned by the Tab.  This
+             is typically the rectangle you want to use to place the individual
+             children of the tab strip.
+            </summary>
         <value>A <see cref="T:System.Drawing.Rectangle" /> that represents the display area of the tab pages.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -873,15 +903,18 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This member is not meaningful for this control.</summary>
+        <summary>
+             This property is overridden and hidden from statement completion
+             on controls that are based on Win32 Native Controls.
+            </summary>
         <value>A <see cref="T:System.Boolean" /> value.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -948,15 +981,14 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TabDrawMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the way that the control's tabs are drawn.</summary>
+        <summary>
+             The drawing mode of the tabs in the tab strip.  This will indicate
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.TabDrawMode" /> values. The default is <see langword="Normal" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1003,7 +1035,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1034,7 +1066,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1066,11 +1098,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Control</ReturnType>
       </ReturnValue>
@@ -1114,7 +1141,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets an array of <see cref="T:System.Windows.Forms.TabPage" /> controls that belong to the <see cref="T:System.Windows.Forms.TabControl" /> control.</summary>
+        <summary>
+             This has package scope so that TabStrip and TabControl can call it.
+            </summary>
         <returns>An array of <see cref="T:System.Windows.Forms.TabPage" /> controls that belong to the <see cref="T:System.Windows.Forms.TabControl" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1141,7 +1170,9 @@
       </Parameters>
       <Docs>
         <param name="baseType">The <see cref="T:System.Type" /> of the array to create.</param>
-        <summary>Copies the <see cref="T:System.Windows.Forms.TabPage" /> controls in the <see cref="T:System.Windows.Forms.TabControl" /> to an array of the specified type.</summary>
+        <summary>
+             This has package scope so that TabStrip and TabControl can call it.
+            </summary>
         <returns>The <see cref="T:System.Windows.Forms.TabPage" /> controls that belong to the <see cref="T:System.Windows.Forms.TabControl" /> as an array of the specified type.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArrayTypeMismatchException">The type <see cref="T:System.Windows.Forms.TabPage" /> cannot be converted to <paramref name="baseType" />.</exception>
@@ -1169,7 +1200,9 @@
       </Parameters>
       <Docs>
         <param name="index">The zero-based index of the tab you want.</param>
-        <summary>Returns the bounding rectangle for a specified tab in this tab control.</summary>
+        <summary>
+             Retrieves the bounding rectangle for the given tab in the tab strip.
+            </summary>
         <returns>A <see cref="T:System.Drawing.Rectangle" /> that represents the bounds of the specified tab.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1242,7 +1275,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the control's tabs change in appearance when the mouse passes over them.</summary>
+        <summary>
+             Indicates whether the tabs visually change when the mouse passes over them.
+            </summary>
         <value>
           <see langword="true" /> if the tabs change in appearance when the mouse passes over them; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
@@ -1285,15 +1320,15 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ImageList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the images to display on the control's tabs.</summary>
+        <summary>
+             Returns the imageList the control points at.  This is where tabs that have imageIndex
+             set will get there images from.
+            </summary>
         <value>An <see cref="T:System.Windows.Forms.ImageList" /> that specifies the images to display on the tabs.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1337,7 +1372,9 @@
       </Parameters>
       <Docs>
         <param name="keyData">One of the <see cref="T:System.Windows.Forms.Keys" /> values.</param>
-        <summary>Determines whether the specified key is a regular input key or a special key that requires preprocessing.</summary>
+        <summary>
+             Handling special input keys, such as pgup, pgdown, home, end, etc...
+            </summary>
         <returns>
           <see langword="true" /> if the specified key is a regular input key; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -1373,7 +1410,10 @@
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the size of the control's tabs.</summary>
+        <summary>
+             By default, tabs will automatically size themselves to fit their icon, if any, and their label.
+             However, the tab size can be explicity set by setting this property.
+            </summary>
         <value>A <see cref="T:System.Drawing.Size" /> that represents the size of the tabs. The default automatically sizes the tabs to fit the icons and labels on the tabs.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1419,7 +1459,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether more than one row of tabs can be displayed.</summary>
+        <summary>
+             Indicates if there can be more than one row of tabs.  By default [when
+             this property is false], if there are more tabs than available display
+             space, arrows are shown to let the user navigate between the extra
+             tabs, but only one row is shown.  If this property is set to true, then
+             Windows spills extra tabs over on to second rows.
+            </summary>
         <value>
           <see langword="true" /> if more than one row of tabs can be displayed; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
@@ -1461,11 +1507,13 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.Windows.Forms.TabControlEventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="e" Type="System.Windows.Forms.TabControlEventArgs" />
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.TabControlEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.TabControl.Deselected" /> event.</summary>
+        <summary>
+             Raises the <see cref="M:System.Windows.Forms.TabControl.OnDeselected(System.Windows.Forms.TabControlEventArgs)" /> event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1499,11 +1547,13 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.Windows.Forms.TabControlCancelEventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="e" Type="System.Windows.Forms.TabControlCancelEventArgs" />
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.TabControlCancelEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.TabControl.Deselecting" /> event.</summary>
+        <summary>
+             Raises the <see cref="M:System.Windows.Forms.TabControl.OnDeselecting(System.Windows.Forms.TabControlCancelEventArgs)" /> event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1542,7 +1592,13 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.DrawItemEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.TabControl.DrawItem" /> event.</summary>
+        <summary>
+             Actually goes and fires the OnDrawItem event.  Inheriting controls
+             should use this to know when the event is fired [this is preferable to
+             adding an event handler on yourself for this event].  They should,
+             however, remember to call base.onDrawItem(e); to ensure the event is
+             still fired to external listeners
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1575,11 +1631,24 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.EventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Enter" /> event of the <see cref="T:System.Windows.Forms.TabControl" />.</summary>
+        <summary>
+             Actually goes and fires the OnLeave event.  Inheriting controls
+             should use this to know when the event is fired [this is preferable to
+             adding an event handler on yourself for this event].  They should,
+             however, remember to call base.OnLeave(e); to ensure the event is
+             still fired to external listeners
+             This listener is overidden so that we can fire SAME ENTER and LEAVE
+             events on the TabPage.
+             TabPage should fire enter when the focus is on the TABPAGE and not when the control
+             within the TabPage gets Focused.
+             Similary the Leave event should fire when the TabControl (and hence the TabPage) looses
+             Focus. To be Backward compatible we have added new bool which can be set to true
+             to the get the NEW SANE ENTER-LEAVE EVENTS ON THE TABPAGE.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1658,7 +1727,11 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>This member overrides <see cref="M:System.Windows.Forms.Control.OnHandleCreated(System.EventArgs)" />.</summary>
+        <summary>
+             This is a notification that the handle has been created.
+             We do some work here to configure the handle.
+             Overriders should call base.OnHandleCreated()
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1724,7 +1797,10 @@
       </Parameters>
       <Docs>
         <param name="ke">A <see cref="T:System.Windows.Forms.KeyEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.KeyDown" /> event.</summary>
+        <summary>
+             We override this to get tabbing functionality.
+             If overriding this, remember to call base.onKeyDown.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1759,11 +1835,24 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.EventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Leave" /> event of the <see cref="T:System.Windows.Forms.TabControl" />.</summary>
+        <summary>
+             Actually goes and fires the OnLeave event.  Inheriting controls
+             should use this to know when the event is fired [this is preferable to
+             adding an event handler on yourself for this event].  They should,
+             however, remember to call base.OnLeave(e); to ensure the event is
+             still fired to external listeners
+             This listener is overidden so that we can fire SAME ENTER and LEAVE
+             events on the TabPage.
+             TabPage should fire enter when the focus is on the TABPAGE and not when the control
+             within the TabPage gets Focused.
+             Similary the Leave event  should fire when the TabControl (and hence the TabPage) looses
+             Focus. To be Backward compatible we have added new bool which can be set to true
+             to the get the NEW SANE ENTER-LEAVE EVENTS ON THE TABPAGE.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1822,15 +1911,15 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.EventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
@@ -1868,11 +1957,13 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.Windows.Forms.TabControlEventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="e" Type="System.Windows.Forms.TabControlEventArgs" />
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.TabControlEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.TabControl.Selected" /> event.</summary>
+        <summary>
+             Raises the <see cref="M:System.Windows.Forms.TabControl.OnSelected(System.Windows.Forms.TabControlEventArgs)" /> event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1911,7 +2002,13 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.TabControl.SelectedIndexChanged" /> event.</summary>
+        <summary>
+             Actually goes and fires the onSelectedIndexChanged event.  Inheriting controls
+             should use this to know when the event is fired [this is preferable to
+             adding an event handler on yourself for this event].  They should,
+             however, remember to call base.onSelectedIndexChanged(e); to ensure the event is
+             still fired to external listeners
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1944,11 +2041,13 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.Windows.Forms.TabControlCancelEventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="e" Type="System.Windows.Forms.TabControlCancelEventArgs" />
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.TabControlCancelEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.TabControl.Selecting" /> event.</summary>
+        <summary>
+             Raises the <see cref="M:System.Windows.Forms.TabControl.OnSelecting(System.Windows.Forms.TabControlCancelEventArgs)" /> event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2009,15 +2108,15 @@
         <Attribute>
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Point</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the amount of space around each item on the control's tab pages.</summary>
+        <summary>
+             The amount of padding around the items in the individual tabs.
+             You can specify both horizontal and vertical padding.
+            </summary>
         <value>A <see cref="T:System.Drawing.Point" /> that specifies the amount of space around each item. The default is (6,3).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2054,15 +2153,18 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.PaintEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This event is not meaningful for this control.</summary>
+        <summary>
+             TabControl Onpaint.
+            </summary>
         <remarks>To be added.</remarks>
+        <hideinheritance />
       </Docs>
     </Member>
     <Member MemberName="ProcessKeyPreview">
@@ -2087,7 +2189,9 @@
       </Parameters>
       <Docs>
         <param name="m">A <see cref="T:System.Windows.Forms.Message" />, passed by reference, that represents the window message to process.</param>
-        <summary>Previews a keyboard message.</summary>
+        <summary>
+             We override this to get the Ctrl and Ctrl-Shift Tab functionality.
+            </summary>
         <returns>
           <see langword="true" /> if the message was processed by the control; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -2142,9 +2246,6 @@
         </Attribute>
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2236,7 +2337,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of rows that are currently being displayed in the control's tab strip.</summary>
+        <summary>
+             The number of rows currently being displayed in
+             the tab strip.  This is most commonly used when the Multline property
+             is 'true' and you want to know how many rows the tabs are currently
+             taking up.
+            </summary>
         <value>The number of rows that are currently being displayed in the tab strip.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2271,16 +2377,16 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="dx" Type="System.Single" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="dy" Type="System.Single" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="dx" Type="System.Single" />
+        <Parameter Name="dy" Type="System.Single" />
       </Parameters>
       <Docs>
         <param name="dx">The horizontal scaling factor.</param>
@@ -2307,7 +2413,9 @@
         <ReturnType>System.Windows.Forms.TabControlEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a tab is selected.</summary>
+        <summary>
+             Occurs after a tabpage is selected as the top tabPage.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2374,7 +2482,12 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the index of the currently selected tab page.</summary>
+        <summary>
+             The index of the currently selected tab in the strip, if there
+             is one.  If the value is -1, there is currently no selection.  If the
+             value is 0 or greater, than the value is the index of the currently
+             selected tab.
+            </summary>
         <value>The zero-based index of the currently selected tab page. The default is -1, which is also the value if no tab page is selected.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2461,18 +2574,16 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TabPage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the currently selected tab page.</summary>
+        <summary>
+             The selection to the given tab, provided it .equals a tab in the
+             list.  The return value is the index of the tab that was selected,
+             or -1 if no tab was selected.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.TabPage" /> that represents the selected tab page. If no tab page is selected, the value is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2519,7 +2630,9 @@
         <ReturnType>System.Windows.Forms.TabControlCancelEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs before a tab is selected, enabling a handler to cancel the tab change.</summary>
+        <summary>
+             Occurs before a tabpage is selected as the top tabPage.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2594,11 +2707,13 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="index">The index in the <see cref="P:System.Windows.Forms.TabControl.TabPages" /> collection of the tab to select.</param>
-        <summary>Makes the tab with the specified index the current tab.</summary>
+        <summary>
+             Allows the user to specify the index in Tabcontrol.TabPageCollection of the tabpage to be shown.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2636,11 +2751,13 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="tabPageName" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="tabPageName" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="tabPageName">The <see cref="P:System.Windows.Forms.Control.Name" /> of the tab to select.</param>
-        <summary>Makes the tab with the specified name the current tab.</summary>
+        <summary>
+             Allows the user to specify the name of the tabpage in Tabcontrol.TabPageCollection to be shown.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2681,11 +2798,13 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="tabPage" Type="System.Windows.Forms.TabPage" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="tabPage" Type="System.Windows.Forms.TabPage" />
       </Parameters>
       <Docs>
         <param name="tabPage">The <see cref="T:System.Windows.Forms.TabPage" /> to select.</param>
-        <summary>Makes the specified <see cref="T:System.Windows.Forms.TabPage" /> the current tab.</summary>
+        <summary>
+             Allows the user to specify the tabpage in Tabcontrol.TabPageCollection  to be shown.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2738,7 +2857,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether a tab's ToolTip is shown when the mouse passes over the tab.</summary>
+        <summary>
+             Indicates whether tooltips are being shown for tabs that have tooltips set on
+             them.
+            </summary>
         <value>
           <see langword="true" /> if ToolTips are shown for the tabs that have them; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
@@ -2782,15 +2904,18 @@
         <Attribute>
           <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TabSizeMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the way that the control's tabs are sized.</summary>
+        <summary>
+             By default, tabs are big enough to display their text, and any space
+             on the right of the strip is left as such.  However, you can also
+             set it such that the tabs are stretched to fill out the right extent
+             of the strip, if necessary, or you can set it such that all tabs
+             the same width.
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.TabSizeMode" /> values. The default is <see langword="Normal" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2829,15 +2954,14 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of tabs in the tab strip.</summary>
+        <summary>
+             Returns the number of tabs in the strip
+            </summary>
         <value>The number of tabs in the tab strip.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2874,24 +2998,17 @@
         <Attribute>
           <AttributeName>System.ComponentModel.MergableProperty(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1">
-          <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
-        </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
-          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.TabPageCollectionEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TabControl+TabPageCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of tab pages in this tab control.</summary>
+        <summary>
+             Returns the Collection of TabPages.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.TabControl.TabPageCollection" /> that contains the <see cref="T:System.Windows.Forms.TabPage" /> objects in this <see cref="T:System.Windows.Forms.TabControl" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2936,7 +3053,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2967,7 +3084,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3004,7 +3121,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a string that represents the <see cref="T:System.Windows.Forms.TabControl" /> control.</summary>
+        <summary>
+             Returns a string representation for this control.
+            </summary>
         <returns>A string that represents the current <see cref="T:System.Windows.Forms.TabControl" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3019,10 +3138,10 @@
     <Member MemberName="UpdateTabSelection">
       <MemberSignature Language="C#" Value="protected void UpdateTabSelection (bool uiselected);" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void UpdateTabSelection(bool uiselected) cil managed" FrameworkAlternate="netframework-1.1" />
-      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.UpdateTabSelection(System.Boolean)" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.TabControl.UpdateTabSelection(System.Boolean)" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       <MemberSignature Language="VB.NET" Value="Protected Sub UpdateTabSelection (uiselected As Boolean)" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; void UpdateTabSelection(bool uiselected);" FrameworkAlternate="netframework-1.1" />
-      <MemberSignature Language="F#" Value="member this.UpdateTabSelection : bool -&gt; unit" Usage="tabControl.UpdateTabSelection uiselected" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="F#" Value="member this.UpdateTabSelection : bool -&gt; unit" Usage="tabControl.UpdateTabSelection uiselected" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       <MemberSignature Language="C#" Value="protected void UpdateTabSelection (bool updateFocus);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       <MemberSignature Language="ILAsm" Value=".method familyhidebysig instance void UpdateTabSelection(bool updateFocus) cil managed" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       <MemberSignature Language="VB.NET" Value="Protected Sub UpdateTabSelection (updateFocus As Boolean)" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
@@ -3040,15 +3159,14 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="updateFocus" Type="System.Boolean" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="uiselected" Type="System.Boolean" Index="0" FrameworkAlternate="netframework-1.1" />
+        <Parameter Name="updateFocus" Type="System.Boolean" />
       </Parameters>
       <Docs>
         <param name="updateFocus">
           <see langword="true" /> to change focus to the next <see cref="T:System.Windows.Forms.TabPage" />; otherwise, <see langword="false" />.</param>
-        <param name="uiselected">
-          <see langword="true" /> to change focus to the next <see cref="T:System.Windows.Forms.TabPage" />; otherwise, <see langword="false" />.</param>
-        <summary>Sets the <see cref="P:System.Windows.Forms.TabPage.Visible" /> property to <see langword="true" /> for the appropriate <see cref="T:System.Windows.Forms.TabPage" /> control in the <see cref="P:System.Windows.Forms.TabControl.TabPages" /> collection.</summary>
+        <summary>
+             Set the panel selections appropriately
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3082,7 +3200,11 @@
       </Parameters>
       <Docs>
         <param name="m">A Windows Message Object.</param>
-        <summary>This member overrides <see cref="M:System.Windows.Forms.Control.WndProc(System.Windows.Forms.Message@)" />.</summary>
+        <summary>
+             The tab's window procedure.  Inheritng classes can override this
+             to add extra functionality, but should not forget to call
+             base.wndProc(m); to ensure the tab continues to function properly.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

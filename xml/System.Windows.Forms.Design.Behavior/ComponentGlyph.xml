@@ -1,4 +1,4 @@
-﻿<Type Name="ComponentGlyph" FullName="System.Windows.Forms.Design.Behavior.ComponentGlyph">
+<Type Name="ComponentGlyph" FullName="System.Windows.Forms.Design.Behavior.ComponentGlyph">
   <TypeSignature Language="C#" Value="public class ComponentGlyph : System.Windows.Forms.Design.Behavior.Glyph" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ComponentGlyph extends System.Windows.Forms.Design.Behavior.Glyph" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.Behavior.ComponentGlyph" />
@@ -19,7 +19,12 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Associates a <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> with its component.</summary>
+    <summary>
+             The ComponentGlyph class simply contains a pointer back
+             to it's related Component.  This can be used to trace
+             Glyphs (during drag operations or otherwise) back to
+             their component.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -85,11 +90,6 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="relatedComponent" Type="System.ComponentModel.IComponent" />
         <Parameter Name="behavior" Type="System.Windows.Forms.Design.Behavior.Behavior" />
@@ -97,7 +97,9 @@
       <Docs>
         <param name="relatedComponent">The component with which the <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> is associated.</param>
         <param name="behavior">The <see cref="T:System.Windows.Forms.Design.Behavior.Behavior" /> with which the <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> is associated.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.Behavior.ComponentGlyph" /> class.</summary>
+        <summary>
+             Standard constructor.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Behavior" />
@@ -128,7 +130,9 @@
       </Parameters>
       <Docs>
         <param name="p">A point to hit-test.</param>
-        <summary>Indicates whether a mouse click at the specified point should be handled by the <see cref="T:System.Windows.Forms.Design.Behavior.ComponentGlyph" />.</summary>
+        <summary>
+             Overrides GetHitTest - this implementation does nothing.
+            </summary>
         <returns>A <see cref="T:System.Windows.Forms.Cursor" /> if the <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> is associated with <paramref name="p" />; otherwise, <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -165,7 +169,9 @@
       </Parameters>
       <Docs>
         <param name="pe">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> containing the <see cref="P:System.Windows.Forms.Design.Behavior.BehaviorService.AdornerWindowGraphics" /> of the <see cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />.</param>
-        <summary>Provides paint logic.</summary>
+        <summary>
+             Overrides Glyph::Paint - this implementation does nothing.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -193,16 +199,13 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.ComponentModel.IComponent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the component that is associated with the <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> .</summary>
+        <summary>
+             Returns the Component this Glyph is related to.
+            </summary>
         <value>An <see cref="T:System.ComponentModel.IComponent" /> associated with the <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" />.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />

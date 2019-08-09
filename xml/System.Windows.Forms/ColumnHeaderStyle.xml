@@ -1,4 +1,4 @@
-﻿<Type Name="ColumnHeaderStyle" FullName="System.Windows.Forms.ColumnHeaderStyle">
+<Type Name="ColumnHeaderStyle" FullName="System.Windows.Forms.ColumnHeaderStyle">
   <TypeSignature Language="C#" Value="public enum ColumnHeaderStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ColumnHeaderStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ColumnHeaderStyle" />
@@ -15,7 +15,10 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the styles of the column headers in a <see cref="T:System.Windows.Forms.ListView" /> control.</summary>
+    <summary>
+             Specifies how <see cref="T:System.Windows.Forms.ListView" /> column headers
+             behave.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -55,7 +58,9 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>The column headers function like buttons and can carry out an action, such as sorting, when clicked.</summary>
+        <summary>
+             Visible column header that responds to clicking.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Nonclickable">
@@ -77,7 +82,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The column headers do not respond to the click of a mouse.</summary>
+        <summary>
+             Visible column header that does not respond to clicking.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -99,7 +106,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>The column header is not displayed in report view.</summary>
+        <summary>
+             No visible column header.
+            </summary>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="LinkArea+LinkAreaConverter" FullName="System.Windows.Forms.LinkArea+LinkAreaConverter">
+<Type Name="LinkArea+LinkAreaConverter" FullName="System.Windows.Forms.LinkArea+LinkAreaConverter">
   <TypeSignature Language="C#" Value="public class LinkArea.LinkAreaConverter : System.ComponentModel.TypeConverter" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit LinkArea/LinkAreaConverter extends System.ComponentModel.TypeConverter" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.LinkArea.LinkAreaConverter" />
@@ -16,7 +16,10 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a type converter to convert <see cref="T:System.Windows.Forms.LinkArea.LinkAreaConverter" /> objects to and from various other representations.</summary>
+    <summary>
+             LinkAreaConverter is a class that can be used to convert LinkArea from one data type
+             to another. Access this class through the TypeDescriptor.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -45,11 +48,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.LinkArea.LinkAreaConverter" /> class.</summary>
@@ -80,7 +78,10 @@
       <Docs>
         <param name="context">A formatter context. This object can be used to extract additional information about the environment this converter is being invoked from. This may be null, so you should always check. Also, properties on the context object may also return null.</param>
         <param name="sourceType">The type you wish to convert from.</param>
-        <summary>Determines if this converter can convert an object in the given source type to the native type of the converter.</summary>
+        <summary>
+             Determines if this converter can convert an object in the given source
+             type to the native type of the converter.
+            </summary>
         <returns>True if this object can perform the conversion.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -109,7 +110,10 @@
       <Docs>
         <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
         <param name="destinationType">A <see cref="T:System.Type" /> that represents the type you wish to convert to.</param>
-        <summary>Gets a value indicating whether this converter can convert an object to the given destination type using the context.</summary>
+        <summary>
+             Gets a value indicating whether this converter can convert an object to the
+             given destination type using the context.
+            </summary>
         <returns>
           <see langword="true" /> if this converter can perform the conversion; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -152,7 +156,9 @@
         <param name="context">A formatter context. This object can be used to extract additional information about the environment this converter is being invoked from. This may be null, so you should always check. Also, properties on the context object may also return null.</param>
         <param name="culture">An optional culture info. If not supplied, the current culture is assumed.</param>
         <param name="value">The object to convert.</param>
-        <summary>Converts the given object to the converter's native type.</summary>
+        <summary>
+             Converts the given object to the converter's native type.
+            </summary>
         <returns>The converted object. This will throw an exception if the conversion could not be performed.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -185,7 +191,13 @@
         <param name="culture">An optional culture info. If not supplied the current culture is assumed.</param>
         <param name="value">The object to convert.</param>
         <param name="destinationType">The type to convert the object to.</param>
-        <summary>Converts the given object to another type. The most common types to convert are to and from a string object. The default implementation will make a call to <see cref="M:System.Windows.Forms.LinkArea.ToString" /> on the object if the object is valid and if the destination type is string. If this cannot convert to the destination type, this will throw a <see cref="T:System.NotSupportedException" />.</summary>
+        <summary>
+             Converts the given object to another type. The most common types to convert
+             are to and from a string object. The default implementation will make a call
+             to ToString on the object if the object is valid and if the destination
+             type is string. If this cannot convert to the desitnation type, this will
+             throw a NotSupportedException.
+            </summary>
         <returns>The converted object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -214,7 +226,11 @@
       <Docs>
         <param name="context">A type descriptor through which additional context may be provided.</param>
         <param name="propertyValues">A dictionary of new property values. The dictionary contains a series of name-value pairs, one for each property returned from <see cref="M:System.Windows.Forms.LinkArea.LinkAreaConverter.GetProperties(System.ComponentModel.ITypeDescriptorContext,System.Object,System.Attribute[])" />.</param>
-        <summary>Creates an instance of this type, given a set of property values for the object. This is useful for objects that are immutable, but still want to provide changeable properties.</summary>
+        <summary>
+             Creates an instance of this type given a set of property values
+             for the object. This is useful for objects that are immutable, but still
+             want to provide changable properties.
+            </summary>
         <returns>The newly created object, or null if the object could not be created. The default implementation returns null.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -241,7 +257,10 @@
       </Parameters>
       <Docs>
         <param name="context">A type descriptor through which additional context may be provided.</param>
-        <summary>Determines if changing a value on this object should require a call to <see cref="M:System.Windows.Forms.LinkArea.LinkAreaConverter.CreateInstance(System.ComponentModel.ITypeDescriptorContext,System.Collections.IDictionary)" /> to create a new value.</summary>
+        <summary>
+             Determines if changing a value on this object should require a call to
+             CreateInstance to create a new value.
+            </summary>
         <returns>Returns <see langword="true" /> if <see cref="M:System.Windows.Forms.LinkArea.LinkAreaConverter.CreateInstance(System.ComponentModel.ITypeDescriptorContext,System.Collections.IDictionary)" /> should be called when a change is made to one or more properties of this object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -272,7 +291,11 @@
         <param name="context">A type descriptor through which additional context may be provided.</param>
         <param name="value">The value of the object to get the properties for.</param>
         <param name="attributes">The attributes of the object to get the properties for.</param>
-        <summary>Retrieves the set of properties for this type.</summary>
+        <summary>
+             Retrieves the set of properties for this type. By default, a type has
+             does not return any properties. An easy implementation of this method
+             can just call TypeDescriptor.GetProperties for the correct data type.
+            </summary>
         <returns>The set of properties that should be exposed for this data type. If no properties should be exposed, this might return <see langword="null" />. The default implementation always returns <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -306,7 +329,9 @@
       </Parameters>
       <Docs>
         <param name="context">A type descriptor through which additional context may be provided.</param>
-        <summary>Determines if this object supports properties. By default, this is <see langword="false" />.</summary>
+        <summary>
+             Determines if this object supports properties. By default, this is false.
+            </summary>
         <returns>Returns <see langword="true" /> if <see cref="M:System.Windows.Forms.LinkArea.LinkAreaConverter.GetProperties(System.ComponentModel.ITypeDescriptorContext,System.Object,System.Attribute[])" /> should be called to find the properties of this object.</returns>
         <remarks>To be added.</remarks>
       </Docs>

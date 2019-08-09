@@ -1,4 +1,4 @@
-﻿<Type Name="ValidationConstraints" FullName="System.Windows.Forms.ValidationConstraints">
+<Type Name="ValidationConstraints" FullName="System.Windows.Forms.ValidationConstraints">
   <TypeSignature Language="C#" Value="public enum ValidationConstraints" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ValidationConstraints extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ValidationConstraints" />
@@ -19,7 +19,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines constants that inform <see cref="M:System.Windows.Forms.ContainerControl.ValidateChildren(System.Windows.Forms.ValidationConstraints)" /> about how it should validate a container's child controls.</summary>
+    <summary>
+             Determines which child controls in a ContainerControl will be validated
+             by the <see cref="M:System.Windows.Forms.ContainerControl.ValidateChildren" /> method.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -61,7 +64,9 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Validates child controls whose <see cref="P:System.Windows.Forms.Control.Enabled" /> property is set to <see langword="true" />.</summary>
+        <summary>
+             Child control must be enabled to be validated (Control.Enabled = true).
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="ImmediateChildren">
@@ -82,7 +87,10 @@
       </ReturnValue>
       <MemberValue>16</MemberValue>
       <Docs>
-        <summary>Validates child controls that are directly hosted within the container. Does not validate any of the children of these children. For example, if you have a <see cref="T:System.Windows.Forms.Form" /> that contains a custom <see cref="T:System.Windows.Forms.UserControl" />, and the <see cref="T:System.Windows.Forms.UserControl" /> contains a <see cref="T:System.Windows.Forms.Button" />, using <see cref="F:System.Windows.Forms.ValidationConstraints.ImmediateChildren" /> will cause the <see cref="E:System.Windows.Forms.Control.Validating" /> event of the <see cref="T:System.Windows.Forms.UserControl" /> to occur, but not the <see cref="E:System.Windows.Forms.Control.Validating" /> event of the <see cref="T:System.Windows.Forms.Button" />.</summary>
+        <summary>
+             Only immediate children of container control are validated.
+             Descendants are not validated.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -103,7 +111,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Validates all child controls, and all children of these child controls, regardless of their property settings.</summary>
+        <summary>
+             All child controls and their descendants are validated.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Selectable">
@@ -124,7 +134,15 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Validates child controls that can be selected.</summary>
+        <summary>
+              Child control must be selectable to be validated.
+            
+              Note: This flag allows validation of a control that has the
+              ControlStyles.Selectable style, ie. has the ability to be selected,
+              even when that control is currently unselectable because it has been
+              disabled or hidden. To prevent validation of selectable controls that
+              are currently disabled or hidden,
+             </summary>
       </Docs>
     </Member>
     <Member MemberName="TabStop">
@@ -145,7 +163,9 @@
       </ReturnValue>
       <MemberValue>8</MemberValue>
       <Docs>
-        <summary>Validates child controls that have a <see cref="P:System.Windows.Forms.Control.TabStop" /> value set, which means that the user can navigate to the control using the TAB key.</summary>
+        <summary>
+             Child control must be a tab stops to be validated (Control.TabStop = true).
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Visible">
@@ -166,7 +186,9 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>Validates child controls whose <see cref="P:System.Windows.Forms.Control.Visible" /> property is set to <see langword="true" />.</summary>
+        <summary>
+             Child control must be visible to be validated (Control.Visible = true).
+            </summary>
       </Docs>
     </Member>
   </Members>

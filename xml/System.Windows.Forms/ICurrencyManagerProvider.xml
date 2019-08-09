@@ -1,4 +1,4 @@
-﻿<Type Name="ICurrencyManagerProvider" FullName="System.Windows.Forms.ICurrencyManagerProvider">
+<Type Name="ICurrencyManagerProvider" FullName="System.Windows.Forms.ICurrencyManagerProvider">
   <TypeSignature Language="C#" Value="public interface ICurrencyManagerProvider" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICurrencyManagerProvider" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ICurrencyManagerProvider" />
@@ -46,7 +46,9 @@
         <ReturnType>System.Windows.Forms.CurrencyManager</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Forms.CurrencyManager" /> associated with this <see cref="T:System.Windows.Forms.ICurrencyManagerProvider" />.</summary>
+        <summary>
+             Return the main currency manager for this data source.
+            </summary>
         <value>The <see cref="T:System.Windows.Forms.CurrencyManager" /> associated with this <see cref="T:System.Windows.Forms.ICurrencyManagerProvider" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -72,7 +74,11 @@
       </Parameters>
       <Docs>
         <param name="dataMember">The name of the column or list, within the data source, to obtain the <see cref="T:System.Windows.Forms.CurrencyManager" /> for.</param>
-        <summary>Gets the <see cref="T:System.Windows.Forms.CurrencyManager" /> for this <see cref="T:System.Windows.Forms.ICurrencyManagerProvider" /> and the specified data member.</summary>
+        <summary>
+             Return a related currency manager for specified data member on this data source.
+             If data member is null or empty, this method returns the data source's main currency
+             manager (ie. this method returns the same value as the CurrencyManager property).
+            </summary>
         <returns>The related <see cref="T:System.Windows.Forms.CurrencyManager" /> obtained from this <see cref="T:System.Windows.Forms.ICurrencyManagerProvider" /> and the specified data member.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

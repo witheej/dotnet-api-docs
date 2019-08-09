@@ -1,4 +1,4 @@
-﻿<Type Name="Button" FullName="System.Windows.Forms.Button">
+<Type Name="Button" FullName="System.Windows.Forms.Button">
   <TypeSignature Language="C#" Value="public class Button : System.Windows.Forms.ButtonBase, System.Windows.Forms.IButtonControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Button extends System.Windows.Forms.ButtonBase implements class System.Windows.Forms.IButtonControl" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Button" />
@@ -26,15 +26,15 @@
     <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
-      <AttributeName>System.ComponentModel.Designer("System.Windows.Forms.Design.ButtonBaseDesigner, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
-    </Attribute>
     <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
       <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a Windows button control.</summary>
+    <summary>
+             Represents a
+             Windows button.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -82,7 +82,10 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Button" /> class.</summary>
+        <summary>
+             Initializes a new instance of the <see cref="T:System.Windows.Forms.Button" />
+             class.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -131,7 +134,9 @@
         <ReturnType>System.Windows.Forms.AutoSizeMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the mode by which the <see cref="T:System.Windows.Forms.Button" /> automatically resizes itself.</summary>
+        <summary>
+             Allows the control to optionally shrink when AutoSize is true.
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.AutoSizeMode" /> values. The default value is <see cref="F:System.Windows.Forms.AutoSizeMode.GrowOnly" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -154,7 +159,12 @@
         <ReturnType>System.Windows.Forms.CreateParams</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a <see cref="T:System.Windows.Forms.CreateParams" /> on the base class when creating a window.</summary>
+        <summary>
+             This is called when creating a window. Inheriting classes can overide
+             this to add extra functionality, but should not forget to first call
+             base.CreateParams() to make sure the control continues to work
+             correctly.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.CreateParams" /> object on the base class when creating a window.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -187,15 +197,16 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DialogResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that is returned to the parent form when the button is clicked.</summary>
+        <summary>
+             Gets or sets a value that is returned to the
+             parent form when the button
+             is clicked.
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values. The default value is <see langword="None" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -238,7 +249,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -266,6 +277,7 @@
   
  ]]></format>
         </remarks>
+        <hideinheritance />
       </Docs>
     </Member>
     <Member MemberName="MouseDoubleClick">
@@ -285,8 +297,8 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -314,6 +326,7 @@
   
  ]]></format>
         </remarks>
+        <hideinheritance />
       </Docs>
     </Member>
     <Member MemberName="NotifyDefault">
@@ -342,7 +355,11 @@
       <Docs>
         <param name="value">
           <see langword="true" /> if the button is to have the appearance of the default button; otherwise, <see langword="false" />.</param>
-        <summary>Notifies the <see cref="T:System.Windows.Forms.Button" /> whether it is the default button so that it can adjust its appearance accordingly.</summary>
+        <summary>
+             Notifies the <see cref="T:System.Windows.Forms.Button" />
+             whether it is the default button so that it can adjust its appearance
+             accordingly.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -381,7 +398,13 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Click" /> event.</summary>
+        <summary>
+             This method actually raises the Click event. Inheriting classes should
+             override this if they wish to be notified of a Click event. (This is far
+             preferable to actually adding an event handler.) They should not,
+             however, forget to call base.onClick(e); before exiting, to ensure that
+             other recipients do actually get the event.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.Control.OnClick(System.EventArgs)" />
       </Docs>
@@ -403,7 +426,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.EventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
@@ -440,11 +463,13 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.EventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="M:System.Windows.Forms.Control.OnMouseEnter(System.EventArgs)" /> event.</summary>
+        <summary>
+             Raises the <see cref="M:System.Windows.Forms.Control.OnMouseEnter(System.EventArgs)" /> event.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.ButtonBase.OnMouseEnter(System.EventArgs)" />
       </Docs>
@@ -466,11 +491,13 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.EventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="M:System.Windows.Forms.Control.OnMouseLeave(System.EventArgs)" /> event.</summary>
+        <summary>
+             Raises the <see cref="M:System.Windows.Forms.Control.OnMouseLeave(System.EventArgs)" /> event.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.ButtonBase.OnMouseLeave(System.EventArgs)" />
       </Docs>
@@ -497,7 +524,9 @@
       </Parameters>
       <Docs>
         <param name="mevent">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="M:System.Windows.Forms.ButtonBase.OnMouseUp(System.Windows.Forms.MouseEventArgs)" /> event.</summary>
+        <summary>
+             Raises the <see cref="M:System.Windows.Forms.ButtonBase.OnMouseUp(System.Windows.Forms.MouseEventArgs)" /> event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -531,7 +560,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.EventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
@@ -573,7 +602,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Generates a <see cref="E:System.Windows.Forms.Control.Click" /> event for a button.</summary>
+        <summary>
+             Generates a <see cref="E:System.Windows.Forms.Control.Click" /> event for a
+             button.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -616,7 +648,12 @@
       </Parameters>
       <Docs>
         <param name="charCode">The mnemonic character entered.</param>
-        <summary>Processes a mnemonic character.</summary>
+        <summary>
+             Lets a control process mnmemonic characters. Inheriting classes can
+             override this to add extra functionality, but should not forget to call
+             base.ProcessMnemonic(charCode); to ensure basic functionality
+             remains unchanged.
+            </summary>
         <returns>
           <see langword="true" /> if the mnemonic was processed; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -645,13 +682,18 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="deviceDpiOld" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.8" />
-        <Parameter Name="deviceDpiNew" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.8" />
+        <Parameter Name="deviceDpiOld" Type="System.Int32" />
+        <Parameter Name="deviceDpiNew" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="deviceDpiOld">The DPI value prior to the change.</param>
-        <param name="deviceDpiNew">The DPI value after the change.</param>
-        <summary>Provides constants for rescaling the <see cref="T:System.Windows.Forms.Button" /> control when a DPI change occurs.</summary>
+        <param name="deviceDpiOld">Old DPI value</param>
+        <param name="deviceDpiNew">New DPI value</param>
+        <summary>
+             When overridden in a derived class, handles rescaling of any magic numbers used in control painting.
+             Must call the base class method to get the current DPI values. This method is invoked only when
+             Application opts-in into the Per-monitor V2 support, targets .NETFX 4.7 and has
+             EnableDpiChangedMessageHandling and EnableDpiChangedHighDpiImprovements config switches turned on.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -674,7 +716,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a <see cref="T:System.String" /> containing the name of the <see cref="T:System.ComponentModel.Component" />, if any. This method should not be overridden.</summary>
+        <summary>
+             Provides some interesting information for the Button control in
+             String form.
+            </summary>
         <returns>A <see cref="T:System.String" /> containing the name of the <see cref="T:System.ComponentModel.Component" />, if any, or <see langword="null" /> if the <see cref="T:System.ComponentModel.Component" /> is unnamed.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -701,7 +746,11 @@
       </Parameters>
       <Docs>
         <param name="m">The Windows <see cref="T:System.Windows.Forms.Message" /> to process.</param>
-        <summary>Processes Windows messages.</summary>
+        <summary>
+             The button's window procedure.  Inheriting classes can override this
+             to add extra functionality, but should not forget to call
+             base.wndProc(m); to ensure the button continues to function properly.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.Control.WndProc(System.Windows.Forms.Message@)" />
       </Docs>

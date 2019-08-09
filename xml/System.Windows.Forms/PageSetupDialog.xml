@@ -1,4 +1,4 @@
-﻿<Type Name="PageSetupDialog" FullName="System.Windows.Forms.PageSetupDialog">
+<Type Name="PageSetupDialog" FullName="System.Windows.Forms.PageSetupDialog">
   <TypeSignature Language="C#" Value="public sealed class PageSetupDialog : System.Windows.Forms.CommonDialog" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit PageSetupDialog extends System.Windows.Forms.CommonDialog" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PageSetupDialog" />
@@ -21,7 +21,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Enables users to change page-related print settings, including margins and paper orientation. This class cannot be inherited.</summary>
+    <summary>
+             Represents a dialog box that allows users to manipulate page settings,
+             including margins and paper orientation.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -65,7 +68,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.PageSetupDialog" /> class.</summary>
+        <summary>
+             Initializes a new instance of the <see cref="T:System.Windows.Forms.PageSetupDialog" /> class.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -114,18 +119,14 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the margins section of the dialog box is enabled.</summary>
+        <summary>
+             Gets or sets a value indicating whether the margins section of the dialog box is enabled.
+            </summary>
         <value>
           <see langword="true" /> if the margins section of the dialog box is enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
@@ -152,18 +153,15 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the orientation section of the dialog box (landscape versus portrait) is enabled.</summary>
+        <summary>
+             Gets or sets a value indicating whether the orientation section of the dialog box (landscape vs. portrait)
+             is enabled.
+            </summary>
         <value>
           <see langword="true" /> if the orientation section of the dialog box is enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
@@ -190,18 +188,15 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the paper section of the dialog box (paper size and paper source) is enabled.</summary>
+        <summary>
+             Gets or sets a value indicating whether the paper section of the dialog box (paper size and paper source)
+             is enabled.
+            </summary>
         <value>
           <see langword="true" /> if the paper section of the dialog box is enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
@@ -228,18 +223,14 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the **Printer** button is enabled.</summary>
+        <summary>
+             Gets or sets a value indicating whether the Printer button is enabled.
+            </summary>
         <value>
           <see langword="true" /> if the **Printer** button is enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
@@ -275,15 +266,15 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PrintDocument</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating the <see cref="T:System.Drawing.Printing.PrintDocument" /> to get page settings from.</summary>
+        <summary>
+             Gets or sets a value indicating the <see cref="T:System.Drawing.Printing.PrintDocument" />
+             to get page settings from.
+            </summary>
         <value>The <see cref="T:System.Drawing.Printing.PrintDocument" /> to get page settings from. The default is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Drawing.Printing.PrintDocument" />
@@ -309,21 +300,18 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Always)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the margin settings, when displayed in millimeters, should be automatically converted to and from hundredths of an inch.</summary>
+        <summary>
+             This allows the user to override the current behavior where the Metric is converted to ThousandOfInch even for METRIC MEASUREMENTSYSTEM
+             which returns a HUNDREDSOFMILLIMETER value.
+            </summary>
         <value>
           <see langword="true" /> if the margins should be automatically converted; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
@@ -352,16 +340,14 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.Margins</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating the minimum margins, in hundredths of an inch, the user is allowed to select.</summary>
+        <summary>
+             Gets or sets a value indicating the minimum margins the
+             user is allowed to select, in hundredths of an inch.
+            </summary>
         <value>The minimum margins, in hundredths of an inch, the user is allowed to select. The default is <see langword="null" />.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Drawing.Printing.Margins" />
@@ -391,15 +377,17 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PageSettings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating the page settings to modify.</summary>
+        <summary>
+             Gets
+             or sets
+             a value indicating
+             the page settings modified by the dialog box.
+            </summary>
         <value>The <see cref="T:System.Drawing.Printing.PageSettings" /> to modify. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -440,15 +428,16 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PrinterSettings</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the printer settings that are modified when the user clicks the Printer button in the dialog.</summary>
+        <summary>
+             Gets
+             or sets the printer
+             settings the dialog box will modify if the user clicks the Printer button.
+            </summary>
         <value>The <see cref="T:System.Drawing.Printing.PrinterSettings" /> to modify when the user clicks the Printer button. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -484,7 +473,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Resets all options to their default values.</summary>
+        <summary>
+             Resets all options to their default values.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -533,18 +524,14 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the **Help** button is visible.</summary>
+        <summary>
+             Gets or sets a value indicating whether the Help button is visible.
+            </summary>
         <value>
           <see langword="true" /> if the **Help** button is visible; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -569,18 +556,14 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the **Network** button is visible.</summary>
+        <summary>
+             Gets or sets a value indicating whether the Network button is visible.
+            </summary>
         <value>
           <see langword="true" /> if the **Network** button is visible; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>

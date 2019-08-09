@@ -1,4 +1,4 @@
-﻿<Type Name="DrawToolTipEventArgs" FullName="System.Windows.Forms.DrawToolTipEventArgs">
+<Type Name="DrawToolTipEventArgs" FullName="System.Windows.Forms.DrawToolTipEventArgs">
   <TypeSignature Language="C#" Value="public class DrawToolTipEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DrawToolTipEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DrawToolTipEventArgs" />
@@ -15,7 +15,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.Forms.ToolTip.Draw" /> event.</summary>
+    <summary>
+             This class contains the information a user needs to paint the ToolTip.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -52,11 +54,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="graphics" Type="System.Drawing.Graphics" />
         <Parameter Name="associatedWindow" Type="System.Windows.Forms.IWin32Window" />
@@ -76,7 +73,9 @@
         <param name="backColor">The <see cref="T:System.Drawing.Color" /> of the ToolTip background.</param>
         <param name="foreColor">The <see cref="T:System.Drawing.Color" /> of the ToolTip text.</param>
         <param name="font">The <see cref="T:System.Drawing.Font" /> used to draw the ToolTip text.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DrawToolTipEventArgs" /> class.</summary>
+        <summary>
+             Creates a new DrawToolTipEventArgs with the given parameters.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -108,16 +107,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Control</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the control for which the <see cref="T:System.Windows.Forms.ToolTip" /> is being drawn.</summary>
+        <summary>
+             The control for which the tooltip is being painted.
+            </summary>
         <value>The <see cref="T:System.Windows.Forms.Control" /> that is associated with the <see cref="T:System.Windows.Forms.ToolTip" /> when the <see cref="E:System.Windows.Forms.ToolTip.Draw" /> event occurs. The return value will be <see langword="null" /> if the ToolTip is not associated with a control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -156,16 +152,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.IWin32Window</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the window to which this <see cref="T:System.Windows.Forms.ToolTip" /> is bound.</summary>
+        <summary>
+             The window for which the tooltip is being painted.
+            </summary>
         <value>The window which owns the <see cref="T:System.Windows.Forms.ToolTip" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -201,16 +194,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the size and location of the <see cref="T:System.Windows.Forms.ToolTip" /> to draw.</summary>
+        <summary>
+             The rectangle outlining the area in which the painting should be done.
+            </summary>
         <value>A <see cref="T:System.Drawing.Rectangle" /> that represents the bounds of the <see cref="T:System.Windows.Forms.ToolTip" /> to draw.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -251,7 +241,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Draws the background of the <see cref="T:System.Windows.Forms.ToolTip" /> using the system background color.</summary>
+        <summary>
+             Draws the background of the ToolTip.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -291,7 +283,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Draws the border of the <see cref="T:System.Windows.Forms.ToolTip" /> using the system border color.</summary>
+        <summary>
+             Draws a border for the ToolTip similar to the default border.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -335,17 +329,14 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Draws the text of the <see cref="T:System.Windows.Forms.ToolTip" /> using the system text color and font.</summary>
+        <summary>
+             Draws the text (overloaded)
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -393,7 +384,9 @@
       </Parameters>
       <Docs>
         <param name="flags">A <see cref="T:System.Windows.Forms.TextFormatFlags" /> containing a bitwise combination of values that specifies the display and layout for the <see cref="P:System.Windows.Forms.DrawToolTipEventArgs.ToolTipText" />.</param>
-        <summary>Draws the text of the <see cref="T:System.Windows.Forms.ToolTip" /> using the system text color and font, and the specified text layout.</summary>
+        <summary>
+             Draws the text (overloaded) - takes a TextFormatFlags argument.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -420,16 +413,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the font used to draw the <see cref="T:System.Windows.Forms.ToolTip" />.</summary>
+        <summary>
+             The font used to draw tooltip text.
+            </summary>
         <value>A <see cref="T:System.Drawing.Font" /> object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -468,16 +458,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Graphics</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the graphics surface used to draw the <see cref="T:System.Windows.Forms.ToolTip" />.</summary>
+        <summary>
+             Graphics object with which painting should be done.
+            </summary>
         <value>The <see cref="T:System.Drawing.Graphics" /> on which to draw the <see cref="T:System.Windows.Forms.ToolTip" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -517,16 +504,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the text for the <see cref="T:System.Windows.Forms.ToolTip" /> that is being drawn.</summary>
+        <summary>
+             The text that should be drawn.
+            </summary>
         <value>The text that is associated with the <see cref="T:System.Windows.Forms.ToolTip" /> when the <see cref="E:System.Windows.Forms.ToolTip.Draw" /> event occurs.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

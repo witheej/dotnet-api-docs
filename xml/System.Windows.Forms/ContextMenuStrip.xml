@@ -1,4 +1,4 @@
-﻿<Type Name="ContextMenuStrip" FullName="System.Windows.Forms.ContextMenuStrip">
+<Type Name="ContextMenuStrip" FullName="System.Windows.Forms.ContextMenuStrip">
   <TypeSignature Language="C#" Value="public class ContextMenuStrip : System.Windows.Forms.ToolStripDropDownMenu" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContextMenuStrip extends System.Windows.Forms.ToolStripDropDownMenu" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ContextMenuStrip" />
@@ -89,11 +89,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ContextMenuStrip" /> class.</summary>
@@ -118,7 +113,9 @@
       </Parameters>
       <Docs>
         <param name="container">A component that implements <see cref="T:System.ComponentModel.IContainer" /> that is the container of the <see cref="T:System.Windows.Forms.ContextMenuStrip" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ContextMenuStrip" /> class and associates it with the specified container.</summary>
+        <summary>
+             Summary of ContextMenuStrip.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

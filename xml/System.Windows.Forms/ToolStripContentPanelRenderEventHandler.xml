@@ -1,4 +1,4 @@
-﻿<Type Name="ToolStripContentPanelRenderEventHandler" FullName="System.Windows.Forms.ToolStripContentPanelRenderEventHandler">
+<Type Name="ToolStripContentPanelRenderEventHandler" FullName="System.Windows.Forms.ToolStripContentPanelRenderEventHandler">
   <TypeSignature Language="C#" Value="public delegate void ToolStripContentPanelRenderEventHandler(object sender, ToolStripContentPanelRenderEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ToolStripContentPanelRenderEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripContentPanelRenderEventHandler" />
@@ -23,7 +23,9 @@
   <Docs>
     <param name="sender">The source of the event.</param>
     <param name="e">A <see cref="T:System.Windows.Forms.ToolStripContentPanelRenderEventArgs" /> that contains the event data.</param>
-    <summary>Represents the method that will handle the <see cref="E:System.Windows.Forms.ToolStripContentPanel.RendererChanged" /> event of a <see cref="T:System.Windows.Forms.ToolStripContentPanel" />.</summary>
+    <summary>
+             Called when the background of the ToolStripPanel is being rendered
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

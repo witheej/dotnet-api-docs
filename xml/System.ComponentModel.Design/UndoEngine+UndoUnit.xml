@@ -1,4 +1,4 @@
-﻿<Type Name="UndoEngine+UndoUnit" FullName="System.ComponentModel.Design.UndoEngine+UndoUnit">
+<Type Name="UndoEngine+UndoUnit" FullName="System.ComponentModel.Design.UndoEngine+UndoUnit">
   <TypeSignature Language="C#" Value="protected class UndoEngine.UndoUnit" />
   <TypeSignature Language="ILAsm" Value=".class nested protected auto ansi beforefieldinit UndoEngine/UndoUnit extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.UndoEngine.UndoUnit" />
@@ -18,7 +18,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Encapsulates a unit of work that a user can undo.</summary>
+    <summary>
+             This class embodies a unit of undoable work.  The undo engine creates an undo unit when a change to the designer is about to be made.  The undo unit is responsible for tracking changes.  The undo engine will call Close on the unit when it no longer needs to track changes.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -84,7 +86,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Receives a call from the undo engine to close this unit.</summary>
+        <summary>
+             Called by the undo engine when it wants to close this unit.  The unit should do any final work it needs to do to close.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -120,7 +124,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.ComponentModel.Design.ComponentEventArgs" /> that contains the event data.</param>
-        <summary>Receives a call from the <see cref="T:System.ComponentModel.Design.UndoEngine" /> in response to a <see cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentAdded" /> event.</summary>
+        <summary>
+             The undo engine will call this on the active undo unit in response to a component added event.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.ComponentModel.Design.UndoEngine" />
         <altmember cref="T:System.ComponentModel.Design.IComponentChangeService" />
@@ -151,7 +157,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.ComponentModel.Design.ComponentEventArgs" /> that contains the event data.</param>
-        <summary>Receives a call from the <see cref="T:System.ComponentModel.Design.UndoEngine" /> in response to a <see cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentAdding" /> event.</summary>
+        <summary>
+             The undo engine will call this on the active undo unit in response to a component adding event.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.ComponentModel.Design.UndoEngine" />
         <altmember cref="T:System.ComponentModel.Design.IComponentChangeService" />
@@ -182,7 +190,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.ComponentModel.Design.ComponentChangedEventArgs" /> that contains the event data.</param>
-        <summary>Receives a call from the <see cref="T:System.ComponentModel.Design.UndoEngine" /> in response to a <see cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentChanged" /> event.</summary>
+        <summary>
+             The undo engine will call this on the active undo unit in response to a component changed event.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.ComponentModel.Design.UndoEngine" />
         <altmember cref="T:System.ComponentModel.Design.IComponentChangeService" />
@@ -213,7 +223,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.ComponentModel.Design.ComponentChangedEventArgs" /> that contains the event data.</param>
-        <summary>Receives a call from the <see cref="T:System.ComponentModel.Design.UndoEngine" /> in response to a <see cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentChanging" /> event.</summary>
+        <summary>
+             The undo engine will call this on the active undo unit in response to a component changing event.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.ComponentModel.Design.UndoEngine" />
         <altmember cref="T:System.ComponentModel.Design.IComponentChangeService" />
@@ -244,7 +256,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.ComponentModel.Design.ComponentEventArgs" /> that contains the event data.</param>
-        <summary>Receives a call from the <see cref="T:System.ComponentModel.Design.UndoEngine" /> in response to a <see cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentRemoved" /> event.</summary>
+        <summary>
+             The undo engine will call this on the active undo unit in response to a component removed event.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.ComponentModel.Design.UndoEngine" />
         <altmember cref="T:System.ComponentModel.Design.IComponentChangeService" />
@@ -275,7 +289,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.ComponentModel.Design.ComponentEventArgs" /> that contains the event data.</param>
-        <summary>Receives a call from the <see cref="T:System.ComponentModel.Design.UndoEngine" /> in response to a <see cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentRemoving" /> event.</summary>
+        <summary>
+             The undo engine will call this on the active undo unit in response to a component removing event.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.ComponentModel.Design.UndoEngine" />
         <altmember cref="T:System.ComponentModel.Design.IComponentChangeService" />
@@ -306,7 +322,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.ComponentModel.Design.ComponentRenameEventArgs" /> that contains the event data.</param>
-        <summary>Receives a call from the <see cref="T:System.ComponentModel.Design.UndoEngine" /> in response to a <see cref="E:System.ComponentModel.Design.IComponentChangeService.ComponentRename" /> event.</summary>
+        <summary>
+             The undo engine will cal this on the active undo unit in response to a component rename event.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.ComponentModel.Design.UndoEngine" />
         <altmember cref="T:System.ComponentModel.Design.IComponentChangeService" />
@@ -337,7 +355,9 @@
       </Parameters>
       <Docs>
         <param name="serviceType">The type of service to retrieve.</param>
-        <summary>Gets an instance of the requested service.</summary>
+        <summary>
+             Returns an instance of the rquested service.
+            </summary>
         <returns>An instance of the given service, or <see langword="null" /> if the service cannot be resolved.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -363,7 +383,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="T:System.ComponentModel.Design.UndoEngine.UndoUnit" /> contains no events.</summary>
+        <summary>
+             This returns true if the undo unit has nothing in it to undo.  The unit will be discarded.
+            </summary>
         <value>
           <see langword="true" /> if the <see cref="T:System.ComponentModel.Design.UndoEngine.UndoUnit" /> contains no events; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -393,11 +415,6 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -424,17 +441,14 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a <see cref="T:System.String" /> that represents the current name of the unit.</summary>
+        <summary>
+             Override for object.ToString()
+            </summary>
         <returns>A <see cref="T:System.String" /> that represents the current name of the unit.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -461,7 +475,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Performs an undo or redo action.</summary>
+        <summary>
+             Either performs undo, or redo, depending on the state of the unit.  UndoUnit initially assumes that the undoable work has already been "done", so the first call to undo will undo the work.  The next call will undo the "undo", performing a redo.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -504,7 +520,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Called by <see cref="M:System.ComponentModel.Design.UndoEngine.UndoUnit.Undo" /> to perform an undo action.</summary>
+        <summary>
+             The undo method invokes this method to perform the actual undo / redo work.  You should never call this method directly; override it if you wish, but always call the public Undo method to perform undo work.  Undo notifies the undo engine to suspend undo data gathering until  this undo is completed, which prevents new undo units from being created in response to this unit doing work.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -538,11 +556,6 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.UndoEngine</ReturnType>
       </ReturnValue>

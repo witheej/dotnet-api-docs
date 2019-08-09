@@ -1,4 +1,4 @@
-﻿<Type Name="ComponentDesigner+ShadowPropertyCollection" FullName="System.ComponentModel.Design.ComponentDesigner+ShadowPropertyCollection">
+<Type Name="ComponentDesigner+ShadowPropertyCollection" FullName="System.ComponentModel.Design.ComponentDesigner+ShadowPropertyCollection">
   <TypeSignature Language="C#" Value="protected sealed class ComponentDesigner.ShadowPropertyCollection" />
   <TypeSignature Language="ILAsm" Value=".class nested protected auto ansi sealed beforefieldinit ComponentDesigner/ShadowPropertyCollection extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ComponentDesigner.ShadowPropertyCollection" />
@@ -19,7 +19,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a collection of shadow properties that should override inherited default or assigned values for specific properties. This class cannot be inherited.</summary>
+    <summary>
+             Collection that holds shadow properties.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -57,7 +59,9 @@
       </Parameters>
       <Docs>
         <param name="propertyName">The name of the property to check for in the collection.</param>
-        <summary>Indicates whether a property matching the specified name exists in the collection.</summary>
+        <summary>
+             Returns true if this shadow properties object contains the given property name.
+            </summary>
         <returns>
           <see langword="true" /> if the property exists in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -89,7 +93,9 @@
       </Parameters>
       <Docs>
         <param name="propertyName">The name of the property to access in the collection.</param>
-        <summary>Gets or sets the object at the specified index.</summary>
+        <summary>
+             Accesses the given property name.  This will throw an exception if the property does not exsit on the base component.
+            </summary>
         <value>The value of the specified property, if it exists in the collection. Otherwise, the value is retrieved from the current value of the nonshadowed property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

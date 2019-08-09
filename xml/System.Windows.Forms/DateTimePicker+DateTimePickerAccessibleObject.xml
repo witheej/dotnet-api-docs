@@ -1,4 +1,4 @@
-﻿<Type Name="DateTimePicker+DateTimePickerAccessibleObject" FullName="System.Windows.Forms.DateTimePicker+DateTimePickerAccessibleObject">
+<Type Name="DateTimePicker+DateTimePickerAccessibleObject" FullName="System.Windows.Forms.DateTimePicker+DateTimePickerAccessibleObject">
   <TypeSignature Language="C#" Value="public class DateTimePicker.DateTimePickerAccessibleObject : System.Windows.Forms.Control.ControlAccessibleObject" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit DateTimePicker/DateTimePickerAccessibleObject extends System.Windows.Forms.Control/ControlAccessibleObject" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DateTimePicker.DateTimePickerAccessibleObject" />
@@ -51,11 +51,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="owner" Type="System.Windows.Forms.DateTimePicker" />
       </Parameters>

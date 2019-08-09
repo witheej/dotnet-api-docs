@@ -1,4 +1,4 @@
-﻿<Type Name="LinkLabelLinkClickedEventHandler" FullName="System.Windows.Forms.LinkLabelLinkClickedEventHandler">
+<Type Name="LinkLabelLinkClickedEventHandler" FullName="System.Windows.Forms.LinkLabelLinkClickedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void LinkLabelLinkClickedEventHandler(object sender, LinkLabelLinkClickedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LinkLabelLinkClickedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.LinkLabelLinkClickedEventHandler" />
@@ -24,7 +24,9 @@
   <Docs>
     <param name="sender">The source of the event.</param>
     <param name="e">A <see cref="T:System.Windows.Forms.LinkLabelLinkClickedEventArgs" /> that contains the event data.</param>
-    <summary>Represents the method that will handle the <see cref="E:System.Windows.Forms.LinkLabel.LinkClicked" /> event of a <see cref="T:System.Windows.Forms.LinkLabel" />.</summary>
+    <summary>
+             Represents a method that will handle the <see cref="E:System.Windows.Forms.LinkLabel.LinkClicked" /> event of a <see cref="T:System.Windows.Forms.LinkLabel" />.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

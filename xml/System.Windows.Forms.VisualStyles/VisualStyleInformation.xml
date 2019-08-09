@@ -1,4 +1,4 @@
-﻿<Type Name="VisualStyleInformation" FullName="System.Windows.Forms.VisualStyles.VisualStyleInformation">
+<Type Name="VisualStyleInformation" FullName="System.Windows.Forms.VisualStyles.VisualStyleInformation">
   <TypeSignature Language="C#" Value="public static class VisualStyleInformation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit VisualStyleInformation extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.VisualStyleInformation" />
@@ -15,7 +15,15 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides information about the current visual style of the operating system.</summary>
+    <summary>
+            
+              Provides information about the current visual style.
+              NOTE:
+              1) These properties (except SupportByOS, which is always meaningful) are meaningful only
+              if visual styles are supported and have currently been applied by the user.
+              2) A subset of these use VisualStyleRenderer objects, so they are
+              not meaningful unless VisualStyleRenderer.IsSupported is true.
+             </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -54,7 +62,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the author of the current visual style.</summary>
+        <summary>
+             The name of the current visual style's author.
+            </summary>
         <value>A string that specifies the author of the current visual style if visual styles are enabled; otherwise, an empty string ("").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -83,7 +93,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the color scheme of the current visual style.</summary>
+        <summary>
+             The current visual style's color scheme name.
+            </summary>
         <value>A string that specifies the color scheme of the current visual style if visual styles are enabled; otherwise, an empty string ("").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -112,7 +124,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the company that created the current visual style.</summary>
+        <summary>
+             The current visual style's company.
+            </summary>
         <value>A string that specifies the company that created the current visual style if visual styles are enabled; otherwise, an empty string ("").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -141,7 +155,9 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the color that the current visual style uses to indicate the hot state of a control.</summary>
+        <summary>
+             This is the color buttons and tab pages are highlighted with when they are moused over on themed OS.
+            </summary>
         <value>If visual styles are enabled, the <see cref="T:System.Drawing.Color" /> used to paint a highlight on a control in the hot state; otherwise, <see cref="P:System.Drawing.SystemColors.ButtonHighlight" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -170,7 +186,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the copyright of the current visual style.</summary>
+        <summary>
+             The current visual style's copyright information.
+            </summary>
         <value>A string that specifies the copyright of the current visual style if visual styles are enabled; otherwise, an empty string ("").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -199,7 +217,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a description of the current visual style.</summary>
+        <summary>
+             The current visual style's description.
+            </summary>
         <value>A string that describes the current visual style if visual styles are enabled; otherwise, an empty string ("").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -228,7 +248,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the display name of the current visual style.</summary>
+        <summary>
+             The current visual style's display name.
+            </summary>
         <value>A string that specifies the display name of the current visual style if visual styles are enabled; otherwise, an empty string ("").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -257,7 +279,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the user has enabled visual styles in the operating system.</summary>
+        <summary>
+             Returns true if a visual style has currently been applied by the user, else false.
+            </summary>
         <value>
           <see langword="true" /> if the user has enabled visual styles in an operating system that supports them; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -287,7 +311,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the operating system supports visual styles.</summary>
+        <summary>
+             Used to find whether visual styles are supported by the current OS. Same as
+             using the OSFeature class to see if themes are supported.
+             This is always supported on platforms that .NET Core supports.
+            </summary>
         <value>
           <see langword="true" /> if the operating system supports visual styles; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -317,7 +345,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the minimum color depth for the current visual style.</summary>
+        <summary>
+             The minimum color depth supported by the current visual style.
+            </summary>
         <value>The minimum color depth for the current visual style if visual styles are enabled; otherwise, 0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -346,7 +376,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a string that describes the size of the current visual style.</summary>
+        <summary>
+             The current visual style's size name.
+            </summary>
         <value>A string that describes the size of the current visual style if visual styles are enabled; otherwise, an empty string ("").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -375,7 +407,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the current visual style supports flat menus.</summary>
+        <summary>
+             Returns true if the current theme supports flat menus, else false.
+            </summary>
         <value>
           <see langword="true" /> if visual styles are enabled and the current visual style supports flat menus; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -405,7 +439,9 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the color that the current visual style uses to paint the borders of controls that contain text.</summary>
+        <summary>
+             Border Color that Windows renders for controls like TextBox and ComboBox.
+            </summary>
         <value>If visual styles are enabled, the <see cref="T:System.Drawing.Color" /> that the current visual style uses to paint the borders of controls that contain text; otherwise, <see cref="P:System.Drawing.SystemColors.ControlDarkDark" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -434,7 +470,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a URL provided by the author of the current visual style.</summary>
+        <summary>
+             The current visual style's url.
+            </summary>
         <value>A string that specifies a URL provided by the author of the current visual style if visual styles are enabled; otherwise, an empty string ("").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -463,7 +501,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the version of the current visual style.</summary>
+        <summary>
+             The current visual style's version.
+            </summary>
         <value>A string that indicates the version of the current visual style if visual styles are enabled; otherwise, an empty string ("").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

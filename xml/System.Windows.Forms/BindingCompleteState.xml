@@ -1,4 +1,4 @@
-﻿<Type Name="BindingCompleteState" FullName="System.Windows.Forms.BindingCompleteState">
+<Type Name="BindingCompleteState" FullName="System.Windows.Forms.BindingCompleteState">
   <TypeSignature Language="C#" Value="public enum BindingCompleteState" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BindingCompleteState extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.BindingCompleteState" />
@@ -14,7 +14,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Indicates the result of a completed binding operation.</summary>
+    <summary>
+             Indicates the result of a completed binding operation.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -52,7 +54,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>An indication that the binding operation failed with a data error.</summary>
+        <summary>
+             Binding operation failed with a data error.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Exception">
@@ -73,7 +77,9 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>An indication that the binding operation failed with an exception.</summary>
+        <summary>
+             Binding operation failed with an exception.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Success">
@@ -94,7 +100,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>An indication that the binding operation completed successfully.</summary>
+        <summary>
+             Binding operation completed successfully.
+            </summary>
       </Docs>
     </Member>
   </Members>

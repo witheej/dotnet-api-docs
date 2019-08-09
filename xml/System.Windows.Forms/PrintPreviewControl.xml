@@ -1,4 +1,4 @@
-﻿<Type Name="PrintPreviewControl" FullName="System.Windows.Forms.PrintPreviewControl">
+<Type Name="PrintPreviewControl" FullName="System.Windows.Forms.PrintPreviewControl">
   <TypeSignature Language="C#" Value="public class PrintPreviewControl : System.Windows.Forms.Control" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PrintPreviewControl extends System.Windows.Forms.Control" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PrintPreviewControl" />
@@ -27,7 +27,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the raw preview part of print previewing from a Windows Forms application, without any dialog boxes or buttons. Most <see cref="T:System.Windows.Forms.PrintPreviewControl" /> objects are found on <see cref="T:System.Windows.Forms.PrintPreviewDialog" /> objects, but they do not have to be.</summary>
+    <summary>
+             The raw "preview" part of print previewing, without any dialogs or buttons.
+             Most PrintPreviewControl's are found on PrintPreviewDialog's,
+             but they don't have to be.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -65,7 +69,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.PrintPreviewControl" /> class.</summary>
+        <summary>
+             Initializes a new instance of the <see cref="T:System.Windows.Forms.PrintPreviewControl" /> class.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -113,15 +119,15 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether resizing the control or changing the number of pages shown automatically adjusts the <see cref="P:System.Windows.Forms.PrintPreviewControl.Zoom" /> property.</summary>
+        <summary>
+             Gets or sets a value If true (the default), resizing the control or changing the number of pages shown
+             will automatically adjust Zoom to make everything visible.
+            </summary>
         <value>
           <see langword="true" /> if the changing the control size or number of pages adjusts the <see cref="P:System.Windows.Forms.PrintPreviewControl.Zoom" /> property; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
@@ -146,15 +152,15 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(1)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the number of pages displayed horizontally across the screen.</summary>
+        <summary>
+             Gets or sets the number of pages
+             displayed horizontally across the screen.
+            </summary>
         <value>The number of pages displayed horizontally across the screen. The default is 1.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The set value is less than 1.</exception>
@@ -179,7 +185,10 @@
         <ReturnType>System.Windows.Forms.CreateParams</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the required creation parameters when the control handle is created.</summary>
+        <summary>
+             Gets the CreateParams used to create the window.
+             If a subclass overrides this function, it must call the base implementation.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.CreateParams" /> that contains the required creation parameters when the handle to the control is created.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Windows.Forms.CreateParams" />
@@ -203,15 +212,14 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Printing.PrintDocument</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating the document to preview.</summary>
+        <summary>
+             Gets or sets a value indicating the document to preview.
+            </summary>
         <value>The <see cref="T:System.Drawing.Printing.PrintDocument" /> representing the document to preview.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -247,7 +255,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Refreshes the preview of the document.</summary>
+        <summary>
+             Refreshes the preview of the document.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -280,7 +290,9 @@
       </Parameters>
       <Docs>
         <param name="pevent">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> that contains the event data.</param>
-        <summary>Overrides the <see cref="M:System.Windows.Forms.Control.OnPaint(System.Windows.Forms.PaintEventArgs)" /> method.</summary>
+        <summary>
+             Paints the control.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -305,7 +317,9 @@
       </Parameters>
       <Docs>
         <param name="eventargs">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Resize" /> event.</summary>
+        <summary>
+             Invalidate the layout, if necessary.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -370,7 +384,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -378,7 +392,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Resets the <see cref="P:System.Windows.Forms.Control.BackColor" /> property to <see cref="P:System.Drawing.SystemColors.AppWorkspace" />, which is the default color.</summary>
+        <summary>
+             Resets the back color to the defaults for the PrintPreviewControl.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -405,7 +421,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -413,7 +429,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Resets the foreground color of the <see cref="T:System.Windows.Forms.PrintPreviewControl" /> to <see cref="P:System.Drawing.Color.White" />, which is the default color.</summary>
+        <summary>
+             Resets the back color to the defaults for the PrintPreviewControl.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -449,7 +467,11 @@
         <ReturnType>System.Windows.Forms.RightToLeft</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether control's elements are aligned to support locales using right-to-left fonts.</summary>
+        <summary>
+             This is used for international applications where the language
+             is written from RightToLeft. When this property is true,
+             control placement and text will be from right to left.
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.RightToLeft" /> values. The default is <see cref="F:System.Windows.Forms.RightToLeft.Inherit" />.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Windows.Forms.Control.RightToLeft" />
@@ -473,15 +495,15 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(1)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the number of pages displayed vertically down the screen.</summary>
+        <summary>
+             Gets or sets the number of pages
+             displayed vertically down the screen.
+            </summary>
         <value>The number of pages displayed vertically down the screen. The default is 0.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The set value is less than 1.</exception>
@@ -510,7 +532,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the page number of the upper left page.</summary>
+        <summary>
+             Gets or sets the page number of the upper left page.
+            </summary>
         <value>The page number of the upper left page. The default is 0.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The set value is less than 0.</exception>
@@ -580,7 +604,7 @@
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -612,7 +636,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -640,12 +664,6 @@
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -718,15 +736,14 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.DefaultValue(0.3)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating how large the pages will appear.</summary>
+        <summary>
+             Gets or sets a value indicating how large the pages will appear.
+            </summary>
         <value>A value indicating how large the pages will appear. A value of 1.0 indicates full size.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

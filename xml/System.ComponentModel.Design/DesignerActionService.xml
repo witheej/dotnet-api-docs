@@ -1,4 +1,4 @@
-﻿<Type Name="DesignerActionService" FullName="System.ComponentModel.Design.DesignerActionService">
+<Type Name="DesignerActionService" FullName="System.ComponentModel.Design.DesignerActionService">
   <TypeSignature Language="C#" Value="public class DesignerActionService : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DesignerActionService extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignerActionService" />
@@ -23,7 +23,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Establishes a design-time service that manages the collection of <see cref="T:System.ComponentModel.Design.DesignerActionItem" /> objects for components.</summary>
+    <summary>
+             The DesignerActionService manages DesignerActions. All DesignerActions are associated with an object. DesignerActions can be added or removed at any  given time. The DesignerActionService controls the expiration of DesignerActions by monitoring three basic events: selection change, component change, and timer expiration. Designer implementing this service will need to monitor the DesignerActionsChanged event on this class. This event will fire every time a change is made to any object's DesignerActions.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -92,7 +94,9 @@
       </Parameters>
       <Docs>
         <param name="serviceProvider">The service provider for the current design-time environment.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignerActionService" /> class.</summary>
+        <summary>
+             Standard constructor. A Service Provider is necessary for monitoring selection and component changes.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -146,7 +150,9 @@
       <Docs>
         <param name="comp">The <see cref="T:System.ComponentModel.IComponent" /> to associate the smart tags with.</param>
         <param name="actionList">The <see cref="T:System.ComponentModel.Design.DesignerActionList" /> that contains the new smart tag items to be added.</param>
-        <summary>Adds a <see cref="T:System.ComponentModel.Design.DesignerActionList" /> to the current collection of managed smart tags.</summary>
+        <summary>
+             Adds a new DesignerActionList to be monitored with the related comp object
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -195,7 +201,9 @@
       <Docs>
         <param name="comp">The <see cref="T:System.ComponentModel.IComponent" /> to associate the smart tags with.</param>
         <param name="designerActionListCollection">The <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> that contains the new smart tag items to be added.</param>
-        <summary>Adds a <see cref="T:System.ComponentModel.Design.DesignerActionListCollection" /> to the current collection of managed smart tags.</summary>
+        <summary>
+             Adds a new collection of DesignerActions to be monitored with the related comp object.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -240,7 +248,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases all components from management and clears all push-model smart tag lists.</summary>
+        <summary>
+             Clears all objects and DesignerActions from the DesignerActionService.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -283,7 +293,9 @@
       </Parameters>
       <Docs>
         <param name="comp">The <see cref="T:System.ComponentModel.IComponent" /> to search for.</param>
-        <summary>Determines whether the current smart tag service manages the action lists for the specified component.</summary>
+        <summary>
+             Returns true if the DesignerActionService is currently managing the comp object.
+            </summary>
         <returns>
           <see langword="true" /> if the component is managed by the current service; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -324,7 +336,9 @@
         <ReturnType>System.ComponentModel.Design.DesignerActionListsChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a <see cref="T:System.ComponentModel.Design.DesignerActionList" /> is removed or added for any component.</summary>
+        <summary>
+             This event is thrown whenever a DesignerActionList is removed or added for any object.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -379,17 +393,14 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases all resources used by the <see cref="T:System.ComponentModel.Design.DesignerActionService" /> class.</summary>
+        <summary>
+             Disposes all resources and unhooks all events.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -492,11 +503,6 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.ComponentModel.Design.DesignerActionListCollection</ReturnType>
       </ReturnValue>
@@ -527,60 +533,6 @@
       </Docs>
     </Member>
     <Member MemberName="GetComponentActions">
-      <MemberSignature Language="C#" Value="public virtual System.ComponentModel.Design.DesignerActionListCollection GetComponentActions (System.ComponentModel.IComponent component, System.ComponentModel.Design.ComponentActionsType type);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.Design.DesignerActionListCollection GetComponentActions(class System.ComponentModel.IComponent component, valuetype System.ComponentModel.Design.ComponentActionsType type) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionService.GetComponentActions(System.ComponentModel.IComponent,System.ComponentModel.Design.ComponentActionsType)" />
-      <MemberSignature Language="VB.NET" Value="Public Overridable Function GetComponentActions (component As IComponent, type As ComponentActionsType) As DesignerActionListCollection" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::Design::DesignerActionListCollection ^ GetComponentActions(System::ComponentModel::IComponent ^ component, System::ComponentModel::Design::ComponentActionsType type);" />
-      <MemberSignature Language="F#" Value="abstract member GetComponentActions : System.ComponentModel.IComponent * System.ComponentModel.Design.ComponentActionsType -&gt; System.ComponentModel.Design.DesignerActionListCollection&#xA;override this.GetComponentActions : System.ComponentModel.IComponent * System.ComponentModel.Design.ComponentActionsType -&gt; System.ComponentModel.Design.DesignerActionListCollection" Usage="designerActionService.GetComponentActions (component, type)" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.ComponentModel.Design.DesignerActionListCollection</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="component" Type="System.ComponentModel.IComponent" Index="0" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="type" Type="System.ComponentModel.Design.ComponentActionsType" Index="1" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      </Parameters>
-      <Docs>
-        <param name="component">The component that the smart tags are associated with.</param>
-        <param name="type">The <see cref="T:System.ComponentModel.Design.ComponentActionsType" /> to filter the associated smart tags with.</param>
-        <summary>Returns the collection of smart tag item lists of the specified type associated with a component.</summary>
-        <returns>The collection of smart tags of the specified type for the specified component.</returns>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This version of the overloaded <xref:System.ComponentModel.Design.DesignerActionService.GetComponentActions%2A> method filters on the `type` parameter, which can have one of the following values.  
-  
-|Value|Description|  
-|-----------|-----------------|  
-|<xref:System.ComponentModel.Design.ComponentActionsType.All>|All associated smart tags.|  
-|<xref:System.ComponentModel.Design.ComponentActionsType.Component>|Pull-model smart tags only.|  
-|<xref:System.ComponentModel.Design.ComponentActionsType.Service>|Push-model smart tags only.|  
-  
- If the associated designer for a component does not supply a pull-model smart tag list, then the <xref:System.ComponentModel.Design.DesignerActionService.GetComponentActions%2A> method will instead use the designer's design-time shortcut menu items from the <xref:System.ComponentModel.Design.ComponentDesigner.Verbs%2A> property.  
-  
- ]]></format>
-        </remarks>
-        <exception cref="T:System.ArgumentNullException">
-          <paramref name="comp" /> is <see langword="null" />.</exception>
-        <altmember cref="M:System.ComponentModel.Design.DesignerActionService.GetComponentDesignerActions(System.ComponentModel.IComponent,System.ComponentModel.Design.DesignerActionListCollection)" />
-        <altmember cref="M:System.ComponentModel.Design.DesignerActionService.GetComponentServiceActions(System.ComponentModel.IComponent,System.ComponentModel.Design.DesignerActionListCollection)" />
-        <altmember cref="T:System.ComponentModel.Design.DesignerActionListCollection" />
-        <altmember cref="T:System.ComponentModel.Design.DesignerVerb" />
-        <altmember cref="T:System.ComponentModel.Design.ComponentActionsType" />
-        <related type="Article" href="https://msdn.microsoft.com/library/0bad6816-922a-4845-b8e3-50e91ec60f13">Designer Commands and the DesignerAction Object Model for Windows Forms</related>
-      </Docs>
-    </Member>
-    <Member MemberName="GetComponentActions">
       <MemberSignature Language="C#" Value="public virtual System.ComponentModel.Design.DesignerActionListCollection GetComponentActions (System.ComponentModel.IComponent component, System.Windows.Forms.Design.ComponentActionsType type);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.ComponentModel.Design.DesignerActionListCollection GetComponentActions(class System.ComponentModel.IComponent component, valuetype System.Windows.Forms.Design.ComponentActionsType type) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.DesignerActionService.GetComponentActions(System.ComponentModel.IComponent,System.Windows.Forms.Design.ComponentActionsType)" />
@@ -599,8 +551,8 @@
         <ReturnType>System.ComponentModel.Design.DesignerActionListCollection</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="component" Type="System.ComponentModel.IComponent" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="type" Type="System.Windows.Forms.Design.ComponentActionsType" Index="1" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="component" Type="System.ComponentModel.IComponent" />
+        <Parameter Name="type" Type="System.Windows.Forms.Design.ComponentActionsType" />
       </Parameters>
       <Docs>
         <param name="component">To be added.</param>
@@ -732,7 +684,9 @@
       </Parameters>
       <Docs>
         <param name="actionList">The list of smart tags to be removed.</param>
-        <summary>Removes the specified smart tag list from all components managed by the current service.</summary>
+        <summary>
+             This will remove the specified Designeraction from the DesignerActionService.  All alarms will be unhooked and the DesignerActionsChagned event will be fired.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -776,7 +730,9 @@
       </Parameters>
       <Docs>
         <param name="comp">The component to disassociate the smart tags from.</param>
-        <summary>Removes all the smart tag lists associated with the specified component.</summary>
+        <summary>
+             This will remove all DesignerActions associated with the 'comp' object.  All alarms will be unhooked and the DesignerActionsChagned event will be fired.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -820,7 +776,9 @@
       <Docs>
         <param name="comp">The component to disassociate the smart tags from.</param>
         <param name="actionList">The smart tag list to remove.</param>
-        <summary>Removes the specified smart tag list from the specified component.</summary>
+        <summary>
+             This will remove the all instances of the DesignerAction from  the 'comp' object. If an alarm was set, it will be unhooked. This will also fire the DesignerActionChanged event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

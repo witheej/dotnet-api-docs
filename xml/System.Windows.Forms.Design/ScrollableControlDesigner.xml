@@ -1,4 +1,4 @@
-﻿<Type Name="ScrollableControlDesigner" FullName="System.Windows.Forms.Design.ScrollableControlDesigner">
+<Type Name="ScrollableControlDesigner" FullName="System.Windows.Forms.Design.ScrollableControlDesigner">
   <TypeSignature Language="C#" Value="public class ScrollableControlDesigner : System.Windows.Forms.Design.ParentControlDesigner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ScrollableControlDesigner extends System.Windows.Forms.Design.ParentControlDesigner" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.ScrollableControlDesigner" />
@@ -20,7 +20,10 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Base designer class for extending the design mode behavior of a <see cref="T:System.Windows.Forms.Control" /> which should receive scroll messages.</summary>
+    <summary>
+             The ScrollableControlDesigner class builds on the ParentControlDesigner, and adds the implementation
+             of IWinFormsDesigner so that the designer can be hosted as a document.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -60,11 +63,6 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.ScrollableControlDesigner" /> class.</summary>
@@ -97,7 +95,11 @@
       </Parameters>
       <Docs>
         <param name="pt">A <see cref="T:System.Drawing.Point" /> indicating the position at which the mouse was clicked, in screen coordinates.</param>
-        <summary>Indicates whether a mouse click at the specified point should be handled by the control.</summary>
+        <summary>
+             Overrides the base class's GetHitTest method to determine regions of the
+             control that should always be UI-Active.  For a form, if it has autoscroll
+             set the scroll bars are always UI active.
+            </summary>
         <returns>
           <see langword="true" /> if a click at the specified point is to be handled by the control; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -139,7 +141,9 @@
       </Parameters>
       <Docs>
         <param name="m">The <see cref="T:System.Windows.Forms.Message" /> to process.</param>
-        <summary>Processes Windows messages and passes WM_HSCROLL and WM_VSCROLL messages to the control at design time.</summary>
+        <summary>
+             We override our base class's WndProc to monitor certain messages.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

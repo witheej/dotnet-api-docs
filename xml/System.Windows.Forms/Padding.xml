@@ -1,4 +1,4 @@
-﻿<Type Name="Padding" FullName="System.Windows.Forms.Padding">
+<Type Name="Padding" FullName="System.Windows.Forms.Padding">
   <TypeSignature Language="C#" Value="public struct Padding" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi serializable sealed beforefieldinit Padding extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Padding" />
@@ -153,11 +153,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Padding</ReturnType>
       </ReturnValue>
@@ -467,7 +462,9 @@
       <Docs>
         <param name="p1">The first <see cref="T:System.Windows.Forms.Padding" /> to add.</param>
         <param name="p2">The second <see cref="T:System.Windows.Forms.Padding" /> to add.</param>
-        <summary>Performs vector addition on the two specified <see cref="T:System.Windows.Forms.Padding" /> objects, resulting in a new <see cref="T:System.Windows.Forms.Padding" />.</summary>
+        <summary>
+             Performs vector addition of two <see cref="T:System.Windows.Forms.Padding" /> objects.
+            </summary>
         <returns>A new <see cref="T:System.Windows.Forms.Padding" /> that results from adding <paramref name="p1" /> and <paramref name="p2" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -507,7 +504,9 @@
       <Docs>
         <param name="p1">A <see cref="T:System.Windows.Forms.Padding" /> to test.</param>
         <param name="p2">A <see cref="T:System.Windows.Forms.Padding" /> to test.</param>
-        <summary>Tests whether two specified <see cref="T:System.Windows.Forms.Padding" /> objects are equivalent.</summary>
+        <summary>
+             Tests whether two <see cref="T:System.Windows.Forms.Padding" /> objects are identical.
+            </summary>
         <returns>
           <see langword="true" /> if the two <see cref="T:System.Windows.Forms.Padding" /> objects are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -547,7 +546,9 @@
       <Docs>
         <param name="p1">A <see cref="T:System.Windows.Forms.Padding" /> to test.</param>
         <param name="p2">A <see cref="T:System.Windows.Forms.Padding" /> to test.</param>
-        <summary>Tests whether two specified <see cref="T:System.Windows.Forms.Padding" /> objects are not equivalent.</summary>
+        <summary>
+             Tests whether two <see cref="T:System.Windows.Forms.Padding" /> objects are different.
+            </summary>
         <returns>
           <see langword="true" /> if the two <see cref="T:System.Windows.Forms.Padding" /> objects are different; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -586,7 +587,9 @@
       <Docs>
         <param name="p1">The <see cref="T:System.Windows.Forms.Padding" /> to subtract from (the minuend).</param>
         <param name="p2">The <see cref="T:System.Windows.Forms.Padding" /> to subtract from (the subtrahend).</param>
-        <summary>Performs vector subtraction on the two specified <see cref="T:System.Windows.Forms.Padding" /> objects, resulting in a new <see cref="T:System.Windows.Forms.Padding" />.</summary>
+        <summary>
+             Contracts a <see cref="T:System.Drawing.Size" /> by another <see cref="T:System.Drawing.Size" />.
+            </summary>
         <returns>The <see cref="T:System.Windows.Forms.Padding" /> result of subtracting <paramref name="p2" /> from <paramref name="p1" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -658,9 +661,6 @@
         <Attribute>
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
@@ -699,11 +699,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Padding</ReturnType>
       </ReturnValue>
@@ -737,9 +732,6 @@
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

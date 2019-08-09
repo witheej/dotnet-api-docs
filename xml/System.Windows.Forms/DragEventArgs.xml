@@ -1,4 +1,4 @@
-﻿<Type Name="DragEventArgs" FullName="System.Windows.Forms.DragEventArgs">
+<Type Name="DragEventArgs" FullName="System.Windows.Forms.DragEventArgs">
   <TypeSignature Language="C#" Value="public class DragEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DragEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DragEventArgs" />
@@ -21,7 +21,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.Forms.Control.DragDrop" />, <see cref="E:System.Windows.Forms.Control.DragEnter" />, or <see cref="E:System.Windows.Forms.Control.DragOver" /> event.</summary>
+    <summary>
+             Provides data for the <see cref="E:System.Windows.Forms.Control.DragDrop" />, <see cref="E:System.Windows.Forms.Control.DragEnter" />,
+             or <see cref="E:System.Windows.Forms.Control.DragOver" /> event.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -82,11 +85,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="data" Type="System.Windows.Forms.IDataObject" />
         <Parameter Name="keyState" Type="System.Int32" />
@@ -102,7 +100,9 @@
         <param name="y">The y-coordinate of the mouse cursor in pixels.</param>
         <param name="allowedEffect">One of the <see cref="T:System.Windows.Forms.DragDropEffects" /> values.</param>
         <param name="effect">One of the <see cref="T:System.Windows.Forms.DragDropEffects" /> values.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DragEventArgs" /> class.</summary>
+        <summary>
+             Initializes a new instance of the <see cref="T:System.Windows.Forms.DragEventArgs" /> class.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Windows.Forms.DragDropEffects" />
         <altmember cref="T:System.Windows.Forms.IDataObject" />
@@ -122,16 +122,14 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DragDropEffects</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets which drag-and-drop operations are allowed by the originator (or source) of the drag event.</summary>
+        <summary>
+             Gets which drag-and-drop operations are allowed by the originator (or source)
+             of the drag event.
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.DragDropEffects" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -177,16 +175,14 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.IDataObject</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Forms.IDataObject" /> that contains the data associated with this event.</summary>
+        <summary>
+             The <see cref="T:System.Windows.Forms.IDataObject" /> that contains the data associated
+             with this event.
+            </summary>
         <value>The data associated with this event.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -230,19 +226,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DragDropEffects</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the target drop effect in a drag-and-drop operation.</summary>
+        <summary>
+             Gets or sets which drag-and-drop operations are allowed by the target of the drag event.
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.DragDropEffects" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -288,16 +278,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current state of the SHIFT, CTRL, and ALT keys, as well as the state of the mouse buttons.</summary>
+        <summary>
+             Gets the current state of the SHIFT, CTRL, and ALT keys.
+            </summary>
         <value>The current state of the SHIFT, CTRL, and ALT keys and of the mouse buttons.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -353,16 +340,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the x-coordinate of the mouse pointer, in screen coordinates.</summary>
+        <summary>
+             Gets the x-coordinate of the mouse pointer.
+            </summary>
         <value>The x-coordinate of the mouse pointer in pixels.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -401,16 +385,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the y-coordinate of the mouse pointer, in screen coordinates.</summary>
+        <summary>
+             Gets the y-coordinate of the mouse pointer.
+            </summary>
         <value>The y-coordinate of the mouse pointer in pixels.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -1,4 +1,4 @@
-﻿<Type Name="ComboBox+ObjectCollection" FullName="System.Windows.Forms.ComboBox+ObjectCollection">
+<Type Name="ComboBox+ObjectCollection" FullName="System.Windows.Forms.ComboBox+ObjectCollection">
   <TypeSignature Language="C#" Value="public class ComboBox.ObjectCollection : System.Collections.IList" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit ComboBox/ObjectCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ComboBox.ObjectCollection" />
@@ -60,11 +60,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="owner" Type="System.Windows.Forms.ComboBox" />
       </Parameters>
@@ -106,7 +101,15 @@
       </Parameters>
       <Docs>
         <param name="item">An object representing the item to add to the collection.</param>
-        <summary>Adds an item to the list of items for a <see cref="T:System.Windows.Forms.ComboBox" />.</summary>
+        <summary>
+             Adds an item to the combo box. For an unsorted combo box, the item is
+             added to the end of the existing list of items. For a sorted combo box,
+             the item is inserted into the list according to its sorted position.
+             The item's toString() method is called to obtain the string that is
+             displayed in the combo box.
+             A SystemException occurs if there is insufficient space available to
+             store the new item.
+            </summary>
         <returns>The zero-based index of the item in the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -187,7 +190,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all items from the <see cref="T:System.Windows.Forms.ComboBox" />.</summary>
+        <summary>
+             Removes all items from the ComboBox.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -241,10 +246,10 @@
     <Member MemberName="CopyTo">
       <MemberSignature Language="C#" Value="public void CopyTo (object[] dest, int arrayIndex);" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(object[] dest, int32 arrayIndex) cil managed" FrameworkAlternate="netframework-1.1" />
-      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.ObjectCollection.CopyTo(System.Object[],System.Int32)" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.ObjectCollection.CopyTo(System.Object[],System.Int32)" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (dest As Object(), arrayIndex As Integer)" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void CopyTo(cli::array &lt;System::Object ^&gt; ^ dest, int arrayIndex);" FrameworkAlternate="netframework-1.1" />
-      <MemberSignature Language="F#" Value="member this.CopyTo : obj[] * int -&gt; unit" Usage="objectCollection.CopyTo (dest, arrayIndex)" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="F#" Value="member this.CopyTo : obj[] * int -&gt; unit" Usage="objectCollection.CopyTo (dest, arrayIndex)" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       <MemberSignature Language="C#" Value="public void CopyTo (object[] destination, int arrayIndex);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void CopyTo(object[] destination, int32 arrayIndex) cil managed" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub CopyTo (destination As Object(), arrayIndex As Integer)" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
@@ -262,15 +267,15 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="destination" Type="System.Object[]" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="dest" Type="System.Object[]" Index="0" FrameworkAlternate="netframework-1.1" />
-        <Parameter Name="arrayIndex" Type="System.Int32" Index="1" />
+        <Parameter Name="destination" Type="System.Object[]" />
+        <Parameter Name="arrayIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="destination">The object array to copy the collection to.</param>
-        <param name="dest">The object array to copy the collection to.</param>
         <param name="arrayIndex">The location in the destination array to copy the collection to.</param>
-        <summary>Copies the entire collection into an existing array of objects at a specified location within the array.</summary>
+        <summary>
+             Copies the ComboBox Items collection to a destination array.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -303,7 +308,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of items in the collection.</summary>
+        <summary>
+             Retrieves the number of items.
+            </summary>
         <value>The number of items in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -338,7 +345,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an enumerator that can be used to iterate through the item collection.</summary>
+        <summary>
+             Returns an enumerator for the ComboBox Items collection.
+            </summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> that represents the item collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -409,7 +418,15 @@
       <Docs>
         <param name="index">The zero-based index location where the item is inserted.</param>
         <param name="item">An object representing the item to insert.</param>
-        <summary>Inserts an item into the collection at the specified index.</summary>
+        <summary>
+             Adds an item to the combo box. For an unsorted combo box, the item is
+             added to the end of the existing list of items. For a sorted combo box,
+             the item is inserted into the list according to its sorted position.
+             The item's toString() method is called to obtain the string that is
+             displayed in the combo box.
+             A SystemException occurs if there is insufficient space available to
+             store the new item.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -487,7 +504,9 @@
       </Parameters>
       <Docs>
         <param name="index">The index of the item in the collection to retrieve.</param>
-        <summary>Retrieves the item at the specified index within the collection.</summary>
+        <summary>
+             Retrieves the item with the specified index.
+            </summary>
         <value>An object representing the item located at the specified index within the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -530,7 +549,10 @@
       </Parameters>
       <Docs>
         <param name="value">The <see cref="T:System.Object" /> to remove from the list.</param>
-        <summary>Removes the specified item from the <see cref="T:System.Windows.Forms.ComboBox" />.</summary>
+        <summary>
+             Removes the given item from the ComboBox, provided that it is
+             actually in the list.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -567,7 +589,9 @@
       </Parameters>
       <Docs>
         <param name="index">The index of the item to remove.</param>
-        <summary>Removes an item from the <see cref="T:System.Windows.Forms.ComboBox" /> at the specified index.</summary>
+        <summary>
+             Removes an item from the ComboBox at the given index.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -591,7 +615,7 @@
     <Member MemberName="System.Collections.ICollection.CopyTo">
       <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array dest, int index);" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.Collections.ICollection.CopyTo(class System.Array dest, int32 index) cil managed" FrameworkAlternate="netframework-1.1" />
-      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.ObjectCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ComboBox.ObjectCollection.System#Collections#ICollection#CopyTo(System.Array,System.Int32)" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       <MemberSignature Language="VB.NET" Value="Sub CopyTo (dest As Array, index As Integer) Implements ICollection.CopyTo" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.Collections.ICollection.CopyTo(Array ^ dest, int index) = System::Collections::ICollection::CopyTo;" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="C#" Value="void ICollection.CopyTo (Array destination, int index);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
@@ -613,13 +637,11 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="destination" Type="System.Array" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="dest" Type="System.Array" Index="0" FrameworkAlternate="netframework-1.1" />
-        <Parameter Name="index" Type="System.Int32" Index="1" />
+        <Parameter Name="destination" Type="System.Array" />
+        <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="destination">The one-dimensional array that is the destination of the elements copied from the collection. The array must have zero-based indexing.</param>
-        <param name="dest">The one-dimensional array that is the destination of the elements copied from the collection. The array must have zero-based indexing.</param>
         <param name="index">The zero-based index in the array at which copying begins.</param>
         <summary>For a description of this member, see <see cref="M:System.Collections.ICollection.CopyTo(System.Array,System.Int32)" />.</summary>
         <remarks>
@@ -716,11 +738,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>

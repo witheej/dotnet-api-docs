@@ -1,4 +1,4 @@
-﻿<Type Name="DataGridViewCellStyleConverter" FullName="System.Windows.Forms.DataGridViewCellStyleConverter">
+<Type Name="DataGridViewCellStyleConverter" FullName="System.Windows.Forms.DataGridViewCellStyleConverter">
   <TypeSignature Language="C#" Value="public class DataGridViewCellStyleConverter : System.ComponentModel.TypeConverter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewCellStyleConverter extends System.ComponentModel.TypeConverter" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewCellStyleConverter" />
@@ -33,11 +33,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewCellStyleConverter" /> class.</summary>
@@ -68,7 +63,10 @@
       <Docs>
         <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
         <param name="destinationType">A <see cref="T:System.Type" /> that represents the type you want to convert to.</param>
-        <summary>Returns whether this converter can convert the object to the specified type, using the specified context.</summary>
+        <summary>
+             Gets a value indicating whether this converter can
+             convert an object to the given destination type using the context.
+            </summary>
         <returns>
           <see langword="true" /> if this converter can perform the conversion; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -102,7 +100,13 @@
         <param name="culture">A <see cref="T:System.Globalization.CultureInfo" />. If null is passed, the current culture is assumed.</param>
         <param name="value">The <see cref="T:System.Object" /> to convert.</param>
         <param name="destinationType">The <see cref="T:System.Type" /> to convert the value parameter to.</param>
-        <summary>Converts the given value object to the specified type, using the specified context and culture information.</summary>
+        <summary>
+             Converts the given object to another type.  The most common types to convert
+             are to and from a string object.  The default implementation will make a call
+             to ToString on the object if the object is valid and if the destination
+             type is string.  If this cannot convert to the desitnation type, this will
+             throw a NotSupportedException.
+            </summary>
         <returns>An <see cref="T:System.Object" /> that represents the converted value.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.ComponentModel.TypeConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />

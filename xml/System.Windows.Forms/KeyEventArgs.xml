@@ -1,4 +1,4 @@
-﻿<Type Name="KeyEventArgs" FullName="System.Windows.Forms.KeyEventArgs">
+<Type Name="KeyEventArgs" FullName="System.Windows.Forms.KeyEventArgs">
   <TypeSignature Language="C#" Value="public class KeyEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit KeyEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.KeyEventArgs" />
@@ -21,7 +21,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.Forms.Control.KeyDown" /> or <see cref="E:System.Windows.Forms.Control.KeyUp" /> event.</summary>
+    <summary>
+             Provides data for the <see cref="E:System.Windows.Forms.Control.KeyDown" /> or
+            <see cref="E:System.Windows.Forms.Control.KeyUp" /> event.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -88,17 +91,14 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="keyData" Type="System.Windows.Forms.Keys" />
       </Parameters>
       <Docs>
         <param name="keyData">A <see cref="T:System.Windows.Forms.Keys" /> representing the key that was pressed, combined with any modifier flags that indicate which CTRL, SHIFT, and ALT keys were pressed at the same time. Possible values are obtained be applying the bitwise OR (|) operator to constants from the <see cref="T:System.Windows.Forms.Keys" /> enumeration.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.KeyEventArgs" /> class.</summary>
+        <summary>
+             Initializes a new instance of the <see cref="T:System.Windows.Forms.KeyEventArgs" /> class.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Windows.Forms.KeyPressEventArgs" />
       </Docs>
@@ -121,7 +121,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the ALT key was pressed.</summary>
+        <summary>
+             Gets a value indicating whether the ALT key was pressed.
+            </summary>
         <value>
           <see langword="true" /> if the ALT key was pressed; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -169,7 +171,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the CTRL key was pressed.</summary>
+        <summary>
+             Gets a value indicating whether the CTRL key was pressed.
+            </summary>
         <value>
           <see langword="true" /> if the CTRL key was pressed; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -203,19 +207,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the event was handled.</summary>
+        <summary>
+             Gets or sets a value indicating whether the event was handled.
+            </summary>
         <value>
           <see langword="true" /> to bypass the control's default handling; otherwise, <see langword="false" /> to also pass the event along to the default control handler.</value>
         <remarks>
@@ -258,7 +256,10 @@
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the keyboard code for a <see cref="E:System.Windows.Forms.Control.KeyDown" /> or <see cref="E:System.Windows.Forms.Control.KeyUp" /> event.</summary>
+        <summary>
+             Gets the keyboard code for a <see cref="E:System.Windows.Forms.Control.KeyDown" /> or
+            <see cref="E:System.Windows.Forms.Control.KeyUp" /> event.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.Keys" /> value that is the key code for the event.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -310,16 +311,14 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the key data for a <see cref="E:System.Windows.Forms.Control.KeyDown" /> or <see cref="E:System.Windows.Forms.Control.KeyUp" /> event.</summary>
+        <summary>
+             Gets the key data for a <see cref="E:System.Windows.Forms.Control.KeyDown" /> or
+            <see cref="E:System.Windows.Forms.Control.KeyUp" /> event.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.Keys" /> representing the key code for the key that was pressed, combined with modifier flags that indicate which combination of CTRL, SHIFT, and ALT keys was pressed at the same time.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -361,7 +360,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the keyboard value for a <see cref="E:System.Windows.Forms.Control.KeyDown" /> or <see cref="E:System.Windows.Forms.Control.KeyUp" /> event.</summary>
+        <summary>
+             Gets the keyboard value for a <see cref="E:System.Windows.Forms.Control.KeyDown" /> or
+            <see cref="E:System.Windows.Forms.Control.KeyUp" /> event.
+            </summary>
         <value>The integer representation of the <see cref="P:System.Windows.Forms.KeyEventArgs.KeyCode" /> property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -398,7 +400,11 @@
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the modifier flags for a <see cref="E:System.Windows.Forms.Control.KeyDown" /> or <see cref="E:System.Windows.Forms.Control.KeyUp" /> event. The flags indicate which combination of CTRL, SHIFT, and ALT keys was pressed.</summary>
+        <summary>
+             Gets the modifier flags for a <see cref="E:System.Windows.Forms.Control.KeyDown" /> or
+            <see cref="E:System.Windows.Forms.Control.KeyUp" /> event.
+             This indicates which modifier keys (CTRL, SHIFT, and/or ALT) were pressed.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.Keys" /> value representing one or more modifier flags.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -441,7 +447,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the SHIFT key was pressed.</summary>
+        <summary>
+             Gets a value indicating whether the SHIFT key was pressed.
+            </summary>
         <value>
           <see langword="true" /> if the SHIFT key was pressed; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -474,11 +482,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>

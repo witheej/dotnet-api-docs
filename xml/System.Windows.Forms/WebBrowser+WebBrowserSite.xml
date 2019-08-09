@@ -1,4 +1,4 @@
-﻿<Type Name="WebBrowser+WebBrowserSite" FullName="System.Windows.Forms.WebBrowser+WebBrowserSite">
+<Type Name="WebBrowser+WebBrowserSite" FullName="System.Windows.Forms.WebBrowser+WebBrowserSite">
   <TypeSignature Language="C#" Value="protected class WebBrowser.WebBrowserSite : System.Windows.Forms.WebBrowserSiteBase" />
   <TypeSignature Language="ILAsm" Value=".class nested protected auto ansi beforefieldinit WebBrowser/WebBrowserSite extends System.Windows.Forms.WebBrowserSiteBase" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.WebBrowser.WebBrowserSite" />
@@ -19,7 +19,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the host window of a <see cref="T:System.Windows.Forms.WebBrowser" /> control.</summary>
+    <summary>
+             Provides a default WebBrowserSite implementation for use in the CreateWebBrowserSite
+             method in the WebBrowser class.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -51,17 +54,14 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="host" Type="System.Windows.Forms.WebBrowser" />
       </Parameters>
       <Docs>
         <param name="host">The <see cref="T:System.Windows.Forms.WebBrowser" /></param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.WebBrowser.WebBrowserSite" /> class.</summary>
+        <summary>
+             Creates an instance of the <see cref="T:System.Windows.Forms.WebBrowser.WebBrowserSite" /> class.
+            </summary>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for accessing unmanaged code. Associated enumerations: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" /> and <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
       </Docs>

@@ -1,4 +1,4 @@
-﻿<Type Name="DesignerActionUIService" FullName="System.Windows.Forms.Design.DesignerActionUIService">
+<Type Name="DesignerActionUIService" FullName="System.Windows.Forms.Design.DesignerActionUIService">
   <TypeSignature Language="C#" Value="public sealed class DesignerActionUIService : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DesignerActionUIService extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.DesignerActionUIService" />
@@ -38,7 +38,9 @@
         <ReturnType>System.ComponentModel.Design.DesignerActionUIStateChangeEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+             This event is thrown whenever a request is made to show/hide the ui
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -62,7 +64,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+             Disposes all resources and unhooks all events.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -110,7 +114,9 @@
       </Parameters>
       <Docs>
         <param name="component">To be added.</param>
-        <summary>To be added.</summary>
+        <summary>
+             This is a new Helper Method that the service provides to refresh the DesignerActionGlyph as well as DesignerActionPanels.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

@@ -1,4 +1,4 @@
-﻿<Type Name="TableLayoutCellPaintEventArgs" FullName="System.Windows.Forms.TableLayoutCellPaintEventArgs">
+<Type Name="TableLayoutCellPaintEventArgs" FullName="System.Windows.Forms.TableLayoutCellPaintEventArgs">
   <TypeSignature Language="C#" Value="public class TableLayoutCellPaintEventArgs : System.Windows.Forms.PaintEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TableLayoutCellPaintEventArgs extends System.Windows.Forms.PaintEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TableLayoutCellPaintEventArgs" />
@@ -15,7 +15,11 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.Forms.TableLayoutPanel.CellPaint" /> event.</summary>
+    <summary>
+             This is the overrided PaintEventArgs for painting the cell of the table
+             It contains additional information indicating the row/column of the cell
+             as well as the bound of the cell
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -48,11 +52,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="g" Type="System.Drawing.Graphics" />
         <Parameter Name="clipRectangle" Type="System.Drawing.Rectangle" />
@@ -84,11 +83,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
@@ -122,11 +116,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
@@ -160,11 +149,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>

@@ -1,6 +1,6 @@
-﻿<Type Name="ToolboxItem" FullName="System.Drawing.Design.ToolboxItem">
+<Type Name="ToolboxItem" FullName="System.Drawing.Design.ToolboxItem">
   <TypeSignature Language="C#" Value="public class ToolboxItem : System.Runtime.Serialization.ISerializable" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable beforefieldinit ToolboxItem extends System.Object implements class System.Runtime.Serialization.ISerializable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolboxItem extends System.Object implements class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Design.ToolboxItem" />
   <TypeSignature Language="VB.NET" Value="Public Class ToolboxItem&#xA;Implements ISerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class ToolboxItem : System::Runtime::Serialization::ISerializable" />
@@ -23,13 +23,10 @@
       <InterfaceName>System.Runtime.Serialization.ISerializable</InterfaceName>
     </Interface>
   </Interfaces>
-  <Attributes>
-    <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-      <AttributeName>System.Serializable</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
-    <summary>Provides a base implementation of a toolbox item.</summary>
+    <summary>
+             Provides a base implementation of a toolbox item.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -126,14 +123,11 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Design.ToolboxItem" /> class.</summary>
+        <summary>
+             Initializes a new instance of the ToolboxItem class.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -170,7 +164,9 @@
       </Parameters>
       <Docs>
         <param name="toolType">The type of <see cref="T:System.ComponentModel.IComponent" /> that the toolbox item creates.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Design.ToolboxItem" /> class that creates the specified type of component.</summary>
+        <summary>
+             Initializes a new instance of the ToolboxItem class using the specified type.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -207,7 +203,10 @@
         <ReturnType>System.Reflection.AssemblyName</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the assembly that contains the type or types that the toolbox item creates.</summary>
+        <summary>
+             The assembly name for this toolbox item. The assembly name describes the assembly
+             information needed to load the toolbox item's type.
+            </summary>
         <value>An <see cref="T:System.Reflection.AssemblyName" /> that indicates the assembly containing the type or types to create.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -245,7 +244,10 @@
         <ReturnType>System.Drawing.Bitmap</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a bitmap to represent the toolbox item in the toolbox.</summary>
+        <summary>
+             Gets or sets the bitmap that will be used on the toolbox for this item.
+             Use this property on the design surface as this bitmap is scaled according to the current the DPI setting.
+            </summary>
         <value>A <see cref="T:System.Drawing.Bitmap" /> that represents the toolbox item in the toolbox.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Drawing.Bitmap" />
@@ -274,7 +276,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Throws an exception if the toolbox item is currently locked.</summary>
+        <summary>
+             This method checks that the toolbox item is currently unlocked (read-write) and
+             throws an appropriate exception if it isn't.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -308,7 +313,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the company name for this <see cref="T:System.Drawing.Design.ToolboxItem" />.</summary>
+        <summary>
+             Gets or sets the company name for this <see cref="T:System.Drawing.Design.ToolboxItem" />.
+             This defaults to the companyname attribute retrieved from type.Assembly, if set.
+            </summary>
         <value>A <see cref="T:System.String" /> that specifies the company for this <see cref="T:System.Drawing.Design.ToolboxItem" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -335,7 +343,9 @@
         <ReturnType>System.Drawing.Design.ToolboxComponentsCreatedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs immediately after components are created.</summary>
+        <summary>
+             Occurs when components are created.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -371,7 +381,9 @@
         <ReturnType>System.Drawing.Design.ToolboxComponentsCreatingEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when components are about to be created.</summary>
+        <summary>
+             Occurs before components are created.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -406,7 +418,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the component type for this <see cref="T:System.Drawing.Design.ToolboxItem" />.</summary>
+        <summary>
+             The Component Type is ".Net Component" -- unless otherwise specified by a derived toolboxitem
+            </summary>
         <value>A <see cref="T:System.String" /> that specifies the component type for this <see cref="T:System.Drawing.Design.ToolboxItem" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -438,18 +452,15 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.ComponentModel.IComponent[]</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates the components that the toolbox item is configured to create.</summary>
-        <returns>An array of created <see cref="T:System.ComponentModel.IComponent" /> objects.</returns>
+        <summary>
+             Creates objects from the type contained in this toolbox item.
+            </summary>
+        <returns />
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -486,7 +497,10 @@
       </Parameters>
       <Docs>
         <param name="host">The <see cref="T:System.ComponentModel.Design.IDesignerHost" /> to use when creating the components.</param>
-        <summary>Creates the components that the toolbox item is configured to create, using the specified designer host.</summary>
+        <summary>
+             Creates objects from the type contained in this toolbox item.  If designerHost is non-null
+             this will also add them to the designer.
+            </summary>
         <returns>An array of created <see cref="T:System.ComponentModel.IComponent" /> objects.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -520,14 +534,17 @@
         <ReturnType>System.ComponentModel.IComponent[]</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="host" Type="System.ComponentModel.Design.IDesignerHost" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="defaultValues" Type="System.Collections.IDictionary" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="host" Type="System.ComponentModel.Design.IDesignerHost" />
+        <Parameter Name="defaultValues" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
         <param name="host">The <see cref="T:System.ComponentModel.Design.IDesignerHost" /> to use when creating the components.</param>
         <param name="defaultValues">A dictionary of property name/value pairs of default values with which to initialize the component.</param>
-        <summary>Creates the components that the toolbox item is configured to create, using the specified designer host and default values.</summary>
-        <returns>An array of created <see cref="T:System.ComponentModel.IComponent" /> objects.</returns>
+        <summary>
+             Creates objects from the type contained in this toolbox item.  If designerHost is non-null
+             this will also add them to the designer.
+            </summary>
+        <returns />
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -573,7 +590,10 @@
       </Parameters>
       <Docs>
         <param name="host">The <see cref="T:System.ComponentModel.Design.IDesignerHost" /> to host the toolbox item.</param>
-        <summary>Creates a component or an array of components when the toolbox item is invoked.</summary>
+        <summary>
+             Creates objects from the type contained in this toolbox item.  If designerHost is non-null
+             this will also add them to the designer.
+            </summary>
         <returns>An array of created <see cref="T:System.ComponentModel.IComponent" /> objects.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -610,13 +630,16 @@
         <ReturnType>System.ComponentModel.IComponent[]</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="host" Type="System.ComponentModel.Design.IDesignerHost" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="defaultValues" Type="System.Collections.IDictionary" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="host" Type="System.ComponentModel.Design.IDesignerHost" />
+        <Parameter Name="defaultValues" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
         <param name="host">The designer host to use when creating components.</param>
         <param name="defaultValues">A dictionary of property name/value pairs of default values with which to initialize the component.</param>
-        <summary>Creates an array of components when the toolbox item is invoked.</summary>
+        <summary>
+             Creates objects from the type contained in this toolbox item.  If designerHost is non-null
+             this will also add them to the designer.
+            </summary>
         <returns>An array of created <see cref="T:System.ComponentModel.IComponent" /> objects.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -657,7 +680,10 @@
         <ReturnType>System.Reflection.AssemblyName[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Reflection.AssemblyName" /> for the toolbox item.</summary>
+        <summary>
+             The assembly name for this toolbox item. The assembly name describes the assembly
+             information needed to load the toolbox item's type.
+            </summary>
         <value>An array of <see cref="T:System.Reflection.AssemblyName" /> objects.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -690,7 +716,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the description for this <see cref="T:System.Drawing.Design.ToolboxItem" />.</summary>
+        <summary>
+             Description is a free-form, multiline capable text description that will be displayed in the tooltip
+             for the toolboxItem.  It defaults to the path of the assembly that contains the item, but can be overridden.
+            </summary>
         <value>A <see cref="T:System.String" /> that specifies the description for this <see cref="T:System.Drawing.Design.ToolboxItem" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -762,7 +791,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the display name for the toolbox item.</summary>
+        <summary>
+             Gets or sets the display name for this <see cref="T:System.Drawing.Design.ToolboxItem" />.
+            </summary>
         <value>The display name for the toolbox item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -830,7 +861,10 @@
         <ReturnType>System.Collections.ICollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the filter that determines whether the toolbox item can be used on a destination component.</summary>
+        <summary>
+             Gets or sets the filter for this toolbox item.  The filter is a collection of
+             ToolboxItemFilterAttribute objects.
+            </summary>
         <value>An <see cref="T:System.Collections.ICollection" /> of <see cref="T:System.ComponentModel.ToolboxItemFilterAttribute" /> objects.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -866,13 +900,16 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="propertyName" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="value" Type="System.Object" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
         <param name="propertyName">The name of the property to filter.</param>
         <param name="value">The value against which to filter the property.</param>
-        <summary>Filters a property value before returning it.</summary>
+        <summary>
+             Filters a property value before returning it.  This allows a property to always clone values,
+             or to provide a default value when none exists.
+            </summary>
         <returns>A filtered property value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -942,11 +979,15 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="host" Type="System.ComponentModel.Design.IDesignerHost" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="host" Type="System.ComponentModel.Design.IDesignerHost" />
       </Parameters>
       <Docs>
         <param name="host">The designer host to query for <see cref="T:System.ComponentModel.Design.ITypeResolutionService" />.</param>
-        <summary>Enables access to the type associated with the toolbox item.</summary>
+        <summary>
+             Allows access to the type associated with the toolbox item.
+             The designer host is used to access an implementation of ITypeResolutionService.
+             However, the loaded type is not added to the list of references in the designer host.
+            </summary>
         <returns>The type associated with the toolbox item.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -989,7 +1030,12 @@
         <param name="assemblyName">An <see cref="T:System.Reflection.AssemblyName" /> that indicates the assembly that contains the type to load. This can be <see langword="null" />.</param>
         <param name="typeName">The name of the type to create an instance of.</param>
         <param name="reference">A value indicating whether or not to add a reference to the assembly that contains the specified type to the designer host's set of references.</param>
-        <summary>Creates an instance of the specified type, optionally using a specified designer host and assembly name.</summary>
+        <summary>
+             This utility function can be used to load a type given a name.  AssemblyName and
+             designer host can be null, but if they are present they will be used to help
+             locate the type.  If reference is true, the given assembly name will be added
+             to the designer host's set of references.
+            </summary>
         <returns>An instance of the specified type, if it can be located.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1022,7 +1068,9 @@
       </Parameters>
       <Docs>
         <param name="type">The <see cref="T:System.Type" /> that the toolbox item creates.</param>
-        <summary>Initializes the current toolbox item with the specified type to create.</summary>
+        <summary>
+             Initializes a toolbox item with a given type.  A locked toolbox item cannot be initialized.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1063,7 +1111,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the toolbox item is transient.</summary>
+        <summary>
+             If true, it indicates that this toolbox item should not be stored in
+             any toolbox database when an application that is providing a toolbox
+             closes down.  This property defaults to false.
+            </summary>
         <value>
           <see langword="true" />, if this toolbox item should not be stored in any toolbox database when an application that is providing a toolbox closes; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -1099,7 +1151,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Locks the toolbox item and prevents changes to its properties.</summary>
+        <summary>
+             Locks this toolbox item.  Locking a toolbox item makes it read-only and
+             prevents any changes to its properties.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1128,16 +1183,14 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="T:System.Drawing.Design.ToolboxItem" /> is currently locked.</summary>
+        <summary>
+             Determines if this toolbox item is locked.  Once locked, a toolbox item will
+             not accept any changes to its properties.
+            </summary>
         <value>
           <see langword="true" /> if the toolbox item is locked; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -1178,7 +1231,10 @@
       </Parameters>
       <Docs>
         <param name="args">A <see cref="T:System.Drawing.Design.ToolboxComponentsCreatedEventArgs" /> that provides data for the event.</param>
-        <summary>Raises the <see cref="E:System.Drawing.Design.ToolboxItem.ComponentsCreated" /> event.</summary>
+        <summary>
+             Raises the OnComponentsCreated event. This
+             will be called when this <see cref="T:System.Drawing.Design.ToolboxItem" /> creates a component.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1224,7 +1280,10 @@
       </Parameters>
       <Docs>
         <param name="args">A <see cref="T:System.Drawing.Design.ToolboxComponentsCreatingEventArgs" /> that provides data for the event.</param>
-        <summary>Raises the <see cref="E:System.Drawing.Design.ToolboxItem.ComponentsCreating" /> event.</summary>
+        <summary>
+             Raises the OnCreateComponentsInvoked event. This
+             will be called before this <see cref="T:System.Drawing.Design.ToolboxItem" /> creates a component.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1263,7 +1322,10 @@
         <ReturnType>System.Drawing.Bitmap</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the original bitmap that will be used in the toolbox for this item.</summary>
+        <summary>
+             Gets or sets the original bitmap that will be used on the toolbox for this item.
+             This bitmap should be 16x16 pixel and should be used in the Visual Studio toolbox, not on the design surface.
+            </summary>
         <value>A <see cref="T:System.Drawing.Bitmap" /> that represents the toolbox item in the toolbox.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1296,7 +1358,13 @@
         <ReturnType>System.Collections.IDictionary</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a dictionary of properties.</summary>
+        <summary>
+             The properties dictionary is a set of name/value pairs.  The keys are property
+             names and the values are property values.  This dictionary becomes read-only
+             after the toolbox item has been locked.
+             Values in the properties dictionary are validated through ValidateProperty
+             and default values are obtained from GetDefalutProperty.
+            </summary>
         <value>A dictionary of name/value pairs (the names are property names and the values are property values).</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1338,7 +1406,9 @@
       <Docs>
         <param name="info">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> to save to.</param>
         <param name="context">A <see cref="T:System.Runtime.Serialization.StreamingContext" /> that indicates the stream characteristics.</param>
-        <summary>Saves the state of the toolbox item to the specified serialization information object.</summary>
+        <summary>
+            Saves the state of this ToolboxItem to the specified serialization info
+             </summary>
         <remarks>To be added.</remarks>
         <block subset="none" type="overrides">
           <para>The <see cref="M:System.Drawing.Design.ToolboxItem.Serialize(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" /> and <see cref="M:System.Drawing.Design.ToolboxItem.Deserialize(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)" /> methods must be implemented in classes that derive from the <see cref="T:System.Drawing.Design.ToolboxItem" /> class in order to support persistence in the toolbox database provided by some development environments.</para>
@@ -1404,11 +1474,6 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -1441,7 +1506,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the fully qualified name of the type of <see cref="T:System.ComponentModel.IComponent" /> that the toolbox item creates when invoked.</summary>
+        <summary>
+             Gets or sets the fully qualified name of the type this toolbox item will create.
+            </summary>
         <value>The fully qualified type name of the type of component that this toolbox item creates.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1477,10 +1544,10 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="propertyName" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="value" Type="System.Object" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="expectedType" Type="System.Type" Index="2" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="allowNull" Type="System.Boolean" Index="3" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="expectedType" Type="System.Type" />
+        <Parameter Name="allowNull" Type="System.Boolean" />
       </Parameters>
       <Docs>
         <param name="propertyName">The name of the property to validate.</param>
@@ -1488,7 +1555,10 @@
         <param name="expectedType">The expected type of the property.</param>
         <param name="allowNull">
           <see langword="true" /> to allow <see langword="null" />; otherwise, <see langword="false" />.</param>
-        <summary>Validates that an object is of a given type.</summary>
+        <summary>
+             Called as a helper to ValidatePropertyValue to validate that an object
+             is of a given type.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1524,13 +1594,17 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="propertyName" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="value" Type="System.Object" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="propertyName" Type="System.String" />
+        <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
         <param name="propertyName">The name of the property to validate.</param>
         <param name="value">The value against which to validate.</param>
-        <summary>Validates a property before it is assigned to the property dictionary.</summary>
+        <summary>
+             This is called whenever a value is set in the property dictionary.  It gives you a chance
+             to change the value of an object before comitting it, our reject it by throwing an
+             exception.
+            </summary>
         <returns>The value used to perform validation.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1565,7 +1639,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the version for this <see cref="T:System.Drawing.Design.ToolboxItem" />.</summary>
+        <summary>
+             Gets the version for this toolboxitem. It defaults to AssemblyName.Version unless
+             overridden in a derived toolboxitem. This can be overridden to
+             return an empty string to suppress its display in the toolbox tooltip.
+            </summary>
         <value>A <see cref="T:System.String" /> that specifies the version for this <see cref="T:System.Drawing.Design.ToolboxItem" />.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,4 +1,4 @@
-﻿<Type Name="SplitContainer" FullName="System.Windows.Forms.SplitContainer">
+<Type Name="SplitContainer" FullName="System.Windows.Forms.SplitContainer">
   <TypeSignature Language="C#" Value="public class SplitContainer : System.Windows.Forms.ContainerControl, System.ComponentModel.ISupportInitialize" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SplitContainer extends System.Windows.Forms.ContainerControl implements class System.ComponentModel.ISupportInitialize" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.SplitContainer" />
@@ -31,15 +31,19 @@
     <Attribute>
       <AttributeName>System.Windows.Forms.Docking(System.Windows.Forms.DockingBehavior.AutoDock)</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
-      <AttributeName>System.ComponentModel.Designer("System.Windows.Forms.Design.SplitContainerDesigner, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
-    </Attribute>
     <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
       <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a control consisting of a movable bar that divides a container's display area into two resizable panels.</summary>
+    <summary>
+             A SplitContainer is a ContainerControl with 2 panels separated with a splitter
+             in the middle. This is a composite control. The user can drag and drop this control from Toolbox.
+             Controls can be added to the right panel and the left panel. The Orientation can be either Horizontal or Vertical.
+             The Controls inside the Panels would be redrawn with the new Orientation.
+             With this control the user need be aware of docking, z-order of the controls. The controls get parented when thry are
+             dropped on the SpitContainer.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -117,14 +121,18 @@
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets or sets a value indicating whether scroll bars automatically appear if controls are placed outside the <see cref="T:System.Windows.Forms.SplitContainer" /> client area. This property is not relevant to this class.</summary>
+        <summary>
+             This property is overridden to allow the AutoScroll to be set on all the panels when
+             The autoScroll on SplitContainer is shown.
+             Here we dont set the base value ... but set autoscroll for panels.
+            </summary>
         <value>
           <see langword="true" /> if scroll bars to automatically appear when controls are placed outside the <see cref="T:System.Windows.Forms.SplitContainer" /> client area; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
@@ -158,14 +166,16 @@
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the size of the auto-scroll margin. This property is not relevant to this class. This property is not relevant to this class.</summary>
+        <summary>
+             Override AutoScrollMargin to make it hidden from the user in the designer
+            </summary>
         <value>A <see cref="T:System.Drawing.Size" /> value that represents the height and width, in pixels, of the auto-scroll margin.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -203,14 +213,16 @@
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the minimum size of the scroll bar. This property is not relevant to this class.</summary>
+        <summary>
+             Override AutoScrollMinSize to make it hidden from the user in the designer
+            </summary>
         <value>A <see cref="T:System.Drawing.Size" /> that represents the minimum height and width of the scroll bar, in pixels.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -246,7 +258,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Point), "0, 0")</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -286,7 +298,7 @@
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -326,14 +338,16 @@
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the <see cref="T:System.Windows.Forms.SplitContainer" /> is automatically resized to display its entire contents. This property is not relevant to this class.</summary>
+        <summary>
+             Hide AutoSize, as it can mean more than one thing and might confuse users
+            </summary>
         <value>
           <see langword="true" /> if the <see cref="T:System.Windows.Forms.SplitContainer" /> is automatically resized; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -365,7 +379,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -403,7 +417,7 @@
           <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Always)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -448,7 +462,7 @@
           <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Always)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -498,7 +512,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -535,7 +549,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -573,7 +587,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Signals the object that initialization is started.</summary>
+        <summary>
+             ISupportInitialize support. Disables splitter panel min size and splitter width
+             validation during initialization.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -599,7 +616,9 @@
         <ReturnType>System.Windows.Forms.BindingContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Windows.Forms.BindingContext" /> for the <see cref="T:System.Windows.Forms.SplitContainer" />.</summary>
+        <summary>
+             The binding manager for the container control.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.BindingContext" /> for the control.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Windows.Forms.BindingContext" />
@@ -626,15 +645,15 @@
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.DispId(-504)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.BorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the style of border for the <see cref="T:System.Windows.Forms.SplitContainer" />.</summary>
+        <summary>
+             Indicates what type of border the Splitter control has.  This value
+             comes from the System.Windows.Forms.BorderStyle enumeration.
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.BorderStyle" /> values. The default is <see cref="F:System.Windows.Forms.BorderStyle.Fixed3D" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -666,7 +685,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -702,7 +721,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -738,14 +757,17 @@
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Control+ControlCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of child controls. This property is not relevant to this class.</summary>
+        <summary>
+             Controls Collection...
+             This is overriden so that the Controls.Add ( ) is not Code Gened...
+            </summary>
         <value>An object of type <see cref="T:System.Windows.Forms.Control.ControlCollection" /> that contains the child controls.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -772,7 +794,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -804,7 +826,10 @@
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the default size of the <see cref="T:System.Windows.Forms.SplitContainer" />.</summary>
+        <summary>
+             Deriving classes can override this to configure a default size for their control.
+             This is more efficient than setting the size in the control's constructor.
+            </summary>
         <value>A <see cref="T:System.Drawing.Size" /> that represents the size of the <see cref="T:System.Windows.Forms.SplitContainer" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -834,7 +859,12 @@
         <ReturnType>System.Windows.Forms.DockStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets which <see cref="T:System.Windows.Forms.SplitContainer" /> borders are attached to the edges of the container.</summary>
+        <summary>
+             The dock property. The dock property controls to which edge
+             of the container this control is docked to. For example, when docked to
+             the top of the container, the control will be displayed flush at the
+             top of the container, extending the length of the container.
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.DockStyle" /> values. The default value is <see langword="None" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -882,7 +912,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Signals the object that initialization is complete.</summary>
+        <summary>
+             ISupportInitialize support. Enables splitter panel min size and splitter width
+             validation after initialization.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -903,15 +936,15 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.FixedPanel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets which <see cref="T:System.Windows.Forms.SplitContainer" /> panel remains the same size when the container is resized.</summary>
+        <summary>
+             Indicates what type of border the Splitter control has.  This value
+             comes from the System.Windows.Forms.BorderStyle enumeration.
+            </summary>
         <value>One of the values of <see cref="T:System.Windows.Forms.FixedPanel" />. The default value is <see langword="None" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -955,18 +988,14 @@
         <Attribute>
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the splitter is fixed or movable.</summary>
+        <summary>
+             This property determines whether the the splitter can move.
+            </summary>
         <value>
           <see langword="true" /> if the splitter is fixed; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
@@ -1000,7 +1029,9 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.GotFocus" /> event.</summary>
+        <summary>
+             Overides the Control.OnGotFocus to Invalidate...
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1039,7 +1070,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.KeyEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.KeyDown" /> event.</summary>
+        <summary>
+             Overrides the Control.OnKeydown for implementing splitter movements.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1080,7 +1113,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.KeyEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.KeyUp" /> event.</summary>
+        <summary>
+             Overrides the Control.OnKeydown for implementing splitter movements.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1121,7 +1156,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.LayoutEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Layout" /> event.</summary>
+        <summary>
+             Overrides the Control.OnLayout.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1159,7 +1196,9 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.LostFocus" /> event.</summary>
+        <summary>
+             Overrides the Control.OnLostFocus to Invalidate.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1223,7 +1262,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.MouseDown" /> event.</summary>
+        <summary>
+             Raises the <see cref="M:System.Windows.Forms.SplitContainer.OnMouseDown(System.Windows.Forms.MouseEventArgs)" /> event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1265,7 +1306,9 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.MouseLeave" /> event.</summary>
+        <summary>
+             Raises the <see cref="M:System.Windows.Forms.SplitContainer.OnMouseLeave(System.EventArgs)" /> event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1297,7 +1340,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1308,7 +1351,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.MouseMove" /> event.</summary>
+        <summary>
+             Raises the <see cref="!:SplitContainer.MouseMove" /> event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1350,7 +1395,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.MouseUp" /> event.</summary>
+        <summary>
+             Raises the <see cref="M:System.Windows.Forms.SplitContainer.OnMouseUp(System.Windows.Forms.MouseEventArgs)" /> event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1392,7 +1439,10 @@
       </Parameters>
       <Docs>
         <param name="e">The data for the event.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Move" /> event.</summary>
+        <summary>
+             Overrides the Control.OnMove() to synchronize the
+             splitterRect with the position of the SplitContainer.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1429,7 +1479,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Paint" /> event.</summary>
+        <summary>
+             Overrides the Control.OnPaint() to focus the Splitter.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1461,7 +1513,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1497,7 +1549,11 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.SplitterEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.SplitContainer.SplitterMoved" /> event.</summary>
+        <summary>
+             Inherriting classes should override this method to respond to the
+             splitterMoved event. This event occurs when the user finishes
+             moving the splitter.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1544,7 +1600,11 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.SplitterEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.SplitContainer.SplitterMoving" /> event.</summary>
+        <summary>
+             Inherriting classes should override this method to respond to the
+             splitterMoving event. This event occurs while the splitter is
+             being moved by the user.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1590,15 +1650,14 @@
         <Attribute>
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Orientation</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating the horizontal or vertical orientation of the <see cref="T:System.Windows.Forms.SplitContainer" /> panels.</summary>
+        <summary>
+             This Property sets or gets if the splitter is vertical or horizontal.
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.Orientation" /> values. The default is <see langword="Vertical" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1642,7 +1701,7 @@
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1679,7 +1738,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1717,15 +1776,14 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.SplitterPanel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the left or top panel of the <see cref="T:System.Windows.Forms.SplitContainer" />, depending on <see cref="P:System.Windows.Forms.SplitContainer.Orientation" />.</summary>
+        <summary>
+             The Left or Top panel in the SplitContainer.
+            </summary>
         <value>If <see cref="P:System.Windows.Forms.SplitContainer.Orientation" /> is <see langword="Vertical" />, the left panel of the <see cref="T:System.Windows.Forms.SplitContainer" />. If <see cref="P:System.Windows.Forms.SplitContainer.Orientation" /> is <see langword="Horizontal" />, the top panel of the <see cref="T:System.Windows.Forms.SplitContainer" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1768,7 +1826,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value determining whether <see cref="P:System.Windows.Forms.SplitContainer.Panel1" /> is collapsed or expanded.</summary>
+        <summary>
+             Collapses or restores panel1
+            </summary>
         <value>
           <see langword="true" /> if <see cref="P:System.Windows.Forms.SplitContainer.Panel1" /> is collapsed; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -1798,15 +1858,14 @@
         <Attribute>
           <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the minimum distance in pixels of the splitter from the left or top edge of <see cref="P:System.Windows.Forms.SplitContainer.Panel1" />.</summary>
+        <summary>
+             This property determines the minimum distance of pixels of the splitter from the left or the top edge of Panel1.
+            </summary>
         <value>An <see cref="T:System.Int32" /> representing the minimum distance in pixels of the splitter from the left or top edge of <see cref="P:System.Windows.Forms.SplitContainer.Panel1" />. The default value is 25 pixels, regardless of <see cref="P:System.Windows.Forms.SplitContainer.Orientation" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1852,15 +1911,14 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.SplitterPanel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the right or bottom panel of the <see cref="T:System.Windows.Forms.SplitContainer" />, depending on <see cref="P:System.Windows.Forms.SplitContainer.Orientation" />.</summary>
+        <summary>
+             This is the Right or Bottom panel in the SplitContainer.
+            </summary>
         <value>If <see cref="P:System.Windows.Forms.SplitContainer.Orientation" /> is <see langword="Vertical" />, the right panel of the <see cref="T:System.Windows.Forms.SplitContainer" />. If <see cref="P:System.Windows.Forms.SplitContainer.Orientation" /> is <see langword="Horizontal" />, the bottom panel of the <see cref="T:System.Windows.Forms.SplitContainer" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1901,7 +1959,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value determining whether <see cref="P:System.Windows.Forms.SplitContainer.Panel2" /> is collapsed or expanded.</summary>
+        <summary>
+             Collapses or restores panel2
+            </summary>
         <value>
           <see langword="true" /> if <see cref="P:System.Windows.Forms.SplitContainer.Panel2" /> is collapsed; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -1931,15 +1991,14 @@
         <Attribute>
           <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the minimum distance in pixels of the splitter from the right or bottom edge of <see cref="P:System.Windows.Forms.SplitContainer.Panel2" />.</summary>
+        <summary>
+             This property determines the minimum distance of pixels of the splitter from the right or the bottom edge of Panel2
+            </summary>
         <value>An <see cref="T:System.Int32" /> representing the minimum distance in pixels of the splitter from the right or bottom edge of <see cref="P:System.Windows.Forms.SplitContainer.Panel2" />. The default value is 25 pixels, regardless of <see cref="P:System.Windows.Forms.SplitContainer.Orientation" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1986,7 +2045,15 @@
       </Parameters>
       <Docs>
         <param name="keyData">One of the <see cref="T:System.Windows.Forms.Keys" /> values that represents the key to process.</param>
-        <summary>Processes a dialog box key.</summary>
+        <summary>
+             Processes a dialog key. Overrides Control.processDialogKey(). This
+             method implements handling of the TAB, LEFT, RIGHT, UP, and DOWN
+             keys in dialogs.
+             The method performs no processing on keys that include the ALT or
+             CONTROL modifiers. For the TAB key, the method selects the next control
+             on the form. For the arrow keys,
+             !!!
+            </summary>
         <returns>
           <see langword="true" /> if the key was processed by the control; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -2028,7 +2095,10 @@
       <Docs>
         <param name="forward">
           <see langword="true" /> to cycle forward through the controls in the <see cref="T:System.Windows.Forms.ContainerControl" />; otherwise, <see langword="false" />.</param>
-        <summary>Selects the next available control and makes it the active control.</summary>
+        <summary>
+             This will process the TabKey for the SplitContainer. The Focus needs to Shift from controls to the Left of the Splitter
+             to the splitter and then to the controls on the right of the splitter. This override implements this Logic.
+            </summary>
         <returns>
           <see langword="true" /> if a control is selected; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -2066,7 +2136,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2079,7 +2149,15 @@
       <Docs>
         <param name="factor">The factor by which the height and width of the control will be scaled.</param>
         <param name="specified">A <see cref="T:System.Windows.Forms.BoundsSpecified" /> value that specifies the bounds of the control to use when defining its size and position.</param>
-        <summary>Scales the location, size, padding and margin.</summary>
+        <summary>
+              Scales an individual control's location, size, padding and margin.
+              If the control is top level, this will not scale the control's location.
+              This does not scale children or the size of auto sized controls.  You can
+              omit scaling in any direction by changing BoundsSpecified.
+            
+              After the control is scaled the RequiredScaling property is set to
+              BoundsSpecified.None.
+             </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2141,7 +2219,12 @@
         <param name="width">The new <see cref="P:System.Windows.Forms.Control.Width" /> property value of the control.</param>
         <param name="height">The new <see cref="P:System.Windows.Forms.Control.Height" /> property value of the control.</param>
         <param name="specified">A bitwise combination of the <see cref="T:System.Windows.Forms.BoundsSpecified" /> values.</param>
-        <summary>Performs the work of setting the specified bounds of this control.</summary>
+        <summary>
+             This protected override allows us to check is an unvalid value is set for Width and Height.
+             The SplitContainer would not throw on invalid Size (i.e Width and Height) settings, but would correct the error like Form
+             Say, the Panel1MinSize == 150 , Panel2MinSize == 50 and SplitterWidth == 4 and the user tries
+             to set SplitContainer.Width = 50 ... then this function would try to correct the value to 204.. instead of throwing.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.Control.SetBoundsCore(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)" />
       </Docs>
@@ -2169,15 +2252,14 @@
         <Attribute>
           <AttributeName>System.ComponentModel.SettingsBindable(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the location of the splitter, in pixels, from the left or top edge of the <see cref="T:System.Windows.Forms.SplitContainer" />.</summary>
+        <summary>
+             This property determines pixel distance of the splitter from the left or top edge.
+            </summary>
         <value>An <see cref="T:System.Int32" /> representing the location of the splitter, in pixels, from the left or top edge of the <see cref="T:System.Windows.Forms.SplitContainer" />. The default value is 50 pixels.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2221,15 +2303,14 @@
         <Attribute>
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value representing the increment of splitter movement in pixels.</summary>
+        <summary>
+             This determines the number of pixels the splitter moves in increments.This is defaulted to 1.
+            </summary>
         <value>An <see cref="T:System.Int32" /> representing the increment of splitter movement in pixels. The default value is one pixel.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2357,7 +2438,9 @@
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the size and location of the splitter relative to the <see cref="T:System.Windows.Forms.SplitContainer" />.</summary>
+        <summary>
+             This property determines the rectangle bounds of the splitter.
+            </summary>
         <value>A <see cref="T:System.Drawing.Rectangle" /> that specifies the size and location of the splitter relative to the <see cref="T:System.Windows.Forms.SplitContainer" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2399,15 +2482,14 @@
         <Attribute>
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the width of the splitter in pixels.</summary>
+        <summary>
+             This property determines the thickness of the splitter.
+            </summary>
         <value>An <see cref="T:System.Int32" /> representing the width of the splitter, in pixels. The default is four pixels.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2449,15 +2531,15 @@
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.DispId(-516)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the user can give the focus to the splitter using the TAB key.</summary>
+        <summary>
+             Indicates whether the user can give the focus to this control using the TAB
+             key. This property is read-only.
+            </summary>
         <value>
           <see langword="true" /> if the user can give the focus to the splitter using the TAB key; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
@@ -2497,7 +2579,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2534,7 +2616,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

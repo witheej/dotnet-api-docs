@@ -1,4 +1,4 @@
-﻿<Type Name="ScrollOrientation" FullName="System.Windows.Forms.ScrollOrientation">
+<Type Name="ScrollOrientation" FullName="System.Windows.Forms.ScrollOrientation">
   <TypeSignature Language="C#" Value="public enum ScrollOrientation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ScrollOrientation extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ScrollOrientation" />
@@ -14,7 +14,10 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the scroll bar orientation for the <see cref="E:System.Windows.Forms.ScrollBar.Scroll" /> event.</summary>
+    <summary>
+             Provides data for the <see cref="E:System.Windows.Forms.ScrollBar.Scroll" />
+             event. This enumeration gives the orientation of the scroll that took place
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -43,7 +46,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>The horizontal scroll bar.</summary>
+        <summary>
+             Denotes that horizontal scrolling took place.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="VerticalScroll">
@@ -64,7 +69,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The vertical scroll bar.</summary>
+        <summary>
+             Denotes that vertical scrolling took place.
+            </summary>
       </Docs>
     </Member>
   </Members>

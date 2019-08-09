@@ -1,4 +1,4 @@
-﻿<Type Name="MdiLayout" FullName="System.Windows.Forms.MdiLayout">
+<Type Name="MdiLayout" FullName="System.Windows.Forms.MdiLayout">
   <TypeSignature Language="C#" Value="public enum MdiLayout" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MdiLayout extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MdiLayout" />
@@ -15,7 +15,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the layout of multiple document interface (MDI) child windows in an MDI parent window.</summary>
+    <summary>
+             Specifies the layout of multiple document interface (MDI) child windows in an MDI parent window.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -46,7 +48,12 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>All MDI child icons are arranged within the client region of the MDI parent form.</summary>
+        <summary>
+             All MDI child icons are arranged within the client region of the MDI
+             parent form. An application sets this layout to arrange all minimized
+             MDI child windows (in the bottom of the client area).
+             It does not affect child windows that are not minimized.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Cascade">
@@ -68,7 +75,10 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>All MDI child windows are cascaded within the client region of the MDI parent form.</summary>
+        <summary>
+             All MDI child windows are cascaded within the client region of the
+             MDI parent form.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="TileHorizontal">
@@ -90,7 +100,10 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>All MDI child windows are tiled horizontally within the client region of the MDI parent form.</summary>
+        <summary>
+             All MDI child windows are tiled horizontally within the client region
+             of the MDI parent form.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="TileVertical">
@@ -112,7 +125,10 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>All MDI child windows are tiled vertically within the client region of the MDI parent form.</summary>
+        <summary>
+             All MDI child windows are tiled vertically within the client region of
+             the MDI parent form.
+            </summary>
       </Docs>
     </Member>
   </Members>

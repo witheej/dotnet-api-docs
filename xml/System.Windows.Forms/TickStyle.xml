@@ -1,4 +1,4 @@
-﻿<Type Name="TickStyle" FullName="System.Windows.Forms.TickStyle">
+<Type Name="TickStyle" FullName="System.Windows.Forms.TickStyle">
   <TypeSignature Language="C#" Value="public enum TickStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TickStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TickStyle" />
@@ -15,7 +15,10 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the location of tick marks in a <see cref="T:System.Windows.Forms.TrackBar" /> control.</summary>
+    <summary>
+             Specifies the location of tick marks in a <see cref="T:System.Windows.Forms.TrackBar" />
+             control.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -46,7 +49,9 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>Tick marks are located on both sides of the control.</summary>
+        <summary>
+             Tick marks are located on both sides of the control.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="BottomRight">
@@ -68,7 +73,10 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Tick marks are located on the bottom of a horizontal control or on the right side of a vertical control.</summary>
+        <summary>
+             Tick marks are located on the bottom of a horizontal control or on the
+             right side of a vertical control.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -90,7 +98,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>No tick marks appear in the control.</summary>
+        <summary>
+             No tick marks appear in the control.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="TopLeft">
@@ -112,7 +122,10 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Tick marks are located on the top of a horizontal control or on the left of a vertical control.</summary>
+        <summary>
+             Tick marks are located on the top of horizontal control or on the
+             left of a vertical control.
+            </summary>
       </Docs>
     </Member>
   </Members>

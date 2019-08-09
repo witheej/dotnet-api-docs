@@ -1,4 +1,4 @@
-﻿<Type Name="IComponentEditorPageSite" FullName="System.Windows.Forms.IComponentEditorPageSite">
+<Type Name="IComponentEditorPageSite" FullName="System.Windows.Forms.IComponentEditorPageSite">
   <TypeSignature Language="C#" Value="public interface IComponentEditorPageSite" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IComponentEditorPageSite" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.IComponentEditorPageSite" />
@@ -13,7 +13,9 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>The site for a <see cref="T:System.Windows.Forms.Design.ComponentEditorPage" />.</summary>
+    <summary>
+             The site for a ComponentEditorPage.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,7 +38,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the parent control for the page window.</summary>
+        <summary>
+             Returns the parent control for the page window.
+            </summary>
         <returns>The parent control for the page window.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -60,7 +64,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Notifies the site that the editor is in a modified state.</summary>
+        <summary>
+             Notifies the site that the editor is in dirty state.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

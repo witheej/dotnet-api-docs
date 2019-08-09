@@ -1,4 +1,4 @@
-﻿<Type Name="DockingAttribute" FullName="System.Windows.Forms.DockingAttribute">
+<Type Name="DockingAttribute" FullName="System.Windows.Forms.DockingAttribute">
   <TypeSignature Language="C#" Value="public sealed class DockingAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit DockingAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DockingAttribute" />
@@ -20,7 +20,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the default docking behavior for a control.</summary>
+    <summary>
+             Specifies how a control should be docked by default when added through the designer.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -55,7 +57,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DockingAttribute" /> class.</summary>
+        <summary>
+             Default constructor.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,17 +75,14 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="dockingBehavior" Type="System.Windows.Forms.DockingBehavior" />
       </Parameters>
       <Docs>
         <param name="dockingBehavior">A <see cref="T:System.Windows.Forms.DockingBehavior" /> value specifying the default behavior.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DockingAttribute" /> class with the given docking behavior.</summary>
+        <summary>
+             Constructor.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -102,7 +103,10 @@
         <ReturnType>System.Windows.Forms.DockingAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The default <see cref="T:System.Windows.Forms.DockingAttribute" /> for this control.</summary>
+        <summary>
+             Specifies the default value for the <see cref="!:System.ComponentModel.DockingAttribute" />.
+             This <see langword="static" /> field is read-only.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -119,16 +123,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DockingBehavior</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the docking behavior supplied to this attribute.</summary>
+        <summary>
+             DockingBehavior property.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.DockingBehavior" /> value.</value>
         <remarks>To be added.</remarks>
       </Docs>

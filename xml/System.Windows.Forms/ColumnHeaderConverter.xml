@@ -1,4 +1,4 @@
-﻿<Type Name="ColumnHeaderConverter" FullName="System.Windows.Forms.ColumnHeaderConverter">
+<Type Name="ColumnHeaderConverter" FullName="System.Windows.Forms.ColumnHeaderConverter">
   <TypeSignature Language="C#" Value="public class ColumnHeaderConverter : System.ComponentModel.ExpandableObjectConverter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ColumnHeaderConverter extends System.ComponentModel.ExpandableObjectConverter" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ColumnHeaderConverter" />
@@ -31,11 +31,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ColumnHeaderConverter" /> class.</summary>
@@ -48,7 +43,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ColumnHeaderConverter.CanConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function CanConvertTo (context As ITypeDescriptorContext, destinationType As Type) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool CanConvertTo(System::ComponentModel::ITypeDescriptorContext ^ context, Type ^ destinationType);" />
-      <MemberSignature Language="F#" Value="override this.CanConvertTo : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool" Usage="columnHeaderConverter.CanConvertTo (context, destinationType)" />
+      <MemberSignature Language="F#" Value="abstract member CanConvertTo : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool&#xA;override this.CanConvertTo : System.ComponentModel.ITypeDescriptorContext * Type -&gt; bool" Usage="columnHeaderConverter.CanConvertTo (context, destinationType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -65,7 +60,10 @@
       <Docs>
         <param name="context">A <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
         <param name="destinationType">A type representing the type to convert to.</param>
-        <summary>Returns a value indicating whether the <see cref="T:System.Windows.Forms.ColumnHeaderConverter" /> can convert a <see cref="T:System.Windows.Forms.ColumnHeader" /> to the specified type, using the specified context.</summary>
+        <summary>
+             Gets a value indicating whether this converter can
+             convert an object to the given destination type using the context.
+            </summary>
         <returns>
           <see langword="true" /> if this converter can perform the conversion; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -84,7 +82,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ColumnHeaderConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ConvertTo (context As ITypeDescriptorContext, culture As CultureInfo, value As Object, destinationType As Type) As Object" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::Object ^ ConvertTo(System::ComponentModel::ITypeDescriptorContext ^ context, System::Globalization::CultureInfo ^ culture, System::Object ^ value, Type ^ destinationType);" />
-      <MemberSignature Language="F#" Value="override this.ConvertTo : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj * Type -&gt; obj" Usage="columnHeaderConverter.ConvertTo (context, culture, value, destinationType)" />
+      <MemberSignature Language="F#" Value="abstract member ConvertTo : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj * Type -&gt; obj&#xA;override this.ConvertTo : System.ComponentModel.ITypeDescriptorContext * System.Globalization.CultureInfo * obj * Type -&gt; obj" Usage="columnHeaderConverter.ConvertTo (context, culture, value, destinationType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -105,7 +103,13 @@
         <param name="culture">A <see cref="T:System.Globalization.CultureInfo" /> that represents information about a culture, such as language and calendar system. Can be <see langword="null" />.</param>
         <param name="value">The <see cref="T:System.Object" /> to convert.</param>
         <param name="destinationType">The <see cref="T:System.Type" /> to convert to.</param>
-        <summary>Converts the specified object to the specified type, using the specified context and culture information.</summary>
+        <summary>
+             Converts the given object to another type.  The most common types to convert
+             are to and from a string object.  The default implementation will make a call
+             to ToString on the object if the object is valid and if the destination
+             type is string.  If this cannot convert to the desitnation type, this will
+             throw a NotSupportedException.
+            </summary>
         <returns>The <see cref="T:System.Object" /> that is the result of the conversion.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.NotSupportedException">The conversion cannot be performed <paramref name="." /></exception>

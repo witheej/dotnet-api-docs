@@ -40,9 +40,6 @@
     <Attribute>
       <AttributeName>System.ComponentModel.ToolboxItem(false)</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
-      <AttributeName>System.ComponentModel.Designer("System.Windows.Forms.Design.ToolStripItemDesigner, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
-    </Attribute>
   </Attributes>
   <Docs>
     <summary>Represents the abstract base class that manages events and layout for all the elements that a <see cref="T:System.Windows.Forms.ToolStrip" /> or <see cref="T:System.Windows.Forms.ToolStripDropDown" /> can contain.</summary>
@@ -132,11 +129,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="text" Type="System.String" />
         <Parameter Name="image" Type="System.Drawing.Image" />
@@ -198,14 +190,16 @@
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AccessibleObject</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Forms.AccessibleObject" /> assigned to the control.</summary>
+        <summary>
+             The Accessibility Object for this Control
+            </summary>
         <value>The <see cref="T:System.Windows.Forms.AccessibleObject" /> assigned to the control; if no <see cref="T:System.Windows.Forms.AccessibleObject" /> is currently assigned to the control, a new instance is created when this property is first accessed</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -248,14 +242,16 @@
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the default action description of the control for use by accessibility client applications.</summary>
+        <summary>
+             The default action description of the control
+            </summary>
         <value>The default action description of the control, for use by accessibility client applications.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -312,7 +308,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the description that will be reported to accessibility client applications.</summary>
+        <summary>
+             The accessible description of the control
+            </summary>
         <value>The description of the control used by accessibility client applications. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -361,7 +359,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the control for use by accessibility client applications.</summary>
+        <summary>
+             The accessible name of the control
+            </summary>
         <value>The name of the control, for use by accessibility client applications. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -405,7 +405,9 @@
         <ReturnType>System.Windows.Forms.AccessibleRole</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the accessible role of the control, which specifies the type of user interface element of the control.</summary>
+        <summary>
+             The accessible role of the control
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.AccessibleRole" /> values. The default is <see cref="F:System.Windows.Forms.AccessibleRole.PushButton" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -445,15 +447,14 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolStripItemAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the item aligns towards the beginning or end of the <see cref="T:System.Windows.Forms.ToolStrip" />.</summary>
+        <summary>
+             Determines if the item aligns towards the beginning or end of the ToolStrip.
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.ToolStripItemAlignment" /> values. The default is <see cref="F:System.Windows.Forms.ToolStripItemAlignment.Left" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -502,14 +503,20 @@
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether drag-and-drop and item reordering are handled through events that you implement.</summary>
+        <summary>
+             Determines if this item can be dragged.
+             This is EXACTLY like Control.AllowDrop - setting this to true WILL call
+             the droptarget handlers.  The ToolStripDropTargetManager is the one that
+             handles the routing of DropTarget events to the ToolStripItem's IDropTarget
+             methods.
+            </summary>
         <value>
           <see langword="true" /> if drag-and-drop operations are allowed in the control; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
@@ -611,7 +618,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the item is automatically sized.</summary>
+        <summary>
+             Determines whether we set the ToolStripItem to its preferred size
+            </summary>
         <value>
           <see langword="true" /> if the <see cref="T:System.Windows.Forms.ToolStripItem" /> is automatically sized; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
         <remarks>
@@ -657,7 +666,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether to use the <see cref="P:System.Windows.Forms.ToolStripItem.Text" /> property or the <see cref="P:System.Windows.Forms.ToolStripItem.ToolTipText" /> property for the <see cref="T:System.Windows.Forms.ToolStripItem" /> ToolTip.</summary>
+        <summary>
+              !!!!This property ONLY works when toolStrip.ShowItemToolTips = true!!!!
+              if AutoToolTip is set to true we use the Text, if false, we use ToolTipText.
+            </summary>
         <value>
           <see langword="true" /> to use the <see cref="P:System.Windows.Forms.ToolStripItem.Text" /> property for the ToolTip; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
@@ -701,15 +713,15 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the <see cref="T:System.Windows.Forms.ToolStripItem" /> should be placed on a <see cref="T:System.Windows.Forms.ToolStrip" />.</summary>
+        <summary>
+              as opposed to Visible, which returns whether or not the item and its parent are Visible
+              Available returns whether or not the item will be shown.  Setting Available sets Visible and Vice/Versa
+            </summary>
         <value>
           <see langword="true" /> if the <see cref="T:System.Windows.Forms.ToolStripItem" /> is placed on a <see cref="T:System.Windows.Forms.ToolStrip" />; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -782,7 +794,9 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the background color for the item.</summary>
+        <summary>
+             The BackColor of the item
+            </summary>
         <value>A <see cref="T:System.Drawing.Color" /> that represents the background color of the item. The default is the value of the <see cref="P:System.Windows.Forms.Control.DefaultBackColor" /> property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -875,7 +889,9 @@
         <ReturnType>System.Drawing.Image</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the background image displayed in the item.</summary>
+        <summary>
+             Gets or sets the image that is displayed on a <see cref="T:System.Windows.Forms.Label" />.
+            </summary>
         <value>An <see cref="T:System.Drawing.Image" /> that represents the image to display in the background of the item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -955,15 +971,14 @@
         <Attribute>
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the size and location of the item.</summary>
+        <summary>
+             The bounds of the item
+            </summary>
         <value>A <see cref="T:System.Drawing.Rectangle" /> that represents the size and location of the <see cref="T:System.Windows.Forms.ToolStripItem" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1002,7 +1017,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the item can be selected.</summary>
+        <summary>
+             Determines whether or not the item can be selected.
+            </summary>
         <value>
           <see langword="true" /> if the <see cref="T:System.Windows.Forms.ToolStripItem" /> can be selected; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -1025,7 +1042,9 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="T:System.Windows.Forms.ToolStripItem" /> is clicked.</summary>
+        <summary>
+             Occurs when the control is clicked.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1104,7 +1123,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1112,7 +1131,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a new accessibility object for the <see cref="T:System.Windows.Forms.ToolStripItem" />.</summary>
+        <summary>
+             constructs the new instance of the accessibility object for this ToolStripItem. Subclasses
+             should not call base.CreateAccessibilityObject.
+            </summary>
         <returns>A new <see cref="T:System.Windows.Forms.AccessibleObject" /> for the <see cref="T:System.Windows.Forms.ToolStripItem" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1134,7 +1156,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether to display the <see cref="T:System.Windows.Forms.ToolTip" /> that is defined as the default.</summary>
+        <summary>default setting of auto tooltip when this object is created</summary>
         <value>
           <see langword="false" /> in all cases.</value>
         <remarks>To be added.</remarks>
@@ -1179,7 +1201,10 @@
         <ReturnType>System.Windows.Forms.Padding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the default margin of an item.</summary>
+        <summary>
+             Deriving classes can override this to configure a default size for their control.
+             This is more efficient than setting the size in the control's constructor.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.Padding" /> representing the margin.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1204,16 +1229,14 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Padding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the internal spacing characteristics of the item.</summary>
+        <summary>
+             Deriving classes can override this to configure a default size for their control.
+             This is more efficient than setting the size in the control's constructor.
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.Padding" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1274,7 +1297,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether items on a <see cref="T:System.Windows.Forms.ToolStripDropDown" /> are hidden after they are clicked.</summary>
+        <summary>
+             specifies the default behavior of these items on ToolStripDropDowns when clicked.
+            </summary>
         <value>
           <see langword="true" /> if the item is hidden after it is clicked; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -1293,16 +1318,14 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolStripItemDisplayStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets whether text and images are displayed on a <see cref="T:System.Windows.Forms.ToolStripItem" />.</summary>
+        <summary>
+             DisplayStyle specifies whether the image and text are rendered.  This is not on the base
+             item class because different derived things will have different enumeration needs.
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.ToolStripItemDisplayStyle" /> values. The default is <see cref="F:System.Windows.Forms.ToolStripItemDisplayStyle.ImageAndText" /> .</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1339,7 +1362,9 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="P:System.Windows.Forms.ToolStripItem.DisplayStyle" /> has changed.</summary>
+        <summary>
+             Occurs when the display style has changed
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1386,7 +1411,9 @@
       <Docs>
         <param name="disposing">
           <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.ToolStripItem" /> and optionally releases the managed resources.</summary>
+        <summary>
+             Disposes this ToolStrip item...
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1430,7 +1457,7 @@
         <ReturnType>System.Windows.Forms.DockStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets which <see cref="T:System.Windows.Forms.ToolStripItem" /> borders are docked to its parent control and determines how a <see cref="T:System.Windows.Forms.ToolStripItem" /> is resized with its parent.</summary>
+        <summary> This does not show up in the property grid because it only applies to flow and table layouts </summary>
         <value>One of the <see cref="T:System.Windows.Forms.DockStyle" /> values. The default is <see cref="F:System.Windows.Forms.DockStyle.None" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1465,7 +1492,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1478,7 +1505,14 @@
       <Docs>
         <param name="data">The object to be dragged.</param>
         <param name="allowedEffects">The drag operations that can occur.</param>
-        <summary>Begins a drag-and-drop operation.</summary>
+        <summary>
+             Begins a drag operation. The allowedEffects determine which
+             drag operations can occur. If the drag operation needs to interop
+             with applications in another process, data should either be
+             a base managed class (String, Bitmap, or Metafile) or some Object
+             that implements System.Runtime.Serialization.ISerializable. data can also be any Object that
+             implements System.Windows.Forms.IDataObject.
+            </summary>
         <returns>One of the <see cref="T:System.Windows.Forms.DragDropEffects" /> values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1507,7 +1541,9 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the item is double-clicked with the mouse.</summary>
+        <summary>
+             Occurs when the control is double clicked.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1574,7 +1610,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1618,7 +1654,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1691,7 +1727,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1761,7 +1797,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1838,7 +1874,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the parent control of the <see cref="T:System.Windows.Forms.ToolStripItem" /> is enabled.</summary>
+        <summary>
+             Occurs when the control is clicked.
+            </summary>
         <value>
           <see langword="true" /> if the parent control of the <see cref="T:System.Windows.Forms.ToolStripItem" /> is enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
@@ -1909,7 +1947,10 @@
         <ReturnType>System.Drawing.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the font of the text displayed by the item.</summary>
+        <summary>
+             Retrieves the current font for this control. This will be the font used
+             by default for painting and text in the control.
+            </summary>
         <value>The <see cref="T:System.Drawing.Font" /> to apply to the text displayed by the <see cref="T:System.Windows.Forms.ToolStripItem" />. The default is the value of the <see cref="P:System.Windows.Forms.Control.DefaultFont" /> property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1938,7 +1979,10 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the foreground color of the item.</summary>
+        <summary>
+             Retrieves the current font for this item. This will be the font used
+             by default for painting and text in the control.
+            </summary>
         <value>The foreground <see cref="T:System.Drawing.Color" /> of the item. The default is the value of the <see cref="P:System.Windows.Forms.Control.DefaultForeColor" /> property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2009,17 +2053,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolStrip</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves the <see cref="T:System.Windows.Forms.ToolStrip" /> that is the container of the current <see cref="T:System.Windows.Forms.ToolStripItem" />.</summary>
+        <summary> we dont want a public settable property... and usually owner will work
+             except for things like the overflow button</summary>
         <returns>A <see cref="T:System.Windows.Forms.ToolStrip" /> that is the container of the current <see cref="T:System.Windows.Forms.ToolStripItem" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2078,7 +2118,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2151,14 +2191,16 @@
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Always)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the height, in pixels, of a <see cref="T:System.Windows.Forms.ToolStripItem" />.</summary>
+        <summary>
+             The height of this control
+            </summary>
         <value>An <see cref="T:System.Int32" /> representing the height, in pixels.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2185,7 +2227,9 @@
         <ReturnType>System.Drawing.Image</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the image that is displayed on a <see cref="T:System.Windows.Forms.ToolStripItem" />.</summary>
+        <summary>
+             Gets or sets the image that is displayed on a <see cref="T:System.Windows.Forms.Label" />.
+            </summary>
         <value>The <see cref="T:System.Drawing.Image" /> to be displayed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2233,15 +2277,14 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.ContentAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the alignment of the image on a <see cref="T:System.Windows.Forms.ToolStripItem" />.</summary>
+        <summary>
+             Gets or sets the alignment of the image on the label control.
+            </summary>
         <value>One of the <see cref="T:System.Drawing.ContentAlignment" /> values. The default is <see cref="F:System.Drawing.ContentAlignment.MiddleLeft" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2303,9 +2346,6 @@
         <Attribute>
           <AttributeName>System.Windows.Forms.RelatedImageList("Owner.ImageList")</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
-          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.ToolStripImageIndexEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
-        </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
         </Attribute>
@@ -2314,7 +2354,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the index value of the image that is displayed on the item.</summary>
+        <summary>
+             Returns the ToolStripItem's currently set image index
+             Here for compat only - this is NOT to be visible at DT.
+            </summary>
         <value>The zero-based index of the image in the <see cref="P:System.Windows.Forms.ToolStrip.ImageList" /> that is displayed for the item. The default is -1, signifying that the image list is empty.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2366,9 +2409,6 @@
         <Attribute>
           <AttributeName>System.Windows.Forms.RelatedImageList("Owner.ImageList")</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
-          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.ToolStripImageIndexEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
-        </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
         </Attribute>
@@ -2377,7 +2417,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the key accessor for the image in the <see cref="P:System.Windows.Forms.ToolStrip.ImageList" /> that is displayed on a <see cref="T:System.Windows.Forms.ToolStripItem" />.</summary>
+        <summary>
+             Returns the ToolStripItem's currently set image index
+             Here for compat only - this is NOT to be visible at DT.
+            </summary>
         <value>A string representing the key of the image.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2426,9 +2469,6 @@
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2481,9 +2521,6 @@
         <Attribute>
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Color</ReturnType>
@@ -2532,7 +2569,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Invalidates the entire surface of the <see cref="T:System.Windows.Forms.ToolStripItem" /> and causes it to be redrawn.</summary>
+        <summary>
+             Invalidates the ToolStripItem
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2567,7 +2606,9 @@
       </Parameters>
       <Docs>
         <param name="r">A <see cref="T:System.Drawing.Rectangle" /> that represents the region to invalidate.</param>
-        <summary>Invalidates the specified region of the <see cref="T:System.Windows.Forms.ToolStripItem" /> by adding it to the update region of the <see cref="T:System.Windows.Forms.ToolStripItem" />, which is the area that will be repainted at the next paint operation, and causes a paint message to be sent to the <see cref="T:System.Windows.Forms.ToolStripItem" />.</summary>
+        <summary>
+             invalidates a rectangle within the ToolStripItem's bounds
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2755,7 +2796,10 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the location of a <see cref="T:System.Windows.Forms.ToolStripItem" /> is updated.</summary>
+        <summary>
+             Occurs when the location of the ToolStripItem has been updated -- usually by layout by its
+             owner of ToolStrips
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2798,7 +2842,9 @@
         <ReturnType>System.Windows.Forms.Padding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the space between the item and adjacent items.</summary>
+        <summary>
+             Specifies the external spacing between this item and any other item or the ToolStrip.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.Padding" /> representing the space between the item and adjacent items.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2825,7 +2871,9 @@
         <ReturnType>System.Windows.Forms.MergeAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets how child menus are merged with parent menus.</summary>
+        <summary>
+             Specifies the merge action when merging two ToolStrip.
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.MergeAction" /> values. The default is <see cref="F:System.Windows.Forms.MergeAction.MatchOnly" />.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value assigned is not one of the <see cref="T:System.Windows.Forms.MergeAction" /> values.</exception>
@@ -2853,7 +2901,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the position of a merged item within the current <see cref="T:System.Windows.Forms.ToolStrip" />.</summary>
+        <summary>
+             Specifies the merge action when merging two ToolStrip.
+            </summary>
         <value>An integer representing the index of the merged item, if a match is found, or -1 if a match is not found.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2890,7 +2940,10 @@
         <ReturnType>System.Windows.Forms.MouseEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the mouse pointer is over the item and a mouse button is pressed.</summary>
+        <summary>
+             Occurs when the mouse pointer is over the control and a mouse button is
+             pressed.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2946,7 +2999,9 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the mouse pointer enters the item.</summary>
+        <summary>
+             Occurs when the mouse pointer enters the control.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3002,7 +3057,9 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the mouse pointer hovers over the item.</summary>
+        <summary>
+             Occurs when the mouse pointer hovers over the contro.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3058,7 +3115,9 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the mouse pointer leaves the item.</summary>
+        <summary>
+             Occurs when the mouse pointer leaves the control.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3114,7 +3173,9 @@
         <ReturnType>System.Windows.Forms.MouseEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the mouse pointer is moved over the item.</summary>
+        <summary>
+             Occurs when the mouse pointer is moved over the control.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3170,7 +3231,9 @@
         <ReturnType>System.Windows.Forms.MouseEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the mouse pointer is over the item and a mouse button is released.</summary>
+        <summary>
+             Occurs when the mouse pointer is over the control and a mouse button is released.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3234,7 +3297,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the item.</summary>
+        <summary>
+             Name of this control. The designer will set this to the same
+             as the programatic Id "(name)" of the control.  The name can be
+             used as a key into the ControlCollection.
+            </summary>
         <value>A string representing the name. The default value is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3298,7 +3365,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3420,7 +3487,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3431,7 +3498,9 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripItem.DisplayStyleChanged" /> event.</summary>
+        <summary>
+             Inheriting classes should override this method to handle this event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3468,7 +3537,9 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripItem.DoubleClick" /> event.</summary>
+        <summary>
+             Inheriting classes should override this method to handle this event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3510,7 +3581,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3521,7 +3592,10 @@
       </Parameters>
       <Docs>
         <param name="dragEvent">A <see cref="T:System.Windows.Forms.DragEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripItem.DragDrop" /> event.</summary>
+        <summary>
+             Inheriting classes should override this method to handle this event.
+             Call base.onDragDrop to send this event to any registered event listeners.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3555,7 +3629,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3566,7 +3640,11 @@
       </Parameters>
       <Docs>
         <param name="dragEvent">A <see cref="T:System.Windows.Forms.DragEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripItem.DragEnter" /> event.</summary>
+        <summary>
+             Raises the <see cref="!:ToolStripItem.Enter" /> event.
+             Inheriting classes should override this method to handle this event.
+             Call base.onEnter to send this event to any registered event listeners.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3600,7 +3678,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3611,7 +3689,10 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripItem.DragLeave" /> event.</summary>
+        <summary>
+             Inheriting classes should override this method to handle this event.
+             Call base.onDragLeave to send this event to any registered event listeners.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3645,7 +3726,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3656,7 +3737,10 @@
       </Parameters>
       <Docs>
         <param name="dragEvent">A <see cref="T:System.Windows.Forms.DragEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripItem.DragOver" /> event.</summary>
+        <summary>
+             Inheriting classes should override this method to handle this event.
+             Call base.onDragOver to send this event to any registered event listeners.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3693,7 +3777,9 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripItem.EnabledChanged" /> event.</summary>
+        <summary>
+             Inheriting classes should override this method to handle this event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3724,7 +3810,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3766,7 +3852,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3801,6 +3887,9 @@
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnGiveFeedback(System::Windows::Forms::GiveFeedbackEventArgs ^ giveFeedbackEvent);" />
       <MemberSignature Language="F#" Value="abstract member OnGiveFeedback : System.Windows.Forms.GiveFeedbackEventArgs -&gt; unit&#xA;override this.OnGiveFeedback : System.Windows.Forms.GiveFeedbackEventArgs -&gt; unit" Usage="toolStripItem.OnGiveFeedback giveFeedbackEvent" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Forms.ISupportOleDropSource.OnGiveFeedback(System.Windows.Forms.GiveFeedbackEventArgs)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -3808,7 +3897,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3819,7 +3908,10 @@
       </Parameters>
       <Docs>
         <param name="giveFeedbackEvent">A <see cref="T:System.Windows.Forms.GiveFeedbackEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripItem.GiveFeedback" /> event.</summary>
+        <summary>
+             Inheriting classes should override this method to handle this event.
+             Call base.onGiveFeedback to send this event to any registered event listeners.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3932,7 +4024,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripItem.MouseDown" /> event.</summary>
+        <summary>
+             Inheriting classes should override this method to handle this event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3969,7 +4063,9 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripItem.MouseEnter" /> event.</summary>
+        <summary>
+             Inheriting classes should override this method to handle this event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4014,7 +4110,9 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripItem.MouseHover" /> event.</summary>
+        <summary>
+             Inheriting classes should override this method to handle this event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4051,7 +4149,9 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripItem.MouseLeave" /> event.</summary>
+        <summary>
+             Inheriting classes should override this method to handle this event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4096,7 +4196,9 @@
       </Parameters>
       <Docs>
         <param name="mea">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripItem.MouseMove" /> event.</summary>
+        <summary>
+             Inheriting classes should override this method to handle this event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4133,7 +4235,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripItem.MouseUp" /> event.</summary>
+        <summary>
+             Inheriting classes should override this method to handle this event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4170,7 +4274,9 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripItem.OwnerChanged" /> event.</summary>
+        <summary>
+             Occurs when the owner of an item changes.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4201,7 +4307,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4212,7 +4318,10 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.FontChanged" /> event when the <see cref="P:System.Windows.Forms.ToolStripItem.Font" /> property has changed on the parent of the <see cref="T:System.Windows.Forms.ToolStripItem" />.</summary>
+        <summary>
+             Occurs when the font property has changed on the parent - used to notify inheritors of the font property that
+             the font has changed
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4251,7 +4360,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripItem.Paint" /> event.</summary>
+        <summary>
+             Inheriting classes should override this method to handle this event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4290,7 +4401,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4340,7 +4451,9 @@
       <Docs>
         <param name="oldParent">The original parent of the item.</param>
         <param name="newParent">The new parent of the item.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.ParentChanged" /> event.</summary>
+        <summary>
+             Inheriting classes should override this method to handle this event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4377,7 +4490,9 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripItem.EnabledChanged" /> event when the <see cref="P:System.Windows.Forms.ToolStripItem.Enabled" /> property value of the item's container changes.</summary>
+        <summary>
+             Occurs when this.Parent.Enabled changes.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4408,7 +4523,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4450,7 +4565,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4485,6 +4600,9 @@
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnQueryContinueDrag(System::Windows::Forms::QueryContinueDragEventArgs ^ queryContinueDragEvent);" />
       <MemberSignature Language="F#" Value="abstract member OnQueryContinueDrag : System.Windows.Forms.QueryContinueDragEventArgs -&gt; unit&#xA;override this.OnQueryContinueDrag : System.Windows.Forms.QueryContinueDragEventArgs -&gt; unit" Usage="toolStripItem.OnQueryContinueDrag queryContinueDragEvent" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Windows.Forms.ISupportOleDropSource.OnQueryContinueDrag(System.Windows.Forms.QueryContinueDragEventArgs)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -4492,7 +4610,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4503,7 +4621,10 @@
       </Parameters>
       <Docs>
         <param name="queryContinueDragEvent">A <see cref="T:System.Windows.Forms.QueryContinueDragEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripItem.QueryContinueDrag" /> event.</summary>
+        <summary>
+             Inheriting classes should override this method to handle this event.
+             Call base.onQueryContinueDrag to send this event to any registered event listeners.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4540,7 +4661,9 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripItem.RightToLeftChanged" /> event.</summary>
+        <summary>
+             Inheriting classes should override this method to handle this event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4571,7 +4694,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4619,7 +4742,9 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripItem.VisibleChanged" /> event.</summary>
+        <summary>
+             Inheriting classes should override this method to handle this event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4652,15 +4777,15 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolStripItemOverflow</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets whether the item is attached to the <see cref="T:System.Windows.Forms.ToolStrip" /> or <see cref="T:System.Windows.Forms.ToolStripOverflowButton" /> or can float between the two.</summary>
+        <summary>
+             Specifies whether or not the item is glued to the ToolStrip or overflow or
+             can float between the two.
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.ToolStripItemOverflow" /> values. The default is <see cref="F:System.Windows.Forms.ToolStripItemOverflow.AsNeeded" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4702,15 +4827,16 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolStrip</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the owner of this item.</summary>
+        <summary>
+             The owner of this ToolStripItem.  The owner is essentially a backpointer to
+             the ToolStrip who contains this item in it's item collection.  Handy for getting
+             to things such as the ImageList, which would be defined on the ToolStrip.
+            </summary>
         <value>The <see cref="T:System.Windows.Forms.ToolStrip" /> that owns or is to own the <see cref="T:System.Windows.Forms.ToolStripItem" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4798,7 +4924,8 @@
         <ReturnType>System.Windows.Forms.ToolStripItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the parent <see cref="T:System.Windows.Forms.ToolStripItem" /> of this <see cref="T:System.Windows.Forms.ToolStripItem" />.</summary>
+        <summary> returns the "parent" item on the preceeding menu which has spawned this item.
+             e.g.  File-&gt;Open  the OwnerItem of Open is File. </summary>
         <value>The parent <see cref="T:System.Windows.Forms.ToolStripItem" /> of this <see cref="T:System.Windows.Forms.ToolStripItem" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4823,16 +4950,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Padding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the internal spacing, in pixels, between the item's contents and its edges.</summary>
+        <summary>
+             Specifies the internal spacing between the contents and the edges of the item
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.Padding" /> representing the item's internal spacing, in pixels.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -4895,18 +5019,19 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolStrip</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the parent container of the <see cref="T:System.Windows.Forms.ToolStripItem" />.</summary>
+        <summary>
+             The parent of this ToolStripItem.  This can be distinct from the owner because
+             the item can fall onto another window (overflow).  In this case the overflow
+             would be the parent but the original ToolStrip would be the Owner.  The "parent"
+             ToolStrip will be firing things like paint events - where as the "owner" ToolStrip
+             will be containing shared data like image lists.  Typically the only one who should
+             set the parent property is the layout manager on the ToolStrip.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.ToolStrip" /> that is the parent container of the <see cref="T:System.Windows.Forms.ToolStripItem" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -4959,15 +5084,14 @@
         <Attribute>
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolStripItemPlacement</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current layout of the item.</summary>
+        <summary>
+             Where the item actually ended up.
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.ToolStripItemPlacement" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -5012,7 +5136,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the state of the item is pressed.</summary>
+        <summary>
+             Returns true if the state of the item is pushed
+            </summary>
         <value>
           <see langword="true" /> if the state of the item is pressed; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -5041,7 +5167,9 @@
       <Docs>
         <param name="m">A <see cref="T:System.Windows.Forms.Message" />, passed by reference, that represents the window message to process.</param>
         <param name="keyData">One of the <see cref="T:System.Windows.Forms.Keys" /> values that represents the key to process.</param>
-        <summary>Processes a command key.</summary>
+        <summary>
+             See Control.ProcessCmdKey for more info.
+            </summary>
         <returns>
           <see langword="false" /> in all cases.</returns>
         <remarks>
@@ -5081,7 +5209,9 @@
       </Parameters>
       <Docs>
         <param name="keyData">One of the <see cref="T:System.Windows.Forms.Keys" /> values that represents the key to process.</param>
-        <summary>Processes a dialog key.</summary>
+        <summary>
+             See Control.ProcessDialogKey for more info.
+            </summary>
         <returns>
           <see langword="true" /> if the key was processed by the item; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -5193,7 +5323,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -5260,7 +5390,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -5268,7 +5398,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>This method is not relevant to this class.</summary>
+        <summary>
+             Resets the back color to be based on the parent's back color.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -5294,7 +5426,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -5328,10 +5460,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -5339,7 +5468,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>This method is not relevant to this class.</summary>
+        <summary>
+             Resets the Font to be based on the parent's Font.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -5365,7 +5496,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -5373,7 +5504,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>This method is not relevant to this class.</summary>
+        <summary>
+             Resets the fore color to be based on the parent's fore color.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -5399,10 +5532,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -5410,7 +5540,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>This method is not relevant to this class.</summary>
+        <summary>
+             Resets the back color to be based on the parent's back color.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -5436,7 +5568,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -5470,7 +5602,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -5504,10 +5636,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -5515,7 +5644,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>This method is not relevant to this class.</summary>
+        <summary>
+             Resets the RightToLeft to be the default.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -5541,10 +5672,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -5552,7 +5680,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>This method is not relevant to this class.</summary>
+        <summary>
+             Resets the TextDirection to be the default.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -5585,7 +5715,11 @@
         <ReturnType>System.Windows.Forms.RightToLeft</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether items are to be placed from right to left and text is to be written from right to left.</summary>
+        <summary>
+             This is used for international applications where the language
+             is written from RightToLeft. When this property is true,
+             control placement and text will be from right to left.
+            </summary>
         <value>
           <see langword="true" /> if items are to be placed from right to left and text is to be written from right to left; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -5616,7 +5750,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Mirrors automatically the <see cref="T:System.Windows.Forms.ToolStripItem" /> image when the <see cref="P:System.Windows.Forms.ToolStripItem.RightToLeft" /> property is set to <see cref="F:System.Windows.Forms.RightToLeft.Yes" />.</summary>
+        <summary>
+              Mirrors the image when RTL.Yes.
+              Note we do not change what is returned back from the Image property as this would cause problems with serialization.
+              Instead we only change what is painted - there's an internal MirroredImage property which fills in as
+              e.Image in the ToolStripItemImageRenderEventArgs if the item is RTL.Yes and AutoMirrorImage is turned on.
+            </summary>
         <value>
           <see langword="true" /> to automatically mirror the image; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
@@ -5731,7 +5870,23 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the item is selected.</summary>
+        <summary>
+              if the item is selected we return true.
+            
+              FAQ: Why dont we have a Hot or MouseIsOver property?
+              After going through the scenarios, we've decided NOT to add a separate MouseIsOver or Hot flag to ToolStripItem.  The thing to use is 'Selected'.
+              Why?  While the selected thing can be different than the moused over item, the selected item is ALWAYS the one you want to paint differently
+            
+              Scenario 1:  Keyboard select an item then select a different item with the mouse.
+              -          Do Alt+F to expand your File menu, keyboard down several items.
+              -          Mouse over a different item
+              -          Notice how two things are never painted hot at the same time, and how the selection changes from the keyboard selected item to the one selected with the mouse.  In  this case the selection should move with the mouse selection.
+              -          Notice how if you hit enter when the mouse is over it, it executes the item.  That's selection.
+              Scenario 2: Put focus into a combo box, then mouse over a different item
+              -          Notice how all the other items you mouse over do not change the way they are painted, if you hit enter, that goes to the combobox, rather than executing the current item.
+            
+              At first look "MouseIsOver" or "Hot" seems to be the thing people want, but its almost never the desired behavior.  A unified selection model is simpler and seems to meet the scenarios.
+             </summary>
         <value>
           <see langword="true" /> if the <see cref="T:System.Windows.Forms.ToolStripItem" /> is selected; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -5768,7 +5923,9 @@
       </Parameters>
       <Docs>
         <param name="bounds">A <see cref="T:System.Drawing.Rectangle" /> that represents the size and location of the <see cref="T:System.Windows.Forms.ToolStripItem" /></param>
-        <summary>Sets the size and location of the item.</summary>
+        <summary>
+             Sets the bounds of the item
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Windows.Forms.ToolStripItem.Bounds" />
       </Docs>
@@ -5837,6 +5994,7 @@
   
  ]]></format>
         </remarks>
+        <devdoc />
       </Docs>
     </Member>
     <Member MemberName="Size">
@@ -5861,7 +6019,7 @@
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the size of the item.</summary>
+        <summary>The size of the item</summary>
         <value>A <see cref="T:System.Drawing.Size" />, representing the width and height of a rectangle.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -5881,11 +6039,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -5925,11 +6078,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -5969,11 +6117,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -6013,11 +6156,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -6073,7 +6211,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the object that contains data about the item.</summary>
+        <summary>Summary for Tag</summary>
         <value>An <see cref="T:System.Object" /> that contains data about the control. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -6113,7 +6251,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text that is to be displayed on the item.</summary>
+        <summary>The text of the item</summary>
         <value>A string representing the item's text. The default value is the empty string ("").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -6156,15 +6294,14 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.ContentAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the alignment of the text on a <see cref="T:System.Windows.Forms.ToolStripLabel" />.</summary>
+        <summary>
+             Gets or sets the alignment of the text on the label control.
+            </summary>
         <value>One of the <see cref="T:System.Drawing.ContentAlignment" /> values. The default is <see cref="F:System.Drawing.ContentAlignment.MiddleRight" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -6281,9 +6418,6 @@
         <Attribute>
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TextImageRelation</ReturnType>
@@ -6321,18 +6455,15 @@
         <Attribute>
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
-          <AttributeName>System.ComponentModel.Editor("System.ComponentModel.Design.MultilineStringEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text that appears as a <see cref="T:System.Windows.Forms.ToolTip" /> for a control.</summary>
+        <summary>
+             !!!!This property ONLY works when toolStrip.ShowItemToolTips = true!!!!
+             if AutoToolTip is set to true we return the Text as the ToolTipText.
+            </summary>
         <value>A string representing the ToolTip text.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -6371,7 +6502,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a <see cref="T:System.String" /> containing the name of the <see cref="T:System.ComponentModel.Component" />, if any. This method should not be overridden.</summary>
+        <summary>
+             ToString support
+            </summary>
         <returns>A <see cref="T:System.String" /> containing the name of the <see cref="T:System.ComponentModel.Component" />, if any, or <see langword="null" /> if the <see cref="T:System.ComponentModel.Component" /> is unnamed.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.ComponentModel.Component.ToString" />
@@ -6394,15 +6527,12 @@
         <Attribute>
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the item is displayed.</summary>
+        <summary>Whether or not the item is visible</summary>
         <value>
           <see langword="true" /> if the item is displayed; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -6470,14 +6600,16 @@
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Always)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the width in pixels of a <see cref="T:System.Windows.Forms.ToolStripItem" />.</summary>
+        <summary>
+             The width of this ToolStripItem.
+            </summary>
         <value>An <see cref="T:System.Int32" /> representing the width in pixels.</value>
         <remarks>To be added.</remarks>
       </Docs>

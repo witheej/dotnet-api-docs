@@ -1,4 +1,4 @@
-﻿<Type Name="DataGridView+DataGridViewControlCollection" FullName="System.Windows.Forms.DataGridView+DataGridViewControlCollection">
+<Type Name="DataGridView+DataGridViewControlCollection" FullName="System.Windows.Forms.DataGridView+DataGridViewControlCollection">
   <TypeSignature Language="C#" Value="public class DataGridView.DataGridViewControlCollection : System.Windows.Forms.Control.ControlCollection" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit DataGridView/DataGridViewControlCollection extends System.Windows.Forms.Control/ControlCollection" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridView.DataGridViewControlCollection" />
@@ -49,11 +49,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="owner" Type="System.Windows.Forms.DataGridView" />
       </Parameters>

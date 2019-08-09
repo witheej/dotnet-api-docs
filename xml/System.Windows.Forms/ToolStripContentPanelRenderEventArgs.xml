@@ -1,4 +1,4 @@
-﻿<Type Name="ToolStripContentPanelRenderEventArgs" FullName="System.Windows.Forms.ToolStripContentPanelRenderEventArgs">
+<Type Name="ToolStripContentPanelRenderEventArgs" FullName="System.Windows.Forms.ToolStripContentPanelRenderEventArgs">
   <TypeSignature Language="C#" Value="public class ToolStripContentPanelRenderEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolStripContentPanelRenderEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripContentPanelRenderEventArgs" />
@@ -44,11 +44,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="g" Type="System.Drawing.Graphics" />
         <Parameter Name="contentPanel" Type="System.Windows.Forms.ToolStripContentPanel" />
@@ -56,7 +51,9 @@
       <Docs>
         <param name="g">A <see cref="T:System.Drawing.Graphics" /> representing the GDI+ drawing surface.</param>
         <param name="contentPanel">The <see cref="T:System.Windows.Forms.ToolStripContentPanel" /> to render.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripContentPanelRenderEventArgs" /> class.</summary>
+        <summary>
+             This class represents all the information to render the toolStrip
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -73,16 +70,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Graphics</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the object to use for drawing.</summary>
+        <summary>
+             The graphics object to draw with
+            </summary>
         <value>The <see cref="T:System.Drawing.Graphics" /> to use for drawing.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -112,14 +106,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -155,16 +141,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolStripContentPanel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Forms.ToolStripContentPanel" /> affected by the click.</summary>
+        <summary>
+             Represents which toolStrip was affected by the click
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.ToolStripContentPanel" /> object affected by the click.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

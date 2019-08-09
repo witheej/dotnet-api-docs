@@ -1,4 +1,4 @@
-﻿<Type Name="VScrollBar" FullName="System.Windows.Forms.VScrollBar">
+<Type Name="VScrollBar" FullName="System.Windows.Forms.VScrollBar">
   <TypeSignature Language="C#" Value="public class VScrollBar : System.Windows.Forms.ScrollBar" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VScrollBar extends System.Windows.Forms.ScrollBar" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VScrollBar" />
@@ -24,7 +24,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a standard Windows vertical scroll bar.</summary>
+    <summary>
+             Represents a standard Windows vertical scroll bar.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -61,11 +63,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.VScrollBar" /> class.</summary>
@@ -139,7 +136,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -177,7 +174,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

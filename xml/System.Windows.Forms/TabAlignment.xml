@@ -1,4 +1,4 @@
-﻿<Type Name="TabAlignment" FullName="System.Windows.Forms.TabAlignment">
+<Type Name="TabAlignment" FullName="System.Windows.Forms.TabAlignment">
   <TypeSignature Language="C#" Value="public enum TabAlignment" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TabAlignment extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TabAlignment" />
@@ -15,7 +15,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the locations of the tabs in a tab control.</summary>
+    <summary>
+             Controls where the tabs will be located in a Tab Control.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -55,7 +57,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The tabs are located across the bottom of the control.</summary>
+        <summary>
+             Tabs will be located across the bottom of the control.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -77,7 +81,9 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>The tabs are located along the left edge of the control.</summary>
+        <summary>
+             Tabs will be located along the left edge of the control.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -99,7 +105,9 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>The tabs are located along the right edge of the control.</summary>
+        <summary>
+             Tabs will be located along the right edge of the control.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Top">
@@ -121,7 +129,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>The tabs are located across the top of the control.</summary>
+        <summary>
+             Tabs will be located across the top of the control.
+            </summary>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="SnapLinePriority" FullName="System.Windows.Forms.Design.Behavior.SnapLinePriority">
+<Type Name="SnapLinePriority" FullName="System.Windows.Forms.Design.Behavior.SnapLinePriority">
   <TypeSignature Language="C#" Value="public enum SnapLinePriority" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SnapLinePriority extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.Behavior.SnapLinePriority" />
@@ -18,7 +18,11 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the relative importance of a snapline.</summary>
+    <summary>
+             Defines the Priority of a SnapLine.  During the drag operation, when more than
+             one SnapLine is visible at any given time - only the highest priority SnapLines
+             are rendered.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

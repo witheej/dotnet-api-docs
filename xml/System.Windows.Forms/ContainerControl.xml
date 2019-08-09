@@ -1,4 +1,4 @@
-﻿<Type Name="ContainerControl" FullName="System.Windows.Forms.ContainerControl">
+<Type Name="ContainerControl" FullName="System.Windows.Forms.ContainerControl">
   <TypeSignature Language="C#" Value="public class ContainerControl : System.Windows.Forms.ScrollableControl, System.Windows.Forms.IContainerControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContainerControl extends System.Windows.Forms.ScrollableControl implements class System.Windows.Forms.IContainerControl" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ContainerControl" />
@@ -28,7 +28,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides focus-management functionality for controls that can function as a container for other controls.</summary>
+    <summary>
+             Defines a base class for controls that can parent other controls.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -66,7 +68,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ContainerControl" /> class.</summary>
+        <summary>
+             Initializes a new instance of the <see cref="T:System.Windows.Forms.ContainerControl" /> class.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -105,18 +109,14 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Control</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the active control on the container control.</summary>
+        <summary>
+             Indicates the current active control on the container control.
+            </summary>
         <value>The <see cref="T:System.Windows.Forms.Control" /> that is currently active on the <see cref="T:System.Windows.Forms.ContainerControl" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -158,7 +158,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -198,18 +198,22 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.SizeF</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the dimensions that the control was designed to.</summary>
+        <summary>
+             AutoScaleDimensions represents the DPI or Font setting that the control has been scaled
+             to or designed at. Specifically, at design time this property will be set by the
+             designer to the value that the developer is designing at. Then, at runtime, when the
+             form loads if the CurrentAutoScaleDimensions are different from the AutoScaleDimensions,
+             PerformAutoScale will be called and AutoScaleDimensions will be set to the new value to
+             match the CurrentAutoScaleDimensions by PerformAutoScale.
+            </summary>
         <value>A <see cref="T:System.Drawing.SizeF" /> containing the dots per inch (DPI) or <see cref="T:System.Drawing.Font" /> size that the control was designed to.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -245,7 +249,12 @@
         <ReturnType>System.Drawing.SizeF</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the scaling factor between the current and design-time automatic scaling dimensions.</summary>
+        <summary>
+             AutoScaleFactor represents the scaling factor difference between
+             CurrentAutoScaleDimensions and AutoScaleDimensions. This value is
+             calculated on the fly. Eg: If CurrentAutoScaleDimensions is 192, 192
+             and AutoScaleDimensions is 96, 96 then the AutoScaleFactor is 2.0, 2.0
+            </summary>
         <value>A <see cref="T:System.Drawing.SizeF" /> containing the scaling ratio between the current and design-time scaling automatic scaling dimensions.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -283,18 +292,23 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AutoScaleMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the automatic scaling mode of the control.</summary>
+        <summary>
+             Determines the scaling mode of this control. The default is no scaling.
+             Scaling by Font is useful if you wish to have a control
+             or form stretch or shrink according to the size of the fonts in the system, and should
+             be used when the control or form's size itself does not matter.
+             Scaling by DPI is useful when you wish to keep a control or form a specific size
+             independent of font. for example, a control displaying a chart or other graphic
+             may want to use DPI scaling to increase in size to account for higher DPI monitors.
+            </summary>
         <value>An <see cref="T:System.Windows.Forms.AutoScaleMode" /> that represents the current scaling mode. The default is <see cref="F:System.Windows.Forms.AutoScaleMode.None" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -333,15 +347,17 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AutoValidate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether controls in this container will be automatically validated when the focus changes.</summary>
+        <summary>
+             Indicates whether controls in this container will be automatically validated when the focus changes.
+            </summary>
         <value>An <see cref="T:System.Windows.Forms.AutoValidate" /> enumerated value that indicates whether contained controls are implicitly validated on focus change. The default is <see cref="F:System.Windows.Forms.AutoValidate.Inherit" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -384,8 +400,8 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -433,7 +449,9 @@
         <ReturnType>System.Windows.Forms.BindingContext</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Windows.Forms.BindingContext" /> for the control.</summary>
+        <summary>
+             The binding manager for the container control.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.BindingContext" /> for the control.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Windows.Forms.Control.BindingContext" />
@@ -456,7 +474,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="P:System.Windows.Forms.Control.ImeMode" /> property can be set to an active value, to enable IME support.</summary>
+        <summary>
+             Container controls support ImeMode only to allow child controls to inherit it from their parents.
+            </summary>
         <value>
           <see langword="false" /> in all cases.</value>
         <remarks>
@@ -511,15 +531,18 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.SizeF</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current run-time dimensions of the screen.</summary>
+        <summary>
+             Represent the actual DPI or Font settings of the display at runtime. If the AutoScaleMode
+             is set to 'None' then the CurrentAutoScaleDimensions is equal to the ActualScaleDimensions.
+            </summary>
         <value>A <see cref="T:System.Drawing.SizeF" /> containing the current dots per inch (DPI) or <see cref="T:System.Drawing.Font" /> size of the screen.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -569,7 +592,9 @@
       <Docs>
         <param name="disposing">
           <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.Control" /> and its child controls and optionally releases the managed resources.</summary>
+        <summary>
+             Disposes of the resources (other than memory) used by the <see cref="T:System.Windows.Forms.ContainerControl" />.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.Control.Dispose(System.Boolean)" />
       </Docs>
@@ -591,11 +616,13 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.EventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ContainerControl.AutoValidateChanged" /> event.</summary>
+        <summary>
+             Raises the AutoValidateChanged event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -634,7 +661,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Raises the <see cref="M:System.Windows.Forms.Control.CreateControl" /> method.</summary>
+        <summary>
+             Raises the CreateControl event.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.Control.OnCreateControl" />
       </Docs>
@@ -653,19 +682,21 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.EventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.FontChanged" /> event.</summary>
+        <summary>
+             We override this to clear the current autoscale cache.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -703,11 +734,13 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.Windows.Forms.LayoutEventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="e" Type="System.Windows.Forms.LayoutEventArgs" />
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.LayoutEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Layout" /> event.</summary>
+        <summary>
+             Container controls scale during layout.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -728,11 +761,17 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.EventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.ParentChanged" /> event.</summary>
+        <summary>
+             Called when the parent changes. Container controls prefer to have their parents scale
+             themselves, but when a parent is first changed, and as a result the font changes as
+             well, a container control should scale itself. We save off this state so a later
+             font change can trigger a scale of us. We only set this state if required scaling is
+             disabled:  if it is enabled we are still initializing and parent changes are normal.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.Control.OnParentChanged(System.EventArgs)" />
       </Docs>
@@ -763,7 +802,9 @@
         <ReturnType>System.Windows.Forms.Form</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the form that the container control is assigned to.</summary>
+        <summary>
+             Indicates the form that the scrollable control is assigned to. This property is read-only.
+            </summary>
         <value>The <see cref="T:System.Windows.Forms.Form" /> that the container control is assigned to. This property will return null if the control is hosted inside of Internet Explorer or in another hosting context where there is no parent form.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -798,17 +839,16 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Performs scaling of the container control and its children.</summary>
+        <summary>
+             Performs scaling of this control. Scaling works by scaling all children of this control.
+             Those children that are ContainerControls will have their PerformAutoScale method called
+             so they can scale their children.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -844,8 +884,8 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="msg" Type="System.Windows.Forms.Message" RefType="ref" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="keyData" Type="System.Windows.Forms.Keys" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="msg" Type="System.Windows.Forms.Message" RefType="ref" />
+        <Parameter Name="keyData" Type="System.Windows.Forms.Keys" />
       </Parameters>
       <Docs>
         <param name="msg">A <see cref="T:System.Windows.Forms.Message" />, passed by reference, that represents the window message to process.</param>
@@ -873,7 +913,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -884,7 +924,12 @@
       </Parameters>
       <Docs>
         <param name="charCode">The character to process.</param>
-        <summary>Processes a dialog character.</summary>
+        <summary>
+             Processes a dialog character. Overrides Control.processDialogChar(). This method calls
+             the ProcessMnemonic() method to check if the character is a mnemonic for one of the
+             controls on the form. If processMnemonic() does not consume the character, then
+             base.ProcessDialogChar() is called.
+            </summary>
         <returns>
           <see langword="true" /> if the character was processed by the control; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -913,7 +958,12 @@
       </Parameters>
       <Docs>
         <param name="keyData">One of the <see cref="T:System.Windows.Forms.Keys" /> values that represents the key to process.</param>
-        <summary>Processes a dialog key.</summary>
+        <summary>
+             Processes a dialog key. Overrides Control.processDialogKey(). This method implements
+             handling of the TAB, LEFT, RIGHT, UP, and DOWN keys in dialogs.
+             The method performs no processing on keys that include the ALT or CONTROL modifiers.
+             For the TAB key, the method selects the next control on the form. For the arrow keys, !!!
+            </summary>
         <returns>
           <see langword="true" /> if the key was processed by the control; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -972,7 +1022,9 @@
       <Docs>
         <param name="forward">
           <see langword="true" /> to cycle forward through the controls in the <see cref="T:System.Windows.Forms.ContainerControl" />; otherwise, <see langword="false" />.</param>
-        <summary>Selects the next available control and makes it the active control.</summary>
+        <summary>
+             Selects the next available control and makes it the active control.
+            </summary>
         <returns>
           <see langword="true" /> if a control is selected; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -1040,7 +1092,9 @@
       </Parameters>
       <Docs>
         <param name="control">The <see cref="T:System.Windows.Forms.Control" /> to activate.</param>
-        <summary>Activates the specified control.</summary>
+        <summary>
+             Activates the specified control.
+            </summary>
         <returns>
           <see langword="true" /> if the control is successfully activated; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -1082,7 +1136,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden by a derived class, updates which button is the default button.</summary>
+        <summary>
+             Updates the default button based on current selection, and the acceptButton property.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1116,27 +1172,23 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Verifies the value of the control losing focus by causing the <see cref="E:System.Windows.Forms.Control.Validating" /> and <see cref="E:System.Windows.Forms.Control.Validated" /> events to occur, in that order.</summary>
+        <summary>
+              Validates the last unvalidated control and its ancestors up through, but not including the current control.
+            
+              This version always performs validation, regardless of the AutoValidate setting of the control's parent.
+             </summary>
         <returns>
           <see langword="true" /> if validation is successful; otherwise, <see langword="false" />. If called from the <see cref="E:System.Windows.Forms.Control.Validating" /> or <see cref="E:System.Windows.Forms.Control.Validated" /> event handlers, this method will always return <see langword="false" />.</returns>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The <xref:System.Windows.Forms.ContainerControl.Validate%2A> method validates the last child control that is not validated and its ancestors up through, but not including, the current container control. This overloaded version always performs validation, regardless of the value of the <xref:System.Windows.Forms.ContainerControl.AutoValidate%2A> property of the control's parent. Therefore use it to unconditionally force validation.  
-  
- ]]></format>
-        </remarks>
+              This version is intended for user code that wants to force validation, even
+              while auto-validation is turned off. When adding any explicit Validate() calls to our code, consider using
+              Validate(true) rather than Validate(), so that you will be sensitive to the current auto-validation setting.
+             </remarks>
         <altmember cref="M:System.Windows.Forms.ContainerControl.ValidateChildren" />
         <altmember cref="P:System.Windows.Forms.ContainerControl.AutoValidate" />
         <altmember cref="E:System.Windows.Forms.ContainerControl.AutoValidateChanged" />
@@ -1159,7 +1211,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="checkAutoValidate" Type="System.Boolean" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="checkAutoValidate" Type="System.Boolean" />
       </Parameters>
       <Docs>
         <param name="checkAutoValidate">If <see langword="true" />, the value of the <see cref="P:System.Windows.Forms.ContainerControl.AutoValidate" /> property is used to determine if validation should be performed; if <see langword="false" />, validation is unconditionally performed.</param>
@@ -1210,11 +1262,8 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1222,7 +1271,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Causes all of the child controls within a control that support validation to validate their data.</summary>
+        <summary>
+             Validates all selectable child controls in the container, including descendants. This is
+             equivalent to calling ValidateChildren(ValidationConstraints.Selectable). See <see cref="F:System.Windows.Forms.ValidationConstraints.Selectable" />
+             for details of exactly which child controls will be validated.
+            </summary>
         <returns>
           <see langword="true" /> if all of the children validated successfully; otherwise, <see langword="false" />. If called from the <see cref="E:System.Windows.Forms.Control.Validating" /> or <see cref="E:System.Windows.Forms.Control.Validated" /> event handlers, this method will always return <see langword="false" />.</returns>
         <remarks>
@@ -1263,19 +1316,22 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="validationConstraints" Type="System.Windows.Forms.ValidationConstraints" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="validationConstraints" Type="System.Windows.Forms.ValidationConstraints" />
       </Parameters>
       <Docs>
         <param name="validationConstraints">Places restrictions on which controls have their <see cref="E:System.Windows.Forms.Control.Validating" /> event raised.</param>
-        <summary>Causes all of the child controls within a control that support validation to validate their data.</summary>
+        <summary>
+             Validates all the child controls in the container. Exactly which controls are
+             validated and which controls are skipped is determined by <paramref name="flags" />.
+            </summary>
         <returns>
           <see langword="true" /> if all of the children validated successfully; otherwise, <see langword="false" />. If called from the <see cref="E:System.Windows.Forms.Control.Validating" /> or <see cref="E:System.Windows.Forms.Control.Validated" /> event handlers, this method will always return <see langword="false" />.</returns>
         <remarks>
@@ -1320,7 +1376,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

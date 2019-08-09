@@ -1,4 +1,4 @@
-﻿<Type Name="DomainUpDown+DomainUpDownAccessibleObject" FullName="System.Windows.Forms.DomainUpDown+DomainUpDownAccessibleObject">
+<Type Name="DomainUpDown+DomainUpDownAccessibleObject" FullName="System.Windows.Forms.DomainUpDown+DomainUpDownAccessibleObject">
   <TypeSignature Language="C#" Value="public class DomainUpDown.DomainUpDownAccessibleObject : System.Windows.Forms.Control.ControlAccessibleObject" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit DomainUpDown/DomainUpDownAccessibleObject extends System.Windows.Forms.Control/ControlAccessibleObject" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DomainUpDown.DomainUpDownAccessibleObject" />
@@ -51,17 +51,12 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="owner" Type="System.Windows.Forms.Control" />
       </Parameters>
       <Docs>
         <param name="owner">The <see cref="T:System.Windows.Forms.Control" /> that owns the <see cref="T:System.Windows.Forms.Control.ControlAccessibleObject" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DomainUpDown.DomainUpDownAccessibleObject" /> class.</summary>
+        <summary />
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -88,7 +83,7 @@
       </Parameters>
       <Docs>
         <param name="index">The zero-based index of the accessible child.</param>
-        <summary>Gets the accessible child corresponding to the specified index.</summary>
+        <summary />
         <returns>An <see cref="T:System.Windows.Forms.AccessibleObject" /> that represents the accessible child corresponding to the specified index.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -126,7 +121,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves the number of children belonging to an accessible object.</summary>
+        <summary />
         <returns>Returns 3 in all cases.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
@@ -148,7 +143,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the control that the accessible object describes.</summary>
+        <summary>
+             Gets or sets the accessible name.
+            </summary>
         <value>The name of the control that the accessible object describes.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

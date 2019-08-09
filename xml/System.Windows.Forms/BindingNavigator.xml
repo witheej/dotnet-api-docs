@@ -1,4 +1,4 @@
-﻿<Type Name="BindingNavigator" FullName="System.Windows.Forms.BindingNavigator">
+<Type Name="BindingNavigator" FullName="System.Windows.Forms.BindingNavigator">
   <TypeSignature Language="C#" Value="public class BindingNavigator : System.Windows.Forms.ToolStrip, System.ComponentModel.ISupportInitialize" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BindingNavigator extends System.Windows.Forms.ToolStrip implements class System.ComponentModel.ISupportInitialize" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.BindingNavigator" />
@@ -30,9 +30,6 @@
     </Attribute>
     <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
-    </Attribute>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
-      <AttributeName>System.ComponentModel.Designer("System.Windows.Forms.Design.BindingNavigatorDesigner, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
     </Attribute>
     <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
       <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
@@ -104,15 +101,15 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.BindingNavigator" /> class.</summary>
+        <summary>
+             Creates an empty BindingNavigator tool strip.
+             Call AddStandardItems() to add standard tool strip items.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -144,7 +141,9 @@
       <Docs>
         <param name="addStandardItems">
           <see langword="true" /> to show the standard navigational UI; otherwise, <see langword="false" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.BindingNavigator" /> class, indicating whether to display the standard navigation user interface (UI).</summary>
+        <summary>
+             Creates a BindingNavigator strip, optionally containing a set of standard tool strip items.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -172,7 +171,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <Parameters>
@@ -180,7 +179,10 @@
       </Parameters>
       <Docs>
         <param name="container">The <see cref="T:System.ComponentModel.IContainer" /> to add the new <see cref="T:System.Windows.Forms.BindingNavigator" /> control to.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.BindingNavigator" /> class and adds this new instance to the specified container.</summary>
+        <summary>
+             Creates an empty BindingNavigator tool strip, and adds the strip to the specified container.
+             Call AddStandardItems() to add standard tool strip items.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -210,7 +212,9 @@
       </Parameters>
       <Docs>
         <param name="bindingSource">The <see cref="T:System.Windows.Forms.BindingSource" /> used as a data source.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.BindingNavigator" /> class with the specified <see cref="T:System.Windows.Forms.BindingSource" /> as the data source.</summary>
+        <summary>
+             Creates a BindingNavigator strip containing standard items, bound to the specified BindingSource.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -245,7 +249,9 @@
         <ReturnType>System.Windows.Forms.ToolStripItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Windows.Forms.ToolStripItem" /> that represents the **Add New** button.</summary>
+        <summary>
+             The ToolStripItem that triggers the 'Add new' action, or null.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.ToolStripItem" /> that represents the **Add New** button for the <see cref="T:System.Windows.Forms.BindingSource" />. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -286,7 +292,23 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Adds the standard set of navigation items to the <see cref="T:System.Windows.Forms.BindingNavigator" /> control.</summary>
+        <summary>
+              Adds standard set of tool strip items to a BindingNavigator tool strip, for basic
+              navigation operations such as Move First, Move Next, Add New, etc.
+            
+              This method is called by the Windows Form Designer when a new BindingNavigator is
+              added to a Form. When creating a BindingNavigator programmatically, this method
+              must be called explicitly.
+            
+              Override this method in derived classes to define additional or alternative standard items.
+              To ensure optimal design-time support for your derived class, make sure each item has a
+              meaningful value in its Name property. At design time, this will be used to generate a unique
+              name for the corresponding member variable. The item's Name property will then be updated
+              to match the name given to the member variable.
+            
+              Note: This method does NOT remove any previous items from the strip, or suspend
+              layout while items are being added. Those are responsibilities of the caller.
+             </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -326,7 +348,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Disables updates to the <see cref="T:System.Windows.Forms.ToolStripItem" /> controls of the <see cref="T:System.Windows.Forms.BindingNavigator" /> during the component's initialization.</summary>
+        <summary>
+             ISupportInitialize support. Disables updates to tool strip items during initialization.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -363,15 +387,14 @@
         <Attribute>
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ComponentModel.ReferenceConverter))</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.BindingSource</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Windows.Forms.BindingSource" /> component that is the source of data.</summary>
+        <summary>
+             The BindingSource who's list we are currently navigating, or null.
+            </summary>
         <value>The <see cref="T:System.Windows.Forms.BindingSource" /> component associated with this <see cref="T:System.Windows.Forms.BindingNavigator" />. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -417,7 +440,9 @@
         <ReturnType>System.Windows.Forms.ToolStripItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Windows.Forms.ToolStripItem" /> that displays the total number of items in the associated <see cref="T:System.Windows.Forms.BindingSource" />.</summary>
+        <summary>
+             The ToolStripItem that displays the total number of items, or null.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.ToolStripItem" /> that displays the total number of items in the associated <see cref="T:System.Windows.Forms.BindingSource" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -450,16 +475,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a string used to format the information displayed in the <see cref="P:System.Windows.Forms.BindingNavigator.CountItem" /> control.</summary>
+        <summary>
+             Formatting to apply to count displayed in the CountItem tool strip item.
+            </summary>
         <value>The format <see cref="T:System.String" /> used to format the item count. The default is the string "of {0}".</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -498,7 +520,9 @@
         <ReturnType>System.Windows.Forms.ToolStripItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Windows.Forms.ToolStripItem" /> that is associated with the **Delete** functionality.</summary>
+        <summary>
+             The ToolStripItem that triggers the 'Delete' action, or null.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.ToolStripItem" /> that represents the **Delete** button for the <see cref="T:System.Windows.Forms.BindingSource" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -543,7 +567,9 @@
       <Docs>
         <param name="disposing">
           <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.BindingNavigator" /> and optionally releases the managed resources.</summary>
+        <summary>
+             Unhooks the BindingNavigator from the BindingSource.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -583,7 +609,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Enables updates to the <see cref="T:System.Windows.Forms.ToolStripItem" /> controls of the <see cref="T:System.Windows.Forms.BindingNavigator" /> after the component's initialization has concluded.</summary>
+        <summary>
+             ISupportInitialize support. Enables updates to tool strip items after initialization.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -622,7 +650,9 @@
         <ReturnType>System.Windows.Forms.ToolStripItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Windows.Forms.ToolStripItem" /> that is associated with the **Move First** functionality.</summary>
+        <summary>
+             The ToolStripItem that triggers the 'Move first' action, or null.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.ToolStripItem" /> that represents the **Move First** button for the <see cref="T:System.Windows.Forms.BindingSource" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -668,7 +698,9 @@
         <ReturnType>System.Windows.Forms.ToolStripItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Windows.Forms.ToolStripItem" /> that is associated with the **Move Last** functionality.</summary>
+        <summary>
+             The ToolStripItem that triggers the 'Move last' action, or null.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.ToolStripItem" /> that represents the **Move Last** button for the <see cref="T:System.Windows.Forms.BindingSource" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -714,7 +746,9 @@
         <ReturnType>System.Windows.Forms.ToolStripItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Windows.Forms.ToolStripItem" /> that is associated with the **Move Next** functionality.</summary>
+        <summary>
+             The ToolStripItem that triggers the 'Move next' action, or null.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.ToolStripItem" /> that represents the **Move Next** button for the <see cref="T:System.Windows.Forms.BindingSource" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -760,7 +794,9 @@
         <ReturnType>System.Windows.Forms.ToolStripItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Windows.Forms.ToolStripItem" /> that is associated with the **Move Previous** functionality.</summary>
+        <summary>
+             The ToolStripItem that triggers the 'Move previous' action, or null.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.ToolStripItem" /> that represents the **Move Previous** button for the <see cref="T:System.Windows.Forms.BindingSource" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -850,7 +886,9 @@
         <ReturnType>System.Windows.Forms.ToolStripItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Windows.Forms.ToolStripItem" /> that displays the current position within the <see cref="T:System.Windows.Forms.BindingSource" />.</summary>
+        <summary>
+             The ToolStripItem that displays the current position, or null.
+            </summary>
         <value>The <see cref="T:System.Windows.Forms.ToolStripItem" /> that displays the current position.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -888,7 +926,10 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the state of the navigational user interface (UI) needs to be refreshed to reflect the current state of the underlying data.</summary>
+        <summary>
+             Event raised when the state of the tool strip items needs to be
+             refreshed to reflect the current state of the data.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -927,7 +968,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -935,7 +976,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Refreshes the state of the standard items to reflect the current state of the data.</summary>
+        <summary>
+             Refreshes the state of the standard items to reflect the current state of the data.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -964,7 +1007,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Causes form validation to occur and returns whether validation was successful.</summary>
+        <summary>
+             Triggers form validation. Used by the BindingNavigator's standard items when clicked. If a validation error occurs
+             on the form, focus remains on the active control and the standard item does not perform its standard click action.
+             Custom items may also use this method to trigger form validation and check for success before performing an action.
+            </summary>
         <returns>
           <see langword="true" /> if validation was successful and focus can shift to the <see cref="T:System.Windows.Forms.BindingNavigator" />; otherwise, <see langword="false" />.</returns>
         <remarks>

@@ -1,4 +1,4 @@
-﻿<Type Name="DataGridView+HitTestInfo" FullName="System.Windows.Forms.DataGridView+HitTestInfo">
+<Type Name="DataGridView+HitTestInfo" FullName="System.Windows.Forms.DataGridView+HitTestInfo">
   <TypeSignature Language="C#" Value="public sealed class DataGridView.HitTestInfo" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed beforefieldinit DataGridView/HitTestInfo extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridView.HitTestInfo" />
@@ -50,16 +50,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the index of the column that contains the coordinates described by the current <see cref="T:System.Windows.Forms.DataGridView.HitTestInfo" />.</summary>
+        <summary>
+             Gets the number of the clicked column.
+            </summary>
         <value>The index of the column in the <see cref="T:System.Windows.Forms.DataGridView" /> that contains the coordinates described by the current <see cref="T:System.Windows.Forms.DataGridView.HitTestInfo" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -89,16 +86,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the x-coordinate of the beginning of the column that contains the coordinates described by the current <see cref="T:System.Windows.Forms.DataGridView.HitTestInfo" />.</summary>
+        <summary>
+             Gets the left edge of the column.
+            </summary>
         <value>The x-coordinate of the column in the <see cref="T:System.Windows.Forms.DataGridView" /> that contains the coordinates described by the current <see cref="T:System.Windows.Forms.DataGridView.HitTestInfo" />.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
@@ -126,7 +120,9 @@
       </Parameters>
       <Docs>
         <param name="value">The <see cref="T:System.Object" /> to compare with the current <see cref="T:System.Windows.Forms.DataGridView.HitTestInfo" />.</param>
-        <summary>Determines whether the specified <see cref="T:System.Object" /> is equal to the current <see cref="T:System.Windows.Forms.DataGridView.HitTestInfo" />.</summary>
+        <summary>
+             Indicates whether two objects are identical.
+            </summary>
         <returns>
           <see langword="true" /> if <paramref name="value" /> is a <see cref="T:System.Windows.Forms.DataGridView.HitTestInfo" /> in which the values of the <see cref="P:System.Windows.Forms.DataGridView.HitTestInfo.Type" />, <see cref="P:System.Windows.Forms.DataGridView.HitTestInfo.RowIndex" />, and <see cref="P:System.Windows.Forms.DataGridView.HitTestInfo.ColumnIndex" /> properties are the same as the current <see cref="T:System.Windows.Forms.DataGridView.HitTestInfo" />.</returns>
         <remarks>To be added.</remarks>
@@ -152,7 +148,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Serves as a hash function for a particular type.</summary>
+        <summary>
+             Gets the hash code for the <see cref="T:System.Windows.Forms.DataGridView.HitTestInfo" /> instance.
+            </summary>
         <returns>A hash code for the current <see cref="T:System.Object" />.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Object.GetHashCode" />
@@ -175,7 +173,10 @@
         <ReturnType>System.Windows.Forms.DataGridView+HitTestInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies that the point is not on a cell or cell header. This field is read-only.</summary>
+        <summary>
+             Allows the <see cref="T:System.Windows.Forms.DataGridView.HitTestInfo" /> object to inform you the
+             extent of the grid.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -201,16 +202,14 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the index of the row that contains the coordinates described by the current <see cref="T:System.Windows.Forms.DataGridView.HitTestInfo" />.</summary>
+        <summary>
+             Gets the
+             number of the clicked row.
+            </summary>
         <value>The index of the row in the <see cref="T:System.Windows.Forms.DataGridView" /> that contains the coordinates described by the current <see cref="T:System.Windows.Forms.DataGridView.HitTestInfo" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -240,16 +239,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the y-coordinate of the top of the row that contains the coordinates described by the current <see cref="T:System.Windows.Forms.DataGridView.HitTestInfo" />.</summary>
+        <summary>
+             Gets the top edge of the row.
+            </summary>
         <value>The y-coordinate of the row in the <see cref="T:System.Windows.Forms.DataGridView" /> that contains the coordinates described by the current <see cref="T:System.Windows.Forms.DataGridView.HitTestInfo" />.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Windows.Forms.DataGridView" />
@@ -274,7 +270,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a string that represents a <see cref="T:System.Windows.Forms.DataGridView.HitTestInfo" />.</summary>
+        <summary>
+             Gets the type, column number and row number.
+            </summary>
         <returns>A string that represents a <see cref="T:System.Windows.Forms.DataGridView.HitTestInfo" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -301,16 +299,14 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridViewHitTestType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Forms.DataGridViewHitTestType" /> that indicates which part of the <see cref="T:System.Windows.Forms.DataGridView" /> the coordinates described by the current <see cref="T:System.Windows.Forms.DataGridView.HitTestInfo" /> belong to.</summary>
+        <summary>
+             Gets the part of the <see cref="T:System.Windows.Forms.DataGridView" /> control, other than the row or column, that was
+             clicked.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.DataGridViewHitTestType" /> value that indicates the control part at the coordinates described by the current <see cref="T:System.Windows.Forms.DataGridView.HitTestInfo" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

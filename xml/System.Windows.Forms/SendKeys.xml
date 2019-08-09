@@ -1,4 +1,4 @@
-﻿<Type Name="SendKeys" FullName="System.Windows.Forms.SendKeys">
+<Type Name="SendKeys" FullName="System.Windows.Forms.SendKeys">
   <TypeSignature Language="C#" Value="public class SendKeys" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi SendKeys extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.SendKeys" />
@@ -16,7 +16,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides methods for sending keystrokes to an application.</summary>
+    <summary>
+             Provides methods for sending keystrokes to an application.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -137,7 +139,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Processes all the Windows messages currently in the message queue.</summary>
+        <summary>
+             Processes all the Windows messages currently in the message queue.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -165,11 +169,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -178,7 +177,9 @@
       </Parameters>
       <Docs>
         <param name="keys">The string of keystrokes to send.</param>
-        <summary>Sends keystrokes to the active application.</summary>
+        <summary>
+             Sends keystrokes to the active application.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -296,11 +297,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -309,7 +305,10 @@
       </Parameters>
       <Docs>
         <param name="keys">The string of keystrokes to send.</param>
-        <summary>Sends the given keys to the active application, and then waits for the messages to be processed.</summary>
+        <summary>
+             Sends the given keys to the active application, and then waits for
+             the messages to be processed.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

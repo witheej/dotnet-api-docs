@@ -1,4 +1,4 @@
-﻿<Type Name="HelpProvider" FullName="System.Windows.Forms.HelpProvider">
+<Type Name="HelpProvider" FullName="System.Windows.Forms.HelpProvider">
   <TypeSignature Language="C#" Value="public class HelpProvider : System.ComponentModel.Component, System.ComponentModel.IExtenderProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HelpProvider extends System.ComponentModel.Component implements class System.ComponentModel.IExtenderProvider" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.HelpProvider" />
@@ -37,7 +37,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides pop-up or online Help for controls.</summary>
+    <summary>
+             Provides pop-up or online Help for controls.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -79,7 +81,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.HelpProvider" /> class.</summary>
+        <summary>
+             Initializes a new instance of the <see cref="T:System.Windows.Forms.HelpProvider" /> class.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -124,7 +128,10 @@
       </Parameters>
       <Docs>
         <param name="target">The object that the externder properties are provided to.</param>
-        <summary>Specifies whether this object can provide its extender properties to the specified object.</summary>
+        <summary>
+             Determines if the help provider can offer it's extender properties to the specified target
+             object.
+            </summary>
         <returns>
           <see langword="true" /> if this object can provide its extender properties; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -160,7 +167,9 @@
       </Parameters>
       <Docs>
         <param name="ctl">A <see cref="T:System.Windows.Forms.Control" /> from which to retrieve the Help topic.</param>
-        <summary>Returns the Help keyword for the specified control.</summary>
+        <summary>
+             Retrieves the Help Keyword displayed when the user invokes Help for the specified control.
+            </summary>
         <returns>The Help keyword associated with this control, or <see langword="null" /> if the <see cref="T:System.Windows.Forms.HelpProvider" /> is currently configured to display the entire Help file or is configured to provide a Help string.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.HelpProvider.GetHelpString(System.Windows.Forms.Control)" />
@@ -200,7 +209,9 @@
       </Parameters>
       <Docs>
         <param name="ctl">A <see cref="T:System.Windows.Forms.Control" /> from which to retrieve the Help navigator.</param>
-        <summary>Returns the current <see cref="T:System.Windows.Forms.HelpNavigator" /> setting for the specified control.</summary>
+        <summary>
+             Retrieves the contents of the pop-up help window for the specified control.
+            </summary>
         <returns>The <see cref="T:System.Windows.Forms.HelpNavigator" /> setting for the specified control. The default is <see cref="F:System.Windows.Forms.HelpNavigator.AssociateIndex" />.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.HelpProvider.GetHelpKeyword(System.Windows.Forms.Control)" />
@@ -242,7 +253,9 @@
       </Parameters>
       <Docs>
         <param name="ctl">A <see cref="T:System.Windows.Forms.Control" /> from which to retrieve the Help string.</param>
-        <summary>Returns the contents of the pop-up Help window for the specified control.</summary>
+        <summary>
+             Retrieves the contents of the pop-up help window for the specified control.
+            </summary>
         <returns>The Help string associated with this control. The default is <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -295,7 +308,9 @@
       </Parameters>
       <Docs>
         <param name="ctl">A <see cref="T:System.Windows.Forms.Control" /> for which Help will be displayed.</param>
-        <summary>Returns a value indicating whether the specified control's Help should be displayed.</summary>
+        <summary>
+             Retrieves a value indicating whether Help displays for the specified control.
+            </summary>
         <returns>
           <see langword="true" /> if Help will be displayed for the control; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -337,24 +352,15 @@
         <Attribute>
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1">
-          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.HelpNamespaceEditor, System.Design, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
-          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.HelpNamespaceEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value specifying the name of the Help file associated with this <see cref="T:System.Windows.Forms.HelpProvider" /> object.</summary>
+        <summary>
+             Gets or sets a string indicating the name of the Help file associated with this
+            <see cref="T:System.Windows.Forms.HelpProvider" /> object.
+            </summary>
         <value>The name of the Help file. This can be of the form C:\path\sample.chm or /folder/file.htm.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -397,7 +403,9 @@
       </Parameters>
       <Docs>
         <param name="ctl">The control to remove Help from.</param>
-        <summary>Removes the Help associated with the specified control.</summary>
+        <summary>
+             Used by the designer
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -432,7 +440,9 @@
       <Docs>
         <param name="ctl">A <see cref="T:System.Windows.Forms.Control" /> that specifies the control for which to set the Help topic.</param>
         <param name="keyword">The Help keyword to associate with the control.</param>
-        <summary>Specifies the keyword used to retrieve Help when the user invokes Help for the specified control.</summary>
+        <summary>
+             Specifies the Help keyword to display when the user invokes Help for a control.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -472,7 +482,9 @@
       <Docs>
         <param name="ctl">A <see cref="T:System.Windows.Forms.Control" /> for which to set the Help keyword.</param>
         <param name="navigator">One of the <see cref="T:System.Windows.Forms.HelpNavigator" /> values.</param>
-        <summary>Specifies the Help command to use when retrieving Help from the Help file for the specified control.</summary>
+        <summary>
+             Specifies the Help keyword to display when the user invokes Help for a control.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -519,7 +531,9 @@
       <Docs>
         <param name="ctl">A <see cref="T:System.Windows.Forms.Control" /> with which to associate the Help string.</param>
         <param name="helpString">The Help string associated with the control.</param>
-        <summary>Specifies the Help string associated with the specified control.</summary>
+        <summary>
+             Specifies a Help string associated with a control.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -569,7 +583,9 @@
         <param name="ctl">A <see cref="T:System.Windows.Forms.Control" /> for which Help is turned on or off.</param>
         <param name="value">
           <see langword="true" /> if Help displays for the control; otherwise, <see langword="false" />.</param>
-        <summary>Specifies whether Help is displayed for the specified control.</summary>
+        <summary>
+             Specifies whether Help is displayed for a given control.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -620,12 +636,6 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ComponentModel.StringConverter))</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -655,7 +665,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a string that represents the current <see cref="T:System.Windows.Forms.HelpProvider" />.</summary>
+        <summary>
+             Returns a string representation for this control.
+            </summary>
         <returns>A string that represents the current <see cref="T:System.Windows.Forms.HelpProvider" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

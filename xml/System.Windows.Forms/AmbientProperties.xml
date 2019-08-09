@@ -1,4 +1,4 @@
-﻿<Type Name="AmbientProperties" FullName="System.Windows.Forms.AmbientProperties">
+<Type Name="AmbientProperties" FullName="System.Windows.Forms.AmbientProperties">
   <TypeSignature Language="C#" Value="public sealed class AmbientProperties" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AmbientProperties extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.AmbientProperties" />
@@ -16,7 +16,11 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides ambient property values to top-level controls.</summary>
+    <summary>
+             Provides ambient property values to top-level controls.
+             NOTE: internally, this class does double duty as storage for
+             Control's inherited properties.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -41,11 +45,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.AmbientProperties" /> class.</summary>
@@ -66,19 +65,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the ambient background color of an object.</summary>
+        <summary>
+             Gets the ambient BackColor, or Color.Empty if there is none.
+            </summary>
         <value>A <see cref="T:System.Drawing.Color" /> value that represents the background color of an object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -106,19 +99,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Cursor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the ambient cursor of an object.</summary>
+        <summary>
+             Gets the ambient BackColor, or null if there is none.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.Cursor" /> that represents the cursor of an object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -146,19 +133,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the ambient font of an object.</summary>
+        <summary>
+             Gets the ambient Font, or null if there is none.
+            </summary>
         <value>A <see cref="T:System.Drawing.Font" /> that represents the font used when displaying text within an object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -186,19 +167,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the ambient foreground color of an object.</summary>
+        <summary>
+             Gets the ambient ForeColor, or Color.Empty if there is none.
+            </summary>
         <value>A <see cref="T:System.Drawing.Color" /> value that represents the foreground color of an object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

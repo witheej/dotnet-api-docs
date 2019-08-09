@@ -1,4 +1,4 @@
-﻿<Type Name="BorderSidesEditor" FullName="System.Windows.Forms.Design.BorderSidesEditor">
+<Type Name="BorderSidesEditor" FullName="System.Windows.Forms.Design.BorderSidesEditor">
   <TypeSignature Language="C#" Value="public class BorderSidesEditor : System.Drawing.Design.UITypeEditor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BorderSidesEditor extends System.Drawing.Design.UITypeEditor" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.BorderSidesEditor" />
@@ -19,12 +19,14 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-3.0">
+    <Attribute>
       <AttributeName>System.CLSCompliant(false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides an editor for setting the <see cref="P:System.Windows.Forms.ToolStripStatusLabel.BorderSides" /> property.</summary>
+    <summary>
+             Provides an editor for setting the ToolStripStatusLabel BorderSides property..
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -44,11 +46,6 @@
         <AssemblyName>System.Windows.Forms.Design.Editors</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.BorderSidesEditor" /> class.</summary>
@@ -84,7 +81,9 @@
         <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> providing information about the control or component.</param>
         <param name="provider">An <see cref="T:System.IServiceProvider" /> providing custom support to other objects.</param>
         <param name="value">The object value to edit.</param>
-        <summary>Edits the given object value using the editor style provided by <see cref="M:System.Windows.Forms.Design.BorderSidesEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)" />.</summary>
+        <summary>
+             Edits the given object value using the editor style provided by BorderSidesEditor.GetEditStyle.
+            </summary>
         <returns>The edited object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -114,7 +113,10 @@
       </Parameters>
       <Docs>
         <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> providing information about the control or component.</param>
-        <summary>Retrieves the editing style of the <see langword="EditValue" /> method.</summary>
+        <summary>
+             Gets the editing style of the Edit method.
+             If the method is not supported, this will return UITypeEditorEditStyle.None.
+            </summary>
         <returns>One of the <see cref="T:System.Drawing.Design.UITypeEditorEditStyle" /> values. If the method is not supported, this method returns <see cref="F:System.Drawing.Design.UITypeEditorEditStyle.None" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>

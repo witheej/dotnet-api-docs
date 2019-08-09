@@ -1,4 +1,4 @@
-﻿<Type Name="TabAppearance" FullName="System.Windows.Forms.TabAppearance">
+<Type Name="TabAppearance" FullName="System.Windows.Forms.TabAppearance">
   <TypeSignature Language="C#" Value="public enum TabAppearance" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TabAppearance extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TabAppearance" />
@@ -15,7 +15,10 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the appearance of the tabs in a tab control.</summary>
+    <summary>
+             The various tab controls will let you configure their appearance.
+             This enumeration contains the possible values.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -55,7 +58,10 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The tabs have the appearance of three-dimensional buttons.</summary>
+        <summary>
+             Indicates that the tabs look like buttons as seen on the taskbar found
+             in Windows 95 or Windows NT.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="FlatButtons">
@@ -77,7 +83,10 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>The tabs have the appearance of flat buttons.</summary>
+        <summary>
+             Indicates that buttons should be draw flat instead of like regular
+             windows pushbuttons.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Normal">
@@ -99,7 +108,10 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>The tabs have the standard appearance of tabs.</summary>
+        <summary>
+             Indicates that the tabs look like normal tabs typically seen in Property
+             page type situations.
+            </summary>
       </Docs>
     </Member>
   </Members>

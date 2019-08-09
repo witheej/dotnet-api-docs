@@ -1,4 +1,4 @@
-﻿<Type Name="ArrayEditor" FullName="System.ComponentModel.Design.ArrayEditor">
+<Type Name="ArrayEditor" FullName="System.ComponentModel.Design.ArrayEditor">
   <TypeSignature Language="C#" Value="public class ArrayEditor : System.ComponentModel.Design.CollectionEditor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ArrayEditor extends System.ComponentModel.Design.CollectionEditor" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ArrayEditor" />
@@ -20,7 +20,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a user interface for editing arrays at design time.</summary>
+    <summary>
+             Edits an array of values.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -59,17 +61,15 @@
         <AssemblyName>System.Windows.Forms.Design.Editors</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="type" Type="System.Type" />
       </Parameters>
       <Docs>
         <param name="type">The data type of the items in the array.</param>
-        <summary>Initializes a new instance of <see cref="T:System.ComponentModel.Design.ArrayEditor" /> using the specified data type for the array.</summary>
+        <summary>
+             Initializes a new instance of <see cref="T:System.ComponentModel.Design.ArrayEditor" />
+             using the specified type for the array.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,7 +96,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the data type that this collection is designed to contain.</summary>
+        <summary>
+             Gets or sets the data type this collection contains.
+            </summary>
         <returns>A <see cref="T:System.Type" /> that indicates the data type that the collection is designed to contain.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -134,7 +136,9 @@
       </Parameters>
       <Docs>
         <param name="editValue">The array from which to retrieve the items.</param>
-        <summary>Gets the items in the array.</summary>
+        <summary>
+             Gets the items in the array.
+            </summary>
         <returns>An array consisting of the items within the specified array. If the object specified in the <paramref name="editValue" /> parameter is not an array, a new empty object is returned.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -167,7 +171,9 @@
       <Docs>
         <param name="editValue">The array to set the items to.</param>
         <param name="value">The array of objects to set as the items of the array.</param>
-        <summary>Sets the items in the array.</summary>
+        <summary>
+             Sets the items in the array.
+            </summary>
         <returns>An instance of the new array. If the object specified by the <paramref name="editValue" /> parameter is not an array, the object specified by the <paramref name="editValue" /> parameter is returned.</returns>
         <remarks>To be added.</remarks>
       </Docs>

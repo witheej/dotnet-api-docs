@@ -1,4 +1,4 @@
-﻿<Type Name="MenuItem" FullName="System.Windows.Forms.MenuItem">
+<Type Name="MenuItem" FullName="System.Windows.Forms.MenuItem">
   <TypeSignature Language="C#" Value="public class MenuItem : System.Windows.Forms.Menu" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MenuItem extends System.Windows.Forms.Menu" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MenuItem" />
@@ -30,7 +30,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents an individual item that is displayed within a <see cref="T:System.Windows.Forms.MainMenu" /> or <see cref="T:System.Windows.Forms.ContextMenu" />. Although <see cref="T:System.Windows.Forms.ToolStripMenuItem" /> replaces and adds functionality to the <see cref="T:System.Windows.Forms.MenuItem" /> control of previous versions, <see cref="T:System.Windows.Forms.MenuItem" /> is retained for both backward compatibility and future use if you choose.</summary>
+    <summary>
+             Represents an individual item that is displayed within a <see cref="T:System.Windows.Forms.Menu" />
+             or <see cref="T:System.Windows.Forms.Menu" />.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -82,14 +85,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
-        <summary>Initializes a <see cref="T:System.Windows.Forms.MenuItem" /> with a blank caption.</summary>
+        <summary>
+             Initializes a <see cref="T:System.Windows.Forms.MenuItem" /> with a blank caption.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -123,17 +123,15 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="text" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="text">The caption for the menu item.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.MenuItem" /> class with a specified caption for the menu item.</summary>
+        <summary>
+             Initializes a new instance of the <see cref="T:System.Windows.Forms.MenuItem" /> class
+             with a specified caption for the menu item.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -169,11 +167,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="text" Type="System.String" />
         <Parameter Name="onClick" Type="System.EventHandler" />
@@ -181,7 +174,10 @@
       <Docs>
         <param name="text">The caption for the menu item.</param>
         <param name="onClick">The <see cref="T:System.EventHandler" /> that handles the <see cref="E:System.Windows.Forms.MenuItem.Click" /> event for this menu item.</param>
-        <summary>Initializes a new instance of the class with a specified caption and event handler for the <see cref="E:System.Windows.Forms.MenuItem.Click" /> event of the menu item.</summary>
+        <summary>
+             Initializes a new instance of the class with a specified caption and event handler
+             for the menu item.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -219,11 +215,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="text" Type="System.String" />
         <Parameter Name="items" Type="System.Windows.Forms.MenuItem[]" />
@@ -231,7 +222,10 @@
       <Docs>
         <param name="text">The caption for the menu item.</param>
         <param name="items">An array of <see cref="T:System.Windows.Forms.MenuItem" /> objects that contains the submenu items for this menu item.</param>
-        <summary>Initializes a new instance of the class with a specified caption and an array of submenu items defined for the menu item.</summary>
+        <summary>
+             Initializes a new instance of the class with a specified caption and an array of
+             submenu items defined for the menu item.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -270,11 +264,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="text" Type="System.String" />
         <Parameter Name="onClick" Type="System.EventHandler" />
@@ -284,7 +273,10 @@
         <param name="text">The caption for the menu item.</param>
         <param name="onClick">The <see cref="T:System.EventHandler" /> that handles the <see cref="E:System.Windows.Forms.MenuItem.Click" /> event for this menu item.</param>
         <param name="shortcut">One of the <see cref="T:System.Windows.Forms.Shortcut" /> values.</param>
-        <summary>Initializes a new instance of the class with a specified caption, event handler, and associated shortcut key for the menu item.</summary>
+        <summary>
+             Initializes a new instance of the class with a specified caption, event handler,
+             and associated shorcut key for the menu item.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -340,7 +332,11 @@
         <param name="onPopup">The <see cref="T:System.EventHandler" /> that handles the <see cref="E:System.Windows.Forms.MenuItem.Popup" /> event for this menu item.</param>
         <param name="onSelect">The <see cref="T:System.EventHandler" /> that handles the <see cref="E:System.Windows.Forms.MenuItem.Select" /> event for this menu item.</param>
         <param name="items">An array of <see cref="T:System.Windows.Forms.MenuItem" /> objects that contains the submenu items for this menu item.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.MenuItem" /> class with a specified caption; defined event-handlers for the <see cref="E:System.Windows.Forms.MenuItem.Click" />, <see cref="E:System.Windows.Forms.MenuItem.Select" /> and <see cref="E:System.Windows.Forms.MenuItem.Popup" /> events; a shortcut key; a merge type; and order specified for the menu item.</summary>
+        <summary>
+             Initializes a new instance of the class with a specified caption, defined
+             event-handlers for the Click, Select and Popup events, a shortcut key,
+             a merge type, and order specified for the menu item.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -399,7 +395,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the <see cref="T:System.Windows.Forms.MenuItem" /> is placed on a new line (for a menu item added to a <see cref="T:System.Windows.Forms.MainMenu" /> object) or in a new column (for a submenu item or menu item displayed in a <see cref="T:System.Windows.Forms.ContextMenu" />).</summary>
+        <summary>
+             Gets or sets a value indicating whether the item is placed on a new line (for a
+             menu item added to a <see cref="T:System.Windows.Forms.MainMenu" /> object) or in a
+             new column (for a submenu or menu displayed in a <see cref="T:System.Windows.Forms.ContextMenu" />).
+            </summary>
         <value>
           <see langword="true" /> if the menu item is placed on a new line or in a new column; <see langword="false" /> if the menu item is left in its default placement. The default is <see langword="false" />.</value>
         <remarks>
@@ -450,7 +450,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the item is placed on a new line (for a menu item added to a <see cref="T:System.Windows.Forms.MainMenu" /> object) or in a new column (for a menu item or submenu item displayed in a <see cref="T:System.Windows.Forms.ContextMenu" />).</summary>
+        <summary>
+             Gets or sets a value indicating whether the item is placed on a new line (for a
+             menu item added to a <see cref="T:System.Windows.Forms.MainMenu" /> object) or in a
+             new column (for a submenu or menu displayed in a <see cref="T:System.Windows.Forms.ContextMenu" />).
+            </summary>
         <value>
           <see langword="true" /> if the menu item is placed on a new line or in a new column; <see langword="false" /> if the menu item is left in its default placement. The default is <see langword="false" />.</value>
         <remarks>
@@ -496,7 +500,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether a check mark appears next to the text of the menu item.</summary>
+        <summary>
+             Gets or sets a value indicating whether a checkmark appears beside the text of
+             the menu item.
+            </summary>
         <value>
           <see langword="true" /> if there is a check mark next to the menu item; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
@@ -540,7 +547,10 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the menu item is clicked or selected using a shortcut key or access key defined for the menu item.</summary>
+        <summary>
+             Occurs when the menu item is clicked or selected using a shortcut key defined
+             for the menu item.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -591,7 +601,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a copy of the current <see cref="T:System.Windows.Forms.MenuItem" />.</summary>
+        <summary>
+             Creates and returns an identical copy of this menu item.
+            </summary>
         <returns>A <see cref="T:System.Windows.Forms.MenuItem" /> that represents the duplicated menu item.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -634,7 +646,9 @@
       </Parameters>
       <Docs>
         <param name="itemSrc">The <see cref="T:System.Windows.Forms.MenuItem" /> that represents the menu item to copy.</param>
-        <summary>Creates a copy of the specified <see cref="T:System.Windows.Forms.MenuItem" />.</summary>
+        <summary>
+             Creates a copy of the specified menu item.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -677,7 +691,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the menu item is the default menu item.</summary>
+        <summary>
+             Gets or sets a value indicating whether the menu item is the default.
+            </summary>
         <value>
           <see langword="true" /> if the menu item is the default item in a menu; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
@@ -722,7 +738,9 @@
       <Docs>
         <param name="disposing">
           <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Disposes of the resources (other than memory) used by the <see cref="T:System.Windows.Forms.MenuItem" />.</summary>
+        <summary>
+             Disposes the <see cref="T:System.Windows.Forms.MenuItem" />.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -754,7 +772,10 @@
         <ReturnType>System.Windows.Forms.DrawItemEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="P:System.Windows.Forms.MenuItem.OwnerDraw" /> property of a menu item is set to <see langword="true" /> and a request is made to draw the menu item.</summary>
+        <summary>
+             Occurs when when the property of a menu item is set to <see langword="true" /> and
+             a request is made to draw the menu item.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -804,7 +825,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the menu item is enabled.</summary>
+        <summary>
+             Gets or sets a value indicating whether the menu item is enabled.
+            </summary>
         <value>
           <see langword="true" /> if the menu item is enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
@@ -849,7 +872,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating the position of the menu item in its parent menu.</summary>
+        <summary>
+             Gets or sets the menu item's position in its parent menu.
+            </summary>
         <value>The zero-based index representing the position of the menu item in its parent menu.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -894,7 +919,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the menu item contains child menu items.</summary>
+        <summary>
+             Gets a value indicating whether the menu item contains child menu items.
+            </summary>
         <value>
           <see langword="true" /> if the menu item contains child menu items; <see langword="false" /> if the menu is a standalone menu item.</value>
         <remarks>
@@ -939,7 +966,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the menu item will be populated with a list of the Multiple Document Interface (MDI) child windows that are displayed within the associated form.</summary>
+        <summary>
+             Gets or sets a value indicating whether the menu item will be populated with a
+             list of the MDI child windows that are displayed within the associated form.
+            </summary>
         <value>
           <see langword="true" /> if a list of the MDI child windows is displayed in this menu item; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
@@ -979,7 +1009,9 @@
         <ReturnType>System.Windows.Forms.MeasureItemEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the menu needs to know the size of a menu item before drawing it.</summary>
+        <summary>
+             Occurs when when the menu needs to know the size of a menu item before drawing it.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1020,7 +1052,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating the Windows identifier for this menu item.</summary>
+        <summary>
+             Gets the Windows identifier for this menu item.
+            </summary>
         <value>The Windows identifier for this menu item.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1053,7 +1087,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Merges this <see cref="T:System.Windows.Forms.MenuItem" /> with another <see cref="T:System.Windows.Forms.MenuItem" /> and returns the resulting merged <see cref="T:System.Windows.Forms.MenuItem" />.</summary>
+        <summary>
+             Merges this menu item with another menu item and returns the resulting merged
+            <see cref="T:System.Windows.Forms.MenuItem" />.
+            </summary>
         <returns>A <see cref="T:System.Windows.Forms.MenuItem" /> that represents the merged menu item.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1087,7 +1124,9 @@
       </Parameters>
       <Docs>
         <param name="itemSrc">A <see cref="T:System.Windows.Forms.MenuItem" /> that specifies the menu item to merge with this one.</param>
-        <summary>Merges another menu item with this menu item.</summary>
+        <summary>
+             Merges another menu item with this menu item.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1130,7 +1169,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating the relative position of the menu item when it is merged with another.</summary>
+        <summary>
+             Gets or sets the relative position the menu item when its
+             menu is merged with another.
+            </summary>
         <value>A zero-based index representing the merge order position for this menu item. The default is 0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1176,7 +1218,10 @@
         <ReturnType>System.Windows.Forms.MenuMerge</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating the behavior of this menu item when its menu is merged with another.</summary>
+        <summary>
+             Gets or sets a value that indicates the behavior of this
+             menu item when its menu is merged with another.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.MenuMerge" /> value that represents the menu item's merge type.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1223,7 +1268,12 @@
         <ReturnType>System.Char</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating the mnemonic character that is associated with this menu item.</summary>
+        <summary>
+             Retrieves the hotkey mnemonic that is associated with this menu item.
+             The mnemonic is the first character after an ampersand symbol in the menu's text
+             that is not itself an ampersand symbol. If no such mnemonic is defined this
+             will return zero.
+            </summary>
         <value>A character that represents the mnemonic character associated with this menu item. Returns the NUL character (ASCII value 0) if no mnemonic character is specified in the text of the <see cref="T:System.Windows.Forms.MenuItem" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1258,7 +1308,9 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.MenuItem.Click" /> event.</summary>
+        <summary>
+             Raises the <see cref="E:System.Windows.Forms.MenuItem.Click" /> event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1303,7 +1355,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.DrawItemEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.MenuItem.DrawItem" /> event.</summary>
+        <summary>
+             Raises the <see cref="E:System.Windows.Forms.MenuItem.DrawItem" /> event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1319,11 +1373,11 @@
       </Docs>
     </Member>
     <Member MemberName="OnInitMenuPopup">
-      <MemberSignature Language="C#" Value="protected virtual void OnInitMenuPopup (EventArgs e);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig newslot virtual instance void OnInitMenuPopup(class System.EventArgs e) cil managed" />
+      <MemberSignature Language="C#" Value="protected internal virtual void OnInitMenuPopup (EventArgs e);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig newslot virtual instance void OnInitMenuPopup(class System.EventArgs e) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.MenuItem.OnInitMenuPopup(System.EventArgs)" />
-      <MemberSignature Language="VB.NET" Value="Protected Overridable Sub OnInitMenuPopup (e As EventArgs)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void OnInitMenuPopup(EventArgs ^ e);" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Overridable Sub OnInitMenuPopup (e As EventArgs)" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; virtual void OnInitMenuPopup(EventArgs ^ e);" />
       <MemberSignature Language="F#" Value="abstract member OnInitMenuPopup : EventArgs -&gt; unit&#xA;override this.OnInitMenuPopup : EventArgs -&gt; unit" Usage="menuItem.OnInitMenuPopup e" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -1332,11 +1386,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1371,7 +1420,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.MeasureItemEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.MenuItem.MeasureItem" /> event.</summary>
+        <summary>
+             Raises the <see cref="E:System.Windows.Forms.MenuItem.MeasureItem" /> event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1408,7 +1459,9 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.MenuItem.Popup" /> event.</summary>
+        <summary>
+             Raises the <see cref="E:System.Windows.Forms.MenuItem.Popup" /> event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1453,7 +1506,9 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.MenuItem.Select" /> event.</summary>
+        <summary>
+             Raises the <see cref="E:System.Windows.Forms.MenuItem.Select" /> event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1499,7 +1554,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the code that you provide draws the menu item or Windows draws the menu item.</summary>
+        <summary>
+             Gets or sets a value indicating whether code that you provide draws the menu
+             item or Windows draws the menu item.
+            </summary>
         <value>
           <see langword="true" /> if the menu item is to be drawn using code; <see langword="false" /> if the menu item is to be drawn by Windows. The default is <see langword="false" />.</value>
         <remarks>
@@ -1541,15 +1599,14 @@
         <Attribute>
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Menu</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating the menu that contains this menu item.</summary>
+        <summary>
+             Gets the menu in which this menu item appears.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.Menu" /> that represents the menu that contains this menu item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1589,7 +1646,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Generates a <see cref="E:System.Windows.Forms.Control.Click" /> event for the <see cref="T:System.Windows.Forms.MenuItem" />, simulating a click by a user.</summary>
+        <summary>
+             Generates a <see cref="E:System.Windows.Forms.Control.Click" /> event for the MenuItem,
+             simulating a click by a user.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1628,7 +1688,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Raises the <see cref="E:System.Windows.Forms.MenuItem.Select" /> event for this menu item.</summary>
+        <summary>
+             Raises the <see cref="E:System.Windows.Forms.MenuItem.Select" /> event for this menu item.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1667,7 +1729,9 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs before a menu item's list of menu items is displayed.</summary>
+        <summary>
+             Occurs before a menu item's list of menu items is displayed.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1710,7 +1774,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the <see cref="T:System.Windows.Forms.MenuItem" />, if checked, displays a radio-button instead of a check mark.</summary>
+        <summary>
+             Gets or sets a value that indicates whether the menu item, if checked,
+             displays a radio-button mark instead of a check mark.
+            </summary>
         <value>
           <see langword="true" /> if a radio-button is to be used instead of a check mark; <see langword="false" /> if the standard check mark is to be displayed when the menu item is checked. The default is <see langword="false" />.</value>
         <remarks>
@@ -1751,7 +1818,10 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the user places the pointer over a menu item.</summary>
+        <summary>
+             Occurs when the user hovers their mouse over a menu item or selects it with the
+             keyboard but has not activated it.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1801,7 +1871,9 @@
         <ReturnType>System.Windows.Forms.Shortcut</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating the shortcut key associated with the menu item.</summary>
+        <summary>
+             Gets or sets the shortcut key associated with the menu item.
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.Shortcut" /> values. The default is <see langword="Shortcut.None" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1850,7 +1922,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the shortcut key that is associated with the menu item is displayed next to the menu item caption.</summary>
+        <summary>
+             Gets or sets a value that indicates whether the shortcut key that is associated
+             with the menu item is displayed next to the menu item caption.
+            </summary>
         <value>
           <see langword="true" /> if the shortcut key combination is displayed next to the menu item caption; <see langword="false" /> if the shortcut key combination is not to be displayed. The default is <see langword="true" />.</value>
         <remarks>
@@ -1896,7 +1971,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating the caption of the menu item.</summary>
+        <summary>
+             Gets or sets the text of the menu item.
+            </summary>
         <value>The text caption of the menu item.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1970,7 +2047,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the menu item is visible.</summary>
+        <summary>
+             Gets or sets a value that indicates whether the menu item is visible on its
+             parent menu.
+            </summary>
         <value>
           <see langword="true" /> if the menu item will be made visible on the menu; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>

@@ -1,4 +1,4 @@
-﻿<Type Name="Menu+MenuItemCollection" FullName="System.Windows.Forms.Menu+MenuItemCollection">
+<Type Name="Menu+MenuItemCollection" FullName="System.Windows.Forms.Menu+MenuItemCollection">
   <TypeSignature Language="C#" Value="public class Menu.MenuItemCollection : System.Collections.IList" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit Menu/MenuItemCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Menu.MenuItemCollection" />
@@ -108,7 +108,9 @@
       </Parameters>
       <Docs>
         <param name="caption">The caption of the menu item.</param>
-        <summary>Adds a new <see cref="T:System.Windows.Forms.MenuItem" />, to the end of the current menu, with a specified caption.</summary>
+        <summary>
+             Adds a new MenuItem to the end of this menu with the specified caption.
+            </summary>
         <returns>A <see cref="T:System.Windows.Forms.MenuItem" /> that represents the menu item being added to the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -152,7 +154,11 @@
       </Parameters>
       <Docs>
         <param name="item">The <see cref="T:System.Windows.Forms.MenuItem" /> to add.</param>
-        <summary>Adds a previously created <see cref="T:System.Windows.Forms.MenuItem" /> to the end of the current menu.</summary>
+        <summary>
+             Adds a MenuItem to the end of this menu
+             MenuItems can only be contained in one menu at a time, and may not be added
+             more than once to the same menu.
+            </summary>
         <returns>The zero-based index where the item is stored in the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -200,7 +206,12 @@
       <Docs>
         <param name="index">The position to add the new item.</param>
         <param name="item">The <see cref="T:System.Windows.Forms.MenuItem" /> to add.</param>
-        <summary>Adds a previously created <see cref="T:System.Windows.Forms.MenuItem" /> at the specified index within the menu item collection.</summary>
+        <summary>
+             Adds a MenuItem to this menu at the specified index.  The item currently at
+             that index, and all items after it, will be moved up one slot.
+             MenuItems can only be contained in one menu at a time, and may not be added
+             more than once to the same menu.
+            </summary>
         <returns>The zero-based index where the item is stored in the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -250,7 +261,10 @@
       <Docs>
         <param name="caption">The caption of the menu item.</param>
         <param name="onClick">An <see cref="T:System.EventHandler" /> that represents the event handler that is called when the item is clicked by the user, or when a user presses an accelerator or shortcut key for the menu item.</param>
-        <summary>Adds a new <see cref="T:System.Windows.Forms.MenuItem" /> to the end of the current menu with a specified caption and a specified event handler for the <see cref="E:System.Windows.Forms.MenuItem.Click" /> event.</summary>
+        <summary>
+             Adds a new MenuItem to the end of this menu with the specified caption,
+             and click handler.
+            </summary>
         <returns>A <see cref="T:System.Windows.Forms.MenuItem" /> that represents the menu item being added to the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -301,7 +315,10 @@
       <Docs>
         <param name="caption">The caption of the menu item.</param>
         <param name="items">An array of <see cref="T:System.Windows.Forms.MenuItem" /> objects that this <see cref="T:System.Windows.Forms.MenuItem" /> will contain.</param>
-        <summary>Adds a new <see cref="T:System.Windows.Forms.MenuItem" /> to the end of this menu with the specified caption, <see cref="E:System.Windows.Forms.MenuItem.Click" /> event handler, and items.</summary>
+        <summary>
+             Adds a new MenuItem to the end of this menu with the specified caption,
+             click handler, and items.
+            </summary>
         <returns>A <see cref="T:System.Windows.Forms.MenuItem" /> that represents the menu item being added to the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -385,7 +402,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all <see cref="T:System.Windows.Forms.MenuItem" /> objects from the menu item collection.</summary>
+        <summary>
+             Removes all existing MenuItems from this menu
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -467,11 +486,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="key">The name of the item to look for.</param>
-        <summary>Determines whether the collection contains an item with the specified key.</summary>
+        <summary>
+             Returns true if the collection contains an item with the specified key, false otherwise.
+            </summary>
         <returns>
           <see langword="true" /> if the collection contains an item with the specified key, otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -593,14 +614,17 @@
         <ReturnType>System.Windows.Forms.MenuItem[]</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="searchAllChildren" Type="System.Boolean" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="searchAllChildren" Type="System.Boolean" />
       </Parameters>
       <Docs>
         <param name="key">The name of the menu item to search for.</param>
         <param name="searchAllChildren">
           <see langword="true" /> to search child menu items; otherwise, <see langword="false" />.</param>
-        <summary>Finds the items with the specified key, optionally searching the submenu items</summary>
+        <summary>
+             Searches for Controls by their Name property, builds up an array
+             of all the controls that match.
+            </summary>
         <returns>An array of <see cref="T:System.Windows.Forms.MenuItem" /> objects whose <see cref="P:System.Windows.Forms.Menu.Name" /> property matches the specified <paramref name="key" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -698,11 +722,13 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="key">The name of the menu item to search for.</param>
-        <summary>Finds the index of the first occurrence of a menu item with the specified key.</summary>
+        <summary>
+             The zero-based index of the first occurrence of value within the entire CollectionBase, if found; otherwise, -1.
+            </summary>
         <returns>The zero-based index of the first menu item with the specified key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -815,11 +841,13 @@
         <ReturnType>System.Windows.Forms.MenuItem</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="key">The name of the item to retrieve from the collection.</param>
-        <summary>Gets an item with the specified key from the collection.</summary>
+        <summary>
+             Retrieves the child control with the specified key.
+            </summary>
         <value>The <see cref="T:System.Windows.Forms.MenuItem" /> with the specified key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -855,7 +883,10 @@
       </Parameters>
       <Docs>
         <param name="item">The <see cref="T:System.Windows.Forms.MenuItem" /> to remove.</param>
-        <summary>Removes the specified <see cref="T:System.Windows.Forms.MenuItem" /> from the menu item collection.</summary>
+        <summary>
+             Removes the specified item from this menu.  All subsequent
+             items are moved down one slot.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -900,7 +931,10 @@
       </Parameters>
       <Docs>
         <param name="index">The index of the <see cref="T:System.Windows.Forms.MenuItem" /> to remove.</param>
-        <summary>Removes a <see cref="T:System.Windows.Forms.MenuItem" /> from the menu item collection at a specified index.</summary>
+        <summary>
+             Removes the item at the specified index in this menu.  All subsequent
+             items are moved up one slot.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -937,11 +971,13 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="key">The name of the menu item to remove.</param>
-        <summary>Removes the menu item with the specified key from the collection.</summary>
+        <summary>
+             Removes the menu iteml with the specified key.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1214,16 +1250,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="index">The zero-based index of the element to get.</param>

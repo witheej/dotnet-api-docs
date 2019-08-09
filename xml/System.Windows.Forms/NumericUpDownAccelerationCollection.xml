@@ -1,4 +1,4 @@
-﻿<Type Name="NumericUpDownAccelerationCollection" FullName="System.Windows.Forms.NumericUpDownAccelerationCollection">
+<Type Name="NumericUpDownAccelerationCollection" FullName="System.Windows.Forms.NumericUpDownAccelerationCollection">
   <TypeSignature Language="C#" Value="public class NumericUpDownAccelerationCollection : MarshalByRefObject, System.Collections.Generic.ICollection&lt;System.Windows.Forms.NumericUpDownAcceleration&gt;, System.Collections.Generic.IEnumerable&lt;System.Windows.Forms.NumericUpDownAcceleration&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NumericUpDownAccelerationCollection extends System.MarshalByRefObject implements class System.Collections.Generic.ICollection`1&lt;class System.Windows.Forms.NumericUpDownAcceleration&gt;, class System.Collections.Generic.IEnumerable`1&lt;class System.Windows.Forms.NumericUpDownAcceleration&gt;, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.NumericUpDownAccelerationCollection" />
@@ -33,7 +33,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a sorted collection of <see cref="T:System.Windows.Forms.NumericUpDownAcceleration" /> objects in the <see cref="T:System.Windows.Forms.NumericUpDown" /> control.</summary>
+    <summary>
+             Represents a SORTED collection of NumericUpDownAcceleration objects in the NumericUpDown Control.
+             The elements in the collection are sorted by the NumericUpDownAcceleration.Seconds property.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -66,7 +69,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.NumericUpDownAccelerationCollection" /> class.</summary>
+        <summary>
+             Class constructor.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -134,7 +139,7 @@
       <Parameters>
         <Parameter Name="accelerations" Type="System.Windows.Forms.NumericUpDownAcceleration[]">
           <Attributes>
-            <Attribute FrameworkAlternate="netcore-3.0">
+            <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -142,7 +147,9 @@
       </Parameters>
       <Docs>
         <param name="accelerations">An array of type <see cref="T:System.Windows.Forms.NumericUpDownAcceleration" /> containing the objects to add to the collection.</param>
-        <summary>Adds the elements of the specified array to the <see cref="T:System.Windows.Forms.NumericUpDownAccelerationCollection" />, keeping the collection sorted.</summary>
+        <summary>
+             Adds the elements of specified array to the collection, keeping the collection sorted.
+            </summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="accelerations" /> is <see langword="null" />, or one of the entries in the <paramref name="accelerations" /> array is <see langword="null" />.</exception>
@@ -169,7 +176,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all elements from the <see cref="T:System.Windows.Forms.NumericUpDownAccelerationCollection" />.</summary>
+        <summary>
+             Removes all items from the ICollection.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -197,7 +206,9 @@
       </Parameters>
       <Docs>
         <param name="acceleration">The <see cref="T:System.Windows.Forms.NumericUpDownAcceleration" /> to locate in the <see cref="T:System.Windows.Forms.NumericUpDownAccelerationCollection" />.</param>
-        <summary>Determines whether the <see cref="T:System.Windows.Forms.NumericUpDownAccelerationCollection" /> contains a specific <see cref="T:System.Windows.Forms.NumericUpDownAcceleration" />.</summary>
+        <summary>
+             Determines whether the IList contains a specific value.
+            </summary>
         <returns>
           <see langword="true" /> if the <see cref="T:System.Windows.Forms.NumericUpDownAcceleration" /> is found in the <see cref="T:System.Windows.Forms.NumericUpDownAccelerationCollection" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -226,7 +237,9 @@
       <Docs>
         <param name="array">The one-dimensional <see cref="T:System.Windows.Forms.NumericUpDownAcceleration" /> that is the destination of the values copied from <see cref="T:System.Windows.Forms.NumericUpDownAccelerationCollection" />.</param>
         <param name="index">The index in <paramref name="array" /> where copying begins.</param>
-        <summary>Copies the <see cref="T:System.Windows.Forms.NumericUpDownAccelerationCollection" /> values to a one-dimensional <see cref="T:System.Windows.Forms.NumericUpDownAcceleration" /> instance at the specified index.</summary>
+        <summary>
+             Copies the elements of the ICollection to an Array, starting at a particular Array index.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -250,7 +263,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of objects in the <see cref="T:System.Windows.Forms.NumericUpDownAccelerationCollection" />.</summary>
+        <summary>
+             Gets the number of elements contained in the ICollection.
+            </summary>
         <value>The number of objects in the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -275,7 +290,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="T:System.Windows.Forms.NumericUpDownAccelerationCollection" /> is read-only.</summary>
+        <summary>
+             Gets a value indicating whether the ICollection is read-only.
+             This collection property returns false always.
+            </summary>
         <value>
           <see langword="true" /> if the collection is read-only; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -309,7 +327,10 @@
       </Parameters>
       <Docs>
         <param name="index">The zero-based index of the <see cref="T:System.Windows.Forms.NumericUpDownAcceleration" /> to get from the collection.</param>
-        <summary>Gets the <see cref="T:System.Windows.Forms.NumericUpDownAcceleration" /> at the specified index number.</summary>
+        <summary>
+             Gets (ReadOnly) the element at the specified index. In C#, this property is the indexer for
+             the IList class.
+            </summary>
         <value>The <see cref="T:System.Windows.Forms.NumericUpDownAcceleration" /> with the specified index.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -338,7 +359,9 @@
       </Parameters>
       <Docs>
         <param name="acceleration">The <see cref="T:System.Windows.Forms.NumericUpDownAcceleration" /> to remove from the collection.</param>
-        <summary>Removes the first occurrence of the specified <see cref="T:System.Windows.Forms.NumericUpDownAcceleration" /> from the <see cref="T:System.Windows.Forms.NumericUpDownAccelerationCollection" />.</summary>
+        <summary>
+             Removes the specified item from the ICollection.
+            </summary>
         <returns>
           <see langword="true" /> if the <see cref="T:System.Windows.Forms.NumericUpDownAcceleration" /> is removed from <see cref="T:System.Windows.Forms.NumericUpDownAccelerationCollection" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>

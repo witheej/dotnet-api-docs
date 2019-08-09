@@ -1,4 +1,4 @@
-﻿<Type Name="FlatButtonAppearance" FullName="System.Windows.Forms.FlatButtonAppearance">
+<Type Name="FlatButtonAppearance" FullName="System.Windows.Forms.FlatButtonAppearance">
   <TypeSignature Language="C#" Value="public class FlatButtonAppearance" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FlatButtonAppearance extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FlatButtonAppearance" />
@@ -48,17 +48,16 @@
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Always)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the color of the border around the button.</summary>
+        <summary>
+             For buttons whose FlatStyle is FlatStyle.Flat, this property specifies the color of the border around the button.
+            </summary>
         <value>A <see cref="T:System.Drawing.Color" /> structure representing the color of the border around the button.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -87,17 +86,16 @@
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Always)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that specifies the size, in pixels, of the border around the button.</summary>
+        <summary>
+             For buttons whose FlatStyle is FlatStyle.Flat, this property specifies the size, in pixels of the border around the button.
+            </summary>
         <value>An <see cref="T:System.Int32" /> representing the size, in pixels, of the border around the button.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -126,17 +124,17 @@
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Always)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the color of the client area of the button when the button is checked and the mouse pointer is outside the bounds of the control.</summary>
+        <summary>
+             For buttons whose FlatStyle is FlatStyle.Flat, this property specifies the color of the client area
+             of the button when the button state is checked and the mouse cursor is NOT within the bounds of the control.
+            </summary>
         <value>A <see cref="T:System.Drawing.Color" /> structure representing the color of the client area of the button.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -165,17 +163,17 @@
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Always)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the color of the client area of the button when the mouse is pressed within the bounds of the control.</summary>
+        <summary>
+             For buttons whose FlatStyle is FlatStyle.Flat, this property specifies the color of the client area
+             of the button when the mouse cursor is within the bounds of the control and the left button is pressed.
+            </summary>
         <value>A <see cref="T:System.Drawing.Color" /> structure representing the color of the client area of the button.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -204,17 +202,17 @@
           <AttributeName>System.ComponentModel.NotifyParentProperty(true)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Always)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the color of the client area of the button when the mouse pointer is within the bounds of the control.</summary>
+        <summary>
+             For buttons whose FlatStyle is FlatStyle.Flat, this property specifies the color of the client
+             area of the button when the mouse cursor is within the bounds of the control.
+            </summary>
         <value>A <see cref="T:System.Drawing.Color" /> structure representing the color of the client area of the button.</value>
         <remarks>To be added.</remarks>
       </Docs>

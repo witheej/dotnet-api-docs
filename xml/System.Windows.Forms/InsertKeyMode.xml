@@ -1,4 +1,4 @@
-﻿<Type Name="InsertKeyMode" FullName="System.Windows.Forms.InsertKeyMode">
+<Type Name="InsertKeyMode" FullName="System.Windows.Forms.InsertKeyMode">
   <TypeSignature Language="C#" Value="public enum InsertKeyMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed InsertKeyMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.InsertKeyMode" />
@@ -14,7 +14,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Represents the insertion mode used by text boxes.</summary>
+    <summary>
+             Represents the mode characters are entered in a text box.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -44,7 +46,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Honors the current INSERT key mode of the keyboard.</summary>
+        <summary>
+             Honors the Insert key mode.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -65,7 +69,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Indicates that the insertion mode is enabled regardless of the INSERT key mode of the keyboard.</summary>
+        <summary>
+             Forces insertion mode to be 'on' regardless of the Insert key mode.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Overwrite">
@@ -86,7 +92,9 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Indicates that the overwrite mode is enabled regardless of the INSERT key mode of the keyboard.</summary>
+        <summary>
+             Forces insertion mode to be 'off' regardless of the Insert key mode.
+            </summary>
       </Docs>
     </Member>
   </Members>

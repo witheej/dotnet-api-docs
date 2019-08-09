@@ -1,4 +1,4 @@
-﻿<Type Name="FileDialog" FullName="System.Windows.Forms.FileDialog">
+<Type Name="FileDialog" FullName="System.Windows.Forms.FileDialog">
   <TypeSignature Language="C#" Value="public abstract class FileDialog : System.Windows.Forms.CommonDialog" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit FileDialog extends System.Windows.Forms.CommonDialog" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FileDialog" />
@@ -24,7 +24,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Displays a dialog box from which the user can select a file.</summary>
+    <summary>
+             Displays a dialog window from which the user can select a file.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -98,15 +100,15 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the dialog box automatically adds an extension to a file name if the user omits the extension.</summary>
+        <summary>
+             Gets or sets a value indicating whether the dialog box automatically adds an
+             extension to a file name if the user omits the extension.
+            </summary>
         <value>
           <see langword="true" /> if the dialog box adds an extension to a file name if the user omits the extension; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
         <remarks>
@@ -143,18 +145,14 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether this <see cref="T:System.Windows.Forms.FileDialog" /> instance should automatically upgrade appearance and behavior when running on [!INCLUDE[wiprlhext](~/includes/wiprlhext-md.md)].</summary>
+        <summary>
+             Gets or sets whether the dialog will be automatically upgraded to enable new features.
+            </summary>
         <value>
           <see langword="true" /> if this <see cref="T:System.Windows.Forms.FileDialog" /> instance should automatically upgrade appearance and behavior when running on [!INCLUDE[wiprlhext](~/includes/wiprlhext-md.md)]; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
@@ -187,15 +185,15 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the dialog box displays a warning if the user specifies a file name that does not exist.</summary>
+        <summary>
+             Gets or sets a value indicating whether the dialog box displays a warning
+             if the user specifies a file name that does not exist.
+            </summary>
         <value>
           <see langword="true" /> if the dialog box displays a warning if the user specifies a file name that does not exist; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
@@ -228,15 +226,15 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the dialog box displays a warning if the user specifies a path that does not exist.</summary>
+        <summary>
+             Gets or sets a value indicating whether the dialog box displays a warning if
+             the user specifies a path that does not exist.
+            </summary>
         <value>
           <see langword="true" /> if the dialog box displays a warning when the user specifies a path that does not exist; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
@@ -263,9 +261,6 @@
         </Attribute>
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -315,7 +310,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the default file name extension.</summary>
+        <summary>
+             Gets or sets the default file extension.
+            </summary>
         <value>The default file name extension. The returned string does not include the period. The default value is an empty string ("").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -361,7 +358,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the dialog box returns the location of the file referenced by the shortcut or whether it returns the location of the shortcut (.lnk).</summary>
+        <summary>
+             Gets or sets a value indicating whether the dialog box returns the location
+             of the file referenced by the shortcut or whether it returns the location
+             of the shortcut (.lnk).
+            </summary>
         <value>
           <see langword="true" /> if the dialog box returns the location of the file referenced by the shortcut; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
@@ -413,7 +414,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a string containing the file name selected in the file dialog box.</summary>
+        <summary>
+             Gets or sets a string containing the file name selected in the file dialog box.
+            </summary>
         <value>The file name selected in the file dialog box. The default value is an empty string ("").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -470,7 +473,9 @@
         <ReturnType>System.String[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the file names of all selected files in the dialog box.</summary>
+        <summary>
+             Gets the file names of all selected files in the dialog box.
+            </summary>
         <value>An array of type <see cref="T:System.String" />, containing the file names of all selected files in the dialog box.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -510,7 +515,12 @@
         <ReturnType>System.ComponentModel.CancelEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the user clicks on the **Open** or **Save** button on a file dialog box.</summary>
+        <summary>
+             Occurs when the user clicks on the Open or Save button on a file dialog
+             box.
+            <remarks>
+             For information about handling events, see <see topic="cpconEventsOverview" />.
+            </remarks></summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -557,7 +567,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the current file name filter string, which determines the choices that appear in the "Save as file type" or "Files of type" box in the dialog box.</summary>
+        <summary>
+             Gets or sets the current file name filter string, which determines the choices
+             that appear in the "Save as file type" or "Files of type" box in the dialog box.
+            </summary>
         <value>The file filtering options available in the dialog box.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -610,18 +623,14 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(1)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the index of the filter currently selected in the file dialog box.</summary>
+        <summary>
+             Gets or sets the index of the filter currently selected in the file dialog box.
+            </summary>
         <value>A value containing the index of the filter currently selected in the file dialog box. The default value is 1.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -675,7 +684,10 @@
         <param name="msg">The message received by the dialog box.</param>
         <param name="wparam">Additional information about the message.</param>
         <param name="lparam">Additional information about the message.</param>
-        <summary>Defines the common dialog box hook procedure that is overridden to add specific functionality to the file dialog box.</summary>
+        <summary>
+             Defines the common dialog box hook procedure that is overridden to add
+             specific functionality to the file dialog box.
+            </summary>
         <returns>Returns zero if the default dialog box procedure processes the message; returns a nonzero value if the default dialog box procedure ignores the message.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -715,7 +727,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the initial directory displayed by the file dialog box.</summary>
+        <summary>
+             Gets or sets the initial directory displayed by the file dialog box.
+            </summary>
         <value>The initial directory displayed by the file dialog box. The default is an empty string ("").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -772,7 +786,9 @@
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Win32 instance handle for the application.</summary>
+        <summary>
+             Gets the Win32 instance handle for the application.
+            </summary>
         <value>A Win32 instance handle for the application.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -799,7 +815,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.ComponentModel.CancelEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.FileDialog.FileOk" /> event.</summary>
+        <summary>
+             Raises the <see cref="E:System.Windows.Forms.FileDialog.FileOk" /> event.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="E:System.Windows.Forms.FileDialog.FileOk" />
       </Docs>
@@ -822,7 +840,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets values to initialize the <see cref="T:System.Windows.Forms.FileDialog" />.</summary>
+        <summary>
+             Gets the Win32 common Open File Dialog OFN_* option flags.
+            </summary>
         <value>A bitwise combination of internal values that initializes the <see cref="T:System.Windows.Forms.FileDialog" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -853,7 +873,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Resets all properties to their default values.</summary>
+        <summary>
+             Resets all properties to their default values.
+            </summary>
         <remarks>To be added.</remarks>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.FileDialog.Reset" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.CommonDialog.Reset" /> method.</para>
@@ -878,15 +900,15 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the dialog box restores the directory to the previously selected directory before closing.</summary>
+        <summary>
+             Gets or sets a value indicating whether the dialog box restores the current
+             directory before closing.
+            </summary>
         <value>
           <see langword="true" /> if the dialog box restores the current directory to the previously selected directory if the user changed the directory while searching for files; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
@@ -927,7 +949,9 @@
       </Parameters>
       <Docs>
         <param name="hWndOwner">A value that represents the window handle of the owner window for the common dialog box.</param>
-        <summary>Specifies a common dialog box.</summary>
+        <summary>
+             Implements running of a file dialog.
+            </summary>
         <returns>
           <see langword="true" /> if the file could be opened; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -960,18 +984,15 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the **Help** button is displayed in the file dialog box.</summary>
+        <summary>
+             Gets or sets a value indicating whether whether the Help button is displayed
+             in the file dialog.
+            </summary>
         <value>
           <see langword="true" /> if the dialog box includes a help button; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
@@ -1001,18 +1022,14 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets whether the dialog box supports displaying and saving files that have multiple file name extensions.</summary>
+        <summary>
+             Gets or sets whether def or abc.def is the extension of the file filename.abc.def
+            </summary>
         <value>
           <see langword="true" /> if the dialog box supports multiple file name extensions; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
@@ -1062,7 +1079,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the file dialog box title.</summary>
+        <summary>
+             Gets or sets the file dialog box title.
+            </summary>
         <value>The file dialog box title. The default value is an empty string ("").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1103,7 +1122,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Provides a string version of this object.</summary>
+        <summary>
+             Provides a string version of this Object.
+            </summary>
         <returns>A string version of this object.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1131,7 +1152,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the dialog box accepts only valid Win32 file names.</summary>
+        <summary>
+             Gets or sets a value indicating whether the dialog box accepts only valid
+             Win32 file names.
+            </summary>
         <value>
           <see langword="true" /> if the dialog box accepts only valid Win32 file names; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
         <remarks>

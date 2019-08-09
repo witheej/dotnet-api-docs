@@ -1,4 +1,4 @@
-﻿<Type Name="ControlDesigner" FullName="System.Windows.Forms.Design.ControlDesigner">
+<Type Name="ControlDesigner" FullName="System.Windows.Forms.Design.ControlDesigner">
   <TypeSignature Language="C#" Value="public class ControlDesigner : System.ComponentModel.Design.ComponentDesigner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ControlDesigner extends System.ComponentModel.Design.ComponentDesigner" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.ControlDesigner" />
@@ -20,7 +20,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Extends the design mode behavior of a <see cref="T:System.Windows.Forms.Control" />.</summary>
+    <summary>
+             Provides a designer that can design components that extend Control.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -162,7 +164,9 @@
         <ReturnType>System.Collections.ICollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of components associated with the component managed by the designer.</summary>
+        <summary>
+             Retrieves a list of associated components. These are components that should be incluced in a cut or copy operation on this component.
+            </summary>
         <value>The components that are associated with the component managed by the designer.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -195,14 +199,6 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -239,7 +235,9 @@
       </Parameters>
       <Docs>
         <param name="m">The <see cref="T:System.Windows.Forms.Message" /> to process.</param>
-        <summary>Processes Windows messages.</summary>
+        <summary>
+             Default processing for messages.  This method causes the message to get processed by windows, skipping the control.  This is useful if you want to block this message from getting to the control, but you do not want to block it from getting to Windows itself because it causes other messages to be generated.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -302,7 +300,9 @@
       </Parameters>
       <Docs>
         <param name="parentDesigner">The <see cref="T:System.ComponentModel.Design.IDesigner" /> that manages the control to check.</param>
-        <summary>Indicates if this designer's control can be parented by the control of the specified designer.</summary>
+        <summary>
+             Determines if the this designer can be parented to the specified desinger -- generally this means if the control for this designer can be parented into the given ParentControlDesigner's designer.
+            </summary>
         <returns>
           <see langword="true" /> if the control managed by the specified designer can parent the control managed by this designer; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -340,7 +340,9 @@
         <ReturnType>System.Windows.Forms.Control</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the control that the designer is designing.</summary>
+        <summary>
+             Retrieves the control we're designing.
+            </summary>
         <value>The control that the designer is designing.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -371,7 +373,9 @@
       </Parameters>
       <Docs>
         <param name="m">The <see cref="T:System.Windows.Forms.Message" /> to process.</param>
-        <summary>Provides default processing for Windows messages.</summary>
+        <summary>
+             Default processing for messages.  This method causes the message to get processed by the control, rather than the designer.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -411,7 +415,9 @@
       </Parameters>
       <Docs>
         <param name="e">The <see cref="T:System.Exception" /> to display.</param>
-        <summary>Displays information about the specified exception to the user.</summary>
+        <summary>
+             Displays the given exception to the user.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -442,7 +448,9 @@
       <Docs>
         <param name="disposing">
           <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.Design.ControlDesigner" /> and optionally releases the managed resources.</summary>
+        <summary>
+             Disposes of this object.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -483,13 +491,15 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="child" Type="System.Windows.Forms.Control" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="child" Type="System.Windows.Forms.Control" />
+        <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="child">The child control for which design mode will be enabled.</param>
         <param name="name">The name of <paramref name="child" /> as exposed to the end user.</param>
-        <summary>Enables design time functionality for a child control.</summary>
+        <summary>
+             Enables design time functionality for a child control.  The child control is a child of this control designer's control.  The child does not directly participate in persistence, but it will if it is exposed as a property of the main control.  Consider a control like the SplitContainer:  it has two panels, Panel1 and Panel2.  These panels are exposed through read only Panel1 and Panel2 properties on the SplitContainer class. SplitContainer's designer calls EnableDesignTime for each panel, which allows other components to be dropped on them.  But, in order for the contents of Panel1 and Panel2 to be saved, SplitContainer itself needed to expose the panels as public properties. The child paramter is the control to enable.  The name paramter is the name of this control as exposed to the end user.  Names need to be unique within a control designer, but do not have to be unique to other control designer's children. This method returns true if the child control could be enabled for design time, or false if the hosting infrastructure does not support it.  To support this feature, the hosting infrastructure must expose the INestedContainer class as a service off of the site.
+            </summary>
         <returns>
           <see langword="true" /> if the child control could be enabled for design time; <see langword="false" /> if the hosting infrastructure does not support it.</returns>
         <remarks>
@@ -535,7 +545,9 @@
       <Docs>
         <param name="value">
           <see langword="true" /> to enable drag-and-drop support for the control; <see langword="false" /> if the control should not have drag-and-drop support. The default is <see langword="false" />.</param>
-        <summary>Enables or disables drag-and-drop support for the control being designed.</summary>
+        <summary>
+             Enables or disables drag/drop support.  This hooks drag event handlers to the control.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -568,7 +580,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether drag rectangles can be drawn on this designer component.</summary>
+        <summary>
+             Determines whether drag rects can be drawn on this designer.
+            </summary>
         <value>
           <see langword="true" /> if drag rectangles can be drawn; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -595,11 +609,13 @@
         <ReturnType>System.Windows.Forms.Design.Behavior.ControlBodyGlyph</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="selectionType" Type="System.Windows.Forms.Design.Behavior.GlyphSelectionType" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="selectionType" Type="System.Windows.Forms.Design.Behavior.GlyphSelectionType" />
       </Parameters>
       <Docs>
         <param name="selectionType">A <see cref="T:System.Windows.Forms.Design.Behavior.GlyphSelectionType" /> value that specifies the selection state.</param>
-        <summary>Returns a <see cref="T:System.Windows.Forms.Design.Behavior.ControlBodyGlyph" /> representing the bounds of this control.</summary>
+        <summary>
+             Returns a 'BodyGlyph' representing the bounds of this control. The BodyGlyph is responsible for hit testing the related CtrlDes and forwarding messages directly to the designer.
+            </summary>
         <returns>A <see cref="T:System.Windows.Forms.Design.Behavior.ControlBodyGlyph" /> representing the bounds of this control.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -625,11 +641,13 @@
         <ReturnType>System.Windows.Forms.Design.Behavior.GlyphCollection</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="selectionType" Type="System.Windows.Forms.Design.Behavior.GlyphSelectionType" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="selectionType" Type="System.Windows.Forms.Design.Behavior.GlyphSelectionType" />
       </Parameters>
       <Docs>
         <param name="selectionType">A <see cref="T:System.Windows.Forms.Design.Behavior.GlyphSelectionType" /> value that specifies the selection state.</param>
-        <summary>Gets a collection of <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> objects representing the selection borders and grab handles for a standard control.</summary>
+        <summary>
+             Returns a collection of Glyph objects representing the selection borders and grab handles for a standard control.  Note that based on 'selectionType' the Glyphs returned will either: represent a fully resizeable selection border with grab handles, a locked selection border, or a single 'hidden' selection Glyph.
+            </summary>
         <returns>A collection of <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> objects.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -672,7 +690,9 @@
       </Parameters>
       <Docs>
         <param name="point">A <see cref="T:System.Drawing.Point" /> indicating the position at which the mouse was clicked, in screen coordinates.</param>
-        <summary>Indicates whether a mouse click at the specified point should be handled by the control.</summary>
+        <summary>
+             Allows your component to support a design time user interface.  A TabStrip control, for example, has a design time user interface that allows the user to click the tabs to change tabs.  To implement this, TabStrip returns true whenever the given point is within its tabs.
+            </summary>
         <returns>
           <see langword="true" /> if a click at the specified point is to be handled by the control; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -716,7 +736,9 @@
       </Parameters>
       <Docs>
         <param name="firstChild">The first child <see cref="T:System.Windows.Forms.Control" /> to process. This method may recursively call itself for children of the control.</param>
-        <summary>Routes messages from the child controls of the specified control to the designer.</summary>
+        <summary>
+             Hooks the children of the given control.  We need to do this for child controls that are not in design mode, which is the case for composite controls.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -773,7 +795,9 @@
       </Parameters>
       <Docs>
         <param name="component">The <see cref="T:System.ComponentModel.IComponent" /> to associate the designer with. This component must always be an instance of, or derive from, <see cref="T:System.Windows.Forms.Control" />.</param>
-        <summary>Initializes the designer with the specified component.</summary>
+        <summary>
+             Called by the host when we're first initialized.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -806,11 +830,13 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="defaultValues" Type="System.Collections.IDictionary" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="defaultValues" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
         <param name="defaultValues">A name/value dictionary of default values to apply to properties. May be <see langword="null" /> if no default values are specified.</param>
-        <summary>Re-initializes an existing component.</summary>
+        <summary>
+             ControlDesigner overrides this method to handle after-drop cases.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -843,11 +869,13 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="defaultValues" Type="System.Collections.IDictionary" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="defaultValues" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
         <param name="defaultValues">A name/value dictionary of default values to apply to properties. May be <see langword="null" /> if no default values are specified.</param>
-        <summary>Initializes a newly created component.</summary>
+        <summary>
+             ControlDesigner overrides this method.  It will look at the default property for the control and, if it is of type string, it will set this property's value to the name of the component.  It only does this if the designer has been configured with this option in the options service.  This method also connects the control to its parent and positions it.  If you override this method, you should always call base.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -857,30 +885,6 @@
  ]]></format>
         </remarks>
         <altmember cref="M:System.ComponentModel.Design.ComponentDesigner.InitializeNewComponent(System.Collections.IDictionary)" />
-      </Docs>
-    </Member>
-    <Member MemberName="InitializeNonDefault">
-      <MemberSignature Language="C#" Value="public override void InitializeNonDefault ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void InitializeNonDefault() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ControlDesigner.InitializeNonDefault" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Sub InitializeNonDefault ()" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override void InitializeNonDefault();" />
-      <MemberSignature Language="F#" Value="override this.InitializeNonDefault : unit -&gt; unit" Usage="controlDesigner.InitializeNonDefault " />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>Initializes properties of the control to any non-default values.</summary>
-        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="InternalControlDesigner">
@@ -904,11 +908,13 @@
         <ReturnType>System.Windows.Forms.Design.ControlDesigner</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="internalControlIndex" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="internalControlIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="internalControlIndex">A specified index to select the internal control designer. This index is zero-based.</param>
-        <summary>Returns the internal control designer with the specified index in the <see cref="T:System.Windows.Forms.Design.ControlDesigner" />.</summary>
+        <summary>
+             Returns the internal control designer with the specified index in the ControlDesigner. An internal control is a control that is not in the IDesignerHost.Container.Components collection. SplitterPanel is an example of one such control. internalControlIndex is zero-based.
+            </summary>
         <returns>A <see cref="T:System.Windows.Forms.Design.ControlDesigner" /> at the specified index.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -975,7 +981,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the number of internal control designers in the <see cref="T:System.Windows.Forms.Design.ControlDesigner" />.</summary>
+        <summary>
+             Returns the number of internal control designers in the ControlDesigner. An internal control is a control that is not in the IDesignerHost.Container.Components collection. SplitterPanel is an example of one such control. We use this to get SnapLines for the internal control designers.
+            </summary>
         <returns>The number of internal control designers in the <see cref="T:System.Windows.Forms.Design.ControlDesigner" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1015,7 +1023,9 @@
       <Docs>
         <param name="x">The x coordinate at which to display the context menu.</param>
         <param name="y">The y coordinate at which to display the context menu.</param>
-        <summary>Shows the context menu and provides an opportunity to perform additional processing when the context menu is about to be displayed.</summary>
+        <summary>
+             Called when the context menu should be displayed
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1042,7 +1052,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Provides an opportunity to perform additional processing immediately after the control handle has been created.</summary>
+        <summary>
+             This is called immediately after the control handle has been created.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1067,7 +1079,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="de" Type="System.Windows.Forms.DragEventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="de" Type="System.Windows.Forms.DragEventArgs" />
       </Parameters>
       <Docs>
         <param name="de">A <see cref="T:System.Windows.Forms.DragEventArgs" /> that provides data for the event.</param>
@@ -1101,7 +1113,9 @@
       </Parameters>
       <Docs>
         <param name="de">A <see cref="T:System.Windows.Forms.DragEventArgs" /> that provides data for the event.</param>
-        <summary>Receives a call when a drag-and-drop object is dropped onto the control designer view.</summary>
+        <summary>
+             Called when a drag drop object is dropped onto the control designer view
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1131,7 +1145,9 @@
       </Parameters>
       <Docs>
         <param name="de">A <see cref="T:System.Windows.Forms.DragEventArgs" /> that provides data for the event.</param>
-        <summary>Receives a call when a drag-and-drop operation enters the control designer view.</summary>
+        <summary>
+             Called when a drag-drop operation enters the control designer view
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1161,7 +1177,9 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that provides data for the event.</param>
-        <summary>Receives a call when a drag-and-drop operation leaves the control designer view.</summary>
+        <summary>
+             Called when a drag-drop operation leaves the control designer view
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1191,7 +1209,9 @@
       </Parameters>
       <Docs>
         <param name="de">A <see cref="T:System.Windows.Forms.DragEventArgs" /> that provides data for the event.</param>
-        <summary>Receives a call when a drag-and-drop object is dragged over the control designer view.</summary>
+        <summary>
+             Called when a drag drop object is dragged over the control designer view
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1221,7 +1241,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.GiveFeedbackEventArgs" /> that provides data for the event.</param>
-        <summary>Receives a call when a drag-and-drop operation is in progress to provide visual cues based on the location of the mouse while a drag operation is in progress.</summary>
+        <summary>
+             Event handler for our GiveFeedback event, which is called when a drag operation is in progress.  The host will call us with this when an OLE drag event happens.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1260,7 +1282,9 @@
       <Docs>
         <param name="x">The x position of the mouse in screen coordinates.</param>
         <param name="y">The y position of the mouse in screen coordinates.</param>
-        <summary>Receives a call in response to the left mouse button being pressed and held while over the component.</summary>
+        <summary>
+             Called in response to the left mouse button being pressed on a component. It ensures that the component is selected.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1301,7 +1325,9 @@
       <Docs>
         <param name="cancel">
           <see langword="true" /> to cancel the drag; <see langword="false" /> to commit it.</param>
-        <summary>Receives a call at the end of a drag-and-drop operation to complete or cancel the operation.</summary>
+        <summary>
+             Called at the end of a drag operation.  This either commits or rolls back the drag.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1333,7 +1359,9 @@
       <Docs>
         <param name="x">The x position of the mouse in screen coordinates.</param>
         <param name="y">The y position of the mouse in screen coordinates.</param>
-        <summary>Receives a call for each movement of the mouse during a drag-and-drop operation.</summary>
+        <summary>
+             Called for each movement of the mouse. This will check to see if a drag operation is in progress. If so, it will pass the updated drag dimensions on to the selection UI service.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1369,7 +1397,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Receives a call when the mouse first enters the control.</summary>
+        <summary>
+             Called when the mouse first enters the control. This is forwarded to the parent designer to enable the container selector.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1396,7 +1426,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Receives a call after the mouse hovers over the control.</summary>
+        <summary>
+             Called after the mouse hovers over the control. This is forwarded to the parent designer to enabled the container selector.
+             Called after the mouse hovers over the control. This is forwarded to the parent
+             designer to enabled the container selector.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1423,7 +1457,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Receives a call when the mouse first enters the control.</summary>
+        <summary>
+             Called when the mouse first enters the control. This is forwarded to the parent designer to enable the container selector.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1453,7 +1489,9 @@
       </Parameters>
       <Docs>
         <param name="pe">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> the designer can use to draw on the control.</param>
-        <summary>Receives a call when the control that the designer is managing has painted its surface so the designer can paint any additional adornments on top of the control.</summary>
+        <summary>
+             Called when the control we're designing has finished painting.  This method gives the designer a chance to paint any additional adornments on top of the control.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1485,7 +1523,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Called when the designer is initialized.</summary>
+        <summary>
+             Called when the designer is intialized.  This allows the designer to provide some meaningful default values in the component.  The default implementation of this sets the components's default property to it's name, if that property is a string.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1512,7 +1552,13 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Receives a call each time the cursor needs to be set.</summary>
+        <summary>
+             Called each time the cursor needs to be set.  The ControlDesigner behavior here will set the cursor to one of three things:
+             1.  If the toolbox service has a tool selected, it will allow the toolbox service to set the cursor.
+             2.  If the selection UI service shows a locked selection, or if there is no location property on the control, then the default arrow will be set.
+             3.  Otherwise, the four headed arrow will be set to indicate that the component can be clicked and moved.
+             4.  If the user is currently dragging a component, the crosshair cursor will be used instead of the four headed arrow.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1544,7 +1590,9 @@
         <ReturnType>System.ComponentModel.IComponent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the parent component for the <see cref="T:System.Windows.Forms.Design.ControlDesigner" />.</summary>
+        <summary>
+             Returns the parent component for this control designer. The default implementation just checks to see if the component being designed is a control, and if it is it returns its parent.  This property can return null if there is no parent component.
+            </summary>
         <value>The parent component for the <see cref="T:System.Windows.Forms.Design.ControlDesigner" />; otherwise, <see langword="null" /> if there is no parent component.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1577,7 +1625,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="T:System.Windows.Forms.Design.ControlDesigner" /> will allow snapline alignment during a drag operation.</summary>
+        <summary>
+             Determines whether or not the ControlDesigner will allow SnapLine alignment during a drag operation when the primary drag control is over this designer, or when a control is being dragged from the toolbox, or when a control is being drawn through click-drag.
+            </summary>
         <value>
           <see langword="true" /> if the <see cref="T:System.Windows.Forms.Design.ControlDesigner" /> will allow snapline alignment during a drag operation when the primary drag control is over this designer; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -1612,7 +1662,9 @@
       </Parameters>
       <Docs>
         <param name="properties">An <see cref="T:System.Collections.IDictionary" /> containing the properties for the class of the component.</param>
-        <summary>Adjusts the set of properties the component exposes through a <see cref="T:System.ComponentModel.TypeDescriptor" />.</summary>
+        <summary>
+             Allows a designer to filter the set of properties the component it is designing will expose through the TypeDescriptor object.  This method is called immediately before its corresponding "Post" method. If you are overriding this method you should call the base implementation before you perform your own filtering.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1646,7 +1698,9 @@
         <ReturnType>System.Windows.Forms.Design.SelectionRules</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the selection rules that indicate the movement capabilities of a component.</summary>
+        <summary>
+             Retrieves a set of rules concerning the movement capabilities of a component. This should be one or more flags from the SelectionRules class.  If no designer provides rules for a component, the component will not get any UI services.
+            </summary>
         <value>A bitwise combination of <see cref="T:System.Windows.Forms.Design.SelectionRules" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1676,16 +1730,13 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.IList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a list of <see cref="T:System.Windows.Forms.Design.Behavior.SnapLine" /> objects representing significant alignment points for this control.</summary>
+        <summary>
+             Returns a list of SnapLine objects representing interesting alignment points for this control.  These SnapLines are used to assist in the positioning of the control on a parent's surface.
+            </summary>
         <value>A list of <see cref="T:System.Windows.Forms.Design.Behavior.SnapLine" /> objects representing significant alignment points for this control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1723,7 +1774,9 @@
       </Parameters>
       <Docs>
         <param name="firstChild">The first child <see cref="T:System.Windows.Forms.Control" /> to process. This method may recursively call itself for children of the control.</param>
-        <summary>Routes messages for the children of the specified control to each control rather than to a parent designer.</summary>
+        <summary>
+             Hooks the children of the given control.  We need to do this for child controls that are not in design mode, which is the case for composite controls.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1753,7 +1806,9 @@
       </Parameters>
       <Docs>
         <param name="m">The <see cref="T:System.Windows.Forms.Message" /> to process.</param>
-        <summary>Processes Windows messages and optionally routes them to the control.</summary>
+        <summary>
+             This method should be called by the extending designer for each message the control would normally receive.  This allows the designer to pre-process messages before allowing them to be routed to the control.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

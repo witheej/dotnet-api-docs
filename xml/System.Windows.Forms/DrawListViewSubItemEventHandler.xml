@@ -1,4 +1,4 @@
-﻿<Type Name="DrawListViewSubItemEventHandler" FullName="System.Windows.Forms.DrawListViewSubItemEventHandler">
+<Type Name="DrawListViewSubItemEventHandler" FullName="System.Windows.Forms.DrawListViewSubItemEventHandler">
   <TypeSignature Language="C#" Value="public delegate void DrawListViewSubItemEventHandler(object sender, DrawListViewSubItemEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DrawListViewSubItemEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DrawListViewSubItemEventHandler" />
@@ -23,7 +23,9 @@
   <Docs>
     <param name="sender">The source of the event.</param>
     <param name="e">A <see cref="T:System.Windows.Forms.DrawListViewSubItemEventArgs" /> that contains the event data.</param>
-    <summary>Represents the method that will handle the <see cref="E:System.Windows.Forms.ListView.DrawSubItem" /> event of a <see cref="T:System.Windows.Forms.ListView" />.</summary>
+    <summary>
+             Handler for the ListView's DrawSubItem event.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

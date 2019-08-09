@@ -1,4 +1,4 @@
-﻿<Type Name="FixedPanel" FullName="System.Windows.Forms.FixedPanel">
+<Type Name="FixedPanel" FullName="System.Windows.Forms.FixedPanel">
   <TypeSignature Language="C#" Value="public enum FixedPanel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FixedPanel extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FixedPanel" />
@@ -14,7 +14,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies that <see cref="P:System.Windows.Forms.SplitContainer.Panel1" />, <see cref="P:System.Windows.Forms.SplitContainer.Panel2" />, or neither panel is fixed.</summary>
+    <summary>
+             Specifies the Fixed Panel in the SplitContainer Control.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -46,7 +48,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Specifies that neither <see cref="P:System.Windows.Forms.SplitContainer.Panel1" />, <see cref="P:System.Windows.Forms.SplitContainer.Panel2" /> is fixed. A <see cref="E:System.Windows.Forms.Control.Resize" /> event affects both panels.</summary>
+        <summary>
+             No panel is fixed. Resize causes the Resize of both the panels.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Panel1">
@@ -67,7 +71,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Specifies that <see cref="P:System.Windows.Forms.SplitContainer.Panel1" /> is fixed. A <see cref="E:System.Windows.Forms.Control.Resize" /> event affects only <see cref="P:System.Windows.Forms.SplitContainer.Panel2" />.</summary>
+        <summary>
+             Panel1 is Fixed. The resize will increase the size of second panel.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Panel2">
@@ -88,7 +94,9 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Specifies that <see cref="P:System.Windows.Forms.SplitContainer.Panel2" /> is fixed. A <see cref="E:System.Windows.Forms.Control.Resize" /> event affects only <see cref="P:System.Windows.Forms.SplitContainer.Panel1" />.</summary>
+        <summary>
+             Panel2 is Fixed. The resize will increase the size of first panel.
+            </summary>
       </Docs>
     </Member>
   </Members>

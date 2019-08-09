@@ -1,4 +1,4 @@
-﻿<Type Name="TreeViewEventHandler" FullName="System.Windows.Forms.TreeViewEventHandler">
+<Type Name="TreeViewEventHandler" FullName="System.Windows.Forms.TreeViewEventHandler">
   <TypeSignature Language="C#" Value="public delegate void TreeViewEventHandler(object sender, TreeViewEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TreeViewEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TreeViewEventHandler" />
@@ -24,7 +24,9 @@
   <Docs>
     <param name="sender">The source of the event.</param>
     <param name="e">A <see cref="T:System.Windows.Forms.TreeViewEventArgs" /> that contains the event data.</param>
-    <summary>Represents the method that will handle the <see cref="E:System.Windows.Forms.TreeView.AfterCheck" />, <see cref="E:System.Windows.Forms.TreeView.AfterCollapse" />, <see cref="E:System.Windows.Forms.TreeView.AfterExpand" />, or <see cref="E:System.Windows.Forms.TreeView.AfterSelect" /> event of a <see cref="T:System.Windows.Forms.TreeView" />.</summary>
+    <summary>
+             Represents a method that will handle the <see cref="M:System.Windows.Forms.TreeView.OnAfterCheck(System.Windows.Forms.TreeViewEventArgs)" />, <see cref="M:System.Windows.Forms.TreeView.OnAfterCollapse(System.Windows.Forms.TreeViewEventArgs)" />, <see cref="M:System.Windows.Forms.TreeView.OnAfterExpand(System.Windows.Forms.TreeViewEventArgs)" />, or <see cref="M:System.Windows.Forms.TreeView.OnAfterSelect(System.Windows.Forms.TreeViewEventArgs)" />
+             event of a <see cref="T:System.Windows.Forms.TreeView" /></summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

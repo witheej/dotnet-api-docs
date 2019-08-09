@@ -1,4 +1,4 @@
-﻿<Type Name="TreeViewImageIndexConverter" FullName="System.Windows.Forms.TreeViewImageIndexConverter">
+<Type Name="TreeViewImageIndexConverter" FullName="System.Windows.Forms.TreeViewImageIndexConverter">
   <TypeSignature Language="C#" Value="public class TreeViewImageIndexConverter : System.Windows.Forms.ImageIndexConverter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TreeViewImageIndexConverter extends System.Windows.Forms.ImageIndexConverter" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TreeViewImageIndexConverter" />
@@ -16,7 +16,10 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a type converter to convert data for an image index to and from one data type to another for use by the <see cref="T:System.Windows.Forms.TreeView" /> control.</summary>
+    <summary>
+             TreeViewImageIndexConverter is a class that can be used to convert
+             image index values one data type to another.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -46,11 +49,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TreeViewImageIndexConverter" /> class.</summary>
@@ -81,15 +79,17 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="culture" Type="System.Globalization.CultureInfo" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="value" Type="System.Object" Index="2" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="value" Type="System.Object" />
       </Parameters>
       <Docs>
         <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
         <param name="culture">A <see cref="T:System.Globalization.CultureInfo" /> to provide locale information.</param>
         <param name="value">The <see cref="T:System.Object" /> to convert.</param>
-        <summary>Converts the specified value object to a 32-bit signed integer object.</summary>
+        <summary>
+             Converts the given value object to a 32-bit signed integer object.
+            </summary>
         <returns>An <see cref="T:System.Object" /> that represents the converted value.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.ImageIndexConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)" />
@@ -112,17 +112,23 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="culture" Type="System.Globalization.CultureInfo" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="value" Type="System.Object" Index="2" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="destinationType" Type="System.Type" Index="3" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="culture" Type="System.Globalization.CultureInfo" />
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
         <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context, which can be used to extract additional information about the environment this type converter is being invoked from. This parameter or properties of this parameter can be <see langword="null" />.</param>
         <param name="culture">A <see cref="T:System.Globalization.CultureInfo" /> that provides locale information.</param>
         <param name="value">The object to convert, typically an index represented as an <see cref="T:System.Int32" />.</param>
         <param name="destinationType">The type to convert the object to, often a <see cref="T:System.String" />.</param>
-        <summary>Converts the specified object to the specified destination type.</summary>
+        <summary>
+             Converts the given object to another type.  The most common types to convert
+             are to and from a string object.  The default implementation will make a call
+             to ToString on the object if the object is valid and if the destination
+             type is string.  If this cannot convert to the desitnation type, this will
+             throw a NotSupportedException.
+            </summary>
         <returns>An <see cref="T:System.Object" /> that represents the converted value.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.ImageIndexConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)" />
@@ -145,11 +151,16 @@
         <ReturnType>System.ComponentModel.TypeConverter+StandardValuesCollection</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
       </Parameters>
       <Docs>
         <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context, which can be used to extract additional information about the environment this type converter is being invoked from. This parameter or properties of this parameter can be <see langword="null" />.</param>
-        <summary>Returns a collection of standard index values for the image list associated with the specified format context.</summary>
+        <summary>
+             Retrieves a collection containing a set of standard values
+             for the data type this validator is designed for.  This
+             will return null if the data type does not support a
+             standard set of values.
+            </summary>
         <returns>A <see cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" /> that holds a standard set of valid index values. If no image list is found, this collection will contain a single object with a value of -1.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.ImageIndexConverter.GetStandardValues(System.ComponentModel.ITypeDescriptorContext)" />

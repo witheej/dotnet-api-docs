@@ -1,4 +1,4 @@
-﻿<Type Name="StatusBarPanelStyle" FullName="System.Windows.Forms.StatusBarPanelStyle">
+<Type Name="StatusBarPanelStyle" FullName="System.Windows.Forms.StatusBarPanelStyle">
   <TypeSignature Language="C#" Value="public enum StatusBarPanelStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StatusBarPanelStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.StatusBarPanelStyle" />
@@ -15,7 +15,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies whether a <see cref="T:System.Windows.Forms.StatusBarPanel" /> object on a <see cref="T:System.Windows.Forms.StatusBar" /> control is owner-drawn or system-drawn.</summary>
+    <summary>
+             Specifies whether a panel on a status bar is owner drawn or system drawn.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -58,7 +60,9 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>The <see cref="T:System.Windows.Forms.StatusBarPanel" /> is drawn by the owner.</summary>
+        <summary>
+             The panel is drawn by the owner.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Text">
@@ -80,7 +84,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The <see cref="T:System.Windows.Forms.StatusBarPanel" /> displays text in the standard font.</summary>
+        <summary>
+             The panel is drawn by the system.
+            </summary>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="AccessibleNavigation" FullName="System.Windows.Forms.AccessibleNavigation">
+<Type Name="AccessibleNavigation" FullName="System.Windows.Forms.AccessibleNavigation">
   <TypeSignature Language="C#" Value="public enum AccessibleNavigation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AccessibleNavigation extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.AccessibleNavigation" />
@@ -15,7 +15,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies values for navigating among accessible objects.</summary>
+    <summary>
+             Specifies values for navigating between accessible objects.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -65,7 +67,9 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Navigation to a sibling object located below the starting object.</summary>
+        <summary>
+             Navigation to a sibling object located below the starting object.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="FirstChild">
@@ -87,7 +91,9 @@
       </ReturnValue>
       <MemberValue>7</MemberValue>
       <Docs>
-        <summary>Navigation to the first child of the object.</summary>
+        <summary>
+             Navigation to the first child of the object.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="LastChild">
@@ -109,7 +115,9 @@
       </ReturnValue>
       <MemberValue>8</MemberValue>
       <Docs>
-        <summary>Navigation to the last child of the object.</summary>
+        <summary>
+             Navigation to the last child of the object
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -131,7 +139,10 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>Navigation to the sibling object located to the left of the starting object.</summary>
+        <summary>
+             Navigation to the sibling object located to the left of the
+             starting object.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Next">
@@ -153,7 +164,10 @@
       </ReturnValue>
       <MemberValue>5</MemberValue>
       <Docs>
-        <summary>Navigation to the next logical object, typically from a sibling object to the starting object.</summary>
+        <summary>
+             Navigation to the next logical object, generally from the starting
+             object to a sibling object.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Previous">
@@ -175,7 +189,10 @@
       </ReturnValue>
       <MemberValue>6</MemberValue>
       <Docs>
-        <summary>Navigation to the previous logical object, typically from a sibling object to the starting object.</summary>
+        <summary>
+             Navigation to the previous logical object, generally from a sibling
+             object to the starting object.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -197,7 +214,10 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>Navigation to the sibling object located to the right of the starting object.</summary>
+        <summary>
+             Navigation to the sibling object located to the right of the
+             starting object.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Up">
@@ -219,7 +239,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Navigation to a sibling object located above the starting object.</summary>
+        <summary>
+             Navigation to a sibling object located above the starting object.
+            </summary>
       </Docs>
     </Member>
   </Members>

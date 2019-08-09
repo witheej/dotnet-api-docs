@@ -1,4 +1,4 @@
-﻿<Type Name="ErrorBlinkStyle" FullName="System.Windows.Forms.ErrorBlinkStyle">
+<Type Name="ErrorBlinkStyle" FullName="System.Windows.Forms.ErrorBlinkStyle">
   <TypeSignature Language="C#" Value="public enum ErrorBlinkStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ErrorBlinkStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ErrorBlinkStyle" />
@@ -15,7 +15,10 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies constants indicating when the error icon, supplied by an <see cref="T:System.Windows.Forms.ErrorProvider" />, should blink to alert the user that an error has occurred.</summary>
+    <summary>
+             Describes the times that the error icon supplied by an ErrorProvider
+             should blink to alert the user that an error has occurred.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -57,7 +60,11 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Always blink when the error icon is first displayed, or when a error description string is set for the control and the error icon is already displayed.</summary>
+        <summary>
+             Blink the error icon when the error is first displayed, or when
+             a new error description string is set for the control and the
+             error icon is already displayed.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="BlinkIfDifferentError">
@@ -79,7 +86,11 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Blinks when the icon is already displayed and a new error string is set for the control.</summary>
+        <summary>
+             Blink only if the error icon is already displayed, but a new
+             error string is set for the control.  If the icon did not blink
+             in this case, the user might not know that there is a new error.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="NeverBlink">
@@ -101,7 +112,9 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Never blink the error icon.</summary>
+        <summary>
+             Never blink the error icon.
+            </summary>
       </Docs>
     </Member>
   </Members>

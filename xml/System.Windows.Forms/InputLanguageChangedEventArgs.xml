@@ -1,4 +1,4 @@
-﻿<Type Name="InputLanguageChangedEventArgs" FullName="System.Windows.Forms.InputLanguageChangedEventArgs">
+<Type Name="InputLanguageChangedEventArgs" FullName="System.Windows.Forms.InputLanguageChangedEventArgs">
   <TypeSignature Language="C#" Value="public class InputLanguageChangedEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InputLanguageChangedEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.InputLanguageChangedEventArgs" />
@@ -16,7 +16,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.Forms.Form.InputLanguageChanged" /> event.</summary>
+    <summary>
+             Provides data for the <see cref="E:System.Windows.Forms.Form.InputLanguageChanged" /> event.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -72,7 +74,10 @@
       <Docs>
         <param name="culture">The locale of the input language.</param>
         <param name="charSet">The character set associated with the new input language.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.InputLanguageChangedEventArgs" /> class with the specified locale and character set.</summary>
+        <summary>
+             Initializes a new instance of the <see cref="T:System.Windows.Forms.InputLanguageChangedEventArgs" /> class with the
+             specified locale and character set.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Windows.Forms.InputLanguage" />
         <altmember cref="T:System.Globalization.CultureInfo" />
@@ -98,7 +103,10 @@
       <Docs>
         <param name="inputLanguage">The input language.</param>
         <param name="charSet">The character set associated with the new input language.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.InputLanguageChangedEventArgs" /> class with the specified input language and character set.</summary>
+        <summary>
+             Initializes a new instance of the <see cref="T:System.Windows.Forms.InputLanguageChangedEventArgs" /> class with the specified input language and
+             character set.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -127,16 +135,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Byte</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the character set associated with the new input language.</summary>
+        <summary>
+             Gets the character set associated with the new input language.
+            </summary>
         <value>An 8-bit unsigned integer that corresponds to the character set, as shown in the following table.  
   
  <list type="table"><listheader><term> Character Set  
@@ -258,16 +263,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Globalization.CultureInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the locale of the input language.</summary>
+        <summary>
+             Gets the locale of the input language.
+            </summary>
         <value>A <see cref="T:System.Globalization.CultureInfo" /> that specifies the locale of the input language.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -304,16 +306,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.InputLanguage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating the input language.</summary>
+        <summary>
+             Gets the input language.
+            </summary>
         <value>The input language associated with the object.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -1,4 +1,4 @@
-﻿<Type Name="IMenuEditorService" FullName="System.Windows.Forms.Design.IMenuEditorService">
+<Type Name="IMenuEditorService" FullName="System.Windows.Forms.Design.IMenuEditorService">
   <TypeSignature Language="C#" Value="public interface IMenuEditorService" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IMenuEditorService" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.IMenuEditorService" />
@@ -17,7 +17,9 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>Provides access to the menu editing service.</summary>
+    <summary>
+             Provides access to the menu editing service.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -51,7 +53,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the current menu.</summary>
+        <summary>
+             Gets the current menu.
+            </summary>
         <returns>The current <see cref="T:System.Windows.Forms.Menu" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -79,7 +83,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Indicates whether the current menu is active.</summary>
+        <summary>
+             Gets a value indicating whether the current menu is active.
+            </summary>
         <returns>
           <see langword="true" /> if the current menu is currently active; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -111,7 +117,9 @@
       </Parameters>
       <Docs>
         <param name="m">The <see cref="T:System.Windows.Forms.Message" /> to process.</param>
-        <summary>Allows the editor service to intercept Win32 messages.</summary>
+        <summary>
+             Allows the editor service to intercept Win32 messages.
+            </summary>
         <returns>
           <see langword="true" /> if the message is for the control; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -142,7 +150,10 @@
       </Parameters>
       <Docs>
         <param name="menu">The <see cref="T:System.Windows.Forms.Menu" /> to render.</param>
-        <summary>Sets the specified menu visible on the form.</summary>
+        <summary>
+             Sets the current menu visible
+             on the form.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -179,7 +190,9 @@
       </Parameters>
       <Docs>
         <param name="item">A <see cref="T:System.Windows.Forms.MenuItem" /> to set as the currently selected menu item.</param>
-        <summary>Sets the selected menu item of the current menu.</summary>
+        <summary>
+             Sets the selected menu item of the current menu.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

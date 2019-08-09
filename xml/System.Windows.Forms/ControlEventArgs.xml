@@ -1,4 +1,4 @@
-﻿<Type Name="ControlEventArgs" FullName="System.Windows.Forms.ControlEventArgs">
+<Type Name="ControlEventArgs" FullName="System.Windows.Forms.ControlEventArgs">
   <TypeSignature Language="C#" Value="public class ControlEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ControlEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ControlEventArgs" />
@@ -16,7 +16,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.Forms.Control.ControlAdded" /> and <see cref="E:System.Windows.Forms.Control.ControlRemoved" /> events.</summary>
+    <summary>
+             A ControlEventArgs is an event that has a control as a property.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -52,17 +54,14 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="control" Type="System.Windows.Forms.Control" />
       </Parameters>
       <Docs>
         <param name="control">The <see cref="T:System.Windows.Forms.Control" /> to store in this event.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ControlEventArgs" /> class for the specified control.</summary>
+        <summary>
+             Creates a new ControlEventArgs.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -92,16 +91,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Control</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the control object used by this event.</summary>
+        <summary>
+             Retrieves the control object stored in this event.
+            </summary>
         <value>The <see cref="T:System.Windows.Forms.Control" /> used by this event.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

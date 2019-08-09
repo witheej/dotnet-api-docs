@@ -1,4 +1,4 @@
-﻿<Type Name="ToolStripProfessionalRenderer" FullName="System.Windows.Forms.ToolStripProfessionalRenderer">
+<Type Name="ToolStripProfessionalRenderer" FullName="System.Windows.Forms.ToolStripProfessionalRenderer">
   <TypeSignature Language="C#" Value="public class ToolStripProfessionalRenderer : System.Windows.Forms.ToolStripRenderer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolStripProfessionalRenderer extends System.Windows.Forms.ToolStripRenderer" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripProfessionalRenderer" />
@@ -15,7 +15,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Handles the painting functionality for <see cref="T:System.Windows.Forms.ToolStrip" /> objects, applying a custom palette and a streamlined style.</summary>
+    <summary>
+             Summary description for ProfessionalToolStripRenderer.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -398,6 +400,8 @@
         <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripRenderer.RenderOverflowButtonBackground" /> event.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.ToolStripRenderer.OnRenderOverflowButtonBackground(System.Windows.Forms.ToolStripItemRenderEventArgs)" />
+        <!-- Failed to insert some or all of included XML -->
+        <include file="doc\ToolStripProfessionalRenderer.uex" path="docs/doc[@for=&quot;ToolStripProfessionalRenderer.OnRenderOverflowButton&quot;]/*" />
       </Docs>
     </Member>
     <Member MemberName="OnRenderSeparator">
@@ -628,14 +632,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>

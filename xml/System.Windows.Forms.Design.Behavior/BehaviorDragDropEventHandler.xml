@@ -1,4 +1,4 @@
-﻿<Type Name="BehaviorDragDropEventHandler" FullName="System.Windows.Forms.Design.Behavior.BehaviorDragDropEventHandler">
+<Type Name="BehaviorDragDropEventHandler" FullName="System.Windows.Forms.Design.Behavior.BehaviorDragDropEventHandler">
   <TypeSignature Language="C#" Value="public delegate void BehaviorDragDropEventHandler(object sender, BehaviorDragDropEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BehaviorDragDropEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.Behavior.BehaviorDragDropEventHandler" />
@@ -27,7 +27,10 @@
   <Docs>
     <param name="sender">The source of the event.</param>
     <param name="e">A <see cref="T:System.Windows.Forms.Design.Behavior.BehaviorDragDropEventArgs" /> that contains the event data.</param>
-    <summary>Represents the methods that will handle the <see cref="E:System.Windows.Forms.Design.Behavior.BehaviorService.BeginDrag" /> and <see cref="E:System.Windows.Forms.Design.Behavior.BehaviorService.EndDrag" /> events of a <see cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" />. This class cannot be inherited.</summary>
+    <summary>
+             Delegate used by the BehaviorService to send BeginDrag and EndDrag
+             events.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

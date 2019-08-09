@@ -1,4 +1,4 @@
-﻿<Type Name="ToolStripControlHost" FullName="System.Windows.Forms.ToolStripControlHost">
+<Type Name="ToolStripControlHost" FullName="System.Windows.Forms.ToolStripControlHost">
   <TypeSignature Language="C#" Value="public class ToolStripControlHost : System.Windows.Forms.ToolStripItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolStripControlHost extends System.Windows.Forms.ToolStripItem" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripControlHost" />
@@ -15,7 +15,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Hosts custom controls or Windows Forms controls.</summary>
+    <summary>
+             ToolStripItem that can host Controls.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -72,7 +74,9 @@
       </Parameters>
       <Docs>
         <param name="c">The <see cref="T:System.Windows.Forms.Control" /> hosted by this <see cref="T:System.Windows.Forms.ToolStripControlHost" /> class.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripControlHost" /> class that hosts the specified control.</summary>
+        <summary>
+             Constructs a ToolStripControlHost
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -159,7 +163,9 @@
         <ReturnType>System.Drawing.Image</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the background image displayed in the control.</summary>
+        <summary>
+             Gets or sets the image that is displayed on a <see cref="T:System.Windows.Forms.Label" />.
+            </summary>
         <value>An <see cref="T:System.Drawing.Image" /> that represents the image to display in the background of the control.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -221,7 +227,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the control can be selected.</summary>
+        <summary>
+             Overriden to return value from Control.CanSelect.
+            </summary>
         <value>
           <see langword="true" /> if the control can be selected; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -275,15 +283,14 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Control</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Forms.Control" /> that this <see cref="T:System.Windows.Forms.ToolStripControlHost" /> is hosting.</summary>
+        <summary>
+             The control that this item is hosting.
+            </summary>
         <value>The <see cref="T:System.Windows.Forms.Control" /> that this <see cref="T:System.Windows.Forms.ToolStripControlHost" /> is hosting.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -319,9 +326,6 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.ContentAlignment</ReturnType>
@@ -353,18 +357,17 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AccessibleObject</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a new accessibility object for the control.</summary>
-        <returns>A new <see cref="T:System.Windows.Forms.AccessibleObject" /> for the control.</returns>
+        <summary>
+                Constructs the new instance of the accessibility object for this ToolStripControlHost ToolStrip item.
+            </summary>
+        <returns>
+                The new instance of the accessibility object for this ToolStripControlHost ToolStrip item
+            </returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -385,7 +388,10 @@
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the default size of the control.</summary>
+        <summary>
+             Deriving classes can override this to configure a default size for their control.
+             This is more efficient than setting the size in the control's constructor.
+            </summary>
         <value>The default <see cref="T:System.Drawing.Size" /> of the control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -424,7 +430,7 @@
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -461,7 +467,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -501,7 +507,9 @@
       <Docs>
         <param name="disposing">
           <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.ToolStripControlHost" /> and optionally releases the managed resources.</summary>
+        <summary>
+             Cleans up and destroys the hosted control.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -541,7 +549,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -638,7 +646,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -668,7 +676,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Always)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -780,7 +788,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -830,7 +838,7 @@
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -870,7 +878,7 @@
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -910,7 +918,7 @@
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -951,7 +959,7 @@
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -987,7 +995,9 @@
         <ReturnType>System.Windows.Forms.KeyEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a key is pressed and held down while the hosted control has focus.</summary>
+        <summary>
+             Occurs when a key is pressed down while the control has focus.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1026,7 +1036,9 @@
         <ReturnType>System.Windows.Forms.KeyPressEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a key is pressed while the hosted control has focus.</summary>
+        <summary>
+             Occurs when a key is pressed while the control has focus.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1065,7 +1077,9 @@
         <ReturnType>System.Windows.Forms.KeyEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a key is released while the hosted control has focus.</summary>
+        <summary>
+             Occurs when a key is released while the control has focus.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1144,14 +1158,16 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the hosted control loses focus.</summary>
+        <summary>
+             Occurs when the control loses focus.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1191,7 +1207,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Occurs when the <see cref="P:System.Windows.Forms.ToolStripItem.Bounds" /> property changes.</summary>
+        <summary>
+             Called when the items bounds are changed.  Here, we update the Control's bounds.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1266,7 +1284,9 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripControlHost.GotFocus" /> event.</summary>
+        <summary>
+             called when the control has lost focus
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1513,7 +1533,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripControlHost.LostFocus" /> event.</summary>
+        <summary>
+             called when the control has lost focus
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1550,7 +1572,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Paint" /> event.</summary>
+        <summary>
+             Called when the control fires its Paint event.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1577,7 +1601,9 @@
       <Docs>
         <param name="oldParent">The original parent of the item.</param>
         <param name="newParent">The new parent of the item.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.ParentChanged" /> event.</summary>
+        <summary>
+             Called when the item's parent has been changed.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.ToolStripItem.OnParentChanged(System.Windows.Forms.ToolStrip,System.Windows.Forms.ToolStrip)" />
       </Docs>
@@ -1602,7 +1628,11 @@
       </Parameters>
       <Docs>
         <param name="control">The control from which to subscribe events.</param>
-        <summary>Subscribes events from the hosted control.</summary>
+        <summary>
+             The events from the hosted control are subscribed here.
+             Override to add/prevent syncing of control events.
+             NOTE: if you override and hook up events here, you should unhook in OnUnsubscribeControlEvents.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1651,7 +1681,10 @@
       </Parameters>
       <Docs>
         <param name="control">The control from which to unsubscribe events.</param>
-        <summary>Unsubscribes events from the hosted control.</summary>
+        <summary>
+             The events from the hosted control are unsubscribed here.
+             Override to unhook events subscribed in OnSubscribeControlEvents.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1825,7 +1858,7 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="charCode" Type="System.Char" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="charCode" Type="System.Char" />
       </Parameters>
       <Docs>
         <param name="charCode">The character to process.</param>
@@ -1850,7 +1883,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1884,7 +1917,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1920,7 +1953,11 @@
         <ReturnType>System.Windows.Forms.RightToLeft</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether control's elements are aligned to support locales using right-to-left fonts.</summary>
+        <summary>
+             This is used for international applications where the language
+             is written from RightToLeft. When this property is true,
+             control placement and text will be from right to left.
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.RightToLeft" /> values. The default is <see cref="F:System.Windows.Forms.RightToLeft.Inherit" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1946,7 +1983,7 @@
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2031,14 +2068,16 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.ComponentModel.ISite</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the site of the hosted control.</summary>
+        <summary>
+             Overriden to set the Site for the control hosted. This is set at DesignTime when the component is added to the Container.
+            </summary>
         <value>The <see cref="T:System.ComponentModel.ISite" /> associated with the control.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2087,7 +2126,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text to be displayed on the hosted control.</summary>
+        <summary>
+             Overriden to modify hosted control's text.
+            </summary>
         <value>A <see cref="T:System.String" /> representing the text.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2121,7 +2162,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2161,7 +2202,7 @@
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2198,7 +2239,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

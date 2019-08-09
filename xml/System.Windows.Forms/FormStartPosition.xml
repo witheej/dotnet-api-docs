@@ -1,4 +1,4 @@
-﻿<Type Name="FormStartPosition" FullName="System.Windows.Forms.FormStartPosition">
+<Type Name="FormStartPosition" FullName="System.Windows.Forms.FormStartPosition">
   <TypeSignature Language="C#" Value="public enum FormStartPosition" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed FormStartPosition extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FormStartPosition" />
@@ -20,7 +20,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the initial position of a form.</summary>
+    <summary>
+             Specifies the initial position of a form.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -60,7 +62,9 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>The form is centered within the bounds of its parent form.</summary>
+        <summary>
+             The form is centered within the bounds of its parent form.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CenterScreen">
@@ -82,7 +86,10 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The form is centered on the current display, and has the dimensions specified in the form's size.</summary>
+        <summary>
+             The form is centered on the current display, and has the dimensions
+             specified in the form's size.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Manual">
@@ -104,7 +111,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>The position of the form is determined by the <see cref="P:System.Windows.Forms.Control.Location" /> property.</summary>
+        <summary>
+             The location and size of the form will determine its starting position.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="WindowsDefaultBounds">
@@ -126,7 +135,10 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>The form is positioned at the Windows default location and has the bounds determined by Windows default.</summary>
+        <summary>
+             The form is positioned at the Windows default location and has the
+             bounds determined by Windows default.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="WindowsDefaultLocation">
@@ -148,7 +160,10 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>The form is positioned at the Windows default location and has the dimensions specified in the form's size.</summary>
+        <summary>
+             The form is positioned at the Windows default location and has the
+             dimensions specified in the form's size.
+            </summary>
       </Docs>
     </Member>
   </Members>

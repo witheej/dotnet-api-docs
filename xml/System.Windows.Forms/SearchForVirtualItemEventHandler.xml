@@ -1,4 +1,4 @@
-﻿<Type Name="SearchForVirtualItemEventHandler" FullName="System.Windows.Forms.SearchForVirtualItemEventHandler">
+<Type Name="SearchForVirtualItemEventHandler" FullName="System.Windows.Forms.SearchForVirtualItemEventHandler">
   <TypeSignature Language="C#" Value="public delegate void SearchForVirtualItemEventHandler(object sender, SearchForVirtualItemEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SearchForVirtualItemEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.SearchForVirtualItemEventHandler" />
@@ -23,7 +23,9 @@
   <Docs>
     <param name="sender">The source of the event.</param>
     <param name="e">A <see cref="T:System.Windows.Forms.SearchForVirtualItemEventArgs" /> that contains the event data.</param>
-    <summary>Represents the method that will handle the <see cref="E:System.Windows.Forms.ListView.SearchForVirtualItem" /> event of a <see cref="T:System.Windows.Forms.ListView" />.</summary>
+    <summary>
+             Represents a method that will handle the SearchForVirtualItem event of a ListView.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

@@ -1,4 +1,4 @@
-﻿<Type Name="CheckedListBox+CheckedItemCollection" FullName="System.Windows.Forms.CheckedListBox+CheckedItemCollection">
+<Type Name="CheckedListBox+CheckedItemCollection" FullName="System.Windows.Forms.CheckedListBox+CheckedItemCollection">
   <TypeSignature Language="C#" Value="public class CheckedListBox.CheckedItemCollection : System.Collections.IList" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit CheckedListBox/CheckedItemCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.CheckedListBox.CheckedItemCollection" />
@@ -175,7 +175,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of items in the collection.</summary>
+        <summary>
+             Number of current checked items.
+            </summary>
         <value>The number of items in the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -304,7 +306,9 @@
       </Parameters>
       <Docs>
         <param name="index">An index into the collection of checked items. This collection index corresponds to the index of the checked item.</param>
-        <summary>Gets an object in the checked items collection.</summary>
+        <summary>
+             Retrieves the specified checked item.
+            </summary>
         <value>The object at the specified index. For more information, see the examples in the <see cref="T:System.Windows.Forms.CheckedListBox.CheckedItemCollection" /> class overview.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

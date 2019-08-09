@@ -1,4 +1,4 @@
-﻿<Type Name="ImageListImageEditor" FullName="System.Windows.Forms.Design.ImageListImageEditor">
+<Type Name="ImageListImageEditor" FullName="System.Windows.Forms.Design.ImageListImageEditor">
   <TypeSignature Language="C#" Value="public class ImageListImageEditor : System.Drawing.Design.ImageEditor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ImageListImageEditor extends System.Drawing.Design.ImageEditor" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.ImageListImageEditor" />
@@ -10,12 +10,23 @@
     <AssemblyVersion>2.0.0.0</AssemblyVersion>
     <AssemblyVersion>4.0.0.0</AssemblyVersion>
   </AssemblyInfo>
+  <AssemblyInfo>
+    <AssemblyName>System.Windows.Forms.Design.Editors</AssemblyName>
+    <AssemblyVersion>4.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
   <Base>
     <BaseTypeName>System.Drawing.Design.ImageEditor</BaseTypeName>
   </Base>
   <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.CLSCompliant(false)</AttributeName>
+    </Attribute>
+  </Attributes>
   <Docs>
-    <summary>Provides an editor that can perform default file searching for bitmap (.bmp) files.</summary>
+    <summary>
+             Provides an editor that can perform default file searching for bitmap (.bmp) files.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -31,11 +42,10 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design.Editors</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.ImageListImageEditor" /> class.</summary>
@@ -55,6 +65,10 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design.Editors</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -67,7 +81,10 @@
         <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that can be used to gain additional context information.</param>
         <param name="provider">An <see cref="T:System.IServiceProvider" /> through which editing services can be obtained.</param>
         <param name="value">An <see cref="T:System.Object" /> being edited.</param>
-        <summary>Edits the specified object value using the edit style provided by the <see cref="M:System.Drawing.Design.ImageEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)" /> method.</summary>
+        <summary>
+             Edits the given object value using the editor style provided by <see cref="!:GetEditorStyle" />.
+             A service provider is provided so that any required editing services can be obtained.
+            </summary>
         <returns>An <see cref="T:System.Object" /> representing the new value. If the value of the object has not changed, the <see cref="M:System.Windows.Forms.Design.ImageListImageEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)" /> method returns the object that was passed to it.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -90,6 +107,10 @@
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design.Editors</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <ReturnValue>
@@ -122,6 +143,10 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design.Editors</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Type[]</ReturnType>
       </ReturnValue>
@@ -145,6 +170,10 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design.Editors</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -153,7 +182,9 @@
       </Parameters>
       <Docs>
         <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that can be used to gain additional context information.</param>
-        <summary>Gets a value indicating whether this editor supports painting a representation of an object's value.</summary>
+        <summary>
+             Determines if this editor supports the painting of a representation of an object's value.
+            </summary>
         <returns>
           <see langword="true" /> if <see cref="M:System.Drawing.Design.ImageEditor.PaintValue(System.Drawing.Design.PaintValueEventArgs)" /> is implemented; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -172,6 +203,10 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms.Design.Editors</AssemblyName>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -180,7 +215,10 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Drawing.Design.PaintValueEventArgs" /> indicating what to paint and where to paint it.</param>
-        <summary>Paints a value indicated by the specified <see cref="T:System.Drawing.Design.PaintValueEventArgs" />.</summary>
+        <summary>
+             Paints a representative value of the given object to the provided canvas. 
+             Painting should be done within the boundaries of the provided rectangle.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

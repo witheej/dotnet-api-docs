@@ -1,4 +1,4 @@
-﻿<Type Name="ApplicationContext" FullName="System.Windows.Forms.ApplicationContext">
+<Type Name="ApplicationContext" FullName="System.Windows.Forms.ApplicationContext">
   <TypeSignature Language="C#" Value="public class ApplicationContext : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ApplicationContext extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ApplicationContext" />
@@ -20,7 +20,13 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Specifies the contextual information about an application thread.</summary>
+    <summary>
+             ApplicationContext provides contextual information about an application
+             thread. Specifically this allows an application author to redifine what
+             circurmstances cause a message loop to exit. By default the application
+             context listens to the close event on the mainForm, then exits the
+             thread's message loop.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -66,14 +72,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ApplicationContext" /> class with no context.</summary>
+        <summary>
+             Creates a new ApplicationContext with no mainForm.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -96,7 +99,11 @@
       </Parameters>
       <Docs>
         <param name="mainForm">The main <see cref="T:System.Windows.Forms.Form" /> of the application to use for context.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ApplicationContext" /> class with the specified <see cref="T:System.Windows.Forms.Form" />.</summary>
+        <summary>
+             Creates a new ApplicationContext with the specified mainForm.
+             If OnMainFormClosed is not overriden, the thread's message
+             loop will be terminated when mainForm is closed.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -138,7 +145,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases all resources used by the <see cref="T:System.Windows.Forms.ApplicationContext" />.</summary>
+        <summary>
+             Disposes the context. This should dispose the mainForm. This is
+             called immediately after the thread's message loop is terminated.
+             Application will dispose all forms on this thread by default.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -208,17 +219,14 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Terminates the message loop of the thread.</summary>
+        <summary>
+             Causes the thread's message loop to be terminated. This will call ExitThreadCore.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -262,7 +270,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Terminates the message loop of the thread.</summary>
+        <summary>
+             Causes the thread's message loop to be terminated.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -324,16 +334,16 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Form</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Windows.Forms.Form" /> to use as context.</summary>
+        <summary>
+             Determines the mainForm for this context. This may be changed
+             at anytime.
+             If OnMainFormClosed is not overriden, the thread's message
+             loop will be terminated when mainForm is closed.
+            </summary>
         <value>The <see cref="T:System.Windows.Forms.Form" /> to use as context.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -359,11 +369,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -374,7 +379,10 @@
       <Docs>
         <param name="sender">The object that raised the event.</param>
         <param name="e">The <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Calls <see cref="M:System.Windows.Forms.ApplicationContext.ExitThreadCore" />, which raises the <see cref="E:System.Windows.Forms.ApplicationContext.ThreadExit" /> event.</summary>
+        <summary>
+             Called when the mainForm is closed. The default implementation
+             of this will call ExitThreadCore.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -410,12 +418,6 @@
         </Attribute>
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ComponentModel.StringConverter))</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -454,7 +456,10 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the message loop of the thread should be terminated, by calling <see cref="M:System.Windows.Forms.ApplicationContext.ExitThread" />.</summary>
+        <summary>
+             Is raised when the thread's message loop should be terminated.
+             This is raised by calling ExitThread.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

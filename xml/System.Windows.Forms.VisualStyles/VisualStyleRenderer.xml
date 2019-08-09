@@ -1,4 +1,4 @@
-﻿<Type Name="VisualStyleRenderer" FullName="System.Windows.Forms.VisualStyles.VisualStyleRenderer">
+<Type Name="VisualStyleRenderer" FullName="System.Windows.Forms.VisualStyles.VisualStyleRenderer">
   <TypeSignature Language="C#" Value="public sealed class VisualStyleRenderer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed VisualStyleRenderer extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VisualStyles.VisualStyleRenderer" />
@@ -15,7 +15,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides methods for drawing and getting information about a <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" />. This class cannot be inherited.</summary>
+    <summary>
+             This class provides full feature parity with UxTheme API.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -70,7 +72,9 @@
       </Parameters>
       <Docs>
         <param name="element">A <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" /> that this <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleRenderer" /> will represent.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleRenderer" /> class using the given <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" />.</summary>
+        <summary>
+             Constructor takes a VisualStyleElement.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -125,7 +129,10 @@
         <param name="className">The class name of the element that this <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleRenderer" /> will represent.</param>
         <param name="part">The part of the element that this <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleRenderer" /> will represent.</param>
         <param name="state">The state of the element that this <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleRenderer" /> will represent.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleRenderer" /> class using the given class, part, and state values.</summary>
+        <summary>
+             Constructor takes weakly typed parameters - left for extensibility (using classes, parts or states
+             not defined in the VisualStyleElement class.)
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -161,16 +168,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the class name of the current visual style element.</summary>
+        <summary>
+             Returns the current _class. Use SetParameters to set.
+            </summary>
         <value>A string that identifies the class of the current visual style element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -214,7 +218,9 @@
       <Docs>
         <param name="dc">The <see cref="T:System.Drawing.IDeviceContext" /> used to draw the background image.</param>
         <param name="bounds">A <see cref="T:System.Drawing.Rectangle" /> in which the background image is drawn.</param>
-        <summary>Draws the background image of the current visual style element within the specified bounding rectangle.</summary>
+        <summary>
+             [See win32 equivalent.]
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -265,7 +271,9 @@
         <param name="dc">The <see cref="T:System.Drawing.IDeviceContext" /> used to draw the background image.</param>
         <param name="bounds">A <see cref="T:System.Drawing.Rectangle" /> in which the background image is drawn.</param>
         <param name="clipRectangle">A <see cref="T:System.Drawing.Rectangle" /> that defines a clipping rectangle for the drawing operation.</param>
-        <summary>Draws the background image of the current visual style element within the specified bounding rectangle and clipped to the specified clipping rectangle.</summary>
+        <summary>
+             [See win32 equivalent.]
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -310,7 +318,9 @@
         <param name="edges">A bitwise combination of the <see cref="T:System.Windows.Forms.VisualStyles.Edges" /> values.</param>
         <param name="style">A bitwise combination of the <see cref="T:System.Windows.Forms.VisualStyles.EdgeStyle" /> values.</param>
         <param name="effects">A bitwise combination of the <see cref="T:System.Windows.Forms.VisualStyles.EdgeEffects" /> values.</param>
-        <summary>Draws one or more edges of the specified bounding rectangle.</summary>
+        <summary>
+             [See win32 equivalent.]
+            </summary>
         <returns>A <see cref="T:System.Drawing.Rectangle" /> that represents the interior of the <paramref name="bounds" /> parameter, minus the edges that were drawn.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -350,7 +360,10 @@
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the image.</param>
         <param name="bounds">A <see cref="T:System.Drawing.Rectangle" /> in which the image is drawn.</param>
         <param name="image">The <see cref="T:System.Drawing.Image" /> to draw.</param>
-        <summary>Draws the specified image within the specified bounds.</summary>
+        <summary>
+             [See win32 equivalent.]
+             This method uses Graphics.DrawImage as a backup if themed drawing does not work.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -389,7 +402,10 @@
         <param name="bounds">A <see cref="T:System.Drawing.Rectangle" /> in which the image is drawn.</param>
         <param name="imageList">An <see cref="T:System.Windows.Forms.ImageList" /> that contains the <see cref="T:System.Drawing.Image" /> to draw.</param>
         <param name="imageIndex">The index of the <see cref="T:System.Drawing.Image" /> within <paramref name="imageList" /> to draw.</param>
-        <summary>Draws the image from the specified <see cref="T:System.Windows.Forms.ImageList" /> within the specified bounds.</summary>
+        <summary>
+             [See win32 equivalent.]
+             This method uses Graphics.DrawImage as a backup if themed drawing does not work.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -457,11 +473,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -474,7 +485,9 @@
         <param name="dc">The <see cref="T:System.Drawing.IDeviceContext" /> used to draw the text.</param>
         <param name="bounds">A <see cref="T:System.Drawing.Rectangle" /> in which to draw the text.</param>
         <param name="textToDraw">The text to draw.</param>
-        <summary>Draws text in the specified bounds using default formatting.</summary>
+        <summary>
+             [See win32 equivalent.]
+            </summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="dc" /> is <see langword="null" />.</exception>
@@ -493,11 +506,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -513,7 +521,9 @@
         <param name="textToDraw">The text to draw.</param>
         <param name="drawDisabled">
           <see langword="true" /> to draw grayed-out text; otherwise, <see langword="false" />.</param>
-        <summary>Draws text in the specified bounds with the option of displaying disabled text.</summary>
+        <summary>
+             [See win32 equivalent.]
+            </summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="dc" /> is <see langword="null" />.</exception>
@@ -549,7 +559,9 @@
         <param name="drawDisabled">
           <see langword="true" /> to draw grayed-out text; otherwise, <see langword="false" />.</param>
         <param name="flags">A bitwise combination of the <see cref="T:System.Windows.Forms.TextFormatFlags" /> values.</param>
-        <summary>Draws text in the specified bounding rectangle with the option of displaying disabled text and applying other text formatting.</summary>
+        <summary>
+             [See win32 equivalent.]
+            </summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
           <paramref name="dc" /> is <see langword="null" />.</exception>
@@ -578,7 +590,9 @@
       <Docs>
         <param name="dc">The <see cref="T:System.Drawing.IDeviceContext" /> this operation will use.</param>
         <param name="bounds">A <see cref="T:System.Drawing.Rectangle" /> that contains the entire background area of the current visual style element.</param>
-        <summary>Returns the content area for the background of the current visual style element.</summary>
+        <summary>
+             [See win32 equivalent.]
+            </summary>
         <returns>A <see cref="T:System.Drawing.Rectangle" /> that contains the content area for the background of the current visual style element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -615,7 +629,9 @@
       <Docs>
         <param name="dc">The <see cref="T:System.Drawing.IDeviceContext" /> this operation will use.</param>
         <param name="contentBounds">A <see cref="T:System.Drawing.Rectangle" /> that contains the content area of the current visual style element.</param>
-        <summary>Returns the entire background area for the current visual style element.</summary>
+        <summary>
+             [See win32 equivalent.]
+            </summary>
         <returns>A <see cref="T:System.Drawing.Rectangle" /> that contains the entire background area of the current visual style element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -642,11 +658,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-          <AttributeName>System.Security.SuppressUnmanagedCodeSecurity</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Region</ReturnType>
       </ReturnValue>
@@ -657,7 +668,11 @@
       <Docs>
         <param name="dc">The <see cref="T:System.Drawing.IDeviceContext" /> this operation will use.</param>
         <param name="bounds">A <see cref="T:System.Drawing.Rectangle" /> that contains the entire background area of the current visual style element.</param>
-        <summary>Returns the region for the background of the current visual style element.</summary>
+        <summary>
+             Computes the region for a regular or partially transparent background that is bounded by a specified
+             rectangle. Return null if the region cannot be created.
+             [See win32 equivalent.]
+            </summary>
         <returns>The <see cref="T:System.Drawing.Region" /> that contains the background of the current visual style element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -701,7 +716,9 @@
       </Parameters>
       <Docs>
         <param name="prop">One of the <see cref="T:System.Windows.Forms.VisualStyles.BooleanProperty" /> values that specifies which property value to retrieve for the current visual style element.</param>
-        <summary>Returns the value of the specified Boolean property for the current visual style element.</summary>
+        <summary>
+             [See win32 equivalent.]
+            </summary>
         <returns>
           <see langword="true" /> if the property specified by the <paramref name="prop" /> parameter is <see langword="true" /> for the current visual style element; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -737,7 +754,9 @@
       </Parameters>
       <Docs>
         <param name="prop">One of the <see cref="T:System.Windows.Forms.VisualStyles.ColorProperty" /> values that specifies which property value to retrieve for the current visual style element.</param>
-        <summary>Returns the value of the specified color property for the current visual style element.</summary>
+        <summary>
+             [See win32 equivalent.]
+            </summary>
         <returns>A <see cref="T:System.Drawing.Color" /> that contains the value of the property specified by the <paramref name="prop" /> parameter for the current visual style element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -772,7 +791,9 @@
       </Parameters>
       <Docs>
         <param name="prop">One of the <see cref="T:System.Windows.Forms.VisualStyles.EnumProperty" /> values that specifies which property value to retrieve for the current visual style element.</param>
-        <summary>Returns the value of the specified enumerated type property for the current visual style element.</summary>
+        <summary>
+             [See win32 equivalent.]
+            </summary>
         <returns>The integer value of the property specified by the <paramref name="prop" /> parameter for the current visual style element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -807,7 +828,9 @@
       </Parameters>
       <Docs>
         <param name="prop">One of the <see cref="T:System.Windows.Forms.VisualStyles.FilenameProperty" /> values that specifies which property value to retrieve for the current visual style element.</param>
-        <summary>Returns the value of the specified file name property for the current visual style element.</summary>
+        <summary>
+             [See win32 equivalent.]
+            </summary>
         <returns>A <see cref="T:System.String" /> that contains the value of the property specified by the <paramref name="prop" /> parameter for the current visual style element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -844,7 +867,10 @@
       <Docs>
         <param name="dc">The <see cref="T:System.Drawing.IDeviceContext" /> this operation will use.</param>
         <param name="prop">One of the <see cref="T:System.Windows.Forms.VisualStyles.FontProperty" /> values that specifies which property value to retrieve for the current visual style element.</param>
-        <summary>Returns the value of the specified font property for the current visual style element.</summary>
+        <summary>
+             [See win32 equivalent.]
+             Returns null if the returned font was not true type, since GDI+ does not support it.
+            </summary>
         <returns>A <see cref="T:System.Drawing.Font" /> that contains the value of the property specified by the <paramref name="prop" /> parameter for the current visual style element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -881,7 +907,9 @@
       </Parameters>
       <Docs>
         <param name="prop">One of the <see cref="T:System.Windows.Forms.VisualStyles.IntegerProperty" /> values that specifies which property value to retrieve for the current visual style element.</param>
-        <summary>Returns the value of the specified integer property for the current visual style element.</summary>
+        <summary>
+             [See win32 equivalent.]
+            </summary>
         <returns>The integer value of the property specified by the <paramref name="prop" /> parameter for the current visual style element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -918,7 +946,9 @@
       <Docs>
         <param name="dc">The <see cref="T:System.Drawing.IDeviceContext" /> this operation will use.</param>
         <param name="prop">One of the <see cref="T:System.Windows.Forms.VisualStyles.MarginProperty" /> values that specifies which property value to retrieve for the current visual style element.</param>
-        <summary>Returns the value of the specified margins property for the current visual style element.</summary>
+        <summary>
+             [See win32 equivalent.]
+            </summary>
         <returns>A <see cref="T:System.Windows.Forms.Padding" /> that contains the value of the property specified by the <paramref name="prop" /> parameter for the current visual style element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -966,7 +996,9 @@
       <Docs>
         <param name="dc">The <see cref="T:System.Drawing.IDeviceContext" /> this operation will use.</param>
         <param name="type">One of the <see cref="T:System.Windows.Forms.VisualStyles.ThemeSizeType" /> values that specifies which size value to retrieve for the part.</param>
-        <summary>Returns the value of the specified size property of the current visual style part.</summary>
+        <summary>
+             [See win32 equivalent.]
+            </summary>
         <returns>A <see cref="T:System.Drawing.Size" /> that contains the size specified by the <paramref name="type" /> parameter for the current visual style part.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1016,7 +1048,9 @@
         <param name="dc">The <see cref="T:System.Drawing.IDeviceContext" /> this operation will use.</param>
         <param name="bounds">A <see cref="T:System.Drawing.Rectangle" /> that contains the area in which the part will be drawn.</param>
         <param name="type">One of the <see cref="T:System.Windows.Forms.VisualStyles.ThemeSizeType" /> values that specifies which size value to retrieve for the part.</param>
-        <summary>Returns the value of the specified size property of the current visual style part using the specified drawing bounds.</summary>
+        <summary>
+             [See win32 equivalent.]
+            </summary>
         <returns>A <see cref="T:System.Drawing.Size" /> that contains the size specified by the <paramref name="type" /> parameter for the current visual style part.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1046,7 +1080,9 @@
       </Parameters>
       <Docs>
         <param name="prop">One of the <see cref="T:System.Windows.Forms.VisualStyles.PointProperty" /> values that specifies which property value to retrieve for the current visual style element.</param>
-        <summary>Returns the value of the specified point property for the current visual style element.</summary>
+        <summary>
+             [See win32 equivalent.]
+            </summary>
         <returns>A <see cref="T:System.Drawing.Point" /> that contains the value of the property specified by the <paramref name="prop" /> parameter for the current visual style element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1090,7 +1126,9 @@
       </Parameters>
       <Docs>
         <param name="prop">One of the <see cref="T:System.Windows.Forms.VisualStyles.StringProperty" /> values that specifies which property value to retrieve for the current visual style element.</param>
-        <summary>Returns the value of the specified string property for the current visual style element.</summary>
+        <summary>
+             [See win32 equivalent.]
+            </summary>
         <returns>A <see cref="T:System.String" /> that contains the value of the property specified by the <paramref name="prop" /> parameter for the current visual style element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1138,7 +1176,9 @@
         <param name="dc">The <see cref="T:System.Drawing.IDeviceContext" /> this operation will use.</param>
         <param name="textToDraw">The string to measure.</param>
         <param name="flags">A bitwise combination of the <see cref="T:System.Windows.Forms.TextFormatFlags" /> values.</param>
-        <summary>Returns the size and location of the specified string when drawn with the font of the current visual style element.</summary>
+        <summary>
+             [See win32 equivalent.]
+            </summary>
         <returns>A <see cref="T:System.Drawing.Rectangle" /> that contains the area required to fit the rendered text.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1172,7 +1212,9 @@
         <param name="bounds">A <see cref="T:System.Drawing.Rectangle" /> used to control the flow and wrapping of the text.</param>
         <param name="textToDraw">The string to measure.</param>
         <param name="flags">A bitwise combination of the <see cref="T:System.Windows.Forms.TextFormatFlags" /> values.</param>
-        <summary>Returns the size and location of the specified string when drawn with the font of the current visual style element within the specified initial bounding rectangle.</summary>
+        <summary>
+             [See win32 equivalent.]
+            </summary>
         <returns>A <see cref="T:System.Drawing.Rectangle" /> that contains the area required to fit the rendered text.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1200,7 +1242,9 @@
       </Parameters>
       <Docs>
         <param name="dc">The <see cref="T:System.Drawing.IDeviceContext" /> this operation will use.</param>
-        <summary>Retrieves information about the font specified by the current visual style element.</summary>
+        <summary>
+             [See win32 equivalent.]
+            </summary>
         <returns>A <see cref="T:System.Windows.Forms.VisualStyles.TextMetrics" /> that provides information about the font specified by the current visual style element.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1224,7 +1268,13 @@
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a unique identifier for the current class of visual style elements.</summary>
+        <summary>
+             Returns the underlying HTheme handle.
+             NOTE: The handle gets invalidated when the theme changes or the user disables theming. When that
+              happens, the user should requery this property to get the correct handle. To know when the
+              theme changed, hook on to SystemEvents.UserPreferenceChanged and look for ThemeChanged
+              category.
+            </summary>
         <value>An <see cref="T:System.IntPtr" /> that identifies a set of data that defines the class of elements specified by <see cref="P:System.Windows.Forms.VisualStyles.VisualStyleRenderer.Class" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1283,7 +1333,9 @@
         <param name="backgroundRectangle">A <see cref="T:System.Drawing.Rectangle" /> that contains the background of the current visual style element.</param>
         <param name="pt">The <see cref="T:System.Drawing.Point" /> to test.</param>
         <param name="options">A bitwise combination of the <see cref="T:System.Windows.Forms.VisualStyles.HitTestOptions" /> values.</param>
-        <summary>Returns a hit test code indicating whether a point is contained in the background of the current visual style element.</summary>
+        <summary>
+             [See win32 equivalent.]
+            </summary>
         <returns>A <see cref="T:System.Windows.Forms.VisualStyles.HitTestCode" /> that describes where <paramref name="pt" /> is located in the background of the current visual style element.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1318,7 +1370,9 @@
         <param name="region">A <see cref="T:System.Drawing.Region" /> that specifies the bounds of the hit test area within the background.</param>
         <param name="pt">The <see cref="T:System.Drawing.Point" /> to test.</param>
         <param name="options">A bitwise combination of the <see cref="T:System.Windows.Forms.VisualStyles.HitTestOptions" /> values.</param>
-        <summary>Returns a hit test code indicating whether the point is contained in the background of the current visual style element and within the specified bounds.</summary>
+        <summary>
+             [See win32 equivalent.]
+            </summary>
         <returns>A <see cref="T:System.Windows.Forms.VisualStyles.HitTestCode" /> that describes where <paramref name="pt" /> is located in the background of the current visual style element, if at all.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1354,7 +1408,9 @@
         <param name="hRgn">A Windows handle to a <see cref="T:System.Drawing.Region" /> that specifies the bounds of the hit test area within the background.</param>
         <param name="pt">The <see cref="T:System.Drawing.Point" /> to test.</param>
         <param name="options">A bitwise combination of the <see cref="T:System.Windows.Forms.VisualStyles.HitTestOptions" /> values.</param>
-        <summary>Returns a hit test code indicating whether the point is contained in the background of the current visual style element and within the specified region.</summary>
+        <summary>
+             [See win32 equivalent.]
+            </summary>
         <returns>A <see cref="T:System.Windows.Forms.VisualStyles.HitTestCode" /> that describes where <paramref name="pt" /> is located in the background of the current visual style element.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1379,7 +1435,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Indicates whether the background of the current visual style element has any semitransparent or alpha-blended pieces.</summary>
+        <summary>
+             [See win32 equivalent.]
+            </summary>
         <returns>
           <see langword="true" /> if the background of the current visual style element has any semitransparent or alpha-blended pieces; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -1406,7 +1464,14 @@
       </Parameters>
       <Docs>
         <param name="element">A <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" /> whose class and part combination will be verified.</param>
-        <summary>Determines whether the specified visual style element is defined by the current visual style.</summary>
+        <summary>
+             Returns true if the element is defined by the current visual style, else false.
+             Note:
+             1) Throws an exception if IsSupported is false, since it is illegal to call it in that case.
+             2) The underlying API does not validate states. So if you pass in invalid state values,
+              we might still return true. When you use an invalid state to render, you get the default
+              state instead.
+            </summary>
         <returns>
           <see langword="true" /> if the combination of the <see cref="P:System.Windows.Forms.VisualStyles.VisualStyleElement.ClassName" /> and <see cref="P:System.Windows.Forms.VisualStyles.VisualStyleElement.Part" /> properties of <paramref name="element" /> are defined; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -1454,7 +1519,12 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value specifying whether the operating system is using visual styles to draw controls.</summary>
+        <summary>
+             Returns true if visual styles are 1) supported by the OS 2) enabled in the client area
+             and 3) currently applied to this application. Otherwise, it returns false. Note that
+             if it returns false, attempting to instantiate/use objects of this class
+             will result in exceptions being thrown.
+            </summary>
         <value>
           <see langword="true" /> if the operating system supports visual styles, the user has enabled visual styles in the operating system, and visual styles are applied to the client area of application windows; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -1486,16 +1556,14 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the last error code returned by the native visual styles (UxTheme) API methods encapsulated by the <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleRenderer" /> class.</summary>
+        <summary>
+             This is similar to GetLastError in Win32.  It returns the last HRESULT returned from a native call
+             into theme apis.  We eat the errors and let the user handle any errors that occurred.
+            </summary>
         <value>A value specifying the last error code returned by the native visual styles API methods that this class encapsulates.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1520,16 +1588,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the part of the current visual style element.</summary>
+        <summary>
+             Returns the current part. Use SetParameters to set.
+            </summary>
         <value>A value that specifies the part of the current visual style element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1571,7 +1636,9 @@
       </Parameters>
       <Docs>
         <param name="element">A <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" /> that specifies the new values of the <see cref="P:System.Windows.Forms.VisualStyles.VisualStyleRenderer.Class" />, <see cref="P:System.Windows.Forms.VisualStyles.VisualStyleRenderer.Part" />, and <see cref="P:System.Windows.Forms.VisualStyles.VisualStyleRenderer.State" /> properties.</param>
-        <summary>Sets this <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleRenderer" /> to the visual style element represented by the specified <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleElement" />.</summary>
+        <summary>
+             Used to set a new VisualStyleElement on this VisualStyleRenderer instance.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1627,7 +1694,11 @@
         <param name="className">The new value of the <see cref="P:System.Windows.Forms.VisualStyles.VisualStyleRenderer.Class" /> property.</param>
         <param name="part">The new value of the <see cref="P:System.Windows.Forms.VisualStyles.VisualStyleRenderer.Part" /> property.</param>
         <param name="state">The new value of the <see cref="P:System.Windows.Forms.VisualStyles.VisualStyleRenderer.State" /> property.</param>
-        <summary>Sets this <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleRenderer" /> to the visual style element represented by the specified class, part, and state values.</summary>
+        <summary>
+             Used to set the _class, part and state that the VisualStyleRenderer object references.
+             These parameters cannot be set individually.
+             This method is present for extensibility.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1661,16 +1732,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the state of the current visual style element.</summary>
+        <summary>
+             Returns the current state. Use SetParameters to set.
+            </summary>
         <value>A value that identifies the state of the current visual style element.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

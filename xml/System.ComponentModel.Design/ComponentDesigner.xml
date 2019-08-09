@@ -1,9 +1,9 @@
-﻿<Type Name="ComponentDesigner" FullName="System.ComponentModel.Design.ComponentDesigner">
-  <TypeSignature Language="C#" Value="public class ComponentDesigner : IDisposable, System.ComponentModel.Design.IComponentInitializer, System.ComponentModel.Design.IDesignerFilter, System.ComponentModel.Design.ITreeDesigner" />
+<Type Name="ComponentDesigner" FullName="System.ComponentModel.Design.ComponentDesigner">
+  <TypeSignature Language="C#" Value="public class ComponentDesigner : IDisposable, System.ComponentModel.Design.IComponentInitializer, System.ComponentModel.Design.IDesigner, System.ComponentModel.Design.IDesignerFilter, System.ComponentModel.Design.ITreeDesigner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ComponentDesigner extends System.Object implements class System.ComponentModel.Design.IComponentInitializer, class System.ComponentModel.Design.IDesigner, class System.ComponentModel.Design.IDesignerFilter, class System.ComponentModel.Design.ITreeDesigner, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ComponentDesigner" />
-  <TypeSignature Language="VB.NET" Value="Public Class ComponentDesigner&#xA;Implements IComponentInitializer, IDesignerFilter, IDisposable, ITreeDesigner" />
-  <TypeSignature Language="C++ CLI" Value="public ref class ComponentDesigner : IDisposable, System::ComponentModel::Design::IComponentInitializer, System::ComponentModel::Design::IDesignerFilter, System::ComponentModel::Design::ITreeDesigner" />
+  <TypeSignature Language="VB.NET" Value="Public Class ComponentDesigner&#xA;Implements IComponentInitializer, IDesigner, IDesignerFilter, IDisposable, ITreeDesigner" />
+  <TypeSignature Language="C++ CLI" Value="public ref class ComponentDesigner : IDisposable, System::ComponentModel::Design::IComponentInitializer, System::ComponentModel::Design::IDesigner, System::ComponentModel::Design::IDesignerFilter, System::ComponentModel::Design::ITreeDesigner" />
   <TypeSignature Language="F#" Value="type ComponentDesigner = class&#xA;    interface ITreeDesigner&#xA;    interface IDesigner&#xA;    interface IDisposable&#xA;    interface IDesignerFilter&#xA;    interface IComponentInitializer" />
   <AssemblyInfo>
     <AssemblyName>System.Design</AssemblyName>
@@ -36,7 +36,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Extends the design mode behavior of a component.</summary>
+    <summary>
+             The default designer for all components.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -90,11 +92,6 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.ComponentDesigner" /> class.</summary>
@@ -122,7 +119,9 @@
         <ReturnType>System.ComponentModel.Design.DesignerActionListCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the design-time action lists supported by the component associated with the designer.</summary>
+        <summary>
+             Gets the design-time actionlists supported by the component associated with the designer.
+            </summary>
         <value>The design-time action lists supported by the component associated with the designer.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -149,7 +148,9 @@
         <ReturnType>System.Collections.ICollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of components associated with the component managed by the designer.</summary>
+        <summary>
+             Retrieves a list of associated components. These are components that should be incluced in a cut or copy operation on this component.
+            </summary>
         <value>The components that are associated with the component managed by the designer.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -173,9 +174,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::ComponentModel::IComponent ^ Component { System::ComponentModel::IComponent ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Component : System.ComponentModel.IComponent" Usage="System.ComponentModel.Design.ComponentDesigner.Component" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.Design.IDesigner.Component</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -186,16 +184,13 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.ComponentModel.IComponent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the component this designer is designing.</summary>
+        <summary>
+             Gets or sets the component this designer is designing.
+            </summary>
         <value>The component managed by the designer.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -247,7 +242,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases all resources used by the <see cref="T:System.ComponentModel.Design.ComponentDesigner" />.</summary>
+        <summary>
+             Disposes of the resources (other than memory) used by the <see cref="T:System.ComponentModel.Design.ComponentDesigner" />.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -288,7 +285,9 @@
       <Docs>
         <param name="disposing">
           <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Releases the unmanaged resources used by the <see cref="T:System.ComponentModel.Design.ComponentDesigner" /> and optionally releases the managed resources.</summary>
+        <summary>
+             Disposes of the resources (other than memory) used by the <see cref="T:System.ComponentModel.Design.ComponentDesigner" />.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -315,9 +314,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void DoDefaultAction();" />
       <MemberSignature Language="F#" Value="abstract member DoDefaultAction : unit -&gt; unit&#xA;override this.DoDefaultAction : unit -&gt; unit" Usage="componentDesigner.DoDefaultAction " />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.IDesigner.DoDefaultAction</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -333,7 +329,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a method signature in the source code file for the default event on the component and navigates the user's cursor to that location.</summary>
+        <summary>
+             Creates a method signature in the source code file for the default event on the component and navigates the user's cursor to that location in preparation to assign the default action.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -344,44 +342,6 @@
         </remarks>
         <exception cref="T:System.ComponentModel.Design.CheckoutException">An attempt to check out a file that is checked into a source code management program failed.</exception>
         <altmember cref="T:System.ComponentModel.Design.IDesigner" />
-      </Docs>
-    </Member>
-    <Member MemberName="Finalize">
-      <MemberSignature Language="C#" Value="~ComponentDesigner ();" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void Finalize() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ComponentDesigner.Finalize" />
-      <MemberSignature Language="VB.NET" Value="Finalize ()" />
-      <MemberSignature Language="C++ CLI" Value="!ComponentDesigner ()" />
-      <MemberSignature Language="F#" Value="override this.Finalize : unit -&gt; unit" Usage="componentDesigner.Finalize " />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>Attempts to free resources by calling <see langword="Dispose(false)" /> before the object is reclaimed by garbage collection.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- This method overrides <xref:System.Object.Finalize%2A?displayProperty=nameWithType> and cleans up resources by calling `Dispose(false)`. Override `Dispose(Boolean)` to customize the cleanup.  
-  
- Application code should not call this method; an object's `Finalize` method is automatically invoked during garbage collection, unless finalization by the garbage collector has been disabled by a call to the <xref:System.GC.SuppressFinalize%2A?displayProperty=nameWithType> method.  
-  
- For more information, see [Finalize Methods and Destructors](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/0s71x931(v%3dvs.100)), [Cleaning Up Unmanaged Resources](~/docs/standard/garbage-collection/unmanaged.md), and [Overriding the Finalize Method](https://docs.microsoft.com/previous-versions/dotnet/netframework-4.0/ddae83kx(v=vs.100)).  
-  
- ]]></format>
-        </remarks>
       </Docs>
     </Member>
     <Member MemberName="GetService">
@@ -410,7 +370,9 @@
       </Parameters>
       <Docs>
         <param name="serviceType">The type of service to request.</param>
-        <summary>Attempts to retrieve the specified type of service from the design mode site of the designer's component.</summary>
+        <summary>
+             Provides a way for a designer to get services from the hosting environment.
+            </summary>
         <returns>An object implementing the requested service, or <see langword="null" /> if the service cannot be resolved.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -453,7 +415,9 @@
         <ReturnType>System.ComponentModel.InheritanceAttribute</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an attribute that indicates the type of inheritance of the associated component.</summary>
+        <summary>
+             Gets or sets the inheritance attribute for this component.
+            </summary>
         <value>The <see cref="T:System.ComponentModel.InheritanceAttribute" /> for the associated component.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -480,7 +444,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether this component is inherited.</summary>
+        <summary>
+             Gets or sets a value indicating whether or not this component is being inherited.
+            </summary>
         <value>
           <see langword="true" /> if the component is inherited; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -494,9 +460,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void Initialize(System::ComponentModel::IComponent ^ component);" />
       <MemberSignature Language="F#" Value="abstract member Initialize : System.ComponentModel.IComponent -&gt; unit&#xA;override this.Initialize : System.ComponentModel.IComponent -&gt; unit" Usage="componentDesigner.Initialize component" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.IDesigner.Initialize(System.ComponentModel.IComponent)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -515,7 +478,9 @@
       </Parameters>
       <Docs>
         <param name="component">The component for this designer.</param>
-        <summary>Prepares the designer to view, edit, and design the specified component.</summary>
+        <summary>
+             Initializes a new instance of the <see cref="T:System.ComponentModel.Design.ComponentDesigner" /> class using the specified component.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -536,9 +501,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void InitializeExistingComponent(System::Collections::IDictionary ^ defaultValues);" />
       <MemberSignature Language="F#" Value="abstract member InitializeExistingComponent : System.Collections.IDictionary -&gt; unit&#xA;override this.InitializeExistingComponent : System.Collections.IDictionary -&gt; unit" Usage="componentDesigner.InitializeExistingComponent defaultValues" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.IComponentInitializer.InitializeExistingComponent(System.Collections.IDictionary)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -548,20 +510,20 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="defaultValues" Type="System.Collections.IDictionary" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="defaultValues" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
         <param name="defaultValues">A name/value dictionary of default values to apply to properties. May be <see langword="null" /> if no default values are specified.</param>
-        <summary>Reinitializes an existing component.</summary>
+        <summary>
+             This method is called when an existing component is being re-initialized.  This may occur after dragging a component to another container, for example.
+             The defaultValues property contains a name/value dictionary of default values that should be applied to properties. This dictionary may be null if no default values are specified.
+             You may use the defaultValues dictionary to apply recommended defaults to proeprties but you should not modify component properties beyond what is stored in the dictionary, because this is an existing component that may already have properties set on it.
+             The default implemenation of this method does nothing.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -584,9 +546,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void InitializeNewComponent(System::Collections::IDictionary ^ defaultValues);" />
       <MemberSignature Language="F#" Value="abstract member InitializeNewComponent : System.Collections.IDictionary -&gt; unit&#xA;override this.InitializeNewComponent : System.Collections.IDictionary -&gt; unit" Usage="componentDesigner.InitializeNewComponent defaultValues" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.IComponentInitializer.InitializeNewComponent(System.Collections.IDictionary)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -600,11 +559,18 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="defaultValues" Type="System.Collections.IDictionary" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="defaultValues" Type="System.Collections.IDictionary" />
       </Parameters>
       <Docs>
         <param name="defaultValues">A name/value dictionary of default values to apply to properties. May be <see langword="null" /> if no default values are specified.</param>
-        <summary>Initializes a newly created component.</summary>
+        <summary>
+             This method is called when a component is first initialized, typically after being first added
+             to a design surface.  The defaultValues property contains a name/value dictionary of default
+             values that should be applied to properties.  This dictionary may be null if no default values
+             are specified.  You may perform any initialization of this component that you like, and you
+             may even ignore the defaultValues dictionary altogether if you wish.
+             The default implemenation of this method does nothing.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -647,7 +613,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Initializes the settings for an imported component that is already initialized to settings other than the defaults.</summary>
+        <summary>
+             Called when the designer has been associated with a control that is not in it's default state, such as one that has been pasted or drag-dropped onto the designer.
+             This is an opportunity to fixup any shadowed properties in a different way than for default components.
+             This is called after the other initialize functions.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -676,11 +646,6 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.ComponentModel.InheritanceAttribute</ReturnType>
       </ReturnValue>
@@ -689,7 +654,9 @@
       </Parameters>
       <Docs>
         <param name="toInvoke">The <see cref="T:System.ComponentModel.Design.ComponentDesigner" /> whose inheritance attribute to retrieve.</param>
-        <summary>Gets the <see cref="T:System.ComponentModel.InheritanceAttribute" /> of the specified <see cref="T:System.ComponentModel.Design.ComponentDesigner" />.</summary>
+        <summary>
+             Invokes the get inheritance attribute of the specified ComponentDesigner.
+            </summary>
         <returns>The <see cref="T:System.ComponentModel.InheritanceAttribute" /> of the specified designer.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.ComponentModel.TypeDescriptor" />
@@ -724,7 +691,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Sets the default properties for the component.</summary>
+        <summary>
+             Raises the SetComponentDefault event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -760,7 +729,13 @@
         <ReturnType>System.ComponentModel.IComponent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the parent component for this designer.</summary>
+        <summary>
+             This property provides a generic mechanism for discovering parent relationships within designers,
+             and is used by ComponentDesigner's ITreeDesigner interface implementation.  This property
+             should only return null when this designer is the root component.  Otherwise, it should return
+             the parent component.  The default implementation of this property returns the root component
+             for all components that are not the root component, and it returns null for the root component.
+            </summary>
         <value>The parent component for this designer, or <see langword="null" /> if this designer is the root component.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -780,9 +755,6 @@
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void PostFilterAttributes(System::Collections::IDictionary ^ attributes);" />
       <MemberSignature Language="F#" Value="abstract member PostFilterAttributes : System.Collections.IDictionary -&gt; unit&#xA;override this.PostFilterAttributes : System.Collections.IDictionary -&gt; unit" Usage="componentDesigner.PostFilterAttributes attributes" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.IDesignerFilter.PostFilterAttributes(System.Collections.IDictionary)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -801,7 +773,9 @@
       </Parameters>
       <Docs>
         <param name="attributes">The attributes for the class of the component.</param>
-        <summary>Allows a designer to change or remove items from the set of attributes that it exposes through a <see cref="T:System.ComponentModel.TypeDescriptor" />.</summary>
+        <summary>
+             Allows a designer to filter the set of member attributes the component it is designing will expose through the TypeDescriptor object.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -827,9 +801,6 @@
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void PostFilterEvents(System::Collections::IDictionary ^ events);" />
       <MemberSignature Language="F#" Value="abstract member PostFilterEvents : System.Collections.IDictionary -&gt; unit&#xA;override this.PostFilterEvents : System.Collections.IDictionary -&gt; unit" Usage="componentDesigner.PostFilterEvents events" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.IDesignerFilter.PostFilterEvents(System.Collections.IDictionary)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -848,7 +819,9 @@
       </Parameters>
       <Docs>
         <param name="events">The events for the class of the component.</param>
-        <summary>Allows a designer to change or remove items from the set of events that it exposes through a <see cref="T:System.ComponentModel.TypeDescriptor" />.</summary>
+        <summary>
+             Allows a designer to filter the set of events the component it is designing will expose through the TypeDescriptor object.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -874,9 +847,6 @@
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void PostFilterProperties(System::Collections::IDictionary ^ properties);" />
       <MemberSignature Language="F#" Value="abstract member PostFilterProperties : System.Collections.IDictionary -&gt; unit&#xA;override this.PostFilterProperties : System.Collections.IDictionary -&gt; unit" Usage="componentDesigner.PostFilterProperties properties" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.IDesignerFilter.PostFilterProperties(System.Collections.IDictionary)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -895,7 +865,9 @@
       </Parameters>
       <Docs>
         <param name="properties">The properties for the class of the component.</param>
-        <summary>Allows a designer to change or remove items from the set of properties that it exposes through a <see cref="T:System.ComponentModel.TypeDescriptor" />.</summary>
+        <summary>
+             Allows a designer to filter the set of properties the component it is designing will expose through the TypeDescriptor object.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -922,9 +894,6 @@
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void PreFilterAttributes(System::Collections::IDictionary ^ attributes);" />
       <MemberSignature Language="F#" Value="abstract member PreFilterAttributes : System.Collections.IDictionary -&gt; unit&#xA;override this.PreFilterAttributes : System.Collections.IDictionary -&gt; unit" Usage="componentDesigner.PreFilterAttributes attributes" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.IDesignerFilter.PreFilterAttributes(System.Collections.IDictionary)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -943,7 +912,9 @@
       </Parameters>
       <Docs>
         <param name="attributes">The attributes for the class of the component.</param>
-        <summary>Allows a designer to add to the set of attributes that it exposes through a <see cref="T:System.ComponentModel.TypeDescriptor" />.</summary>
+        <summary>
+             Allows a designer to filter the set of member attributes the component it is designing will expose through the TypeDescriptor object.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -969,9 +940,6 @@
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void PreFilterEvents(System::Collections::IDictionary ^ events);" />
       <MemberSignature Language="F#" Value="abstract member PreFilterEvents : System.Collections.IDictionary -&gt; unit&#xA;override this.PreFilterEvents : System.Collections.IDictionary -&gt; unit" Usage="componentDesigner.PreFilterEvents events" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.IDesignerFilter.PreFilterEvents(System.Collections.IDictionary)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -990,7 +958,9 @@
       </Parameters>
       <Docs>
         <param name="events">The events for the class of the component.</param>
-        <summary>Allows a designer to add to the set of events that it exposes through a <see cref="T:System.ComponentModel.TypeDescriptor" />.</summary>
+        <summary>
+             Allows a designer to filter the set of events the component it is designing will expose through the TypeDescriptor object.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1016,9 +986,6 @@
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual void PreFilterProperties(System::Collections::IDictionary ^ properties);" />
       <MemberSignature Language="F#" Value="abstract member PreFilterProperties : System.Collections.IDictionary -&gt; unit&#xA;override this.PreFilterProperties : System.Collections.IDictionary -&gt; unit" Usage="componentDesigner.PreFilterProperties properties" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.IDesignerFilter.PreFilterProperties(System.Collections.IDictionary)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -1037,7 +1004,9 @@
       </Parameters>
       <Docs>
         <param name="properties">The properties for the class of the component.</param>
-        <summary>Allows a designer to add to the set of properties that it exposes through a <see cref="T:System.ComponentModel.TypeDescriptor" />.</summary>
+        <summary>
+             Allows a designer to filter the set of properties the component it is designing will expose through the TypeDescriptor object.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1085,7 +1054,10 @@
         <param name="member">A <see cref="T:System.ComponentModel.MemberDescriptor" /> that indicates the member that has been changed.</param>
         <param name="oldValue">The old value of the member.</param>
         <param name="newValue">The new value of the member.</param>
-        <summary>Notifies the <see cref="T:System.ComponentModel.Design.IComponentChangeService" /> that this component has been changed.</summary>
+        <summary>
+             Notifies the <see cref="T:System.ComponentModel.Design.IComponentChangeService" /> that this component has been changed.
+             You only need to call this when you are affecting component properties directly and not through the MemberDescriptor's accessors.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1124,7 +1096,10 @@
       </Parameters>
       <Docs>
         <param name="member">A <see cref="T:System.ComponentModel.MemberDescriptor" /> that indicates the member that is about to be changed.</param>
-        <summary>Notifies the <see cref="T:System.ComponentModel.Design.IComponentChangeService" /> that this component is about to be changed.</summary>
+        <summary>
+             Notifies the <see cref="T:System.ComponentModel.Design.IComponentChangeService" /> that this component is about to be changed.
+             You only need to call this when you are affecting component properties directly and not through the MemberDescriptor's accessors.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1159,7 +1134,9 @@
         <ReturnType>System.ComponentModel.Design.ComponentDesigner+ShadowPropertyCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of property values that override user settings.</summary>
+        <summary>
+             Gets a collection that houses shadow properties.  Shadow properties. are properties that fall through to the underlying component before they are set, but return their set values once they are set.
+            </summary>
         <value>A <see cref="T:System.ComponentModel.Design.ComponentDesigner.ShadowPropertyCollection" /> that indicates the shadow properties of the design document.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1171,9 +1148,6 @@
       <MemberSignature Language="VB.NET" Value="Sub PostFilterAttributes (attributes As IDictionary) Implements IDesignerFilter.PostFilterAttributes" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.Design.IDesignerFilter.PostFilterAttributes(System::Collections::IDictionary ^ attributes) = System::ComponentModel::Design::IDesignerFilter::PostFilterAttributes;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.IDesignerFilter.PostFilterAttributes(System.Collections.IDictionary)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -1184,11 +1158,6 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1215,9 +1184,6 @@
       <MemberSignature Language="VB.NET" Value="Sub PostFilterEvents (events As IDictionary) Implements IDesignerFilter.PostFilterEvents" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.Design.IDesignerFilter.PostFilterEvents(System::Collections::IDictionary ^ events) = System::ComponentModel::Design::IDesignerFilter::PostFilterEvents;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.IDesignerFilter.PostFilterEvents(System.Collections.IDictionary)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -1228,11 +1194,6 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1259,9 +1220,6 @@
       <MemberSignature Language="VB.NET" Value="Sub PostFilterProperties (properties As IDictionary) Implements IDesignerFilter.PostFilterProperties" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.Design.IDesignerFilter.PostFilterProperties(System::Collections::IDictionary ^ properties) = System::ComponentModel::Design::IDesignerFilter::PostFilterProperties;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.IDesignerFilter.PostFilterProperties(System.Collections.IDictionary)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -1272,11 +1230,6 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1303,9 +1256,6 @@
       <MemberSignature Language="VB.NET" Value="Sub PreFilterAttributes (attributes As IDictionary) Implements IDesignerFilter.PreFilterAttributes" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.Design.IDesignerFilter.PreFilterAttributes(System::Collections::IDictionary ^ attributes) = System::ComponentModel::Design::IDesignerFilter::PreFilterAttributes;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.IDesignerFilter.PreFilterAttributes(System.Collections.IDictionary)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -1316,11 +1266,6 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1347,9 +1292,6 @@
       <MemberSignature Language="VB.NET" Value="Sub PreFilterEvents (events As IDictionary) Implements IDesignerFilter.PreFilterEvents" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.Design.IDesignerFilter.PreFilterEvents(System::Collections::IDictionary ^ events) = System::ComponentModel::Design::IDesignerFilter::PreFilterEvents;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.IDesignerFilter.PreFilterEvents(System.Collections.IDictionary)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -1360,11 +1302,6 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1391,9 +1328,6 @@
       <MemberSignature Language="VB.NET" Value="Sub PreFilterProperties (properties As IDictionary) Implements IDesignerFilter.PreFilterProperties" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.Design.IDesignerFilter.PreFilterProperties(System::Collections::IDictionary ^ properties) = System::ComponentModel::Design::IDesignerFilter::PreFilterProperties;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.IDesignerFilter.PreFilterProperties(System.Collections.IDictionary)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -1404,11 +1338,6 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1436,9 +1365,6 @@
       <MemberSignature Language="C++ CLI" Value="property System::Collections::ICollection ^ System::ComponentModel::Design::ITreeDesigner::Children { System::Collections::ICollection ^ get(); };" />
       <MemberSignature Language="F#" Usage="System.ComponentModel.Design.ITreeDesigner.Children" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.Design.ITreeDesigner.Children</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1472,9 +1398,6 @@
       <MemberSignature Language="C++ CLI" Value="property System::ComponentModel::Design::IDesigner ^ System::ComponentModel::Design::ITreeDesigner::Parent { System::ComponentModel::Design::IDesigner ^ get(); };" />
       <MemberSignature Language="F#" Usage="System.ComponentModel.Design.ITreeDesigner.Parent" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.Design.ITreeDesigner.Parent</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1508,9 +1431,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::ComponentModel::Design::DesignerVerbCollection ^ Verbs { System::ComponentModel::Design::DesignerVerbCollection ^ get(); };" />
       <MemberSignature Language="F#" Value="member this.Verbs : System.ComponentModel.Design.DesignerVerbCollection" Usage="System.ComponentModel.Design.ComponentDesigner.Verbs" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.Design.IDesigner.Verbs</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -1525,7 +1445,9 @@
         <ReturnType>System.ComponentModel.Design.DesignerVerbCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the design-time verbs supported by the component that is associated with the designer.</summary>
+        <summary>
+             Gets the design-time verbs supported by the component associated with the designer.
+            </summary>
         <value>A <see cref="T:System.ComponentModel.Design.DesignerVerbCollection" /> of <see cref="T:System.ComponentModel.Design.DesignerVerb" /> objects, or <see langword="null" /> if no designer verbs are available. This default implementation always returns <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

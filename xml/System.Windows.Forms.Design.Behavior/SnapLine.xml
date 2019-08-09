@@ -1,4 +1,4 @@
-﻿<Type Name="SnapLine" FullName="System.Windows.Forms.Design.Behavior.SnapLine">
+<Type Name="SnapLine" FullName="System.Windows.Forms.Design.Behavior.SnapLine">
   <TypeSignature Language="C#" Value="public sealed class SnapLine" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SnapLine extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.Behavior.SnapLine" />
@@ -19,7 +19,18 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents the horizontal and vertical line segments that are dynamically created in the user interface (UI) to assist in the design-time layout of controls in a container. This class cannot be inherited.</summary>
+    <summary>
+             The SnapLine class represents a UI-guideline that will be rendered
+             during control movement (drag, keyboard, and resize) operations.
+             SnapLines will assist a user in aligning controls relative to one
+             one another.  Each SnapLine will have a type: top, bottom, etc...
+             Only SnapLines of like-types are allowed to align with each other.
+             The 'offset' will represent the distance from the origin (upper-left
+             corner) of the control to where the SnapLine is located.  And finally
+             the 'filter' is a string used to define custome types of SnapLines.
+             This enables a SnapLine with a filter of "TypeX" to only snap to
+             other "TypeX" filtered lines.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -94,11 +105,6 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="type" Type="System.Windows.Forms.Design.Behavior.SnapLineType" />
         <Parameter Name="offset" Type="System.Int32" />
@@ -106,7 +112,9 @@
       <Docs>
         <param name="type">The <see cref="T:System.Windows.Forms.Design.Behavior.SnapLineType" /> to create. Describes the relative position and orientation of the snapline.</param>
         <param name="offset">The position of the snapline, in pixels, relative to the upper-left origin of the owning control.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.Behavior.SnapLine" /> class using the specified snapline type and offset.</summary>
+        <summary>
+             SnapLine constructor that takes the type and offset of SnapLine.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -136,11 +144,6 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="type" Type="System.Windows.Forms.Design.Behavior.SnapLineType" />
         <Parameter Name="offset" Type="System.Int32" />
@@ -150,7 +153,9 @@
         <param name="type">The <see cref="T:System.Windows.Forms.Design.Behavior.SnapLineType" /> to create. Describes the relative position and orientation of the snapline.</param>
         <param name="offset">The position of the snapline, in pixels, relative to the upper-left origin of the owning control.</param>
         <param name="filter">A <see cref="T:System.String" /> used to specify a programmer-defined category of snaplines.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.Behavior.SnapLine" /> class using the specified snapline type, offset, and filter name.</summary>
+        <summary>
+             SnapLine constructor that takes the type, offset and filter of SnapLine.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -181,11 +186,6 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="type" Type="System.Windows.Forms.Design.Behavior.SnapLineType" />
         <Parameter Name="offset" Type="System.Int32" />
@@ -195,7 +195,9 @@
         <param name="type">The <see cref="T:System.Windows.Forms.Design.Behavior.SnapLineType" /> to create. Describes the relative position and orientation of the snapline.</param>
         <param name="offset">The position of the snapline, in pixels, relative to the upper-left origin of the owning control.</param>
         <param name="priority">The <see cref="T:System.Windows.Forms.Design.Behavior.SnapLinePriority" /> of the snapline.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.Behavior.SnapLine" /> class using the specified snapline type, offset, and priority.</summary>
+        <summary>
+             SnapLine constructor that takes the type, offset, and priority of SnapLine.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -226,11 +228,6 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="type" Type="System.Windows.Forms.Design.Behavior.SnapLineType" />
         <Parameter Name="offset" Type="System.Int32" />
@@ -242,7 +239,9 @@
         <param name="offset">The position of the snapline, in pixels, relative to the upper-left origin of the owning control.</param>
         <param name="filter">A <see cref="T:System.String" /> used to specify a programmer-defined category of snaplines.</param>
         <param name="priority">The <see cref="T:System.Windows.Forms.Design.Behavior.SnapLinePriority" /> of the snapline.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.Behavior.SnapLine" /> class using the specified snapline type, offset, filter name, and priority.</summary>
+        <summary>
+             SnapLine constructor that takes the type, offset, filter, and priority of the SnapLine.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -282,7 +281,9 @@
       </Parameters>
       <Docs>
         <param name="adjustment">The number of pixels to change the snapline offset by.</param>
-        <summary>Adjusts the <see cref="P:System.Windows.Forms.Design.Behavior.SnapLine.Offset" /> property of the snapline.</summary>
+        <summary>
+             Adjusts the offset property of the SnapLine.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -312,16 +313,15 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the programmer-defined filter category associated with this snapline.</summary>
+        <summary>
+             This property returns a string representing an optional user-defined filter.
+             Setting this filter will allow only those SnapLines with similar filters to align
+             to one another.
+            </summary>
         <value>A <see cref="T:System.String" /> that defines the filter category. The default is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -358,7 +358,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the snapline has a horizontal orientation.</summary>
+        <summary>
+             Returns true if the SnapLine is of a horizontal type.
+            </summary>
         <value>
           <see langword="true" /> if the snapline is horizontal; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -393,7 +395,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the snapline has a vertical orientation.</summary>
+        <summary>
+             Returns true if the SnapLine is of a vertical type.
+            </summary>
         <value>
           <see langword="true" /> if the snapline is vertical; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -424,16 +428,13 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of pixels that the snapline is offset from the origin of the associated control.</summary>
+        <summary>
+             Read-only property that returns the distance from the origin to where this SnapLine is defined.
+            </summary>
         <value>The offset, in pixels, of the snapline.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -465,16 +466,13 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Design.Behavior.SnapLinePriority</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating the relative importance of the snapline.</summary>
+        <summary>
+             Read-only property that returns the priority of the SnapLine.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.Design.Behavior.SnapLinePriority" /> that represents the priority category of a snapline.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -520,7 +518,9 @@
       <Docs>
         <param name="line1">The specified <see cref="T:System.Windows.Forms.Design.Behavior.SnapLine" />.</param>
         <param name="line2">The <see cref="T:System.Windows.Forms.Design.Behavior.SnapLine" /> to which the specified <see cref="T:System.Windows.Forms.Design.Behavior.SnapLine" /> is expected to snap.</param>
-        <summary>Returns a value indicating whether the specified <see cref="T:System.Windows.Forms.Design.Behavior.SnapLine" /> should snap to another <see cref="T:System.Windows.Forms.Design.Behavior.SnapLine" />.</summary>
+        <summary>
+             Returns true if SnapLine s1 should snap to SnapLine s2.
+            </summary>
         <returns>
           <see langword="true" /> if <paramref name="line1" /> should snap to <paramref name="line2" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -543,16 +543,13 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Design.Behavior.SnapLineType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type of a snapline, which indicates the general location and orientation.</summary>
+        <summary>
+             Read-only property that represents the 'type' of SnapLine.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.Design.Behavior.SnapLineType" /> that represents the orientation and general location, relative to control edges, of a snapline.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -591,7 +588,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a string representation of the current snapline.</summary>
+        <summary>
+             ToString implementation for SnapLines.
+            </summary>
         <returns>A <see cref="T:System.String" /> that represents the current <see cref="T:System.Windows.Forms.Design.Behavior.SnapLine" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

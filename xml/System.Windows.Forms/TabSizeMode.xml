@@ -1,4 +1,4 @@
-﻿<Type Name="TabSizeMode" FullName="System.Windows.Forms.TabSizeMode">
+<Type Name="TabSizeMode" FullName="System.Windows.Forms.TabSizeMode">
   <TypeSignature Language="C#" Value="public enum TabSizeMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TabSizeMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TabSizeMode" />
@@ -15,7 +15,10 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies how tabs in a tab control are sized.</summary>
+    <summary>
+             Controls the automatic sizing of certain objects.  This is typically
+             used for the sizing of Tabs in a TabStrip control.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -46,7 +49,11 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The width of each tab is sized so that each row of tabs fills the entire width of the container control. This is only applicable to tab controls with more than one row.</summary>
+        <summary>
+             indicates that the tags are stretched to ensure they reach the far
+             right of the strip, if necesary.  This is only applicable to tab
+             strips with more than one row.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Fixed">
@@ -68,7 +75,9 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>All tabs in a control are the same width.</summary>
+        <summary>
+             Indicates that all tabs are the same width. period.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Normal">
@@ -90,7 +99,10 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>The width of each tab is sized to accommodate what is displayed on the tab, and the size of tabs in a row are not adjusted to fill the entire width of the container control.</summary>
+        <summary>
+             Indicates that items are only as wide as they need to be to display
+             their information.  Empty space on the right is left as such
+            </summary>
       </Docs>
     </Member>
   </Members>

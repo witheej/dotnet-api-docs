@@ -1,4 +1,4 @@
-﻿<Type Name="ImageLayout" FullName="System.Windows.Forms.ImageLayout">
+<Type Name="ImageLayout" FullName="System.Windows.Forms.ImageLayout">
   <TypeSignature Language="C#" Value="public enum ImageLayout" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ImageLayout extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ImageLayout" />
@@ -14,7 +14,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the position of the image on the control.</summary>
+    <summary>
+             Specifies the position of the image on the control.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,7 +38,9 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>The image is centered within the control's client rectangle.</summary>
+        <summary>
+             The image is centred within the controls client rectangle.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -57,7 +61,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>The image is left-aligned at the top across the control's client rectangle.</summary>
+        <summary>
+             The image is aligned TOP - LEFT across the controls client rectangle.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Stretch">
@@ -78,7 +84,9 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>The image is stretched across the control's client rectangle.</summary>
+        <summary>
+             The image is streched across the controls client rectangle.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Tile">
@@ -99,7 +107,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The image is tiled across the control's client rectangle.</summary>
+        <summary>
+             The image is tiled across the controls client rectangle.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Zoom">
@@ -120,7 +130,9 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>The image is enlarged within the control's client rectangle.</summary>
+        <summary>
+             The image is streched across the controls client rectangle.
+            </summary>
       </Docs>
     </Member>
   </Members>

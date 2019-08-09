@@ -1,4 +1,4 @@
-﻿<Type Name="CheckedListBox+CheckedIndexCollection" FullName="System.Windows.Forms.CheckedListBox+CheckedIndexCollection">
+<Type Name="CheckedListBox+CheckedIndexCollection" FullName="System.Windows.Forms.CheckedListBox+CheckedIndexCollection">
   <TypeSignature Language="C#" Value="public class CheckedListBox.CheckedIndexCollection : System.Collections.IList" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit CheckedListBox/CheckedIndexCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.CheckedListBox.CheckedIndexCollection" />
@@ -175,7 +175,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of checked items.</summary>
+        <summary>
+             Number of current checked items.
+            </summary>
         <value>The number of indexes in the collection.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -299,7 +301,9 @@
       </Parameters>
       <Docs>
         <param name="index">An index into the checked indexes collection. This index specifies the index of the checked item you want to retrieve.</param>
-        <summary>Gets the index of a checked item in the <see cref="T:System.Windows.Forms.CheckedListBox" /> control.</summary>
+        <summary>
+             Retrieves the specified checked item.
+            </summary>
         <value>The index of the checked item. For more information, see the examples in the <see cref="T:System.Windows.Forms.CheckedListBox.CheckedIndexCollection" /> class overview.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -610,7 +614,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="index">The zero-based index of the item to get.</param>

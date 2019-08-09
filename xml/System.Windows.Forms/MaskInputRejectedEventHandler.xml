@@ -1,4 +1,4 @@
-﻿<Type Name="MaskInputRejectedEventHandler" FullName="System.Windows.Forms.MaskInputRejectedEventHandler">
+<Type Name="MaskInputRejectedEventHandler" FullName="System.Windows.Forms.MaskInputRejectedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void MaskInputRejectedEventHandler(object sender, MaskInputRejectedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MaskInputRejectedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MaskInputRejectedEventHandler" />
@@ -23,7 +23,10 @@
   <Docs>
     <param name="sender">The source of the event.</param>
     <param name="e">A <see cref="T:System.Windows.Forms.MaskInputRejectedEventArgs" /> that contains the event data.</param>
-    <summary>Represents the method that will handle the <see cref="E:System.Windows.Forms.MaskedTextBox.MaskInputRejected" /> event of a <see cref="T:System.Windows.Forms.MaskedTextBox" /> control.</summary>
+    <summary>
+             Describes a delegate for an event that has a MaskInputRejectedEventArgs as
+             a parameter.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

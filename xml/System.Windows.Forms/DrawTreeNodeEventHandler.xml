@@ -1,4 +1,4 @@
-﻿<Type Name="DrawTreeNodeEventHandler" FullName="System.Windows.Forms.DrawTreeNodeEventHandler">
+<Type Name="DrawTreeNodeEventHandler" FullName="System.Windows.Forms.DrawTreeNodeEventHandler">
   <TypeSignature Language="C#" Value="public delegate void DrawTreeNodeEventHandler(object sender, DrawTreeNodeEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DrawTreeNodeEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DrawTreeNodeEventHandler" />
@@ -23,7 +23,9 @@
   <Docs>
     <param name="sender">The source of the event.</param>
     <param name="e">A <see cref="T:System.Windows.Forms.DrawTreeNodeEventArgs" /> that contains the event data.</param>
-    <summary>Represents the method that will handle the <see cref="E:System.Windows.Forms.TreeView.DrawNode" /> event of a <see cref="T:System.Windows.Forms.TreeView" />.</summary>
+    <summary>
+             Handler for the DrawTreeNode event of the TreeView control.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

@@ -1,4 +1,4 @@
-﻿<Type Name="StatusBarPanelClickEventArgs" FullName="System.Windows.Forms.StatusBarPanelClickEventArgs">
+<Type Name="StatusBarPanelClickEventArgs" FullName="System.Windows.Forms.StatusBarPanelClickEventArgs">
   <TypeSignature Language="C#" Value="public class StatusBarPanelClickEventArgs : System.Windows.Forms.MouseEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StatusBarPanelClickEventArgs extends System.Windows.Forms.MouseEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.StatusBarPanelClickEventArgs" />
@@ -16,7 +16,10 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.Forms.StatusBar.PanelClick" /> event.</summary>
+    <summary>
+             Provides data for the <see cref="M:System.Windows.Forms.StatusBar.OnPanelClick(System.Windows.Forms.StatusBarPanelClickEventArgs)" />
+             event.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -67,7 +70,10 @@
         <param name="clicks">The number of times that the mouse button was clicked.</param>
         <param name="x">The x-coordinate of the mouse click.</param>
         <param name="y">The y-coordinate of the mouse click.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.StatusBarPanelClickEventArgs" /> class.</summary>
+        <summary>
+             Initializes a new instance of the <see cref="T:System.Windows.Forms.StatusBarPanelClickEventArgs" />
+             class.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Windows.Forms.MouseButtons" />
         <altmember cref="T:System.Windows.Forms.StatusBarPanel" />
@@ -87,16 +93,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.StatusBarPanel</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Forms.StatusBarPanel" /> to draw.</summary>
+        <summary>
+             Specifies the <see cref="T:System.Windows.Forms.StatusBarPanel" /> that represents the clicked panel.
+            </summary>
         <value>The <see cref="T:System.Windows.Forms.StatusBarPanel" /> to draw.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

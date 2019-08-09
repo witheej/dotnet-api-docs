@@ -1,4 +1,4 @@
-﻿<Type Name="AccessibleSelection" FullName="System.Windows.Forms.AccessibleSelection">
+<Type Name="AccessibleSelection" FullName="System.Windows.Forms.AccessibleSelection">
   <TypeSignature Language="C#" Value="public enum AccessibleSelection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AccessibleSelection extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.AccessibleSelection" />
@@ -20,7 +20,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies how an accessible object is selected or receives focus.</summary>
+    <summary>
+             Specifies how an accessible object will be selected or receive focus.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -70,7 +72,9 @@
       </ReturnValue>
       <MemberValue>8</MemberValue>
       <Docs>
-        <summary>Adds the object to the selection.</summary>
+        <summary>
+             Adds the object to the selection.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="ExtendSelection">
@@ -92,7 +96,9 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>Selects all objects between the anchor and the selected object.</summary>
+        <summary>
+             Selects all objects between the anchor and the selected object.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -114,7 +120,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>The selection or focus of an object is unchanged.</summary>
+        <summary>
+             The selection or focus of an object is unchanged.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="RemoveSelection">
@@ -136,7 +144,9 @@
       </ReturnValue>
       <MemberValue>16</MemberValue>
       <Docs>
-        <summary>Removes the object from the selection.</summary>
+        <summary>
+             Removes the object from the selection.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="TakeFocus">
@@ -158,7 +168,12 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Assigns focus to an object and makes it the anchor, which is the starting point for the selection. Can be combined with <see langword="TakeSelection" />, <see langword="ExtendSelection" />, <see langword="AddSelection" />, or <see langword="RemoveSelection" />.</summary>
+        <summary>
+             Assigns focus to an object and makes it the anchor, which is the
+             starting point for the selection. Can be combined with
+            <see cref="F:System.Windows.Forms.AccessibleSelection.TakeSelection" />, <see cref="F:System.Windows.Forms.AccessibleSelection.ExtendSelection" />,
+            <see cref="F:System.Windows.Forms.AccessibleSelection.AddSelection" />, or  <see cref="F:System.Windows.Forms.AccessibleSelection.RemoveSelection" />.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="TakeSelection">
@@ -180,7 +195,9 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Selects the object and deselects all other objects in the container.</summary>
+        <summary>
+             Selects the object and deselects all other objects in the container.
+            </summary>
       </Docs>
     </Member>
   </Members>

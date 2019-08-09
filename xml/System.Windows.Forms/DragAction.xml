@@ -1,4 +1,4 @@
-﻿<Type Name="DragAction" FullName="System.Windows.Forms.DragAction">
+<Type Name="DragAction" FullName="System.Windows.Forms.DragAction">
   <TypeSignature Language="C#" Value="public enum DragAction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DragAction extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DragAction" />
@@ -20,7 +20,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies how and if a drag-and-drop operation should continue.</summary>
+    <summary>
+             Specifies how and if a drag-and-drop operation should continue.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -67,7 +69,9 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>The operation is canceled with no drop message.</summary>
+        <summary>
+             The operation is canceled with no drop message.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Continue">
@@ -89,7 +93,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>The operation will continue.</summary>
+        <summary>
+             The operation will continue.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Drop">
@@ -111,7 +117,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The operation will stop with a drop.</summary>
+        <summary>
+             The operation will stop with a drop.
+            </summary>
       </Docs>
     </Member>
   </Members>

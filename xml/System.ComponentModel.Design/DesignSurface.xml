@@ -1,4 +1,4 @@
-﻿<Type Name="DesignSurface" FullName="System.ComponentModel.Design.DesignSurface">
+<Type Name="DesignSurface" FullName="System.ComponentModel.Design.DesignSurface">
   <TypeSignature Language="C#" Value="public class DesignSurface : IDisposable, IServiceProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DesignSurface extends System.Object implements class System.IDisposable, class System.IServiceProvider" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.DesignSurface" />
@@ -25,13 +25,10 @@
       <InterfaceName>System.IServiceProvider</InterfaceName>
     </Interface>
   </Interfaces>
-  <Attributes>
-    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-      <AttributeName>System.Security.SecurityCritical</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
-    <summary>Presents a user interface for designing components.</summary>
+    <summary>
+             A design surface is an object that contains multiple designers and presents a user-editable surface for them.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -113,14 +110,11 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignSurface" /> class.</summary>
+        <summary>
+             Creates a new DesignSurface.
+            </summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ObjectDisposedException">The <see cref="T:System.ComponentModel.Design.IDesignerHost" /> attached to the <see cref="T:System.ComponentModel.Design.DesignSurface" /> has been disposed.</exception>
       </Docs>
@@ -146,8 +140,10 @@
         <Parameter Name="parentProvider" Type="System.IServiceProvider" />
       </Parameters>
       <Docs>
-        <param name="parentProvider">The parent service provider, or <see langword="null" /> if there is no parent used to resolve services.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignSurface" /> class.</summary>
+        <param name="parentProvider"> The parent service provider. If there is no parent used to resolve services this can be null. </param>
+        <summary>
+             Creates a new DesignSurface given a parent service provider.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -177,17 +173,14 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="rootComponentType" Type="System.Type" />
       </Parameters>
       <Docs>
         <param name="rootComponentType">The type of root component to create.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignSurface" /> class.</summary>
+        <summary>
+             Creates a new DesignSurface.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -226,9 +219,11 @@
         <Parameter Name="rootComponentType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="parentProvider">The parent service provider, or <see langword="null" /> if there is no parent used to resolve services.</param>
+        <param name="parentProvider"> The parent service provider.  If there is no parent used to resolve services this can be null. </param>
         <param name="rootComponentType">The type of root component to create.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.DesignSurface" /> class.</summary>
+        <summary>
+             Creates a new DesignSurface given a parent service provider.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -277,7 +272,9 @@
       </Parameters>
       <Docs>
         <param name="loader">The designer loader to use for loading the designer.</param>
-        <summary>Begins the loading process with the given designer loader.</summary>
+        <summary>
+             This method begins the loading process with the given designer loader.  Designer loading can be asynchronous, so the loading may continue to  progress after this call has returned.  Listen to the Loaded event to know when the design surface has completed loading.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -320,7 +317,9 @@
       </Parameters>
       <Docs>
         <param name="rootComponentType">The type of component to create in design mode.</param>
-        <summary>Begins the loading process.</summary>
+        <summary>
+             This method begins the loading process for a component of the given type.  This will create an instance of the component type and initialize a designer for that instance.  Loaded is raised before this method returns.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -360,7 +359,9 @@
         <ReturnType>System.ComponentModel.IContainer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.ComponentModel.IContainer" /> implementation within the design surface.</summary>
+        <summary>
+             Provides access to the design surface's container, which contains all components currently being designed.
+            </summary>
         <value>The <see cref="T:System.ComponentModel.IContainer" /> implementation within the design surface.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -403,7 +404,9 @@
       </Parameters>
       <Docs>
         <param name="componentType">The type of component to create.</param>
-        <summary>Creates an instance of a component.</summary>
+        <summary>
+             This method is called to create a component of the given type.
+            </summary>
         <returns>The newly created component.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -446,7 +449,9 @@
         <param name="component">The component for which the designer should be created.</param>
         <param name="rootDesigner">
           <see langword="true" /> to create a root designer; <see langword="false" /> to create a normal designer.</param>
-        <summary>Creates a designer when a component is added to the container.</summary>
+        <summary>
+             This method is called to create a designer for a component.
+            </summary>
         <returns>An instance of the requested designer, or <see langword="null" /> if no matching designer could be found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -489,7 +494,10 @@
       </Parameters>
       <Docs>
         <param name="type">The type to create.</param>
-        <summary>Creates an instance of the given type.</summary>
+        <summary>
+             This method is called to create an instance of the given type.  If the type is a component
+             this will search for a constructor of type IContainer first, and then an empty constructor.
+            </summary>
         <returns>The newly created object.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -530,11 +538,6 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.ComponentModel.INestedContainer</ReturnType>
       </ReturnValue>
@@ -543,7 +546,9 @@
       </Parameters>
       <Docs>
         <param name="owningComponent">The component that manages the nested container.</param>
-        <summary>Creates a container suitable for nesting controls or components.</summary>
+        <summary>
+             Creates a container suitable for nesting controls or components.  Adding a component to a  nested container creates its doesigner and makes it elligble for all all services available from the design surface.  Components added to nested containers do not participate in serialization. You may provide an additional name for this container by passing a value into containerName.
+            </summary>
         <returns>The nested container.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -585,7 +590,9 @@
       <Docs>
         <param name="owningComponent">The component that manages the nested container.</param>
         <param name="containerName">An additional name for the nested container.</param>
-        <summary>Creates a container suitable for nesting controls or components.</summary>
+        <summary>
+             Creates a container suitable for nesting controls or components.  Adding a component to a  nested container creates its doesigner and makes it elligble for all all services available from the design surface.  Components added to nested containers do not participate in serialization. You may provide an additional name for this container by passing a value into containerName.
+            </summary>
         <returns>The nested container.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -631,17 +638,14 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases the resources used by the <see cref="T:System.ComponentModel.Design.DesignSurface" />.</summary>
+        <summary>
+             Disposes the design surface.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -684,9 +688,10 @@
         <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
-        <param name="disposing">
-          <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Releases the resources used by the <see cref="T:System.ComponentModel.Design.DesignSurface" />.</summary>
+        <param name="disposing"> True if Dispose is being called or false if this is being invoked by a finalizer. </param>
+        <summary>
+             Protected override of Dispose that allows for cleanup.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -731,7 +736,9 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the design surface is disposed.</summary>
+        <summary>
+             Adds a event handler to listen to the Disposed event on the component.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -758,19 +765,13 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the **Design-time Error List** is loading.</summary>
+        <summary>
+             Returns true if DTEL (WSOD) is currently loading.
+            </summary>
         <value>
           <see langword="true" /> if the **Design-time Error List** is loading; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -799,7 +800,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Serializes changes to the design surface.</summary>
+        <summary>
+             Flushes any design changes to the underlying loader.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -831,7 +834,9 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a call is made to the <see cref="M:System.ComponentModel.Design.DesignSurface.Flush" /> method of <see cref="T:System.ComponentModel.Design.DesignSurface" />.</summary>
+        <summary>
+             Adds a event handler to listen to the Flushed event on the component. This is called after the design surface has asked the designer loader to flush its state.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -869,9 +874,11 @@
         <Parameter Name="serviceType" Type="System.Type" />
       </Parameters>
       <Docs>
-        <param name="serviceType">The type of service to retrieve.</param>
-        <summary>Gets a service from the service container.</summary>
-        <returns>An object that implements, or is a derived class of, <paramref name="serviceType" />, or <see langword="null" /> if the service does not exist in the service container.</returns>
+        <param name="serviceType"> The type of service to retrieve. </param>
+        <summary>
+             Retrieves a service in this design surface's service container.
+            </summary>
+        <returns> An instance of the requested service or null if the service could not be found. </returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -899,16 +906,13 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the design surface is currently loaded.</summary>
+        <summary>
+             Returns true if the design surface is currently loaded. This will be true when a successful load has completed, or false for all other cases.
+            </summary>
         <value>
           <see langword="true" /> if the design surface is currently loaded; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -935,7 +939,9 @@
         <ReturnType>System.ComponentModel.Design.LoadedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the designer load has completed.</summary>
+        <summary>
+             Called when the designer load has completed.  This is called for successful loads as well as unsuccessful ones.  If code in this event handler throws an exception the designer will be unloaded.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -972,7 +978,9 @@
         <ReturnType>System.Collections.ICollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Returns a collection of loading errors or a void collection.</summary>
+        <summary>
+             Returns a collection of LoadErrors or a void collection.
+            </summary>
         <value>A <see cref="T:System.Collections.ICollection" /> of loading errors.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -998,7 +1006,9 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the designer is about to be loaded.</summary>
+        <summary>
+             Called when the designer load is about to begin the loading process.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1027,7 +1037,10 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.ComponentModel.Design.LoadedEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.ComponentModel.Design.DesignSurface.Loaded" /> event.</summary>
+        <summary>
+             Called when the loading process has completed.  This is invoked for both successful and unsuccessful loads. The EventArgs passed into this method can be used to tell a successful from an unsuccessful load.  It can also be used to create a view for this design surface.  If code in this event handler or override throws an exception,
+             the designer will be unloaded.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1056,7 +1069,9 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.ComponentModel.Design.DesignSurface.Loading" /> event.</summary>
+        <summary>
+             Called when the loading process is about to begin.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1085,7 +1100,9 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.ComponentModel.Design.DesignSurface.Unloaded" /> event.</summary>
+        <summary>
+             Called when a designer has finished unloading a document.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1114,7 +1131,9 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.ComponentModel.Design.DesignSurface.Unloading" /> event.</summary>
+        <summary>
+             Called when a designer is about to begin reloading. When a designer reloads, all of the state for that designer is recreated, including the designer's view. The view should be unparented at this time.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1143,7 +1162,9 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.ComponentModel.Design.DesignSurface.ViewActivated" /> event.</summary>
+        <summary>
+             Called when someone has called the Activate method on IDesignerHost.  You should attach a handler to this event that activates the window for this design surface.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1168,7 +1189,9 @@
         <ReturnType>System.ComponentModel.Design.ServiceContainer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the service container.</summary>
+        <summary>
+             Provides access to the design surface's ServiceContainer. This property allows inheritors to add their own services.
+            </summary>
         <value>The service container that provides all services to designers contained within the design surface.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1202,7 +1225,10 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a designer has finished unloading.</summary>
+        <summary>
+             Called when the designer has completed the unloading
+             process.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1227,7 +1253,9 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a designer is about to unload.</summary>
+        <summary>
+             Called when a designer is about to begin reloading. When a designer reloads, all of the state for that designer is recreated, including the designer's view. The view should be unparented at this time.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1259,7 +1287,12 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the view for the root designer.</summary>
+        <summary>
+             This property will return the view for the root designer. BeginLoad must have been called beforehand to start the loading process. It is possible to return a view before the designer loader finishes loading because the root designer, which supplies the view, is the first object created by the designer loader. If a view is unavailable this method will throw an exception.
+             Possible exceptions:
+             The design surface is not loading or the designer loader has not yet created a root designer: InvalidOperationException
+             The design surface finished the load, but failed. (Various. This will throw the first exception the designer loader added to the error collection).
+            </summary>
         <value>The view for the root designer.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1310,7 +1343,9 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="M:System.ComponentModel.Design.IDesignerHost.Activate" /> method has been called on <see cref="T:System.ComponentModel.Design.IDesignerHost" />.</summary>
+        <summary>
+             Called when someone has called the Activate method on IDesignerHost.  You should attach a handler to this event that activates the window for this design surface.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

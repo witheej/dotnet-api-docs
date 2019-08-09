@@ -1,4 +1,4 @@
-﻿<Type Name="ComponentEditorPage" FullName="System.Windows.Forms.Design.ComponentEditorPage">
+<Type Name="ComponentEditorPage" FullName="System.Windows.Forms.Design.ComponentEditorPage">
   <TypeSignature Language="C#" Value="public abstract class ComponentEditorPage : System.Windows.Forms.Panel" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ComponentEditorPage extends System.Windows.Forms.Panel" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.ComponentEditorPage" />
@@ -24,7 +24,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides a base implementation for a <see cref="T:System.Windows.Forms.Design.ComponentEditorPage" />.</summary>
+    <summary>
+             Provides a base implementation for a <see cref="T:System.Windows.Forms.Design.ComponentEditorPage" />.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -62,7 +64,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.ComponentEditorPage" /> class.</summary>
+        <summary>
+             Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.ComponentEditorPage" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -85,7 +89,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Activates and displays the page.</summary>
+        <summary>
+             Activates and displays the page.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -103,17 +109,14 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Applies changes to all the components being edited.</summary>
+        <summary>
+             Applies changes to all the components being edited
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -137,15 +140,17 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>This property is not relevant for this class.</summary>
+        <summary>
+             Hide the property
+            </summary>
         <value>
           <see langword="true" /> if enabled; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -168,8 +173,8 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -194,19 +199,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies whether the editor should apply its changes before it is deactivated.</summary>
+        <summary>
+             Indicates whether an editor should apply its changes before it is deactivated
+            </summary>
         <value>
           <see langword="true" /> if the editor should apply its changes; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -233,19 +232,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.ComponentModel.IComponent</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the component to edit.</summary>
+        <summary>
+             Gets or sets the component to edit
+            </summary>
         <value>The <see cref="T:System.ComponentModel.IComponent" /> this page allows you to edit.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -268,7 +261,9 @@
         <ReturnType>System.Windows.Forms.CreateParams</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the creation parameters for the control.</summary>
+        <summary>
+             Gets or sets the creation parameters for this control
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.CreateParams" /> that indicates the creation parameters for the control.</value>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
@@ -295,7 +290,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Deactivates and hides the page.</summary>
+        <summary>
+             Deactivates and hides the page
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -318,7 +315,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Increments the loading counter.</summary>
+        <summary>
+             Increments the loading counter, which determines whether a page is in loading mode.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -350,7 +349,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Decrements the loading counter.</summary>
+        <summary>
+             Decrements the loading counter, which determines whether a page is in loading mode.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -377,19 +378,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the page is being activated for the first time.</summary>
+        <summary>
+             Indicates whether the page is being activated for the first time
+            </summary>
         <value>
           <see langword="true" /> if the page has not previously been activated; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -414,7 +409,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the control that represents the window for this page.</summary>
+        <summary>
+             Gets the control that represents the window for this page
+            </summary>
         <returns>The <see cref="T:System.Windows.Forms.Control" /> that represents the window for this page.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -438,7 +435,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the component that is to be edited.</summary>
+        <summary>
+             Gets the component that is to be edited
+            </summary>
         <returns>The <see cref="T:System.ComponentModel.IComponent" /> that is to be edited.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -457,16 +456,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Icon</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the icon for the page.</summary>
+        <summary>
+             Gets or sets the icon for this page
+            </summary>
         <value>An <see cref="T:System.Drawing.Icon" /> used to represent the page.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -490,7 +486,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a value indicating whether the page is being activated for the first time.</summary>
+        <summary>
+             Gets a value indicating whether the page is being activated for the first time
+            </summary>
         <returns>
           <see langword="true" /> if this is the first time the page is being activated; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -515,7 +513,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a value indicating whether the page is being loaded.</summary>
+        <summary>
+             Gets a value indicating whether the page is being loaded
+            </summary>
         <returns>
           <see langword="true" /> if the page is being loaded; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -543,7 +543,9 @@
       </Parameters>
       <Docs>
         <param name="msg">The message to process.</param>
-        <summary>Processes messages that could be handled by the page.</summary>
+        <summary>
+             Processes messages that could be handled by the page
+            </summary>
         <returns>
           <see langword="true" /> if the page processed the message; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -575,7 +577,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Loads the component into the page user interface (UI).</summary>
+        <summary>
+             Loads the component into the page UI
+            </summary>
         <remarks>To be added.</remarks>
         <block subset="none" type="overrides">
           <para>Each page must override this method and implement its own custom behavior.</para>
@@ -596,19 +600,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates how many load dependencies remain until loading has been completed.</summary>
+        <summary>
+             Indicates if loading is taking place
+            </summary>
         <value>The number of remaining load dependencies.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -634,19 +632,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether a component must be loaded before editing can occur.</summary>
+        <summary>
+             Indicates whether a load is required previous to editing
+            </summary>
         <value>
           <see langword="true" /> if a component must be loaded before editing can occur; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -666,17 +658,14 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Called when the page and any sibling pages have applied their changes.</summary>
+        <summary>
+             Called when the page along with its sibling pages have applied their changes
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -694,19 +683,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.IComponentEditorPageSite</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the page site.</summary>
+        <summary>
+             Gets or sets the page site
+            </summary>
         <value>The page site.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -737,7 +720,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Reloads the component for the page.</summary>
+        <summary>
+             Called when the current component may have changed elsewhere and needs to be reloded into the UI
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -767,7 +752,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Saves the component from the page user interface (UI).</summary>
+        <summary>
+             Saves the component from the page UI
+            </summary>
         <remarks>To be added.</remarks>
         <block subset="none" type="overrides">
           <para>Each page must override this method and implement its own custom behavior.</para>
@@ -796,7 +783,9 @@
       </Parameters>
       <Docs>
         <param name="component">The <see cref="T:System.ComponentModel.IComponent" /> to be edited.</param>
-        <summary>Sets the component to be edited.</summary>
+        <summary>
+             Sets the component to be edited
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -819,7 +808,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Sets the page as changed since the last load or save.</summary>
+        <summary>
+             Sets the page to be in dirty state
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -845,7 +836,9 @@
       </Parameters>
       <Docs>
         <param name="site">The site for this page.</param>
-        <summary>Sets the site for this page.</summary>
+        <summary>
+             Sets the site for this page.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -868,7 +861,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Shows Help information if the page supports Help information.</summary>
+        <summary>
+             Provides help information to the help system
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -898,7 +893,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a value indicating whether the editor supports Help.</summary>
+        <summary>
+             Gets a value indicating whether the editor supports Help
+            </summary>
         <returns>
           <see langword="true" /> if the editor supports Help; otherwise, <see langword="false" />. The default implementation returns <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -922,7 +919,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the title of the page.</summary>
+        <summary>
+             Gets or sets the title of the page
+            </summary>
         <value>The title of the page.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -1,4 +1,4 @@
-﻿<Type Name="ToolboxItemCollection" FullName="System.Drawing.Design.ToolboxItemCollection">
+<Type Name="ToolboxItemCollection" FullName="System.Drawing.Design.ToolboxItemCollection">
   <TypeSignature Language="C#" Value="public sealed class ToolboxItemCollection : System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ToolboxItemCollection extends System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Design.ToolboxItemCollection" />
@@ -20,7 +20,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a collection of toolbox items.</summary>
+    <summary>
+             A collection that stores <see cref="T:System.Drawing.Design.ToolboxItem" /> objects.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -56,7 +58,9 @@
       </Parameters>
       <Docs>
         <param name="value">An array of type <see cref="T:System.Drawing.Design.ToolboxItem" /> containing the toolbox items to fill the collection with.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Design.ToolboxItemCollection" /> class using the specified array of toolbox items.</summary>
+        <summary>
+             Initializes a new instance of <see cref="T:System.Drawing.Design.ToolboxItemCollection" /> containing any array of <see cref="T:System.Drawing.Design.ToolboxItem" /> objects.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -94,7 +98,9 @@
       </Parameters>
       <Docs>
         <param name="value">A <see cref="T:System.Drawing.Design.ToolboxItemCollection" /> to fill the new collection with.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Drawing.Design.ToolboxItemCollection" /> class using the specified collection.</summary>
+        <summary>
+             Initializes a new instance of <see cref="T:System.Drawing.Design.ToolboxItemCollection" /> based on another <see cref="T:System.Drawing.Design.ToolboxItemCollection" />.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -135,7 +141,10 @@
       </Parameters>
       <Docs>
         <param name="value">A <see cref="T:System.Drawing.Design.ToolboxItem" /> to search the collection for.</param>
-        <summary>Indicates whether the collection contains the specified <see cref="T:System.Drawing.Design.ToolboxItem" />.</summary>
+        <summary>
+             Gets a value indicating whether the
+            <see cref="T:System.Drawing.Design.ToolboxItemCollection" /> contains the specified <see cref="T:System.Drawing.Design.ToolboxItem" />.
+            </summary>
         <returns>
           <see langword="true" /> if the collection contains the specified object; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -180,7 +189,10 @@
       <Docs>
         <param name="array">The array to copy to.</param>
         <param name="index">The index to begin copying to.</param>
-        <summary>Copies the collection to the specified array beginning with the specified destination index.</summary>
+        <summary>
+             Copies the <see cref="T:System.Drawing.Design.ToolboxItemCollection" /> values to a one-dimensional <see cref="T:System.Array" /> instance at the
+             specified index.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -221,7 +233,10 @@
       </Parameters>
       <Docs>
         <param name="value">A <see cref="T:System.Drawing.Design.ToolboxItem" /> to get the index of in the collection.</param>
-        <summary>Gets the index of the specified <see cref="T:System.Drawing.Design.ToolboxItem" />, if it exists in the collection.</summary>
+        <summary>
+             Returns the index of a <see cref="T:System.Drawing.Design.ToolboxItem" /> in
+             the <see cref="T:System.Drawing.Design.ToolboxItemCollection" /> .
+            </summary>
         <returns>The index of the specified <see cref="T:System.Drawing.Design.ToolboxItem" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -252,7 +267,9 @@
       </Parameters>
       <Docs>
         <param name="index">The index of the object to get or set.</param>
-        <summary>Gets the <see cref="T:System.Drawing.Design.ToolboxItem" /> at the specified index.</summary>
+        <summary>
+             Represents the entry at the specified index of the <see cref="T:System.Drawing.Design.ToolboxItem" />.
+            </summary>
         <value>A <see cref="T:System.Drawing.Design.ToolboxItem" /> at each valid index in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

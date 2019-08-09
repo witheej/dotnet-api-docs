@@ -1,4 +1,4 @@
-﻿<Type Name="ScrollEventType" FullName="System.Windows.Forms.ScrollEventType">
+<Type Name="ScrollEventType" FullName="System.Windows.Forms.ScrollEventType">
   <TypeSignature Language="C#" Value="public enum ScrollEventType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ScrollEventType extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ScrollEventType" />
@@ -20,7 +20,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the type of action used to raise the <see cref="E:System.Windows.Forms.ScrollBar.Scroll" /> event.</summary>
+    <summary>
+             Specifies the type of action used to raise the <see cref="E:System.Windows.Forms.ScrollBar.Scroll" /> event.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -53,7 +55,9 @@
       </ReturnValue>
       <MemberValue>8</MemberValue>
       <Docs>
-        <summary>The scroll box has stopped moving.</summary>
+        <summary>
+             The scroll box has stopped moving.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="First">
@@ -75,7 +79,10 @@
       </ReturnValue>
       <MemberValue>6</MemberValue>
       <Docs>
-        <summary>The scroll box was moved to the <see cref="P:System.Windows.Forms.ScrollBar.Minimum" /> position.</summary>
+        <summary>
+             The scroll box was moved to the <see cref="P:System.Windows.Forms.ScrollBar.Minimum" />
+             position.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="LargeDecrement">
@@ -97,7 +104,11 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>The scroll box moved a large distance. The user clicked the scroll bar to the left(horizontal) or above(vertical) the scroll box, or pressed the PAGE UP key.</summary>
+        <summary>
+             The scroll box moved a large distance. The user clicked the scroll bar
+             to the left (horizontal) or above (vertical) the scroll box, or pressed
+             the PAGE UP key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="LargeIncrement">
@@ -119,7 +130,11 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>The scroll box moved a large distance. The user clicked the scroll bar to the right(horizontal) or below(vertical) the scroll box, or pressed the PAGE DOWN key.</summary>
+        <summary>
+             The scroll box moved a large distance. The user clicked the scroll bar
+             to the right (horizontal) or below (vertical) the scroll box, or pressed
+             the PAGE DOWN key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Last">
@@ -141,7 +156,10 @@
       </ReturnValue>
       <MemberValue>7</MemberValue>
       <Docs>
-        <summary>The scroll box was moved to the <see cref="P:System.Windows.Forms.ScrollBar.Maximum" /> position.</summary>
+        <summary>
+             The scroll box was moved to the <see cref="P:System.Windows.Forms.ScrollBar.Maximum" />
+             position.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="SmallDecrement">
@@ -163,7 +181,11 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>The scroll box was moved a small distance. The user clicked the left(horizontal) or top(vertical) scroll arrow, or pressed the UP ARROW key.</summary>
+        <summary>
+             The scroll box was moved a small distance. The user clicked the
+             left (horizontal) or top (vertical) scroll arrow or pressed
+             the UP ARROW
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="SmallIncrement">
@@ -185,7 +207,11 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The scroll box was moved a small distance. The user clicked the right(horizontal) or bottom(vertical) scroll arrow, or pressed the DOWN ARROW key.</summary>
+        <summary>
+             The scroll box was moved a small distance. The user clicked the
+             right (horizontal) or bottom (vertical) scroll arrow or pressed
+             the DOWN ARROW key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="ThumbPosition">
@@ -207,7 +233,9 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>The scroll box was moved.</summary>
+        <summary>
+             The scroll box was moved.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="ThumbTrack">
@@ -229,7 +257,9 @@
       </ReturnValue>
       <MemberValue>5</MemberValue>
       <Docs>
-        <summary>The scroll box is currently being moved.</summary>
+        <summary>
+             The scroll box is currently being moved.
+            </summary>
       </Docs>
     </Member>
   </Members>

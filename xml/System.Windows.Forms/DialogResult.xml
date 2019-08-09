@@ -1,4 +1,4 @@
-﻿<Type Name="DialogResult" FullName="System.Windows.Forms.DialogResult">
+<Type Name="DialogResult" FullName="System.Windows.Forms.DialogResult">
   <TypeSignature Language="C#" Value="public enum DialogResult" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DialogResult extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DialogResult" />
@@ -20,7 +20,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies identifiers to indicate the return value of a dialog box.</summary>
+    <summary>
+             Specifies identifiers to indicate the return value of a dialog box.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -61,7 +63,10 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>The dialog box return value is <see langword="Abort" /> (usually sent from a button labeled Abort).</summary>
+        <summary>
+             The dialog box return value is Abort (usually sent from a button
+             labeled Abort).
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Cancel">
@@ -83,7 +88,10 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>The dialog box return value is <see langword="Cancel" /> (usually sent from a button labeled Cancel).</summary>
+        <summary>
+             The dialog box return value is Cancel (usually sent from a button
+             labeled Cancel).
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Ignore">
@@ -105,7 +113,10 @@
       </ReturnValue>
       <MemberValue>5</MemberValue>
       <Docs>
-        <summary>The dialog box return value is <see langword="Ignore" /> (usually sent from a button labeled Ignore).</summary>
+        <summary>
+             The dialog box return value is Ignore (usually sent from a button
+             labeled Ignore).
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="No">
@@ -127,7 +138,10 @@
       </ReturnValue>
       <MemberValue>7</MemberValue>
       <Docs>
-        <summary>The dialog box return value is <see langword="No" /> (usually sent from a button labeled No).</summary>
+        <summary>
+             The dialog box return value is No (usually sent from a button
+             labeled No).
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -150,7 +164,9 @@
       <MemberValue>0</MemberValue>
       <Docs>
         <summary>
-          <see langword="Nothing" /> is returned from the dialog box. This means that the modal dialog continues running.</summary>
+             Nothing is returned from the dialog box. This means that the modal
+             dialog continues running.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="OK">
@@ -172,7 +188,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The dialog box return value is <see langword="OK" /> (usually sent from a button labeled OK).</summary>
+        <summary>
+             The dialog box return value is OK (usually sent from a button labeled OK).
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Retry">
@@ -194,7 +212,10 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>The dialog box return value is <see langword="Retry" /> (usually sent from a button labeled Retry).</summary>
+        <summary>
+             The dialog box return value is Retry (usually sent from a button
+             labeled Retry).
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Yes">
@@ -216,7 +237,10 @@
       </ReturnValue>
       <MemberValue>6</MemberValue>
       <Docs>
-        <summary>The dialog box return value is <see langword="Yes" /> (usually sent from a button labeled Yes).</summary>
+        <summary>
+             The dialog box return value is Yes (usually sent from a button
+             labeled Yes).
+            </summary>
       </Docs>
     </Member>
   </Members>

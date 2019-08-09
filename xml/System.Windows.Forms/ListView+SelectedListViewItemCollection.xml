@@ -1,4 +1,4 @@
-﻿<Type Name="ListView+SelectedListViewItemCollection" FullName="System.Windows.Forms.ListView+SelectedListViewItemCollection">
+<Type Name="ListView+SelectedListViewItemCollection" FullName="System.Windows.Forms.ListView+SelectedListViewItemCollection">
   <TypeSignature Language="C#" Value="public class ListView.SelectedListViewItemCollection : System.Collections.IList" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit ListView/SelectedListViewItemCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ListView.SelectedListViewItemCollection" />
@@ -126,7 +126,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all items from the collection.</summary>
+        <summary>
+             Unselects all items.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -190,11 +192,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="key">The name of the item to find in the collection.</param>
-        <summary>Determines whether an item with the specified key is contained in the collection.</summary>
+        <summary>
+             Returns true if the collection contains an item with the specified key, false otherwise.
+            </summary>
         <returns>
           <see langword="true" /> to indicate the specified item is contained in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -273,7 +277,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of items in the collection.</summary>
+        <summary>
+             Number of currently selected items.
+            </summary>
         <value>The number of items in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -364,11 +370,13 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="key">The name of the item to find in the collection.</param>
-        <summary>Returns the index of the first occurrence of the item with the specified key.</summary>
+        <summary>
+             The zero-based index of the first occurrence of value within the entire CollectionBase, if found; otherwise, -1.
+            </summary>
         <returns>The zero-based index of the first item with the specified key.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -449,7 +457,9 @@
       </Parameters>
       <Docs>
         <param name="index">The index of the item in the collection to retrieve.</param>
-        <summary>Gets the item at the specified index within the collection.</summary>
+        <summary>
+             Selected item in the list.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.ListViewItem" /> representing the item located at the specified index within the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -479,11 +489,13 @@
         <ReturnType>System.Windows.Forms.ListViewItem</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="key">The name of the item to retrieve from the collection.</param>
-        <summary>Gets an item with the specified key from the collection.</summary>
+        <summary>
+             Retrieves the child control with the specified key.
+            </summary>
         <value>The <see cref="T:System.Windows.Forms.ListViewItem" /> with the specified key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -728,7 +740,7 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="index">The zero-based index of the element to get.</param>

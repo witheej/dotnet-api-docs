@@ -1,4 +1,4 @@
-﻿<Type Name="DataGridViewSelectedCellCollection" FullName="System.Windows.Forms.DataGridViewSelectedCellCollection">
+<Type Name="DataGridViewSelectedCellCollection" FullName="System.Windows.Forms.DataGridViewSelectedCellCollection">
   <TypeSignature Language="C#" Value="public class DataGridViewSelectedCellCollection : System.Windows.Forms.BaseCollection, System.Collections.IList" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewSelectedCellCollection extends System.Windows.Forms.BaseCollection implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewSelectedCellCollection" />
@@ -30,7 +30,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a collection of cells that are selected in a <see cref="T:System.Windows.Forms.DataGridView" />.</summary>
+    <summary>
+             Represents a collection of selected <see cref="T:System.Windows.Forms.DataGridViewCell" /> objects in the <see cref="T:System.Windows.Forms.DataGridView" />
+             control.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -61,7 +64,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -103,7 +106,9 @@
       </Parameters>
       <Docs>
         <param name="dataGridViewCell">The <see cref="T:System.Windows.Forms.DataGridViewCell" /> to locate in the <see cref="T:System.Windows.Forms.DataGridViewSelectedCellCollection" />.</param>
-        <summary>Determines whether the specified cell is contained in the collection.</summary>
+        <summary>
+             Checks to see if a DataGridViewCell is contained in this collection.
+            </summary>
         <returns>
           <see langword="true" /> if <paramref name="dataGridViewCell" /> is in the <see cref="T:System.Windows.Forms.DataGridViewSelectedCellCollection" />; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -165,7 +170,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -239,11 +244,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.ArrayList</ReturnType>
       </ReturnValue>

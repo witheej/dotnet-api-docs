@@ -1,4 +1,4 @@
-﻿<Type Name="ControlStyles" FullName="System.Windows.Forms.ControlStyles">
+<Type Name="ControlStyles" FullName="System.Windows.Forms.ControlStyles">
   <TypeSignature Language="C#" Value="public enum ControlStyles" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ControlStyles extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ControlStyles" />
@@ -20,7 +20,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the style and behavior of a control.</summary>
+    <summary>
+             Specifies control functionality.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -83,7 +85,15 @@ myControl.SetStyle(UserPaint Or AllPaintingInWmPaint Or DoubleBuffer, True)
       </ReturnValue>
       <MemberValue>8192</MemberValue>
       <Docs>
-        <summary>If <see langword="true" />, the control ignores the window message WM_ERASEBKGND to reduce flicker. This style should only be applied if the <see cref="F:System.Windows.Forms.ControlStyles.UserPaint" /> bit is set to <see langword="true" />.</summary>
+        <summary>
+             If true, WM_ERASEBKGND is ignored, and both OnPaintBackground and
+             OnPaint are called directly from WM_PAINT.  This generally reduces
+             flicker, but can cause problems if other controls send WM_ERASEBKGND
+             messages to us.  (This is sometimes done to achieve a pseudo-transparent
+             effect similar to ControlStyles.SupportsTransparentBackColor; for instance,
+             ToolBar with flat appearance does this).
+             This style only makes sense if UserPaint is true.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CacheText">
@@ -105,7 +115,12 @@ myControl.SetStyle(UserPaint Or AllPaintingInWmPaint Or DoubleBuffer, True)
       </ReturnValue>
       <MemberValue>16384</MemberValue>
       <Docs>
-        <summary>If <see langword="true" />, the control keeps a copy of the text rather than getting it from the <see cref="P:System.Windows.Forms.Control.Handle" /> each time it is needed. This style defaults to <see langword="false" />. This behavior improves performance, but makes it difficult to keep the text synchronized.</summary>
+        <summary>
+             If true, the control keeps a copy of the text rather than going to the
+             hWnd for the text every time. This improves performance but makes it
+             difficult to keep the control and hWnd's text synchronized.
+             This style defaults to false.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="ContainerControl">
@@ -127,7 +142,9 @@ myControl.SetStyle(UserPaint Or AllPaintingInWmPaint Or DoubleBuffer, True)
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>If <see langword="true" />, the control is a container-like control.</summary>
+        <summary>
+             Indicates whether the control is a container-like control.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="DoubleBuffer">
@@ -145,8 +162,8 @@ myControl.SetStyle(UserPaint Or AllPaintingInWmPaint Or DoubleBuffer, True)
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -154,7 +171,12 @@ myControl.SetStyle(UserPaint Or AllPaintingInWmPaint Or DoubleBuffer, True)
       </ReturnValue>
       <MemberValue>65536</MemberValue>
       <Docs>
-        <summary>If <see langword="true" />, drawing is performed in a buffer, and after it completes, the result is output to the screen. Double-buffering prevents flicker caused by the redrawing of the control. If you set <see cref="F:System.Windows.Forms.ControlStyles.DoubleBuffer" /> to <see langword="true" />, you should also set <see cref="F:System.Windows.Forms.ControlStyles.UserPaint" /> and <see cref="F:System.Windows.Forms.ControlStyles.AllPaintingInWmPaint" /> to <see langword="true" />.</summary>
+        <summary>
+             If set, all control painting will be double buffered. You must also
+             set the UserPaint and AllPaintingInWmPaint style. Note: This is
+             obsolete, please
+             use OptimizedDoubleBuffer instead.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="EnableNotifyMessage">
@@ -176,7 +198,11 @@ myControl.SetStyle(UserPaint Or AllPaintingInWmPaint Or DoubleBuffer, True)
       </ReturnValue>
       <MemberValue>32768</MemberValue>
       <Docs>
-        <summary>If <see langword="true" />, the <see cref="M:System.Windows.Forms.Control.OnNotifyMessage(System.Windows.Forms.Message)" /> method is called for every message sent to the control's <see cref="M:System.Windows.Forms.Control.WndProc(System.Windows.Forms.Message@)" />. This style defaults to <see langword="false" />. <see cref="F:System.Windows.Forms.ControlStyles.EnableNotifyMessage" /> does not work in partial trust.</summary>
+        <summary>
+             If true, the OnNotifyMessage method will be called for every message
+             sent to the control's WndProc.
+             This style defaults to false.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="FixedHeight">
@@ -198,7 +224,9 @@ myControl.SetStyle(UserPaint Or AllPaintingInWmPaint Or DoubleBuffer, True)
       </ReturnValue>
       <MemberValue>64</MemberValue>
       <Docs>
-        <summary>If <see langword="true" />, the control has a fixed height when auto-scaled. For example, if a layout operation attempts to rescale the control to accommodate a new <see cref="T:System.Drawing.Font" />, the control's <see cref="P:System.Windows.Forms.Control.Height" /> remains unchanged.</summary>
+        <summary>
+             The control has a fixed height.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="FixedWidth">
@@ -220,7 +248,9 @@ myControl.SetStyle(UserPaint Or AllPaintingInWmPaint Or DoubleBuffer, True)
       </ReturnValue>
       <MemberValue>32</MemberValue>
       <Docs>
-        <summary>If <see langword="true" />, the control has a fixed width when auto-scaled. For example, if a layout operation attempts to rescale the control to accommodate a new <see cref="T:System.Drawing.Font" />, the control's <see cref="P:System.Windows.Forms.Control.Width" /> remains unchanged.</summary>
+        <summary>
+             The control has a fixed width.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Opaque">
@@ -242,7 +272,11 @@ myControl.SetStyle(UserPaint Or AllPaintingInWmPaint Or DoubleBuffer, True)
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>If <see langword="true" />, the control is drawn opaque and the background is not painted.</summary>
+        <summary>
+             If specified, a PaintBackground event will not be raised,
+             OnPaintBackground will not be called, and Invalidate() will not
+             invalidate the background of the HWND.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="OptimizedDoubleBuffer">
@@ -263,7 +297,9 @@ myControl.SetStyle(UserPaint Or AllPaintingInWmPaint Or DoubleBuffer, True)
       </ReturnValue>
       <MemberValue>131072</MemberValue>
       <Docs>
-        <summary>If <see langword="true" />, the control is first drawn to a buffer rather than directly to the screen, which can reduce flicker. If you set this property to <see langword="true" />, you should also set the <see cref="F:System.Windows.Forms.ControlStyles.AllPaintingInWmPaint" /> to <see langword="true" />.</summary>
+        <summary>
+             If set, all control painting will be double buffered.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="ResizeRedraw">
@@ -285,7 +321,9 @@ myControl.SetStyle(UserPaint Or AllPaintingInWmPaint Or DoubleBuffer, True)
       </ReturnValue>
       <MemberValue>16</MemberValue>
       <Docs>
-        <summary>If <see langword="true" />, the control is redrawn when it is resized.</summary>
+        <summary>
+             The control is completely redrawn when it is resized.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Selectable">
@@ -307,7 +345,9 @@ myControl.SetStyle(UserPaint Or AllPaintingInWmPaint Or DoubleBuffer, True)
       </ReturnValue>
       <MemberValue>512</MemberValue>
       <Docs>
-        <summary>If <see langword="true" />, the control can receive focus.</summary>
+        <summary>
+             The control can get the focus.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="StandardClick">
@@ -329,7 +369,12 @@ myControl.SetStyle(UserPaint Or AllPaintingInWmPaint Or DoubleBuffer, True)
       </ReturnValue>
       <MemberValue>256</MemberValue>
       <Docs>
-        <summary>If <see langword="true" />, the control implements the standard <see cref="E:System.Windows.Forms.Control.Click" /> behavior.</summary>
+        <summary>
+             If set, windows forms calls OnClick and raises the Click event when the
+             control is clicked (unless it's the second click of a double-click and
+             StandardDoubleClick is specified).
+             Regardless of this style, the control may call OnClick directly.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="StandardDoubleClick">
@@ -351,7 +396,13 @@ myControl.SetStyle(UserPaint Or AllPaintingInWmPaint Or DoubleBuffer, True)
       </ReturnValue>
       <MemberValue>4096</MemberValue>
       <Docs>
-        <summary>If <see langword="true" />, the control implements the standard <see cref="E:System.Windows.Forms.Control.DoubleClick" /> behavior. This style is ignored if the <see cref="F:System.Windows.Forms.ControlStyles.StandardClick" /> bit is not set to <see langword="true" />.</summary>
+        <summary>
+             If set, windows forms calls OnDoubleClick and raises the DoubleClick
+             event when the control is double clicked.
+             Regardless of whether it is set, the control may call OnDoubleClick
+             directly.
+             This style is ignored if StandardClick is not set.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="SupportsTransparentBackColor">
@@ -373,7 +424,15 @@ myControl.SetStyle(UserPaint Or AllPaintingInWmPaint Or DoubleBuffer, True)
       </ReturnValue>
       <MemberValue>2048</MemberValue>
       <Docs>
-        <summary>If <see langword="true" />, the control accepts a <see cref="P:System.Windows.Forms.Control.BackColor" /> with an alpha component of less than 255 to simulate transparency. Transparency will be simulated only if the <see cref="F:System.Windows.Forms.ControlStyles.UserPaint" /> bit is set to <see langword="true" /> and the parent control is derived from <see cref="T:System.Windows.Forms.Control" />.</summary>
+        <summary>
+             If the BackColor is set to a color whose alpha component is less than
+             255 (i.e., BackColor.A is less than 255), OnPaintBackground will simulate
+             transparency by asking its parent control to paint our background.
+             This is not true transparency -- if there is another control between us
+             and our parent, we will not show the control in the middle.
+             This style only applies to subclasses of Control. It only works if
+             UserPaint is set, and the parent control is a Control.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="UserMouse">
@@ -395,7 +454,10 @@ myControl.SetStyle(UserPaint Or AllPaintingInWmPaint Or DoubleBuffer, True)
       </ReturnValue>
       <MemberValue>1024</MemberValue>
       <Docs>
-        <summary>If <see langword="true" />, the control does its own mouse processing, and mouse events are not handled by the operating system.</summary>
+        <summary>
+             The control does its own mouse processing; WM_MOUSEDOWN, WM_MOUSEMOVE,
+             and WM_MOUSEUP messages are not passed on to the underlying NativeWindow.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="UserPaint">
@@ -417,7 +479,11 @@ myControl.SetStyle(UserPaint Or AllPaintingInWmPaint Or DoubleBuffer, True)
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>If <see langword="true" />, the control paints itself rather than the operating system doing so. If <see langword="false" />, the <see cref="E:System.Windows.Forms.Control.Paint" /> event is not raised. This style only applies to classes derived from <see cref="T:System.Windows.Forms.Control" />.</summary>
+        <summary>
+             The control paints itself; WM_PAINT and WM_ERASEBKGND messages are not
+             passed on to the underlying NativeWindow.
+             This style only applies to subclasses of Control.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="UseTextForAccessibility">
@@ -438,7 +504,16 @@ myControl.SetStyle(UserPaint Or AllPaintingInWmPaint Or DoubleBuffer, True)
       </ReturnValue>
       <MemberValue>262144</MemberValue>
       <Docs>
-        <summary>Specifies that the value of the control's <c>Text</c> property, if set, determines the control's default Active Accessibility name and shortcut key.</summary>
+        <summary>
+              If this style is set, and there is a value in the control's Text property,
+              that value will be used to determine the control's default Active
+              Accessibility name and shortcut key. Otherwise, the text of the preceding
+              Label control will be used instead.
+            
+              This style is set by default. Certain built-in control types such as
+              TextBox and ComboBox un-set this style, so that their current text will
+              not be used by Active Accessibility.
+             </summary>
       </Docs>
     </Member>
   </Members>

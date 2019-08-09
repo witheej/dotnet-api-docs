@@ -1,4 +1,4 @@
-﻿<Type Name="AnchorEditor" FullName="System.Windows.Forms.Design.AnchorEditor">
+<Type Name="AnchorEditor" FullName="System.Windows.Forms.Design.AnchorEditor">
   <TypeSignature Language="C#" Value="public sealed class AnchorEditor : System.Drawing.Design.UITypeEditor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit AnchorEditor extends System.Drawing.Design.UITypeEditor" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.AnchorEditor" />
@@ -20,12 +20,15 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-3.0">
+    <Attribute>
       <AttributeName>System.CLSCompliant(false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides a user interface for configuring an <see cref="P:System.Windows.Forms.Control.Anchor" /> property.</summary>
+    <summary>
+             Provides a design-time editor for specifying the <see cref="P:System.Windows.Forms.Control.Anchor" />
+             property.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -63,11 +66,6 @@
         <AssemblyName>System.Windows.Forms.Design.Editors</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.AnchorEditor" /> class.</summary>
@@ -104,7 +102,9 @@
         <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that can be used to gain additional context information.</param>
         <param name="provider">An <see cref="T:System.IServiceProvider" /> through which editing services may be obtained.</param>
         <param name="value">An instance of the value being edited.</param>
-        <summary>Edits the value of the specified object using the specified service provider and context.</summary>
+        <summary>
+             Edits the given object value using the editor style provided by GetEditorStyle.
+            </summary>
         <returns>The new value of the object. If the value of the object hasn't changed, this should return the same object it was passed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -142,7 +142,9 @@
       </Parameters>
       <Docs>
         <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that can be used to gain additional context information.</param>
-        <summary>Gets the editor style used by the <see cref="M:System.Windows.Forms.Design.AnchorEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)" /> method.</summary>
+        <summary>
+             Gets the editing style of the Edit method.
+            </summary>
         <returns>One of the <see cref="T:System.Drawing.Design.UITypeEditorEditStyle" /> values indicating the provided editing style. If the method is not supported, this method will return <see cref="F:System.Drawing.Design.UITypeEditorEditStyle.None" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>

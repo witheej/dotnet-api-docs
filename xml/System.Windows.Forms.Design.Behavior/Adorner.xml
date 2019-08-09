@@ -1,4 +1,4 @@
-﻿<Type Name="Adorner" FullName="System.Windows.Forms.Design.Behavior.Adorner">
+<Type Name="Adorner" FullName="System.Windows.Forms.Design.Behavior.Adorner">
   <TypeSignature Language="C#" Value="public sealed class Adorner" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Adorner extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.Behavior.Adorner" />
@@ -19,7 +19,12 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Manages a collection of user-interface related <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> objects. This class cannot be inherited.</summary>
+    <summary>
+             An Adorner manages a collection of UI-related Glyphs.  Each Adorner
+             can be enabled/disabled.  Only Enabled Adorners will receive hit test
+             and paint messages from the BehaviorService.  An Adorner can be viewed
+             as a proxy between UI-related elements (all Glyphs) and the BehaviorService.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -65,7 +70,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.Behavior.Adorner" /> class.</summary>
+        <summary>
+             Standard constructor.  Creates a new GlyphCollection and by default is enabled.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -105,19 +112,14 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Design.Behavior.BehaviorService</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" /> associated with the <see cref="T:System.Windows.Forms.Design.Behavior.Adorner" />.</summary>
+        <summary>
+             When an Adorner is added to the BehaviorService's AdornerCollection, the collection
+             will set this property so that the Adorner can call back to the BehaviorService.
+            </summary>
         <value>The <see cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" /> associated with the <see cref="T:System.Windows.Forms.Design.Behavior.Adorner" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -149,16 +151,14 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating if the <see cref="T:System.Windows.Forms.Design.Behavior.Adorner" /> is enabled.</summary>
+        <summary>
+             Determines if the BehaviorService will send HitTest and Paint messages to
+             the Adorner. This will invalidate behavior service when changed.
+            </summary>
         <value>
           <see langword="true" />, if the <see cref="T:System.Windows.Forms.Design.Behavior.Adorner" /> is enabled; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -199,16 +199,13 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Design.Behavior.GlyphCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> collection.</summary>
+        <summary>
+             Returns the stronly-typed Glyph collection.
+            </summary>
         <value>A collection of <see cref="T:System.Windows.Forms.Design.Behavior.Glyph" /> objects.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -272,7 +269,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Forces the <see cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" /> to refresh its adorner window.</summary>
+        <summary>
+             Forces the BehaviorService to refresh its AdornerWindow.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -313,7 +312,9 @@
       </Parameters>
       <Docs>
         <param name="rectangle">The area to invalidate.</param>
-        <summary>Forces the <see cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" /> to refresh its adorner window within the given <see cref="T:System.Drawing.Rectangle" />.</summary>
+        <summary>
+             Forces the BehaviorService to refresh its AdornerWindow within the given Rectangle.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.GlyphCollection" />
@@ -344,7 +345,9 @@
       </Parameters>
       <Docs>
         <param name="region">The <see cref="T:System.Drawing.Region" /> to invalidate.</param>
-        <summary>Forces the <see cref="T:System.Windows.Forms.Design.Behavior.BehaviorService" /> to refresh its adorner window within the given <see cref="T:System.Drawing.Region" />.</summary>
+        <summary>
+             Forces the BehaviorService to refresh its AdornerWindow within the given Region.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Windows.Forms.Design.Behavior.Glyph" />
         <altmember cref="T:System.Windows.Forms.Design.Behavior.GlyphCollection" />

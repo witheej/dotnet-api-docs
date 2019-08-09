@@ -1,4 +1,4 @@
-﻿<Type Name="LinkLabel+LinkCollection" FullName="System.Windows.Forms.LinkLabel+LinkCollection">
+<Type Name="LinkLabel+LinkCollection" FullName="System.Windows.Forms.LinkLabel+LinkCollection">
   <TypeSignature Language="C#" Value="public class LinkLabel.LinkCollection : System.Collections.IList" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit LinkLabel/LinkCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.LinkLabel.LinkCollection" />
@@ -97,7 +97,7 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="value" Type="System.Windows.Forms.LinkLabel+Link" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="value" Type="System.Windows.Forms.LinkLabel+Link" />
       </Parameters>
       <Docs>
         <param name="value">A <see cref="T:System.Windows.Forms.LinkLabel.Link" /> representing the link to add.</param>
@@ -226,7 +226,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Clears all links from the collection.</summary>
+        <summary>
+             Remove all links from the linkLabel.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -291,11 +293,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="key">The link to search for in the collection.</param>
-        <summary>Returns a value indicating whether the collection contains a link with the specified key.</summary>
+        <summary>
+             Returns true if the collection contains an item with the specified key, false otherwise.
+            </summary>
         <returns>
           <see langword="true" /> if the collection contains an item with the specified key; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -432,11 +436,13 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="key">The key to search the collection for.</param>
-        <summary>Retrieves the zero-based index of the first occurrence of the specified key within the entire collection.</summary>
+        <summary>
+             The zero-based index of the first occurrence of value within the entire CollectionBase, if found; otherwise, -1.
+            </summary>
         <returns>The zero-based index of the first occurrence of value within the entire collection, if found; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -547,11 +553,13 @@
         <ReturnType>System.Windows.Forms.LinkLabel+Link</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="key">The name of the link to retrieve from the collection.</param>
-        <summary>Gets a link with the specified key from the collection.</summary>
+        <summary>
+             Retrieves the child control with the specified key.
+            </summary>
         <value>The <see cref="T:System.Windows.Forms.LinkLabel.Link" /> with the specified key within the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -578,16 +586,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether links have been added to the <see cref="T:System.Windows.Forms.LinkLabel.LinkCollection" />.</summary>
+        <summary>
+             whether we have added a non-trivial link to the collection
+            </summary>
         <value>
           <see langword="true" /> if links have been added to the <see cref="T:System.Windows.Forms.LinkLabel.LinkCollection" />; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -684,11 +689,13 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="key">The key of the link to remove.</param>
-        <summary>Removes the link with the specified key.</summary>
+        <summary>
+             Removes the child control with the specified key.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -996,16 +1003,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="index">The zero-based index of the element to get or set.</param>

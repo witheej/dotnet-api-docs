@@ -1,4 +1,4 @@
-﻿<Type Name="StatusBarPanelAutoSize" FullName="System.Windows.Forms.StatusBarPanelAutoSize">
+<Type Name="StatusBarPanelAutoSize" FullName="System.Windows.Forms.StatusBarPanelAutoSize">
   <TypeSignature Language="C#" Value="public enum StatusBarPanelAutoSize" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StatusBarPanelAutoSize extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.StatusBarPanelAutoSize" />
@@ -15,7 +15,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies how a <see cref="T:System.Windows.Forms.StatusBarPanel" /> on a <see cref="T:System.Windows.Forms.StatusBar" /> control behaves when the control resizes.</summary>
+    <summary>
+             Specifies how a panel on a status bar changes when the status bar resizes.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -56,7 +58,9 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>The width of the <see cref="T:System.Windows.Forms.StatusBarPanel" /> is determined by its contents.</summary>
+        <summary>
+             The width of the panel is determined by its contents.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -78,7 +82,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The <see cref="T:System.Windows.Forms.StatusBarPanel" /> does not change size when the <see cref="T:System.Windows.Forms.StatusBar" /> control resizes.</summary>
+        <summary>
+             The panel does not change its size when the status bar resizes.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Spring">
@@ -100,7 +106,11 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>The <see cref="T:System.Windows.Forms.StatusBarPanel" /> shares the available space on the <see cref="T:System.Windows.Forms.StatusBar" /> (the space not taken up by other panels whose <see cref="P:System.Windows.Forms.StatusBarPanel.AutoSize" /> property is set to <see cref="F:System.Windows.Forms.StatusBarPanelAutoSize.None" /> or <see cref="F:System.Windows.Forms.StatusBarPanelAutoSize.Contents" />) with other panels that have their <see cref="P:System.Windows.Forms.StatusBarPanel.AutoSize" /> property set to <see cref="F:System.Windows.Forms.StatusBarPanelAutoSize.Spring" />.</summary>
+        <summary>
+             The panel shares the available status bar space (the space not taken
+             up by panels with the <see cref="F:System.Windows.Forms.StatusBarPanelAutoSize.None" /> and <see cref="F:System.Windows.Forms.StatusBarPanelAutoSize.Contents" />
+             settings) with other panels that have the <see cref="F:System.Windows.Forms.StatusBarPanelAutoSize.Spring" /> setting.
+            </summary>
       </Docs>
     </Member>
   </Members>

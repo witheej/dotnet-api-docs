@@ -1,4 +1,4 @@
-﻿<Type Name="ExpressionContext" FullName="System.ComponentModel.Design.Serialization.ExpressionContext">
+<Type Name="ExpressionContext" FullName="System.ComponentModel.Design.Serialization.ExpressionContext">
   <TypeSignature Language="C#" Value="public sealed class ExpressionContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ExpressionContext extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.ExpressionContext" />
@@ -19,7 +19,13 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a means of passing context state among serializers. This class cannot be inherited.</summary>
+    <summary>
+             An expression context is an object that is placed on the context stack and contains the most relevant expression during serialization.  For example, take the following statement:
+             button1.Text = "Hello";
+             During serialization several serializers will be responsible for creating this single statement.  One of those serializers will be responsible for writing "Hello".  There are times when that serializer may need to know the context in which it is creating its expression.  In the above example, this isn't needed, but take this slightly modified example:
+             button1.Text = rm.GetString("button1_Text");
+             Here, the serializer responsible for writing the resource expression needs to know the names of the target objects.  The ExpressionContext class can be used for this.  As each serializer creates an expression and invokes a serializer to handle a smaller part of the statement as a whole, the serializer pushes an expression context on the context stack.  Each expression context has a parent property that locates the next expression context on the stack, which provides a way for easy traversal.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -70,11 +76,6 @@ button1.Text = rm.GetString("button1_Text");
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="expression" Type="System.CodeDom.CodeExpression" />
         <Parameter Name="expressionType" Type="System.Type" />
@@ -145,16 +146,13 @@ button1.Text = rm.GetString("button1_Text");
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.CodeDom.CodeExpression</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the expression this context represents.</summary>
+        <summary>
+             The expression this context represents.
+            </summary>
         <value>The expression this context represents.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.ComponentModel.Design.Serialization.CodeDomSerializer" />
@@ -178,16 +176,14 @@ button1.Text = rm.GetString("button1_Text");
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Type" /> of the expression.</summary>
+        <summary>
+             The type of the expression. This can be used to determine if a
+             cast is needed when assigning  to the expression.
+            </summary>
         <value>The <see cref="T:System.Type" /> of the expression.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -218,16 +214,15 @@ button1.Text = rm.GetString("button1_Text");
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the object owning this expression.</summary>
+        <summary>
+             The object owning this expression. For example, if the expression
+             was a property reference to button1's Text property, Owner would
+             return button1.
+            </summary>
         <value>The object owning this expression.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -258,16 +253,31 @@ button1.Text = rm.GetString("button1_Text");
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the preset value of an expression.</summary>
+        <summary>
+             Contains the preset value of an expression, should one exist.
+             For example, if the expression is a property reference expression
+             referring to the Controls property of a button, PresetValue will
+             contain the instance of Controls property because the property is
+             read-only and preset by the object to contain a value. On the other
+             hand, a property such as Text or Visible does not have a preset
+             value and therefore the PresetValue property will return null.
+             Serializers can use this information to guide serialization.
+             For example, take the following two snippts of code:
+             Padding p = new Padding();
+             p.Left = 5;
+             button1.Padding = p;
+             button1.Padding.Left = 5;
+             The serializer of the Padding class needs to know if it should
+             generate the first or second form.  The first form would be
+             generated by default.  The second form will only be generated
+             if there is an ExpressionContext on the stack that contains a
+             PresetValue equal to the value of the Padding object currently
+             being serialized.
+            </summary>
         <value>The preset value of this expression, or <see langword="null" /> if not assigned.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

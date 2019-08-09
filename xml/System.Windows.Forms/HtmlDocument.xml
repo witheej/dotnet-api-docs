@@ -1,4 +1,4 @@
-﻿<Type Name="HtmlDocument" FullName="System.Windows.Forms.HtmlDocument">
+<Type Name="HtmlDocument" FullName="System.Windows.Forms.HtmlDocument">
   <TypeSignature Language="C#" Value="public sealed class HtmlDocument" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HtmlDocument extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.HtmlDocument" />
@@ -563,11 +563,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -673,7 +668,9 @@
         <param name="command">The name of the command to execute.</param>
         <param name="showUI">Whether or not to show command-specific dialog boxes or message boxes to the user.</param>
         <param name="value">The value to assign using the command. Not applicable for all commands.</param>
-        <summary>Executes the specified command against the document.</summary>
+        <summary>
+             Executes a command on the document
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -704,7 +701,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1096,11 +1093,6 @@ window.alert("Name is " + name + "; address is " + address);
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -1392,7 +1384,9 @@ window.alert("Name is " + name + "; address is " + address);
         <ReturnType>System.Windows.Forms.HtmlElementEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the mouse is no longer hovering over the document.</summary>
+        <summary>
+             Occurs when the mouse leaves the document
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

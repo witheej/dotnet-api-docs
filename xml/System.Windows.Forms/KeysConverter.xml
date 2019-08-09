@@ -1,4 +1,4 @@
-﻿<Type Name="KeysConverter" FullName="System.Windows.Forms.KeysConverter">
+<Type Name="KeysConverter" FullName="System.Windows.Forms.KeysConverter">
   <TypeSignature Language="C#" Value="public class KeysConverter : System.ComponentModel.TypeConverter, System.Collections.IComparer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit KeysConverter extends System.ComponentModel.TypeConverter implements class System.Collections.IComparer" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.KeysConverter" />
@@ -20,7 +20,10 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Provides a <see cref="T:System.ComponentModel.TypeConverter" /> to convert <see cref="T:System.Windows.Forms.Keys" /> objects to and from other representations.</summary>
+    <summary>
+             Provides a type converter to convert <see cref="T:System.Windows.Forms.Keys" /> objects to and from various
+             other representations.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -55,11 +58,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes an instance of the <see cref="T:System.Windows.Forms.KeysConverter" /> class.</summary>
@@ -100,7 +98,10 @@
       <Docs>
         <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context, which can be used to extract additional information about the environment this converter is being invoked from. This parameter or properties of this parameter can be <see langword="null" />.</param>
         <param name="sourceType">The <see cref="T:System.Type" /> to convert from.</param>
-        <summary>Returns a value indicating whether this converter can convert an object in the specified source type to the native type of the converter using the specified context.</summary>
+        <summary>
+             Determines if this converter can convert an object in the given source
+             type to the native type of the converter.
+            </summary>
         <returns>
           <see langword="true" /> if the conversion can be performed; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -137,13 +138,16 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="destinationType" Type="System.Type" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="context" Type="System.ComponentModel.ITypeDescriptorContext" />
+        <Parameter Name="destinationType" Type="System.Type" />
       </Parameters>
       <Docs>
         <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context, which can be used to extract additional information about the environment this converter is being invoked from. This parameter or properties of this parameter can be <see langword="null" />.</param>
         <param name="destinationType">The <see cref="T:System.Type" /> to convert to.</param>
-        <summary>Returns a value indicating whether this converter can convert an object in the specified source type to the native type of the converter using the specified context.</summary>
+        <summary>
+             Gets a value indicating whether this converter can
+             convert an object to the given destination type using the context.
+            </summary>
         <returns>
           <see langword="true" /> if the conversion can be performed; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -190,7 +194,9 @@
       <Docs>
         <param name="a">An <see cref="T:System.Object" /> that represents the first key to compare.</param>
         <param name="b">An <see cref="T:System.Object" /> that represents the second key to compare.</param>
-        <summary>Compares two key values for equivalence.</summary>
+        <summary>
+             Compares two key values for equivalence.
+            </summary>
         <returns>An integer indicating the relationship between the two parameters.  
   
  <list type="table"><listheader><term> Value Type  
@@ -247,7 +253,9 @@
         <param name="context">An <see langword="ITypeDescriptorContext" /> that provides a format context, which can be used to extract additional information about the environment this converter is being invoked from. This parameter or properties of this parameter can be null.</param>
         <param name="culture">A <see langword="CultureInfo" /> object to provide locale information.</param>
         <param name="value">The object to convert.</param>
-        <summary>Converts the specified object to the converter's native type.</summary>
+        <summary>
+             Converts the given object to the converter's native type.
+            </summary>
         <returns>An object that represents the converted <paramref name="value" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -297,7 +305,13 @@
         <param name="culture">A <see cref="T:System.Globalization.CultureInfo" /> to provide locale information.</param>
         <param name="value">The <see cref="T:System.Object" /> to convert.</param>
         <param name="destinationType">The <see cref="T:System.Type" /> to convert the object to.</param>
-        <summary>Converts the specified object to the specified destination type.</summary>
+        <summary>
+             Converts the given object to another type.  The most common types to convert
+             are to and from a string object.  The default implementation will make a call
+             to ToString on the object if the object is valid and if the destination
+             type is string.  If this cannot convert to the desitnation type, this will
+             throw a NotSupportedException.
+            </summary>
         <returns>An <see cref="T:System.Object" /> that represents the converted <paramref name="value" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -340,7 +354,12 @@
       </Parameters>
       <Docs>
         <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context, which can be used to extract additional information about the environment this converter is being invoked from. This parameter or properties of this parameter can be <see langword="null" />.</param>
-        <summary>Returns a collection of standard values for the data type that this type converter is designed for when provided with a format context.</summary>
+        <summary>
+             Retrieves a collection containing a set of standard values
+             for the data type this validator is designed for.  This
+             will return null if the data type does not support a
+             standard set of values.
+            </summary>
         <returns>A <see cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" /> that holds a standard set of valid values, which can be empty if the data type does not support a standard set of values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -376,7 +395,14 @@
       </Parameters>
       <Docs>
         <param name="context">A formatter context. This object can be used to extract additional information about the environment this converter is being invoked from. This may be <see langword="null" />, so you should always check. Also, properties on the context object may also return <see langword="null" />.</param>
-        <summary>Determines if the list of standard values returned from <see langword="GetStandardValues" /> is an exclusive list using the specified <see cref="T:System.ComponentModel.ITypeDescriptorContext" />.</summary>
+        <summary>
+             Determines if the list of standard values returned from
+             GetStandardValues is an exclusive list.  If the list
+             is exclusive, then no other values are valid, such as
+             in an enum data type.  If the list is not exclusive,
+             then there are other valid values besides the list of
+             standard values GetStandardValues provides.
+            </summary>
         <returns>
           <see langword="true" /> if the collection returned from <see cref="Overload:System.Windows.Forms.KeysConverter.GetStandardValues" /> is an exhaustive list of possible values; otherwise, <see langword="false" /> if other values are possible. The default implementation for this method always returns <see langword="false" />.</returns>
         <remarks>
@@ -415,7 +441,10 @@
       </Parameters>
       <Docs>
         <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context, which can be used to extract additional information about the environment this converter is being invoked from. This parameter or properties of this parameter can be <see langword="null" />.</param>
-        <summary>Gets a value indicating whether this object supports a standard set of values that can be picked from a list.</summary>
+        <summary>
+             Determines if this object supports a standard set of values
+             that can be picked from a list.
+            </summary>
         <returns>Always returns <see langword="true" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

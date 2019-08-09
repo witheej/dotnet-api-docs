@@ -1,4 +1,4 @@
-﻿<Type Name="SplitterCancelEventArgs" FullName="System.Windows.Forms.SplitterCancelEventArgs">
+<Type Name="SplitterCancelEventArgs" FullName="System.Windows.Forms.SplitterCancelEventArgs">
   <TypeSignature Language="C#" Value="public class SplitterCancelEventArgs : System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SplitterCancelEventArgs extends System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.SplitterCancelEventArgs" />
@@ -15,7 +15,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for splitter events.</summary>
+    <summary>
+             Provides data for splitter events.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -55,7 +57,10 @@
         <param name="mouseCursorY">The Y coordinate of the mouse pointer in client coordinates.</param>
         <param name="splitX">The X coordinate of the upper left corner of the <see cref="T:System.Windows.Forms.SplitContainer" /> in client coordinates.</param>
         <param name="splitY">The Y coordinate of the upper left corner of the <see cref="T:System.Windows.Forms.SplitContainer" /> in client coordinates.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.SplitterCancelEventArgs" /> class with the specified coordinates of the mouse pointer and the upper left corner of the <see cref="T:System.Windows.Forms.SplitContainer" />.</summary>
+        <summary>
+             Initializes an instance of the <see cref="T:System.Windows.Forms.SplitterCancelEventArgs" /> class with the specified coordinates
+             of the mouse pointer and the upper-left corner of the <see cref="T:System.Windows.Forms.SplitContainer" />.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -72,16 +77,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the X coordinate of the mouse pointer in client coordinates.</summary>
+        <summary>
+             Gets the x-coordinate of the mouse pointer (in client coordinates).
+            </summary>
         <value>An integer representing the X coordinate of the mouse pointer in client coordinates.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -111,16 +113,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Y coordinate of the mouse pointer in client coordinates.</summary>
+        <summary>
+             Gets the y-coordinate of the mouse pointer (in client coordinates).
+            </summary>
         <value>An integer representing the Y coordinate of the mouse pointer in client coordinates.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -150,19 +149,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the X coordinate of the upper left corner of the <see cref="T:System.Windows.Forms.SplitContainer" /> in client coordinates.</summary>
+        <summary>
+             Gets the x-coordinate of the upper-left corner of the <see cref="T:System.Windows.Forms.SplitContainer" /> (in client coordinates).
+            </summary>
         <value>An integer representing the X coordinate of the upper left corner of the <see cref="T:System.Windows.Forms.SplitContainer" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -192,19 +185,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the Y coordinate of the upper left corner of the <see cref="T:System.Windows.Forms.SplitContainer" /> in client coordinates.</summary>
+        <summary>
+             Gets the y-coordinate of the upper-left corner of the <see cref="T:System.Windows.Forms.SplitContainer" /> (in client coordinates).
+            </summary>
         <value>An integer representing the Y coordinate of the upper left corner of the <see cref="T:System.Windows.Forms.SplitContainer" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

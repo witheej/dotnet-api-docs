@@ -1,4 +1,4 @@
-﻿<Type Name="RadioButton" FullName="System.Windows.Forms.RadioButton">
+<Type Name="RadioButton" FullName="System.Windows.Forms.RadioButton">
   <TypeSignature Language="C#" Value="public class RadioButton : System.Windows.Forms.ButtonBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit RadioButton extends System.Windows.Forms.ButtonBase" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.RadioButton" />
@@ -34,18 +34,16 @@
     <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
-      <AttributeName>System.ComponentModel.Designer("System.Windows.Forms.Design.RadioButtonDesigner, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
-    </Attribute>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
-      <AttributeName>System.ComponentModel.ToolboxItem("System.Windows.Forms.Design.AutoSizeToolboxItem,System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
-    </Attribute>
     <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
       <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Enables the user to select a single option from a group of choices when paired with other <see cref="T:System.Windows.Forms.RadioButton" /> controls.</summary>
+    <summary>
+             Encapsulates a
+             standard
+             Windows radio button (option button).
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -88,7 +86,10 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.RadioButton" /> class.</summary>
+        <summary>
+             Initializes a new instance of the <see cref="T:System.Windows.Forms.RadioButton" />
+             class.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -128,15 +129,16 @@
         <Attribute>
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Appearance</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value determining the appearance of the <see cref="T:System.Windows.Forms.RadioButton" />.</summary>
+        <summary>
+             Gets or sets the appearance of the radio
+             button
+             control is drawn.
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.Appearance" /> values. The default value is <see cref="F:System.Windows.Forms.Appearance.Normal" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -216,15 +218,16 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the <see cref="P:System.Windows.Forms.RadioButton.Checked" /> value and the appearance of the control automatically change when the control is clicked.</summary>
+        <summary>
+             Gets or sets a value indicating whether the <see cref="P:System.Windows.Forms.RadioButton.Checked" />
+             value and the appearance of
+             the control automatically change when the control is clicked.
+            </summary>
         <value>
           <see langword="true" /> if the <see cref="P:System.Windows.Forms.RadioButton.Checked" /> value and the appearance of the control automatically change on the <see cref="E:System.Windows.Forms.Control.Click" /> event; otherwise, <see langword="false" />. The default value is <see langword="true" />.</value>
         <remarks>
@@ -265,21 +268,19 @@
         <Attribute>
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1">
-          <AttributeName>System.ComponentModel.Bindable(true)</AttributeName>
-        </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.ContentAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the location of the check box portion of the <see cref="T:System.Windows.Forms.RadioButton" />.</summary>
+        <summary>
+             Gets or
+             sets the location of the check box portion of the
+             radio button control.
+            </summary>
         <value>One of the valid <see cref="T:System.Drawing.ContentAlignment" /> values. The default value is <see cref="F:System.Drawing.ContentAlignment.MiddleLeft" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -320,15 +321,15 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.SettingsBindable(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the control is checked.</summary>
+        <summary>
+             Gets or sets a value indicating whether the
+             control is checked or not.
+            </summary>
         <value>
           <see langword="true" /> if the check box is checked; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -363,7 +364,11 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.RadioButton.Checked" /> property changes.</summary>
+        <summary>
+             Occurs when the
+             value of the <see cref="P:System.Windows.Forms.RadioButton.Checked" />
+             property changes.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -404,7 +409,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a new accessibility object for the <see cref="T:System.Windows.Forms.RadioButton" /> control.</summary>
+        <summary>
+             Constructs the new instance of the accessibility object for this control. Subclasses
+             should not call base.CreateAccessibilityObject.
+            </summary>
         <returns>A new <see cref="T:System.Windows.Forms.RadioButton.RadioButtonAccessibleObject" /> for the control.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -463,7 +471,10 @@
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the default size of the control.</summary>
+        <summary>
+             Deriving classes can override this to configure a default size for their control.
+             This is more efficient than setting the size in the control's constructor.
+            </summary>
         <value>Returns a <see cref="T:System.Drawing.Size" /> with a <see cref="P:System.Drawing.Size.Width" /> of 104 and a <see cref="P:System.Drawing.Size.Height" /> of 24.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -487,7 +498,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -503,6 +514,7 @@
   
  ]]></format>
         </remarks>
+        <hideinheritance />
       </Docs>
     </Member>
     <Member MemberName="MouseDoubleClick">
@@ -522,8 +534,8 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -539,6 +551,7 @@
   
  ]]></format>
         </remarks>
+        <hideinheritance />
       </Docs>
     </Member>
     <Member MemberName="OnCheckedChanged">
@@ -563,7 +576,10 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.CheckBox.CheckedChanged" /> event.</summary>
+        <summary>
+             Raises the <see cref="E:System.Windows.Forms.CheckBox.CheckedChanged" />
+             event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -610,7 +626,9 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Click" /> event.</summary>
+        <summary>
+             We override this to implement the autoCheck functionality.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -702,7 +720,9 @@
       </Parameters>
       <Docs>
         <param name="mevent">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.MouseUp" /> event.</summary>
+        <summary>
+             Raises the <see cref="M:System.Windows.Forms.ButtonBase.OnMouseUp(System.Windows.Forms.MouseEventArgs)" /> event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -738,7 +758,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Generates a <see cref="E:System.Windows.Forms.Control.Click" /> event for the control, simulating a click by a user.</summary>
+        <summary>
+             Generates a <see cref="E:System.Windows.Forms.Control.Click" /> event for the
+             button, simulating a click by a user.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -798,13 +821,19 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="deviceDpiOld" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.8" />
-        <Parameter Name="deviceDpiNew" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.8" />
+        <Parameter Name="deviceDpiOld" Type="System.Int32" />
+        <Parameter Name="deviceDpiNew" Type="System.Int32" />
       </Parameters>
       <Docs>
-        <param name="deviceDpiOld">The DPI value prior to the change.</param>
-        <param name="deviceDpiNew">The DPI value after the change.</param>
-        <summary>Provides constants for rescaling the <see cref="T:System.Windows.Forms.RadioButton" /> control when a DPI change occurs.</summary>
+        <param name="deviceDpiOld">Old DPI value</param>
+        <param name="deviceDpiNew">New DPI value</param>
+        <summary>
+             When overridden in a derived class, handles rescaling of any magic numbers used in control painting.
+             For RadioButton controls, scale the width of the system-style padding and height of the radio button image.
+             Must call the base class method to get the current DPI values. This method is invoked only when
+             Application opts-in into the Per-monitor V2 support, targets .NETFX 4.7 and has
+             EnableDpiChangedMessageHandling and EnableDpiChangedHighDpiImprovements config switches turned on.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -863,7 +892,10 @@
         <ReturnType>System.Drawing.ContentAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the alignment of the text on the <see cref="T:System.Windows.Forms.RadioButton" /> control.</summary>
+        <summary>
+             Gets or sets the value indicating whether the user can give the focus to this
+             control using the TAB key.
+            </summary>
         <value>One of the <see cref="T:System.Drawing.ContentAlignment" /> values. The default is <see cref="F:System.Drawing.ContentAlignment.MiddleLeft" />.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The value assigned is not one of the <see cref="T:System.Drawing.ContentAlignment" /> values.</exception>
@@ -888,7 +920,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Overrides the <see cref="M:System.ComponentModel.Component.ToString" /> method.</summary>
+        <summary>
+             Returns a string representation for this control.
+            </summary>
         <returns>A string representation of the <see cref="T:System.Windows.Forms.RadioButton" /> that indicates whether it is checked.</returns>
         <remarks>To be added.</remarks>
       </Docs>

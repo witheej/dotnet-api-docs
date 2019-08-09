@@ -1,4 +1,4 @@
-﻿<Type Name="CurrencyManager" FullName="System.Windows.Forms.CurrencyManager">
+<Type Name="CurrencyManager" FullName="System.Windows.Forms.CurrencyManager">
   <TypeSignature Language="C#" Value="public class CurrencyManager : System.Windows.Forms.BindingManagerBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit CurrencyManager extends System.Windows.Forms.BindingManagerBase" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.CurrencyManager" />
@@ -16,7 +16,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Manages a list of <see cref="T:System.Windows.Forms.Binding" /> objects.</summary>
+    <summary>
+             Manages the position and bindings of a list.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -110,7 +112,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Cancels the current edit operation.</summary>
+        <summary>
+             Cancels the current edit operation.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -153,7 +157,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Throws an exception if there is no list, or the list is empty.</summary>
+        <summary>
+             Throws an exception if there is no list.
+            </summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.Exception">There is no list, or the list is empty.</exception>
       </Docs>
@@ -176,7 +182,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of items in the list.</summary>
+        <summary>
+             Gets the number of items in the list.
+            </summary>
         <value>The number of items in the list.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -218,7 +226,9 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current item in the list.</summary>
+        <summary>
+             Gets the current item in the list.
+            </summary>
         <value>A list item of type <see cref="T:System.Object" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -262,7 +272,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Ends the current edit operation.</summary>
+        <summary>
+             Ends the current edit operation.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -306,7 +318,9 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the data type of the list.</summary>
+        <summary>
+             Gets the type of the list.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.ComponentModel.PropertyDescriptorCollection" />
       </Docs>
@@ -330,7 +344,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the property descriptor collection for the underlying list.</summary>
+        <summary>
+             Gets the <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> for
+             the list.
+            </summary>
         <returns>A <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> for the list.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -376,7 +393,9 @@
       </Parameters>
       <Docs>
         <param name="listAccessors">An <see cref="T:System.Collections.ArrayList" /> of properties to be found in the data source.</param>
-        <summary>Gets the name of the list supplying the data for the binding using the specified set of bound properties.</summary>
+        <summary>
+             Gets the name of the specified list.
+            </summary>
         <returns>If successful, a <see cref="T:System.String" /> containing name of the list supplying the data for the binding; otherwise, an <see cref="F:System.String.Empty" /> string.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -407,7 +426,11 @@
         <ReturnType>System.Windows.Forms.ItemChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the current item has been altered.</summary>
+        <summary>
+             Occurs when the
+             current item has been
+             altered.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -451,16 +474,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.IList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the list for this <see cref="T:System.Windows.Forms.CurrencyManager" />.</summary>
+        <summary>
+             Gets the list as an object.
+            </summary>
         <value>An <see cref="T:System.Collections.IList" /> that contains the list.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -634,7 +654,9 @@ private void PrintCurrentListName(DataGrid myDataGrid){
       </Parameters>
       <Docs>
         <param name="e">The <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.BindingManagerBase.CurrentChanged" /> event.</summary>
+        <summary>
+             Causes the CurrentChanged event to occur.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.BindingManagerBase.OnCurrentChanged(System.EventArgs)" />
       </Docs>
@@ -656,7 +678,7 @@ private void PrintCurrentListName(DataGrid myDataGrid){
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.EventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
         <param name="e">The <see cref="T:System.EventArgs" /> that contains the event data.</param>
@@ -722,7 +744,7 @@ private void PrintCurrentListName(DataGrid myDataGrid){
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.EventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
@@ -797,16 +819,13 @@ private void PrintCurrentListName(DataGrid myDataGrid){
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the position you are at within the list.</summary>
+        <summary>
+             Gets or sets the position you are at within the list.
+            </summary>
         <value>A number between 0 and <see cref="P:System.Windows.Forms.CurrencyManager.Count" /> minus 1.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -851,7 +870,9 @@ private void PrintCurrentListName(DataGrid myDataGrid){
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Forces a repopulation of the data-bound list.</summary>
+        <summary>
+             Forces a repopulation of the CurrencyManager
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -936,7 +957,9 @@ private void PrintCurrentListName(DataGrid myDataGrid){
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Resumes data binding.</summary>
+        <summary>
+             Resumes binding of component properties to list items.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -983,7 +1006,9 @@ private void PrintCurrentListName(DataGrid myDataGrid){
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Suspends data binding to prevents changes from updating the bound data source.</summary>
+        <summary>
+             Suspends binding.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1025,11 +1050,6 @@ private void PrintCurrentListName(DataGrid myDataGrid){
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>

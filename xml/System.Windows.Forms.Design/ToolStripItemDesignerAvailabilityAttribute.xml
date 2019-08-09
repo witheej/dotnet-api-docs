@@ -1,4 +1,4 @@
-﻿<Type Name="ToolStripItemDesignerAvailabilityAttribute" FullName="System.Windows.Forms.Design.ToolStripItemDesignerAvailabilityAttribute">
+<Type Name="ToolStripItemDesignerAvailabilityAttribute" FullName="System.Windows.Forms.Design.ToolStripItemDesignerAvailabilityAttribute">
   <TypeSignature Language="C#" Value="public sealed class ToolStripItemDesignerAvailabilityAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ToolStripItemDesignerAvailabilityAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.ToolStripItemDesignerAvailabilityAttribute" />
@@ -54,7 +54,10 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new default instance of the <see cref="T:System.Windows.Forms.Design.ToolStripItemDesignerAvailabilityAttribute" /> class.</summary>
+        <summary>
+             Specifies which ToolStrip types the Item can appear in - ToolStrip,MenuStrip,StatusStrip,ContextMenuStrip
+             Adding this attribute over a class lets you add to the list of custom items in the ToolStrip design time.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -71,11 +74,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="visibility" Type="System.Windows.Forms.Design.ToolStripItemDesignerAvailability" />
       </Parameters>
@@ -195,11 +193,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Design.ToolStripItemDesignerAvailability</ReturnType>
       </ReturnValue>

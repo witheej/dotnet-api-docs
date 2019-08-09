@@ -1,4 +1,4 @@
-﻿<Type Name="IFeatureSupport" FullName="System.Windows.Forms.IFeatureSupport">
+<Type Name="IFeatureSupport" FullName="System.Windows.Forms.IFeatureSupport">
   <TypeSignature Language="C#" Value="public interface IFeatureSupport" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IFeatureSupport" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.IFeatureSupport" />
@@ -13,7 +13,9 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>Specifies a standard interface for retrieving feature information from the current system.</summary>
+    <summary>
+             Specifies a standard interface for retrieving feature information from the current system.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -59,7 +61,9 @@
       </Parameters>
       <Docs>
         <param name="feature">The feature whose version is requested.</param>
-        <summary>Retrieves the version of the specified feature.</summary>
+        <summary>
+             Retrieves the version of the specified feature.
+            </summary>
         <returns>A <see cref="T:System.Version" /> representing the version number of the specified feature; or <see langword="null" /> if the feature is not installed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -114,7 +118,10 @@
       </Parameters>
       <Docs>
         <param name="feature">The feature to look for.</param>
-        <summary>Determines whether any version of the specified feature is currently available on the system.</summary>
+        <summary>
+             Determines whether any version of the specified feature is currently available
+             on the system.
+            </summary>
         <returns>
           <see langword="true" /> if the feature is present; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -157,7 +164,10 @@
       <Docs>
         <param name="feature">The feature to look for.</param>
         <param name="minimumVersion">A <see cref="T:System.Version" /> representing the minimum version number of the feature to look for.</param>
-        <summary>Determines whether the specified or newer version of the specified feature is currently available on the system.</summary>
+        <summary>
+             Determines whether the specified or newer version of the specified feature
+             is currently available on the system.
+            </summary>
         <returns>
           <see langword="true" /> if the requested version of the feature is present; otherwise, <see langword="false" />.</returns>
         <remarks>

@@ -1,4 +1,4 @@
-﻿<Type Name="ScrollBarRenderer" FullName="System.Windows.Forms.ScrollBarRenderer">
+<Type Name="ScrollBarRenderer" FullName="System.Windows.Forms.ScrollBarRenderer">
   <TypeSignature Language="C#" Value="public sealed class ScrollBarRenderer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ScrollBarRenderer extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ScrollBarRenderer" />
@@ -15,7 +15,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides methods used to render a scroll bar control with visual styles. This class cannot be inherited.</summary>
+    <summary>
+             This is a rendering class for the ScrollBar control.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -66,7 +68,9 @@
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the scroll arrow.</param>
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the scroll arrow.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.ScrollBarArrowButtonState" /> values that specifies the visual state of the scroll arrow.</param>
-        <summary>Draws a scroll arrow with visual styles.</summary>
+        <summary>
+             Renders a ScrollBar arrow button.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -120,7 +124,9 @@
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the scroll box.</param>
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the scroll box.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.ScrollBarState" /> values that specifies the visual state of the scroll box.</param>
-        <summary>Draws a horizontal scroll box (also known as the thumb) with visual styles.</summary>
+        <summary>
+             Renders a horizontal ScrollBar thumb.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -174,7 +180,9 @@
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the scroll box grip.</param>
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the scroll box grip.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.ScrollBarState" /> values that specifies the visual state of the scroll box grip.</param>
-        <summary>Draws a grip on a horizontal scroll box (also known as the thumb) with visual styles.</summary>
+        <summary>
+             Renders a horizontal ScrollBar thumb grip.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -228,7 +236,9 @@
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the scroll bar track.</param>
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the scroll bar track.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.ScrollBarState" /> values that specifies the visual state of the scroll bar track.</param>
-        <summary>Draws a horizontal scroll bar track with visual styles.</summary>
+        <summary>
+             Renders a horizontal ScrollBar thumb.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -282,7 +292,9 @@
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the scroll bar track.</param>
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the scroll bar track.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.ScrollBarState" /> values that specifies the visual state of the scroll bar track.</param>
-        <summary>Draws a vertical scroll bar track with visual styles.</summary>
+        <summary>
+             Renders a vertical ScrollBar thumb in the center of the given bounds.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -327,7 +339,9 @@
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the scroll bar track.</param>
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the scroll bar track.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.ScrollBarState" /> values that specifies the visual state of the scroll bar track.</param>
-        <summary>Draws a horizontal scroll bar track with visual styles.</summary>
+        <summary>
+             Renders a horizontal ScrollBar thumb.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -381,7 +395,9 @@
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the sizing handle.</param>
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the sizing handle.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.ScrollBarSizeBoxState" /> values that specifies the visual state of the sizing handle.</param>
-        <summary>Draws a scroll bar sizing handle with visual styles.</summary>
+        <summary>
+             Renders a ScrollBar size box in the center of the given bounds.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -426,7 +442,9 @@
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the scroll bar track.</param>
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the scroll bar track.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.ScrollBarState" /> values that specifies the visual state of the scroll bar track.</param>
-        <summary>Draws a vertical scroll bar track with visual styles.</summary>
+        <summary>
+             Renders a vertical ScrollBar thumb in the center of the given bounds.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -471,7 +489,9 @@
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the scroll box.</param>
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the scroll box.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.ScrollBarState" /> values that specifies the visual state of the scroll box.</param>
-        <summary>Draws a vertical scroll box (also known as the thumb) with visual styles.</summary>
+        <summary>
+             Renders a vertical ScrollBar thumb.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -516,7 +536,9 @@
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the scroll box grip.</param>
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the scroll box grip.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.ScrollBarState" /> values that specifies the visual state of the scroll box grip.</param>
-        <summary>Draws a grip on a vertical scroll box (also known as the thumb) with visual styles.</summary>
+        <summary>
+             Renders a vertical ScrollBar thumb grip.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -559,7 +581,9 @@
       <Docs>
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> this operation will use.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.ScrollBarState" /> values that specifies the visual state of the sizing handle.</param>
-        <summary>Returns the size of the sizing handle.</summary>
+        <summary>
+             Returns the size of the ScrollBar size box.
+            </summary>
         <returns>A <see cref="T:System.Drawing.Size" /> that specifies the size of the sizing handle.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -605,7 +629,9 @@
       <Docs>
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> this operation will use.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.ScrollBarState" /> values that specifies the visual state of the scroll box grip.</param>
-        <summary>Returns the size of the scroll box grip.</summary>
+        <summary>
+             Returns the size of the ScrollBar thumb grip.
+            </summary>
         <returns>A <see cref="T:System.Drawing.Size" /> that specifies the size of the scroll box grip.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -645,7 +671,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="T:System.Windows.Forms.ScrollBarRenderer" /> class can be used to draw a scroll bar with visual styles.</summary>
+        <summary>
+             Returns true if this class is supported for the current OS and user/application settings,
+             otherwise returns false.
+            </summary>
         <value>
           <see langword="true" /> if the user has enabled visual styles in the operating system and visual styles are applied to the client areas of application windows; otherwise, <see langword="false" />.</value>
         <remarks>

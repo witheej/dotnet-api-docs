@@ -1,4 +1,4 @@
-﻿<Type Name="ToolStripItemClickedEventHandler" FullName="System.Windows.Forms.ToolStripItemClickedEventHandler">
+<Type Name="ToolStripItemClickedEventHandler" FullName="System.Windows.Forms.ToolStripItemClickedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void ToolStripItemClickedEventHandler(object sender, ToolStripItemClickedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ToolStripItemClickedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripItemClickedEventHandler" />
@@ -23,7 +23,11 @@
   <Docs>
     <param name="sender">The source of the event.</param>
     <param name="e">A <see cref="T:System.Windows.Forms.ToolStripItemClickedEventArgs" /> that contains the event data.</param>
-    <summary>Represents the method that will handle the <see cref="E:System.Windows.Forms.ToolStrip.ItemClicked" /> event of a <see cref="T:System.Windows.Forms.ToolStripItem" />.</summary>
+    <summary>
+             Represents a method that will handle the <see cref="E:System.Windows.Forms.Control.MouseDown" />,
+             <see cref="E:System.Windows.Forms.Control.MouseUp" /> or <see cref="E:System.Windows.Forms.Control.MouseMove" /> events of a form,
+             control or other component.
+            </summary>
     <remarks>To be added.</remarks>
     <altmember cref="T:System.Windows.Forms.ToolStripItemClickedEventArgs" />
     <altmember cref="E:System.Windows.Forms.ToolStrip.ItemClicked" />

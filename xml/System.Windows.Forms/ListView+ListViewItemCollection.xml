@@ -1,4 +1,4 @@
-﻿<Type Name="ListView+ListViewItemCollection" FullName="System.Windows.Forms.ListView+ListViewItemCollection">
+<Type Name="ListView+ListViewItemCollection" FullName="System.Windows.Forms.ListView+ListViewItemCollection">
   <TypeSignature Language="C#" Value="public class ListView.ListViewItemCollection : System.Collections.IList" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit ListView/ListViewItemCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ListView.ListViewItemCollection" />
@@ -31,7 +31,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the collection of items in a <see cref="T:System.Windows.Forms.ListView" /> control or assigned to a <see cref="T:System.Windows.Forms.ListViewGroup" />.</summary>
+    <summary>
+             Represents the collection of items in a ListView or ListViewGroup
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -110,11 +112,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ListViewItem</ReturnType>
       </ReturnValue>
@@ -123,7 +120,11 @@
       </Parameters>
       <Docs>
         <param name="text">The text to display for the item.</param>
-        <summary>Creates an item with the specified text and adds it to the collection.</summary>
+        <summary>
+             Add an item to the ListView.  The item will be inserted either in
+             the correct sorted position, or, if no sorting is set, at the end
+             of the list.
+            </summary>
         <returns>The <see cref="T:System.Windows.Forms.ListViewItem" /> that was added to the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -162,7 +163,11 @@
       </Parameters>
       <Docs>
         <param name="value">The <see cref="T:System.Windows.Forms.ListViewItem" /> to add to the collection.</param>
-        <summary>Adds an existing <see cref="T:System.Windows.Forms.ListViewItem" /> to the collection.</summary>
+        <summary>
+             Add an item to the ListView.  The item will be inserted either in
+             the correct sorted position, or, if no sorting is set, at the end
+             of the list.
+            </summary>
         <returns>The <see cref="T:System.Windows.Forms.ListViewItem" /> that was added to the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -205,7 +210,11 @@
       <Docs>
         <param name="text">The text of the item.</param>
         <param name="imageIndex">The index of the image to display for the item.</param>
-        <summary>Creates an item with the specified text and image and adds it to the collection.</summary>
+        <summary>
+             Add an item to the ListView.  The item will be inserted either in
+             the correct sorted position, or, if no sorting is set, at the end
+             of the list.
+            </summary>
         <returns>The <see cref="T:System.Windows.Forms.ListViewItem" /> that was added to the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -239,13 +248,17 @@
         <ReturnType>System.Windows.Forms.ListViewItem</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="text" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="imageKey" Type="System.String" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="imageKey" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="text">The text of the item.</param>
         <param name="imageKey">The key of the image to display for the item.</param>
-        <summary>Creates an item with the specified text and image and adds it to the collection.</summary>
+        <summary>
+             Add an item to the ListView.  The item will be inserted either in
+             the correct sorted position, or, if no sorting is set, at the end
+             of the list.
+            </summary>
         <returns>The <see cref="T:System.Windows.Forms.ListViewItem" /> added to the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -274,15 +287,19 @@
         <ReturnType>System.Windows.Forms.ListViewItem</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="text" Type="System.String" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="imageIndex" Type="System.Int32" Index="2" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="imageIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="key">The name of the item.</param>
         <param name="text">The text of the item.</param>
         <param name="imageIndex">The index of the image to display for the item.</param>
-        <summary>Creates an item with the specified key, text, and image and adds an item to the collection.</summary>
+        <summary>
+             Add an item to the ListView.  The item will be inserted either in
+             the correct sorted position, or, if no sorting is set, at the end
+             of the list.
+            </summary>
         <returns>The <see cref="T:System.Windows.Forms.ListViewItem" /> added to the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -314,15 +331,19 @@
         <ReturnType>System.Windows.Forms.ListViewItem</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="text" Type="System.String" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="imageKey" Type="System.String" Index="2" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="imageKey" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="key">The name of the item.</param>
         <param name="text">The text of the item.</param>
         <param name="imageKey">The key of the image to display for the item.</param>
-        <summary>Creates an item with the specified key, text, and image, and adds it to the collection.</summary>
+        <summary>
+             Add an item to the ListView.  The item will be inserted either in
+             the correct sorted position, or, if no sorting is set, at the end
+             of the list.
+            </summary>
         <returns>The <see cref="T:System.Windows.Forms.ListViewItem" /> added to the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -362,7 +383,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="items" Type="System.Windows.Forms.ListView+ListViewItemCollection" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="items" Type="System.Windows.Forms.ListView+ListViewItemCollection" />
       </Parameters>
       <Docs>
         <param name="items">The <see cref="T:System.Windows.Forms.ListView.ListViewItemCollection" /> to add to the collection.</param>
@@ -383,10 +404,10 @@
     <Member MemberName="AddRange">
       <MemberSignature Language="C#" Value="public void AddRange (System.Windows.Forms.ListViewItem[] values);" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.Windows.Forms.ListViewItem[] values) cil managed" FrameworkAlternate="netframework-1.1" />
-      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ListViewItemCollection.AddRange(System.Windows.Forms.ListViewItem[])" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ListView.ListViewItemCollection.AddRange(System.Windows.Forms.ListViewItem[])" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (values As ListViewItem())" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; void AddRange(cli::array &lt;System::Windows::Forms::ListViewItem ^&gt; ^ values);" FrameworkAlternate="netframework-1.1" />
-      <MemberSignature Language="F#" Value="member this.AddRange : System.Windows.Forms.ListViewItem[] -&gt; unit" Usage="listViewItemCollection.AddRange values" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="F#" Value="member this.AddRange : System.Windows.Forms.ListViewItem[] -&gt; unit" Usage="listViewItemCollection.AddRange values" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       <MemberSignature Language="C#" Value="public void AddRange (System.Windows.Forms.ListViewItem[] items);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance void AddRange(class System.Windows.Forms.ListViewItem[] items) cil managed" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       <MemberSignature Language="VB.NET" Value="Public Sub AddRange (items As ListViewItem())" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
@@ -404,12 +425,10 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="items" Type="System.Windows.Forms.ListViewItem[]" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="values" Type="System.Windows.Forms.ListViewItem[]" Index="0" FrameworkAlternate="netframework-1.1" />
+        <Parameter Name="items" Type="System.Windows.Forms.ListViewItem[]" />
       </Parameters>
       <Docs>
         <param name="items">An array of <see cref="T:System.Windows.Forms.ListViewItem" /> objects to add to the collection.</param>
-        <param name="values">An array of <see cref="T:System.Windows.Forms.ListViewItem" /> objects to add to the collection.</param>
         <summary>Adds an array of <see cref="T:System.Windows.Forms.ListViewItem" /> objects to the collection.</summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -477,7 +496,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all items from the collection.</summary>
+        <summary>
+             Removes all items from the list view.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -543,11 +564,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="key">The name of the item to search for.</param>
-        <summary>Determines whether the collection contains an item with the specified key.</summary>
+        <summary>
+             Returns true if the collection contains an item with the specified key, false otherwise.
+            </summary>
         <returns>
           <see langword="true" /> to indicate the collection contains an item with the specified key; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -624,7 +647,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of items in the collection.</summary>
+        <summary>
+             Returns the total number of items within the list view.
+            </summary>
         <value>The number of items in the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -653,14 +678,17 @@
         <ReturnType>System.Windows.Forms.ListViewItem[]</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="searchAllSubItems" Type="System.Boolean" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="searchAllSubItems" Type="System.Boolean" />
       </Parameters>
       <Docs>
         <param name="key">The item name to search for.</param>
         <param name="searchAllSubItems">
           <see langword="true" /> to search subitems; otherwise, <see langword="false" />.</param>
-        <summary>Searches for items whose name matches the specified key, optionally searching subitems.</summary>
+        <summary>
+             Searches for Controls by their Name property, builds up an array
+             of all the controls that match.
+            </summary>
         <returns>An array of  <see cref="T:System.Windows.Forms.ListViewItem" /> objects containing the matching items, or an empty array if no items matched.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -759,11 +787,13 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="key">The name of the item to find in the collection.</param>
-        <summary>Retrieves the index of the item with the specified key.</summary>
+        <summary>
+             The zero-based index of the first occurrence of value within the entire CollectionBase, if found; otherwise, -1.
+            </summary>
         <returns>The zero-based index of the first occurrence of the item with the specified key, if found; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -941,9 +971,9 @@
         <ReturnType>System.Windows.Forms.ListViewItem</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="text" Type="System.String" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="imageKey" Type="System.String" Index="2" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="imageKey" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="index">The zero-based index location where the item is inserted.</param>
@@ -972,10 +1002,10 @@
         <ReturnType>System.Windows.Forms.ListViewItem</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="key" Type="System.String" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="text" Type="System.String" Index="2" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="imageIndex" Type="System.Int32" Index="3" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="imageIndex" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="index">The zero-based index location where the item is inserted</param>
@@ -1012,10 +1042,10 @@
         <ReturnType>System.Windows.Forms.ListViewItem</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="key" Type="System.String" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="text" Type="System.String" Index="2" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="imageKey" Type="System.String" Index="3" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="imageKey" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="index">The zero-based index location where the item is inserted.</param>
@@ -1079,45 +1109,12 @@
       </Docs>
     </MemberGroup>
     <Member MemberName="Item">
-      <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.ListViewItem this[string key] { get; }" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ListViewItem Item(string)" />
-      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.ListViewItemCollection.Item(System.String)" />
-      <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(key As String) As ListViewItem" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::ListViewItem ^ default[System::String ^] { System::Windows::Forms::ListViewItem ^ get(System::String ^ key); };" />
-      <MemberSignature Language="F#" Value="member this.Item(string) : System.Windows.Forms.ListViewItem" Usage="System.Windows.Forms.ListView.ListViewItemCollection.Item" />
-      <MemberType>Property</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Windows.Forms.ListViewItem</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      </Parameters>
-      <Docs>
-        <param name="key">The name of the item to retrieve.</param>
-        <summary>Retrieves the item with the specified key.</summary>
-        <value>The <see cref="T:System.Windows.Forms.ListViewItem" /> whose <see cref="P:System.Windows.Forms.ListViewItem.Name" /> property matches the specified key.</value>
-        <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- The key comparison is not case-sensitive. The <xref:System.Windows.Forms.ListViewItem.Name%2A> property corresponds to the key for a <xref:System.Windows.Forms.ListViewItem> in the <xref:System.Windows.Forms.ListView.ListViewItemCollection>.  
-  
- ]]></format>
-        </remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="Item">
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.ListViewItem this[int displayIndex] { get; set; }" FrameworkAlternate="netframework-1.1" />
-      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ListViewItem Item(int32)" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.ListViewItemCollection.Item(System.Int32)" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ListViewItem Item(int32)" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.ListViewItemCollection.Item(System.Int32)" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable Property Item(displayIndex As Integer) As ListViewItem" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::ListViewItem ^ default[int] { System::Windows::Forms::ListViewItem ^ get(int displayIndex); void set(int displayIndex, System::Windows::Forms::ListViewItem ^ value); };" FrameworkAlternate="netframework-1.1" />
-      <MemberSignature Language="F#" Value="member this.Item(int) : System.Windows.Forms.ListViewItem with get, set" Usage="System.Windows.Forms.ListView.ListViewItemCollection.Item" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="F#" Value="member this.Item(int) : System.Windows.Forms.ListViewItem with get, set" Usage="System.Windows.Forms.ListView.ListViewItemCollection.Item" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.ListViewItem this[int index] { get; set; }" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       <MemberSignature Language="VB.NET" Value="Default Public Overridable Property Item(index As Integer) As ListViewItem" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::ListViewItem ^ default[int] { System::Windows::Forms::ListViewItem ^ get(int index); void set(int index, System::Windows::Forms::ListViewItem ^ value); };" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
@@ -1135,13 +1132,13 @@
         <ReturnType>System.Windows.Forms.ListViewItem</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="displayIndex" Type="System.Int32" Index="0" FrameworkAlternate="netframework-1.1" />
+        <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="index">The index of the item in the collection to get or set.</param>
-        <param name="displayIndex">The index of the item in the collection to get or set.</param>
-        <summary>Gets or sets the item at the specified index within the collection.</summary>
+        <summary>
+             Returns the ListViewItem at the given index.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.ListViewItem" /> representing the item located at the specified index within the collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1153,6 +1150,41 @@
         </remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The <paramref name="index" /> parameter is less than 0 or greater than or equal to the value of the <see cref="P:System.Windows.Forms.ListView.ListViewItemCollection.Count" /> property of the <see cref="T:System.Windows.Forms.ListView.ListViewItemCollection" />.</exception>
         <altmember cref="M:System.Windows.Forms.ListView.ListViewItemCollection.IndexOf(System.Windows.Forms.ListViewItem)" />
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public virtual System.Windows.Forms.ListViewItem this[string key] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Windows.Forms.ListViewItem Item(string)" />
+      <MemberSignature Language="DocId" Value="P:System.Windows.Forms.ListView.ListViewItemCollection.Item(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Default Public Overridable ReadOnly Property Item(key As String) As ListViewItem" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual property System::Windows::Forms::ListViewItem ^ default[System::String ^] { System::Windows::Forms::ListViewItem ^ get(System::String ^ key); };" />
+      <MemberSignature Language="F#" Value="member this.Item(string) : System.Windows.Forms.ListViewItem" Usage="System.Windows.Forms.ListView.ListViewItemCollection.Item" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>System.Windows.Forms</AssemblyName>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <AssemblyVersion>4.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Windows.Forms.ListViewItem</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="key" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="key">The name of the item to retrieve.</param>
+        <summary>
+             Retrieves the child control with the specified key.
+            </summary>
+        <value>The <see cref="T:System.Windows.Forms.ListViewItem" /> whose <see cref="P:System.Windows.Forms.ListViewItem.Name" /> property matches the specified key.</value>
+        <remarks>
+          <format type="text/markdown"><![CDATA[  
+  
+## Remarks  
+ The key comparison is not case-sensitive. The <xref:System.Windows.Forms.ListViewItem.Name%2A> property corresponds to the key for a <xref:System.Windows.Forms.ListViewItem> in the <xref:System.Windows.Forms.ListView.ListViewItemCollection>.  
+  
+ ]]></format>
+        </remarks>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -1177,7 +1209,9 @@
       </Parameters>
       <Docs>
         <param name="item">A <see cref="T:System.Windows.Forms.ListViewItem" /> representing the item to remove from the collection.</param>
-        <summary>Removes the specified item from the collection.</summary>
+        <summary>
+             Removes an item from the ListView
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1216,7 +1250,9 @@
       </Parameters>
       <Docs>
         <param name="index">The zero-based index of the item to remove.</param>
-        <summary>Removes the item at the specified index within the collection.</summary>
+        <summary>
+             Removes an item from the ListView
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1247,11 +1283,13 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="key">The name of the item to remove from the collection.</param>
-        <summary>Removes the item with the specified key from the collection.</summary>
+        <summary>
+             Removes the child control with the specified key.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1488,16 +1526,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="index">The zero-based index of the element to get.</param>

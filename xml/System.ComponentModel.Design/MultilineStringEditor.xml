@@ -1,4 +1,4 @@
-﻿<Type Name="MultilineStringEditor" FullName="System.ComponentModel.Design.MultilineStringEditor">
+<Type Name="MultilineStringEditor" FullName="System.ComponentModel.Design.MultilineStringEditor">
   <TypeSignature Language="C#" Value="public sealed class MultilineStringEditor : System.Drawing.Design.UITypeEditor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit MultilineStringEditor extends System.Drawing.Design.UITypeEditor" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.MultilineStringEditor" />
@@ -19,7 +19,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Displays a dialog for editing multi-line strings in design mode.</summary>
+    <summary>
+             An editor for editing strings that supports multiple lines of text and is resizable.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -39,11 +41,6 @@
         <AssemblyName>System.Windows.Forms.Design.Editors</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.MultilineStringEditor" /> class.</summary>
@@ -79,7 +76,9 @@
         <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that can be used to gain additional context information.</param>
         <param name="provider">A service provider object through which editing services can be obtained.</param>
         <param name="value">An instance of the value being edited.</param>
-        <summary>Edits the specified object value using the edit style provided by <see cref="M:System.Drawing.Design.ImageEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)" />.</summary>
+        <summary>
+             Edits the given value, returning the editing results.
+            </summary>
         <returns>The new value of the object. If the value of the object has not changed, this method should return the same object passed to it.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -109,7 +108,9 @@
       </Parameters>
       <Docs>
         <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that can be used to gain additional context information.</param>
-        <summary>Gets the editing style of the <see cref="M:System.Drawing.Design.ImageEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)" /> method.</summary>
+        <summary>
+             The MultilineStringEditor is a drop down editor, so this returns UITypeEditorEditStyle.DropDown.
+            </summary>
         <returns>A <see cref="T:System.Drawing.Design.UITypeEditorEditStyle" /> enumeration value indicating the supported editing style.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -139,7 +140,9 @@
       </Parameters>
       <Docs>
         <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that can be used to gain additional context information.</param>
-        <summary>Gets a value indicating whether this editor supports painting a representation of an object's value.</summary>
+        <summary>
+             Returns false; no extra painting is performed.
+            </summary>
         <returns>
           <see langword="false" />, indicating that this <see cref="T:System.Drawing.Design.UITypeEditor" /> does not display a visual representation in the Properties Window.</returns>
         <remarks>To be added.</remarks>

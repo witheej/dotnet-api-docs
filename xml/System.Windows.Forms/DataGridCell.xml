@@ -1,4 +1,4 @@
-﻿<Type Name="DataGridCell" FullName="System.Windows.Forms.DataGridCell">
+<Type Name="DataGridCell" FullName="System.Windows.Forms.DataGridCell">
   <TypeSignature Language="C#" Value="public struct DataGridCell" />
   <TypeSignature Language="ILAsm" Value=".class public sequential ansi sealed beforefieldinit DataGridCell extends System.ValueType" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridCell" />
@@ -16,7 +16,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Identifies a cell in the grid.</summary>
+    <summary>
+             Identifies a cell in the grid.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -56,11 +58,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="r" Type="System.Int32" />
         <Parameter Name="c" Type="System.Int32" />
@@ -68,7 +65,9 @@
       <Docs>
         <param name="r">The number of a row in the <see cref="T:System.Windows.Forms.DataGrid" />.</param>
         <param name="c">The number of a column in the <see cref="T:System.Windows.Forms.DataGrid" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridCell" /> class.</summary>
+        <summary>
+             Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridCell" /> class.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -104,13 +103,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netcore-3.0">
+        <Attribute>
           <AttributeName>get: System.Runtime.CompilerServices.IsReadOnly</AttributeName>
         </Attribute>
       </Attributes>
@@ -118,7 +111,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the number of a column in the <see cref="T:System.Windows.Forms.DataGrid" /> control.</summary>
+        <summary>
+             Gets or sets the number of a column in the <see cref="T:System.Windows.Forms.DataGrid" /> control.
+            </summary>
         <value>The number of the column.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -165,7 +160,10 @@
       </Parameters>
       <Docs>
         <param name="o">An object you are to comparing.</param>
-        <summary>Gets a value indicating whether the <see cref="T:System.Windows.Forms.DataGridCell" /> is identical to a second <see cref="T:System.Windows.Forms.DataGridCell" />.</summary>
+        <summary>
+             Gets a value indicating whether the <see cref="T:System.Windows.Forms.DataGridCell" /> is
+             identical to a second <see cref="T:System.Windows.Forms.DataGridCell" />.
+            </summary>
         <returns>
           <see langword="true" /> if the second object is identical to the first; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -199,7 +197,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a hash value that can be added to a <see cref="T:System.Collections.Hashtable" />.</summary>
+        <summary>
+             Gets a hash value that uniquely identifies the cell.
+            </summary>
         <returns>A number that uniquely identifies the <see cref="T:System.Windows.Forms.DataGridCell" /> in a <see cref="T:System.Collections.Hashtable" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -232,13 +232,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netcore-3.0">
+        <Attribute>
           <AttributeName>get: System.Runtime.CompilerServices.IsReadOnly</AttributeName>
         </Attribute>
       </Attributes>
@@ -246,7 +240,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the number of a row in the <see cref="T:System.Windows.Forms.DataGrid" /> control.</summary>
+        <summary>
+             Gets or sets the number of a row in the <see cref="T:System.Windows.Forms.DataGrid" /> control.
+            </summary>
         <value>The number of the row.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -286,7 +282,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the row number and column number of the cell.</summary>
+        <summary>
+             Gets the row number and column number of the cell.
+            </summary>
         <returns>A string containing the row number and column number.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

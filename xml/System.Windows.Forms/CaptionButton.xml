@@ -1,4 +1,4 @@
-﻿<Type Name="CaptionButton" FullName="System.Windows.Forms.CaptionButton">
+<Type Name="CaptionButton" FullName="System.Windows.Forms.CaptionButton">
   <TypeSignature Language="C#" Value="public enum CaptionButton" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CaptionButton extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.CaptionButton" />
@@ -15,7 +15,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the type of caption button to display.</summary>
+    <summary>
+             Specifies the type of caption button to display.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -57,7 +59,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>A Close button.</summary>
+        <summary>
+             A Close button.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Help">
@@ -79,7 +83,9 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>A Help button.</summary>
+        <summary>
+             A Help button.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Maximize">
@@ -101,7 +107,9 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>A Maximize button.</summary>
+        <summary>
+             A Maximize button.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Minimize">
@@ -123,7 +131,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>A Minimize button.</summary>
+        <summary>
+             A Minimize button.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Restore">
@@ -145,7 +155,9 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>A Restore button.</summary>
+        <summary>
+             A Restore button.
+            </summary>
       </Docs>
     </Member>
   </Members>

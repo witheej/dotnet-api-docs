@@ -1,4 +1,4 @@
-﻿<Type Name="HtmlElement" FullName="System.Windows.Forms.HtmlElement">
+<Type Name="HtmlElement" FullName="System.Windows.Forms.HtmlElement">
   <TypeSignature Language="C#" Value="public sealed class HtmlElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HtmlElement extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.HtmlElement" />
@@ -91,11 +91,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.HtmlElement</ReturnType>
       </ReturnValue>
@@ -421,11 +416,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -1157,11 +1147,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -1202,7 +1187,7 @@
         <Parameter Name="methodName" Type="System.String" />
         <Parameter Name="parameter" Type="System.Object[]">
           <Attributes>
-            <Attribute FrameworkAlternate="netcore-3.0">
+            <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -1494,7 +1479,9 @@
         <ReturnType>System.Windows.Forms.HtmlElementEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the user first moves the mouse cursor over the current element.</summary>
+        <summary>
+             Fires when the mouse enters the element
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1527,7 +1514,9 @@
         <ReturnType>System.Windows.Forms.HtmlElementEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the user moves the mouse cursor off of the current element.</summary>
+        <summary>
+             Fires when the mouse leaves the element
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1679,14 +1668,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>

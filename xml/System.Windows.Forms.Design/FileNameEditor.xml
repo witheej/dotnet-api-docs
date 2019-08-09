@@ -1,4 +1,4 @@
-﻿<Type Name="FileNameEditor" FullName="System.Windows.Forms.Design.FileNameEditor">
+<Type Name="FileNameEditor" FullName="System.Windows.Forms.Design.FileNameEditor">
   <TypeSignature Language="C#" Value="public class FileNameEditor : System.Drawing.Design.UITypeEditor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FileNameEditor extends System.Drawing.Design.UITypeEditor" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.FileNameEditor" />
@@ -20,12 +20,14 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-3.0">
+    <Attribute>
       <AttributeName>System.CLSCompliant(false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides a user interface for selecting a file name.</summary>
+    <summary>
+             Provides an editor for filenames.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -65,11 +67,6 @@
         <AssemblyName>System.Windows.Forms.Design.Editors</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.FileNameEditor" /> class.</summary>
@@ -106,7 +103,10 @@
         <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that can be used to gain additional context information.</param>
         <param name="provider">A service provider object through which editing services may be obtained.</param>
         <param name="value">An instance of the value being edited.</param>
-        <summary>Edits the specified object using the editor style provided by the <see cref="M:System.Windows.Forms.Design.FileNameEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)" /> method.</summary>
+        <summary>
+             Edits the given object value using the editor style provided by GetEditorStyle.
+             A service provider is provided so that any required editing services can be obtained.
+            </summary>
         <returns>The new value of the object. If the value of the object hasn't changed, this should return the same object it was passed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -144,7 +144,9 @@
       </Parameters>
       <Docs>
         <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that can be used to gain additional context information.</param>
-        <summary>Gets the editing style used by the <see cref="M:System.Windows.Forms.Design.FileNameEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)" /> method.</summary>
+        <summary>
+             Gets the editing style of the Edit method.
+            </summary>
         <returns>One of the <see cref="T:System.Drawing.Design.UITypeEditorEditStyle" /> values indicating the provided editing style.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -182,7 +184,11 @@
       </Parameters>
       <Docs>
         <param name="openFileDialog">The <see cref="T:System.Windows.Forms.OpenFileDialog" /> to use to select a file name.</param>
-        <summary>Initializes the open file dialog when it is created.</summary>
+        <summary>
+             Initializes the open file dialog when it is created. This gives you an opportunity to
+             configure the dialog as you please. The default implementation provides a generic file
+             filter and title.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

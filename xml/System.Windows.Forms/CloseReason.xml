@@ -1,4 +1,4 @@
-﻿<Type Name="CloseReason" FullName="System.Windows.Forms.CloseReason">
+<Type Name="CloseReason" FullName="System.Windows.Forms.CloseReason">
   <TypeSignature Language="C#" Value="public enum CloseReason" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CloseReason extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.CloseReason" />
@@ -14,7 +14,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the reason that a form was closed.</summary>
+    <summary>
+             Specifies the reason for the Form Closing.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -47,7 +49,9 @@
       </ReturnValue>
       <MemberValue>6</MemberValue>
       <Docs>
-        <summary>The <see cref="M:System.Windows.Forms.Application.Exit" /> method of the <see cref="T:System.Windows.Forms.Application" /> class was invoked.</summary>
+        <summary>
+             A form is closing because Application.Exit() was called.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="FormOwnerClosing">
@@ -68,7 +72,9 @@
       </ReturnValue>
       <MemberValue>5</MemberValue>
       <Docs>
-        <summary>The owner form is closing.</summary>
+        <summary>
+             A form is closing because its owner is closing.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="MdiFormClosing">
@@ -89,7 +95,9 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>The parent form of this multiple document interface (MDI) form is closing.</summary>
+        <summary>
+             The parent form of this MDI form is closing.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -110,7 +118,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>The cause of the closure was not defined or could not be determined.</summary>
+        <summary>
+             No reason for closure of the Form.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="TaskManagerClosing">
@@ -131,7 +141,9 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>The Microsoft Windows Task Manager is closing the application.</summary>
+        <summary>
+             The Microsoft Windows Task Manager is closing the application.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="UserClosing">
@@ -152,7 +164,10 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>The user is closing the form through the user interface (UI), for example by clicking the **Close** button on the form window, selecting **Close** from the window's control menu, or pressing ALT+F4.</summary>
+        <summary>
+             The user has clicked the close button on the form window, selected
+             Close from the window's control menu or hit Alt + F4.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="WindowsShutDown">
@@ -173,7 +188,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The operating system is closing all applications before shutting down.</summary>
+        <summary>
+             In the process of shutting down, Windows has closed the application.
+            </summary>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="ObjectSelectorEditor+Selector" FullName="System.ComponentModel.Design.ObjectSelectorEditor+Selector">
+<Type Name="ObjectSelectorEditor+Selector" FullName="System.ComponentModel.Design.ObjectSelectorEditor+Selector">
   <TypeSignature Language="C#" Value="public class ObjectSelectorEditor.Selector : System.Windows.Forms.TreeView" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit ObjectSelectorEditor/Selector extends System.Windows.Forms.TreeView" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ObjectSelectorEditor.Selector" />
@@ -47,7 +47,9 @@
       </Parameters>
       <Docs>
         <param name="editor">The <see cref="T:System.ComponentModel.Design.ObjectSelectorEditor" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.ObjectSelectorEditor.Selector" /> class.</summary>
+        <summary>
+             Constructor for Selector, takes ObjectSelectorEditor
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,7 +83,10 @@
         <param name="label">The label for the node.</param>
         <param name="value">The <see cref="T:System.Object" /> that represents the value for the node.</param>
         <param name="parent">The parent of the node.</param>
-        <summary>Adds a new tree node to the collection.</summary>
+        <summary>
+             Adds a Node with given label and value to the parent, provided the parent is not null;
+             Otherwise, adds that node to the Nodes TreeNodeCollection. Returns the new node.
+            </summary>
         <returns>A <see cref="T:System.ComponentModel.Design.ObjectSelectorEditor.SelectorNode" /> added to the collection.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -109,7 +114,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all tree nodes from the collection.</summary>
+        <summary>
+             Clears the TreeNodeCollection and sets clickSeen to false
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -252,7 +259,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.Windows.Forms.TreeNodeMouseClickEventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="e" Type="System.Windows.Forms.TreeNodeMouseClickEventArgs" />
       </Parameters>
       <Docs>
         <param name="e">Provides data for the <see cref="E:System.Windows.Forms.Control.MouseUp" />, <see cref="E:System.Windows.Forms.Control.MouseDown" />, and <see cref="E:System.Windows.Forms.Control.MouseMove" /> events.</param>
@@ -288,7 +295,9 @@
       <Docs>
         <param name="value">The value to be set.</param>
         <param name="nodes">The nodes collection.</param>
-        <summary>Sets the collection nodes to a specific value.</summary>
+        <summary>
+             Sets the selection
+            </summary>
         <returns>
           <see langword="true" /> if the collection nodes were set; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -322,7 +331,9 @@
       <Docs>
         <param name="edSvc">The editor service.</param>
         <param name="value">The value to be set.</param>
-        <summary>Initializes the editor service.</summary>
+        <summary>
+             Sets the internal IWindowsFormsEditorService to the given edSvc, and calls SetSelection on the given value
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -349,7 +360,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes the editor service.</summary>
+        <summary>
+             Sets the internal IWindowsFormsEditorService to null
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

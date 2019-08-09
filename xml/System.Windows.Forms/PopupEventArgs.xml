@@ -1,4 +1,4 @@
-﻿<Type Name="PopupEventArgs" FullName="System.Windows.Forms.PopupEventArgs">
+<Type Name="PopupEventArgs" FullName="System.Windows.Forms.PopupEventArgs">
   <TypeSignature Language="C#" Value="public class PopupEventArgs : System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PopupEventArgs extends System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PopupEventArgs" />
@@ -15,7 +15,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.Forms.ToolTip.Popup" /> event.</summary>
+    <summary>
+             This class contains the information a user needs to paint the ToolTip.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -52,11 +54,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="associatedWindow" Type="System.Windows.Forms.IWin32Window" />
         <Parameter Name="associatedControl" Type="System.Windows.Forms.Control" />
@@ -69,7 +66,9 @@
         <param name="isBalloon">
           <see langword="true" /> to indicate that the associated ToolTip window has a balloon-style appearance; otherwise, <see langword="false" /> to indicate that the ToolTip window has a standard rectangular appearance.</param>
         <param name="size">The <see cref="T:System.Drawing.Size" /> of the ToolTip.</param>
-        <summary>Initializes an instance of the <see cref="T:System.Windows.Forms.PopupEventArgs" /> class.</summary>
+        <summary>
+             Creates a new PopupEventArgs with the given parameters.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -97,16 +96,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Control</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the control for which the <see cref="T:System.Windows.Forms.ToolTip" /> is being drawn.</summary>
+        <summary>
+             The control for which the tooltip is being painted.
+            </summary>
         <value>The <see cref="T:System.Windows.Forms.Control" /> that is associated with the <see cref="T:System.Windows.Forms.ToolTip" />, or <see langword="null" /> if the ToolTip is not associated with a control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -143,16 +139,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.IWin32Window</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the window to which this <see cref="T:System.Windows.Forms.ToolTip" /> is bound.</summary>
+        <summary>
+             The Associated Window for which the tooltip is being painted.
+            </summary>
         <value>The window which owns the <see cref="T:System.Windows.Forms.ToolTip" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -188,16 +181,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the ToolTip is displayed as a standard rectangular or a balloon window.</summary>
+        <summary>
+             Whether the tooltip is Ballooned.
+            </summary>
         <value>
           <see langword="true" /> if the ToolTip is displayed in a balloon window; otherwise, <see langword="false" /> if a standard rectangular window is used.</value>
         <remarks>
@@ -234,19 +224,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the size of the ToolTip.</summary>
+        <summary>
+             The rectangle outlining the area in which the painting should be done.
+            </summary>
         <value>The <see cref="T:System.Drawing.Size" /> of the <see cref="T:System.Windows.Forms.ToolTip" /> window.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

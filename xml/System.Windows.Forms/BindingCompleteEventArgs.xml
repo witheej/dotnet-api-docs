@@ -1,4 +1,4 @@
-﻿<Type Name="BindingCompleteEventArgs" FullName="System.Windows.Forms.BindingCompleteEventArgs">
+<Type Name="BindingCompleteEventArgs" FullName="System.Windows.Forms.BindingCompleteEventArgs">
   <TypeSignature Language="C#" Value="public class BindingCompleteEventArgs : System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit BindingCompleteEventArgs extends System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.BindingCompleteEventArgs" />
@@ -15,7 +15,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.Forms.Binding.BindingComplete" /> event.</summary>
+    <summary>
+             Provides information about a Binding Completed event.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -65,7 +67,9 @@
         <param name="binding">The binding associated with this occurrence of a <see cref="E:System.Windows.Forms.Binding.BindingComplete" /> event.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.BindingCompleteState" /> values.</param>
         <param name="context">One of the <see cref="T:System.Windows.Forms.BindingCompleteContext" /> values.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.BindingCompleteEventArgs" /> class with the specified binding, error state, and binding context.</summary>
+        <summary>
+             Constructor for BindingCompleteEventArgs.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -88,11 +92,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="binding" Type="System.Windows.Forms.Binding" />
         <Parameter Name="state" Type="System.Windows.Forms.BindingCompleteState" />
@@ -104,7 +103,9 @@
         <param name="state">One of the <see cref="T:System.Windows.Forms.BindingCompleteState" /> values.</param>
         <param name="context">One of the <see cref="T:System.Windows.Forms.BindingCompleteContext" /> values.</param>
         <param name="errorText">The error text or exception message for errors that occurred during the binding.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.BindingCompleteEventArgs" /> class with the specified binding, error state and text, and binding context.</summary>
+        <summary>
+             Constructor for BindingCompleteEventArgs.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -127,11 +128,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="binding" Type="System.Windows.Forms.Binding" />
         <Parameter Name="state" Type="System.Windows.Forms.BindingCompleteState" />
@@ -145,7 +141,9 @@
         <param name="context">One of the <see cref="T:System.Windows.Forms.BindingCompleteContext" /> values.</param>
         <param name="errorText">The error text or exception message for errors that occurred during the binding.</param>
         <param name="exception">The <see cref="T:System.Exception" /> that occurred during the binding.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.BindingCompleteEventArgs" /> class with the specified binding, error state and text, binding context, and exception.</summary>
+        <summary>
+             Constructor for BindingCompleteEventArgs.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -184,7 +182,9 @@
         <param name="exception">The <see cref="T:System.Exception" /> that occurred during the binding.</param>
         <param name="cancel">
           <see langword="true" /> to cancel the binding and keep focus on the current control; <see langword="false" /> to allow focus to shift to another control.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.BindingCompleteEventArgs" /> class with the specified binding, error state and text, binding context, exception, and whether the binding should be cancelled.</summary>
+        <summary>
+             Constructor for BindingCompleteEventArgs.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -208,11 +208,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Binding</ReturnType>
       </ReturnValue>
@@ -252,11 +247,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.BindingCompleteContext</ReturnType>
       </ReturnValue>
@@ -289,11 +279,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.BindingCompleteState</ReturnType>
       </ReturnValue>
@@ -333,11 +318,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
@@ -377,11 +357,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Exception</ReturnType>
       </ReturnValue>

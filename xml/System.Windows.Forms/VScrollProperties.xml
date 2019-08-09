@@ -1,4 +1,4 @@
-﻿<Type Name="VScrollProperties" FullName="System.Windows.Forms.VScrollProperties">
+<Type Name="VScrollProperties" FullName="System.Windows.Forms.VScrollProperties">
   <TypeSignature Language="C#" Value="public class VScrollProperties : System.Windows.Forms.ScrollProperties" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit VScrollProperties extends System.Windows.Forms.ScrollProperties" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.VScrollProperties" />
@@ -15,7 +15,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides basic properties for the <see cref="T:System.Windows.Forms.VScrollBar" /> class.</summary>
+    <summary>
+             Basic Properties for VScroll.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -32,11 +34,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="container" Type="System.Windows.Forms.ScrollableControl" />
       </Parameters>

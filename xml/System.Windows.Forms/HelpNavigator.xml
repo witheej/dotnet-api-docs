@@ -1,4 +1,4 @@
-﻿<Type Name="HelpNavigator" FullName="System.Windows.Forms.HelpNavigator">
+<Type Name="HelpNavigator" FullName="System.Windows.Forms.HelpNavigator">
   <TypeSignature Language="C#" Value="public enum HelpNavigator" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HelpNavigator extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.HelpNavigator" />
@@ -15,7 +15,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies constants indicating which elements of the Help file to display.</summary>
+    <summary>
+             Represents the HTML 1.0 Help engine.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -58,7 +60,10 @@
       </ReturnValue>
       <MemberValue>-2147483643</MemberValue>
       <Docs>
-        <summary>The Help file opens to the index entry for the first letter of a specified topic.</summary>
+        <summary>
+             Displays the topic referenced by the topic referenced by the specified
+             Url. This field is constant.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Find">
@@ -80,7 +85,9 @@
       </ReturnValue>
       <MemberValue>-2147483644</MemberValue>
       <Docs>
-        <summary>The Help file opens to the search page.</summary>
+        <summary>
+             Displays the search page of a specified Url. This field is constant.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Index">
@@ -102,7 +109,9 @@
       </ReturnValue>
       <MemberValue>-2147483645</MemberValue>
       <Docs>
-        <summary>The Help file opens to the index.</summary>
+        <summary>
+             Displays the index of a specified Url. This field is constant.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="KeywordIndex">
@@ -124,7 +133,10 @@
       </ReturnValue>
       <MemberValue>-2147483642</MemberValue>
       <Docs>
-        <summary>The Help file opens to the topic with the specified index entry, if one exists; otherwise, the index entry closest to the specified keyword is displayed.</summary>
+        <summary>
+             Displays the topic referenced by the topic referenced by the specified
+             Url. This field is constant.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="TableOfContents">
@@ -146,7 +158,9 @@
       </ReturnValue>
       <MemberValue>-2147483646</MemberValue>
       <Docs>
-        <summary>The Help file opens to the table of contents.</summary>
+        <summary>
+             Displays the contents of the HTML 1.0 Help file. This field is constant.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Topic">
@@ -168,7 +182,10 @@
       </ReturnValue>
       <MemberValue>-2147483647</MemberValue>
       <Docs>
-        <summary>The Help file opens to a specified topic, if the topic exists.</summary>
+        <summary>
+             Displays the topic referenced by the topic referenced by the specified
+             Url. This field is constant.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="TopicId">
@@ -189,7 +206,9 @@
       </ReturnValue>
       <MemberValue>-2147483641</MemberValue>
       <Docs>
-        <summary>The Help file opens to a topic indicated by a numeric topic identifier.</summary>
+        <summary>
+             Displays the topic referenced by the topic ID This field is constant.
+            </summary>
       </Docs>
     </Member>
   </Members>

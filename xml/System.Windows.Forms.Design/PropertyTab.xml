@@ -1,4 +1,4 @@
-﻿<Type Name="PropertyTab" FullName="System.Windows.Forms.Design.PropertyTab">
+<Type Name="PropertyTab" FullName="System.Windows.Forms.Design.PropertyTab">
   <TypeSignature Language="C#" Value="public abstract class PropertyTab : System.ComponentModel.IExtenderProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit PropertyTab extends System.Object implements class System.ComponentModel.IExtenderProvider" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.PropertyTab" />
@@ -20,7 +20,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Provides a base class for property tabs.</summary>
+    <summary>
+             Provides a base class for property tabs.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -58,11 +60,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.PropertyTab" /> class.</summary>
@@ -87,7 +84,9 @@
         <ReturnType>System.Drawing.Bitmap</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the bitmap that is displayed for the <see cref="T:System.Windows.Forms.Design.PropertyTab" />.</summary>
+        <summary>
+             Gets or sets a bitmap to display in the property tab.
+            </summary>
         <value>The <see cref="T:System.Drawing.Bitmap" /> to display for the <see cref="T:System.Windows.Forms.Design.PropertyTab" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -117,7 +116,9 @@
       </Parameters>
       <Docs>
         <param name="extendee">The object to test.</param>
-        <summary>Gets a value indicating whether this <see cref="T:System.Windows.Forms.Design.PropertyTab" /> can display properties for the specified component.</summary>
+        <summary>
+             Gets a value indicating whether the specified object be can extended.
+            </summary>
         <returns>
           <see langword="true" /> if the object can be extended; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -137,19 +138,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the array of components the property tab is associated with.</summary>
+        <summary>
+             Gets or sets the array of components the property tab is associated with.
+            </summary>
         <value>The array of components the property tab is associated with.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -283,7 +278,9 @@
       </Parameters>
       <Docs>
         <param name="component">The component to retrieve the default property of.</param>
-        <summary>Gets the default property of the specified component.</summary>
+        <summary>
+             Gets the default property of the specified component.
+            </summary>
         <returns>A <see cref="T:System.ComponentModel.PropertyDescriptor" /> that represents the default property.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -311,11 +308,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.ComponentModel.PropertyDescriptorCollection</ReturnType>
       </ReturnValue>
@@ -324,7 +316,9 @@
       </Parameters>
       <Docs>
         <param name="component">The component to retrieve the properties of.</param>
-        <summary>Gets the properties of the specified component.</summary>
+        <summary>
+             Gets the properties of the specified component.
+            </summary>
         <returns>A <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> that contains the properties of the component.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -353,7 +347,10 @@
       <Docs>
         <param name="component">The component to retrieve properties from.</param>
         <param name="attributes">An array of type <see cref="T:System.Attribute" /> that indicates the attributes of the properties to retrieve.</param>
-        <summary>Gets the properties of the specified component that match the specified attributes.</summary>
+        <summary>
+             Gets the properties of the specified component which match the specified
+             attributes.
+            </summary>
         <returns>A <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> that contains the properties.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -372,11 +369,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.ComponentModel.PropertyDescriptorCollection</ReturnType>
       </ReturnValue>
@@ -389,7 +381,9 @@
         <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that indicates the context to retrieve properties from.</param>
         <param name="component">The component to retrieve properties from.</param>
         <param name="attributes">An array of type <see cref="T:System.Attribute" /> that indicates the attributes of the properties to retrieve.</param>
-        <summary>Gets the properties of the specified component that match the specified attributes and context.</summary>
+        <summary>
+             Gets the properties of the specified component.
+            </summary>
         <returns>A <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> that contains the properties matching the specified context and attributes.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -408,16 +402,14 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the Help keyword that is to be associated with this tab.</summary>
+        <summary>
+             Gets or sets the help keyword that is to be associated with this tab. This
+             defaults to the tab name.
+            </summary>
         <value>The Help keyword to be associated with this tab.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -447,7 +439,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name for the property tab.</summary>
+        <summary>
+             Gets or sets the name for the property tab.
+            </summary>
         <value>The name for the property tab.</value>
         <remarks>To be added.</remarks>
       </Docs>

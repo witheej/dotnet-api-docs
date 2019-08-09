@@ -1,4 +1,4 @@
-﻿<Type Name="ToolStripGripRenderEventArgs" FullName="System.Windows.Forms.ToolStripGripRenderEventArgs">
+<Type Name="ToolStripGripRenderEventArgs" FullName="System.Windows.Forms.ToolStripGripRenderEventArgs">
   <TypeSignature Language="C#" Value="public class ToolStripGripRenderEventArgs : System.Windows.Forms.ToolStripRenderEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolStripGripRenderEventArgs extends System.Windows.Forms.ToolStripRenderEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripGripRenderEventArgs" />
@@ -43,11 +43,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="g" Type="System.Drawing.Graphics" />
         <Parameter Name="toolStrip" Type="System.Windows.Forms.ToolStrip" />
@@ -55,7 +50,9 @@
       <Docs>
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> object used to paint the move handle.</param>
         <param name="toolStrip">The <see cref="T:System.Windows.Forms.ToolStrip" /> the move handle is to be drawn on.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripGripRenderEventArgs" /> class.</summary>
+        <summary>
+             This class represents all the information to render the toolStrip
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -76,7 +73,9 @@
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the rectangle representing the area in which to paint the move handle.</summary>
+        <summary>
+             The graphics object to draw with
+            </summary>
         <value>A <see cref="T:System.Drawing.Rectangle" /> that represents the area in which to paint the move handle.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -110,7 +109,9 @@
         <ReturnType>System.Windows.Forms.ToolStripGripDisplayStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the style that indicates whether the move handle is displayed vertically or horizontally.</summary>
+        <summary>
+             Vertical or horizontal
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.ToolStripGripDisplayStyle" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -144,7 +145,9 @@
         <ReturnType>System.Windows.Forms.ToolStripGripStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the style that indicates whether or not the move handle is visible.</summary>
+        <summary>
+             Visible or hidden
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.ToolStripGripDisplayStyle" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -1,4 +1,4 @@
-﻿<Type Name="AxHost+State" FullName="System.Windows.Forms.AxHost+State">
+<Type Name="AxHost+State" FullName="System.Windows.Forms.AxHost+State">
   <TypeSignature Language="C#" Value="public class AxHost.State : System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi serializable beforefieldinit AxHost/State extends System.Object implements class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.AxHost.State" />
@@ -28,7 +28,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Encapsulates the persisted state of an ActiveX control.</summary>
+    <summary>
+             The class which encapsulates the persisted state of the underlying activeX control
+             An instance of this class my be obtained either by calling getOcxState on an
+             AxHost object, or by reading in from a stream.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -65,8 +69,8 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="info" Type="System.Runtime.Serialization.SerializationInfo" />
+        <Parameter Name="context" Type="System.Runtime.Serialization.StreamingContext" />
       </Parameters>
       <Docs>
         <param name="info">A <see cref="T:System.Runtime.Serialization.SerializationInfo" /> value.</param>
@@ -147,7 +151,9 @@
       <Docs>
         <param name="si">The <see cref="T:System.Runtime.Serialization.SerializationInfo" /> to populate with data.</param>
         <param name="context">The destination for this serialization.</param>
-        <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> with the data needed to serialize the target object.</summary>
+        <summary>
+             ISerializable private implementation
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

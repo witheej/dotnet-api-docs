@@ -1,4 +1,4 @@
-﻿<Type Name="DataGridViewElement" FullName="System.Windows.Forms.DataGridViewElement">
+<Type Name="DataGridViewElement" FullName="System.Windows.Forms.DataGridViewElement">
   <TypeSignature Language="C#" Value="public class DataGridViewElement" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewElement extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewElement" />
@@ -15,7 +15,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides the base class for elements of a <see cref="T:System.Windows.Forms.DataGridView" /> control.</summary>
+    <summary>
+             Identifies an element in the dataGridView (base class for TCell, TBand, TRow, TColumn.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -43,7 +45,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewElement" /> class.</summary>
+        <summary>
+             Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewElement" /> class.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -77,9 +81,6 @@
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -319,10 +320,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

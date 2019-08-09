@@ -1,4 +1,4 @@
-﻿<Type Name="SizeGripStyle" FullName="System.Windows.Forms.SizeGripStyle">
+<Type Name="SizeGripStyle" FullName="System.Windows.Forms.SizeGripStyle">
   <TypeSignature Language="C#" Value="public enum SizeGripStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SizeGripStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.SizeGripStyle" />
@@ -15,7 +15,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the style of the sizing grip on a <see cref="T:System.Windows.Forms.Form" />.</summary>
+    <summary>
+             Specifies the style of the sizing grip on a <see cref="T:System.Windows.Forms.Form" />.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -46,7 +48,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>The sizing grip is automatically displayed when needed.</summary>
+        <summary>
+             The size grip is automatically display when needed.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Hide">
@@ -68,7 +72,9 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>The sizing grip is hidden.</summary>
+        <summary>
+             The sizing grip is hidden.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Show">
@@ -90,7 +96,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The sizing grip is always shown on the form.</summary>
+        <summary>
+             The sizing grip is always shown on the form.
+            </summary>
       </Docs>
     </Member>
   </Members>

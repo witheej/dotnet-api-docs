@@ -1,4 +1,4 @@
-﻿<Type Name="MonthCalendar+HitTestInfo" FullName="System.Windows.Forms.MonthCalendar+HitTestInfo">
+<Type Name="MonthCalendar+HitTestInfo" FullName="System.Windows.Forms.MonthCalendar+HitTestInfo">
   <TypeSignature Language="C#" Value="public sealed class MonthCalendar.HitTestInfo" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed beforefieldinit MonthCalendar/HitTestInfo extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MonthCalendar.HitTestInfo" />
@@ -16,7 +16,11 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Contains information about an area of a <see cref="T:System.Windows.Forms.MonthCalendar" /> control. This class cannot be inherited.</summary>
+    <summary>
+             HitTestInfo objects are returned by MonthCalendar in response to the hitTest method.
+             HitTestInfo is for informational purposes only; the user should not construct these objects, and
+             cannot modify any of the members.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -46,16 +50,14 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MonthCalendar+HitArea</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Forms.MonthCalendar.HitArea" /> that represents the area of the calendar evaluated by the hit-test operation.</summary>
+        <summary>
+             Output member that receives an enumeration value from System.Windows.Forms.MonthCalendar.HitArea
+             representing the result of the hit-test operation.
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.MonthCalendar.HitArea" /> values. The default is <see cref="F:System.Windows.Forms.MonthCalendar.HitArea.Nowhere" />.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Windows.Forms.MonthCalendar.HitArea" />
@@ -75,16 +77,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Point</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the point that was hit-tested.</summary>
+        <summary>
+             The point that was hit-tested
+            </summary>
         <value>A <see cref="T:System.Drawing.Point" /> containing the <see cref="P:System.Drawing.Point.X" /> and <see cref="P:System.Drawing.Point.Y" /> values tested.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Drawing.Point" />
@@ -104,16 +103,14 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.DateTime</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the time information specific to the location that was hit-tested.</summary>
+        <summary>
+             The time information specific to the location that was hit-tested.  This value
+             will only be valid at certain values of hitArea.
+            </summary>
         <value>The time information specific to the location that was hit-tested.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

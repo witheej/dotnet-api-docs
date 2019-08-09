@@ -1,4 +1,4 @@
-﻿<Type Name="ToolStripButton" FullName="System.Windows.Forms.ToolStripButton">
+<Type Name="ToolStripButton" FullName="System.Windows.Forms.ToolStripButton">
   <TypeSignature Language="C#" Value="public class ToolStripButton : System.Windows.Forms.ToolStripItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolStripButton extends System.Windows.Forms.ToolStripItem" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripButton" />
@@ -45,6 +45,7 @@
     <altmember cref="T:System.Windows.Forms.MenuStrip" />
     <related type="Article" href="https://msdn.microsoft.com/library/e361bf98-eed8-4ed3-9dfb-5a2e865e3ce6">MenuStrip Control (Windows Forms)</related>
     <related type="Article" href="https://msdn.microsoft.com/library/e5ef455a-e049-429c-8005-30c93132fb79">ToolStrip Control (Windows Forms)</related>
+    <devdoc />
   </Docs>
   <Members>
     <MemberGroup MemberName=".ctor">
@@ -70,7 +71,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripButton" /> class.</summary>
+        <summary>
+             Summary of ToolStripButton.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -287,7 +290,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="T:System.Windows.Forms.ToolStripButton" /> can be selected.</summary>
+        <summary>
+             Summary of CanSelect.
+            </summary>
         <value>
           <see langword="true" /> if the <see cref="T:System.Windows.Forms.ToolStripButton" /> can be selected; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -315,7 +320,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the <see cref="T:System.Windows.Forms.ToolStripButton" /> is pressed or not pressed.</summary>
+        <summary>
+             Gets or sets a value indicating whether the item is checked.
+            </summary>
         <value>
           <see langword="true" /> if the <see cref="T:System.Windows.Forms.ToolStripButton" /> is pressed in or not pressed in; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
@@ -349,7 +356,11 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.ToolStripButton.Checked" /> property changes.</summary>
+        <summary>
+             Occurs when the
+             value of the <see cref="P:System.Windows.Forms.CheckBox.Checked" />
+             property changes.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -385,12 +396,6 @@
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -431,15 +436,15 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.CheckState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the <see cref="T:System.Windows.Forms.ToolStripButton" /> is in the pressed or not pressed state by default, or is in an indeterminate state.</summary>
+        <summary>
+             Gets
+             or sets a value indicating whether the check box is checked.
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.CheckState" /> values. The default is <see langword="Unchecked" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -469,7 +474,11 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.ToolStripButton.CheckState" /> property changes.</summary>
+        <summary>
+             Occurs when the
+             value of the <see cref="P:System.Windows.Forms.CheckBox.CheckState" />
+             property changes.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -505,7 +514,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -599,7 +608,10 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripButton.CheckedChanged" /> event.</summary>
+        <summary>
+             Raises the <see cref="E:System.Windows.Forms.ToolStripMenuItem.CheckedChanged" />
+             event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -636,7 +648,9 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripButton.CheckStateChanged" /> event.</summary>
+        <summary>
+             Raises the <see cref="E:System.Windows.Forms.ToolStripMenuItem.CheckStateChanged" /> event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -710,7 +724,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Paint" /> event.</summary>
+        <summary>
+             Inheriting classes should override this method to handle this event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

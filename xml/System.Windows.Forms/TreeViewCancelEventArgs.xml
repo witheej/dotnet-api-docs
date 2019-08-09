@@ -1,4 +1,4 @@
-﻿<Type Name="TreeViewCancelEventArgs" FullName="System.Windows.Forms.TreeViewCancelEventArgs">
+<Type Name="TreeViewCancelEventArgs" FullName="System.Windows.Forms.TreeViewCancelEventArgs">
   <TypeSignature Language="C#" Value="public class TreeViewCancelEventArgs : System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TreeViewCancelEventArgs extends System.ComponentModel.CancelEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TreeViewCancelEventArgs" />
@@ -16,7 +16,12 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.Forms.TreeView.BeforeCheck" />, <see cref="E:System.Windows.Forms.TreeView.BeforeCollapse" />, <see cref="E:System.Windows.Forms.TreeView.BeforeExpand" />, and <see cref="E:System.Windows.Forms.TreeView.BeforeSelect" /> events of a <see cref="T:System.Windows.Forms.TreeView" /> control.</summary>
+    <summary>
+             Provides data for the <see cref="M:System.Windows.Forms.TreeView.OnBeforeCheck(System.Windows.Forms.TreeViewCancelEventArgs)" />,
+             <see cref="M:System.Windows.Forms.TreeView.OnBeforeCollapse(System.Windows.Forms.TreeViewCancelEventArgs)" />,
+             <see cref="M:System.Windows.Forms.TreeView.OnBeforeExpand(System.Windows.Forms.TreeViewCancelEventArgs)" />,
+             or <see cref="M:System.Windows.Forms.TreeView.OnBeforeSelect(System.Windows.Forms.TreeViewCancelEventArgs)" /> event.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -55,11 +60,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="node" Type="System.Windows.Forms.TreeNode" />
         <Parameter Name="cancel" Type="System.Boolean" />
@@ -88,11 +88,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TreeViewAction</ReturnType>
       </ReturnValue>
@@ -129,11 +124,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TreeNode</ReturnType>
       </ReturnValue>

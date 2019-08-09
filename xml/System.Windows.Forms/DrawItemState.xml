@@ -1,4 +1,4 @@
-﻿<Type Name="DrawItemState" FullName="System.Windows.Forms.DrawItemState">
+<Type Name="DrawItemState" FullName="System.Windows.Forms.DrawItemState">
   <TypeSignature Language="C#" Value="public enum DrawItemState" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DrawItemState extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DrawItemState" />
@@ -20,7 +20,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the state of an item that is being drawn.</summary>
+    <summary>
+             Specifies the state of an item that is being drawn.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -60,7 +62,9 @@
       </ReturnValue>
       <MemberValue>8</MemberValue>
       <Docs>
-        <summary>The item is checked. Only menu controls use this value.</summary>
+        <summary>
+             The item is checked. Only menu controls use this value.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="ComboBoxEdit">
@@ -82,7 +86,9 @@
       </ReturnValue>
       <MemberValue>4096</MemberValue>
       <Docs>
-        <summary>The item is the editing portion of a <see cref="T:System.Windows.Forms.ComboBox" />.</summary>
+        <summary>
+             The item is the editing portion of a <see cref="T:System.Windows.Forms.ComboBox" /> .
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Default">
@@ -104,7 +110,9 @@
       </ReturnValue>
       <MemberValue>32</MemberValue>
       <Docs>
-        <summary>The item is in its default visual state.</summary>
+        <summary>
+             The item is the default item of the control.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Disabled">
@@ -126,7 +134,9 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>The item is unavailable.</summary>
+        <summary>
+             The item is disabled.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Focus">
@@ -148,7 +158,9 @@
       </ReturnValue>
       <MemberValue>16</MemberValue>
       <Docs>
-        <summary>The item has focus.</summary>
+        <summary>
+             The item has focus.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Grayed">
@@ -170,7 +182,9 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>The item is grayed. Only menu controls use this value.</summary>
+        <summary>
+             The item is grayed. Only menu controls use this value.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="HotLight">
@@ -192,7 +206,9 @@
       </ReturnValue>
       <MemberValue>64</MemberValue>
       <Docs>
-        <summary>The item is being hot-tracked, that is, the item is highlighted as the mouse pointer passes over it.</summary>
+        <summary>
+             The item is being hot-tracked.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Inactive">
@@ -214,7 +230,9 @@
       </ReturnValue>
       <MemberValue>128</MemberValue>
       <Docs>
-        <summary>The item is inactive.</summary>
+        <summary>
+             The item is inactive.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="NoAccelerator">
@@ -236,7 +254,9 @@
       </ReturnValue>
       <MemberValue>256</MemberValue>
       <Docs>
-        <summary>The item displays without a keyboard accelerator.</summary>
+        <summary>
+             The item displays without a keyboard accelarator.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="NoFocusRect">
@@ -258,7 +278,9 @@
       </ReturnValue>
       <MemberValue>512</MemberValue>
       <Docs>
-        <summary>The item displays without the visual cue that indicates it has focus.</summary>
+        <summary>
+             The item displays without the visual cue that indicates it has the focus.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -280,7 +302,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>The item currently has no state.</summary>
+        <summary>
+             The item is in its default visual state.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Selected">
@@ -302,7 +326,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The item is selected.</summary>
+        <summary>
+             The item is selected.
+            </summary>
       </Docs>
     </Member>
   </Members>

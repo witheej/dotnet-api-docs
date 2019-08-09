@@ -1,4 +1,4 @@
-﻿<Type Name="DataGridViewColumnCollection" FullName="System.Windows.Forms.DataGridViewColumnCollection">
+<Type Name="DataGridViewColumnCollection" FullName="System.Windows.Forms.DataGridViewColumnCollection">
   <TypeSignature Language="C#" Value="public class DataGridViewColumnCollection : System.Windows.Forms.BaseCollection, System.Collections.IList" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewColumnCollection extends System.Windows.Forms.BaseCollection implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewColumnCollection" />
@@ -30,7 +30,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a collection of <see cref="T:System.Windows.Forms.DataGridViewColumn" /> objects in a <see cref="T:System.Windows.Forms.DataGridView" /> control.</summary>
+    <summary>
+             Represents a collection of <see cref="T:System.Windows.Forms.DataGridViewColumn" /> objects in the <see cref="T:System.Windows.Forms.DataGrid" />
+             control.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -104,7 +107,9 @@
       </Parameters>
       <Docs>
         <param name="dataGridViewColumn">The <see cref="T:System.Windows.Forms.DataGridViewColumn" /> to add.</param>
-        <summary>Adds the given column to the collection.</summary>
+        <summary>
+             Adds a <see cref="T:System.Windows.Forms.DataGridViewColumn" /> to this collection.
+            </summary>
         <returns>The index of the column.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -206,7 +211,9 @@
       <Docs>
         <param name="columnName">The name by which the column will be referred.</param>
         <param name="headerText">The text for the column's header.</param>
-        <summary>Adds a <see cref="T:System.Windows.Forms.DataGridViewTextBoxColumn" /> with the given column name and column header text to the collection.</summary>
+        <summary>
+             Adds a <see cref="T:System.Windows.Forms.DataGridViewColumn" /> to this collection.
+            </summary>
         <returns>The index of the column.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -274,7 +281,7 @@
       <Parameters>
         <Parameter Name="dataGridViewColumns" Type="System.Windows.Forms.DataGridViewColumn[]">
           <Attributes>
-            <Attribute FrameworkAlternate="netcore-3.0">
+            <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -536,7 +543,9 @@
       </Parameters>
       <Docs>
         <param name="dataGridViewColumn">The <see cref="T:System.Windows.Forms.DataGridViewColumn" /> to look for.</param>
-        <summary>Determines whether the collection contains the given column.</summary>
+        <summary>
+             Checks to see if a DataGridViewColumn is contained in this collection.
+            </summary>
         <returns>
           <see langword="true" /> if the given column is in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -586,11 +595,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGridView</ReturnType>
       </ReturnValue>
@@ -978,7 +982,9 @@
       <Docs>
         <param name="columnIndex">The zero-based index at which to insert the given column.</param>
         <param name="dataGridViewColumn">The <see cref="T:System.Windows.Forms.DataGridViewColumn" /> to insert.</param>
-        <summary>Inserts a column at the given index in the collection.</summary>
+        <summary>
+             Inserts a <see cref="T:System.Windows.Forms.DataGridViewColumn" /> in this collection.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1077,7 +1083,9 @@
       </Parameters>
       <Docs>
         <param name="index">The zero-based index of the column to get or set.</param>
-        <summary>Gets or sets the column at the given index in the collection.</summary>
+        <summary>
+             Retrieves the DataGridViewColumn with the specified index.
+            </summary>
         <value>The <see cref="T:System.Windows.Forms.DataGridViewColumn" /> at the given index.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">
@@ -1107,7 +1115,9 @@
       </Parameters>
       <Docs>
         <param name="columnName">The name of the column to get or set.</param>
-        <summary>Gets or sets the column of the given name in the collection.</summary>
+        <summary>
+             Retrieves the DataGridViewColumn with the Name provided.
+            </summary>
         <value>The <see cref="T:System.Windows.Forms.DataGridViewColumn" /> identified by the <paramref name="columnName" /> parameter.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -1129,11 +1139,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.ArrayList</ReturnType>
       </ReturnValue>
@@ -1706,11 +1711,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -2022,11 +2022,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -2139,11 +2134,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>

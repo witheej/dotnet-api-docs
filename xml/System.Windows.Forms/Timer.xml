@@ -1,4 +1,4 @@
-﻿<Type Name="Timer" FullName="System.Windows.Forms.Timer">
+<Type Name="Timer" FullName="System.Windows.Forms.Timer">
   <TypeSignature Language="C#" Value="public class Timer : System.ComponentModel.Component" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Timer extends System.ComponentModel.Component" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Timer" />
@@ -27,7 +27,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Implements a timer that raises an event at user-defined intervals. This timer is optimized for use in Windows Forms applications and must be used in a window.</summary>
+    <summary>
+             Implements a Windows-based timer that raises an event at user-defined intervals.
+             This timer is optimized for use in Win Forms applications and must be used in a window.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -78,7 +81,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Timer" /> class.</summary>
+        <summary>
+             Initializes a new instance of the <see cref="T:System.Windows.Forms.Timer" /> class.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -111,7 +116,9 @@
       </Parameters>
       <Docs>
         <param name="container">An <see cref="T:System.ComponentModel.IContainer" /> that represents the container for the timer.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Timer" /> class together with the specified container.</summary>
+        <summary>
+             Initializes a new instance of the <see cref="T:System.Windows.Forms.Timer" /> class with the specified container.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -149,7 +156,9 @@
       <Docs>
         <param name="disposing">
           <see langword="true" /> to release both managed and unmanaged resources. <see langword="false" /> to release only the unmanaged resources.</param>
-        <summary>Disposes of the resources, other than memory, used by the timer.</summary>
+        <summary>
+             Disposes of the resources (other than memory) used by the timer.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -186,7 +195,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets whether the timer is running.</summary>
+        <summary>
+             Indicates whether the timer is running.
+            </summary>
         <value>
           <see langword="true" /> if the timer is currently enabled; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
@@ -228,15 +239,14 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(100)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the time, in milliseconds, before the <see cref="E:System.Windows.Forms.Timer.Tick" /> event is raised relative to the last occurrence of the <see cref="E:System.Windows.Forms.Timer.Tick" /> event.</summary>
+        <summary>
+             Indicates the time, in milliseconds, between timer ticks.
+            </summary>
         <value>An <see cref="T:System.Int32" /> specifying the number of milliseconds before the <see cref="E:System.Windows.Forms.Timer.Tick" /> event is raised relative to the last occurrence of the <see cref="E:System.Windows.Forms.Timer.Tick" /> event. The value cannot be less than one.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -279,7 +289,9 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data. This is always <see cref="F:System.EventArgs.Empty" />.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Timer.Tick" /> event.</summary>
+        <summary>
+             Raises the <see cref="E:System.Windows.Forms.Timer.Tick" /> event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -309,17 +321,14 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Starts the timer.</summary>
+        <summary>
+             Starts the timer.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -354,17 +363,14 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Stops the timer.</summary>
+        <summary>
+             Stops the timer.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -416,12 +422,6 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ComponentModel.StringConverter))</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -450,7 +450,9 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the specified timer interval has elapsed and the timer is enabled.</summary>
+        <summary>
+             Occurs when the specified timer interval has elapsed and the timer is enabled.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

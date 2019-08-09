@@ -1,4 +1,4 @@
-﻿<Type Name="GridItem" FullName="System.Windows.Forms.GridItem">
+<Type Name="GridItem" FullName="System.Windows.Forms.GridItem">
   <TypeSignature Language="C#" Value="public abstract class GridItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit GridItem extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.GridItem" />
@@ -16,7 +16,14 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Implements one row in a <see cref="T:System.Windows.Forms.PropertyGrid" />.</summary>
+    <summary>
+             Representaion of one row item in the PropertyGrid. These items represent the
+             hierarchy of the grid's "tree-like" view and can be used to get information about
+             the grid's state and contents.
+             These objects should not be cached because they represent a snapshot of the
+             PropertyGrid's state and may be disposed by grid activity. The PropertyGrid often
+             recretates these objects internally even if it doesn't appear to change to the user.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -42,11 +49,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.GridItem" /> class.</summary>
@@ -71,7 +73,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets a value indicating whether the specified property is expandable to show nested properties.</summary>
+        <summary>
+             Retreives whether the given property is expandable.
+            </summary>
         <value>
           <see langword="true" /> if the specified property can be expanded; otherwise, <see langword="false" />. The default is false.</value>
         <remarks>
@@ -102,7 +106,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets or sets a value indicating whether the <see cref="T:System.Windows.Forms.GridItem" /> is in an expanded state.</summary>
+        <summary>
+             Retreives or sets whether the GridItem is in an expanded state.
+            </summary>
         <value>
           <see langword="false" /> in all cases.</value>
         <remarks>To be added.</remarks>
@@ -127,7 +133,9 @@
         <ReturnType>System.Windows.Forms.GridItemCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets the collection of <see cref="T:System.Windows.Forms.GridItem" /> objects, if any, associated as a child of this <see cref="T:System.Windows.Forms.GridItem" />.</summary>
+        <summary>
+             Retrieves the child GridItems, if any, of this GridItem
+            </summary>
         <value>The collection of <see cref="T:System.Windows.Forms.GridItem" /> objects.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -150,7 +158,9 @@
         <ReturnType>System.Windows.Forms.GridItemType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets the type of this <see cref="T:System.Windows.Forms.GridItem" />.</summary>
+        <summary>
+             Retrieves type of this GridItem, as a value from System.Windows.Forms.GridItemType
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.GridItemType" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -181,7 +191,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets the text of this <see cref="T:System.Windows.Forms.GridItem" />.</summary>
+        <summary>
+             Retrieves the text label of this GridItem. This may be different from the actual
+             PropertyName. For GridItemType.Property GridItems, retrieve the PropertyDescriptor
+             and check its Name property.
+            </summary>
         <value>A <see cref="T:System.String" /> representing the text associated with this <see cref="T:System.Windows.Forms.GridItem" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -212,7 +226,9 @@
         <ReturnType>System.Windows.Forms.GridItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets the parent <see cref="T:System.Windows.Forms.GridItem" /> of this <see cref="T:System.Windows.Forms.GridItem" />, if any.</summary>
+        <summary>
+             Retrieves parent GridItem of this GridItem, if any.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.GridItem" /> representing the parent of the <see cref="T:System.Windows.Forms.GridItem" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -243,7 +259,12 @@
         <ReturnType>System.ComponentModel.PropertyDescriptor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets the <see cref="T:System.ComponentModel.PropertyDescriptor" /> that is associated with this <see cref="T:System.Windows.Forms.GridItem" />.</summary>
+        <summary>
+             If this item is a GridItemType.Property GridItem, this retreives the
+             System.ComponentModel.PropertyDescriptor that is associated with this GridItem.
+             This can be used to retrieve infomration such as property Type, Name, or
+             TypeConverter.
+            </summary>
         <value>The <see cref="T:System.ComponentModel.PropertyDescriptor" /> associated with this <see cref="T:System.Windows.Forms.GridItem" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -277,7 +298,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>When overridden in a derived class, selects this <see cref="T:System.Windows.Forms.GridItem" /> in the <see cref="T:System.Windows.Forms.PropertyGrid" />.</summary>
+        <summary>
+             Attempts to select this GridItem in the PropertyGrid.
+            </summary>
         <returns>
           <see langword="true" /> if the selection is successful; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -309,12 +332,6 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ComponentModel.StringConverter))</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -343,9 +360,13 @@
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>When overridden in a derived class, gets the current value of this <see cref="T:System.Windows.Forms.GridItem" />.</summary>
+        <summary>
+             Retrieves the current Value of this grid Item. This may be null.
+            </summary>
         <value>The current value of this <see cref="T:System.Windows.Forms.GridItem" />. This can be <see langword="null" />.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+             We don't do set because of the value class semantics, etc.
+            </remarks>
       </Docs>
     </Member>
   </Members>

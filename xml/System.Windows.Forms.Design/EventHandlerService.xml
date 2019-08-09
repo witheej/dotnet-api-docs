@@ -1,4 +1,4 @@
-﻿<Type Name="EventHandlerService" FullName="System.Windows.Forms.Design.EventHandlerService">
+<Type Name="EventHandlerService" FullName="System.Windows.Forms.Design.EventHandlerService">
   <TypeSignature Language="C#" Value="public sealed class EventHandlerService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit EventHandlerService extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.EventHandlerService" />
@@ -20,7 +20,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a systematic way to manage event handlers for the current document.</summary>
+    <summary>
+             Provides a systematic way to manage event handlers for the current document.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -59,17 +61,14 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="focusWnd" Type="System.Windows.Forms.Control" />
       </Parameters>
       <Docs>
         <param name="focusWnd">The <see cref="T:System.Windows.Forms.Control" /> which is being designed.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.EventHandlerService" /> class.</summary>
+        <summary>
+             Initializes a new instance of the EventHandlerService class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -98,7 +97,9 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Fires an OnEventHandlerChanged event.</summary>
+        <summary>
+             Fires an OnEventHandlerChanged event.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -123,11 +124,6 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Control</ReturnType>
       </ReturnValue>
@@ -166,7 +162,9 @@
       </Parameters>
       <Docs>
         <param name="handlerType">The type of the handler to get.</param>
-        <summary>Gets the currently active event handler of the specified type.</summary>
+        <summary>
+             Gets the currently active event handler of the specified type.
+            </summary>
         <returns>An instance of the handler, or <see langword="null" /> if there is no handler of the requested type.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -207,7 +205,9 @@
       </Parameters>
       <Docs>
         <param name="handler">The handler to remove from the stack.</param>
-        <summary>Pops the given handler off of the stack.</summary>
+        <summary>
+             Pops the given handler off of the stack.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -247,7 +247,9 @@
       </Parameters>
       <Docs>
         <param name="handler">The handler to add to the stack.</param>
-        <summary>Pushes a new event handler on the stack.</summary>
+        <summary>
+             Pushes a new event handler on the stack.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

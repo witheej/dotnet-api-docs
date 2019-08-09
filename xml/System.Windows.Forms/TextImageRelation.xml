@@ -1,4 +1,4 @@
-﻿<Type Name="TextImageRelation" FullName="System.Windows.Forms.TextImageRelation">
+<Type Name="TextImageRelation" FullName="System.Windows.Forms.TextImageRelation">
   <TypeSignature Language="C#" Value="public enum TextImageRelation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TextImageRelation extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TextImageRelation" />
@@ -14,7 +14,11 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the position of the text and image relative to each other on a control.</summary>
+    <summary>
+             Defined in such a way that you can cast the relation to an AnchorStyle and
+             the direction of the AnchorStyle points to where the image goes.
+             (e.g., (AnchorStyle)ImageBeforeText -&gt; Left))
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>

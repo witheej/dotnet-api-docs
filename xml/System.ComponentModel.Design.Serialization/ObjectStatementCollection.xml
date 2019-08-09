@@ -1,4 +1,4 @@
-﻿<Type Name="ObjectStatementCollection" FullName="System.ComponentModel.Design.Serialization.ObjectStatementCollection">
+<Type Name="ObjectStatementCollection" FullName="System.ComponentModel.Design.Serialization.ObjectStatementCollection">
   <TypeSignature Language="C#" Value="public sealed class ObjectStatementCollection : System.Collections.IEnumerable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ObjectStatementCollection extends System.Object implements class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.ObjectStatementCollection" />
@@ -23,7 +23,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Holds a table of statements that is offered by the <see cref="T:System.ComponentModel.Design.Serialization.StatementContext" />. This class cannot be inherited.</summary>
+    <summary>
+             This is a table of statements that is offered by the statement context.
+            </summary>
     <remarks>To be added.</remarks>
     <altmember cref="T:System.ComponentModel.Design.Serialization.StatementContext" />
     <altmember cref="T:System.ComponentModel.Design.Serialization.CodeDomSerializer" />
@@ -54,7 +56,9 @@
       </Parameters>
       <Docs>
         <param name="statementOwner">The owner of the statement collection.</param>
-        <summary>Determines whether the table contains the given statement owner.</summary>
+        <summary>
+             Returns true if the given statement owner is in the table.
+            </summary>
         <returns>
           <see langword="true" /> if <paramref name="statementOwner" /> is in the table; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -86,7 +90,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an <see cref="T:System.Collections.IEnumerator" /> for the <see cref="T:System.ComponentModel.Design.Serialization.ObjectStatementCollection" />.</summary>
+        <summary>
+             Returns an enumerator for this table.  The keys of the enumerator are statement owner objects and the values are instances of CodeStatementCollection.
+            </summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> for the <see cref="T:System.ComponentModel.Design.Serialization.ObjectStatementCollection" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -116,7 +122,10 @@
       </Parameters>
       <Docs>
         <param name="statementOwner">The owner of the statement collection.</param>
-        <summary>Gets the statement collection for the given owner.</summary>
+        <summary>
+             Indexer.  This will return the statement collection for the given owner.
+             It will return null only if the owner is not in the table.
+            </summary>
         <value>The statement collection for <paramref name="statementOwner" />, or <see langword="null" /> if <paramref name="statementOwner" /> is not in the table.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -159,7 +168,9 @@
       </Parameters>
       <Docs>
         <param name="statementOwners">A collection of statement owners to add to the table.</param>
-        <summary>Populates the statement table with a collection of statement owners.</summary>
+        <summary>
+             This method populates the statement table with a collection of statement owners. The creator of the statement context should do this if it wishes statement tables to be used to store values for certain objects.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -199,7 +210,9 @@
       </Parameters>
       <Docs>
         <param name="owner">The statement owner to add to the table.</param>
-        <summary>Populates the statement table with a statement owner.</summary>
+        <summary>
+             This method populates the statement table with a collection of statement owners. The creator of the statement context should do this if it wishes statement tables to be used to store values for certain objects.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -233,17 +246,14 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.IEnumerator</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>For a description of this member, see the <see cref="M:System.Collections.IEnumerable.GetEnumerator" /> method.</summary>
+        <summary>
+             Returns an enumerator for this table.  The value is a DictionaryEntry containing the statement owner and the statement collection.
+            </summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> that can be used to iterate through the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

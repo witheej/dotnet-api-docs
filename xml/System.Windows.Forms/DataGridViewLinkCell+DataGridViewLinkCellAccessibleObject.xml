@@ -1,4 +1,4 @@
-﻿<Type Name="DataGridViewLinkCell+DataGridViewLinkCellAccessibleObject" FullName="System.Windows.Forms.DataGridViewLinkCell+DataGridViewLinkCellAccessibleObject">
+<Type Name="DataGridViewLinkCell+DataGridViewLinkCellAccessibleObject" FullName="System.Windows.Forms.DataGridViewLinkCell+DataGridViewLinkCellAccessibleObject">
   <TypeSignature Language="C#" Value="protected class DataGridViewLinkCell.DataGridViewLinkCellAccessibleObject : System.Windows.Forms.DataGridViewCell.DataGridViewCellAccessibleObject" />
   <TypeSignature Language="ILAsm" Value=".class nested protected auto ansi beforefieldinit DataGridViewLinkCell/DataGridViewLinkCellAccessibleObject extends System.Windows.Forms.DataGridViewCell/DataGridViewCellAccessibleObject" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewLinkCell.DataGridViewLinkCellAccessibleObject" />
@@ -59,11 +59,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="owner" Type="System.Windows.Forms.DataGridViewCell" />
       </Parameters>

@@ -1,4 +1,4 @@
-﻿<Type Name="CheckedListBox" FullName="System.Windows.Forms.CheckedListBox">
+<Type Name="CheckedListBox" FullName="System.Windows.Forms.CheckedListBox">
   <TypeSignature Language="C#" Value="public class CheckedListBox : System.Windows.Forms.ListBox" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi CheckedListBox extends System.Windows.Forms.ListBox" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.CheckedListBox" />
@@ -27,7 +27,12 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Displays a <see cref="T:System.Windows.Forms.ListBox" /> in which a check box is displayed to the left of each item.</summary>
+    <summary>
+            
+              Displays a list with a checkbox to the left
+            
+              of each item.
+             </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -109,7 +114,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.CheckedListBox" /> class.</summary>
+        <summary>
+             Creates a new CheckedListBox for the user.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -146,7 +153,9 @@
         <ReturnType>System.Windows.Forms.CheckedListBox+CheckedIndexCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Collection of checked indexes in this <see cref="T:System.Windows.Forms.CheckedListBox" />.</summary>
+        <summary>
+             Collection of checked indices in this CheckedListBox.
+            </summary>
         <value>The <see cref="T:System.Windows.Forms.CheckedListBox.CheckedIndexCollection" /> collection for the <see cref="T:System.Windows.Forms.CheckedListBox" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -196,7 +205,9 @@
         <ReturnType>System.Windows.Forms.CheckedListBox+CheckedItemCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Collection of checked items in this <see cref="T:System.Windows.Forms.CheckedListBox" />.</summary>
+        <summary>
+             Collection of checked items in this CheckedListBox.
+            </summary>
         <value>The <see cref="T:System.Windows.Forms.CheckedListBox.CheckedItemCollection" /> collection for the <see cref="T:System.Windows.Forms.CheckedListBox" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -254,18 +265,17 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the check box should be toggled when an item is selected.</summary>
+        <summary>
+             Indicates whether or not the checkbox should be toggled whenever an
+             item is selected.  The default behaviour is to just change the
+             selection, and then make the user click again to check it.  However,
+             some may prefer checking the item as soon as it is clicked.
+            </summary>
         <value>
           <see langword="true" /> if the check mark is applied immediately; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
@@ -307,14 +317,8 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1">
-          <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Always)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -342,6 +346,7 @@
   
  ]]></format>
         </remarks>
+        <hideinheritance />
       </Docs>
     </Member>
     <Member MemberName="CreateAccessibilityInstance">
@@ -363,7 +368,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a new accessibility object for the <see cref="T:System.Windows.Forms.CheckedListBox" /> control.</summary>
+        <summary>
+             Constructs the new instance of the accessibility object for this control. Subclasses
+             should not call base.CreateAccessibilityObject.
+            </summary>
         <returns>A new <see cref="T:System.Windows.Forms.AccessibleObject" /> for the control.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -424,7 +432,12 @@
         <ReturnType>System.Windows.Forms.CreateParams</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the required creation parameters when the control handle is created.</summary>
+        <summary>
+             This is called when creating a window.  Inheriting classes can ovveride
+             this to add extra functionality, but should not forget to first call
+             base.CreateParams() to make sure the control continues to work
+             correctly.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.CreateParams" /> that contains the required parameters.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -468,16 +481,19 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the data source for the control.</summary>
+        <summary>
+             CheckedListBox DataSource.
+            </summary>
         <value>An object representing the source of the data.</value>
         <remarks>To be added.</remarks>
+        <hideinheritance />
       </Docs>
     </Member>
     <Member MemberName="DataSourceChanged">
@@ -499,7 +515,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -529,14 +545,16 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a string that specifies a property of the objects contained in the list box whose contents you want to display.</summary>
+        <summary>
+             CheckedListBox DisplayMember.
+            </summary>
         <value>A string that specifies the name of a property of the objects contained in the list box. The default is an empty string ("").</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -559,6 +577,7 @@
   
  ]]></format>
         </remarks>
+        <hideinheritance />
       </Docs>
     </Member>
     <Member MemberName="DisplayMemberChanged">
@@ -580,7 +599,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -610,7 +629,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -628,6 +647,7 @@
   
  ]]></format>
         </remarks>
+        <hideinheritance />
       </Docs>
     </Member>
     <Member MemberName="DrawMode">
@@ -652,7 +672,7 @@
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -693,7 +713,10 @@
       </Parameters>
       <Docs>
         <param name="index">The index of the item.</param>
-        <summary>Returns a value indicating whether the specified item is checked.</summary>
+        <summary>
+             Indicates if the given item is, in any way, shape, or form, checked.
+             This will return true if the item is fully or indeterminately checked.
+            </summary>
         <returns>
           <see langword="true" /> if the item is checked; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -735,7 +758,10 @@
       </Parameters>
       <Docs>
         <param name="index">The index of the item to get the checked value of.</param>
-        <summary>Returns a value indicating the check state of the current item.</summary>
+        <summary>
+             Gets the check value of the current item.  This value will be from the
+             System.Windows.Forms.CheckState enumeration.
+            </summary>
         <returns>One of the <see cref="T:System.Windows.Forms.CheckState" /> values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -826,7 +852,7 @@
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -871,18 +897,14 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Content)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1">
-          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.ListControlStringCollectionEditor, System.Design, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
-          <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.ListControlStringCollectionEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.CheckedListBox+ObjectCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of items in this <see cref="T:System.Windows.Forms.CheckedListBox" />.</summary>
+        <summary>
+             Collection of items in this listbox.
+            </summary>
         <value>The <see cref="T:System.Windows.Forms.CheckedListBox.ObjectCollection" /> collection representing the items in the <see cref="T:System.Windows.Forms.CheckedListBox" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -926,7 +948,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -946,6 +968,7 @@
   
  ]]></format>
         </remarks>
+        <hideinheritance />
       </Docs>
     </Member>
     <Member MemberName="MouseClick">
@@ -965,8 +988,8 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Always)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -992,6 +1015,7 @@
   
  ]]></format>
         </remarks>
+        <hideinheritance />
       </Docs>
     </Member>
     <Member MemberName="OnBackColorChanged">
@@ -1043,7 +1067,9 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.CheckedListBox.Click" /> event.</summary>
+        <summary>
+             Ensures that mouse clicks can toggle...
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1083,7 +1109,13 @@
       </Parameters>
       <Docs>
         <param name="e">The <see cref="T:System.Windows.Forms.DrawItemEventArgs" /> object with the details</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.CheckedListBox.DrawItem" /> event.</summary>
+        <summary>
+             Actually goes and fires the drawItem event.  Inheriting controls
+             should use this to know when the event is fired [this is preferable to
+             adding an event handler yourself for this event].  They should,
+             however, remember to call base.OnDrawItem(e); to ensure the event is
+             still fired to external listeners
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1159,7 +1191,9 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.HandleCreated" /> event.</summary>
+        <summary>
+             When the handle is created we can dump any cached item-check pairs.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1197,7 +1231,11 @@
       </Parameters>
       <Docs>
         <param name="ice">An <see cref="T:System.Windows.Forms.ItemCheckEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.CheckedListBox.ItemCheck" /> event.</summary>
+        <summary>
+             This is the code that actually fires the itemCheck event.  Don't
+             forget to call base.onItemCheck() to ensure that itemCheck vents
+             are correctly fired for all other keys.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1235,7 +1273,13 @@
       </Parameters>
       <Docs>
         <param name="e">The <see cref="T:System.Windows.Forms.KeyPressEventArgs" /> that was raised.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.KeyPress" /> event.</summary>
+        <summary>
+             This is the code that actually fires the "keyPress" event.  The Checked
+             ListBox overrides this to look for space characters, since we
+             want to use those to check or uncheck items periodically.  Don't
+             forget to call base.OnKeyPress() to ensure that KeyPrese events
+             are correctly fired for all other keys.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1313,7 +1357,13 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ListBox.SelectedIndexChanged" /> event.</summary>
+        <summary>
+             Actually goes and fires the selectedIndexChanged event.  Inheriting controls
+             should use this to know when the event is fired [this is preferable to
+             adding an event handler on yourself for this event].  They should,
+             however, remember to call base.OnSelectedIndexChanged(e); to ensure the event is
+             still fired to external listeners
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1349,8 +1399,8 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1389,7 +1439,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Parses all <see cref="T:System.Windows.Forms.CheckedListBox" /> items again and gets new text strings for the items.</summary>
+        <summary>
+             Reparses the objects, getting new text strings for them.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1411,7 +1463,10 @@
         <ReturnType>System.Windows.Forms.SelectionMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value specifying the selection mode.</summary>
+        <summary>
+             For CheckedListBoxes, multi-selection is not supported.  You can set
+             selection to be able to select one item or no items.
+            </summary>
         <value>Either the <see langword="One" /> or <see langword="None" /> value of <see cref="T:System.Windows.Forms.SelectionMode" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1462,7 +1517,10 @@
         <param name="index">The index of the item to set the check state for.</param>
         <param name="value">
           <see langword="true" /> to set the item as checked; otherwise, <see langword="false" />.</param>
-        <summary>Sets <see cref="T:System.Windows.Forms.CheckState" /> for the item at the specified index to <see langword="Checked" />.</summary>
+        <summary>
+             Sets the checked value of the given item.  This value should be a
+             boolean.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1513,7 +1571,10 @@
       <Docs>
         <param name="index">The index of the item to set the state for.</param>
         <param name="value">One of the <see cref="T:System.Windows.Forms.CheckState" /> values.</param>
-        <summary>Sets the check state of the item at the specified index.</summary>
+        <summary>
+             Sets the checked value of the given item.  This value should be from
+             the System.Windows.Forms.CheckState enumeration.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1567,7 +1628,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the check boxes have a <see cref="T:System.Windows.Forms.ButtonState" /> of <see langword="Flat" /> or <see langword="Normal" />.</summary>
+        <summary>
+             Indicates if the CheckBoxes should show up as flat or 3D in appearance.
+            </summary>
         <value>
           <see langword="true" /> if the check box has a flat appearance; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
@@ -1609,7 +1672,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that determines whether to use the <see cref="T:System.Drawing.Graphics" /> class ([!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)]) or the <see cref="T:System.Windows.Forms.TextRenderer" /> class ([!INCLUDE[ndptecgdi](~/includes/ndptecgdi-md.md)]) to render text.</summary>
+        <summary>
+             Determines whether to use compatible text rendering engine (GDI+) or not (GDI).
+            </summary>
         <value>
           <see langword="true" /> if the <see cref="T:System.Drawing.Graphics" /> class should be used to perform text rendering for compatibility with versions 1.0 and 1.1. of the .NET Framework; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
@@ -1645,14 +1710,16 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a string that specifies the property of the data source from which to draw the value.</summary>
+        <summary>
+             CheckedListBox ValueMember.
+            </summary>
         <value>A string that specifies the property of the data source from which to draw the value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1667,6 +1734,7 @@
  ]]></format>
         </remarks>
         <exception cref="T:System.ArgumentException">The specified property cannot be found on the object specified by the <see cref="P:System.Windows.Forms.CheckedListBox.DataSource" /> property.</exception>
+        <hideinheritance />
       </Docs>
     </Member>
     <Member MemberName="ValueMemberChanged">
@@ -1688,7 +1756,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1721,7 +1789,9 @@
       </Parameters>
       <Docs>
         <param name="m">The <see cref="T:System.Windows.Forms.Message" /> the top-level window sent to the <see cref="T:System.Windows.Forms.CheckedListBox" /> control.</param>
-        <summary>Processes the command message the <see cref="T:System.Windows.Forms.CheckedListBox" /> control receives from the top-level window.</summary>
+        <summary>
+             We need to get LBN_SELCHANGE notifications
+            </summary>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.SecurityPermission">for operating with unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
       </Docs>
@@ -1748,7 +1818,11 @@
       </Parameters>
       <Docs>
         <param name="m">The Windows <see cref="T:System.Windows.Forms.Message" /> to process.</param>
-        <summary>Processes Windows messages.</summary>
+        <summary>
+             The listbox's window procedure.  Inheriting classes can override this
+             to add extra functionality, but should not forget to call
+             base.wndProc(m); to ensure the button continues to function properly.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

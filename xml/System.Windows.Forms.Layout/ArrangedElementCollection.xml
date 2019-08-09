@@ -1,4 +1,4 @@
-﻿<Type Name="ArrangedElementCollection" FullName="System.Windows.Forms.Layout.ArrangedElementCollection">
+<Type Name="ArrangedElementCollection" FullName="System.Windows.Forms.Layout.ArrangedElementCollection">
   <TypeSignature Language="C#" Value="public class ArrangedElementCollection : System.Collections.IList" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ArrangedElementCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Layout.ArrangedElementCollection" />
@@ -115,11 +115,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>

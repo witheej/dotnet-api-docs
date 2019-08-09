@@ -1,4 +1,4 @@
-﻿<Type Name="PropertyGridCommands" FullName="System.Windows.Forms.PropertyGridInternal.PropertyGridCommands">
+<Type Name="PropertyGridCommands" FullName="System.Windows.Forms.PropertyGridInternal.PropertyGridCommands">
   <TypeSignature Language="C#" Value="public class PropertyGridCommands" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PropertyGridCommands extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PropertyGridInternal.PropertyGridCommands" />
@@ -16,7 +16,10 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Contains a set of menu commands used by the designer in Visual Studio.</summary>
+    <summary>
+             This class contains the set of menu commands our property browser
+             uses.
+            </summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
   </Docs>
@@ -34,11 +37,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.PropertyGridInternal.PropertyGridCommands" /> class.</summary>
@@ -156,7 +154,9 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the GUID for the internal property browser's command set.</summary>
+        <summary>
+             This guid corresponds to the windows forms command set.
+            </summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -179,7 +179,11 @@
         <ReturnType>System.Guid</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Represents the GUID the internal property browser uses to create a shortcut menu.</summary>
+        <summary>
+             This guid corresponds to the menu grouping windows forms will use for its menus.  This is
+             defined in the windows forms menu CTC file, but we need it here so we can define what
+             context menus to use.
+            </summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>

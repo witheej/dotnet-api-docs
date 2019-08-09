@@ -1,4 +1,4 @@
-﻿<Type Name="KeyPressEventArgs" FullName="System.Windows.Forms.KeyPressEventArgs">
+<Type Name="KeyPressEventArgs" FullName="System.Windows.Forms.KeyPressEventArgs">
   <TypeSignature Language="C#" Value="public class KeyPressEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit KeyPressEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.KeyPressEventArgs" />
@@ -21,7 +21,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.Forms.Control.KeyPress" /> event.</summary>
+    <summary>
+             Provides data for the <see cref="E:System.Windows.Forms.Control.KeyPress" /> event.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -80,17 +82,15 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="keyChar" Type="System.Char" />
       </Parameters>
       <Docs>
         <param name="keyChar">The ASCII character corresponding to the key the user pressed.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.KeyPressEventArgs" /> class.</summary>
+        <summary>
+             Initializes a new instance of the <see cref="T:System.Windows.Forms.KeyPressEventArgs" />
+             class.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -120,19 +120,14 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the <see cref="E:System.Windows.Forms.Control.KeyPress" /> event was handled.</summary>
+        <summary>
+             Gets or sets a value indicating whether the <see cref="E:System.Windows.Forms.Control.KeyPress" />
+             event was handled.
+            </summary>
         <value>
           <see langword="true" /> if the event is handled; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -169,19 +164,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Char</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the character corresponding to the key pressed.</summary>
+        <summary>
+             Gets the character corresponding to the key pressed.
+            </summary>
         <value>The ASCII character that is composed. For example, if the user presses SHIFT + K, this property returns an uppercase K.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

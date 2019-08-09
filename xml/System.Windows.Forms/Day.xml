@@ -1,4 +1,4 @@
-﻿<Type Name="Day" FullName="System.Windows.Forms.Day">
+<Type Name="Day" FullName="System.Windows.Forms.Day">
   <TypeSignature Language="C#" Value="public enum Day" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Day extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Day" />
@@ -15,7 +15,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the day of the week.</summary>
+    <summary>
+             Specifies the day of the week.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -45,7 +47,9 @@
       </ReturnValue>
       <MemberValue>7</MemberValue>
       <Docs>
-        <summary>A default day of the week specified by the application.</summary>
+        <summary>
+             A default day of the week specified by the application.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Friday">
@@ -67,7 +71,9 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>The day Friday.</summary>
+        <summary>
+             The day Friday.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Monday">
@@ -89,7 +95,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>The day Monday.</summary>
+        <summary>
+             The day Monday.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Saturday">
@@ -111,7 +119,9 @@
       </ReturnValue>
       <MemberValue>5</MemberValue>
       <Docs>
-        <summary>The day Saturday.</summary>
+        <summary>
+             The day Saturday.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Sunday">
@@ -133,7 +143,9 @@
       </ReturnValue>
       <MemberValue>6</MemberValue>
       <Docs>
-        <summary>The day Sunday.</summary>
+        <summary>
+             The day Sunday.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Thursday">
@@ -155,7 +167,9 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>The day Thursday.</summary>
+        <summary>
+             The day Thursday.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Tuesday">
@@ -177,7 +191,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The day Tuesday.</summary>
+        <summary>
+             The day Tuesday.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Wednesday">
@@ -199,7 +215,9 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>The day Wednesday.</summary>
+        <summary>
+             The day Wednesday.
+            </summary>
       </Docs>
     </Member>
   </Members>

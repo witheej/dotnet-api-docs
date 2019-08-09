@@ -1,4 +1,4 @@
-﻿<Type Name="ListViewGroup" FullName="System.Windows.Forms.ListViewGroup">
+<Type Name="ListViewGroup" FullName="System.Windows.Forms.ListViewGroup">
   <TypeSignature Language="C#" Value="public sealed class ListViewGroup : System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ListViewGroup extends System.Object implements class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ListViewGroup" />
@@ -36,7 +36,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a group of items displayed within a <see cref="T:System.Windows.Forms.ListView" /> control.</summary>
+    <summary>
+             Represents a group within a ListView.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -99,7 +101,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListViewGroup" /> class using the default header text of "ListViewGroup" and the default left header alignment.</summary>
+        <summary>
+             Creates a ListViewGroup.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,7 +125,9 @@
       </Parameters>
       <Docs>
         <param name="header">The text to display for the group header.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListViewGroup" /> class using the specified value to initialize the <see cref="P:System.Windows.Forms.ListViewGroup.Header" /> property and using the default left header alignment.</summary>
+        <summary>
+             Creates a ListViewGroup.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -138,11 +144,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="key" Type="System.String" />
         <Parameter Name="headerText" Type="System.String" />
@@ -150,7 +151,9 @@
       <Docs>
         <param name="key">The initial value of the <see cref="P:System.Windows.Forms.ListViewGroup.Name" /> property.</param>
         <param name="headerText">The initial value of the <see cref="P:System.Windows.Forms.ListViewGroup.Header" /> property.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListViewGroup" /> class using the specified values to initialize the <see cref="P:System.Windows.Forms.ListViewGroup.Name" /> and <see cref="P:System.Windows.Forms.ListViewGroup.Header" /> properties.</summary>
+        <summary>
+             Creates a ListViewItem object from a Key and a Name
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -167,11 +170,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="header" Type="System.String" />
         <Parameter Name="headerAlignment" Type="System.Windows.Forms.HorizontalAlignment" />
@@ -179,7 +177,9 @@
       <Docs>
         <param name="header">The text to display for the group header.</param>
         <param name="headerAlignment">One of the <see cref="T:System.Windows.Forms.HorizontalAlignment" /> values that specifies the alignment of the header text.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListViewGroup" /> class using the specified header text and the specified header alignment.</summary>
+        <summary>
+             Creates a ListViewGroup.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -213,7 +213,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the header text for the group.</summary>
+        <summary>
+             The text displayed in the group header.
+            </summary>
         <value>The text to display for the group header. The default is "ListViewGroup".</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -242,15 +244,14 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.HorizontalAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the alignment of the group header text.</summary>
+        <summary>
+             The alignment of the group header.
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.HorizontalAlignment" /> values that specifies the alignment of the header text. The default is <see cref="F:System.Windows.Forms.HorizontalAlignment.Left" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -285,7 +286,9 @@
         <ReturnType>System.Windows.Forms.ListView+ListViewItemCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection containing all items associated with this group.</summary>
+        <summary>
+             The items that belong to this group.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.ListView.ListViewItemCollection" /> that contains all the items in the group. If there are no items in the group, an empty <see cref="T:System.Windows.Forms.ListView.ListViewItemCollection" /> object is returned.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -324,9 +327,6 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ListView</ReturnType>
@@ -356,12 +356,6 @@
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -428,12 +422,6 @@
         <Attribute>
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ComponentModel.StringConverter))</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -464,11 +452,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>

@@ -1,4 +1,4 @@
-﻿<Type Name="TextRenderer" FullName="System.Windows.Forms.TextRenderer">
+<Type Name="TextRenderer" FullName="System.Windows.Forms.TextRenderer">
   <TypeSignature Language="C#" Value="public sealed class TextRenderer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TextRenderer extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TextRenderer" />
@@ -15,7 +15,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides methods used to measure and render text. This class cannot be inherited.</summary>
+    <summary>
+             This class provides API for drawing GDI text.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

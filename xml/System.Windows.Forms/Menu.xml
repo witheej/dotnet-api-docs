@@ -1,4 +1,4 @@
-﻿<Type Name="Menu" FullName="System.Windows.Forms.Menu">
+<Type Name="Menu" FullName="System.Windows.Forms.Menu">
   <TypeSignature Language="C#" Value="public abstract class Menu : System.ComponentModel.Component" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit Menu extends System.ComponentModel.Component" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Menu" />
@@ -22,12 +22,11 @@
     <Attribute>
       <AttributeName>System.ComponentModel.ToolboxItemFilter("System.Windows.Forms")</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-1.1">
-      <AttributeName>System.ComponentModel.Designer("Microsoft.VisualStudio.Windows.Forms.MenuDesigner, Microsoft.VisualStudio, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
-    </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents the base functionality for all menus. Although <see cref="T:System.Windows.Forms.ToolStripDropDown" /> and <see cref="T:System.Windows.Forms.ToolStripDropDownMenu" /> replace and add functionality to the <see cref="T:System.Windows.Forms.Menu" /> control of previous versions, <see cref="T:System.Windows.Forms.Menu" /> is retained for both backward compatibility and future use if you choose.</summary>
+    <summary>
+             This is the base class for all menu components (MainMenu, MenuItem, and ContextMenu).
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -75,7 +74,10 @@
       </Parameters>
       <Docs>
         <param name="items">An array of type <see cref="T:System.Windows.Forms.MenuItem" /> containing the objects to add to the menu.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Menu" /> class.</summary>
+        <summary>
+             This is an abstract class.  Instances cannot be created, so the constructor
+             is only called from derived classes.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -108,7 +110,9 @@
       </Parameters>
       <Docs>
         <param name="menuSrc">The <see cref="T:System.Windows.Forms.Menu" /> to copy.</param>
-        <summary>Copies the <see cref="T:System.Windows.Forms.Menu" /> that is passed as a parameter to the current <see cref="T:System.Windows.Forms.Menu" />.</summary>
+        <summary>
+             Sets this menu to be an identical copy of another menu.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -178,7 +182,11 @@
       <Docs>
         <param name="disposing">
           <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Disposes of the resources, other than memory, used by the <see cref="T:System.Windows.Forms.Menu" />.</summary>
+        <summary>
+             Disposes of the component.  Call dispose when the component is no longer needed.
+             This method removes the component from its container (if the component has a site)
+             and triggers the dispose event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -211,7 +219,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Specifies that the <see cref="M:System.Windows.Forms.Menu.FindMenuItem(System.Int32,System.IntPtr)" /> method should search for a handle.</summary>
+        <summary>
+             Used by findMenuItem
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -307,7 +317,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Specifies that the <see cref="M:System.Windows.Forms.Menu.FindMenuItem(System.Int32,System.IntPtr)" /> method should search for a shortcut.</summary>
+        <summary>
+             Used by findMenuItem
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -330,7 +342,13 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Forms.ContextMenu" /> that contains this menu.</summary>
+        <summary>
+             Returns the ContextMenu that contains this menu.  The ContextMenu
+             is at the top of this menu's parent chain.
+             Returns null if this menu is not contained in a ContextMenu.
+             This can occur if it's contained in a MainMenu or if it isn't
+             currently contained in any menu at all.
+            </summary>
         <returns>The <see cref="T:System.Windows.Forms.ContextMenu" /> that contains this menu. The default is <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -371,7 +389,13 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Forms.MainMenu" /> that contains this menu.</summary>
+        <summary>
+             Returns the MainMenu item that contains this menu.  The MainMenu
+             is at the top of this menu's parent chain.
+             Returns null if this menu is not contained in a MainMenu.
+             This can occur if it's contained in a ContextMenu or if it isn't
+             currently contained in any menu at all.
+            </summary>
         <returns>The <see cref="T:System.Windows.Forms.MainMenu" /> that contains this menu.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -415,14 +439,16 @@
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value representing the window handle for the menu.</summary>
+        <summary>
+             The HMENU handle corresponding to this menu.
+            </summary>
         <value>The HMENU value of the menu.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -460,7 +486,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether this menu contains any menu items. This property is read-only.</summary>
+        <summary>
+             Specifies whether this menu contains any items.
+            </summary>
         <value>
           <see langword="true" /> if this menu contains <see cref="T:System.Windows.Forms.MenuItem" /> objects; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
@@ -510,7 +538,9 @@
         <ReturnType>System.Windows.Forms.MenuItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating the <see cref="T:System.Windows.Forms.MenuItem" /> that is used to display a list of multiple document interface (MDI) child forms.</summary>
+        <summary>
+             The MenuItem that contains the list of MDI child windows.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.MenuItem" /> that represents the menu item displaying a list of MDI child forms that are open in the application.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -600,7 +630,11 @@
       </Parameters>
       <Docs>
         <param name="menuSrc">The <see cref="T:System.Windows.Forms.Menu" /> whose menu items are merged with the menu items of the current menu.</param>
-        <summary>Merges the <see cref="T:System.Windows.Forms.MenuItem" /> objects of one menu with the current menu.</summary>
+        <summary>
+             Merges another menu's items with this one's.  Menu items are merged according to their
+             mergeType and mergeOrder properties.  This function is typically used to
+             merge an MDI container's menu with that of its active MDI child.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -654,7 +688,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of the <see cref="T:System.Windows.Forms.Menu" />.</summary>
+        <summary>
+             Name of this control. The designer will set this to the same
+             as the programatic Id "(name)" of the control - however this
+             property has no bearing on the runtime aspects of this control.
+            </summary>
         <value>A string representing the name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -722,12 +760,6 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ComponentModel.StringConverter))</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -757,7 +789,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a <see cref="T:System.String" /> that represents the <see cref="T:System.Windows.Forms.Menu" /> control.</summary>
+        <summary>
+             Returns a string representation for this control.
+            </summary>
         <returns>A <see cref="T:System.String" /> that represents the current <see cref="T:System.Windows.Forms.Menu" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

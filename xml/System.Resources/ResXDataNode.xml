@@ -1,6 +1,6 @@
-﻿<Type Name="ResXDataNode" FullName="System.Resources.ResXDataNode">
+<Type Name="ResXDataNode" FullName="System.Resources.ResXDataNode">
   <TypeSignature Language="C#" Value="public sealed class ResXDataNode : System.Runtime.Serialization.ISerializable" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit ResXDataNode extends System.Object implements class System.Runtime.Serialization.ISerializable" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit ResXDataNode extends System.Object implements class System.Runtime.Serialization.ISerializable" />
   <TypeSignature Language="DocId" Value="T:System.Resources.ResXDataNode" />
   <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ResXDataNode&#xA;Implements ISerializable" />
   <TypeSignature Language="C++ CLI" Value="public ref class ResXDataNode sealed : System::Runtime::Serialization::ISerializable" />
@@ -18,11 +18,6 @@
       <InterfaceName>System.Runtime.Serialization.ISerializable</InterfaceName>
     </Interface>
   </Interfaces>
-  <Attributes>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-      <AttributeName>System.Serializable</AttributeName>
-    </Attribute>
-  </Attributes>
   <Docs>
     <summary>Represents an element in an XML resource (.resx) file.</summary>
     <remarks>
@@ -73,11 +68,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="value" Type="System.Object" />
@@ -108,11 +98,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="fileRef" Type="System.Resources.ResXFileRef" />
@@ -142,9 +127,9 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="value" Type="System.Object" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="typeNameConverter" Type="System.Func&lt;System.Type,System.String&gt;" Index="2" FrameworkAlternate="netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="value" Type="System.Object" />
+        <Parameter Name="typeNameConverter" Type="System.Func&lt;System.Type,System.String&gt;" />
       </Parameters>
       <Docs>
         <param name="name">The name of the resource.</param>
@@ -173,9 +158,9 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Parameters>
-        <Parameter Name="name" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="fileRef" Type="System.Resources.ResXFileRef" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="typeNameConverter" Type="System.Func&lt;System.Type,System.String&gt;" Index="2" FrameworkAlternate="netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="name" Type="System.String" />
+        <Parameter Name="fileRef" Type="System.Resources.ResXFileRef" />
+        <Parameter Name="typeNameConverter" Type="System.Func&lt;System.Type,System.String&gt;" />
       </Parameters>
       <Docs>
         <param name="name">The name of the resource.</param>
@@ -203,16 +188,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets an arbitrary comment regarding this resource.</summary>
+        <summary />
         <value>A string that represents the comment.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -271,7 +251,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves the position of the resource in the resource file.</summary>
+        <summary>
+             Might return the position in the resx file of the current node, if known
+             otherwise, will return Point(0,0) since point is a struct
+            </summary>
         <returns>A structure that specifies the location of this resource in the resource file as a line position (<see cref="P:System.Drawing.Point.X" />) and a column position (<see cref="P:System.Drawing.Point.Y" />). If this resource is not part of a resource file, this method returns a structure that has an <see cref="P:System.Drawing.Point.X" /> of 0 and a <see cref="P:System.Drawing.Point.Y" /> of 0.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -306,7 +289,9 @@
       </Parameters>
       <Docs>
         <param name="typeResolver">The type resolution service to use when looking for a type converter.</param>
-        <summary>Retrieves the object that is stored by this node by using the specified type resolution service.</summary>
+        <summary>
+             Get the value contained in this datanode
+            </summary>
         <returns>The object that corresponds to the stored value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -340,7 +325,9 @@
       </Parameters>
       <Docs>
         <param name="names">The list of assemblies to search for the type of the object.</param>
-        <summary>Retrieves the object that is stored by this node by searching the specified assemblies.</summary>
+        <summary>
+             Get the value contained in this datanode
+            </summary>
         <returns>The object that corresponds to the stored value.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -383,7 +370,10 @@
       </Parameters>
       <Docs>
         <param name="typeResolver">The type resolution service to use to locate a converter for this type.</param>
-        <summary>Retrieves the type name for the value by using the specified type resolution service.</summary>
+        <summary>
+             Get the FQ type name for this datanode.
+             We return typeof(object) for ResXNullRef
+            </summary>
         <returns>A string that represents the fully qualified name of the type.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.TypeLoadException">The corresponding type could not be found.</exception>
@@ -410,7 +400,9 @@
       </Parameters>
       <Docs>
         <param name="names">The assemblies to examine for the type.</param>
-        <summary>Retrieves the type name for the value by examining the specified assemblies.</summary>
+        <summary>
+             Get the FQ type name for this datanode
+            </summary>
         <returns>A string that represents the fully qualified name of the type.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.TypeLoadException">The corresponding type could not be found.</exception>
@@ -433,7 +425,7 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name of this resource.</summary>
+        <summary />
         <value>A string that corresponds to the resource name. If no name is assigned, this property returns a zero-length string.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The name property is set to <see langword="null" />.</exception>
@@ -465,7 +457,9 @@
       <Docs>
         <param name="si">An  object to populate with data.</param>
         <param name="context">The destination for this serialization.</param>
-        <summary>Populates a <see cref="T:System.Runtime.Serialization.SerializationInfo" /> object with the data needed to serialize the target object.</summary>
+        <summary>
+             Get the value contained in this datanode
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

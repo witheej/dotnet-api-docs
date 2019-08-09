@@ -1,4 +1,4 @@
-﻿<Type Name="SelectionRangeConverter" FullName="System.Windows.Forms.SelectionRangeConverter">
+<Type Name="SelectionRangeConverter" FullName="System.Windows.Forms.SelectionRangeConverter">
   <TypeSignature Language="C#" Value="public class SelectionRangeConverter : System.ComponentModel.TypeConverter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SelectionRangeConverter extends System.ComponentModel.TypeConverter" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.SelectionRangeConverter" />
@@ -16,7 +16,11 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a type converter to convert <see cref="T:System.Windows.Forms.SelectionRange" /> objects to and from various other types.</summary>
+    <summary>
+             SelectionRangeConverter is a class that can be used to convert
+             SelectionRange objects from one data type to another.  Access this
+             class through the TypeDescriptor.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -52,11 +56,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.SelectionRangeConverter" /> class.</summary>
@@ -97,7 +96,10 @@
       <Docs>
         <param name="context">A <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
         <param name="sourceType">The source <see cref="T:System.Type" /> to be converted.</param>
-        <summary>Determines if this converter can convert an object of the specified source type to the native type of the converter by querying the supplied type descriptor context.</summary>
+        <summary>
+             Determines if this converter can convert an object in the given source
+             type to the native type of the converter.
+            </summary>
         <returns>
           <see langword="true" /> if the converter can perform the specified conversion; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -142,7 +144,10 @@
       <Docs>
         <param name="context">A <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
         <param name="destinationType">The destination <see cref="T:System.Type" /> to convert into.</param>
-        <summary>Gets a value indicating whether this converter can convert an object to the specified destination type by using the specified context.</summary>
+        <summary>
+             Gets a value indicating whether this converter can
+             convert an object to the given destination type using the context.
+            </summary>
         <returns>
           <see langword="true" /> if this converter can perform the specified conversion; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -190,7 +195,9 @@
         <param name="context">A <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
         <param name="culture">The locale information for the conversion.</param>
         <param name="value">The <see cref="T:System.Object" /> to convert.</param>
-        <summary>Converts the specified value to the converter's native type by using the specified locale.</summary>
+        <summary>
+             Converts the given object to the converter's native type.
+            </summary>
         <returns>An <see cref="T:System.Object" /> that represents the converted <paramref name="value" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -241,7 +248,13 @@
         <param name="culture">The locale information for the conversion.</param>
         <param name="value">The <see cref="T:System.Object" /> to convert.</param>
         <param name="destinationType">The destination <see cref="T:System.Type" /> to convert into.</param>
-        <summary>Converts the specified <see cref="T:System.Windows.Forms.SelectionRangeConverter" /> object to another type by using the specified culture.</summary>
+        <summary>
+             Converts the given object to another type.  The most common types to convert
+             are to and from a string object.  The default implementation will make a call
+             to ToString on the object if the object is valid and if the destination
+             type is string.  If this cannot convert to the desitnation type, this will
+             throw a NotSupportedException.
+            </summary>
         <returns>An <see cref="T:System.Object" /> that represents the converted <paramref name="value" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -289,7 +302,11 @@
       <Docs>
         <param name="context">A <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
         <param name="propertyValues">An <see cref="T:System.Collections.IDictionary" /> that contains the new property values.</param>
-        <summary>Creates a <see cref="T:System.Windows.Forms.SelectionRange" /> object by using the specified type descriptor and set of property values for that object.</summary>
+        <summary>
+             Creates an instance of this type given a set of property values
+             for the object.  This is useful for objects that are immutable, but still
+             want to provide changable properties.
+            </summary>
         <returns>If successful, the newly created <see cref="T:System.Windows.Forms.SelectionRange" />; otherwise, this method throws an exception.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -327,7 +344,10 @@
       </Parameters>
       <Docs>
         <param name="context">A <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
-        <summary>Determines if changing a value on an instance should require a call to <see cref="Overload:System.Windows.Forms.SelectionRangeConverter.CreateInstance" /> to create a new value.</summary>
+        <summary>
+             Determines if changing a value on this object should require a call to
+             CreateInstance to create a new value.
+            </summary>
         <returns>
           <see langword="true" /> if <see cref="Overload:System.Windows.Forms.SelectionRangeConverter.CreateInstance" /> must be called to make a change to one or more properties; otherwise <see langword="false" />.</returns>
         <remarks>
@@ -368,7 +388,11 @@
         <param name="context">A <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
         <param name="value">An <see cref="T:System.Object" /> that specifies the type of array for which to get properties.</param>
         <param name="attributes">An array of type <see cref="T:System.Attribute" /> that is used as a filter.</param>
-        <summary>Returns the set of filtered properties for the <see cref="T:System.Windows.Forms.SelectionRange" /> type</summary>
+        <summary>
+             Retrieves the set of properties for this type.  By default, a type has
+             does not return any properties.  An easy implementation of this method
+             can just call TypeDescriptor.GetProperties for the correct data type.
+            </summary>
         <returns>If successful, the set of properties that should be exposed for the <see cref="T:System.Windows.Forms.SelectionRange" /> type; otherwise, <see langword="null" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -405,7 +429,10 @@
       </Parameters>
       <Docs>
         <param name="context">A <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
-        <summary>Determines whether the current object supports properties that use the specified type descriptor context.</summary>
+        <summary>
+             Determines if this object supports properties.  By default, this
+             is false.
+            </summary>
         <returns>
           <see langword="true" /> if <see cref="Overload:System.Windows.Forms.SelectionRangeConverter.GetProperties" /> can be called to find the properties of a <see cref="T:System.Windows.Forms.SelectionRange" /> object; otherwise, <see langword="false" />.</returns>
         <remarks>

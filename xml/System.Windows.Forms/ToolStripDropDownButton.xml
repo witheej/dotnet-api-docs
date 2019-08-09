@@ -1,4 +1,4 @@
-﻿<Type Name="ToolStripDropDownButton" FullName="System.Windows.Forms.ToolStripDropDownButton">
+<Type Name="ToolStripDropDownButton" FullName="System.Windows.Forms.ToolStripDropDownButton">
   <TypeSignature Language="C#" Value="public class ToolStripDropDownButton : System.Windows.Forms.ToolStripDropDownItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolStripDropDownButton extends System.Windows.Forms.ToolStripDropDownItem" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripDropDownButton" />
@@ -20,7 +20,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a control that when clicked displays an associated <see cref="T:System.Windows.Forms.ToolStripDropDown" /> from which the user can select a single item.</summary>
+    <summary>
+             A ToolStripButton that can display a popup.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -67,7 +69,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripDropDownButton" /> class.</summary>
+        <summary>
+             Constructs a ToolStripButton that can display a popup.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -190,7 +194,7 @@
         <Parameter Name="image" Type="System.Drawing.Image" />
         <Parameter Name="dropDownItems" Type="System.Windows.Forms.ToolStripItem[]">
           <Attributes>
-            <Attribute FrameworkAlternate="netcore-3.0">
+            <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -358,7 +362,9 @@ For more information, see the [migration guide](~/docs/framework/migration-guide
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripItem.MouseDown" /> event.</summary>
+        <summary>
+             Overriden to invoke displaying the popup.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -457,7 +463,9 @@ For more information, see the [migration guide](~/docs/framework/migration-guide
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripItem.Paint" /> event.</summary>
+        <summary>
+             Inheriting classes should override this method to handle this event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -517,9 +525,6 @@ For more information, see the [migration guide](~/docs/framework/migration-guide
       <Attributes>
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>

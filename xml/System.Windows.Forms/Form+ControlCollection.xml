@@ -1,4 +1,4 @@
-﻿<Type Name="Form+ControlCollection" FullName="System.Windows.Forms.Form+ControlCollection">
+<Type Name="Form+ControlCollection" FullName="System.Windows.Forms.Form+ControlCollection">
   <TypeSignature Language="C#" Value="public class Form.ControlCollection : System.Windows.Forms.Control.ControlCollection" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit Form/ControlCollection extends System.Windows.Forms.Control/ControlCollection" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Form.ControlCollection" />
@@ -21,7 +21,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a collection of controls on the form.</summary>
+    <summary>
+             Represents a collection of controls on the form.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -56,17 +58,14 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="owner" Type="System.Windows.Forms.Form" />
       </Parameters>
       <Docs>
         <param name="owner">The <see cref="T:System.Windows.Forms.Form" /> to contain the controls added to the control collection.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Form.ControlCollection" /> class.</summary>
+        <summary>
+             Initializes a new instance of the ControlCollection class.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -102,7 +101,10 @@
       </Parameters>
       <Docs>
         <param name="value">The <see cref="T:System.Windows.Forms.Control" /> to add to the form.</param>
-        <summary>Adds a control to the form.</summary>
+        <summary>
+             Adds a control
+             to the form.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -146,7 +148,9 @@
       </Parameters>
       <Docs>
         <param name="value">A <see cref="T:System.Windows.Forms.Control" /> to remove from the form.</param>
-        <summary>Removes a control from the form.</summary>
+        <summary>
+             Removes a control from the form.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

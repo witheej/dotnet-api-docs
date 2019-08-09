@@ -1,4 +1,4 @@
-﻿<Type Name="DataGridViewTextBoxCell" FullName="System.Windows.Forms.DataGridViewTextBoxCell">
+<Type Name="DataGridViewTextBoxCell" FullName="System.Windows.Forms.DataGridViewTextBoxCell">
   <TypeSignature Language="C#" Value="public class DataGridViewTextBoxCell : System.Windows.Forms.DataGridViewCell" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewTextBoxCell extends System.Windows.Forms.DataGridViewCell" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewTextBoxCell" />
@@ -15,7 +15,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Displays editable text information in a <see cref="T:System.Windows.Forms.DataGridView" /> control.</summary>
+    <summary>
+             Identifies a cell in the dataGridView.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -59,11 +61,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewTextBoxCell" /> class.</summary>
@@ -134,8 +131,13 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a new <see cref="T:System.Windows.Forms.AccessibleObject" /> for this <see cref="T:System.Windows.Forms.DataGridViewTextBoxCell" /> instance.</summary>
-        <returns>An <see cref="T:System.Windows.Forms.AccessibleObject" /> instance that supports the ControlType UI Automation property.</returns>
+        <summary>
+             Creates a new AccessibleObject for this DataGridViewTextBoxCell instance.
+             The AccessibleObject instance returned by this method supports ControlType UIA property.
+            </summary>
+        <returns>
+             AccessibleObject for this DataGridViewTextBoxCell instance.
+            </returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -164,7 +166,7 @@ For additional information, see [What's New in Accessibility in the .NET Framewo
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -190,11 +192,6 @@ For additional information, see [What's New in Accessibility in the .NET Framewo
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>

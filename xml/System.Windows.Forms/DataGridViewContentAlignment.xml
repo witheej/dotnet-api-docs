@@ -1,4 +1,4 @@
-﻿<Type Name="DataGridViewContentAlignment" FullName="System.Windows.Forms.DataGridViewContentAlignment">
+<Type Name="DataGridViewContentAlignment" FullName="System.Windows.Forms.DataGridViewContentAlignment">
   <TypeSignature Language="C#" Value="public enum DataGridViewContentAlignment" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed DataGridViewContentAlignment extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewContentAlignment" />
@@ -53,7 +53,10 @@
       </ReturnValue>
       <MemberValue>512</MemberValue>
       <Docs>
-        <summary>The content is aligned vertically at the bottom and horizontally at the center of a cell.</summary>
+        <summary>
+             Content is vertically aligned at the bottom, and horizontally aligned
+             at the center.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="BottomLeft">
@@ -74,7 +77,10 @@
       </ReturnValue>
       <MemberValue>256</MemberValue>
       <Docs>
-        <summary>The content is aligned vertically at the bottom and horizontally at the left of a cell.</summary>
+        <summary>
+             Content is vertically aligned at the bottom, and horizontally aligned
+             on the left.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="BottomRight">
@@ -95,7 +101,10 @@
       </ReturnValue>
       <MemberValue>1024</MemberValue>
       <Docs>
-        <summary>The content is aligned vertically at the bottom and horizontally at the right of a cell.</summary>
+        <summary>
+             Content is vertically aligned at the bottom, and horizontally aligned
+             on the right.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="MiddleCenter">
@@ -116,7 +125,10 @@
       </ReturnValue>
       <MemberValue>32</MemberValue>
       <Docs>
-        <summary>The content is aligned at the vertical and horizontal center of a cell.</summary>
+        <summary>
+             Content is vertically aligned in the middle, and horizontally aligned
+             at the center.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="MiddleLeft">
@@ -137,7 +149,10 @@
       </ReturnValue>
       <MemberValue>16</MemberValue>
       <Docs>
-        <summary>The content is aligned vertically at the middle and horizontally at the left of a cell.</summary>
+        <summary>
+             Content is vertically aligned in the middle, and horizontally aligned
+             on the left.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="MiddleRight">
@@ -158,7 +173,10 @@
       </ReturnValue>
       <MemberValue>64</MemberValue>
       <Docs>
-        <summary>The content is aligned vertically at the middle and horizontally at the right of a cell.</summary>
+        <summary>
+             Content is vertically aligned in the middle, and horizontally aligned
+             on the right.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="NotSet">
@@ -200,7 +218,10 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>The content is aligned vertically at the top and horizontally at the center of a cell.</summary>
+        <summary>
+             Content is vertically aligned at the top, and horizontally aligned
+             at the center.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="TopLeft">
@@ -221,7 +242,10 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The content is aligned vertically at the top and horizontally at the left of a cell.</summary>
+        <summary>
+             Content is vertically aligned at the top, and horizontally aligned
+             on the left.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="TopRight">
@@ -242,7 +266,10 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>The content is aligned vertically at the top and horizontally at the right of a cell.</summary>
+        <summary>
+             Content is vertically aligned at the top, and horizontally aligned
+             on the right.
+            </summary>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="MenuMerge" FullName="System.Windows.Forms.MenuMerge">
+<Type Name="MenuMerge" FullName="System.Windows.Forms.MenuMerge">
   <TypeSignature Language="C#" Value="public enum MenuMerge" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MenuMerge extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MenuMerge" />
@@ -15,7 +15,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the behavior of a <see cref="T:System.Windows.Forms.MenuItem" /> when it is merged with items in another menu.</summary>
+    <summary>
+             Specifies the behavior of a <see cref="T:System.Windows.Forms.MenuItem" /> when it is merged with items in another menu.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -54,7 +56,11 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>The <see cref="T:System.Windows.Forms.MenuItem" /> is added to the collection of existing <see cref="T:System.Windows.Forms.MenuItem" /> objects in a merged menu.</summary>
+        <summary>
+             The <see cref="T:System.Windows.Forms.MenuItem" /> is added to the
+             existing <see cref="T:System.Windows.Forms.MenuItem" /> objects in a
+             merged menu.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="MergeItems">
@@ -76,7 +82,11 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>All submenu items of this <see cref="T:System.Windows.Forms.MenuItem" /> are merged with those of existing <see cref="T:System.Windows.Forms.MenuItem" /> objects at the same position in a merged menu.</summary>
+        <summary>
+             Subitems of this <see cref="T:System.Windows.Forms.MenuItem" /> are merged
+             with those of existing <see cref="T:System.Windows.Forms.MenuItem" />
+             objects at the same position in a merged menu.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Remove">
@@ -98,7 +108,10 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>The <see cref="T:System.Windows.Forms.MenuItem" /> is not included in a merged menu.</summary>
+        <summary>
+             The <see cref="T:System.Windows.Forms.MenuItem" /> is not included in a
+             merged menu.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Replace">
@@ -120,7 +133,11 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The <see cref="T:System.Windows.Forms.MenuItem" /> replaces an existing <see cref="T:System.Windows.Forms.MenuItem" /> at the same position in a merged menu.</summary>
+        <summary>
+             The <see cref="T:System.Windows.Forms.MenuItem" /> replaces the
+             existing <see cref="T:System.Windows.Forms.MenuItem" /> at the same
+             position in a merged menu.
+            </summary>
       </Docs>
     </Member>
   </Members>

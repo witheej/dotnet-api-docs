@@ -1,4 +1,4 @@
-﻿<Type Name="UICuesEventHandler" FullName="System.Windows.Forms.UICuesEventHandler">
+<Type Name="UICuesEventHandler" FullName="System.Windows.Forms.UICuesEventHandler">
   <TypeSignature Language="C#" Value="public delegate void UICuesEventHandler(object sender, UICuesEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed UICuesEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.UICuesEventHandler" />
@@ -24,7 +24,9 @@
   <Docs>
     <param name="sender">The source of the event.</param>
     <param name="e">A <see cref="T:System.Windows.Forms.UICuesEventArgs" /> that contains the event data.</param>
-    <summary>Represents a method that will handle the <see cref="E:System.Windows.Forms.Control.ChangeUICues" /> event of a <see cref="T:System.Windows.Forms.Control" />.</summary>
+    <summary>
+             Represents a method that will handle the <see cref="E:System.Windows.Forms.Control.ChangeUICues" /> event of a <see cref="T:System.Windows.Forms.Control" />.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

@@ -1,4 +1,4 @@
-﻿<Type Name="Form" FullName="System.Windows.Forms.Form">
+<Type Name="Form" FullName="System.Windows.Forms.Form">
   <TypeSignature Language="C#" Value="public class Form : System.Windows.Forms.ContainerControl" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Form extends System.Windows.Forms.ContainerControl" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Form" />
@@ -40,18 +40,14 @@
     <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-1.1">
-      <AttributeName>System.ComponentModel.Designer("System.Windows.Forms.Design.FormDocumentDesigner, System.Design, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.ComponentModel.Design.IRootDesigner))</AttributeName>
-    </Attribute>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
-      <AttributeName>System.ComponentModel.Designer("System.Windows.Forms.Design.FormDocumentDesigner, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.ComponentModel.Design.IRootDesigner))</AttributeName>
-    </Attribute>
     <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
       <AttributeName>System.Runtime.InteropServices.ClassInterface(System.Runtime.InteropServices.ClassInterfaceType.AutoDispatch)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a window or dialog box that makes up an application's user interface.</summary>
+    <summary>
+             Represents a window or dialog box that makes up an application's user interface.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -97,7 +93,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Form" /> class.</summary>
+        <summary>
+             Initializes a new instance of the <see cref="T:System.Windows.Forms.Form" /> class.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -140,7 +138,10 @@
         <ReturnType>System.Windows.Forms.IButtonControl</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the button on the form that is clicked when the user presses the ENTER key.</summary>
+        <summary>
+             Indicates the <see cref="T:System.Windows.Forms.Button" /> control on the form that is clicked when
+             the user presses the ENTER key.
+            </summary>
         <value>An <see cref="T:System.Windows.Forms.IButtonControl" /> that represents the button to use as the accept button for the form.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -186,7 +187,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Activates the form and gives it focus.</summary>
+        <summary>
+             Activates the form and gives it focus.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -227,7 +230,9 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the form is activated in code or by the user.</summary>
+        <summary>
+             Occurs when the form is activated in code or by the user.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -309,7 +314,9 @@
         <ReturnType>System.Windows.Forms.Form</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the currently active form for this application.</summary>
+        <summary>
+             Gets the currently active form for this application.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.Form" /> that represents the currently active form, or <see langword="null" /> if there is no active form.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -360,7 +367,11 @@
         <ReturnType>System.Windows.Forms.Form</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the currently active multiple-document interface (MDI) child window.</summary>
+        <summary>
+            
+              Gets the currently active multiple document interface (MDI) child window.
+              Note: Don't use this property internally, use ActiveMdiChildInternal instead (see comments below).
+             </summary>
         <value>Returns a <see cref="T:System.Windows.Forms.Form" /> that represents the currently active MDI child window, or <see langword="null" /> if there are currently no child windows present.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -406,7 +417,10 @@
       </Parameters>
       <Docs>
         <param name="ownedForm">The <see cref="T:System.Windows.Forms.Form" /> that this form will own.</param>
-        <summary>Adds an owned form to this form.</summary>
+        <summary>
+             Adds
+             an owned form to this form.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -450,7 +464,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -492,7 +506,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the opacity of the form can be adjusted.</summary>
+        <summary>
+             Gets or sets
+             a value indicating whether the opacity of the form can be
+             adjusted.
+            </summary>
         <value>
           <see langword="true" /> if the opacity of the form can be changed; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -523,11 +541,8 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.Obsolete("This method has been deprecated. Use the ApplyAutoScaling method instead.  http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -535,7 +550,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Resizes the form according to the current value of the <see cref="P:System.Windows.Forms.Form.AutoScaleBaseSize" /> property and the size of the current font.</summary>
+        <summary>
+             This auto scales the form based on the AutoScaleBaseSize.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -567,21 +584,22 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.Obsolete("This property has been deprecated. Use the AutoScaleMode property instead.  http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1">
-          <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
-        </Attribute>
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the form adjusts its size to fit the height of the font used on the form and scales its controls.</summary>
+        <summary>
+             Gets or sets a value indicating whether the form will adjust its size
+             to fit the height of the font used on the form and scale
+             its controls.
+            </summary>
         <value>
           <see langword="true" /> if the form will automatically scale itself and its controls based on the current font assigned to the form; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
@@ -621,24 +639,22 @@
         <Attribute>
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
-        </Attribute>
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the base size used for autoscaling of the form.</summary>
+        <summary>
+             The base size used for autoscaling. The AutoScaleBaseSize is used
+             internally to determine how much to scale the form when AutoScaling is
+             used.
+            </summary>
         <value>A <see cref="T:System.Drawing.Size" /> that represents the base size that this form uses for autoscaling.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -682,7 +698,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the form enables autoscrolling.</summary>
+        <summary>
+             Gets or sets a value indicating whether the form implements
+             autoscrolling.
+            </summary>
         <value>
           <see langword="true" /> to enable autoscrolling on the form; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
@@ -726,8 +745,8 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Visible)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Always)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -778,8 +797,8 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Always)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -818,7 +837,9 @@
         <ReturnType>System.Windows.Forms.AutoSizeMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the mode by which the form automatically resizes itself.</summary>
+        <summary>
+             Allows the control to optionally shrink when AutoSize is true.
+            </summary>
         <value>An <see cref="T:System.Windows.Forms.AutoSizeMode" /> enumerated value. The default is <see cref="F:System.Windows.Forms.AutoSizeMode.GrowOnly" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -861,15 +882,17 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Always)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.AutoValidate</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether controls in this container will be automatically validated when the focus changes.</summary>
+        <summary>
+             Indicates whether controls in this container will be automatically validated when the focus changes.
+            </summary>
         <value>An <see cref="T:System.Windows.Forms.AutoValidate" /> enumerated value that indicates whether contained controls are implicitly validated on focus change. The default is Inherit.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Windows.Forms.ContainerControl.AutoValidate" />
@@ -892,8 +915,8 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Always)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -922,7 +945,10 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the background color for the control.</summary>
+        <summary>
+             The background color of this control. This is an ambient property and
+             will always return a non-null value.
+            </summary>
         <value>A <see cref="T:System.Drawing.Color" /> that represents the background color of the control. The default is the value of the <see cref="P:System.Windows.Forms.Control.DefaultBackColor" /> property.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Windows.Forms.Control.BackColor" />
@@ -951,7 +977,12 @@
         <ReturnType>System.Windows.Forms.IButtonControl</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the button control that is clicked when the user presses the ESC key.</summary>
+        <summary>
+             Gets
+             or
+             sets the button control that will be clicked when the
+             user presses the ESC key.
+            </summary>
         <value>An <see cref="T:System.Windows.Forms.IButtonControl" /> that represents the cancel button for the form.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -999,7 +1030,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Centers the position of the form within the bounds of the parent form.</summary>
+        <summary>
+             Centers the dialog to its parent.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1033,7 +1066,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Centers the form on the current screen.</summary>
+        <summary>
+             Centers the dialog to the screen. This will first attempt to use
+             the owner property to determine the correct screen, then
+             it will try the HWND owner of the form, and finally this will
+             center the form on the same monitor as the mouse cursor.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1080,7 +1118,9 @@
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the size of the client area of the form.</summary>
+        <summary>
+             Gets or sets the size of the client area of the form.
+            </summary>
         <value>A <see cref="T:System.Drawing.Size" /> that represents the size of the form's client area.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1126,7 +1166,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Closes the form.</summary>
+        <summary>
+             Closes the form.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1168,15 +1210,17 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the form is closed.</summary>
+        <summary>
+             Occurs when the form is closed.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1230,15 +1274,17 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.ComponentModel.CancelEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the form is closing.</summary>
+        <summary>
+             Occurs when the form is closing.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1299,7 +1345,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether a control box is displayed in the caption bar of the form.</summary>
+        <summary>
+             Gets or sets a value indicating whether a control box is displayed in the
+             caption bar of the form.
+            </summary>
         <value>
           <see langword="true" /> if the form displays a control box in the upper-right corner of the form; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
@@ -1347,7 +1396,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1377,7 +1426,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1385,7 +1434,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates the handle for the form. If a derived class overrides this function, it must call the base implementation.</summary>
+        <summary>
+             Creates the handle for the Form. If a
+             subclass overrides this function,
+             it must call the base implementation.
+            </summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">A handle for this <see cref="T:System.Windows.Forms.Form" /> has already been created.</exception>
         <altmember cref="M:System.Windows.Forms.Control.CreateHandle" />
@@ -1409,7 +1462,10 @@
         <ReturnType>System.Windows.Forms.CreateParams</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the required creation parameters when the control handle is created.</summary>
+        <summary>
+             Retrieves the CreateParams used to create the window.
+             If a subclass overrides this function, it must call the base implementation.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.CreateParams" /> that contains the required creation parameters when the handle to the control is created.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Windows.Forms.ContainerControl.CreateParams" />
@@ -1433,7 +1489,9 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the form loses focus and is no longer the active form.</summary>
+        <summary>
+             Occurs when the form loses focus and is not the active form.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1510,7 +1568,10 @@
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the default size of the control.</summary>
+        <summary>
+             Deriving classes can override this to configure a default size for their control.
+             This is more efficient than setting the size in the control's constructor.
+            </summary>
         <value>The default <see cref="T:System.Drawing.Size" /> of the control.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Windows.Forms.Control.DefaultSize" />
@@ -1532,7 +1593,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1543,7 +1604,12 @@
       </Parameters>
       <Docs>
         <param name="m">The Windows <see cref="T:System.Windows.Forms.Message" /> to process.</param>
-        <summary>Sends the specified message to the default window procedure.</summary>
+        <summary>
+             Calls the default window proc for the form. If
+             a
+             subclass overrides this function,
+             it must call the base implementation.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.Control.DefWndProc(System.Windows.Forms.Message@)" />
       </Docs>
@@ -1574,7 +1640,9 @@
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the size and location of the form on the Windows desktop.</summary>
+        <summary>
+             Gets or sets the size and location of the form on the Windows desktop.
+            </summary>
         <value>A <see cref="T:System.Drawing.Rectangle" /> that represents the bounds of the form on the Windows desktop using desktop coordinates.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1624,7 +1692,9 @@
         <ReturnType>System.Drawing.Point</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the location of the form on the Windows desktop.</summary>
+        <summary>
+             Gets or sets the location of the form on the Windows desktop.
+            </summary>
         <value>A <see cref="T:System.Drawing.Point" /> that represents the location of the form on the desktop.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1673,15 +1743,14 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DialogResult</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the dialog result for the form.</summary>
+        <summary>
+             Gets or sets the dialog result for the form.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.DialogResult" /> that represents the result of the form when used as a dialog box.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1738,7 +1807,10 @@
       <Docs>
         <param name="disposing">
           <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Disposes of the resources (other than memory) used by the <see cref="T:System.Windows.Forms.Form" />.</summary>
+        <summary>
+             Releases all the system resources associated with the Form. If a subclass
+             overrides this function, it must call the base implementation.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1775,7 +1847,10 @@
         <ReturnType>System.Windows.Forms.DpiChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the DPI setting changes on the display device where the form is currently displayed.</summary>
+        <summary>
+             Occurs when the DPI resolution of the screen this top level window is displayed on changes,
+             either when the top level window is moved between monitors or when the OS settings are changed.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1805,7 +1880,9 @@
         <ReturnType>System.Windows.Forms.FormBorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the border style of the form.</summary>
+        <summary>
+             Gets or sets the border style of the form.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.FormBorderStyle" /> that represents the style of border to display for the form. The default is <see langword="FormBorderStyle.Sizable" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1848,7 +1925,9 @@
         <ReturnType>System.Windows.Forms.FormClosedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs after the form is closed.</summary>
+        <summary>
+             Occurs when the form is closed.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1901,7 +1980,9 @@
         <ReturnType>System.Windows.Forms.FormClosingEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs before the form is closed.</summary>
+        <summary>
+             Occurs when the form is closing.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1956,11 +2037,8 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.Obsolete("This method has been deprecated. Use the AutoScaleDimensions property instead.  http://go.microsoft.com/fwlink/?linkid=14202")</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2002,23 +2080,26 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="bounds" Type="System.Drawing.Rectangle" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="factor" Type="System.Drawing.SizeF" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="specified" Type="System.Windows.Forms.BoundsSpecified" Index="2" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="bounds" Type="System.Drawing.Rectangle" />
+        <Parameter Name="factor" Type="System.Drawing.SizeF" />
+        <Parameter Name="specified" Type="System.Windows.Forms.BoundsSpecified" />
       </Parameters>
       <Docs>
         <param name="bounds">A <see cref="T:System.Drawing.Rectangle" /> that specifies the area for which to retrieve the display bounds.</param>
         <param name="factor">The height and width of the control's bounds.</param>
         <param name="specified">One of the values of <see cref="T:System.Windows.Forms.BoundsSpecified" /> that specifies the bounds of the control to use when defining its size and position.</param>
-        <summary>Retrieves the bounds within which the control is scaled.</summary>
+        <summary>
+             For overrides this to calculate scaled bounds based on the restored rect
+             if it is maximized or minimized.
+            </summary>
         <returns>A <see cref="T:System.Drawing.Rectangle" /> representing the bounds within which the control is scaled.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.Control.GetScaledBounds(System.Drawing.Rectangle,System.Drawing.SizeF,System.Windows.Forms.BoundsSpecified)" />
@@ -2047,7 +2128,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether a Help button should be displayed in the caption box of the form.</summary>
+        <summary>
+             Gets or sets a value indicating whether a
+             help button should be displayed in the caption box of the form.
+            </summary>
         <value>
           <see langword="true" /> to display a Help button in the form's caption bar; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
@@ -2096,8 +2180,8 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Always)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -2157,7 +2241,9 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <ReturnType>System.Drawing.Icon</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the icon for the form.</summary>
+        <summary>
+             Gets or sets the icon for the form.
+            </summary>
         <value>An <see cref="T:System.Drawing.Icon" /> that represents the icon for the form.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2190,7 +2276,9 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <ReturnType>System.Windows.Forms.InputLanguageChangedEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs after the input language of the form has changed.</summary>
+        <summary>
+             Occurs after the input language of the form has changed.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2233,7 +2321,10 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <ReturnType>System.Windows.Forms.InputLanguageChangingEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the user attempts to change the input language for the form.</summary>
+        <summary>
+             Occurs when the the user attempts to change the input language for the
+             form.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2284,7 +2375,10 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the form is a multiple-document interface (MDI) child form.</summary>
+        <summary>
+             Gets a value indicating whether the form is a multiple document
+             interface (MDI) child form.
+            </summary>
         <value>
           <see langword="true" /> if the form is an MDI child form; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -2328,7 +2422,10 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the form is a container for multiple-document interface (MDI) child forms.</summary>
+        <summary>
+             Gets or sets a value indicating whether the form is a container for multiple document interface
+             (MDI) child forms.
+            </summary>
         <value>
           <see langword="true" /> if the form is a container for MDI child forms; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
@@ -2376,14 +2473,17 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the form can use all windows and user input events without restriction.</summary>
+        <summary>
+             Determines if this form should display a warning banner when the form is
+             displayed in an unsecure mode.
+            </summary>
         <value>
           <see langword="true" /> if the form has restrictions; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
@@ -2419,7 +2519,11 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the form will receive key events before the event is passed to the control that has focus.</summary>
+        <summary>
+             Gets or sets a value
+             indicating whether the form will receive key events
+             before the event is passed to the control that has focus.
+            </summary>
         <value>
           <see langword="true" /> if the form will receive all key events; <see langword="false" /> if the currently selected control on the form receives key events. The default is <see langword="false" />.</value>
         <remarks>
@@ -2474,7 +2578,10 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </Parameters>
       <Docs>
         <param name="value">One of the <see cref="T:System.Windows.Forms.MdiLayout" /> values that defines the layout of MDI child forms.</param>
-        <summary>Arranges the multiple-document interface (MDI) child forms within the MDI parent form.</summary>
+        <summary>
+             Arranges the Multiple Document Interface
+             (MDI) child forms according to value.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2513,7 +2620,9 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs before a form is displayed for the first time.</summary>
+        <summary>
+             Occurs before the form becomes visible.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2559,7 +2668,9 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <ReturnType>System.Drawing.Point</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Drawing.Point" /> that represents the upper-left corner of the <see cref="T:System.Windows.Forms.Form" /> in screen coordinates.</summary>
+        <summary>
+             Gets or sets the location of the form.
+            </summary>
         <value>The <see cref="T:System.Drawing.Point" /> that represents the upper-left corner of the <see cref="T:System.Windows.Forms.Form" /> in screen coordinates.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2634,15 +2745,17 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Padding</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the space between controls.</summary>
+        <summary>
+             Hide Margin/MarginChanged
+            </summary>
         <value>A value that represents the space between controls.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -2664,15 +2777,17 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="P:System.Windows.Forms.Form.Margin" /> property changes.</summary>
+        <summary>
+             Hide Margin/MarginChanged
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -2699,7 +2814,10 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the **Maximize** button is displayed in the caption bar of the form.</summary>
+        <summary>
+             Gets or sets a value indicating whether the maximize button is
+             displayed in the caption bar of the form.
+            </summary>
         <value>
           <see langword="true" /> to display a **Maximize** button for the form; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
@@ -2747,7 +2865,10 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the size of the form when it is maximized.</summary>
+        <summary>
+             Gets the size of the form when it is
+             maximized.
+            </summary>
         <value>A <see cref="T:System.Drawing.Rectangle" /> that represents the bounds of the form when it is maximized.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The value of the <see cref="P:System.Drawing.Rectangle.Top" /> property is greater than the height of the form.  
@@ -2832,7 +2953,9 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the maximum size the form can be resized to.</summary>
+        <summary>
+             Gets the maximum size the form can be resized to.
+            </summary>
         <value>A <see cref="T:System.Drawing.Size" /> that represents the maximum size for the form.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -2916,7 +3039,10 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a multiple-document interface (MDI) child form is activated or closed within an MDI application.</summary>
+        <summary>
+             Occurs when a Multiple Document Interface (MDI) child form is activated or closed
+             within an MDI application.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -2966,7 +3092,11 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <ReturnType>System.Windows.Forms.Form[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an array of forms that represent the multiple-document interface (MDI) child forms that are parented to this form.</summary>
+        <summary>
+             Gets an array of forms that represent the
+             multiple document interface (MDI) child forms that are parented to this
+             form.
+            </summary>
         <value>An array of <see cref="T:System.Windows.Forms.Form" /> objects, each of which identifies one of this form's MDI child forms.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3013,15 +3143,15 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <Attribute>
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Form</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the current multiple-document interface (MDI) parent form of this form.</summary>
+        <summary>
+             Indicates the current multiple document
+             interface (MDI) parent form of this form.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.Form" /> that represents the MDI parent form.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3087,7 +3217,10 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <ReturnType>System.Windows.Forms.MainMenu</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the <see cref="T:System.Windows.Forms.MainMenu" /> that is displayed in the form.</summary>
+        <summary>
+             Gets or sets the <see cref="T:System.Windows.Forms.MainMenu" />
+             that is displayed in the form.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.MainMenu" /> that represents the menu to display in the form.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3134,7 +3267,9 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the menu of a form loses focus.</summary>
+        <summary>
+             Occurs when the menu of a form loses focus.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3181,7 +3316,9 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the menu of a form receives focus.</summary>
+        <summary>
+             Occurs when the menu of a form receives focus.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3227,17 +3364,17 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.MainMenu</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the merged menu for the form.</summary>
+        <summary>
+             Gets the merged menu for the
+             form.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.MainMenu" /> that represents the merged menu of the form.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3275,7 +3412,9 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the **Minimize** button is displayed in the caption bar of the form.</summary>
+        <summary>
+             Gets or sets a value indicating whether the minimize button is displayed in the caption bar of the form.
+            </summary>
         <value>
           <see langword="true" /> to display a **Minimize** button for the form; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
@@ -3320,9 +3459,6 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <Attribute>
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-1.1">
-          <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Size), "0, 0")</AttributeName>
-        </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.Repaint)</AttributeName>
         </Attribute>
@@ -3331,7 +3467,9 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the minimum size the form can be resized to.</summary>
+        <summary>
+             Gets the minimum size the form can be resized to.
+            </summary>
         <value>A <see cref="T:System.Drawing.Size" /> that represents the minimum size for the form.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -3411,7 +3549,10 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether this form is displayed modally.</summary>
+        <summary>
+             Gets a value indicating whether this form is
+             displayed modally.
+            </summary>
         <value>
           <see langword="true" /> if the form is displayed modally; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -3454,7 +3595,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3465,7 +3606,9 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Form.Activated" /> event.</summary>
+        <summary>
+             The activate event is fired when the form is activated.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3500,7 +3643,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.EventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the data.</param>
@@ -3537,7 +3680,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.EventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
@@ -3573,7 +3716,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3584,7 +3727,9 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </Parameters>
       <Docs>
         <param name="e">The <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Form.Closed" /> event.</summary>
+        <summary>
+             The Closed event is fired when the form is closed.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3634,7 +3779,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3645,7 +3790,9 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.ComponentModel.CancelEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Form.Closing" /> event.</summary>
+        <summary>
+             The Closing event is fired when the form is closed.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3695,7 +3842,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3703,7 +3850,9 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Raises the <see langword="CreateControl" /> event.</summary>
+        <summary>
+             Raises the CreateControl event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3733,7 +3882,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3744,7 +3893,9 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </Parameters>
       <Docs>
         <param name="e">The <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Form.Deactivate" /> event.</summary>
+        <summary>
+             Raises the Deactivate event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3781,19 +3932,21 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <Attribute FrameworkAlternate="netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Visible)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Always)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.Windows.Forms.DpiChangedEventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="e" Type="System.Windows.Forms.DpiChangedEventArgs" />
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.Windows.Forms.DpiChangedEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Form.DpiChanged" /> event.</summary>
+        <summary>
+             Raises the DpiChanged event.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -3811,19 +3964,21 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.EventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.EnabledChanged" /> event.</summary>
+        <summary>
+             Raises the EnabledChanged event.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.Control.OnEnabledChanged(System.EventArgs)" />
       </Docs>
@@ -3842,15 +3997,15 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.EventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
@@ -3886,7 +4041,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -3916,19 +4071,21 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.Windows.Forms.FormClosedEventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="e" Type="System.Windows.Forms.FormClosedEventArgs" />
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.FormClosedEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Form.FormClosed" /> event.</summary>
+        <summary>
+             The Closed event is fired when the form is closed.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -3965,19 +4122,21 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.Windows.Forms.FormClosingEventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="e" Type="System.Windows.Forms.FormClosingEventArgs" />
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.FormClosingEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Form.FormClosing" /> event.</summary>
+        <summary>
+             The Closing event is fired before the form is closed.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4014,23 +4173,25 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <Attribute FrameworkAlternate="netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="deviceDpiOld" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="deviceDpiNew" Type="System.Int32" Index="1" FrameworkAlternate="netcore-3.0;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="desiredSize" Type="System.Drawing.Size" RefType="ref" Index="2" FrameworkAlternate="netcore-3.0;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="deviceDpiOld" Type="System.Int32" />
+        <Parameter Name="deviceDpiNew" Type="System.Int32" />
+        <Parameter Name="desiredSize" Type="System.Drawing.Size" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="deviceDpiOld">The DPI value for the display device where the form was previously displayed.</param>
         <param name="deviceDpiNew">The DPI value for the display device where the form will be displayed.</param>
         <param name="desiredSize">A <see cref="T:System.Drawing.Size" /> representing the new size of the form based on the new DPI value.</param>
-        <summary>Raises the GetDpiScaledSize event.</summary>
+        <summary>
+             Allows derived form to handle WM_GETDPISCALEDSIZE message.
+            </summary>
         <returns>
           <see langword="true" /> if successful; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -4052,7 +4213,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4063,7 +4224,11 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.HandleCreated" /> event.</summary>
+        <summary>
+             Inheriting classes should override this method to find out when the
+             handle has been created.
+             Call base.OnHandleCreated first.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.Control.OnHandleCreated(System.EventArgs)" />
       </Docs>
@@ -4084,7 +4249,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4095,7 +4260,11 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.HandleDestroyed" /> event.</summary>
+        <summary>
+             Inheriting classes should override this method to find out when the
+             handle is about to be destroyed.
+             Call base.OnHandleDestroyed last.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.Control.OnHandleDestroyed(System.EventArgs)" />
       </Docs>
@@ -4114,19 +4283,21 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.ComponentModel.CancelEventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="e" Type="System.ComponentModel.CancelEventArgs" />
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.ComponentModel.CancelEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Form.HelpButtonClicked" /> event.</summary>
+        <summary>
+             Handles the event that a helpButton is clicked
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4161,7 +4332,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4172,7 +4343,10 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </Parameters>
       <Docs>
         <param name="e">The <see cref="T:System.Windows.Forms.InputLanguageChangedEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Form.InputLanguageChanged" /> event.</summary>
+        <summary>
+             Raises the <see cref="E:System.Windows.Forms.Form.InputLanguageChanged" />
+             event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4206,7 +4380,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4217,7 +4391,10 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </Parameters>
       <Docs>
         <param name="e">The <see cref="T:System.Windows.Forms.InputLanguageChangingEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Form.InputLanguageChanging" /> event.</summary>
+        <summary>
+             Raises the <see cref="E:System.Windows.Forms.Form.InputLanguageChanging" />
+             event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4252,7 +4429,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="levent" Type="System.Windows.Forms.LayoutEventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="levent" Type="System.Windows.Forms.LayoutEventArgs" />
       </Parameters>
       <Docs>
         <param name="levent">The event data.</param>
@@ -4276,7 +4453,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4287,7 +4464,9 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Form.Load" /> event.</summary>
+        <summary>
+             The Load event is fired before the form becomes visible for the first time.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4321,7 +4500,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4367,7 +4546,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4413,7 +4592,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4424,7 +4603,9 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </Parameters>
       <Docs>
         <param name="e">The <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Form.MdiChildActivate" /> event.</summary>
+        <summary>
+             Raises the <see cref="E:System.Windows.Forms.Form.MdiChildActivate" /> event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4458,7 +4639,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4469,7 +4650,9 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </Parameters>
       <Docs>
         <param name="e">The <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Form.MenuComplete" /> event.</summary>
+        <summary>
+             Raises the MenuComplete event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4503,7 +4686,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4514,7 +4697,9 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </Parameters>
       <Docs>
         <param name="e">The <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Form.MenuStart" /> event.</summary>
+        <summary>
+             Raises the <see cref="E:System.Windows.Forms.Form.MenuStart" /> event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4548,7 +4733,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4593,7 +4778,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4604,7 +4789,9 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.PaintEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Paint" /> event.</summary>
+        <summary>
+             Raises the Paint event.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.Control.OnPaint(System.Windows.Forms.PaintEventArgs)" />
       </Docs>
@@ -4625,7 +4812,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4636,7 +4823,9 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Resize" /> event.</summary>
+        <summary>
+             Raises the Resize event.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.Control.OnResize(System.EventArgs)" />
       </Docs>
@@ -4655,19 +4844,22 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.EventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Form.ResizeBegin" /> event.</summary>
+        <summary>
+             Raises the <see cref="E:System.Windows.Forms.Form.ResizeBegin" />
+             event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4703,19 +4895,22 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.EventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Form.ResizeEnd" /> event.</summary>
+        <summary>
+             Raises the <see cref="E:System.Windows.Forms.Form.ResizeEnd" />
+             event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4751,15 +4946,15 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.EventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
@@ -4800,19 +4995,21 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.EventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Form.Shown" /> event.</summary>
+        <summary>
+             Thi event fires whenever the form is first shown.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -4852,7 +5049,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4884,7 +5081,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4916,7 +5113,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -4972,7 +5169,10 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <ReturnType>System.Double</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the opacity level of the form.</summary>
+        <summary>
+             Determines the opacity of the form. This can only be set on top level controls.
+             Opacity requires Windows 2000 or later, and is ignored on earlier operating systems.
+            </summary>
         <value>The level of opacity for the form. The default is 1.00.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -5027,7 +5227,9 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <ReturnType>System.Windows.Forms.Form[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets an array of <see cref="T:System.Windows.Forms.Form" /> objects that represent all forms that are owned by this form.</summary>
+        <summary>
+             Gets an array of <see cref="T:System.Windows.Forms.Form" /> objects that represent all forms that are owned by this form.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.Form" /> array that represents the owned forms for this form.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -5082,7 +5284,9 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <ReturnType>System.Windows.Forms.Form</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the form that owns this form.</summary>
+        <summary>
+             Gets or sets the form that owns this form.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.Form" /> that represents the form that is the owner of this form.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -5124,7 +5328,10 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <Docs>
         <param name="msg">A <see cref="T:System.Windows.Forms.Message" />, passed by reference, that represents the Win32 message to process.</param>
         <param name="keyData">One of the <see cref="T:System.Windows.Forms.Keys" /> values that represents the key to process.</param>
-        <summary>Processes a command key.</summary>
+        <summary>
+             Processes a command key. Overrides Control.processCmdKey() to provide
+             additional handling of main menu command keys and Mdi accelerators.
+            </summary>
         <returns>
           <see langword="true" /> if the keystroke was processed and consumed by the control; otherwise, <see langword="false" /> to allow further processing.</returns>
         <remarks>
@@ -5162,7 +5369,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -5173,7 +5380,9 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </Parameters>
       <Docs>
         <param name="charCode">The character to process.</param>
-        <summary>Processes a dialog character.</summary>
+        <summary>
+             Processes a dialog character For a MdiChild.
+            </summary>
         <returns>
           <see langword="true" /> if the character was processed by the control; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -5201,7 +5410,12 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </Parameters>
       <Docs>
         <param name="keyData">One of the <see cref="T:System.Windows.Forms.Keys" /> values that represents the key to process.</param>
-        <summary>Processes a dialog box key.</summary>
+        <summary>
+             Processes a dialog key. Overrides Control.processDialogKey(). This
+             method implements handling of the RETURN, and ESCAPE keys in dialogs.
+             The method performs no processing on keys that include the ALT or
+             CONTROL modifiers.
+            </summary>
         <returns>
           <see langword="true" /> if the keystroke was processed and consumed by the control; otherwise, <see langword="false" /> to allow further processing.</returns>
         <remarks>
@@ -5264,11 +5478,13 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="charCode" Type="System.Char" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="charCode" Type="System.Char" />
       </Parameters>
       <Docs>
         <param name="charCode">The character to process.</param>
-        <summary>Processes a mnemonic character.</summary>
+        <summary>
+             Overriden to handle MDI mnemonic processing properly.
+            </summary>
         <returns>
           <see langword="true" /> if the character was processed as a mnemonic by the control; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -5326,7 +5542,10 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </Parameters>
       <Docs>
         <param name="ownedForm">A <see cref="T:System.Windows.Forms.Form" /> representing the form to remove from the list of owned forms for this form.</param>
-        <summary>Removes an owned form from this form.</summary>
+        <summary>
+             Removes a form from the list of owned forms. Also sets the owner of the
+             removed form to null.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -5357,7 +5576,9 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a form enters resizing mode.</summary>
+        <summary>
+             Occurs when the form enters the sizing modal loop
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -5422,7 +5643,9 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a form exits resizing mode.</summary>
+        <summary>
+             Occurs when the control exits the sizing modal loop.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -5486,7 +5709,9 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the location and size of the form in its normal window state.</summary>
+        <summary>
+             Gets or sets the restored bounds of the Form.
+            </summary>
         <value>A <see cref="T:System.Drawing.Rectangle" /> that contains the location and size of the form in the normal window state.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -5520,9 +5745,6 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         </Attribute>
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -5613,21 +5835,23 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="factor" Type="System.Drawing.SizeF" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="specified" Type="System.Windows.Forms.BoundsSpecified" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="factor" Type="System.Drawing.SizeF" />
+        <Parameter Name="specified" Type="System.Windows.Forms.BoundsSpecified" />
       </Parameters>
       <Docs>
         <param name="factor">The factor by which the height and width of the control are scaled.</param>
         <param name="specified">A <see cref="T:System.Windows.Forms.BoundsSpecified" /> value that specifies the bounds of the control to use when defining its size and position.</param>
-        <summary>Scales the location, size, padding, and margin of a control.</summary>
+        <summary>
+             Scale this form.  Form overrides this to enforce a maximum / minimum size.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -5646,11 +5870,8 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-1.1">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -5663,7 +5884,9 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <Docs>
         <param name="x">Percentage to scale the form horizontally</param>
         <param name="y">Percentage to scale the form vertically</param>
-        <summary>Performs scaling of the form.</summary>
+        <summary>
+             Base function that performs scaling of the form.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.Control.ScaleCore(System.Single,System.Single)" />
       </Docs>
@@ -5692,7 +5915,9 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <Docs>
         <param name="directed">If set to true that the active control is changed</param>
         <param name="forward">If directed is true, then this controls the direction in which focus is moved. If this is <see langword="true" />, then the next control is selected; otherwise, the previous control is selected.</param>
-        <summary>Selects this form, and optionally selects the next or previous control.</summary>
+        <summary>
+             Selects this form, and optionally selects the next/previous control.
+            </summary>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">For changing focus. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" />.</permission>
       </Docs>
@@ -5713,7 +5938,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -5753,7 +5978,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -5766,7 +5991,10 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <Docs>
         <param name="x">Requested width of the client region.</param>
         <param name="y">Requested height of the client region.</param>
-        <summary>Sets the client size of the form. This will adjust the bounds of the form to make the client size the requested size.</summary>
+        <summary>
+             Sets the clientSize of the form. This will adjust the bounds of the form
+             to make the clientSize the requested size.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Windows.Forms.Form.ClientSize" />
       </Docs>
@@ -5799,7 +6027,9 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <param name="y">The y-coordinate of the form's location.</param>
         <param name="width">The width of the form.</param>
         <param name="height">The height of the form.</param>
-        <summary>Sets the bounds of the form in desktop coordinates.</summary>
+        <summary>
+             Sets the bounds of the form in desktop coordinates.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -5844,7 +6074,9 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       <Docs>
         <param name="x">The x-coordinate of the form's location.</param>
         <param name="y">The y-coordinate of the form's location.</param>
-        <summary>Sets the location of the form in desktop coordinates.</summary>
+        <summary>
+             Sets the location of the form in desktop coordinates.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -5882,7 +6114,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -5916,11 +6148,13 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="owner" Type="System.Windows.Forms.IWin32Window" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="owner" Type="System.Windows.Forms.IWin32Window" />
       </Parameters>
       <Docs>
         <param name="owner">Any object that implements <see cref="T:System.Windows.Forms.IWin32Window" /> and represents the top-level window that will own this form.</param>
-        <summary>Shows the form with the specified owner to the user.</summary>
+        <summary>
+             Makes the control display by setting the visible property to true
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -5983,17 +6217,14 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DialogResult</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Shows the form as a modal dialog box.</summary>
+        <summary>
+             Displays this form as a modal dialog box with no owner window.
+            </summary>
         <returns>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -6058,7 +6289,9 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </Parameters>
       <Docs>
         <param name="owner">Any object that implements <see cref="T:System.Windows.Forms.IWin32Window" /> that represents the top-level window that will own the modal dialog box.</param>
-        <summary>Shows the form as a modal dialog box with the specified owner.</summary>
+        <summary>
+             Shows this form as a modal dialog with the specified owner.
+            </summary>
         <returns>One of the <see cref="T:System.Windows.Forms.DialogResult" /> values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -6124,7 +6357,12 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether an icon is displayed in the caption bar of the form.</summary>
+        <summary>
+             Gets or sets a value indicating whether an icon is displayed in the
+             caption bar of the form.
+             If ControlBox == false, then the icon won't be shown no matter what
+             the value of ShowIcon is
+            </summary>
         <value>
           <see langword="true" /> if the form displays an icon in the caption bar; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
@@ -6168,7 +6406,9 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the form is displayed in the Windows taskbar.</summary>
+        <summary>
+             If ShowInTaskbar is true then the form will be displayed in the Windows Taskbar.
+            </summary>
         <value>
           <see langword="true" /> to display the form in the Windows taskbar at run time; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
@@ -6211,7 +6451,9 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs whenever the form is first displayed.</summary>
+        <summary>
+             Occurs whenever the form is first shown.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -6267,7 +6509,9 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the window will be activated when it is shown.</summary>
+        <summary>
+             When this property returns true, the internal ShowParams property will return NativeMethods.SW_SHOWNOACTIVATE.
+            </summary>
         <value>
           <see langword="true" /> if the window will not be activated when it is shown; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
@@ -6311,7 +6555,9 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the size of the form.</summary>
+        <summary>
+             Gets or sets the size of the form.
+            </summary>
         <value>A <see cref="T:System.Drawing.Size" /> that represents the size of the form.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -6365,7 +6611,9 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <ReturnType>System.Windows.Forms.SizeGripStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the style of the size grip to display in the lower-right corner of the form.</summary>
+        <summary>
+             Gets or sets the style of size grip to display in the lower-left corner of the form.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.SizeGripStyle" /> that represents the style of the size grip to display. The default is <see cref="F:System.Windows.Forms.SizeGripStyle.Auto" /></value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -6415,7 +6663,10 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <ReturnType>System.Windows.Forms.FormStartPosition</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the starting position of the form at run time.</summary>
+        <summary>
+             Gets or sets the
+             starting position of the form at run time.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.FormStartPosition" /> that represents the starting position of the form.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -6462,7 +6713,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -6500,7 +6751,7 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -6534,15 +6785,17 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.Runtime.InteropServices.DispId(-516)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the user can give the focus to this control using the TAB key.</summary>
+        <summary>
+             This property has no effect on Form, we need to hide it from browsers.
+            </summary>
         <value>
           <see langword="true" /> if the user can give the focus to the control using the TAB key; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
@@ -6565,8 +6818,8 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -6627,14 +6880,17 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether to display the form as a top-level window.</summary>
+        <summary>
+             Gets or sets a value indicating whether to display the form as a top-level
+             window.
+            </summary>
         <value>
           <see langword="true" /> to display the form as a top-level window; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
@@ -6681,7 +6937,10 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the form should be displayed as a topmost form.</summary>
+        <summary>
+             Gets or sets a value indicating whether the form should be displayed as the
+             top-most form of the application.
+            </summary>
         <value>
           <see langword="true" /> to display the form as a topmost form; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
@@ -6723,7 +6982,9 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets a string representing the current instance of the form.</summary>
+        <summary>
+             Returns a string representation for this control.
+            </summary>
         <returns>A string consisting of the fully qualified name of the form object's class, with the <see cref="P:System.Windows.Forms.Form.Text" /> property of the form appended to the end. For example, if the form is derived from the class <c>MyForm</c> in the <c>MyNamespace</c> namespace, and the <see cref="P:System.Windows.Forms.Form.Text" /> property is set to <c>Hello, World</c>, this method will return <c>MyNamespace.MyForm, Text: Hello, World</c>.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -6746,7 +7007,9 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the color that will represent transparent areas of the form.</summary>
+        <summary>
+             Gets or sets the color that will represent transparent areas of the form.
+            </summary>
         <value>A <see cref="T:System.Drawing.Color" /> that represents the color to display transparently on the form.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -6788,7 +7051,10 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Updates which button is the default button.</summary>
+        <summary>
+             Updates the default button based on current selection, and the
+             acceptButton property.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -6831,8 +7097,8 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Always)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -6840,7 +7106,11 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Causes all of the child controls within a control that support validation to validate their data.</summary>
+        <summary>
+             Validates all selectable child controls in the container, including descendants. This is
+             equivalent to calling ValidateChildren(ValidationConstraints.Selectable). See <see cref="F:System.Windows.Forms.ValidationConstraints.Selectable" />
+             for details of exactly which child controls will be validated.
+            </summary>
         <returns>
           <see langword="true" /> if all of the children validated successfully; otherwise, <see langword="false" />. If called from the <see cref="E:System.Windows.Forms.Control.Validating" /> or <see cref="E:System.Windows.Forms.Control.Validated" /> event handlers, this method will always return <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -6863,19 +7133,22 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.Browsable(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Always)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="validationConstraints" Type="System.Windows.Forms.ValidationConstraints" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="validationConstraints" Type="System.Windows.Forms.ValidationConstraints" />
       </Parameters>
       <Docs>
         <param name="validationConstraints">Places restrictions on which controls have their <see cref="E:System.Windows.Forms.Control.Validating" /> event raised.</param>
-        <summary>Causes all of the child controls within a control that support validation to validate their data.</summary>
+        <summary>
+             Validates all the child controls in the container. Exactly which controls are
+             validated and which controls are skipped is determined by <paramref name="flags" />.
+            </summary>
         <returns>
           <see langword="true" /> if all of the children validated successfully; otherwise, <see langword="false" />. If called from the <see cref="E:System.Windows.Forms.Control.Validating" /> or <see cref="E:System.Windows.Forms.Control.Validated" /> event handlers, this method will always return <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -6905,7 +7178,9 @@ To display a Help button, the value of the form's <xref:System.Windows.Forms.For
         <ReturnType>System.Windows.Forms.FormWindowState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether form is minimized, maximized, or normal.</summary>
+        <summary>
+             Gets or sets the form's window state.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.FormWindowState" /> that represents whether form is minimized, maximized, or normal. The default is <see langword="FormWindowState.Normal" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -6953,7 +7228,7 @@ End Sub
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -6964,7 +7239,9 @@ End Sub
       </Parameters>
       <Docs>
         <param name="m">The Windows <see cref="T:System.Windows.Forms.Message" /> to process.</param>
-        <summary>Processes Windows messages.</summary>
+        <summary>
+             Base wndProc encapsulation.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.ContainerControl.WndProc(System.Windows.Forms.Message@)" />
       </Docs>

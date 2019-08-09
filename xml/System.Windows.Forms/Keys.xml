@@ -1,4 +1,4 @@
-﻿<Type Name="Keys" FullName="System.Windows.Forms.Keys">
+<Type Name="Keys" FullName="System.Windows.Forms.Keys">
   <TypeSignature Language="C#" Value="public enum Keys" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Keys extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Keys" />
@@ -27,12 +27,11 @@
     <Attribute FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
       <AttributeName>System.Runtime.InteropServices.ComVisible(true)</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
-      <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.ShortcutKeysEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
-    </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies key codes and modifiers.</summary>
+    <summary>
+             Specifies key codes and modifiers.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -104,7 +103,9 @@
       </ReturnValue>
       <MemberValue>65</MemberValue>
       <Docs>
-        <summary>The A key.</summary>
+        <summary>
+             The A key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Add">
@@ -126,7 +127,9 @@
       </ReturnValue>
       <MemberValue>107</MemberValue>
       <Docs>
-        <summary>The add key.</summary>
+        <summary>
+             The Add key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Alt">
@@ -148,7 +151,9 @@
       </ReturnValue>
       <MemberValue>262144</MemberValue>
       <Docs>
-        <summary>The ALT modifier key.</summary>
+        <summary>
+             The ALT modifier key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Apps">
@@ -170,7 +175,9 @@
       </ReturnValue>
       <MemberValue>93</MemberValue>
       <Docs>
-        <summary>The application key (Microsoft Natural Keyboard).</summary>
+        <summary>
+             The Application key (Microsoft Natural Keyboard).
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Attn">
@@ -192,7 +199,9 @@
       </ReturnValue>
       <MemberValue>246</MemberValue>
       <Docs>
-        <summary>The ATTN key.</summary>
+        <summary>
+             The ATTN key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="B">
@@ -214,7 +223,9 @@
       </ReturnValue>
       <MemberValue>66</MemberValue>
       <Docs>
-        <summary>The B key.</summary>
+        <summary>
+             The B key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Back">
@@ -236,7 +247,9 @@
       </ReturnValue>
       <MemberValue>8</MemberValue>
       <Docs>
-        <summary>The BACKSPACE key.</summary>
+        <summary>
+             The BACKSPACE key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="BrowserBack">
@@ -258,7 +271,9 @@
       </ReturnValue>
       <MemberValue>166</MemberValue>
       <Docs>
-        <summary>The browser back key (Windows 2000 or later).</summary>
+        <summary>
+             The Browser Back key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="BrowserFavorites">
@@ -280,7 +295,9 @@
       </ReturnValue>
       <MemberValue>171</MemberValue>
       <Docs>
-        <summary>The browser favorites key (Windows 2000 or later).</summary>
+        <summary>
+             The Browser Favorites key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="BrowserForward">
@@ -302,7 +319,9 @@
       </ReturnValue>
       <MemberValue>167</MemberValue>
       <Docs>
-        <summary>The browser forward key (Windows 2000 or later).</summary>
+        <summary>
+             The Browser Forward key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="BrowserHome">
@@ -324,7 +343,9 @@
       </ReturnValue>
       <MemberValue>172</MemberValue>
       <Docs>
-        <summary>The browser home key (Windows 2000 or later).</summary>
+        <summary>
+             The Browser Home key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="BrowserRefresh">
@@ -346,7 +367,9 @@
       </ReturnValue>
       <MemberValue>168</MemberValue>
       <Docs>
-        <summary>The browser refresh key (Windows 2000 or later).</summary>
+        <summary>
+             The Browser Refresh key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="BrowserSearch">
@@ -368,7 +391,9 @@
       </ReturnValue>
       <MemberValue>170</MemberValue>
       <Docs>
-        <summary>The browser search key (Windows 2000 or later).</summary>
+        <summary>
+             The Browser Search key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="BrowserStop">
@@ -390,7 +415,9 @@
       </ReturnValue>
       <MemberValue>169</MemberValue>
       <Docs>
-        <summary>The browser stop key (Windows 2000 or later).</summary>
+        <summary>
+             The Browser Stop key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="C">
@@ -412,7 +439,9 @@
       </ReturnValue>
       <MemberValue>67</MemberValue>
       <Docs>
-        <summary>The C key.</summary>
+        <summary>
+             The C key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Cancel">
@@ -434,7 +463,9 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>The CANCEL key.</summary>
+        <summary>
+             The CANCEL key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Capital">
@@ -456,7 +487,9 @@
       </ReturnValue>
       <MemberValue>20</MemberValue>
       <Docs>
-        <summary>The CAPS LOCK key.</summary>
+        <summary>
+             The CAPS LOCK key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CapsLock">
@@ -478,7 +511,9 @@
       </ReturnValue>
       <MemberValue>20</MemberValue>
       <Docs>
-        <summary>The CAPS LOCK key.</summary>
+        <summary>
+             The CAPS LOCK key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Clear">
@@ -522,7 +557,9 @@
       </ReturnValue>
       <MemberValue>131072</MemberValue>
       <Docs>
-        <summary>The CTRL modifier key.</summary>
+        <summary>
+             The  CTRL modifier key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="ControlKey">
@@ -544,7 +581,9 @@
       </ReturnValue>
       <MemberValue>17</MemberValue>
       <Docs>
-        <summary>The CTRL key.</summary>
+        <summary>
+             The CTRL key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Crsel">
@@ -566,7 +605,9 @@
       </ReturnValue>
       <MemberValue>247</MemberValue>
       <Docs>
-        <summary>The CRSEL key.</summary>
+        <summary>
+             The CRSEL key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="D">
@@ -588,7 +629,9 @@
       </ReturnValue>
       <MemberValue>68</MemberValue>
       <Docs>
-        <summary>The D key.</summary>
+        <summary>
+             The D key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="D0">
@@ -610,7 +653,9 @@
       </ReturnValue>
       <MemberValue>48</MemberValue>
       <Docs>
-        <summary>The 0 key.</summary>
+        <summary>
+             The 0 key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="D1">
@@ -632,7 +677,9 @@
       </ReturnValue>
       <MemberValue>49</MemberValue>
       <Docs>
-        <summary>The 1 key.</summary>
+        <summary>
+             The 1 key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="D2">
@@ -654,7 +701,9 @@
       </ReturnValue>
       <MemberValue>50</MemberValue>
       <Docs>
-        <summary>The 2 key.</summary>
+        <summary>
+             The 2 key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="D3">
@@ -676,7 +725,9 @@
       </ReturnValue>
       <MemberValue>51</MemberValue>
       <Docs>
-        <summary>The 3 key.</summary>
+        <summary>
+             The 3 key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="D4">
@@ -698,7 +749,9 @@
       </ReturnValue>
       <MemberValue>52</MemberValue>
       <Docs>
-        <summary>The 4 key.</summary>
+        <summary>
+             The 4 key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="D5">
@@ -720,7 +773,9 @@
       </ReturnValue>
       <MemberValue>53</MemberValue>
       <Docs>
-        <summary>The 5 key.</summary>
+        <summary>
+             The 5 key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="D6">
@@ -742,7 +797,9 @@
       </ReturnValue>
       <MemberValue>54</MemberValue>
       <Docs>
-        <summary>The 6 key.</summary>
+        <summary>
+             The 6 key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="D7">
@@ -764,7 +821,9 @@
       </ReturnValue>
       <MemberValue>55</MemberValue>
       <Docs>
-        <summary>The 7 key.</summary>
+        <summary>
+             The 7 key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="D8">
@@ -786,7 +845,9 @@
       </ReturnValue>
       <MemberValue>56</MemberValue>
       <Docs>
-        <summary>The 8 key.</summary>
+        <summary>
+             The 8 key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="D9">
@@ -808,7 +869,9 @@
       </ReturnValue>
       <MemberValue>57</MemberValue>
       <Docs>
-        <summary>The 9 key.</summary>
+        <summary>
+             The 9 key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Decimal">
@@ -830,7 +893,9 @@
       </ReturnValue>
       <MemberValue>110</MemberValue>
       <Docs>
-        <summary>The decimal key.</summary>
+        <summary>
+             The Decimal key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Delete">
@@ -852,7 +917,9 @@
       </ReturnValue>
       <MemberValue>46</MemberValue>
       <Docs>
-        <summary>The DEL key.</summary>
+        <summary>
+             The DEL key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Divide">
@@ -874,7 +941,9 @@
       </ReturnValue>
       <MemberValue>111</MemberValue>
       <Docs>
-        <summary>The divide key.</summary>
+        <summary>
+             The Divide key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Down">
@@ -896,7 +965,9 @@
       </ReturnValue>
       <MemberValue>40</MemberValue>
       <Docs>
-        <summary>The DOWN ARROW key.</summary>
+        <summary>
+             The DOWN ARROW key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="E">
@@ -918,7 +989,9 @@
       </ReturnValue>
       <MemberValue>69</MemberValue>
       <Docs>
-        <summary>The E key.</summary>
+        <summary>
+             The E key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="End">
@@ -940,7 +1013,9 @@
       </ReturnValue>
       <MemberValue>35</MemberValue>
       <Docs>
-        <summary>The END key.</summary>
+        <summary>
+             The END key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Enter">
@@ -962,7 +1037,9 @@
       </ReturnValue>
       <MemberValue>13</MemberValue>
       <Docs>
-        <summary>The ENTER key.</summary>
+        <summary>
+             The ENTER key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="EraseEof">
@@ -984,7 +1061,9 @@
       </ReturnValue>
       <MemberValue>249</MemberValue>
       <Docs>
-        <summary>The ERASE EOF key.</summary>
+        <summary>
+             The ERASE EOF key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Escape">
@@ -1006,7 +1085,9 @@
       </ReturnValue>
       <MemberValue>27</MemberValue>
       <Docs>
-        <summary>The ESC key.</summary>
+        <summary>
+             The ESC key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Execute">
@@ -1028,7 +1109,9 @@
       </ReturnValue>
       <MemberValue>43</MemberValue>
       <Docs>
-        <summary>The EXECUTE key.</summary>
+        <summary>
+             The EXECUTE key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Exsel">
@@ -1050,7 +1133,9 @@
       </ReturnValue>
       <MemberValue>248</MemberValue>
       <Docs>
-        <summary>The EXSEL key.</summary>
+        <summary>
+             The EXSEL key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="F">
@@ -1072,7 +1157,9 @@
       </ReturnValue>
       <MemberValue>70</MemberValue>
       <Docs>
-        <summary>The F key.</summary>
+        <summary>
+             The F key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="F1">
@@ -1094,7 +1181,9 @@
       </ReturnValue>
       <MemberValue>112</MemberValue>
       <Docs>
-        <summary>The F1 key.</summary>
+        <summary>
+             The F1 key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="F10">
@@ -1116,7 +1205,9 @@
       </ReturnValue>
       <MemberValue>121</MemberValue>
       <Docs>
-        <summary>The F10 key.</summary>
+        <summary>
+             The F10 key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="F11">
@@ -1138,7 +1229,9 @@
       </ReturnValue>
       <MemberValue>122</MemberValue>
       <Docs>
-        <summary>The F11 key.</summary>
+        <summary>
+             The F11 key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="F12">
@@ -1160,7 +1253,9 @@
       </ReturnValue>
       <MemberValue>123</MemberValue>
       <Docs>
-        <summary>The F12 key.</summary>
+        <summary>
+             The F12 key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="F13">
@@ -1182,7 +1277,9 @@
       </ReturnValue>
       <MemberValue>124</MemberValue>
       <Docs>
-        <summary>The F13 key.</summary>
+        <summary>
+             The F13 key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="F14">
@@ -1204,7 +1301,9 @@
       </ReturnValue>
       <MemberValue>125</MemberValue>
       <Docs>
-        <summary>The F14 key.</summary>
+        <summary>
+             The F14 key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="F15">
@@ -1226,7 +1325,9 @@
       </ReturnValue>
       <MemberValue>126</MemberValue>
       <Docs>
-        <summary>The F15 key.</summary>
+        <summary>
+             The F15 key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="F16">
@@ -1248,7 +1349,9 @@
       </ReturnValue>
       <MemberValue>127</MemberValue>
       <Docs>
-        <summary>The F16 key.</summary>
+        <summary>
+             The F16 key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="F17">
@@ -1270,7 +1373,9 @@
       </ReturnValue>
       <MemberValue>128</MemberValue>
       <Docs>
-        <summary>The F17 key.</summary>
+        <summary>
+             The F17 key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="F18">
@@ -1292,7 +1397,9 @@
       </ReturnValue>
       <MemberValue>129</MemberValue>
       <Docs>
-        <summary>The F18 key.</summary>
+        <summary>
+             The F18 key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="F19">
@@ -1314,7 +1421,9 @@
       </ReturnValue>
       <MemberValue>130</MemberValue>
       <Docs>
-        <summary>The F19 key.</summary>
+        <summary>
+             The F19 key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="F2">
@@ -1336,7 +1445,9 @@
       </ReturnValue>
       <MemberValue>113</MemberValue>
       <Docs>
-        <summary>The F2 key.</summary>
+        <summary>
+             The F2 key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="F20">
@@ -1358,7 +1469,9 @@
       </ReturnValue>
       <MemberValue>131</MemberValue>
       <Docs>
-        <summary>The F20 key.</summary>
+        <summary>
+             The F20 key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="F21">
@@ -1380,7 +1493,9 @@
       </ReturnValue>
       <MemberValue>132</MemberValue>
       <Docs>
-        <summary>The F21 key.</summary>
+        <summary>
+             The F21 key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="F22">
@@ -1402,7 +1517,9 @@
       </ReturnValue>
       <MemberValue>133</MemberValue>
       <Docs>
-        <summary>The F22 key.</summary>
+        <summary>
+             The F22 key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="F23">
@@ -1424,7 +1541,9 @@
       </ReturnValue>
       <MemberValue>134</MemberValue>
       <Docs>
-        <summary>The F23 key.</summary>
+        <summary>
+             The F23 key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="F24">
@@ -1446,7 +1565,9 @@
       </ReturnValue>
       <MemberValue>135</MemberValue>
       <Docs>
-        <summary>The F24 key.</summary>
+        <summary>
+             The F24 key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="F3">
@@ -1468,7 +1589,9 @@
       </ReturnValue>
       <MemberValue>114</MemberValue>
       <Docs>
-        <summary>The F3 key.</summary>
+        <summary>
+             The F3 key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="F4">
@@ -1490,7 +1613,9 @@
       </ReturnValue>
       <MemberValue>115</MemberValue>
       <Docs>
-        <summary>The F4 key.</summary>
+        <summary>
+             The F4 key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="F5">
@@ -1512,7 +1637,9 @@
       </ReturnValue>
       <MemberValue>116</MemberValue>
       <Docs>
-        <summary>The F5 key.</summary>
+        <summary>
+             The F5 key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="F6">
@@ -1534,7 +1661,9 @@
       </ReturnValue>
       <MemberValue>117</MemberValue>
       <Docs>
-        <summary>The F6 key.</summary>
+        <summary>
+             The F6 key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="F7">
@@ -1556,7 +1685,9 @@
       </ReturnValue>
       <MemberValue>118</MemberValue>
       <Docs>
-        <summary>The F7 key.</summary>
+        <summary>
+             The F7 key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="F8">
@@ -1578,7 +1709,9 @@
       </ReturnValue>
       <MemberValue>119</MemberValue>
       <Docs>
-        <summary>The F8 key.</summary>
+        <summary>
+             The F8 key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="F9">
@@ -1600,7 +1733,9 @@
       </ReturnValue>
       <MemberValue>120</MemberValue>
       <Docs>
-        <summary>The F9 key.</summary>
+        <summary>
+             The F9 key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="FinalMode">
@@ -1622,7 +1757,9 @@
       </ReturnValue>
       <MemberValue>24</MemberValue>
       <Docs>
-        <summary>The IME final mode key.</summary>
+        <summary>
+             The IME Final mode key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="G">
@@ -1644,7 +1781,9 @@
       </ReturnValue>
       <MemberValue>71</MemberValue>
       <Docs>
-        <summary>The G key.</summary>
+        <summary>
+             The G key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="H">
@@ -1666,7 +1805,9 @@
       </ReturnValue>
       <MemberValue>72</MemberValue>
       <Docs>
-        <summary>The H key.</summary>
+        <summary>
+             The H key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="HanguelMode">
@@ -1688,7 +1829,9 @@
       </ReturnValue>
       <MemberValue>21</MemberValue>
       <Docs>
-        <summary>The IME Hanguel mode key. (maintained for compatibility; use <see langword="HangulMode" />)</summary>
+        <summary>
+             The IME Hanguel mode key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="HangulMode">
@@ -1710,7 +1853,9 @@
       </ReturnValue>
       <MemberValue>21</MemberValue>
       <Docs>
-        <summary>The IME Hangul mode key.</summary>
+        <summary>
+             The IME Hangul mode key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="HanjaMode">
@@ -1732,7 +1877,9 @@
       </ReturnValue>
       <MemberValue>25</MemberValue>
       <Docs>
-        <summary>The IME Hanja mode key.</summary>
+        <summary>
+             The IME Hanja mode key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Help">
@@ -1754,7 +1901,9 @@
       </ReturnValue>
       <MemberValue>47</MemberValue>
       <Docs>
-        <summary>The HELP key.</summary>
+        <summary>
+             The HELP key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Home">
@@ -1776,7 +1925,9 @@
       </ReturnValue>
       <MemberValue>36</MemberValue>
       <Docs>
-        <summary>The HOME key.</summary>
+        <summary>
+             The HOME key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="I">
@@ -1798,7 +1949,9 @@
       </ReturnValue>
       <MemberValue>73</MemberValue>
       <Docs>
-        <summary>The I key.</summary>
+        <summary>
+             The I key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="IMEAccept">
@@ -1819,7 +1972,9 @@
       </ReturnValue>
       <MemberValue>30</MemberValue>
       <Docs>
-        <summary>The IME accept key, replaces <see cref="F:System.Windows.Forms.Keys.IMEAceept" />.</summary>
+        <summary>
+             The IME Accept key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="IMEAceept">
@@ -1841,7 +1996,9 @@
       </ReturnValue>
       <MemberValue>30</MemberValue>
       <Docs>
-        <summary>The IME accept key. Obsolete, use <see cref="F:System.Windows.Forms.Keys.IMEAccept" /> instead.</summary>
+        <summary>
+             The IME Accept key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="IMEConvert">
@@ -1863,7 +2020,9 @@
       </ReturnValue>
       <MemberValue>28</MemberValue>
       <Docs>
-        <summary>The IME convert key.</summary>
+        <summary>
+             The IME Convert key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="IMEModeChange">
@@ -1885,7 +2044,9 @@
       </ReturnValue>
       <MemberValue>31</MemberValue>
       <Docs>
-        <summary>The IME mode change key.</summary>
+        <summary>
+             The IME Mode change request.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="IMENonconvert">
@@ -1907,7 +2068,9 @@
       </ReturnValue>
       <MemberValue>29</MemberValue>
       <Docs>
-        <summary>The IME nonconvert key.</summary>
+        <summary>
+             The IME NonConvert key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Insert">
@@ -1929,7 +2092,9 @@
       </ReturnValue>
       <MemberValue>45</MemberValue>
       <Docs>
-        <summary>The INS key.</summary>
+        <summary>
+             The INS key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="J">
@@ -1951,7 +2116,9 @@
       </ReturnValue>
       <MemberValue>74</MemberValue>
       <Docs>
-        <summary>The J key.</summary>
+        <summary>
+             The J key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="JunjaMode">
@@ -1973,7 +2140,9 @@
       </ReturnValue>
       <MemberValue>23</MemberValue>
       <Docs>
-        <summary>The IME Junja mode key.</summary>
+        <summary>
+             The IME Junja mode key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="K">
@@ -1995,7 +2164,9 @@
       </ReturnValue>
       <MemberValue>75</MemberValue>
       <Docs>
-        <summary>The K key.</summary>
+        <summary>
+             The K key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="KanaMode">
@@ -2017,7 +2188,9 @@
       </ReturnValue>
       <MemberValue>21</MemberValue>
       <Docs>
-        <summary>The IME Kana mode key.</summary>
+        <summary>
+             The IME Kana mode key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="KanjiMode">
@@ -2039,7 +2212,9 @@
       </ReturnValue>
       <MemberValue>25</MemberValue>
       <Docs>
-        <summary>The IME Kanji mode key.</summary>
+        <summary>
+             The IME Kanji mode key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="KeyCode">
@@ -2061,7 +2236,9 @@
       </ReturnValue>
       <MemberValue>65535</MemberValue>
       <Docs>
-        <summary>The bitmask to extract a key code from a key value.</summary>
+        <summary>
+             The bit mask to extract a key code from a key value.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="L">
@@ -2083,7 +2260,9 @@
       </ReturnValue>
       <MemberValue>76</MemberValue>
       <Docs>
-        <summary>The L key.</summary>
+        <summary>
+             The L key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="LaunchApplication1">
@@ -2105,7 +2284,9 @@
       </ReturnValue>
       <MemberValue>182</MemberValue>
       <Docs>
-        <summary>The start application one key (Windows 2000 or later).</summary>
+        <summary>
+             The Launch Application1 key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="LaunchApplication2">
@@ -2127,7 +2308,9 @@
       </ReturnValue>
       <MemberValue>183</MemberValue>
       <Docs>
-        <summary>The start application two key (Windows 2000 or later).</summary>
+        <summary>
+             The Launch Application2 key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="LaunchMail">
@@ -2149,7 +2332,9 @@
       </ReturnValue>
       <MemberValue>180</MemberValue>
       <Docs>
-        <summary>The launch mail key (Windows 2000 or later).</summary>
+        <summary>
+             The Launch Mail key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="LButton">
@@ -2171,7 +2356,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The left mouse button.</summary>
+        <summary>
+             The left mouse button.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="LControlKey">
@@ -2193,7 +2380,9 @@
       </ReturnValue>
       <MemberValue>162</MemberValue>
       <Docs>
-        <summary>The left CTRL key.</summary>
+        <summary>
+             The left CTRL key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -2215,7 +2404,9 @@
       </ReturnValue>
       <MemberValue>37</MemberValue>
       <Docs>
-        <summary>The LEFT ARROW key.</summary>
+        <summary>
+             The LEFT ARROW key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="LineFeed">
@@ -2237,7 +2428,9 @@
       </ReturnValue>
       <MemberValue>10</MemberValue>
       <Docs>
-        <summary>The LINEFEED key.</summary>
+        <summary>
+             The CLEAR key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="LMenu">
@@ -2259,7 +2452,9 @@
       </ReturnValue>
       <MemberValue>164</MemberValue>
       <Docs>
-        <summary>The left ALT key.</summary>
+        <summary>
+             The left ALT key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="LShiftKey">
@@ -2281,7 +2476,9 @@
       </ReturnValue>
       <MemberValue>160</MemberValue>
       <Docs>
-        <summary>The left SHIFT key.</summary>
+        <summary>
+             The left SHIFT key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="LWin">
@@ -2303,7 +2500,9 @@
       </ReturnValue>
       <MemberValue>91</MemberValue>
       <Docs>
-        <summary>The left Windows logo key (Microsoft Natural Keyboard).</summary>
+        <summary>
+             The left Windows logo key (Microsoft Natural Keyboard).
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="M">
@@ -2325,7 +2524,9 @@
       </ReturnValue>
       <MemberValue>77</MemberValue>
       <Docs>
-        <summary>The M key.</summary>
+        <summary>
+             The M key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="MButton">
@@ -2347,7 +2548,9 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>The middle mouse button (three-button mouse).</summary>
+        <summary>
+             The middle mouse button (three-button mouse).
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="MediaNextTrack">
@@ -2369,7 +2572,9 @@
       </ReturnValue>
       <MemberValue>176</MemberValue>
       <Docs>
-        <summary>The media next track key (Windows 2000 or later).</summary>
+        <summary>
+             The Media Next Track key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="MediaPlayPause">
@@ -2391,7 +2596,9 @@
       </ReturnValue>
       <MemberValue>179</MemberValue>
       <Docs>
-        <summary>The media play pause key (Windows 2000 or later).</summary>
+        <summary>
+             The Media Play Pause key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="MediaPreviousTrack">
@@ -2413,7 +2620,9 @@
       </ReturnValue>
       <MemberValue>177</MemberValue>
       <Docs>
-        <summary>The media previous track key (Windows 2000 or later).</summary>
+        <summary>
+             The Media Previous Track key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="MediaStop">
@@ -2435,7 +2644,9 @@
       </ReturnValue>
       <MemberValue>178</MemberValue>
       <Docs>
-        <summary>The media Stop key (Windows 2000 or later).</summary>
+        <summary>
+             The Media Stop key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Menu">
@@ -2457,7 +2668,9 @@
       </ReturnValue>
       <MemberValue>18</MemberValue>
       <Docs>
-        <summary>The ALT key.</summary>
+        <summary>
+             The ALT key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Modifiers">
@@ -2479,7 +2692,9 @@
       </ReturnValue>
       <MemberValue>-65536</MemberValue>
       <Docs>
-        <summary>The bitmask to extract modifiers from a key value.</summary>
+        <summary>
+             The bit mask to extract modifiers from a key value.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Multiply">
@@ -2501,7 +2716,9 @@
       </ReturnValue>
       <MemberValue>106</MemberValue>
       <Docs>
-        <summary>The multiply key.</summary>
+        <summary>
+             The Multiply key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="N">
@@ -2523,7 +2740,9 @@
       </ReturnValue>
       <MemberValue>78</MemberValue>
       <Docs>
-        <summary>The N key.</summary>
+        <summary>
+             The N key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Next">
@@ -2545,7 +2764,9 @@
       </ReturnValue>
       <MemberValue>34</MemberValue>
       <Docs>
-        <summary>The PAGE DOWN key.</summary>
+        <summary>
+             The PAGE DOWN key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="NoName">
@@ -2567,7 +2788,9 @@
       </ReturnValue>
       <MemberValue>252</MemberValue>
       <Docs>
-        <summary>A constant reserved for future use.</summary>
+        <summary>
+             A constant reserved for future use.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -2589,7 +2812,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>No key pressed.</summary>
+        <summary>
+             No key pressed.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="NumLock">
@@ -2611,7 +2836,9 @@
       </ReturnValue>
       <MemberValue>144</MemberValue>
       <Docs>
-        <summary>The NUM LOCK key.</summary>
+        <summary>
+             The NUM LOCK key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="NumPad0">
@@ -2633,7 +2860,9 @@
       </ReturnValue>
       <MemberValue>96</MemberValue>
       <Docs>
-        <summary>The 0 key on the numeric keypad.</summary>
+        <summary>
+             The 0 key on the numeric keypad.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="NumPad1">
@@ -2655,7 +2884,9 @@
       </ReturnValue>
       <MemberValue>97</MemberValue>
       <Docs>
-        <summary>The 1 key on the numeric keypad.</summary>
+        <summary>
+             The 1 key on the numeric keypad.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="NumPad2">
@@ -2677,7 +2908,9 @@
       </ReturnValue>
       <MemberValue>98</MemberValue>
       <Docs>
-        <summary>The 2 key on the numeric keypad.</summary>
+        <summary>
+             The 2 key on the numeric keypad.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="NumPad3">
@@ -2699,7 +2932,9 @@
       </ReturnValue>
       <MemberValue>99</MemberValue>
       <Docs>
-        <summary>The 3 key on the numeric keypad.</summary>
+        <summary>
+             The 3 key on the numeric keypad.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="NumPad4">
@@ -2721,7 +2956,9 @@
       </ReturnValue>
       <MemberValue>100</MemberValue>
       <Docs>
-        <summary>The 4 key on the numeric keypad.</summary>
+        <summary>
+             The 4 key on the numeric keypad.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="NumPad5">
@@ -2743,7 +2980,9 @@
       </ReturnValue>
       <MemberValue>101</MemberValue>
       <Docs>
-        <summary>The 5 key on the numeric keypad.</summary>
+        <summary>
+             The 5 key on the numeric keypad.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="NumPad6">
@@ -2765,7 +3004,9 @@
       </ReturnValue>
       <MemberValue>102</MemberValue>
       <Docs>
-        <summary>The 6 key on the numeric keypad.</summary>
+        <summary>
+             The 6 key on the numeric keypad.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="NumPad7">
@@ -2787,7 +3028,9 @@
       </ReturnValue>
       <MemberValue>103</MemberValue>
       <Docs>
-        <summary>The 7 key on the numeric keypad.</summary>
+        <summary>
+             The 7 key on the numeric keypad.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="NumPad8">
@@ -2809,7 +3052,9 @@
       </ReturnValue>
       <MemberValue>104</MemberValue>
       <Docs>
-        <summary>The 8 key on the numeric keypad.</summary>
+        <summary>
+             The 8 key on the numeric keypad.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="NumPad9">
@@ -2831,7 +3076,9 @@
       </ReturnValue>
       <MemberValue>105</MemberValue>
       <Docs>
-        <summary>The 9 key on the numeric keypad.</summary>
+        <summary>
+             The 9 key on the numeric keypad.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="O">
@@ -2853,7 +3100,9 @@
       </ReturnValue>
       <MemberValue>79</MemberValue>
       <Docs>
-        <summary>The O key.</summary>
+        <summary>
+             The O key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Oem1">
@@ -2874,7 +3123,9 @@
       </ReturnValue>
       <MemberValue>186</MemberValue>
       <Docs>
-        <summary>The OEM 1 key.</summary>
+        <summary>
+             The Oem 1 key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Oem102">
@@ -2895,7 +3146,9 @@
       </ReturnValue>
       <MemberValue>226</MemberValue>
       <Docs>
-        <summary>The OEM 102 key.</summary>
+        <summary>
+             The Oem 102 key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Oem2">
@@ -2916,7 +3169,9 @@
       </ReturnValue>
       <MemberValue>191</MemberValue>
       <Docs>
-        <summary>The OEM 2 key.</summary>
+        <summary>
+             The Oem 2 key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Oem3">
@@ -2937,7 +3192,9 @@
       </ReturnValue>
       <MemberValue>192</MemberValue>
       <Docs>
-        <summary>The OEM 3 key.</summary>
+        <summary>
+             The Oem 3 key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Oem4">
@@ -2958,7 +3215,9 @@
       </ReturnValue>
       <MemberValue>219</MemberValue>
       <Docs>
-        <summary>The OEM 4 key.</summary>
+        <summary>
+             The Oem 4 key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Oem5">
@@ -2979,7 +3238,9 @@
       </ReturnValue>
       <MemberValue>220</MemberValue>
       <Docs>
-        <summary>The OEM 5 key.</summary>
+        <summary>
+             The Oem 5 key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Oem6">
@@ -3000,7 +3261,9 @@
       </ReturnValue>
       <MemberValue>221</MemberValue>
       <Docs>
-        <summary>The OEM 6 key.</summary>
+        <summary>
+             The Oem 6 key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Oem7">
@@ -3021,7 +3284,9 @@
       </ReturnValue>
       <MemberValue>222</MemberValue>
       <Docs>
-        <summary>The OEM 7 key.</summary>
+        <summary>
+             The Oem 7 key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Oem8">
@@ -3043,7 +3308,9 @@
       </ReturnValue>
       <MemberValue>223</MemberValue>
       <Docs>
-        <summary>The OEM 8 key.</summary>
+        <summary>
+             The Oem8 key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="OemBackslash">
@@ -3065,7 +3332,9 @@
       </ReturnValue>
       <MemberValue>226</MemberValue>
       <Docs>
-        <summary>The OEM angle bracket or backslash key on the RT 102 key keyboard (Windows 2000 or later).</summary>
+        <summary>
+             The Oem Backslash key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="OemClear">
@@ -3087,7 +3356,9 @@
       </ReturnValue>
       <MemberValue>254</MemberValue>
       <Docs>
-        <summary>The CLEAR key.</summary>
+        <summary>
+             The CLEAR key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="OemCloseBrackets">
@@ -3109,7 +3380,9 @@
       </ReturnValue>
       <MemberValue>221</MemberValue>
       <Docs>
-        <summary>The OEM close bracket key on a US standard keyboard (Windows 2000 or later).</summary>
+        <summary>
+             The Oem Close Brackets key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Oemcomma">
@@ -3131,7 +3404,9 @@
       </ReturnValue>
       <MemberValue>188</MemberValue>
       <Docs>
-        <summary>The OEM comma key on any country/region keyboard (Windows 2000 or later).</summary>
+        <summary>
+             The Oem comma key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="OemMinus">
@@ -3153,7 +3428,9 @@
       </ReturnValue>
       <MemberValue>189</MemberValue>
       <Docs>
-        <summary>The OEM minus key on any country/region keyboard (Windows 2000 or later).</summary>
+        <summary>
+             The Oem Minus key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="OemOpenBrackets">
@@ -3175,7 +3452,9 @@
       </ReturnValue>
       <MemberValue>219</MemberValue>
       <Docs>
-        <summary>The OEM open bracket key on a US standard keyboard (Windows 2000 or later).</summary>
+        <summary>
+             The Oem Open Brackets key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="OemPeriod">
@@ -3197,7 +3476,9 @@
       </ReturnValue>
       <MemberValue>190</MemberValue>
       <Docs>
-        <summary>The OEM period key on any country/region keyboard (Windows 2000 or later).</summary>
+        <summary>
+             The Oem Period key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="OemPipe">
@@ -3219,7 +3500,9 @@
       </ReturnValue>
       <MemberValue>220</MemberValue>
       <Docs>
-        <summary>The OEM pipe key on a US standard keyboard (Windows 2000 or later).</summary>
+        <summary>
+             The Oem Pipe key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Oemplus">
@@ -3241,7 +3524,9 @@
       </ReturnValue>
       <MemberValue>187</MemberValue>
       <Docs>
-        <summary>The OEM plus key on any country/region keyboard (Windows 2000 or later).</summary>
+        <summary>
+             The Oem plus key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="OemQuestion">
@@ -3263,7 +3548,9 @@
       </ReturnValue>
       <MemberValue>191</MemberValue>
       <Docs>
-        <summary>The OEM question mark key on a US standard keyboard (Windows 2000 or later).</summary>
+        <summary>
+             The Oem Question key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="OemQuotes">
@@ -3285,7 +3572,9 @@
       </ReturnValue>
       <MemberValue>222</MemberValue>
       <Docs>
-        <summary>The OEM singled/double quote key on a US standard keyboard (Windows 2000 or later).</summary>
+        <summary>
+             The Oem Quotes key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="OemSemicolon">
@@ -3307,7 +3596,9 @@
       </ReturnValue>
       <MemberValue>186</MemberValue>
       <Docs>
-        <summary>The OEM Semicolon key on a US standard keyboard (Windows 2000 or later).</summary>
+        <summary>
+             The Oem Semicolon key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Oemtilde">
@@ -3329,7 +3620,9 @@
       </ReturnValue>
       <MemberValue>192</MemberValue>
       <Docs>
-        <summary>The OEM tilde key on a US standard keyboard (Windows 2000 or later).</summary>
+        <summary>
+             The Oem tilde key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="P">
@@ -3351,7 +3644,9 @@
       </ReturnValue>
       <MemberValue>80</MemberValue>
       <Docs>
-        <summary>The P key.</summary>
+        <summary>
+             The P key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Pa1">
@@ -3373,7 +3668,9 @@
       </ReturnValue>
       <MemberValue>253</MemberValue>
       <Docs>
-        <summary>The PA1 key.</summary>
+        <summary>
+             The PA1 key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Packet">
@@ -3394,7 +3691,9 @@
       </ReturnValue>
       <MemberValue>231</MemberValue>
       <Docs>
-        <summary>Used to pass Unicode characters as if they were keystrokes. The Packet key value is the low word of a 32-bit virtual-key value used for non-keyboard input methods.</summary>
+        <summary>
+             The Packet KEY key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="PageDown">
@@ -3416,7 +3715,9 @@
       </ReturnValue>
       <MemberValue>34</MemberValue>
       <Docs>
-        <summary>The PAGE DOWN key.</summary>
+        <summary>
+             The PAGE DOWN key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="PageUp">
@@ -3438,7 +3739,9 @@
       </ReturnValue>
       <MemberValue>33</MemberValue>
       <Docs>
-        <summary>The PAGE UP key.</summary>
+        <summary>
+             The PAGE UP key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Pause">
@@ -3460,7 +3763,9 @@
       </ReturnValue>
       <MemberValue>19</MemberValue>
       <Docs>
-        <summary>The PAUSE key.</summary>
+        <summary>
+             The PAUSE key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Play">
@@ -3482,7 +3787,9 @@
       </ReturnValue>
       <MemberValue>250</MemberValue>
       <Docs>
-        <summary>The PLAY key.</summary>
+        <summary>
+             The PLAY key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Print">
@@ -3504,7 +3811,9 @@
       </ReturnValue>
       <MemberValue>42</MemberValue>
       <Docs>
-        <summary>The PRINT key.</summary>
+        <summary>
+             The PRINT key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="PrintScreen">
@@ -3526,7 +3835,9 @@
       </ReturnValue>
       <MemberValue>44</MemberValue>
       <Docs>
-        <summary>The PRINT SCREEN key.</summary>
+        <summary>
+             The PRINT SCREEN key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Prior">
@@ -3548,7 +3859,9 @@
       </ReturnValue>
       <MemberValue>33</MemberValue>
       <Docs>
-        <summary>The PAGE UP key.</summary>
+        <summary>
+             The PAGE UP key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="ProcessKey">
@@ -3570,7 +3883,9 @@
       </ReturnValue>
       <MemberValue>229</MemberValue>
       <Docs>
-        <summary>The PROCESS KEY key.</summary>
+        <summary>
+             The PROCESS KEY key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Q">
@@ -3592,7 +3907,9 @@
       </ReturnValue>
       <MemberValue>81</MemberValue>
       <Docs>
-        <summary>The Q key.</summary>
+        <summary>
+             The Q key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="R">
@@ -3614,7 +3931,9 @@
       </ReturnValue>
       <MemberValue>82</MemberValue>
       <Docs>
-        <summary>The R key.</summary>
+        <summary>
+             The R key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="RButton">
@@ -3636,7 +3955,9 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>The right mouse button.</summary>
+        <summary>
+             The right mouse button.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="RControlKey">
@@ -3658,7 +3979,9 @@
       </ReturnValue>
       <MemberValue>163</MemberValue>
       <Docs>
-        <summary>The right CTRL key.</summary>
+        <summary>
+             The right CTRL key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Return">
@@ -3680,7 +4003,9 @@
       </ReturnValue>
       <MemberValue>13</MemberValue>
       <Docs>
-        <summary>The RETURN key.</summary>
+        <summary>
+             The RETURN key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -3702,7 +4027,9 @@
       </ReturnValue>
       <MemberValue>39</MemberValue>
       <Docs>
-        <summary>The RIGHT ARROW key.</summary>
+        <summary>
+             The RIGHT ARROW key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="RMenu">
@@ -3724,7 +4051,9 @@
       </ReturnValue>
       <MemberValue>165</MemberValue>
       <Docs>
-        <summary>The right ALT key.</summary>
+        <summary>
+             The right ALT key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="RShiftKey">
@@ -3746,7 +4075,9 @@
       </ReturnValue>
       <MemberValue>161</MemberValue>
       <Docs>
-        <summary>The right SHIFT key.</summary>
+        <summary>
+             The right SHIFT key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="RWin">
@@ -3768,7 +4099,9 @@
       </ReturnValue>
       <MemberValue>92</MemberValue>
       <Docs>
-        <summary>The right Windows logo key (Microsoft Natural Keyboard).</summary>
+        <summary>
+             The right Windows logo key (Microsoft Natural Keyboard).
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="S">
@@ -3790,7 +4123,9 @@
       </ReturnValue>
       <MemberValue>83</MemberValue>
       <Docs>
-        <summary>The S key.</summary>
+        <summary>
+             The S key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Scroll">
@@ -3812,7 +4147,9 @@
       </ReturnValue>
       <MemberValue>145</MemberValue>
       <Docs>
-        <summary>The SCROLL LOCK key.</summary>
+        <summary>
+             The SCROLL LOCK key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Select">
@@ -3834,7 +4171,9 @@
       </ReturnValue>
       <MemberValue>41</MemberValue>
       <Docs>
-        <summary>The SELECT key.</summary>
+        <summary>
+             The SELECT key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="SelectMedia">
@@ -3856,7 +4195,9 @@
       </ReturnValue>
       <MemberValue>181</MemberValue>
       <Docs>
-        <summary>The select media key (Windows 2000 or later).</summary>
+        <summary>
+             The Select Media key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Separator">
@@ -3878,7 +4219,9 @@
       </ReturnValue>
       <MemberValue>108</MemberValue>
       <Docs>
-        <summary>The separator key.</summary>
+        <summary>
+             The Separator key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Shift">
@@ -3900,7 +4243,9 @@
       </ReturnValue>
       <MemberValue>65536</MemberValue>
       <Docs>
-        <summary>The SHIFT modifier key.</summary>
+        <summary>
+             The SHIFT modifier key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="ShiftKey">
@@ -3922,7 +4267,9 @@
       </ReturnValue>
       <MemberValue>16</MemberValue>
       <Docs>
-        <summary>The SHIFT key.</summary>
+        <summary>
+             The SHIFT key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Sleep">
@@ -3943,7 +4290,9 @@
       </ReturnValue>
       <MemberValue>95</MemberValue>
       <Docs>
-        <summary>The computer sleep key.</summary>
+        <summary>
+             The Computer Sleep key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Snapshot">
@@ -3965,7 +4314,9 @@
       </ReturnValue>
       <MemberValue>44</MemberValue>
       <Docs>
-        <summary>The PRINT SCREEN key.</summary>
+        <summary>
+             The PRINT SCREEN key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Space">
@@ -3987,7 +4338,9 @@
       </ReturnValue>
       <MemberValue>32</MemberValue>
       <Docs>
-        <summary>The SPACEBAR key.</summary>
+        <summary>
+             The SPACEBAR key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Subtract">
@@ -4009,7 +4362,9 @@
       </ReturnValue>
       <MemberValue>109</MemberValue>
       <Docs>
-        <summary>The subtract key.</summary>
+        <summary>
+             The Subtract key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="T">
@@ -4031,7 +4386,9 @@
       </ReturnValue>
       <MemberValue>84</MemberValue>
       <Docs>
-        <summary>The T key.</summary>
+        <summary>
+             The T key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Tab">
@@ -4053,7 +4410,9 @@
       </ReturnValue>
       <MemberValue>9</MemberValue>
       <Docs>
-        <summary>The TAB key.</summary>
+        <summary>
+             The TAB key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="U">
@@ -4075,7 +4434,9 @@
       </ReturnValue>
       <MemberValue>85</MemberValue>
       <Docs>
-        <summary>The U key.</summary>
+        <summary>
+             The U key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Up">
@@ -4097,7 +4458,9 @@
       </ReturnValue>
       <MemberValue>38</MemberValue>
       <Docs>
-        <summary>The UP ARROW key.</summary>
+        <summary>
+             The UP ARROW key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="V">
@@ -4119,7 +4482,9 @@
       </ReturnValue>
       <MemberValue>86</MemberValue>
       <Docs>
-        <summary>The V key.</summary>
+        <summary>
+             The V key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="VolumeDown">
@@ -4141,7 +4506,9 @@
       </ReturnValue>
       <MemberValue>174</MemberValue>
       <Docs>
-        <summary>The volume down key (Windows 2000 or later).</summary>
+        <summary>
+             The Volume Down key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="VolumeMute">
@@ -4163,7 +4530,9 @@
       </ReturnValue>
       <MemberValue>173</MemberValue>
       <Docs>
-        <summary>The volume mute key (Windows 2000 or later).</summary>
+        <summary>
+             The Volume Mute key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="VolumeUp">
@@ -4185,7 +4554,9 @@
       </ReturnValue>
       <MemberValue>175</MemberValue>
       <Docs>
-        <summary>The volume up key (Windows 2000 or later).</summary>
+        <summary>
+             The Volume Up key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="W">
@@ -4207,7 +4578,9 @@
       </ReturnValue>
       <MemberValue>87</MemberValue>
       <Docs>
-        <summary>The W key.</summary>
+        <summary>
+             The W key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="X">
@@ -4229,7 +4602,9 @@
       </ReturnValue>
       <MemberValue>88</MemberValue>
       <Docs>
-        <summary>The X key.</summary>
+        <summary>
+             The X key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="XButton1">
@@ -4251,7 +4626,9 @@
       </ReturnValue>
       <MemberValue>5</MemberValue>
       <Docs>
-        <summary>The first x mouse button (five-button mouse).</summary>
+        <summary>
+             The first x mouse button (five-button mouse).
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="XButton2">
@@ -4273,7 +4650,9 @@
       </ReturnValue>
       <MemberValue>6</MemberValue>
       <Docs>
-        <summary>The second x mouse button (five-button mouse).</summary>
+        <summary>
+             The second x mouse button (five-button mouse).
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Y">
@@ -4295,7 +4674,9 @@
       </ReturnValue>
       <MemberValue>89</MemberValue>
       <Docs>
-        <summary>The Y key.</summary>
+        <summary>
+             The Y key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Z">
@@ -4317,7 +4698,9 @@
       </ReturnValue>
       <MemberValue>90</MemberValue>
       <Docs>
-        <summary>The Z key.</summary>
+        <summary>
+             The Z key.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Zoom">
@@ -4339,7 +4722,9 @@
       </ReturnValue>
       <MemberValue>251</MemberValue>
       <Docs>
-        <summary>The ZOOM key.</summary>
+        <summary>
+             The ZOOM key.
+            </summary>
       </Docs>
     </Member>
   </Members>

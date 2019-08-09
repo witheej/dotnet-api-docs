@@ -1,4 +1,4 @@
-﻿<Type Name="ImeContext" FullName="System.Windows.Forms.ImeContext">
+<Type Name="ImeContext" FullName="System.Windows.Forms.ImeContext">
   <TypeSignature Language="C#" Value="public static class ImeContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit ImeContext extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ImeContext" />
@@ -15,7 +15,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Contains static methods that interact directly with the IME API.</summary>
+    <summary>
+             Represents the native IME context.
+            </summary>
     <remarks>To be added.</remarks>
     <forInternalUseOnly />
   </Docs>
@@ -41,7 +43,9 @@
       </Parameters>
       <Docs>
         <param name="handle">A pointer to the IME to disable.</param>
-        <summary>Disables the specified IME.</summary>
+        <summary>
+             Disable the IME
+            </summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -67,7 +71,9 @@
       </Parameters>
       <Docs>
         <param name="handle">A pointer to the IME to enable.</param>
-        <summary>Enables the specified IME.</summary>
+        <summary>
+             Enable the IME
+            </summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -93,7 +99,9 @@
       </Parameters>
       <Docs>
         <param name="handle">A pointer to the IME to query.</param>
-        <summary>Returns the <see cref="T:System.Windows.Forms.ImeMode" /> of the specified IME.</summary>
+        <summary>
+             Gets the ImeMode that corresponds to ImeMode.Disable based on the current input language ImeMode table.
+            </summary>
         <returns>The <see cref="T:System.Windows.Forms.ImeMode" /> of the specified IME.</returns>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
@@ -120,7 +128,9 @@
       </Parameters>
       <Docs>
         <param name="handle">A pointer to the IME to query.</param>
-        <summary>Returns a value that indicates whether the specified IME is open.</summary>
+        <summary>
+             Returns true if the IME is currently open
+            </summary>
         <returns>
           <see langword="true" /> if the specified IME is open; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -149,7 +159,9 @@
       <Docs>
         <param name="imeMode">The status to set.</param>
         <param name="handle">A pointer to the IME to set status of.</param>
-        <summary>Sets the status of the specified IME.</summary>
+        <summary>
+             Sets the actual IME context value.
+            </summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>
@@ -178,7 +190,9 @@
         <param name="open">
           <see langword="true" /> to open the IME or <see langword="false" /> to close it.</param>
         <param name="handle">A pointer to the IME to open or close.</param>
-        <summary>Opens or closes the IME context.</summary>
+        <summary>
+             Opens or closes the IME context.
+            </summary>
         <remarks>To be added.</remarks>
         <forInternalUseOnly />
       </Docs>

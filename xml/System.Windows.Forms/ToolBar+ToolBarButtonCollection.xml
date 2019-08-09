@@ -1,4 +1,4 @@
-﻿<Type Name="ToolBar+ToolBarButtonCollection" FullName="System.Windows.Forms.ToolBar+ToolBarButtonCollection">
+<Type Name="ToolBar+ToolBarButtonCollection" FullName="System.Windows.Forms.ToolBar+ToolBarButtonCollection">
   <TypeSignature Language="C#" Value="public class ToolBar.ToolBarButtonCollection : System.Collections.IList" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit ToolBar/ToolBarButtonCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolBar.ToolBarButtonCollection" />
@@ -26,7 +26,10 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Encapsulates a collection of <see cref="T:System.Windows.Forms.ToolBarButton" /> controls for use by the <see cref="T:System.Windows.Forms.ToolBar" /> class.</summary>
+    <summary>
+             Encapsulates a collection of <see cref="T:System.Windows.Forms.ToolBarButton" /> controls for use by the
+            <see cref="T:System.Windows.Forms.ToolBar" /> class.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -67,7 +70,9 @@
       </Parameters>
       <Docs>
         <param name="owner">The <see cref="T:System.Windows.Forms.ToolBar" /> that is the parent of the collection of <see cref="T:System.Windows.Forms.ToolBarButton" /> controls.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolBar.ToolBarButtonCollection" /> class and assigns it to the specified toolbar.</summary>
+        <summary>
+             Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolBar.ToolBarButtonCollection" /> class and assigns it to the specified toolbar.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -157,7 +162,10 @@
       </Parameters>
       <Docs>
         <param name="button">The <see cref="T:System.Windows.Forms.ToolBarButton" /> to be added after all existing buttons.</param>
-        <summary>Adds the specified toolbar button to the end of the toolbar button collection.</summary>
+        <summary>
+             Adds a new toolbar button to
+             the end of the toolbar button collection.
+            </summary>
         <returns>The zero-based index value of the <see cref="T:System.Windows.Forms.ToolBarButton" /> added to the collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -252,7 +260,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all buttons from the toolbar button collection.</summary>
+        <summary>
+             Removes
+             all buttons from the toolbar button collection.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -341,11 +352,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="key">The name of the <see cref="T:System.Windows.Forms.ToolBarButton" /> to search for.</param>
-        <summary>Determines if a <see cref="T:System.Windows.Forms.ToolBarButton" /> with the specified key is contained in the collection.</summary>
+        <summary>
+             Returns true if the collection contains an item with the specified key, false otherwise.
+            </summary>
         <returns>
           <see langword="true" /> to indicate a <see cref="T:System.Windows.Forms.ToolBarButton" /> with the specified key is found; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -386,7 +399,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of buttons in the toolbar button collection.</summary>
+        <summary>
+             Gets the number of buttons in the toolbar button collection.
+            </summary>
         <value>The number of the <see cref="T:System.Windows.Forms.ToolBarButton" /> controls assigned to the toolbar.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -430,7 +445,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns an enumerator that can be used to iterate through the toolbar button collection.</summary>
+        <summary>
+             Returns an enumerator that can be used to iterate
+             through the toolbar button collection.
+            </summary>
         <returns>An <see cref="T:System.Collections.IEnumerator" /> that represents the tree node collection.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -508,11 +526,13 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="key">The name of the <see cref="T:System.Windows.Forms.ToolBarButton" /> to search for.</param>
-        <summary>Retrieves the index of the first occurrence of a <see cref="T:System.Windows.Forms.ToolBarButton" /> with the specified key.</summary>
+        <summary>
+             The zero-based index of the first occurrence of value within the entire CollectionBase, if found; otherwise, -1.
+            </summary>
         <returns>The index of the first occurrence of a <see cref="T:System.Windows.Forms.ToolBarButton" /> with the specified key, if found; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -645,7 +665,10 @@
       </Parameters>
       <Docs>
         <param name="index">The indexed location of the <see cref="T:System.Windows.Forms.ToolBarButton" /> in the collection.</param>
-        <summary>Gets or sets the toolbar button at the specified indexed location in the toolbar button collection.</summary>
+        <summary>
+             Gets or sets the toolbar button at the specified indexed location in the
+             toolbar button collection.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.ToolBarButton" /> that represents the toolbar button at the specified indexed location.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -691,11 +714,13 @@
         <ReturnType>System.Windows.Forms.ToolBarButton</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="key">The name of the <see cref="T:System.Windows.Forms.ToolBarButton" /> to retrieve.</param>
-        <summary>Gets a <see cref="T:System.Windows.Forms.ToolBarButton" /> with the specified key from the collection.</summary>
+        <summary>
+             Retrieves the child control with the specified key.
+            </summary>
         <value>The <see cref="T:System.Windows.Forms.ToolBarButton" /> whose <see cref="P:System.Windows.Forms.ToolBarButton.Name" /> property matches the specified key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -781,7 +806,10 @@
       </Parameters>
       <Docs>
         <param name="index">The indexed location of the <see cref="T:System.Windows.Forms.ToolBarButton" /> in the collection.</param>
-        <summary>Removes a given button from the toolbar button collection.</summary>
+        <summary>
+             Removes
+             a given button from the toolbar button collection.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -822,11 +850,13 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="key">The name of the <see cref="T:System.Windows.Forms.ToolBarButton" /> to remove from the collection.</param>
-        <summary>Removes the <see cref="T:System.Windows.Forms.ToolBarButton" /> with the specified key from the collection.</summary>
+        <summary>
+             Removes the child control with the specified key.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1138,16 +1168,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="index">The zero-based index of the element to get or set.</param>

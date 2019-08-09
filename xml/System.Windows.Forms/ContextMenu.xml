@@ -1,4 +1,4 @@
-﻿<Type Name="ContextMenu" FullName="System.Windows.Forms.ContextMenu">
+<Type Name="ContextMenu" FullName="System.Windows.Forms.ContextMenu">
   <TypeSignature Language="C#" Value="public class ContextMenu : System.Windows.Forms.Menu" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ContextMenu extends System.Windows.Forms.Menu" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ContextMenu" />
@@ -21,7 +21,11 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a shortcut menu. Although <see cref="T:System.Windows.Forms.ContextMenuStrip" /> replaces and adds functionality to the <see cref="T:System.Windows.Forms.ContextMenu" /> control of previous versions, <see cref="T:System.Windows.Forms.ContextMenu" /> is retained for both backward compatibility and future use if you choose.</summary>
+    <summary>
+             This class is used to put context menus on your form and show them for
+             controls at runtime.  It basically acts like a regular Menu control,
+             but can be set for the ContextMenu property that most controls have.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -75,7 +79,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ContextMenu" /> class with no menu items specified.</summary>
+        <summary>
+             Creates a new ContextMenu object with no items in it by default.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -106,7 +112,9 @@
       </Parameters>
       <Docs>
         <param name="menuItems">An array of <see cref="T:System.Windows.Forms.MenuItem" /> objects that represent the menu items to add to the shortcut menu.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ContextMenu" /> class with a specified set of <see cref="T:System.Windows.Forms.MenuItem" /> objects.</summary>
+        <summary>
+             Creates a ContextMenu object with the given MenuItems.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -144,7 +152,9 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the shortcut menu collapses.</summary>
+        <summary>
+             Fires when the context menu collapses.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -182,11 +192,13 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.EventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ContextMenu.Collapse" /> event.</summary>
+        <summary>
+             Fires the collapse event
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -212,7 +224,9 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ContextMenu.Popup" /> event</summary>
+        <summary>
+             Fires the popup event
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -272,9 +286,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="msg" Type="System.Windows.Forms.Message" RefType="ref" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="keyData" Type="System.Windows.Forms.Keys" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="control" Type="System.Windows.Forms.Control" Index="2" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="msg" Type="System.Windows.Forms.Message" RefType="ref" />
+        <Parameter Name="keyData" Type="System.Windows.Forms.Keys" />
+        <Parameter Name="control" Type="System.Windows.Forms.Control" />
       </Parameters>
       <Docs>
         <param name="msg">A <see cref="T:System.Windows.Forms.Message" />, passed by reference, that represents the window message to process.</param>
@@ -325,7 +339,11 @@
         <ReturnType>System.Windows.Forms.RightToLeft</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether text displayed by the control is displayed from right to left.</summary>
+        <summary>
+             This is used for international applications where the language
+             is written from RightToLeft. When this property is true,
+             text alignment and reading order will be from right to left.
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.RightToLeft" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -363,11 +381,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -378,7 +391,10 @@
       <Docs>
         <param name="control">A <see cref="T:System.Windows.Forms.Control" /> that specifies the control with which this shortcut menu is associated.</param>
         <param name="pos">A <see cref="T:System.Drawing.Point" /> that specifies the coordinates at which to display the menu. These coordinates are specified relative to the client coordinates of the control specified in the <paramref name="control" /> parameter.</param>
-        <summary>Displays the shortcut menu at the specified position.</summary>
+        <summary>
+             Displays the context menu at the specified position.  This method
+             doesn't return until the menu is dismissed.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -416,15 +432,18 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="control" Type="System.Windows.Forms.Control" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="pos" Type="System.Drawing.Point" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="alignment" Type="System.Windows.Forms.LeftRightAlignment" Index="2" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="control" Type="System.Windows.Forms.Control" />
+        <Parameter Name="pos" Type="System.Drawing.Point" />
+        <Parameter Name="alignment" Type="System.Windows.Forms.LeftRightAlignment" />
       </Parameters>
       <Docs>
         <param name="control">A <see cref="T:System.Windows.Forms.Control" /> that specifies the control with which this shortcut menu is associated.</param>
         <param name="pos">A <see cref="T:System.Drawing.Point" /> that specifies the coordinates at which to display the menu. These coordinates are specified relative to the client coordinates of the control specified in the <paramref name="control" /> parameter.</param>
         <param name="alignment">A <see cref="T:System.Windows.Forms.LeftRightAlignment" /> that specifies the alignment of the control relative to the <paramref name="pos" /> parameter.</param>
-        <summary>Displays the shortcut menu at the specified position and with the specified alignment.</summary>
+        <summary>
+             Displays the context menu at the specified position.  This method
+             doesn't return until the menu is dismissed.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -449,15 +468,15 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Control</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the control that is displaying the shortcut menu.</summary>
+        <summary>
+             The last control that was acted upon that resulted in this context
+             menu being displayed.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.Control" /> that represents the control that is displaying the shortcut menu. If no control has displayed the shortcut menu, the property returns <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

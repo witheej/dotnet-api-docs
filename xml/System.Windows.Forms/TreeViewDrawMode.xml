@@ -1,4 +1,4 @@
-﻿<Type Name="TreeViewDrawMode" FullName="System.Windows.Forms.TreeViewDrawMode">
+<Type Name="TreeViewDrawMode" FullName="System.Windows.Forms.TreeViewDrawMode">
   <TypeSignature Language="C#" Value="public enum TreeViewDrawMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TreeViewDrawMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TreeViewDrawMode" />
@@ -14,7 +14,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Defines constants that represent the ways a <see cref="T:System.Windows.Forms.TreeView" /> can be drawn.</summary>
+    <summary>
+             Specifies responsibility for drawing TreeView nodes.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -59,7 +61,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>The <see cref="T:System.Windows.Forms.TreeView" /> is drawn by the operating system.</summary>
+        <summary>
+             The operating system paints the nodes of the TreeView.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="OwnerDrawAll">
@@ -80,7 +84,9 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>All elements of a <see cref="T:System.Windows.Forms.TreeView" /> node are drawn manually, including icons, checkboxes, plus and minus signs, and lines connecting the nodes.</summary>
+        <summary>
+             The user paints the entire row corresponding to a node, including lines and boxes.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="OwnerDrawText">
@@ -101,7 +107,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The label portion of the <see cref="T:System.Windows.Forms.TreeView" /> nodes are drawn manually. Other node elements are drawn by the operating system, including icons, checkboxes, plus and minus signs, and lines connecting the nodes.</summary>
+        <summary>
+             The user needs to paint the text only.
+            </summary>
       </Docs>
     </Member>
   </Members>

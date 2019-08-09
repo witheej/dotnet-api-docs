@@ -1,4 +1,4 @@
-﻿<Type Name="ToolStripItemImageRenderEventArgs" FullName="System.Windows.Forms.ToolStripItemImageRenderEventArgs">
+<Type Name="ToolStripItemImageRenderEventArgs" FullName="System.Windows.Forms.ToolStripItemImageRenderEventArgs">
   <TypeSignature Language="C#" Value="public class ToolStripItemImageRenderEventArgs : System.Windows.Forms.ToolStripItemRenderEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolStripItemImageRenderEventArgs extends System.Windows.Forms.ToolStripItemRenderEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripItemImageRenderEventArgs" />
@@ -89,7 +89,9 @@
         <param name="item">The <see cref="T:System.Windows.Forms.ToolStripItem" /> on which to draw the image.</param>
         <param name="image">The <see cref="T:System.Drawing.Image" /> to paint.</param>
         <param name="imageRectangle">The bounding area of the image.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripItemImageRenderEventArgs" /> class for the specified <see cref="T:System.Windows.Forms.ToolStripItem" /> that displays an image within the specified space and that has the specified properties.</summary>
+        <summary>
+             This class represents all the information to render the ToolStrip
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -106,16 +108,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Image</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the image painted on the <see cref="T:System.Windows.Forms.ToolStrip" />.</summary>
+        <summary>
+             The image to draw
+            </summary>
         <value>The <see cref="T:System.Drawing.Image" /> painted on the <see cref="T:System.Windows.Forms.ToolStrip" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -145,16 +144,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the rectangle that represents the bounding area of the image.</summary>
+        <summary>
+             The rectangle to draw the Image in
+            </summary>
         <value>A <see cref="T:System.Drawing.Rectangle" /> that represents the bounding area of the image.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -1,4 +1,4 @@
-﻿<Type Name="LoadedEventHandler" FullName="System.ComponentModel.Design.LoadedEventHandler">
+<Type Name="LoadedEventHandler" FullName="System.ComponentModel.Design.LoadedEventHandler">
   <TypeSignature Language="C#" Value="public delegate void LoadedEventHandler(object sender, LoadedEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed LoadedEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.LoadedEventHandler" />
@@ -27,7 +27,9 @@
   <Docs>
     <param name="sender">The source of the event.</param>
     <param name="e">A <see cref="T:System.ComponentModel.Design.LoadedEventArgs" /> that contains the event data.</param>
-    <summary>Represents the method that will handle the <see cref="E:System.ComponentModel.Design.DesignSurface.Loaded" /> event of the <see cref="T:System.ComponentModel.Design.DesignSurface" /> class. This class cannot be inherited.</summary>
+    <summary>
+             Represents a method that will handle a <see cref="E:System.ComponentModel.Design.DesignSurface.Loaded" /> event.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

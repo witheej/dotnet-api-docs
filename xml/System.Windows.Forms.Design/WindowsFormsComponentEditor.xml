@@ -1,4 +1,4 @@
-﻿<Type Name="WindowsFormsComponentEditor" FullName="System.Windows.Forms.Design.WindowsFormsComponentEditor">
+<Type Name="WindowsFormsComponentEditor" FullName="System.Windows.Forms.Design.WindowsFormsComponentEditor">
   <TypeSignature Language="C#" Value="public abstract class WindowsFormsComponentEditor : System.ComponentModel.ComponentEditor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit WindowsFormsComponentEditor extends System.ComponentModel.ComponentEditor" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.WindowsFormsComponentEditor" />
@@ -16,7 +16,10 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a base class for editors that use a modal dialog to display a properties page similar to an ActiveX control's property page.</summary>
+    <summary>
+             Provides a base class for editors that support any type of
+            <see cref="T:System.ComponentModel.IComponent" /> objects.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -47,11 +50,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.WindowsFormsComponentEditor" /> class.</summary>
@@ -73,7 +71,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.WindowsFormsComponentEditor.EditComponent(System.ComponentModel.ITypeDescriptorContext,System.Object)" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function EditComponent (context As ITypeDescriptorContext, component As Object) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override bool EditComponent(System::ComponentModel::ITypeDescriptorContext ^ context, System::Object ^ component);" />
-      <MemberSignature Language="F#" Value="override this.EditComponent : System.ComponentModel.ITypeDescriptorContext * obj -&gt; bool" Usage="windowsFormsComponentEditor.EditComponent (context, component)" />
+      <MemberSignature Language="F#" Value="abstract member EditComponent : System.ComponentModel.ITypeDescriptorContext * obj -&gt; bool&#xA;override this.EditComponent : System.ComponentModel.ITypeDescriptorContext * obj -&gt; bool" Usage="windowsFormsComponentEditor.EditComponent (context, component)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -81,11 +79,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -96,7 +89,9 @@
       <Docs>
         <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that can be used to gain additional context information.</param>
         <param name="component">The component to edit.</param>
-        <summary>Creates an editor window that allows the user to edit the specified component, using the specified context information.</summary>
+        <summary>
+             Activates a UI used to edit the component.
+            </summary>
         <returns>
           <see langword="true" /> if the component was changed during editing; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -108,7 +103,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.WindowsFormsComponentEditor.EditComponent(System.Object,System.Windows.Forms.IWin32Window)" />
       <MemberSignature Language="VB.NET" Value="Public Function EditComponent (component As Object, owner As IWin32Window) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; bool EditComponent(System::Object ^ component, System::Windows::Forms::IWin32Window ^ owner);" />
-      <MemberSignature Language="F#" Value="override this.EditComponent : obj * System.Windows.Forms.IWin32Window -&gt; bool" Usage="windowsFormsComponentEditor.EditComponent (component, owner)" />
+      <MemberSignature Language="F#" Value="member this.EditComponent : obj * System.Windows.Forms.IWin32Window -&gt; bool" Usage="windowsFormsComponentEditor.EditComponent (component, owner)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -116,11 +111,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -131,7 +121,9 @@
       <Docs>
         <param name="component">The component to edit.</param>
         <param name="owner">An <see cref="T:System.Windows.Forms.IWin32Window" /> that the component belongs to.</param>
-        <summary>Creates an editor window that allows the user to edit the specified component, using the specified window that owns the component.</summary>
+        <summary>
+             Activates the advanced UI used to edit the component.
+            </summary>
         <returns>
           <see langword="true" /> if the component was changed during editing; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -143,7 +135,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.WindowsFormsComponentEditor.EditComponent(System.ComponentModel.ITypeDescriptorContext,System.Object,System.Windows.Forms.IWin32Window)" />
       <MemberSignature Language="VB.NET" Value="Public Overridable Function EditComponent (context As ITypeDescriptorContext, component As Object, owner As IWin32Window) As Boolean" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual bool EditComponent(System::ComponentModel::ITypeDescriptorContext ^ context, System::Object ^ component, System::Windows::Forms::IWin32Window ^ owner);" />
-      <MemberSignature Language="F#" Value="override this.EditComponent : System.ComponentModel.ITypeDescriptorContext * obj * System.Windows.Forms.IWin32Window -&gt; bool" Usage="windowsFormsComponentEditor.EditComponent (context, component, owner)" />
+      <MemberSignature Language="F#" Value="abstract member EditComponent : System.ComponentModel.ITypeDescriptorContext * obj * System.Windows.Forms.IWin32Window -&gt; bool&#xA;override this.EditComponent : System.ComponentModel.ITypeDescriptorContext * obj * System.Windows.Forms.IWin32Window -&gt; bool" Usage="windowsFormsComponentEditor.EditComponent (context, component, owner)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -188,7 +180,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the component editor pages associated with the component editor.</summary>
+        <summary>
+             Gets the set of <see cref="T:System.Windows.Forms.Design.ComponentEditorPage" /> pages to be used.
+            </summary>
         <returns>An array of component editor pages.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -226,7 +220,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the index of the initial component editor page for the component editor to display.</summary>
+        <summary>
+             Gets the index of the <see cref="T:System.Windows.Forms.Design.ComponentEditorPage" />
+             to be shown by default as the first active page.
+            </summary>
         <returns>The index of the component editor page that the component editor will initially display.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

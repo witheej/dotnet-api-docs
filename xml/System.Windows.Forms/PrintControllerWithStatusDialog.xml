@@ -1,4 +1,4 @@
-﻿<Type Name="PrintControllerWithStatusDialog" FullName="System.Windows.Forms.PrintControllerWithStatusDialog">
+<Type Name="PrintControllerWithStatusDialog" FullName="System.Windows.Forms.PrintControllerWithStatusDialog">
   <TypeSignature Language="C#" Value="public class PrintControllerWithStatusDialog : System.Drawing.Printing.PrintController" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PrintControllerWithStatusDialog extends System.Drawing.Printing.PrintController" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PrintControllerWithStatusDialog" />
@@ -87,11 +87,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="underlyingController" Type="System.Drawing.Printing.PrintController" />
         <Parameter Name="dialogTitle" Type="System.String" />
@@ -120,7 +115,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating this <see cref="T:System.Windows.Forms.PrintControllerWithStatusDialog" /> is used for print preview.</summary>
+        <summary>
+             This is new public property which notifies if this controller is used for PrintPreview.. so get the underlying Controller
+             and return its IsPreview Property.
+            </summary>
         <value>
           <see langword="true" /> if the <see cref="T:System.Windows.Forms.PrintControllerWithStatusDialog" /> is used for print preview, otherwise, <see langword="false" />.</value>
         <remarks>
@@ -157,7 +155,9 @@
       <Docs>
         <param name="document">A <see cref="T:System.Drawing.Printing.PrintDocument" /> that represents the document currently being printed.</param>
         <param name="e">A <see cref="T:System.Drawing.Printing.PrintPageEventArgs" /> that contains the event data.</param>
-        <summary>Completes the control sequence that determines when and how to print a page of a document.</summary>
+        <summary>
+             Implements EndPage by delegating to the underlying controller.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -196,7 +196,9 @@
       <Docs>
         <param name="document">A <see cref="T:System.Drawing.Printing.PrintDocument" /> that represents the document currently being printed.</param>
         <param name="e">A <see cref="T:System.Drawing.Printing.PrintPageEventArgs" /> that contains the event data.</param>
-        <summary>Completes the control sequence that determines when and how to print a document.</summary>
+        <summary>
+             Implements EndPrint by delegating to the underlying controller.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -235,7 +237,9 @@
       <Docs>
         <param name="document">A <see cref="T:System.Drawing.Printing.PrintDocument" /> that represents the document currently being printed.</param>
         <param name="e">A <see cref="T:System.Drawing.Printing.PrintPageEventArgs" /> that contains the event data.</param>
-        <summary>Begins the control sequence that determines when and how to print a page of a document.</summary>
+        <summary>
+             Implements StartPage by delegating to the underlying controller.
+            </summary>
         <returns>A <see cref="T:System.Drawing.Graphics" /> object that represents a page from a <see cref="T:System.Drawing.Printing.PrintDocument" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -277,7 +281,9 @@
       <Docs>
         <param name="document">A <see cref="T:System.Drawing.Printing.PrintDocument" /> that represents the document currently being printed.</param>
         <param name="e">A <see cref="T:System.Drawing.Printing.PrintEventArgs" /> that contains the event data.</param>
-        <summary>Begins the control sequence that determines when and how to print a document.</summary>
+        <summary>
+             Implements StartPrint by delegating to the underlying controller.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

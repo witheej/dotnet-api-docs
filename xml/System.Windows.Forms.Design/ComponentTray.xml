@@ -1,4 +1,4 @@
-﻿<Type Name="ComponentTray" FullName="System.Windows.Forms.Design.ComponentTray">
+<Type Name="ComponentTray" FullName="System.Windows.Forms.Design.ComponentTray">
   <TypeSignature Language="C#" Value="public class ComponentTray : System.Windows.Forms.ScrollableControl, System.ComponentModel.IExtenderProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ComponentTray extends System.Windows.Forms.ScrollableControl implements class System.ComponentModel.IExtenderProvider" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.ComponentTray" />
@@ -38,7 +38,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides behavior for the component tray of a designer.</summary>
+    <summary>
+             Provides the component tray UI for the form designer.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -78,7 +80,11 @@
       <Docs>
         <param name="mainDesigner">The <see cref="T:System.ComponentModel.Design.IDesigner" /> that is the main or document designer for the current project.</param>
         <param name="serviceProvider">An <see cref="T:System.IServiceProvider" /> that can be used to obtain design-time services.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.ComponentTray" /> class using the specified designer and service provider.</summary>
+        <summary>
+             Creates a new component tray.  The component tray
+             will monitor component additions and removals and create
+             appropriate UI objects in its space.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -115,7 +121,9 @@
       </Parameters>
       <Docs>
         <param name="component">The <see cref="T:System.ComponentModel.IComponent" /> to add to the tray.</param>
-        <summary>Adds a component to the tray.</summary>
+        <summary>
+             Adds a component to the tray.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.Design.ComponentTray.RemoveComponent(System.ComponentModel.IComponent)" />
       </Docs>
@@ -138,11 +146,6 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -172,7 +175,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-3.0">
+        <Attribute>
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -216,7 +219,12 @@
       </Parameters>
       <Docs>
         <param name="component">The <see cref="T:System.ComponentModel.IComponent" /> to test.</param>
-        <summary>Gets a value indicating whether the specified component can be displayed.</summary>
+        <summary>
+             This method determines if a UI representation for the given component should be provided.
+             If it returns true, then the component will get a glyph in the tray area.  If it returns
+             false, then the component will not actually be added to the tray.  The default
+             implementation looks for DesignTimeVisibleAttribute.Yes on the component's class.
+            </summary>
         <returns>
           <see langword="true" /> if the component can be displayed; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -251,7 +259,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of components contained in the tray.</summary>
+        <summary>
+             Gets the number of compnents contained within this tray.
+            </summary>
         <value>The number of components in the tray.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -275,7 +285,7 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netcore-3.0">
+        <Attribute>
           <AttributeName>System.CLSCompliant(false)</AttributeName>
         </Attribute>
       </Attributes>
@@ -324,7 +334,9 @@
       </Parameters>
       <Docs>
         <param name="e">The exception about which to display information.</param>
-        <summary>Displays an error message to the user with information about the specified exception.</summary>
+        <summary>
+             Displays the given exception to the user.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -355,7 +367,9 @@
       <Docs>
         <param name="disposing">
           <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Releases the unmanaged resources used by the <see cref="T:System.Windows.Forms.Design.ComponentTray" /> and optionally releases the managed resources.</summary>
+        <summary>
+             Disposes of the resources (other than memory) used by the component tray object.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -417,7 +431,10 @@
       </Parameters>
       <Docs>
         <param name="receiver">The <see cref="T:System.ComponentModel.IComponent" /> to retrieve the location of.</param>
-        <summary>Gets the location of the specified component, relative to the upper-left corner of the component tray.</summary>
+        <summary>
+             Accessor method for the location extender property.  We offer this extender
+             to all non-visual components.
+            </summary>
         <returns>A <see cref="T:System.Drawing.Point" /> indicating the coordinates of the specified component, or an empty <see cref="T:System.Drawing.Point" /> if the specified component could not be found in the component tray. An empty <see cref="T:System.Drawing.Point" /> has an <see cref="P:System.Drawing.Point.IsEmpty" /> property equal to <see langword="true" /> and typically has <see cref="P:System.Drawing.Point.X" /> and <see cref="P:System.Drawing.Point.Y" /> properties that are each equal to zero.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -450,14 +467,19 @@
         <ReturnType>System.ComponentModel.IComponent</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="component" Type="System.ComponentModel.IComponent" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="forward" Type="System.Boolean" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="component" Type="System.ComponentModel.IComponent" />
+        <Parameter Name="forward" Type="System.Boolean" />
       </Parameters>
       <Docs>
         <param name="component">The component from which to start enumerating.</param>
         <param name="forward">
           <see langword="true" /> to enumerate forward through the list; otherwise, <see langword="false" /> to enumerate backward.</param>
-        <summary>Similar to <see cref="M:System.Windows.Forms.Control.GetNextControl(System.Windows.Forms.Control,System.Boolean)" />, this method returns the next component in the tray, given a starting component.</summary>
+        <summary>
+             Similar to GetNextControl on Control, this method returns the next
+             component in the tray, given a starting component.  It will return
+             null if the end (or beginning, if forward is false) of the list
+             is encountered.
+            </summary>
         <returns>The next component in the component tray, or <see langword="null" />, if the end of the list is encountered (or the beginning, if <paramref name="forward" /> is <see langword="false" />).</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -488,7 +510,9 @@
       </Parameters>
       <Docs>
         <param name="serviceType">The type of the service to retrieve.</param>
-        <summary>Gets the requested service type.</summary>
+        <summary>
+             Gets the requsted service type.
+            </summary>
         <returns>An instance of the requested service, or <see langword="null" /> if the service could not be found.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -528,11 +552,14 @@
         <ReturnType>System.Drawing.Point</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="receiver" Type="System.ComponentModel.IComponent" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="receiver" Type="System.ComponentModel.IComponent" />
       </Parameters>
       <Docs>
         <param name="receiver">The <see cref="T:System.ComponentModel.IComponent" /> that receives the location extender property.</param>
-        <summary>Gets the value of the <see langword="Location" /> extender property.</summary>
+        <summary>
+             Accessor method for the location extender property.  We offer this extender
+             to all non-visual components.
+            </summary>
         <returns>A <see cref="T:System.Drawing.Point" /> representing the location of <paramref name="receiver" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -568,40 +595,15 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="comp" Type="System.ComponentModel.IComponent" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="comp" Type="System.ComponentModel.IComponent" />
       </Parameters>
       <Docs>
         <param name="comp">The component to test for presence in the component tray.</param>
-        <summary>Tests a component for presence in the component tray.</summary>
+        <summary>
+             Returns true if the given componenent is being shown on the tray.
+            </summary>
         <returns>
           <see langword="true" /> if <paramref name="comp" /> is being shown on the tray; otherwise, <see langword="false" />.</returns>
-        <remarks>To be added.</remarks>
-      </Docs>
-    </Member>
-    <Member MemberName="OnDoubleClick">
-      <MemberSignature Language="C#" Value="protected override void OnDoubleClick (EventArgs e);" />
-      <MemberSignature Language="ILAsm" Value=".method familyhidebysig virtual instance void OnDoubleClick(class System.EventArgs e) cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentTray.OnDoubleClick(System.EventArgs)" />
-      <MemberSignature Language="VB.NET" Value="Protected Overrides Sub OnDoubleClick (e As EventArgs)" />
-      <MemberSignature Language="C++ CLI" Value="protected:&#xA; override void OnDoubleClick(EventArgs ^ e);" />
-      <MemberSignature Language="F#" Value="override this.OnDoubleClick : EventArgs -&gt; unit" Usage="componentTray.OnDoubleClick e" />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.Void</ReturnType>
-      </ReturnValue>
-      <Parameters>
-        <Parameter Name="e" Type="System.EventArgs" Index="0" FrameworkAlternate="netframework-1.1" />
-      </Parameters>
-      <Docs>
-        <param name="e">The data for the event.</param>
-        <summary>Called when the mouse is double clicked over the component tray.</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -631,7 +633,10 @@
       </Parameters>
       <Docs>
         <param name="de">A <see cref="T:System.Windows.Forms.DragEventArgs" /> that provides data for the event.</param>
-        <summary>Called when an object that has been dragged is dropped on the component tray.</summary>
+        <summary>
+             Called in response to a drag drop for OLE drag and drop.  Here we
+             drop a toolbox component on our parent control.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -661,7 +666,9 @@
       </Parameters>
       <Docs>
         <param name="de">A <see cref="T:System.Windows.Forms.DragEventArgs" /> that provides data for the event.</param>
-        <summary>Called when an object is dragged over, and has entered the area over, the component tray.</summary>
+        <summary>
+             Called in response to a drag enter for OLE drag and drop.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -691,7 +698,9 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that provides data for the event.</param>
-        <summary>Called when an object is dragged out of the area over the component tray.</summary>
+        <summary>
+             Called when a drag-drop operation leaves the control designer view
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -721,7 +730,9 @@
       </Parameters>
       <Docs>
         <param name="de">A <see cref="T:System.Windows.Forms.DragEventArgs" /> that provides data for the event.</param>
-        <summary>Called when an object is dragged over the component tray.</summary>
+        <summary>
+             Called when a drag drop object is dragged over the control designer view
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -751,7 +762,10 @@
       </Parameters>
       <Docs>
         <param name="gfevent">A <see cref="T:System.Windows.Forms.GiveFeedbackEventArgs" /> that provides data for the event.</param>
-        <summary>Called during an OLE drag and drop operation to provide an opportunity for the component tray to give feedback to the user about the results of dropping the object at a specific point.</summary>
+        <summary>
+             Inheriting classes should override this method to handle this event.
+             Call base.onGiveFeedback to send this event to any registered event listeners.
+            </summary>
         <remarks>To be added.</remarks>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Design.ComponentTray.OnGiveFeedback(System.Windows.Forms.GiveFeedbackEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Design.ComponentTray.OnGiveFeedback(System.Windows.Forms.GiveFeedbackEventArgs)" /> method so that registered delegates receive the event.</para>
@@ -784,7 +798,9 @@
       </Parameters>
       <Docs>
         <param name="levent">A <see cref="T:System.Windows.Forms.LayoutEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.Layout" /> event.</summary>
+        <summary>
+             Forces the layout of any docked or anchored child controls.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -811,7 +827,11 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Called when a mouse drag selection operation is canceled.</summary>
+        <summary>
+             This is called when we lose capture.  Here we get rid of any
+             rubber band we were drawing.  You should put any cleanup
+             code in here.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -836,7 +856,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.Windows.Forms.MouseEventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="e" Type="System.Windows.Forms.MouseEventArgs" />
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that provides data for the event.</param>
@@ -870,7 +890,10 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that provides data for the event.</param>
-        <summary>Called when the mouse button is pressed.</summary>
+        <summary>
+             Inheriting classes should override this method to handle this event.
+             Call base.onMouseDown to send this event to any registered event listeners.
+            </summary>
         <remarks>To be added.</remarks>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Design.ComponentTray.OnMouseDown(System.Windows.Forms.MouseEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Design.ComponentTray.OnMouseDown(System.Windows.Forms.MouseEventArgs)" /> method so that registered delegates receive the event.</para>
@@ -903,7 +926,10 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that provides data for the event.</param>
-        <summary>Called when the mouse cursor position has changed.</summary>
+        <summary>
+             Inheriting classes should override this method to handle this event.
+             Call base.onMouseMove to send this event to any registered event listeners.
+            </summary>
         <remarks>To be added.</remarks>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Design.ComponentTray.OnMouseMove(System.Windows.Forms.MouseEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Design.ComponentTray.OnMouseMove(System.Windows.Forms.MouseEventArgs)" /> method so that registered delegates receive the event.</para>
@@ -936,7 +962,10 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that provides data for the event.</param>
-        <summary>Called when the mouse button has been released.</summary>
+        <summary>
+             Inheriting classes should override this method to handle this event.
+             Call base.onMouseUp to send this event to any registered event listeners.
+            </summary>
         <remarks>To be added.</remarks>
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.Design.ComponentTray.OnMouseUp(System.Windows.Forms.MouseEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.Design.ComponentTray.OnMouseUp(System.Windows.Forms.MouseEventArgs)" /> method so that registered delegates receive the event.</para>
@@ -996,7 +1025,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Called to set the mouse cursor.</summary>
+        <summary>
+             Sets the cursor.  You may override this to set your own
+             cursor.
+            </summary>
         <remarks>To be added.</remarks>
         <block subset="none" type="overrides">
           <para>You can override this method to set your own mouse cursor.</para>
@@ -1029,7 +1061,9 @@
       </Parameters>
       <Docs>
         <param name="component">The <see cref="T:System.ComponentModel.IComponent" /> to remove from the tray.</param>
-        <summary>Removes the specified component from the tray.</summary>
+        <summary>
+             Removes a component from the tray.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.Design.ComponentTray.AddComponent(System.ComponentModel.IComponent)" />
       </Docs>
@@ -1062,7 +1096,10 @@
       <Docs>
         <param name="receiver">The <see cref="T:System.ComponentModel.IComponent" /> to set the location of.</param>
         <param name="location">A <see cref="T:System.Drawing.Point" /> indicating the new location for the specified component.</param>
-        <summary>Sets the location of the specified component to the specified location.</summary>
+        <summary>
+             Accessor method for the location extender property.  We offer this extender
+             to all non-visual components.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1087,13 +1124,16 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="receiver" Type="System.ComponentModel.IComponent" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="location" Type="System.Drawing.Point" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="receiver" Type="System.ComponentModel.IComponent" />
+        <Parameter Name="location" Type="System.Drawing.Point" />
       </Parameters>
       <Docs>
         <param name="receiver">The <see cref="T:System.ComponentModel.IComponent" /> that receives the location extender property.</param>
         <param name="location">A <see cref="T:System.Drawing.Point" /> representing the location of <paramref name="receiver" />.</param>
-        <summary>Sets the value of the <see langword="Location" /> extender property.</summary>
+        <summary>
+             Accessor method for the location extender property.  We offer this extender
+             to all non-visual components.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1125,16 +1165,13 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the tray displays a large icon to represent each component in the tray.</summary>
+        <summary>
+             Determines whether the tray will show large icon view or not.
+            </summary>
         <value>
           <see langword="true" /> if large icons are displayed; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -1143,12 +1180,12 @@
     <Member MemberName="System.ComponentModel.IExtenderProvider.CanExtend">
       <MemberSignature Language="C#" Value="bool IExtenderProvider.CanExtend (object extendee);" FrameworkAlternate="netcore-3.0" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.ComponentModel.IExtenderProvider.CanExtend(object extendee) cil managed" FrameworkAlternate="netcore-3.0" />
-      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentTray.System#ComponentModel#IExtenderProvider#CanExtend(System.Object)" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentTray.System#ComponentModel#IExtenderProvider#CanExtend(System.Object)" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       <MemberSignature Language="VB.NET" Value="Function CanExtend (extendee As Object) As Boolean Implements IExtenderProvider.CanExtend" FrameworkAlternate="netcore-3.0" />
       <MemberSignature Language="C++ CLI" Value=" virtual bool System.ComponentModel.IExtenderProvider.CanExtend(System::Object ^ extendee) = System::ComponentModel::IExtenderProvider::CanExtend;" FrameworkAlternate="netcore-3.0" />
       <MemberSignature Language="C#" Value="bool IExtenderProvider.CanExtend (object component);" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance bool System.ComponentModel.IExtenderProvider.CanExtend(object component) cil managed" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentTray.System#ComponentModel#IExtenderProvider#CanExtend(System.Object)" FrameworkAlternate="netframework-1.1;netcore-3.0" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.Design.ComponentTray.System#ComponentModel#IExtenderProvider#CanExtend(System.Object)" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="VB.NET" Value="Function CanExtend (component As Object) As Boolean Implements IExtenderProvider.CanExtend" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberSignature Language="C++ CLI" Value=" virtual bool System.ComponentModel.IExtenderProvider.CanExtend(System::Object ^ component) = System::ComponentModel::IExtenderProvider::CanExtend;" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
       <MemberType>Method</MemberType>
@@ -1169,11 +1206,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="extendee" Type="System.Object" Index="0" FrameworkAlternate="netcore-3.0" />
-        <Parameter Name="component" Type="System.Object" Index="0" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="extendee" Type="System.Object" />
       </Parameters>
       <Docs>
-        <param name="component">The object to receive the extender properties.</param>
         <param name="extendee">The object to receive the extender properties.</param>
         <summary>For a description of this member, see <see cref="M:System.ComponentModel.IExtenderProvider.CanExtend(System.Object)" />.</summary>
         <returns>
@@ -1214,7 +1249,9 @@
       </Parameters>
       <Docs>
         <param name="m">The <see cref="T:System.Windows.Forms.Message" /> to process.</param>
-        <summary>Processes Windows messages.</summary>
+        <summary>
+             We override our base class's WndProc to monitor certain messages.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

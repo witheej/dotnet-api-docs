@@ -1,4 +1,4 @@
-﻿<Type Name="ListBox+IntegerCollection" FullName="System.Windows.Forms.ListBox+IntegerCollection">
+<Type Name="ListBox+IntegerCollection" FullName="System.Windows.Forms.ListBox+IntegerCollection">
   <TypeSignature Language="C#" Value="public class ListBox.IntegerCollection : System.Collections.IList" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit ListBox/IntegerCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ListBox.IntegerCollection" />
@@ -51,11 +51,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="owner" Type="System.Windows.Forms.ListBox" />
       </Parameters>
@@ -93,7 +88,11 @@
       </Parameters>
       <Docs>
         <param name="item">The integer to add to the collection.</param>
-        <summary>Adds a unique integer to the collection in sorted order.</summary>
+        <summary>
+             Adds a unique integer to the collection in sorted order.
+             A SystemException occurs if there is insufficient space available to
+             store the new item.
+            </summary>
         <returns>The index of the added item.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.SystemException">There is insufficient space available to store the new item.</exception>
@@ -121,11 +120,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -158,11 +152,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -299,15 +288,14 @@
         <Attribute>
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of selected items in the <see cref="T:System.Windows.Forms.ListBox" />.</summary>
+        <summary>
+             Number of current selected items.
+            </summary>
         <value>The number of selected items in the <see cref="T:System.Windows.Forms.ListBox" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -373,7 +361,9 @@
       </Parameters>
       <Docs>
         <param name="index">The position of the <see cref="P:System.Windows.Forms.ListBox.IntegerCollection.Item(System.Int32)" /> in the collection.</param>
-        <summary>Gets or sets the <see cref="P:System.Windows.Forms.ListBox.IntegerCollection.Item(System.Int32)" /> having the specified index.</summary>
+        <summary>
+             Retrieves the specified selected item.
+            </summary>
         <value>The selected <see cref="P:System.Windows.Forms.ListBox.IntegerCollection.Item(System.Int32)" /> at the specified position.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -399,7 +389,10 @@
       </Parameters>
       <Docs>
         <param name="item">The integer to remove from the <see cref="T:System.Windows.Forms.ListBox.IntegerCollection" />.</param>
-        <summary>Removes the specified integer from the <see cref="T:System.Windows.Forms.ListBox.IntegerCollection" />.</summary>
+        <summary>
+             Removes the given item from the array.  If
+             the item is not in the array, this does nothing.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -436,7 +429,9 @@
       </Parameters>
       <Docs>
         <param name="index">The zero-based index of the integer to remove.</param>
-        <summary>Removes the integer at the specified index from the <see cref="T:System.Windows.Forms.ListBox.IntegerCollection" />.</summary>
+        <summary>
+             Removes the item at the given index.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -606,11 +601,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -888,11 +878,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>

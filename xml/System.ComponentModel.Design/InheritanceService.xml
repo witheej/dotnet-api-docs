@@ -1,4 +1,4 @@
-﻿<Type Name="InheritanceService" FullName="System.ComponentModel.Design.InheritanceService">
+<Type Name="InheritanceService" FullName="System.ComponentModel.Design.InheritanceService">
   <TypeSignature Language="C#" Value="public class InheritanceService : IDisposable, System.ComponentModel.Design.IInheritanceService" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit InheritanceService extends System.Object implements class System.ComponentModel.Design.IInheritanceService, class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.InheritanceService" />
@@ -27,7 +27,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Provides a set of methods for identifying inherited components.</summary>
+    <summary>
+             Provides a set of methods for analyzing and identifying inherited components.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -58,7 +60,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.InheritanceService" /> class.</summary>
+        <summary>
+             Initializes a new instance of the <see cref="T:System.ComponentModel.Design.InheritanceService" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,9 +83,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual void AddInheritedComponents(System::ComponentModel::IComponent ^ component, System::ComponentModel::IContainer ^ container);" />
       <MemberSignature Language="F#" Value="abstract member AddInheritedComponents : System.ComponentModel.IComponent * System.ComponentModel.IContainer -&gt; unit&#xA;override this.AddInheritedComponents : System.ComponentModel.IComponent * System.ComponentModel.IContainer -&gt; unit" Usage="inheritanceService.AddInheritedComponents (component, container)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.IInheritanceService.AddInheritedComponents(System.ComponentModel.IComponent,System.ComponentModel.IContainer)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -102,7 +103,9 @@
       <Docs>
         <param name="component">The component to search for inherited components to add to the specified container.</param>
         <param name="container">The container to add the inherited components to.</param>
-        <summary>Adds the components inherited by the specified component to the <see cref="T:System.ComponentModel.Design.InheritanceService" />.</summary>
+        <summary>
+             Adds inherited components to the <see cref="T:System.ComponentModel.Design.InheritanceService" />.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -143,7 +146,9 @@
         <param name="type">The base type to search for.</param>
         <param name="component">The component to search for inherited components to add to the specified container.</param>
         <param name="container">The container to add the inherited components to.</param>
-        <summary>Adds the components of the specified type that are inherited by the specified component to the <see cref="T:System.ComponentModel.Design.InheritanceService" />.</summary>
+        <summary>
+             Adds inherited components to the <see cref="T:System.ComponentModel.Design.InheritanceService" />.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -184,17 +189,14 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases all resources used by the <see cref="T:System.ComponentModel.Design.InheritanceService" />.</summary>
+        <summary>
+             Disposes of the resources (other than memory) used by the <see cref="T:System.ComponentModel.Design.InheritanceService" />.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -226,7 +228,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="disposing" Type="System.Boolean" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="disposing" Type="System.Boolean" />
       </Parameters>
       <Docs>
         <param name="disposing">
@@ -258,9 +260,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; virtual System::ComponentModel::InheritanceAttribute ^ GetInheritanceAttribute(System::ComponentModel::IComponent ^ component);" />
       <MemberSignature Language="F#" Value="abstract member GetInheritanceAttribute : System.ComponentModel.IComponent -&gt; System.ComponentModel.InheritanceAttribute&#xA;override this.GetInheritanceAttribute : System.ComponentModel.IComponent -&gt; System.ComponentModel.InheritanceAttribute" Usage="inheritanceService.GetInheritanceAttribute component" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.IInheritanceService.GetInheritanceAttribute(System.ComponentModel.IComponent)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>1.0.5000.0</AssemblyVersion>
@@ -279,7 +278,9 @@
       </Parameters>
       <Docs>
         <param name="component">The component to retrieve the inheritance attribute for.</param>
-        <summary>Gets the inheritance attribute of the specified component.</summary>
+        <summary>
+             Gets the inheritance attribute of the specified component.
+            </summary>
         <returns>An <see cref="T:System.ComponentModel.InheritanceAttribute" /> that describes the level of inheritance that this component comes from.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -321,7 +322,9 @@
       <Docs>
         <param name="member">The member to check. This member is either a <see cref="T:System.Reflection.FieldInfo" /> or a <see cref="T:System.Reflection.MethodInfo" />.</param>
         <param name="component">The component instance this member is bound to.</param>
-        <summary>Indicates whether to ignore the specified member.</summary>
+        <summary>
+             Indicates the inherited members to ignore.
+            </summary>
         <returns>
           <see langword="true" /> if the specified member should be included in the set of inherited components; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>

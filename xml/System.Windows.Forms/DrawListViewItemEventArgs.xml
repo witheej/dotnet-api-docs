@@ -1,4 +1,4 @@
-﻿<Type Name="DrawListViewItemEventArgs" FullName="System.Windows.Forms.DrawListViewItemEventArgs">
+<Type Name="DrawListViewItemEventArgs" FullName="System.Windows.Forms.DrawListViewItemEventArgs">
   <TypeSignature Language="C#" Value="public class DrawListViewItemEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DrawListViewItemEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DrawListViewItemEventArgs" />
@@ -15,7 +15,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.Forms.ListView.DrawItem" /> event.</summary>
+    <summary>
+             This class contains the information a user needs to paint ListView items.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -76,7 +78,9 @@
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> within which to draw.</param>
         <param name="itemIndex">The index of the <see cref="T:System.Windows.Forms.ListViewItem" /> within the <see cref="P:System.Windows.Forms.ListView.Items" /> collection.</param>
         <param name="state">A bitwise combination of <see cref="T:System.Windows.Forms.ListViewItemStates" /> values indicating the current state of the <see cref="T:System.Windows.Forms.ListViewItem" /> to draw.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DrawListViewItemEventArgs" /> class.</summary>
+        <summary>
+             Creates a new DrawListViewItemEventArgs with the given parameters.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -93,16 +97,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the size and location of the <see cref="T:System.Windows.Forms.ListViewItem" /> to draw.</summary>
+        <summary>
+             The rectangle outlining the area in which the painting should be done.
+            </summary>
         <value>A <see cref="T:System.Drawing.Rectangle" /> that represents the bounds of the <see cref="T:System.Windows.Forms.ListViewItem" /> to draw.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -149,7 +150,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Draws the background of the <see cref="T:System.Windows.Forms.ListViewItem" /> using its current background color.</summary>
+        <summary>
+             Draws the item's background.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -178,19 +181,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a property indicating whether the <see cref="T:System.Windows.Forms.ListView" /> control will use the default drawing for the <see cref="T:System.Windows.Forms.ListViewItem" />.</summary>
+        <summary>
+             Causes the item do be drawn by the system instead of owner drawn.
+            </summary>
         <value>
           <see langword="true" /> if the system draws the item; <see langword="false" /> if the event handler draws the item. The default value is <see langword="false" />.</value>
         <remarks>
@@ -231,7 +228,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Draws a focus rectangle for the <see cref="T:System.Windows.Forms.ListViewItem" /> if it has focus.</summary>
+        <summary>
+             Draws a focus rectangle in the given bounds, if the item is focused. In Details View, if FullRowSelect is
+             true, the rectangle is drawn around the whole item, else around the first sub-item's text area.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -280,17 +280,14 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Draws the text of the <see cref="T:System.Windows.Forms.ListViewItem" /> using its current foreground color.</summary>
+        <summary>
+             Draws the item's text (overloaded) - useful only when View != View.Details
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -343,7 +340,9 @@
       </Parameters>
       <Docs>
         <param name="flags">A bitwise combination of <see cref="T:System.Windows.Forms.TextFormatFlags" /> values.</param>
-        <summary>Draws the text of the <see cref="T:System.Windows.Forms.ListViewItem" /> using its current foreground color and formatting it with the specified <see cref="T:System.Windows.Forms.TextFormatFlags" /> values.</summary>
+        <summary>
+             Draws the item's text (overloaded) - useful only when View != View.Details - takes a TextFormatFlags argument.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -379,16 +378,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Graphics</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Drawing.Graphics" /> used to draw the <see cref="T:System.Windows.Forms.ListViewItem" />.</summary>
+        <summary>
+             Graphics object with which painting should be done.
+            </summary>
         <value>A <see cref="T:System.Drawing.Graphics" /> used to draw the <see cref="T:System.Windows.Forms.ListViewItem" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -427,16 +423,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ListViewItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Forms.ListViewItem" /> to draw.</summary>
+        <summary>
+             The item to be painted.
+            </summary>
         <value>The <see cref="T:System.Windows.Forms.ListViewItem" /> to draw.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -478,16 +471,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the index of the <see cref="T:System.Windows.Forms.ListViewItem" /> within the <see cref="P:System.Windows.Forms.ListView.Items" /> collection of the containing <see cref="T:System.Windows.Forms.ListView" />.</summary>
+        <summary>
+             The index of the item that should be painted.
+            </summary>
         <value>The index of the <see cref="T:System.Windows.Forms.ListViewItem" /> within the <see cref="P:System.Windows.Forms.ListView.Items" /> collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -521,16 +511,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ListViewItemStates</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the current state of the <see cref="T:System.Windows.Forms.ListViewItem" /> to draw.</summary>
+        <summary>
+             Miscellaneous state information.
+            </summary>
         <value>A bitwise combination of <see cref="T:System.Windows.Forms.ListViewItemStates" /> values indicating the current state of the <see cref="T:System.Windows.Forms.ListViewItem" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

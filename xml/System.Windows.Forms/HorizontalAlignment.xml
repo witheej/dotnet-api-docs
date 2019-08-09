@@ -1,4 +1,4 @@
-﻿<Type Name="HorizontalAlignment" FullName="System.Windows.Forms.HorizontalAlignment">
+<Type Name="HorizontalAlignment" FullName="System.Windows.Forms.HorizontalAlignment">
   <TypeSignature Language="C#" Value="public enum HorizontalAlignment" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed HorizontalAlignment extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.HorizontalAlignment" />
@@ -20,7 +20,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies how an object or text in a control is horizontally aligned relative to an element of the control.</summary>
+    <summary>
+             Specifies how an object or text in a control is horizontally aligned
+             relative to an element of the control.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -59,7 +62,9 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>The object or text is aligned in the center of the control element.</summary>
+        <summary>
+             The object or text is aligned in the center of the control element.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Left">
@@ -81,7 +86,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>The object or text is aligned on the left of the control element.</summary>
+        <summary>
+             The object or text is aligned on the left of the control element.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Right">
@@ -103,7 +110,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The object or text is aligned on the right of the control element.</summary>
+        <summary>
+             The object or text is aligned on the right of the control element.
+            </summary>
       </Docs>
     </Member>
   </Members>

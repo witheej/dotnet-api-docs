@@ -1,4 +1,4 @@
-﻿<Type Name="PropertyValueUIItemInvokeHandler" FullName="System.Drawing.Design.PropertyValueUIItemInvokeHandler">
+<Type Name="PropertyValueUIItemInvokeHandler" FullName="System.Drawing.Design.PropertyValueUIItemInvokeHandler">
   <TypeSignature Language="C#" Value="public delegate void PropertyValueUIItemInvokeHandler(ITypeDescriptorContext context, PropertyDescriptor descriptor, PropertyValueUIItem invokedItem);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PropertyValueUIItemInvokeHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Design.PropertyValueUIItemInvokeHandler" />
@@ -27,10 +27,12 @@
     <ReturnType>System.Void</ReturnType>
   </ReturnValue>
   <Docs>
-    <param name="context">The <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> for the property associated with the icon that was double-clicked.</param>
-    <param name="descriptor">The property associated with the icon that was double-clicked.</param>
-    <param name="invokedItem">The <see cref="T:System.Drawing.Design.PropertyValueUIItem" /> associated with the icon that was double-clicked.</param>
-    <summary>Represents the method that will handle the <see cref="P:System.Drawing.Design.PropertyValueUIItem.InvokeHandler" /> event of a <see cref="T:System.Drawing.Design.PropertyValueUIItem" />.</summary>
+    <param name="context">The <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> for the property associated with the icon that was double-clicked. </param>
+    <param name="descriptor">The property associated with the icon that was double-clicked. </param>
+    <param name="invokedItem">The <see cref="T:System.Drawing.Design.PropertyValueUIItem" /> associated with the icon that was double-clicked. </param>
+    <summary>
+             Represents a method that will handle the event raised when an icon in the properties window associated with a <see cref="T:System.Drawing.Design.PropertyValueUIItem" /> is double-clicked.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

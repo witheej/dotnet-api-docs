@@ -1,4 +1,4 @@
-﻿<Type Name="DataGridViewCellCollection" FullName="System.Windows.Forms.DataGridViewCellCollection">
+<Type Name="DataGridViewCellCollection" FullName="System.Windows.Forms.DataGridViewCellCollection">
   <TypeSignature Language="C#" Value="public class DataGridViewCellCollection : System.Windows.Forms.BaseCollection, System.Collections.IList" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewCellCollection extends System.Windows.Forms.BaseCollection implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewCellCollection" />
@@ -30,7 +30,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a collection of cells in a <see cref="T:System.Windows.Forms.DataGridViewRow" />.</summary>
+    <summary>
+             Represents a collection of <see cref="T:System.Windows.Forms.DataGridViewCell" /> objects in the <see cref="T:System.Windows.Forms.DataGridView" />
+             control.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -88,7 +91,9 @@
       </Parameters>
       <Docs>
         <param name="dataGridViewCell">A <see cref="T:System.Windows.Forms.DataGridViewCell" /> to add to the collection.</param>
-        <summary>Adds a cell to the collection.</summary>
+        <summary>
+             Adds a <see cref="T:System.Windows.Forms.DataGridViewCell" /> to this collection.
+            </summary>
         <returns>The position in which to insert the new element.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -131,7 +136,7 @@
       <Parameters>
         <Parameter Name="dataGridViewCells" Type="System.Windows.Forms.DataGridViewCell[]">
           <Attributes>
-            <Attribute FrameworkAlternate="netcore-3.0">
+            <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -257,7 +262,9 @@
       </Parameters>
       <Docs>
         <param name="dataGridViewCell">A <see cref="T:System.Windows.Forms.DataGridViewCell" /> to locate in the collection.</param>
-        <summary>Determines whether the specified cell is contained in the collection.</summary>
+        <summary>
+             Checks to see if a DataGridViewCell is contained in this collection.
+            </summary>
         <returns>
           <see langword="true" /> if <paramref name="dataGridViewCell" /> is in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -391,7 +398,9 @@
       </Parameters>
       <Docs>
         <param name="index">The zero-based index of the cell to get or set.</param>
-        <summary>Gets or sets the cell at the provided index location. In C#, this property is the indexer for the <see cref="T:System.Windows.Forms.DataGridViewCellCollection" /> class.</summary>
+        <summary>
+             Retrieves the DataGridViewCell with the specified index.
+            </summary>
         <value>The <see cref="T:System.Windows.Forms.DataGridViewCell" /> stored at the given index.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The specified value when setting this property is <see langword="null" />.</exception>
@@ -431,7 +440,9 @@
       </Parameters>
       <Docs>
         <param name="columnName">The name of the column in which to get or set the cell.</param>
-        <summary>Gets or sets the cell in the column with the provided name. In C#, this property is the indexer for the <see cref="T:System.Windows.Forms.DataGridViewCellCollection" /> class.</summary>
+        <summary>
+             Retrieves the DataGridViewCell with the specified column name.
+            </summary>
         <value>The <see cref="T:System.Windows.Forms.DataGridViewCell" /> stored in the column with the given name.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentException">
@@ -459,11 +470,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.ArrayList</ReturnType>
       </ReturnValue>
@@ -842,11 +848,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -1082,11 +1083,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -1182,11 +1178,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>

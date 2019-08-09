@@ -1,4 +1,4 @@
-﻿<Type Name="FontEditor" FullName="System.Drawing.Design.FontEditor">
+<Type Name="FontEditor" FullName="System.Drawing.Design.FontEditor">
   <TypeSignature Language="C#" Value="public class FontEditor : System.Drawing.Design.UITypeEditor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FontEditor extends System.Drawing.Design.UITypeEditor" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Design.FontEditor" />
@@ -20,15 +20,14 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-      <AttributeName>System.Security.SecurityCritical</AttributeName>
-    </Attribute>
-    <Attribute FrameworkAlternate="netcore-3.0">
+    <Attribute>
       <AttributeName>System.CLSCompliant(false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides a user interface to select and configure a <see cref="T:System.Drawing.Font" /> object.</summary>
+    <summary>
+             Provides a font editor that is used to visually select and configure a Font object.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -68,11 +67,6 @@
         <AssemblyName>System.Windows.Forms.Design.Editors</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Drawing.Design.FontEditor" /> class.</summary>
@@ -109,7 +103,10 @@
         <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that can be used to gain additional context information.</param>
         <param name="provider">An <see cref="T:System.IServiceProvider" /> that this editor can use to obtain services.</param>
         <param name="value">The object to edit.</param>
-        <summary>Edits the value of the specified object using the editor style indicated by <see cref="M:System.Drawing.Design.FontEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)" />.</summary>
+        <summary>
+             Edits the given object value using the editor style provided by GetEditorStyle.
+             A service provider is provided so that any required editing services can be obtained.
+            </summary>
         <returns>The new value of the object. If the value of the object has not changed, this should return the same object that was passed to it.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -147,7 +144,9 @@
       </Parameters>
       <Docs>
         <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that can be used to gain additional context information.</param>
-        <summary>Gets the editor style used by the <see cref="M:System.Drawing.Design.FontEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)" /> method.</summary>
+        <summary>
+             Retrieves the editing style of the Edit method.false
+            </summary>
         <returns>A <see cref="T:System.Drawing.Design.UITypeEditorEditStyle" /> value that indicates the style of editor used by <see cref="M:System.Drawing.Design.FontEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>

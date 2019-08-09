@@ -1,4 +1,4 @@
-﻿<Type Name="ToolStripMenuItem" FullName="System.Windows.Forms.ToolStripMenuItem">
+<Type Name="ToolStripMenuItem" FullName="System.Windows.Forms.ToolStripMenuItem">
   <TypeSignature Language="C#" Value="public class ToolStripMenuItem : System.Windows.Forms.ToolStripDropDownItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolStripMenuItem extends System.Windows.Forms.ToolStripDropDownItem" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripMenuItem" />
@@ -21,12 +21,11 @@
     <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
       <AttributeName>System.Windows.Forms.Design.ToolStripItemDesignerAvailability(System.Windows.Forms.Design.ToolStripItemDesignerAvailability.MenuStrip | System.Windows.Forms.Design.ToolStripItemDesignerAvailability.ContextMenuStrip)</AttributeName>
     </Attribute>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
-      <AttributeName>System.ComponentModel.Design.Serialization.DesignerSerializer("System.Windows.Forms.Design.ToolStripMenuItemCodeDomSerializer, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", "System.ComponentModel.Design.Serialization.CodeDomSerializer, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")</AttributeName>
-    </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a selectable option displayed on a <see cref="T:System.Windows.Forms.MenuStrip" /> or <see cref="T:System.Windows.Forms.ContextMenuStrip" />. Although <see cref="T:System.Windows.Forms.ToolStripMenuItem" /> replaces and adds functionality to the <see cref="T:System.Windows.Forms.MenuItem" /> control of previous versions, <see cref="T:System.Windows.Forms.MenuItem" /> is retained for both backward compatibility and future use if you choose.</summary>
+    <summary>
+             ToolStripMenuItem
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -230,7 +229,7 @@
         <Parameter Name="image" Type="System.Drawing.Image" />
         <Parameter Name="dropDownItems" Type="System.Windows.Forms.ToolStripItem[]">
           <Attributes>
-            <Attribute FrameworkAlternate="netcore-3.0">
+            <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -350,7 +349,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the <see cref="T:System.Windows.Forms.ToolStripMenuItem" /> is checked.</summary>
+        <summary>
+             Gets or sets a value indicating whether the item is checked.
+            </summary>
         <value>
           <see langword="true" /> if the <see cref="T:System.Windows.Forms.ToolStripMenuItem" /> is checked or is in an indeterminate state; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
@@ -391,7 +392,11 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.ToolStripMenuItem.Checked" /> property changes.</summary>
+        <summary>
+             Occurs when the
+             value of the <see cref="P:System.Windows.Forms.CheckBox.Checked" />
+             property changes.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -432,12 +437,6 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
@@ -477,7 +476,10 @@
         <ReturnType>System.Windows.Forms.CheckState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether a <see cref="T:System.Windows.Forms.ToolStripMenuItem" /> is in the checked, unchecked, or indeterminate state.</summary>
+        <summary>
+             Gets
+             or sets a value indicating whether the check box is checked.
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.CheckState" /> values. The default is <see langword="Unchecked" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -518,7 +520,11 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the value of the <see cref="P:System.Windows.Forms.ToolStripMenuItem.CheckState" /> property changes.</summary>
+        <summary>
+             Occurs when the
+             value of the <see cref="P:System.Windows.Forms.CheckBox.CheckState" />
+             property changes.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -557,7 +563,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -628,11 +634,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Padding</ReturnType>
       </ReturnValue>
@@ -816,7 +817,10 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripMenuItem.CheckedChanged" /> event.</summary>
+        <summary>
+             Raises the <see cref="E:System.Windows.Forms.ToolStripMenuItem.CheckedChanged" />
+             event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -853,7 +857,9 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripMenuItem.CheckStateChanged" /> event.</summary>
+        <summary>
+             Raises the <see cref="E:System.Windows.Forms.ToolStripMenuItem.CheckStateChanged" /> event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1040,6 +1046,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.ToolStripMenuItem.OnMouseDown(System.Windows.Forms.MouseEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ToolStripMenuItem.OnMouseDown(System.Windows.Forms.MouseEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <devdoc />
       </Docs>
     </Member>
     <Member MemberName="OnMouseEnter">
@@ -1077,6 +1084,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.ToolStripMenuItem.OnMouseEnter(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ToolStripMenuItem.OnMouseEnter(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <devdoc />
       </Docs>
     </Member>
     <Member MemberName="OnMouseLeave">
@@ -1114,6 +1122,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.ToolStripMenuItem.OnMouseLeave(System.EventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ToolStripMenuItem.OnMouseLeave(System.EventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <devdoc />
       </Docs>
     </Member>
     <Member MemberName="OnMouseUp">
@@ -1225,6 +1234,7 @@
         <block subset="none" type="overrides">
           <para>When overriding <see cref="M:System.Windows.Forms.ToolStripMenuItem.OnPaint(System.Windows.Forms.PaintEventArgs)" /> in a derived class, be sure to call the base class's <see cref="M:System.Windows.Forms.ToolStripMenuItem.OnPaint(System.Windows.Forms.PaintEventArgs)" /> method so that registered delegates receive the event.</para>
         </block>
+        <devdoc />
       </Docs>
     </Member>
     <Member MemberName="Overflow">
@@ -1249,7 +1259,10 @@
         <ReturnType>System.Windows.Forms.ToolStripItemOverflow</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the <see cref="T:System.Windows.Forms.ToolStripMenuItem" /> is attached to the <see cref="T:System.Windows.Forms.ToolStrip" /> or the <see cref="T:System.Windows.Forms.ToolStripOverflowButton" /> or whether it can float between the two.</summary>
+        <summary>
+             Specifies whether or not the item is glued to the ToolStrip or overflow or
+             can float between the two.
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.ToolStripItemOverflow" /> values. The default is <see langword="Never" />.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1277,7 +1290,9 @@
       <Docs>
         <param name="m">A <see cref="T:System.Windows.Forms.Message" />, passed by reference, which represents the window message to process.</param>
         <param name="keyData">One of the <see cref="T:System.Windows.Forms.Keys" /> values that represents the key to process.</param>
-        <summary>Processes a command key.</summary>
+        <summary>
+             handle shortcut keys here.
+            </summary>
         <returns>
           <see langword="true" /> if the character was processed by the control; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -1332,7 +1347,7 @@
       </Parameters>
       <Docs>
         <param name="rect">A <see cref="T:System.Drawing.Rectangle" /> that represents the size and location of the <see cref="T:System.Windows.Forms.ToolStripMenuItem" />.</param>
-        <summary>Sets the size and location of the <see cref="T:System.Windows.Forms.ToolStripMenuItem" />.</summary>
+        <summary> overridden here so we scooch over when we're in the ToolStripDropDownMenu</summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1355,9 +1370,6 @@
         </Attribute>
         <Attribute>
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1409,7 +1421,10 @@
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the shortcut keys associated with the <see cref="T:System.Windows.Forms.ToolStripMenuItem" />.</summary>
+        <summary>
+             Gets or sets the shortcut keys associated with the menu
+             item.
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.Keys" /> values. The default is <see cref="F:System.Windows.Forms.Keys.None" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1451,15 +1466,17 @@
         <Attribute>
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the shortcut keys that are associated with the <see cref="T:System.Windows.Forms.ToolStripMenuItem" /> are displayed next to the <see cref="T:System.Windows.Forms.ToolStripMenuItem" />.</summary>
+        <summary>
+             Gets or sets a value that indicates whether the shortcut
+             keys that are assocaited
+             with the menu item are displayed next to the menu item
+             caption.
+            </summary>
         <value>
           <see langword="true" /> if the shortcut keys are shown; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>To be added.</remarks>

@@ -1,4 +1,4 @@
-﻿<Type Name="MonthCalendar+HitArea" FullName="System.Windows.Forms.MonthCalendar+HitArea">
+<Type Name="MonthCalendar+HitArea" FullName="System.Windows.Forms.MonthCalendar+HitArea">
   <TypeSignature Language="C#" Value="public enum MonthCalendar.HitArea" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed MonthCalendar/HitArea extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MonthCalendar.HitArea" />
@@ -15,7 +15,12 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Defines constants that represent areas in a <see cref="T:System.Windows.Forms.MonthCalendar" /> control.</summary>
+    <summary>
+             This enumeration has specific areas of the MonthCalendar control as
+             its enumerated values. The hitArea member of System.Windows.Forms.Win32.HitTestInfo
+             will be one of these enumerated values, and indicates which portion of
+             a month calendar is under a specific point.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -45,7 +50,9 @@
       </ReturnValue>
       <MemberValue>6</MemberValue>
       <Docs>
-        <summary>The specified point is part of the calendar's background.</summary>
+        <summary>
+             The given point was in the calendar's background
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Date">
@@ -67,7 +74,11 @@
       </ReturnValue>
       <MemberValue>7</MemberValue>
       <Docs>
-        <summary>The specified point is on a date within the calendar. The <see cref="P:System.Windows.Forms.MonthCalendar.HitTestInfo.Time" /> property of <see cref="T:System.Windows.Forms.MonthCalendar.HitTestInfo" /> is set to the date at the specified point.</summary>
+        <summary>
+             The given point was on a particular date within the calendar,
+             and the time member of HitTestInfo will be set to the date at
+             the given point.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="DayOfWeek">
@@ -89,7 +100,11 @@
       </ReturnValue>
       <MemberValue>10</MemberValue>
       <Docs>
-        <summary>The specified point is over a day abbreviation ("Fri", for example). The <see cref="P:System.Windows.Forms.MonthCalendar.HitTestInfo.Time" /> property of <see cref="T:System.Windows.Forms.MonthCalendar.HitTestInfo" /> is set to January 1, 0001.</summary>
+        <summary>
+             The given point was over a day abbreviation ("Fri", for example).
+             The time member of HitTestInfo will be set to the corresponding
+             date on the top row.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="NextMonthButton">
@@ -111,7 +126,11 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>The specified point is over the button at the upper-right corner of the control. If the user clicks here, the month calendar scrolls its display to the next month or set of months.</summary>
+        <summary>
+             The given point was over the button at the top right corner of
+             the control. If the user clicks here, the month calendar will
+             scroll its display to the next month or set of months
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="NextMonthDate">
@@ -133,7 +152,12 @@
       </ReturnValue>
       <MemberValue>8</MemberValue>
       <Docs>
-        <summary>The specified point is over a date from the next month (partially displayed at the top of the currently displayed month). If the user clicks here, the month calendar scrolls its display to the next month or set of months.</summary>
+        <summary>
+             The given point was over a date from the next month (partially
+             displayed at the end of the currently displayed month). If the
+             user clicks here, the month calendar will scroll its display to
+             the next month or set of months.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Nowhere">
@@ -155,7 +179,10 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>The specified point is either not on the month calendar control, or it is in an inactive portion of the control.</summary>
+        <summary>
+             The given point was not on the month calendar control, or it was
+             in an inactive portion of the control.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="PrevMonthButton">
@@ -177,7 +204,11 @@
       </ReturnValue>
       <MemberValue>5</MemberValue>
       <Docs>
-        <summary>The specified point is over the button at the upper-left corner of the control. If the user clicks here, the month calendar scrolls its display to the previous month or set of months.</summary>
+        <summary>
+             The given point was over the button at the top left corner of
+             the control. If the user clicks here, the month calendar will
+             scroll its display to the previous month or set of months
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="PrevMonthDate">
@@ -199,7 +230,12 @@
       </ReturnValue>
       <MemberValue>9</MemberValue>
       <Docs>
-        <summary>The specified point is over a date from the previous month (partially displayed at the top of the currently displayed month). If the user clicks here, the month calendar scrolls its display to the previous month or set of months.</summary>
+        <summary>
+             The given point was over a date from the previous month (partially
+             displayed at the end of the currently displayed month). If the
+             user clicks here, the month calendar will scroll its display to
+             the previous month or set of months.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="TitleBackground">
@@ -221,7 +257,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The specified point is over the background of a month's title.</summary>
+        <summary>
+             The given point was over the background of a month's title
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="TitleMonth">
@@ -243,7 +281,9 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>The specified point is in a month's title bar, over a month name.</summary>
+        <summary>
+             The given point was in a month's title bar, over a month name
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="TitleYear">
@@ -265,7 +305,9 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>The specified point is in a month's title bar, over the year value.</summary>
+        <summary>
+             The given point was in a month's title bar, over the year value
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="TodayLink">
@@ -287,7 +329,10 @@
       </ReturnValue>
       <MemberValue>12</MemberValue>
       <Docs>
-        <summary>The specified point is on the today link at the bottom of the month calendar control.</summary>
+        <summary>
+             The given point was on the "today" link at the bottom of the
+             month calendar control
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="WeekNumbers">
@@ -309,7 +354,12 @@
       </ReturnValue>
       <MemberValue>11</MemberValue>
       <Docs>
-        <summary>The specified point is over a week number. This occurs only if the <see cref="P:System.Windows.Forms.MonthCalendar.ShowWeekNumbers" /> property of <see cref="T:System.Windows.Forms.MonthCalendar" /> is enabled. The <see cref="P:System.Windows.Forms.MonthCalendar.HitTestInfo.Time" /> property of <see cref="T:System.Windows.Forms.MonthCalendar.HitTestInfo" /> is set to the corresponding date in the leftmost column.</summary>
+        <summary>
+             The given point was over a week number.  This will only occur if
+             the showWeekNumbers property of MonthCalendar is enabled. The
+             time member of HitTestInfo will be set to the corresponding date
+             in the leftmost column.
+            </summary>
       </Docs>
     </Member>
   </Members>

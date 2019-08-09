@@ -1,4 +1,4 @@
-﻿<Type Name="ImageList+ImageCollection" FullName="System.Windows.Forms.ImageList+ImageCollection">
+<Type Name="ImageList+ImageCollection" FullName="System.Windows.Forms.ImageList+ImageCollection">
   <TypeSignature Language="C#" Value="public sealed class ImageList.ImageCollection : System.Collections.IList" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed beforefieldinit ImageList/ImageCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ImageList.ImageCollection" />
@@ -28,12 +28,6 @@
   <Attributes>
     <Attribute FrameworkAlternate="netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
       <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.ImageCollectionEditor, System.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
-    </Attribute>
-    <Attribute FrameworkAlternate="netframework-1.1">
-      <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.ImageCollectionEditor, System.Design, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
-    </Attribute>
-    <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
-      <AttributeName>System.ComponentModel.Editor("System.Windows.Forms.Design.ImageCollectionEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
@@ -136,7 +130,9 @@
       </Parameters>
       <Docs>
         <param name="value">A <see cref="T:System.Drawing.Bitmap" /> of the image to add to the list.</param>
-        <summary>Adds the specified image to the <see cref="T:System.Windows.Forms.ImageList" />.</summary>
+        <summary>
+             Add the given image to the ImageList.
+            </summary>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The image being added is <see langword="null" />.</exception>
         <exception cref="T:System.ArgumentException">The image being added is not a <see cref="T:System.Drawing.Bitmap" />.</exception>
@@ -166,7 +162,11 @@
       <Docs>
         <param name="value">A <see cref="T:System.Drawing.Bitmap" /> of the image to add to the list.</param>
         <param name="transparentColor">The <see cref="T:System.Drawing.Color" /> to mask this image.</param>
-        <summary>Adds the specified image to the <see cref="T:System.Windows.Forms.ImageList" />, using the specified color to generate the mask.</summary>
+        <summary>
+             Add the given image to the ImageList, using the given color
+             to generate the mask. The number of images to add is inferred from
+             the width of the given image.
+            </summary>
         <returns>The index of the newly added image, or -1 if the image cannot be added.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">The image being added is <see langword="null" />.</exception>
@@ -189,13 +189,15 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="icon" Type="System.Drawing.Icon" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="icon" Type="System.Drawing.Icon" />
       </Parameters>
       <Docs>
         <param name="key">The name of the icon.</param>
         <param name="icon">The <see cref="T:System.Drawing.Icon" /> to add to the collection.</param>
-        <summary>Adds an icon with the specified key to the end of the collection.</summary>
+        <summary>
+             Adds an icon to the end of the image list with a key accessor.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -224,13 +226,15 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="image" Type="System.Drawing.Image" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="key" Type="System.String" />
+        <Parameter Name="image" Type="System.Drawing.Image" />
       </Parameters>
       <Docs>
         <param name="key">The name of the image.</param>
         <param name="image">The <see cref="T:System.Drawing.Image" /> to add to the collection.</param>
-        <summary>Adds an image with the specified key to the end of the collection.</summary>
+        <summary>
+             Adds an image to the end of the image list with a key accessor.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -260,7 +264,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="images" Type="System.Drawing.Image[]" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="images" Type="System.Drawing.Image[]" />
       </Parameters>
       <Docs>
         <param name="images">The array of <see cref="T:System.Drawing.Image" /> objects to add to the collection.</param>
@@ -299,7 +303,10 @@
       </Parameters>
       <Docs>
         <param name="value">A <see cref="T:System.Drawing.Bitmap" /> with the images to add.</param>
-        <summary>Adds an image strip for the specified image to the <see cref="T:System.Windows.Forms.ImageList" />.</summary>
+        <summary>
+             Add an image strip the given image to the ImageList.  A strip is a single Image
+             which is treated as multiple images arranged side-by-side.
+            </summary>
         <returns>The index of the newly added image, or -1 if the image cannot be added.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -357,7 +364,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all the images and masks from the <see cref="T:System.Windows.Forms.ImageList" />.</summary>
+        <summary>
+             Remove all images and masks from the ImageList.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.ImageList.ImageCollection.Remove(System.Drawing.Image)" />
       </Docs>
@@ -376,8 +385,8 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -420,11 +429,13 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="key">The key of the image to search for.</param>
-        <summary>Determines if the collection contains an image with the specified key.</summary>
+        <summary>
+             Returns true if the collection contains an item with the specified key, false otherwise.
+            </summary>
         <returns>
           <see langword="true" /> to indicate an image with the specified key is contained in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -494,7 +505,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="T:System.Windows.Forms.ImageList" /> has any images.</summary>
+        <summary>
+             Determines if the ImageList has any images, without forcing a handle creation.
+            </summary>
         <value>
           <see langword="true" /> if there are no images in the list; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
@@ -548,8 +561,8 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -590,11 +603,14 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="key">The key of the image to retrieve the index for.</param>
-        <summary>Determines the index of the first occurrence of an image with the specified key in the collection.</summary>
+        <summary>
+             The zero-based index of the first occurrence of value within the entire CollectionBase,
+             if found; otherwise, -1.
+            </summary>
         <returns>The zero-based index of the first occurrence of an image with the specified key in the collection, if found; otherwise, -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -708,11 +724,13 @@
         <ReturnType>System.Drawing.Image</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="key">The name of the image to retrieve from the collection.</param>
-        <summary>Gets an <see cref="T:System.Drawing.Image" /> with the specified key from the collection.</summary>
+        <summary>
+             Retrieves the child control with the specified key.
+            </summary>
         <value>The <see cref="T:System.Drawing.Image" /> with the specified key.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -743,7 +761,9 @@
         <ReturnType>System.Collections.Specialized.StringCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the collection of keys associated with the images in the <see cref="T:System.Windows.Forms.ImageList.ImageCollection" />.</summary>
+        <summary>
+             Returns the keys in the image list - images without keys return String.Empty.
+            </summary>
         <value>A <see cref="T:System.Collections.Specialized.StringCollection" /> containing the names of the images in the <see cref="T:System.Windows.Forms.ImageList.ImageCollection" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -771,8 +791,8 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -851,11 +871,13 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="key" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="key" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="key">The key of the image to remove from the collection.</param>
-        <summary>Removes the image with the specified key from the collection.</summary>
+        <summary>
+             Removes the child control with the specified key.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -883,13 +905,15 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="name" Type="System.String" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="name" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="index">The zero-based index of an image in the collection.</param>
         <param name="name">The name of the image to be set as the image key.</param>
-        <summary>Sets the key for an image in the collection.</summary>
+        <summary>
+             Sets/Resets the key accessor for an image already in the image list.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1168,16 +1192,11 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="index" Type="System.Int32" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="index" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="index">The zero-based index of the image to get or set.</param>

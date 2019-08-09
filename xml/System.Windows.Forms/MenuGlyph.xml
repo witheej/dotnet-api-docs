@@ -1,4 +1,4 @@
-﻿<Type Name="MenuGlyph" FullName="System.Windows.Forms.MenuGlyph">
+<Type Name="MenuGlyph" FullName="System.Windows.Forms.MenuGlyph">
   <TypeSignature Language="C#" Value="public enum MenuGlyph" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MenuGlyph extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MenuGlyph" />
@@ -15,7 +15,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the image to draw when drawing a menu with the <see cref="M:System.Windows.Forms.ControlPaint.DrawMenuGlyph(System.Drawing.Graphics,System.Drawing.Rectangle,System.Windows.Forms.MenuGlyph)" /> method.</summary>
+    <summary>
+             Enum to be used with the drawMenuGlyph function.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -46,7 +48,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Draws a submenu arrow.</summary>
+        <summary>
+             Draws a submenu arrow.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Bullet">
@@ -68,7 +72,9 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Draws a menu bullet.</summary>
+        <summary>
+             Draws a menu bullet.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Checkmark">
@@ -90,7 +96,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Draws a menu check mark.</summary>
+        <summary>
+             Draws a menu checkmark.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Max">

@@ -1,4 +1,4 @@
-﻿<Type Name="TreeViewHitTestLocations" FullName="System.Windows.Forms.TreeViewHitTestLocations">
+<Type Name="TreeViewHitTestLocations" FullName="System.Windows.Forms.TreeViewHitTestLocations">
   <TypeSignature Language="C#" Value="public enum TreeViewHitTestLocations" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TreeViewHitTestLocations extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TreeViewHitTestLocations" />
@@ -22,7 +22,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines constants that represent areas of a <see cref="T:System.Windows.Forms.TreeView" /> or <see cref="T:System.Windows.Forms.TreeNode" />.</summary>
+    <summary>
+             Specifies the return value for HITTEST on treeview.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -59,7 +61,9 @@
       </ReturnValue>
       <MemberValue>256</MemberValue>
       <Docs>
-        <summary>A position above the client portion of a <see cref="T:System.Windows.Forms.TreeView" /> control.</summary>
+        <summary>
+             AboveClientArea.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="BelowClientArea">
@@ -80,7 +84,9 @@
       </ReturnValue>
       <MemberValue>512</MemberValue>
       <Docs>
-        <summary>A position below the client portion of a <see cref="T:System.Windows.Forms.TreeView" /> control.</summary>
+        <summary>
+             BelowClientArea.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Image">
@@ -101,7 +107,9 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>A position within the bounds of an image contained on a <see cref="T:System.Windows.Forms.TreeView" /> or <see cref="T:System.Windows.Forms.TreeNode" />.</summary>
+        <summary>
+             On Image.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Indent">
@@ -122,7 +130,9 @@
       </ReturnValue>
       <MemberValue>8</MemberValue>
       <Docs>
-        <summary>A position in the indentation area for a <see cref="T:System.Windows.Forms.TreeNode" />.</summary>
+        <summary>
+             Indent.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Label">
@@ -143,7 +153,9 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>A position on the text portion of a <see cref="T:System.Windows.Forms.TreeNode" />.</summary>
+        <summary>
+             On Label.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="LeftOfClientArea">
@@ -164,7 +176,9 @@
       </ReturnValue>
       <MemberValue>2048</MemberValue>
       <Docs>
-        <summary>A position to the left of the client area of a <see cref="T:System.Windows.Forms.TreeView" /> control.</summary>
+        <summary>
+             LeftOfClientArea.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -185,7 +199,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>A position in the client area of the <see cref="T:System.Windows.Forms.TreeView" /> control, but not on a node or a portion of a node.</summary>
+        <summary>
+             No Information.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="PlusMinus">
@@ -206,7 +222,9 @@
       </ReturnValue>
       <MemberValue>16</MemberValue>
       <Docs>
-        <summary>A position on the plus/minus area of a <see cref="T:System.Windows.Forms.TreeNode" />.</summary>
+        <summary>
+             PlusMinus.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="RightOfClientArea">
@@ -227,7 +245,9 @@
       </ReturnValue>
       <MemberValue>1024</MemberValue>
       <Docs>
-        <summary>A position to the right of the client area of the <see cref="T:System.Windows.Forms.TreeView" /> control.</summary>
+        <summary>
+             RightOfClientArea.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="RightOfLabel">
@@ -248,7 +268,9 @@
       </ReturnValue>
       <MemberValue>32</MemberValue>
       <Docs>
-        <summary>A position to the right of the text area of a <see cref="T:System.Windows.Forms.TreeNode" />.</summary>
+        <summary>
+             RightOfNode.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="StateImage">
@@ -269,7 +291,9 @@
       </ReturnValue>
       <MemberValue>64</MemberValue>
       <Docs>
-        <summary>A position within the bounds of a state image for a <see cref="T:System.Windows.Forms.TreeNode" />.</summary>
+        <summary>
+             StateImage.
+            </summary>
       </Docs>
     </Member>
   </Members>

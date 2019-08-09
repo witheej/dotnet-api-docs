@@ -1,4 +1,4 @@
-﻿<Type Name="TabControlEventArgs" FullName="System.Windows.Forms.TabControlEventArgs">
+<Type Name="TabControlEventArgs" FullName="System.Windows.Forms.TabControlEventArgs">
   <TypeSignature Language="C#" Value="public class TabControlEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TabControlEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TabControlEventArgs" />
@@ -15,7 +15,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.Forms.TabControl.Selected" /> and <see cref="E:System.Windows.Forms.TabControl.Deselected" /> events of a <see cref="T:System.Windows.Forms.TabControl" /> control.</summary>
+    <summary>
+             Provides data for <see cref="E:System.Windows.Forms.TabControl.Selecting" /> and <see cref="E:System.Windows.Forms.TabControl.Selected" /> events.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -58,11 +60,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="tabPage" Type="System.Windows.Forms.TabPage" />
         <Parameter Name="tabPageIndex" Type="System.Int32" />
@@ -72,7 +69,9 @@
         <param name="tabPage">The <see cref="T:System.Windows.Forms.TabPage" /> the event is occurring for.</param>
         <param name="tabPageIndex">The zero-based index of <paramref name="tabPage" /> in the <see cref="P:System.Windows.Forms.TabControl.TabPages" /> collection.</param>
         <param name="action">One of the <see cref="T:System.Windows.Forms.TabControlAction" /> values.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.TabControlEventArgs" /> class.</summary>
+        <summary>
+             Initializes a new instance of the <see cref="T:System.Windows.Forms.TabControlEventArgs" /> class.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -103,16 +102,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TabControlAction</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating which event is occurring.</summary>
+        <summary>
+             Stores the action which instigated the event.
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.TabControlAction" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -145,16 +141,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TabPage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Forms.TabPage" /> the event is occurring for.</summary>
+        <summary>
+             Stores the referemce to the tabpage that is undergoing the event.
+            </summary>
         <value>The <see cref="T:System.Windows.Forms.TabPage" /> the event is occurring for.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -185,16 +178,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the zero-based index of the <see cref="P:System.Windows.Forms.TabControlEventArgs.TabPage" /> in the <see cref="P:System.Windows.Forms.TabControl.TabPages" /> collection.</summary>
+        <summary>
+             Stores the index to the tabpage that is undergoing the event.
+            </summary>
         <value>The zero-based index of the <see cref="P:System.Windows.Forms.TabControlEventArgs.TabPage" /> in the <see cref="P:System.Windows.Forms.TabControl.TabPages" /> collection.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

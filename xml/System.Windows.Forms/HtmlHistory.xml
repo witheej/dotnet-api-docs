@@ -1,4 +1,4 @@
-﻿<Type Name="HtmlHistory" FullName="System.Windows.Forms.HtmlHistory">
+<Type Name="HtmlHistory" FullName="System.Windows.Forms.HtmlHistory">
   <TypeSignature Language="C#" Value="public sealed class HtmlHistory : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HtmlHistory extends System.Object implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.HtmlHistory" />
@@ -119,11 +119,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -211,7 +206,9 @@
       </Parameters>
       <Docs>
         <param name="relativePosition">The entry in the navigation stack you want to display.</param>
-        <summary>Navigates to the specified relative position in the browser's history.</summary>
+        <summary>
+             Go to the specified position in the history list
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -245,7 +242,9 @@
       </Parameters>
       <Docs>
         <param name="urlString">The URL you want to display. This may be a relative or virtual URL (for example, page.html, path/page.html, or /path/to/page.html), in which case the current Web page's URL is used as a base.</param>
-        <summary>Navigates to the specified Uniform Resource Locator (URL).</summary>
+        <summary>
+             Go to a specific url(string) in the history
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -279,7 +278,9 @@
       </Parameters>
       <Docs>
         <param name="url">The URL as a <see cref="T:System.Uri" /> object.</param>
-        <summary>Navigates to the specified Uniform Resource Locator (URL).</summary>
+        <summary>
+             Go to a specific Uri in the history
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

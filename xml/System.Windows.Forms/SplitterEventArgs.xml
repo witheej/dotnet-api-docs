@@ -1,4 +1,4 @@
-﻿<Type Name="SplitterEventArgs" FullName="System.Windows.Forms.SplitterEventArgs">
+<Type Name="SplitterEventArgs" FullName="System.Windows.Forms.SplitterEventArgs">
   <TypeSignature Language="C#" Value="public class SplitterEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SplitterEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.SplitterEventArgs" />
@@ -21,7 +21,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides data for <see cref="E:System.Windows.Forms.Splitter.SplitterMoving" /> and the <see cref="E:System.Windows.Forms.Splitter.SplitterMoved" /> events.</summary>
+    <summary>
+             Provides data for splitter events.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -59,11 +61,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="x" Type="System.Int32" />
         <Parameter Name="y" Type="System.Int32" />
@@ -75,7 +72,10 @@
         <param name="y">The y-coordinate of the mouse pointer (in client coordinates).</param>
         <param name="splitX">The x-coordinate of the upper-left corner of the <see cref="T:System.Windows.Forms.Splitter" /> (in client coordinates).</param>
         <param name="splitY">The y-coordinate of the upper-left corner of the <see cref="T:System.Windows.Forms.Splitter" /> (in client coordinates).</param>
-        <summary>Initializes an instance of the <see cref="T:System.Windows.Forms.SplitterEventArgs" /> class with the specified coordinates of the mouse pointer and the coordinates of the upper-left corner of the <see cref="T:System.Windows.Forms.Splitter" /> control.</summary>
+        <summary>
+             Initializes an instance of the <see cref="T:System.Windows.Forms.SplitterEventArgs" /> class with the specified coordinates
+             of the mouse pointer and the upper-left corner of the <see cref="T:System.Windows.Forms.Splitter" />.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Windows.Forms.Splitter" />
       </Docs>
@@ -94,19 +94,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the x-coordinate of the upper-left corner of the <see cref="T:System.Windows.Forms.Splitter" /> (in client coordinates).</summary>
+        <summary>
+             Gets the x-coordinate of the upper-left corner of the <see cref="T:System.Windows.Forms.Splitter" /> (in client coordinates).
+            </summary>
         <value>The x-coordinate of the upper-left corner of the control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -145,19 +139,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the y-coordinate of the upper-left corner of the <see cref="T:System.Windows.Forms.Splitter" /> (in client coordinates).</summary>
+        <summary>
+             Gets the y-coordinate of the upper-left corner of the <see cref="T:System.Windows.Forms.Splitter" /> (in client coordinates).
+            </summary>
         <value>The y-coordinate of the upper-left corner of the control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -196,16 +184,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the x-coordinate of the mouse pointer (in client coordinates).</summary>
+        <summary>
+             Gets the x-coordinate of the mouse pointer (in client coordinates).
+            </summary>
         <value>The x-coordinate of the mouse pointer.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -244,16 +229,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the y-coordinate of the mouse pointer (in client coordinates).</summary>
+        <summary>
+             Gets the y-coordinate of the mouse pointer (in client coordinates).
+            </summary>
         <value>The y-coordinate of the mouse pointer.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

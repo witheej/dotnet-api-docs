@@ -1,4 +1,4 @@
-﻿<Type Name="ColumnHeaderAutoResizeStyle" FullName="System.Windows.Forms.ColumnHeaderAutoResizeStyle">
+<Type Name="ColumnHeaderAutoResizeStyle" FullName="System.Windows.Forms.ColumnHeaderAutoResizeStyle">
   <TypeSignature Language="C#" Value="public enum ColumnHeaderAutoResizeStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ColumnHeaderAutoResizeStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ColumnHeaderAutoResizeStyle" />
@@ -14,7 +14,10 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies how a column contained in a <see cref="T:System.Windows.Forms.ListView" /> should be resized.</summary>
+    <summary>
+             Specifies how the column headers are autoresized in a <see cref="T:System.Windows.Forms.ListView" />
+             control.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -43,7 +46,10 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Specifies the column should be resized based on the length of the column content.</summary>
+        <summary>
+             Autoresize the column headers based on the width of the largest
+             subitem in the column.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="HeaderSize">
@@ -64,7 +70,10 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Specifies the column should be resized based on the length of the column header content.</summary>
+        <summary>
+             Autoresize the column headers based on the width of just the column
+             header.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -85,7 +94,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Specifies no resizing should occur.</summary>
+        <summary>
+             Do not auto resize the column headers.
+            </summary>
       </Docs>
     </Member>
   </Members>

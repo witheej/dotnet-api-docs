@@ -1,4 +1,4 @@
-﻿<Type Name="DataGrid+HitTestInfo" FullName="System.Windows.Forms.DataGrid+HitTestInfo">
+<Type Name="DataGrid+HitTestInfo" FullName="System.Windows.Forms.DataGrid+HitTestInfo">
   <TypeSignature Language="C#" Value="public sealed class DataGrid.HitTestInfo" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed beforefieldinit DataGrid/HitTestInfo extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGrid.HitTestInfo" />
@@ -16,7 +16,11 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Contains information about a part of the <see cref="T:System.Windows.Forms.DataGrid" /> at a specified coordinate. This class cannot be inherited.</summary>
+    <summary>
+             Contains information
+             about the part of the <see cref="T:System.Windows.Forms.DataGrid" /> control the user
+             has clicked. This class cannot be inherited.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -56,16 +60,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of the column the user has clicked.</summary>
+        <summary>
+             Gets the number of the clicked column.
+            </summary>
         <value>The number of the column.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -111,7 +112,9 @@
       </Parameters>
       <Docs>
         <param name="value">The second object to compare, typed as <see cref="T:System.Object" />.</param>
-        <summary>Indicates whether two objects are identical.</summary>
+        <summary>
+             Indicates whether two objects are identical.
+            </summary>
         <returns>
           <see langword="true" /> if the objects are equal; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -150,7 +153,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the hash code for the <see cref="T:System.Windows.Forms.DataGrid.HitTestInfo" /> instance.</summary>
+        <summary>
+             Gets the hash code for the <see cref="T:System.Windows.Forms.DataGrid.HitTestInfo" /> instance.
+            </summary>
         <returns>The hash code for this instance.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -192,7 +197,10 @@
         <ReturnType>System.Windows.Forms.DataGrid+HitTestInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates that a coordinate corresponds to part of the <see cref="T:System.Windows.Forms.DataGrid" /> control that is not functioning.</summary>
+        <summary>
+             Allows the <see cref="T:System.Windows.Forms.DataGrid.HitTestInfo" /> object to inform you the
+             extent of the grid.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -230,16 +238,14 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of the row the user has clicked.</summary>
+        <summary>
+             Gets the
+             number of the clicked row.
+            </summary>
         <value>The number of the clicked row.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -282,7 +288,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the type, row number, and column number.</summary>
+        <summary>
+             Gets the type, row number, and column number.
+            </summary>
         <returns>The type, row number, and column number.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -315,16 +323,14 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataGrid+HitTestType</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the part of the <see cref="T:System.Windows.Forms.DataGrid" /> control, other than the row or column, that was clicked.</summary>
+        <summary>
+             Gets the part of the <see cref="T:System.Windows.Forms.DataGrid" /> control, other than the row or column, that was
+             clicked.
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.DataGrid.HitTestType" /> enumerations.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

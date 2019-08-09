@@ -1,4 +1,4 @@
-﻿<Type Name="ImageIndexConverter" FullName="System.Windows.Forms.ImageIndexConverter">
+<Type Name="ImageIndexConverter" FullName="System.Windows.Forms.ImageIndexConverter">
   <TypeSignature Language="C#" Value="public class ImageIndexConverter : System.ComponentModel.Int32Converter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ImageIndexConverter extends System.ComponentModel.Int32Converter" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ImageIndexConverter" />
@@ -16,7 +16,10 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides a type converter to convert data for an image index to and from a string.</summary>
+    <summary>
+             ImageIndexConverter is a class that can be used to convert
+             image index values one data type to another.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -85,7 +88,9 @@
         <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context.</param>
         <param name="culture">A <see cref="T:System.Globalization.CultureInfo" /> to provide locale information.</param>
         <param name="value">The <see cref="T:System.Object" /> to convert.</param>
-        <summary>Converts the specified value object to a 32-bit signed integer object.</summary>
+        <summary>
+             Converts the given value object to a 32-bit signed integer object.
+            </summary>
         <returns>An <see cref="T:System.Object" /> that represents the converted <paramref name="value" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -129,7 +134,13 @@
         <param name="culture">A <see cref="T:System.Globalization.CultureInfo" /> that provides locale information.</param>
         <param name="value">The object to convert, typically an index represented as an <see cref="T:System.Int32" />.</param>
         <param name="destinationType">The type to convert the object to, often a <see cref="T:System.String" />.</param>
-        <summary>Converts the specified object to the specified destination type.</summary>
+        <summary>
+             Converts the given object to another type.  The most common types to convert
+             are to and from a string object.  The default implementation will make a call
+             to ToString on the object if the object is valid and if the destination
+             type is string.  If this cannot convert to the desitnation type, this will
+             throw a NotSupportedException.
+            </summary>
         <returns>An <see cref="T:System.Object" /> that represents the converted <paramref name="value" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -170,7 +181,12 @@
       </Parameters>
       <Docs>
         <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context, which can be used to extract additional information about the environment this type converter is being invoked from. This parameter or properties of this parameter can be <see langword="null" />.</param>
-        <summary>Returns a collection of standard index values for the image list associated with the specified format context.</summary>
+        <summary>
+             Retrieves a collection containing a set of standard values
+             for the data type this validator is designed for.  This
+             will return null if the data type does not support a
+             standard set of values.
+            </summary>
         <returns>A <see cref="T:System.ComponentModel.TypeConverter.StandardValuesCollection" /> that holds a standard set of valid index values. If no image list is found, this collection will contain a single object with a value of -1.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -209,7 +225,14 @@
       </Parameters>
       <Docs>
         <param name="context">A formatter context.</param>
-        <summary>Determines if the list of standard values returned from the <see cref="Overload:System.Windows.Forms.ImageIndexConverter.GetStandardValues" /> method is an exclusive list.</summary>
+        <summary>
+             Determines if the list of standard values returned from
+             GetStandardValues is an exclusive list.  If the list
+             is exclusive, then no other values are valid, such as
+             in an enum data type.  If the list is not exclusive,
+             then there are other valid values besides the list of
+             standard values GetStandardValues provides.
+            </summary>
         <returns>
           <see langword="true" /> if the <see cref="Overload:System.Windows.Forms.ImageIndexConverter.GetStandardValues" /> method returns an exclusive list of valid values; otherwise, <see langword="false" />. This implementation always returns <see langword="false" />.</returns>
         <remarks>
@@ -250,7 +273,10 @@
       </Parameters>
       <Docs>
         <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that provides a format context, which can be used to extract additional information about the environment this type converter is being invoked from. This parameter or properties of this parameter can be <see langword="null" />.</param>
-        <summary>Determines if the type converter supports a standard set of values that can be picked from a list.</summary>
+        <summary>
+             Determines if this object supports a standard set of values
+             that can be picked from a list.
+            </summary>
         <returns>
           <see langword="true" /> if the <see cref="Overload:System.Windows.Forms.ImageIndexConverter.GetStandardValues" /> method returns a standard set of values; otherwise, <see langword="false" />. Always returns <see langword="true" />.</returns>
         <remarks>

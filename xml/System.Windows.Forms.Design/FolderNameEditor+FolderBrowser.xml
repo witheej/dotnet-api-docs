@@ -1,4 +1,4 @@
-﻿<Type Name="FolderNameEditor+FolderBrowser" FullName="System.Windows.Forms.Design.FolderNameEditor+FolderBrowser">
+<Type Name="FolderNameEditor+FolderBrowser" FullName="System.Windows.Forms.Design.FolderNameEditor+FolderBrowser">
   <TypeSignature Language="C#" Value="protected sealed class FolderNameEditor.FolderBrowser : System.ComponentModel.Component" />
   <TypeSignature Language="ILAsm" Value=".class nested protected auto ansi sealed beforefieldinit FolderNameEditor/FolderBrowser extends System.ComponentModel.Component" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.FolderNameEditor.FolderBrowser" />
@@ -64,16 +64,14 @@
         <AssemblyName>System.Windows.Forms.Design.Editors</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a description to show above the folders.</summary>
+        <summary>
+             Gets or sets a description to show above the folders. Here you can provide instructions for
+             selecting a folder.
+            </summary>
         <value>The description to show above the folders.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -103,16 +101,13 @@
         <AssemblyName>System.Windows.Forms.Design.Editors</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the directory path to the object the user picked.</summary>
+        <summary>
+             Gets the directory path of the folder the user picked.
+            </summary>
         <value>The directory path to the object the user picked.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -144,17 +139,14 @@
         <AssemblyName>System.Windows.Forms.Design.Editors</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DialogResult</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Shows the folder browser dialog.</summary>
+        <summary>
+             Shows the folder browser dialog.
+            </summary>
         <returns>The <see cref="T:System.Windows.Forms.DialogResult" /> from the form.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -185,7 +177,9 @@
       </Parameters>
       <Docs>
         <param name="owner">Top-level window that will own the modal dialog (e.g.: System.Windows.Forms.Form).</param>
-        <summary>Shows the folder browser dialog with the specified owner.</summary>
+        <summary>
+             Shows the folder browser dialog with the specified owner.
+            </summary>
         <returns>The <see cref="T:System.Windows.Forms.DialogResult" /> from the form.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -208,19 +202,13 @@
         <AssemblyName>System.Windows.Forms.Design.Editors</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Design.FolderNameEditor+FolderBrowserFolder</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the start location of the root node.</summary>
+        <summary>
+             Gets/sets the start location of the root node.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.Design.FolderNameEditor.FolderBrowserFolder" /> that indicates the location for the folder browser to initially browse to.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -243,19 +231,15 @@
         <AssemblyName>System.Windows.Forms.Design.Editors</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Design.FolderNameEditor+FolderBrowserStyles</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The styles the folder browser will use when browsing folders. This should be a combination of flags from the <see cref="T:System.Windows.Forms.Design.FolderNameEditor.FolderBrowserStyles" /> enumeration.</summary>
+        <summary>
+             The styles the folder browser will use when browsing
+             folders. This should be a combination of flags from
+             the FolderBrowserStyles enum.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.Design.FolderNameEditor.FolderBrowserStyles" /> enumeration member that indicates behavior for the <see cref="T:System.Windows.Forms.Design.FolderNameEditor.FolderBrowser" /> to use.</value>
         <remarks>To be added.</remarks>
       </Docs>

@@ -1,4 +1,4 @@
-﻿<Type Name="RadioButtonRenderer" FullName="System.Windows.Forms.RadioButtonRenderer">
+<Type Name="RadioButtonRenderer" FullName="System.Windows.Forms.RadioButtonRenderer">
   <TypeSignature Language="C#" Value="public sealed class RadioButtonRenderer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit RadioButtonRenderer extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.RadioButtonRenderer" />
@@ -15,7 +15,10 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides methods used to render an option button control (also known as a radio button) with or without visual styles. This class cannot be inherited.</summary>
+    <summary>
+             This is a rendering class for the RadioButton control. It works downlevel too (obviously
+             without visual styles applied.)
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -68,7 +71,10 @@
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the background of the parent of <paramref name="childControl" />.</param>
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> in which to draw the parent control's background. This rectangle should be inside the child control's bounds.</param>
         <param name="childControl">The control whose parent's background will be drawn.</param>
-        <summary>Draws the background of a control's parent in the specified area.</summary>
+        <summary>
+             This is just a convenience wrapper for VisualStyleRenderer.DrawThemeParentBackground. For downlevel,
+             this isn't required and does nothing.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -113,7 +119,9 @@
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the option button.</param>
         <param name="glyphLocation">The <see cref="T:System.Drawing.Point" /> to draw the option button glyph at.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.RadioButtonState" /> values that specifies the visual state of the option button.</param>
-        <summary>Draws an option button control (also known as a radio button) in the specified state and location.</summary>
+        <summary>
+             Renders a RadioButton control.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -136,11 +144,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -162,7 +165,9 @@
         <param name="focused">
           <see langword="true" /> to draw a focus rectangle; otherwise, <see langword="false" />.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.RadioButtonState" /> values that specifies the visual state of the option button.</param>
-        <summary>Draws an option button control (also known as a radio button) in the specified state and location, with the specified text, and with an optional focus rectangle.</summary>
+        <summary>
+             Renders a RadioButton control.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -217,7 +222,9 @@
         <param name="focused">
           <see langword="true" /> to draw a focus rectangle; otherwise, <see langword="false" />.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.RadioButtonState" /> values that specifies the visual state of the option button.</param>
-        <summary>Draws an option button control (also known as a radio button) in the specified state and location, with the specified text and text formatting, and with an optional focus rectangle.</summary>
+        <summary>
+             Renders a RadioButton control.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -240,11 +247,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -270,7 +272,9 @@
         <param name="focused">
           <see langword="true" /> to draw a focus rectangle; otherwise, <see langword="false" />.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.RadioButtonState" /> values that specifies the visual state of the option button.</param>
-        <summary>Draws an option button control (also known as a radio button) in the specified state and location, with the specified text and image, and with an optional focus rectangle.</summary>
+        <summary>
+             Renders a RadioButton control.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -320,7 +324,9 @@
         <param name="focused">
           <see langword="true" /> to draw a focus rectangle; otherwise, <see langword="false" />.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.RadioButtonState" /> values that specifies the visual state of the option button.</param>
-        <summary>Draws an option button control (also known as a radio button) in the specified state and location; with the specified text, text formatting, and image; and with an optional focus rectangle.</summary>
+        <summary>
+             Renders a RadioButton control.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -354,7 +360,9 @@
       <Docs>
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the option button.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.RadioButtonState" /> values that specifies the visual state of the option button.</param>
-        <summary>Returns the size, in pixels, of the option button (also known as a radio button) glyph.</summary>
+        <summary>
+             Returns the size of the RadioButton glyph.
+            </summary>
         <returns>A <see cref="T:System.Drawing.Size" /> that represents the size, in pixels, of the option button glyph.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -396,7 +404,9 @@
       </Parameters>
       <Docs>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.RadioButtonState" /> values that specifies the visual state of the option button.</param>
-        <summary>Indicates whether the background of the option button (also known as a radio button) has semitransparent or alpha-blended pieces.</summary>
+        <summary>
+             Returns true if the background corresponding to the given state is partially transparent, else false.
+            </summary>
         <returns>
           <see langword="true" /> if the background of the option button has semitransparent or alpha-blended pieces; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -415,19 +425,15 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the renderer uses the application state to determine rendering style.</summary>
+        <summary>
+             If this property is true, then the renderer will use the setting from Application.RenderWithVisualStyles to
+             determine how to render.
+             If this property is false, the renderer will always render with visualstyles.
+            </summary>
         <value>
           <see langword="true" /> if the application state is used to determine rendering style; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>

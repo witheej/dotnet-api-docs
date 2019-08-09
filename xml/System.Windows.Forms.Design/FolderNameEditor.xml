@@ -1,4 +1,4 @@
-﻿<Type Name="FolderNameEditor" FullName="System.Windows.Forms.Design.FolderNameEditor">
+<Type Name="FolderNameEditor" FullName="System.Windows.Forms.Design.FolderNameEditor">
   <TypeSignature Language="C#" Value="public class FolderNameEditor : System.Drawing.Design.UITypeEditor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FolderNameEditor extends System.Drawing.Design.UITypeEditor" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.FolderNameEditor" />
@@ -20,12 +20,14 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-3.0">
+    <Attribute>
       <AttributeName>System.CLSCompliant(false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides a user interface for choosing a folder from the file system.</summary>
+    <summary>
+             Provides an editor for choosing a folder from the filesystem.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -53,11 +55,6 @@
         <AssemblyName>System.Windows.Forms.Design.Editors</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.FolderNameEditor" /> class.</summary>
@@ -125,7 +122,9 @@
       </Parameters>
       <Docs>
         <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that can be used to gain additional context information.</param>
-        <summary>Gets the editing style used by the <see cref="M:System.Windows.Forms.Design.FolderNameEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)" /> method.</summary>
+        <summary>
+             Retrieves the editing style of the Edit method.
+            </summary>
         <returns>A <see cref="T:System.Drawing.Design.UITypeEditorEditStyle" /> enumeration value indicating the provided editing style.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -163,7 +162,10 @@
       </Parameters>
       <Docs>
         <param name="folderBrowser">A <see cref="T:System.Windows.Forms.Design.FolderNameEditor.FolderBrowser" /> to choose a folder.</param>
-        <summary>Initializes the folder browser dialog.</summary>
+        <summary>
+             Initializes the folder browser dialog when it is created. This gives you an opportunity
+             to configure the dialog as you please. The default implementation provides a generic folder browser.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

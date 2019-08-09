@@ -1,4 +1,4 @@
-﻿<Type Name="BootMode" FullName="System.Windows.Forms.BootMode">
+<Type Name="BootMode" FullName="System.Windows.Forms.BootMode">
   <TypeSignature Language="C#" Value="public enum BootMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed BootMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.BootMode" />
@@ -15,7 +15,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the boot mode in which the system was started.</summary>
+    <summary>
+             Specifies the mode to start the computer in.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -49,7 +51,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The computer was started in safe mode without network support. This mode uses a limited drivers and settings profile.</summary>
+        <summary>
+             Starts the computer by using only the basic files and drivers.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="FailSafeWithNetwork">
@@ -71,7 +75,10 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>The computer was started in safe mode with network support. This mode uses a limited drivers and settings profile, and loads the services needed to start networking.</summary>
+        <summary>
+             Starts the computer by using the basic files, drivers and the services
+             and drivers necessary to start networking.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Normal">
@@ -93,7 +100,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>The computer was started in the standard boot mode. This mode uses the normal drivers and settings for the system.</summary>
+        <summary>
+             Starts the computer in standard mode.
+            </summary>
       </Docs>
     </Member>
   </Members>

@@ -1,4 +1,4 @@
-﻿<Type Name="Application" FullName="System.Windows.Forms.Application">
+<Type Name="Application" FullName="System.Windows.Forms.Application">
   <TypeSignature Language="C#" Value="public sealed class Application" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit Application extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Application" />
@@ -16,7 +16,11 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides <see langword="static" /> methods and properties to manage an application, such as methods to start and stop an application, to process Windows messages, and properties to get information about an application. This class cannot be inherited.</summary>
+    <summary>
+             Provides <see langword="static" /> methods and properties to manage an application, such as methods to run and quit an application,
+             to process Windows messages, and properties to get information about an application. 
+             This class cannot be inherited.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -77,7 +81,10 @@
       </Parameters>
       <Docs>
         <param name="value">The implementation of the <see cref="T:System.Windows.Forms.IMessageFilter" /> interface you want to install.</param>
-        <summary>Adds a message filter to monitor Windows messages as they are routed to their destinations.</summary>
+        <summary>
+             Adds a message filter to monitor Windows messages as they are routed to their
+             destinations.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -121,7 +128,11 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the caller can quit this application.</summary>
+        <summary>
+             Determines if the caller should be allowed to quit the application.  This will return false,
+             for example, if being called from a windows forms control being hosted within a web browser.  The
+             windows forms control should not attempt to quit the application.
+            </summary>
         <value>
           <see langword="true" /> if the caller can quit this application; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -152,7 +163,9 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the application is about to shut down.</summary>
+        <summary>
+             Occurs when the application is about to shut down.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -234,7 +247,10 @@
         <ReturnType>Microsoft.Win32.RegistryKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the registry key for the application data that is shared among all users.</summary>
+        <summary>
+             Gets the registry
+             key for the application data that is shared among all users.
+            </summary>
         <value>A <see cref="T:Microsoft.Win32.RegistryKey" /> representing the registry key of the application data that is shared among all users.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -266,7 +282,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the company name associated with the application.</summary>
+        <summary>
+             Gets the company name associated with the application.
+            </summary>
         <value>The company name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -303,7 +321,10 @@
         <ReturnType>System.Globalization.CultureInfo</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the culture information for the current thread.</summary>
+        <summary>
+             Gets
+             or sets the locale information for the current thread.
+            </summary>
         <value>A <see cref="T:System.Globalization.CultureInfo" /> representing the culture information for the current thread.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -339,7 +360,10 @@
         <ReturnType>System.Windows.Forms.InputLanguage</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the current input language for the current thread.</summary>
+        <summary>
+             Gets or
+             sets the current input language for the current thread.
+            </summary>
         <value>An <see cref="T:System.Windows.Forms.InputLanguage" /> representing the current input language for the current thread.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -377,7 +401,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Processes all Windows messages currently in the message queue.</summary>
+        <summary>
+             Processes
+             all Windows messages currently in the message queue.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -433,7 +460,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Enables visual styles for the application.</summary>
+        <summary>
+             Enables visual styles for all subsequent <see cref="M:System.Windows.Forms.Application.Run" /> and <see cref="!:CreateHandle" /> calls.
+             Uses the default theming manifest file shipped with the redist.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -476,15 +506,17 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the application is about to enter a modal state.</summary>
+        <summary>
+             Occurs when the application is about to enter a modal state
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -526,7 +558,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the path for the executable file that started the application, including the executable name.</summary>
+        <summary>
+             Gets the
+             path for the executable file that started the application.
+            </summary>
         <value>The path and executable name for the executable file that started the application.  
   
  This path will be different depending on whether the Windows Forms application is deployed using [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)]. [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] applications are stored in a per-user application cache in the C:\Documents and Settings\\*username* directory. For more information, see [Accessing Local and Remote Data in ClickOnce Applications](https://msdn.microsoft.com/library/be5cbe12-6cb6-49c9-aa59-a1624e1eef3d).</value>
@@ -557,17 +592,14 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Informs all message pumps that they must terminate, and then closes all application windows after the messages have been processed.</summary>
+        <summary>
+             Overload of Exit that does not care about e.Cancel.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -620,19 +652,23 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.ComponentModel.CancelEventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="e" Type="System.ComponentModel.CancelEventArgs" />
       </Parameters>
       <Docs>
         <param name="e">Returns whether any <see cref="T:System.Windows.Forms.Form" /> within the application cancelled the exit.</param>
-        <summary>Informs all message pumps that they must terminate, and then closes all application windows after the messages have been processed.</summary>
+        <summary>
+             Informs all message pumps that they are to terminate and
+             then closes all application windows after the messages have been processed.
+             e.Cancel indicates whether any of the open forms cancelled the exit call.
+            </summary>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.SecurityException">For permission to terminate a running application thread. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
         <altmember cref="M:System.Windows.Forms.Application.Exit" />
@@ -657,7 +693,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Exits the message loop on the current thread and closes all windows on the thread.</summary>
+        <summary>
+             Exits the message loop on the
+             current thread and closes all windows on the thread.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -684,19 +723,21 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="message" Type="System.Windows.Forms.Message" RefType="ref" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="message" Type="System.Windows.Forms.Message" RefType="ref" />
       </Parameters>
       <Docs>
         <param name="message">The Windows event message to filter.</param>
-        <summary>Runs any filters against a window message, and returns a copy of the modified message.</summary>
+        <summary>
+             Processes all message filters for given message
+            </summary>
         <returns>
           <see langword="true" /> if the filters were processed; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -718,7 +759,9 @@
         <ReturnType>System.Windows.Forms.HighDpiMode</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+             Gets the current HighDpi mode for the process.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -741,7 +784,10 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the application finishes processing and is about to enter the idle state.</summary>
+        <summary>
+             Occurs when the application has finished processing and is about to enter the
+             idle state.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -779,15 +825,17 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the application is about to leave a modal state.</summary>
+        <summary>
+             Occurs when the application is about to leave a modal state
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -828,33 +876,14 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the path for the application data of a local, non-roaming user.</summary>
+        <summary>
+             Gets the path for the application data specific to a local, non-roaming user.
+            </summary>
         <value>The path for the application data of a local, non-roaming user.</value>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- A local user is one whose user profile is stored on the system on which the user logged on. If a path does not exist, one is created in the following format:  
-  
- *Base Path*\\<xref:System.Windows.Forms.Application.CompanyName%2A>\\<xref:System.Windows.Forms.Application.ProductName%2A>\\<xref:System.Windows.Forms.Application.ProductVersion%2A>   
-  
- A typical base path is C:\Documents and Settings\\*username*\Local Settings\Application Data. This path will be different, however, if the Windows Forms application is deployed by using [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)]. [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] creates its own application data directory that is isolated from all other applications. For more information, see [Accessing Local and Remote Data in ClickOnce Applications](https://msdn.microsoft.com/library/be5cbe12-6cb6-49c9-aa59-a1624e1eef3d).  
-  
-   
-  
-## Examples  
- The following code example displays two forms and exits the application when both forms are closed. When the application starts and exits, the position of each form is remembered. Although this example demonstrates using the <xref:System.Windows.Forms.Application.UserAppDataPath%2A> property to store application data for the user, the <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A> can be used instead.  
-  
- The `MyApplicationContext` class inherits from <xref:System.Windows.Forms.ApplicationContext> and keeps track when each form is closed, and exits the current thread when they both are. The class stores the positions of each form for the user. The form position data is stored in a file titled `Appdata.txt` that is created in the location determined by <xref:System.Windows.Forms.Application.UserAppDataPath%2A>. The `Main` method calls `Application.Run(context)` to start the application given the <xref:System.Windows.Forms.ApplicationContext>.  
-  
- This code is an excerpt from the example shown in the <xref:System.Windows.Forms.ApplicationContext> class overview. Some code is not shown for the purpose of brevity. See <xref:System.Windows.Forms.ApplicationContext> for the whole code listing.  
-  
- [!code-cpp[Application#5](~/samples/snippets/cpp/VS_Snippets_Winforms/Application/CPP/source.cpp#5)]
- [!code-csharp[Application#5](~/samples/snippets/csharp/VS_Snippets_Winforms/Application/CS/source.cs#5)]
- [!code-vb[Application#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Application/VB/source.vb#5)]  
-  
- ]]></format>
-        </remarks>
+             Don't obsolete these. GetDataPath isn't on SystemInformation, and it provides
+             the Windows logo required adornments to the directory (Company\Product\Version)
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="MessageLoop">
@@ -875,7 +904,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether a message loop exists on this thread.</summary>
+        <summary>
+             Determines if a message loop exists on this thread.
+            </summary>
         <value>
           <see langword="true" /> if a message loop exists; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -907,7 +938,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Initializes OLE on the current thread.</summary>
+        <summary>
+             Initializes OLE on the current thread.
+            </summary>
         <returns>One of the <see cref="T:System.Threading.ApartmentState" /> values.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -944,7 +977,9 @@
       </Parameters>
       <Docs>
         <param name="t">An <see cref="T:System.Exception" /> that represents the exception that was thrown.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Application.ThreadException" /> event.</summary>
+        <summary>
+             Raises the <see cref="E:System.Windows.Forms.Application.ThreadException" /> event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -972,16 +1007,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.FormCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of open forms owned by the application.</summary>
+        <summary>
+             Gets the forms collection associated with this application.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.FormCollection" /> containing all the currently open forms owned by this application.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1014,7 +1046,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the product name associated with this application.</summary>
+        <summary>
+             Gets
+             the product name associated with this application.
+            </summary>
         <value>The product name.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1056,7 +1091,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the product version associated with this application.</summary>
+        <summary>
+             Gets
+             the product version associated with this application.
+            </summary>
         <value>The product version.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1096,19 +1134,21 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.EventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
         <param name="e">The <see cref="T:System.EventArgs" /> objects to pass to the <see cref="E:System.Windows.Forms.Application.Idle" /> event.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Application.Idle" /> event in hosted scenarios.</summary>
+        <summary>
+             Raises the Idle event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1134,15 +1174,15 @@
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="callback" Type="System.Windows.Forms.Application+MessageLoopCallback" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="callback" Type="System.Windows.Forms.Application+MessageLoopCallback" />
       </Parameters>
       <Docs>
         <param name="callback">The method to call when Windows Forms needs to check if the hosting environment is still sending messages.</param>
@@ -1180,7 +1220,10 @@
       </Parameters>
       <Docs>
         <param name="value">The implementation of the <see cref="T:System.Windows.Forms.IMessageFilter" /> to remove from the application.</param>
-        <summary>Removes a message filter from the message pump of the application.</summary>
+        <summary>
+             Removes a message
+             filter from the application's message pump.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1258,7 +1301,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Shuts down the application and starts a new instance immediately.</summary>
+        <summary>
+             Restarts the application.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1303,7 +1348,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Begins running a standard application message loop on the current thread, without a form.</summary>
+        <summary>
+             Begins running a
+             standard
+             application message loop on the current thread,
+             without a form.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1342,7 +1392,12 @@
       </Parameters>
       <Docs>
         <param name="context">An <see cref="T:System.Windows.Forms.ApplicationContext" /> in which the application is run.</param>
-        <summary>Begins running a standard application message loop on the current thread, with an <see cref="T:System.Windows.Forms.ApplicationContext" />.</summary>
+        <summary>
+             Begins running a
+             standard
+             application message loop on the current thread,
+             without a form.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1392,7 +1447,10 @@
       </Parameters>
       <Docs>
         <param name="mainForm">A <see cref="T:System.Windows.Forms.Form" /> that represents the form to make visible.</param>
-        <summary>Begins running a standard application message loop on the current thread, and makes the specified form visible.</summary>
+        <summary>
+             Begins running a standard application message loop on the current
+             thread, and makes the specified form visible.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1443,7 +1501,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the format string to apply to top-level window captions when they are displayed with a warning banner.</summary>
+        <summary>
+             Gets or sets the format string to apply to top level window captions
+             when they are displayed with a warning banner.
+            </summary>
         <value>The format string to apply to top-level window captions.</value>
         <remarks>To be added.</remarks>
         <permission cref="T:System.Security.Permissions.UIPermission">for all windows to set this property. Associated enumeration: <see cref="F:System.Security.Permissions.UIPermissionWindow.AllWindows" /></permission>
@@ -1466,11 +1527,15 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="defaultValue" Type="System.Boolean" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="defaultValue" Type="System.Boolean" />
       </Parameters>
       <Docs>
         <param name="defaultValue">The default value to use for new controls. If <see langword="true" />, new controls that support <c>UseCompatibleTextRendering</c> use the [!INCLUDE[ndptecgdiplus](~/includes/ndptecgdiplus-md.md)] based <see cref="T:System.Drawing.Graphics" /> class for text rendering; if <see langword="false" />, new controls use the [!INCLUDE[ndptecgdi](~/includes/ndptecgdi-md.md)] based <see cref="T:System.Windows.Forms.TextRenderer" /> class.</param>
-        <summary>Sets the application-wide default for the <c>UseCompatibleTextRendering</c> property defined on certain controls.</summary>
+        <summary>
+             Sets the static UseCompatibleTextRenderingDefault field on Control to the value passed in.
+             This switch determines the default text rendering engine to use by some controls that support
+             switching rendering engine.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1536,12 +1601,15 @@ static class Program
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="highDpiMode" Type="System.Windows.Forms.HighDpiMode" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="highDpiMode" Type="System.Windows.Forms.HighDpiMode" />
       </Parameters>
       <Docs>
-        <param name="highDpiMode">To be added.</param>
-        <summary>To be added.</summary>
-        <returns>To be added.</returns>
+        <param name="highDpiMode">The HighDpi mode to set.</param>
+        <summary>
+             Sets the HighDpi mode for process.
+            </summary>
+        <returns>
+          <see langword="true" /> if HighDpi mode was set; otherwise <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -1562,9 +1630,9 @@ static class Program
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="state" Type="System.Windows.Forms.PowerState" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="force" Type="System.Boolean" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="disableWakeEvent" Type="System.Boolean" Index="2" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="state" Type="System.Windows.Forms.PowerState" />
+        <Parameter Name="force" Type="System.Boolean" />
+        <Parameter Name="disableWakeEvent" Type="System.Boolean" />
       </Parameters>
       <Docs>
         <param name="state">A <see cref="T:System.Windows.Forms.PowerState" /> indicating the power activity mode to which to transition.</param>
@@ -1572,7 +1640,10 @@ static class Program
           <see langword="true" /> to force the suspended mode immediately; <see langword="false" /> to cause Windows to send a suspend request to every application.</param>
         <param name="disableWakeEvent">
           <see langword="true" /> to disable restoring the system's power status to active on a wake event, <see langword="false" /> to enable restoring the system's power status to active on a wake event.</param>
-        <summary>Suspends or hibernates the system, or requests that the system be suspended or hibernated.</summary>
+        <summary>
+             Sets the suspend/hibernate state of the machine.
+             Returns true if the call succeeded, else false.
+            </summary>
         <returns>
           <see langword="true" /> if the system is being suspended, otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -1622,20 +1693,18 @@ static class Program
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="mode" Type="System.Windows.Forms.UnhandledExceptionMode" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="mode" Type="System.Windows.Forms.UnhandledExceptionMode" />
       </Parameters>
       <Docs>
         <param name="mode">An <see cref="T:System.Windows.Forms.UnhandledExceptionMode" /> value describing how the application should behave if an exception is thrown without being caught.</param>
-        <summary>Instructs the application how to respond to unhandled exceptions.</summary>
+        <summary>
+             Overload version of SetUnhandledExceptionMode that sets the UnhandledExceptionMode
+             mode at the current thread level.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1680,14 +1749,32 @@ static class Program
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="mode" Type="System.Windows.Forms.UnhandledExceptionMode" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="threadScope" Type="System.Boolean" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="mode" Type="System.Windows.Forms.UnhandledExceptionMode" />
+        <Parameter Name="threadScope" Type="System.Boolean" />
       </Parameters>
       <Docs>
         <param name="mode">An <see cref="T:System.Windows.Forms.UnhandledExceptionMode" /> value describing how the application should behave if an exception is thrown without being caught.</param>
         <param name="threadScope">
           <see langword="true" /> to set the thread exception mode; otherwise, <see langword="false" />.</param>
-        <summary>Instructs the application how to respond to unhandled exceptions, optionally applying thread-specific behavior.</summary>
+        <summary>
+              This method can be used to modify the exception handling behavior of
+              NativeWindow.  By default, NativeWindow will detect if an application
+              is running under a debugger, or is running on a machine with a debugger
+              installed.  In this case, an unhandled exception in the NativeWindow's
+              WndProc method will remain unhandled so the debugger can trap it.  If
+              there is no debugger installed NativeWindow will trap the exception
+              and route it to the Application class's unhandled exception filter.
+            
+              You can control this behavior via a config file, or directly through
+              code using this method.  Setting the unhandled exception mode does
+              not change the behavior of any NativeWindow objects that are currently
+              connected to window handles; it only affects new handle connections.
+            
+              The parameter threadScope defines the scope of the setting: either
+              the current thread or the application.
+              When a thread exception mode isn't UnhandledExceptionMode.Automatic, it takes
+              precedence over the application exception mode.
+             </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1736,7 +1823,10 @@ static class Program
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the path for the executable file that started the application, not including the executable name.</summary>
+        <summary>
+             Gets the
+             path for the executable file that started the application.
+            </summary>
         <value>The path for the executable file that started the application.  
   
  This path will be different depending on whether the Windows Forms application is deployed using [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)]. [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] applications are stored in a per-user application cache in the C:\Documents and Settings\\*username* directory. For more information, see [Accessing Local and Remote Data in ClickOnce Applications](https://msdn.microsoft.com/library/be5cbe12-6cb6-49c9-aa59-a1624e1eef3d).</value>
@@ -1773,7 +1863,9 @@ static class Program
         <ReturnType>System.Threading.ThreadExceptionEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when an untrapped thread exception is thrown.</summary>
+        <summary>
+             Occurs when an untrapped thread exception is thrown.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1822,7 +1914,12 @@ static class Program
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a thread is about to shut down. When the main thread for an application is about to be shut down, this event is raised first, followed by an <see cref="E:System.Windows.Forms.Application.ApplicationExit" /> event.</summary>
+        <summary>
+             Occurs when a thread is about to shut down.  When
+             the main thread for an application is about to be shut down,
+             this event will be raised first, followed by an ApplicationExit
+             event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1861,8 +1958,8 @@ static class Program
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
       <Attributes>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1892,35 +1989,14 @@ static class Program
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the path for the application data of a user.</summary>
+        <summary>
+             Gets the path for the application data specific to the roaming user.
+            </summary>
         <value>The path for the application data of a user.</value>
         <remarks>
-          <format type="text/markdown"><![CDATA[  
-  
-## Remarks  
- If a path does not exist, one is created in the following format:  
-  
- *Base Path*\\<xref:System.Windows.Forms.Application.CompanyName%2A>\\<xref:System.Windows.Forms.Application.ProductName%2A>\\<xref:System.Windows.Forms.Application.ProductVersion%2A>  
-  
- Data stored in this path is part of user profile that is enabled for roaming. A roaming user works on more than one computer in a network. The user profile for a roaming user is kept on a server on the network and is loaded onto a system when the user logs on. For a user profile to be considered for roaming, the operating system must support roaming profiles and it must be enabled.  
-  
- A typical base path is C:\Documents and Settings\\*username*\Application Data. This path will be different, however, if the Windows Forms application is deployed by using [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)]. [!INCLUDE[ndptecclick](~/includes/ndptecclick-md.md)] creates its own application data directory that is isolated from all other applications. For more information, see [Accessing Local and Remote Data in ClickOnce Applications](https://msdn.microsoft.com/library/be5cbe12-6cb6-49c9-aa59-a1624e1eef3d).  
-  
-   
-  
-## Examples  
- The following code example displays two forms and exits the application when both forms are closed. When the application starts and exits, the position of each form is remembered. This example demonstrates using the <xref:System.Windows.Forms.Application.UserAppDataPath%2A> property to store application data for the user.  
-  
- The class `MyApplicationContext` inherits from <xref:System.Windows.Forms.ApplicationContext> and keeps track when each form is closed, and exits the current thread when they both are. The class stores the positions of each form for the user. The form position data is stored in a file titled `Appdata.txt` that is created in the location determined by <xref:System.Windows.Forms.Application.UserAppDataPath%2A>. The `Main` method calls `Application.Run(context)` to start the application given the <xref:System.Windows.Forms.ApplicationContext>.  
-  
- This code is an excerpt from the example shown in the <xref:System.Windows.Forms.ApplicationContext> class overview. Some code is not shown for the purpose of brevity. See <xref:System.Windows.Forms.ApplicationContext> for the whole code listing.  
-  
- [!code-cpp[Application#5](~/samples/snippets/cpp/VS_Snippets_Winforms/Application/CPP/source.cpp#5)]
- [!code-csharp[Application#5](~/samples/snippets/csharp/VS_Snippets_Winforms/Application/CS/source.cs#5)]
- [!code-vb[Application#5](~/samples/snippets/visualbasic/VS_Snippets_Winforms/Application/VB/source.vb#5)]  
-  
- ]]></format>
-        </remarks>
+             Don't obsolete these. GetDataPath isn't on SystemInformation, and it provides
+             the Windows logo required adornments to the directory (Company\Product\Version)
+            </remarks>
         <altmember cref="P:System.Windows.Forms.Application.UserAppDataRegistry" />
       </Docs>
     </Member>
@@ -1942,7 +2018,10 @@ static class Program
         <ReturnType>Microsoft.Win32.RegistryKey</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the registry key for the application data of a user.</summary>
+        <summary>
+             Gets the registry key of
+             the application data specific to the roaming user.
+            </summary>
         <value>A <see cref="T:Microsoft.Win32.RegistryKey" /> representing the registry key for the application data specific to the user.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1975,7 +2054,9 @@ static class Program
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>To be added.</summary>
+        <summary>
+            Gets whethers visual styles are enabled for the application.
+            </summary>
         <value>To be added.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1993,16 +2074,14 @@ static class Program
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets whether the wait cursor is used for all open forms of the application.</summary>
+        <summary>
+             Gets
+             or sets whether the wait cursor is used for all open forms of the application.
+            </summary>
         <value>
           <see langword="true" /> is the wait cursor is used for all open forms; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -2032,7 +2111,13 @@ static class Program
         <ReturnType>System.Windows.Forms.VisualStyles.VisualStyleState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value that specifies how visual styles are applied to application windows.</summary>
+        <summary>
+              Use this property to determine how visual styles will be applied to this application.
+              This property is meaningful only if visual styles are supported on the current
+              platform (VisualStyleInformation.SupportedByOS is true).
+            
+              This property can be set only to one of the S.W.F.VisualStyles.VisualStyleState enum values.
+             </summary>
         <value>A bitwise combination of the <see cref="T:System.Windows.Forms.VisualStyles.VisualStyleState" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

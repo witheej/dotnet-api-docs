@@ -1,4 +1,4 @@
-﻿<Type Name="NumericUpDown" FullName="System.Windows.Forms.NumericUpDown">
+<Type Name="NumericUpDown" FullName="System.Windows.Forms.NumericUpDown">
   <TypeSignature Language="C#" Value="public class NumericUpDown : System.Windows.Forms.UpDownBase, System.ComponentModel.ISupportInitialize" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit NumericUpDown extends System.Windows.Forms.UpDownBase implements class System.ComponentModel.ISupportInitialize" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.NumericUpDown" />
@@ -37,7 +37,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a Windows spin box (also known as an up-down control) that displays numeric values.</summary>
+    <summary>
+             Represents a Windows up-down control that displays numeric values.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -131,7 +133,9 @@
         <ReturnType>System.Windows.Forms.NumericUpDownAccelerationCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a collection of sorted acceleration objects for the <see cref="T:System.Windows.Forms.NumericUpDown" /> control.</summary>
+        <summary>
+             Specifies the acceleration information.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.NumericUpDownAccelerationCollection" /> containing the sorted acceleration objects for the <see cref="T:System.Windows.Forms.NumericUpDown" /> control</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -174,7 +178,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Begins the initialization of a <see cref="T:System.Windows.Forms.NumericUpDown" /> control that is used on a form or used by another component. The initialization occurs at run time.</summary>
+        <summary>
+             Handles tasks required when the control is being initialized.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -221,15 +227,14 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(0)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the number of decimal places to display in the spin box (also known as an up-down control).</summary>
+        <summary>
+             Gets or sets the number of decimal places to display in the up-down control.
+            </summary>
         <value>The number of decimal places to display in the spin box. The default is 0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -279,7 +284,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Decrements the value of the spin box (also known as an up-down control).</summary>
+        <summary>
+             Decrements the value of the up-down control.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -317,7 +324,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Ends the initialization of a <see cref="T:System.Windows.Forms.NumericUpDown" /> control that is used on a form or used by another component. The initialization occurs at run time.</summary>
+        <summary>
+             Called when initialization of the control is complete.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -339,15 +348,16 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the spin box (also known as an up-down control) should display the value it contains in hexadecimal format.</summary>
+        <summary>
+             Gets or
+             sets a value indicating whether the up-down control should
+             display the value it contains in hexadecimal format.
+            </summary>
         <value>
           <see langword="true" /> if the spin box should display its value in hexadecimal format; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
@@ -392,7 +402,11 @@
         <ReturnType>System.Decimal</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value to increment or decrement the spin box (also known as an up-down control) when the up or down buttons are clicked.</summary>
+        <summary>
+             Gets or sets the value
+             to increment or
+             decrement the up-down control when the up or down buttons are clicked.
+            </summary>
         <value>The value to increment or decrement the <see cref="P:System.Windows.Forms.NumericUpDown.Value" /> property when the up or down buttons are clicked on the spin box. The default value is 1.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -434,15 +448,14 @@
         <Attribute>
           <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Decimal</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the maximum value for the spin box (also known as an up-down control).</summary>
+        <summary>
+             Gets or sets the maximum value for the up-down control.
+            </summary>
         <value>The maximum value for the spin box. The default value is 100.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -484,15 +497,14 @@
         <Attribute>
           <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Decimal</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the minimum allowed value for the spin box (also known as an up-down control).</summary>
+        <summary>
+             Gets or sets the minimum allowed value for the up-down control.
+            </summary>
         <value>The minimum allowed value for the spin box. The default value is 0.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -533,11 +545,13 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.Windows.Forms.KeyEventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="e" Type="System.Windows.Forms.KeyEventArgs" />
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.KeyEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.KeyDown" /> event.</summary>
+        <summary>
+             Overridden to set/reset acceleration variables.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -570,11 +584,13 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.Windows.Forms.KeyEventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="e" Type="System.Windows.Forms.KeyEventArgs" />
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.KeyEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.KeyUp" /> event.</summary>
+        <summary>
+             Overridden to set/reset acceleration variables.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -607,7 +623,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="e" Type="System.EventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="e" Type="System.EventArgs" />
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
@@ -651,7 +667,10 @@
       <Docs>
         <param name="source">The source of the event.</param>
         <param name="e">A <see cref="T:System.Windows.Forms.KeyPressEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.KeyPress" /> event.</summary>
+        <summary>
+             Restricts the entry of characters to digits (including hex), the negative sign,
+             the decimal point, and editing keystrokes (backspace).
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -684,7 +703,9 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.NumericUpDown.ValueChanged" /> event.</summary>
+        <summary>
+             Raises the <see cref="M:System.Windows.Forms.NumericUpDown.OnValueChanged(System.EventArgs)" /> event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -722,8 +743,8 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -760,8 +781,8 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -798,7 +819,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Converts the text displayed in the spin box (also known as an up-down control) to a numeric value and evaluates it.</summary>
+        <summary>
+             Converts the text displayed in the up-down control to a
+             numeric value and evaluates it.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -837,14 +861,16 @@
           <AttributeName>System.ComponentModel.DesignerSerializationVisibility(System.ComponentModel.DesignerSerializationVisibility.Hidden)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text to be displayed in the <see cref="T:System.Windows.Forms.NumericUpDown" /> control.</summary>
+        <summary>
+             The text displayed in the control.
+            </summary>
         <value>
           <see langword="Null" />.</value>
         <remarks>
@@ -876,7 +902,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -908,15 +934,15 @@
         <Attribute>
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether a thousands separator is displayed in the spin box (also known as an up-down control) when appropriate.</summary>
+        <summary>
+             Gets or sets a value indicating whether a thousands
+             separator is displayed in the up-down control when appropriate.
+            </summary>
         <value>
           <see langword="true" /> if a thousands separator is displayed in the spin box when appropriate; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
@@ -962,7 +988,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a string that represents the <see cref="T:System.Windows.Forms.NumericUpDown" /> control.</summary>
+        <summary>
+             Provides some interesting info about this control in String form.
+            </summary>
         <returns>A string that represents the current <see cref="T:System.Windows.Forms.NumericUpDown" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -993,7 +1021,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Increments the value of the spin box (also known as an up-down control).</summary>
+        <summary>
+             Increments the value of the up-down control.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1028,7 +1058,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Displays the current value of the spin box (also known as an up-down control) in the appropriate format.</summary>
+        <summary>
+             Displays the current value of the up-down control in the appropriate format.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1063,7 +1095,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Validates and updates the text displayed in the spin box (also known as an up-down control).</summary>
+        <summary>
+             Validates and updates
+             the text displayed in the up-down control.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1099,7 +1134,10 @@
         <ReturnType>System.Decimal</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the value assigned to the spin box (also known as an up-down control).</summary>
+        <summary>
+             Gets or sets the value
+             assigned to the up-down control.
+            </summary>
         <value>The numeric value of the <see cref="T:System.Windows.Forms.NumericUpDown" /> control.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1146,7 +1184,9 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="P:System.Windows.Forms.NumericUpDown.Value" /> property has been changed in some way.</summary>
+        <summary>
+             Occurs when the <see cref="P:System.Windows.Forms.NumericUpDown.Value" /> property has been changed in some way.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

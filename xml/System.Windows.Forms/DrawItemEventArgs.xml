@@ -1,4 +1,4 @@
-﻿<Type Name="DrawItemEventArgs" FullName="System.Windows.Forms.DrawItemEventArgs">
+<Type Name="DrawItemEventArgs" FullName="System.Windows.Forms.DrawItemEventArgs">
   <TypeSignature Language="C#" Value="public class DrawItemEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DrawItemEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DrawItemEventArgs" />
@@ -16,7 +16,13 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see langword="DrawItem" /> event.</summary>
+    <summary>
+             This event is fired by owner draw Controls, such as ListBoxes and
+             ComboBoxes. It contains all the information needed for the user to
+             paint the given item, including the item index, the Rectangle in which
+             the drawing should be done, and the Graphics object with which the drawing
+             should be done.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -75,7 +81,9 @@
         <param name="rect">The <see cref="T:System.Drawing.Rectangle" /> bounds to draw within.</param>
         <param name="index">The <see cref="T:System.Windows.Forms.Control.ControlCollection" /> index value of the item that is being drawn.</param>
         <param name="state">The control's <see cref="T:System.Windows.Forms.DrawItemState" /> information.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DrawItemEventArgs" /> class for the specified control with the specified font, state, surface to draw on, and the bounds to draw within.</summary>
+        <summary>
+             Creates a new DrawItemEventArgs with the given parameters.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -92,11 +100,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="graphics" Type="System.Drawing.Graphics" />
         <Parameter Name="font" Type="System.Drawing.Font" />
@@ -114,7 +117,9 @@
         <param name="state">The control's <see cref="T:System.Windows.Forms.DrawItemState" /> information.</param>
         <param name="foreColor">The foreground <see cref="T:System.Drawing.Color" /> to draw the control with.</param>
         <param name="backColor">The background <see cref="T:System.Drawing.Color" /> to draw the control with.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DrawItemEventArgs" /> class for the specified control with the specified font, state, foreground color, background color, surface to draw on, and the bounds to draw within.</summary>
+        <summary>
+             Creates a new DrawItemEventArgs with the given parameters, including the foreColor and backColor of the control.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -173,16 +178,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the rectangle that represents the bounds of the item that is being drawn.</summary>
+        <summary>
+             The rectangle outlining the area in which the painting should be  done.
+            </summary>
         <value>The <see cref="T:System.Drawing.Rectangle" /> that represents the bounds of the item that is being drawn.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -217,7 +219,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Draws the background within the bounds specified in the <see cref="Overload:System.Windows.Forms.DrawItemEventArgs.#ctor" /> constructor and with the appropriate color.</summary>
+        <summary>
+             Draws the background of the given rectangle with the color returned from the BackColor property.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -259,7 +263,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Draws a focus rectangle within the bounds specified in the <see cref="Overload:System.Windows.Forms.DrawItemEventArgs.#ctor" /> constructor.</summary>
+        <summary>
+             Draws a handy focus rect in the given rectangle.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -296,16 +302,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the font that is assigned to the item being drawn.</summary>
+        <summary>
+             A suggested font, usually the parent control's Font property.
+            </summary>
         <value>The <see cref="T:System.Drawing.Font" /> that is assigned to the item being drawn.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -345,7 +348,10 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the foreground color of the of the item being drawn.</summary>
+        <summary>
+             A suggested color drawing: either SystemColors.WindowText or SystemColors.HighlightText,
+             depending on whether this item is selected.
+            </summary>
         <value>The foreground <see cref="T:System.Drawing.Color" /> of the item being drawn.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -382,16 +388,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Graphics</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the graphics surface to draw the item on.</summary>
+        <summary>
+             Graphics object with which painting should be done.
+            </summary>
         <value>The <see cref="T:System.Drawing.Graphics" /> surface to draw the item on.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -421,16 +424,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the index value of the item that is being drawn.</summary>
+        <summary>
+             The index of the item that should be painted.
+            </summary>
         <value>The numeric value that represents the <see cref="P:System.Windows.Forms.Control.ControlCollection.Item(System.Int32)" /> value of the item being drawn.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -465,16 +465,16 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DrawItemState</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the state of the item being drawn.</summary>
+        <summary>
+             Miscellaneous state information, such as whether the item is
+             "selected", "focused", or some other such information.  ComboBoxes
+             have one special piece of information which indicates if the item
+             being painted is the editable portion of the ComboBox.
+            </summary>
         <value>The <see cref="T:System.Windows.Forms.DrawItemState" /> that represents the state of the item being drawn.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

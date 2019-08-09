@@ -1,4 +1,4 @@
-﻿<Type Name="Shortcut" FullName="System.Windows.Forms.Shortcut">
+<Type Name="Shortcut" FullName="System.Windows.Forms.Shortcut">
   <TypeSignature Language="C#" Value="public enum Shortcut" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Shortcut extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Shortcut" />
@@ -20,7 +20,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies shortcut keys that can be used by menu items.</summary>
+    <summary>
+             Specifies shortcut keys that can be used by menu items.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -51,7 +53,9 @@
       </ReturnValue>
       <MemberValue>262192</MemberValue>
       <Docs>
-        <summary>The shortcut keys ALT+0.</summary>
+        <summary>
+             The shortcut keys ALT+0.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Alt1">
@@ -73,7 +77,9 @@
       </ReturnValue>
       <MemberValue>262193</MemberValue>
       <Docs>
-        <summary>The shortcut keys ALT+1.</summary>
+        <summary>
+             The shortcut keys ALT+1.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Alt2">
@@ -95,7 +101,9 @@
       </ReturnValue>
       <MemberValue>262194</MemberValue>
       <Docs>
-        <summary>The shortcut keys ALT+2.</summary>
+        <summary>
+             The shortcut keys ALT+2.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Alt3">
@@ -117,7 +125,9 @@
       </ReturnValue>
       <MemberValue>262195</MemberValue>
       <Docs>
-        <summary>The shortcut keys ALT+3.</summary>
+        <summary>
+             The shortcut keys ALT+3.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Alt4">
@@ -139,7 +149,9 @@
       </ReturnValue>
       <MemberValue>262196</MemberValue>
       <Docs>
-        <summary>The shortcut keys ALT+4.</summary>
+        <summary>
+             The shortcut keys ALT+4.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Alt5">
@@ -161,7 +173,9 @@
       </ReturnValue>
       <MemberValue>262197</MemberValue>
       <Docs>
-        <summary>The shortcut keys ALT+5.</summary>
+        <summary>
+             The shortcut keys ALT+5.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Alt6">
@@ -183,7 +197,9 @@
       </ReturnValue>
       <MemberValue>262198</MemberValue>
       <Docs>
-        <summary>The shortcut keys ALT+6.</summary>
+        <summary>
+             The shortcut keys ALT+6.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Alt7">
@@ -205,7 +221,9 @@
       </ReturnValue>
       <MemberValue>262199</MemberValue>
       <Docs>
-        <summary>The shortcut keys ALT+7.</summary>
+        <summary>
+             The shortcut keys ALT+7.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Alt8">
@@ -227,7 +245,9 @@
       </ReturnValue>
       <MemberValue>262200</MemberValue>
       <Docs>
-        <summary>The shortcut keys ALT+8.</summary>
+        <summary>
+             The shortcut keys ALT+8.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Alt9">
@@ -249,7 +269,9 @@
       </ReturnValue>
       <MemberValue>262201</MemberValue>
       <Docs>
-        <summary>The shortcut keys ALT+9.</summary>
+        <summary>
+             The shortcut keys ALT+9.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="AltBksp">
@@ -271,7 +293,9 @@
       </ReturnValue>
       <MemberValue>262152</MemberValue>
       <Docs>
-        <summary>The shortcut keys ALT+BACKSPACE.</summary>
+        <summary>
+             The shortcut keys ALT+BACKSPACE.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="AltDownArrow">
@@ -292,7 +316,9 @@
       </ReturnValue>
       <MemberValue>262184</MemberValue>
       <Docs>
-        <summary>The shortcut keys ALT+DOWNARROW.</summary>
+        <summary>
+             The shortcut keys Alt + DownArrow.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="AltF1">
@@ -314,7 +340,9 @@
       </ReturnValue>
       <MemberValue>262256</MemberValue>
       <Docs>
-        <summary>The shortcut keys ALT+F1.</summary>
+        <summary>
+             The shortcut keys ALT+F1.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="AltF10">
@@ -336,7 +364,9 @@
       </ReturnValue>
       <MemberValue>262265</MemberValue>
       <Docs>
-        <summary>The shortcut keys ALT+F10.</summary>
+        <summary>
+             The shortcut keys ALT+F10.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="AltF11">
@@ -358,7 +388,9 @@
       </ReturnValue>
       <MemberValue>262266</MemberValue>
       <Docs>
-        <summary>The shortcut keys ALT+F11.</summary>
+        <summary>
+             The shortcut keys ALT+F11.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="AltF12">
@@ -380,7 +412,9 @@
       </ReturnValue>
       <MemberValue>262267</MemberValue>
       <Docs>
-        <summary>The shortcut keys ALT+F12.</summary>
+        <summary>
+             The shortcut keys ALT+F12.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="AltF2">
@@ -402,7 +436,9 @@
       </ReturnValue>
       <MemberValue>262257</MemberValue>
       <Docs>
-        <summary>The shortcut keys ALT+F2.</summary>
+        <summary>
+             The shortcut keys ALT+F2.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="AltF3">
@@ -424,7 +460,9 @@
       </ReturnValue>
       <MemberValue>262258</MemberValue>
       <Docs>
-        <summary>The shortcut keys ALT+F3.</summary>
+        <summary>
+             The shortcut keys ALT+F3.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="AltF4">
@@ -446,7 +484,9 @@
       </ReturnValue>
       <MemberValue>262259</MemberValue>
       <Docs>
-        <summary>The shortcut keys ALT+F4.</summary>
+        <summary>
+             The shortcut keys ALT+F4.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="AltF5">
@@ -468,7 +508,9 @@
       </ReturnValue>
       <MemberValue>262260</MemberValue>
       <Docs>
-        <summary>The shortcut keys ALT+F5.</summary>
+        <summary>
+             The shortcut keys ALT+F5.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="AltF6">
@@ -490,7 +532,9 @@
       </ReturnValue>
       <MemberValue>262261</MemberValue>
       <Docs>
-        <summary>The shortcut keys ALT+F6.</summary>
+        <summary>
+             The shortcut keys ALT+F6.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="AltF7">
@@ -512,7 +556,9 @@
       </ReturnValue>
       <MemberValue>262262</MemberValue>
       <Docs>
-        <summary>The shortcut keys ALT+F7.</summary>
+        <summary>
+             The shortcut keys ALT+F7.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="AltF8">
@@ -534,7 +580,9 @@
       </ReturnValue>
       <MemberValue>262263</MemberValue>
       <Docs>
-        <summary>The shortcut keys ALT+F8.</summary>
+        <summary>
+             The shortcut keys ALT+F8.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="AltF9">
@@ -556,7 +604,9 @@
       </ReturnValue>
       <MemberValue>262264</MemberValue>
       <Docs>
-        <summary>The shortcut keys ALT+F9.</summary>
+        <summary>
+             The shortcut keys ALT+F9.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="AltLeftArrow">
@@ -577,7 +627,9 @@
       </ReturnValue>
       <MemberValue>262181</MemberValue>
       <Docs>
-        <summary>The shortcut keys ALT+LEFTARROW.</summary>
+        <summary>
+             The shortcut keys ALT+LeftArrow.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="AltRightArrow">
@@ -598,7 +650,9 @@
       </ReturnValue>
       <MemberValue>262183</MemberValue>
       <Docs>
-        <summary>The shortcut keys ALT+RIGHTARROW.</summary>
+        <summary>
+             The shortcut keys Alt + RightArrow.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="AltUpArrow">
@@ -619,7 +673,9 @@
       </ReturnValue>
       <MemberValue>262182</MemberValue>
       <Docs>
-        <summary>The shortcut keys ALT+UPARROW.</summary>
+        <summary>
+             The shortcut keys ALT+UpArrow.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Ctrl0">
@@ -641,7 +697,9 @@
       </ReturnValue>
       <MemberValue>131120</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+0.</summary>
+        <summary>
+             The shortcut keys CTRL+0.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Ctrl1">
@@ -663,7 +721,9 @@
       </ReturnValue>
       <MemberValue>131121</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+1.</summary>
+        <summary>
+             The shortcut keys CTRL+1.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Ctrl2">
@@ -685,7 +745,9 @@
       </ReturnValue>
       <MemberValue>131122</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+2.</summary>
+        <summary>
+             The shortcut keys CTRL+2.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Ctrl3">
@@ -707,7 +769,9 @@
       </ReturnValue>
       <MemberValue>131123</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+3.</summary>
+        <summary>
+             The shortcut keys CTRL+3.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Ctrl4">
@@ -729,7 +793,9 @@
       </ReturnValue>
       <MemberValue>131124</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+4.</summary>
+        <summary>
+             The shortcut keys CTRL+4.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Ctrl5">
@@ -751,7 +817,9 @@
       </ReturnValue>
       <MemberValue>131125</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+5.</summary>
+        <summary>
+             The shortcut keys CTRL+5.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Ctrl6">
@@ -773,7 +841,9 @@
       </ReturnValue>
       <MemberValue>131126</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+6.</summary>
+        <summary>
+             The shortcut keys CTRL+6.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Ctrl7">
@@ -795,7 +865,9 @@
       </ReturnValue>
       <MemberValue>131127</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+7.</summary>
+        <summary>
+             The shortcut keys CTRL+7.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Ctrl8">
@@ -817,7 +889,9 @@
       </ReturnValue>
       <MemberValue>131128</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+8.</summary>
+        <summary>
+             The shortcut keys CTRL+8.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Ctrl9">
@@ -839,7 +913,9 @@
       </ReturnValue>
       <MemberValue>131129</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+9.</summary>
+        <summary>
+             The shortcut keys CTRL+9.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlA">
@@ -861,7 +937,9 @@
       </ReturnValue>
       <MemberValue>131137</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+A.</summary>
+        <summary>
+             The shorcut keys CTRL+A.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlB">
@@ -883,7 +961,9 @@
       </ReturnValue>
       <MemberValue>131138</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+B.</summary>
+        <summary>
+             The shorcut keys CTRL+B.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlC">
@@ -905,7 +985,9 @@
       </ReturnValue>
       <MemberValue>131139</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+C.</summary>
+        <summary>
+             The shorcut keys CTRL+C.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlD">
@@ -927,7 +1009,9 @@
       </ReturnValue>
       <MemberValue>131140</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+D.</summary>
+        <summary>
+             The shorcut keys CTRL+D.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlDel">
@@ -949,7 +1033,9 @@
       </ReturnValue>
       <MemberValue>131118</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+DELETE.</summary>
+        <summary>
+             The shortcut keys CTRL+DELETE.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlE">
@@ -971,7 +1057,9 @@
       </ReturnValue>
       <MemberValue>131141</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+E.</summary>
+        <summary>
+             The shorcut keys CTRL+E.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlF">
@@ -993,7 +1081,9 @@
       </ReturnValue>
       <MemberValue>131142</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+F.</summary>
+        <summary>
+             The shorcut keys CTRL+F.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlF1">
@@ -1015,7 +1105,9 @@
       </ReturnValue>
       <MemberValue>131184</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+F1.</summary>
+        <summary>
+             The shortcut keys CTRL+F1.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlF10">
@@ -1037,7 +1129,9 @@
       </ReturnValue>
       <MemberValue>131193</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+F10.</summary>
+        <summary>
+             The shortcut keys CTRL+F10.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlF11">
@@ -1059,7 +1153,9 @@
       </ReturnValue>
       <MemberValue>131194</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+F11.</summary>
+        <summary>
+             The shortcut keys CTRL+F11.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlF12">
@@ -1081,7 +1177,9 @@
       </ReturnValue>
       <MemberValue>131195</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+F12.</summary>
+        <summary>
+             The shortcut keys CTRL+F12.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlF2">
@@ -1103,7 +1201,9 @@
       </ReturnValue>
       <MemberValue>131185</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+F2.</summary>
+        <summary>
+             The shortcut keys CTRL+F2.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlF3">
@@ -1125,7 +1225,9 @@
       </ReturnValue>
       <MemberValue>131186</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+F3.</summary>
+        <summary>
+             The shortcut keys CTRL+F3.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlF4">
@@ -1147,7 +1249,9 @@
       </ReturnValue>
       <MemberValue>131187</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+F4.</summary>
+        <summary>
+             The shortcut keys CTRL+F4.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlF5">
@@ -1169,7 +1273,9 @@
       </ReturnValue>
       <MemberValue>131188</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+F5.</summary>
+        <summary>
+             The shortcut keys CTRL+F5.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlF6">
@@ -1191,7 +1297,9 @@
       </ReturnValue>
       <MemberValue>131189</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+F6.</summary>
+        <summary>
+             The shortcut keys CTRL+F6.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlF7">
@@ -1213,7 +1321,9 @@
       </ReturnValue>
       <MemberValue>131190</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+F7.</summary>
+        <summary>
+             The shortcut keys CTRL+F7.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlF8">
@@ -1235,7 +1345,9 @@
       </ReturnValue>
       <MemberValue>131191</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+F8.</summary>
+        <summary>
+             The shortcut keys CTRL+F8.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlF9">
@@ -1257,7 +1369,9 @@
       </ReturnValue>
       <MemberValue>131192</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+F9.</summary>
+        <summary>
+             The shortcut keys CTRL+F9.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlG">
@@ -1279,7 +1393,9 @@
       </ReturnValue>
       <MemberValue>131143</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+G.</summary>
+        <summary>
+             The shorcut keys CTRL+G.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlH">
@@ -1301,7 +1417,9 @@
       </ReturnValue>
       <MemberValue>131144</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+H.</summary>
+        <summary>
+             The shorcut keys CTRL+H.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlI">
@@ -1323,7 +1441,9 @@
       </ReturnValue>
       <MemberValue>131145</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+I.</summary>
+        <summary>
+             The shorcut keys CTRL+I.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlIns">
@@ -1345,7 +1465,9 @@
       </ReturnValue>
       <MemberValue>131117</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+INSERT.</summary>
+        <summary>
+             The shortcut keys CTRL+INSERT.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlJ">
@@ -1367,7 +1489,9 @@
       </ReturnValue>
       <MemberValue>131146</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+J.</summary>
+        <summary>
+             The shorcut keys CTRL+J.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlK">
@@ -1389,7 +1513,9 @@
       </ReturnValue>
       <MemberValue>131147</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+K.</summary>
+        <summary>
+             The shorcut keys CTRL+K.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlL">
@@ -1411,7 +1537,9 @@
       </ReturnValue>
       <MemberValue>131148</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+L.</summary>
+        <summary>
+             The shorcut keys CTRL+L.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlM">
@@ -1433,7 +1561,9 @@
       </ReturnValue>
       <MemberValue>131149</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+M.</summary>
+        <summary>
+             The shorcut keys CTRL+M.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlN">
@@ -1455,7 +1585,9 @@
       </ReturnValue>
       <MemberValue>131150</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+N.</summary>
+        <summary>
+             The shorcut keys CTRL+N.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlO">
@@ -1477,7 +1609,9 @@
       </ReturnValue>
       <MemberValue>131151</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+O.</summary>
+        <summary>
+             The shorcut keys CTRL+O.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlP">
@@ -1499,7 +1633,9 @@
       </ReturnValue>
       <MemberValue>131152</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+P.</summary>
+        <summary>
+             The shorcut keys CTRL+P.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlQ">
@@ -1521,7 +1657,9 @@
       </ReturnValue>
       <MemberValue>131153</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+Q.</summary>
+        <summary>
+             The shorcut keys CTRL+Q.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlR">
@@ -1543,7 +1681,9 @@
       </ReturnValue>
       <MemberValue>131154</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+R.</summary>
+        <summary>
+             The shorcut keys CTRL+R.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlS">
@@ -1565,7 +1705,9 @@
       </ReturnValue>
       <MemberValue>131155</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+S.</summary>
+        <summary>
+             The shorcut keys CTRL+S.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShift0">
@@ -1587,7 +1729,9 @@
       </ReturnValue>
       <MemberValue>196656</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+0.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+0.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShift1">
@@ -1609,7 +1753,9 @@
       </ReturnValue>
       <MemberValue>196657</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+1.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+1.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShift2">
@@ -1631,7 +1777,9 @@
       </ReturnValue>
       <MemberValue>196658</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+2.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+2.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShift3">
@@ -1653,7 +1801,9 @@
       </ReturnValue>
       <MemberValue>196659</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+3.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+3.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShift4">
@@ -1675,7 +1825,9 @@
       </ReturnValue>
       <MemberValue>196660</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+4.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+4.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShift5">
@@ -1697,7 +1849,9 @@
       </ReturnValue>
       <MemberValue>196661</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+5.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+5.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShift6">
@@ -1719,7 +1873,9 @@
       </ReturnValue>
       <MemberValue>196662</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+6.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+6.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShift7">
@@ -1741,7 +1897,9 @@
       </ReturnValue>
       <MemberValue>196663</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+7.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+7.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShift8">
@@ -1763,7 +1921,9 @@
       </ReturnValue>
       <MemberValue>196664</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+8.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+8.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShift9">
@@ -1785,7 +1945,9 @@
       </ReturnValue>
       <MemberValue>196665</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+9.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+9.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShiftA">
@@ -1807,7 +1969,9 @@
       </ReturnValue>
       <MemberValue>196673</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+A.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+A.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShiftB">
@@ -1829,7 +1993,9 @@
       </ReturnValue>
       <MemberValue>196674</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+B.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+B.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShiftC">
@@ -1851,7 +2017,9 @@
       </ReturnValue>
       <MemberValue>196675</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+C.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+C.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShiftD">
@@ -1873,7 +2041,9 @@
       </ReturnValue>
       <MemberValue>196676</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+D.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+D.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShiftE">
@@ -1895,7 +2065,9 @@
       </ReturnValue>
       <MemberValue>196677</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+E.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+E.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShiftF">
@@ -1917,7 +2089,9 @@
       </ReturnValue>
       <MemberValue>196678</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+F.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+F.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShiftF1">
@@ -1939,7 +2113,9 @@
       </ReturnValue>
       <MemberValue>196720</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+F1.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+F1.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShiftF10">
@@ -1961,7 +2137,9 @@
       </ReturnValue>
       <MemberValue>196729</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+F10.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+F10.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShiftF11">
@@ -1983,7 +2161,9 @@
       </ReturnValue>
       <MemberValue>196730</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+F11.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+F11.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShiftF12">
@@ -2005,7 +2185,9 @@
       </ReturnValue>
       <MemberValue>196731</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+F12.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+F12.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShiftF2">
@@ -2027,7 +2209,9 @@
       </ReturnValue>
       <MemberValue>196721</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+F2.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+F2.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShiftF3">
@@ -2049,7 +2233,9 @@
       </ReturnValue>
       <MemberValue>196722</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+F3.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+F3.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShiftF4">
@@ -2071,7 +2257,9 @@
       </ReturnValue>
       <MemberValue>196723</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+F4.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+F4.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShiftF5">
@@ -2093,7 +2281,9 @@
       </ReturnValue>
       <MemberValue>196724</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+F5.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+F5.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShiftF6">
@@ -2115,7 +2305,9 @@
       </ReturnValue>
       <MemberValue>196725</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+F6.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+F6.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShiftF7">
@@ -2137,7 +2329,9 @@
       </ReturnValue>
       <MemberValue>196726</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+F7.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+F7.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShiftF8">
@@ -2159,7 +2353,9 @@
       </ReturnValue>
       <MemberValue>196727</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+F8.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+F8.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShiftF9">
@@ -2181,7 +2377,9 @@
       </ReturnValue>
       <MemberValue>196728</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+F9.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+F9.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShiftG">
@@ -2203,7 +2401,9 @@
       </ReturnValue>
       <MemberValue>196679</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+G.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+G.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShiftH">
@@ -2225,7 +2425,9 @@
       </ReturnValue>
       <MemberValue>196680</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+H.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+H.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShiftI">
@@ -2247,7 +2449,9 @@
       </ReturnValue>
       <MemberValue>196681</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+I.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+I.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShiftJ">
@@ -2269,7 +2473,9 @@
       </ReturnValue>
       <MemberValue>196682</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+J.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+J.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShiftK">
@@ -2291,7 +2497,9 @@
       </ReturnValue>
       <MemberValue>196683</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+K.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+K.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShiftL">
@@ -2313,7 +2521,9 @@
       </ReturnValue>
       <MemberValue>196684</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+L.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+L.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShiftM">
@@ -2335,7 +2545,9 @@
       </ReturnValue>
       <MemberValue>196685</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+M.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+M.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShiftN">
@@ -2357,7 +2569,9 @@
       </ReturnValue>
       <MemberValue>196686</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+N.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+N.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShiftO">
@@ -2379,7 +2593,9 @@
       </ReturnValue>
       <MemberValue>196687</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+O.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+O.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShiftP">
@@ -2401,7 +2617,9 @@
       </ReturnValue>
       <MemberValue>196688</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+P.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+P.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShiftQ">
@@ -2423,7 +2641,9 @@
       </ReturnValue>
       <MemberValue>196689</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+Q.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+Q.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShiftR">
@@ -2445,7 +2665,9 @@
       </ReturnValue>
       <MemberValue>196690</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+R.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+R.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShiftS">
@@ -2467,7 +2689,9 @@
       </ReturnValue>
       <MemberValue>196691</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+S.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+S.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShiftT">
@@ -2489,7 +2713,9 @@
       </ReturnValue>
       <MemberValue>196692</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+T.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+T.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShiftU">
@@ -2511,7 +2737,9 @@
       </ReturnValue>
       <MemberValue>196693</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+U.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+U.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShiftV">
@@ -2533,7 +2761,9 @@
       </ReturnValue>
       <MemberValue>196694</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+V.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+V.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShiftW">
@@ -2555,7 +2785,9 @@
       </ReturnValue>
       <MemberValue>196695</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+W.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+W.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShiftX">
@@ -2577,7 +2809,9 @@
       </ReturnValue>
       <MemberValue>196696</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+X.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+X.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShiftY">
@@ -2599,7 +2833,9 @@
       </ReturnValue>
       <MemberValue>196697</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+Y.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+Y.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlShiftZ">
@@ -2621,7 +2857,9 @@
       </ReturnValue>
       <MemberValue>196698</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+SHIFT+Z.</summary>
+        <summary>
+             The shortcut keys CTRL+SHIFT+Z.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlT">
@@ -2643,7 +2881,9 @@
       </ReturnValue>
       <MemberValue>131156</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+T.</summary>
+        <summary>
+             The shorcut keys CTRL+T.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlU">
@@ -2665,7 +2905,9 @@
       </ReturnValue>
       <MemberValue>131157</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+U.</summary>
+        <summary>
+             The shorcut keys CTRL+U
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlV">
@@ -2687,7 +2929,9 @@
       </ReturnValue>
       <MemberValue>131158</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+V.</summary>
+        <summary>
+             The shorcut keys CTRL+V.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlW">
@@ -2709,7 +2953,9 @@
       </ReturnValue>
       <MemberValue>131159</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+W.</summary>
+        <summary>
+             The shorcut keys CTRL+W.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlX">
@@ -2731,7 +2977,9 @@
       </ReturnValue>
       <MemberValue>131160</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+X.</summary>
+        <summary>
+             The shorcut keys CTRL+X.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlY">
@@ -2753,7 +3001,9 @@
       </ReturnValue>
       <MemberValue>131161</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+Y.</summary>
+        <summary>
+             The shorcut keys CTRL+Y.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CtrlZ">
@@ -2775,7 +3025,9 @@
       </ReturnValue>
       <MemberValue>131162</MemberValue>
       <Docs>
-        <summary>The shortcut keys CTRL+Z.</summary>
+        <summary>
+             The shorcut keys CTRL+Z.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Del">
@@ -2797,7 +3049,9 @@
       </ReturnValue>
       <MemberValue>46</MemberValue>
       <Docs>
-        <summary>The shortcut key DELETE.</summary>
+        <summary>
+             The shortcut key DELETE.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="F1">
@@ -2819,7 +3073,9 @@
       </ReturnValue>
       <MemberValue>112</MemberValue>
       <Docs>
-        <summary>The shortcut key F1.</summary>
+        <summary>
+             The shortcut key F1.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="F10">
@@ -2841,7 +3097,9 @@
       </ReturnValue>
       <MemberValue>121</MemberValue>
       <Docs>
-        <summary>The shortcut key F10.</summary>
+        <summary>
+             The shortcut key F10.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="F11">
@@ -2863,7 +3121,9 @@
       </ReturnValue>
       <MemberValue>122</MemberValue>
       <Docs>
-        <summary>The shortcut key F11.</summary>
+        <summary>
+             The shortcut key F11.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="F12">
@@ -2885,7 +3145,9 @@
       </ReturnValue>
       <MemberValue>123</MemberValue>
       <Docs>
-        <summary>The shortcut key F12.</summary>
+        <summary>
+             The shortcut key F12.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="F2">
@@ -2907,7 +3169,9 @@
       </ReturnValue>
       <MemberValue>113</MemberValue>
       <Docs>
-        <summary>The shortcut key F2.</summary>
+        <summary>
+             The shortcut key F2.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="F3">
@@ -2929,7 +3193,9 @@
       </ReturnValue>
       <MemberValue>114</MemberValue>
       <Docs>
-        <summary>The shortcut key F3.</summary>
+        <summary>
+             The shortcut key F3.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="F4">
@@ -2951,7 +3217,9 @@
       </ReturnValue>
       <MemberValue>115</MemberValue>
       <Docs>
-        <summary>The shortcut key F4.</summary>
+        <summary>
+             The shortcut key F4.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="F5">
@@ -2973,7 +3241,9 @@
       </ReturnValue>
       <MemberValue>116</MemberValue>
       <Docs>
-        <summary>The shortcut key F5.</summary>
+        <summary>
+             The shortcut key F5.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="F6">
@@ -2995,7 +3265,9 @@
       </ReturnValue>
       <MemberValue>117</MemberValue>
       <Docs>
-        <summary>The shortcut key F6.</summary>
+        <summary>
+             The shortcut key F6.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="F7">
@@ -3017,7 +3289,9 @@
       </ReturnValue>
       <MemberValue>118</MemberValue>
       <Docs>
-        <summary>The shortcut key F7.</summary>
+        <summary>
+             The shortcut key F7.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="F8">
@@ -3061,7 +3335,9 @@
       </ReturnValue>
       <MemberValue>120</MemberValue>
       <Docs>
-        <summary>The shortcut key F9.</summary>
+        <summary>
+             The shortcut key F9.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Ins">
@@ -3083,7 +3359,9 @@
       </ReturnValue>
       <MemberValue>45</MemberValue>
       <Docs>
-        <summary>The shortcut key INSERT.</summary>
+        <summary>
+             The shortcut key INSERT.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -3105,7 +3383,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>No shortcut key is associated with the menu item.</summary>
+        <summary>
+             No shortcut key is associated with the menu item.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="ShiftDel">
@@ -3127,7 +3407,9 @@
       </ReturnValue>
       <MemberValue>65582</MemberValue>
       <Docs>
-        <summary>The shortcut keys SHIFT+DELETE.</summary>
+        <summary>
+             The shortcut keys SHIFT+DELETE.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="ShiftF1">
@@ -3149,7 +3431,9 @@
       </ReturnValue>
       <MemberValue>65648</MemberValue>
       <Docs>
-        <summary>The shortcut keys SHIFT+F1.</summary>
+        <summary>
+             The shortcut keys SHIFT+F1.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="ShiftF10">
@@ -3171,7 +3455,9 @@
       </ReturnValue>
       <MemberValue>65657</MemberValue>
       <Docs>
-        <summary>The shortcut keys SHIFT+F10.</summary>
+        <summary>
+             The shortcut keys SHIFT+F10.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="ShiftF11">
@@ -3193,7 +3479,9 @@
       </ReturnValue>
       <MemberValue>65658</MemberValue>
       <Docs>
-        <summary>The shortcut keys SHIFT+F11.</summary>
+        <summary>
+             The shortcut keys SHIFT+F11.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="ShiftF12">
@@ -3215,7 +3503,9 @@
       </ReturnValue>
       <MemberValue>65659</MemberValue>
       <Docs>
-        <summary>The shortcut keys SHIFT+F12.</summary>
+        <summary>
+             The shortcut keys SHIFT+F12.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="ShiftF2">
@@ -3237,7 +3527,9 @@
       </ReturnValue>
       <MemberValue>65649</MemberValue>
       <Docs>
-        <summary>The shortcut keys SHIFT+F2.</summary>
+        <summary>
+             The shortcut keys SHIFT+F2.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="ShiftF3">
@@ -3259,7 +3551,9 @@
       </ReturnValue>
       <MemberValue>65650</MemberValue>
       <Docs>
-        <summary>The shortcut keys SHIFT+F3.</summary>
+        <summary>
+             The shortcut keys SHIFT+F3.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="ShiftF4">
@@ -3281,7 +3575,9 @@
       </ReturnValue>
       <MemberValue>65651</MemberValue>
       <Docs>
-        <summary>The shortcut keys SHIFT+F4.</summary>
+        <summary>
+             The shortcut keys SHIFT+F4.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="ShiftF5">
@@ -3303,7 +3599,9 @@
       </ReturnValue>
       <MemberValue>65652</MemberValue>
       <Docs>
-        <summary>The shortcut keys SHIFT+F5.</summary>
+        <summary>
+             The shortcut keys SHIFT+F5.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="ShiftF6">
@@ -3325,7 +3623,9 @@
       </ReturnValue>
       <MemberValue>65653</MemberValue>
       <Docs>
-        <summary>The shortcut keys SHIFT+F6.</summary>
+        <summary>
+             The shortcut keys SHIFT+F6.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="ShiftF7">
@@ -3347,7 +3647,9 @@
       </ReturnValue>
       <MemberValue>65654</MemberValue>
       <Docs>
-        <summary>The shortcut keys SHIFT+F7.</summary>
+        <summary>
+             The shortcut keys SHIFT+F7.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="ShiftF8">
@@ -3369,7 +3671,9 @@
       </ReturnValue>
       <MemberValue>65655</MemberValue>
       <Docs>
-        <summary>The shortcut keys SHIFT+F8.</summary>
+        <summary>
+             The shortcut keys SHIFT+F8.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="ShiftF9">
@@ -3391,7 +3695,9 @@
       </ReturnValue>
       <MemberValue>65656</MemberValue>
       <Docs>
-        <summary>The shortcut keys SHIFT+F9.</summary>
+        <summary>
+             The shortcut keys SHIFT+F9.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="ShiftIns">
@@ -3413,7 +3719,9 @@
       </ReturnValue>
       <MemberValue>65581</MemberValue>
       <Docs>
-        <summary>The shortcut keys SHIFT+INSERT.</summary>
+        <summary>
+             The shortcut keys SHIFT+INSERT.
+            </summary>
       </Docs>
     </Member>
   </Members>

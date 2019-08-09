@@ -1,4 +1,4 @@
-﻿<Type Name="PictureBoxSizeMode" FullName="System.Windows.Forms.PictureBoxSizeMode">
+<Type Name="PictureBoxSizeMode" FullName="System.Windows.Forms.PictureBoxSizeMode">
   <TypeSignature Language="C#" Value="public enum PictureBoxSizeMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed PictureBoxSizeMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PictureBoxSizeMode" />
@@ -15,7 +15,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies how an image is positioned within a <see cref="T:System.Windows.Forms.PictureBox" />.</summary>
+    <summary>
+             Specifies how an image is positioned within a <see cref="T:System.Windows.Forms.PictureBox" />.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -53,7 +55,10 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>The <see cref="T:System.Windows.Forms.PictureBox" /> is sized equal to the size of the image that it contains.</summary>
+        <summary>
+             The <see cref="T:System.Windows.Forms.PictureBox" /> is sized to fit the
+             size of the image that is displayed.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="CenterImage">
@@ -75,7 +80,14 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>The image is displayed in the center if the <see cref="T:System.Windows.Forms.PictureBox" /> is larger than the image. If the image is larger than the <see cref="T:System.Windows.Forms.PictureBox" />, the picture is placed in the center of the <see cref="T:System.Windows.Forms.PictureBox" /> and the outside edges are clipped.</summary>
+        <summary>
+             The image is displayed in the center if the
+            <see cref="T:System.Windows.Forms.PictureBox" /> is larger than the
+             image. If the image is larger than the <see cref="T:System.Windows.Forms.PictureBox" />,
+             the center of the picture is placed in the center of the
+            <see cref="T:System.Windows.Forms.PictureBox" /> and the outside edges are
+             clipped.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Normal">
@@ -97,7 +109,11 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>The image is placed in the upper-left corner of the <see cref="T:System.Windows.Forms.PictureBox" />. The image is clipped if it is larger than the <see cref="T:System.Windows.Forms.PictureBox" /> it is contained in.</summary>
+        <summary>
+             The image is placed in the top-left corner of the
+            <see cref="T:System.Windows.Forms.PictureBox" />. The image is clipped
+             if the <see cref="T:System.Windows.Forms.PictureBox" /> is to small.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="StretchImage">
@@ -140,7 +156,9 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>The size of the image is increased or decreased maintaining the size ratio.</summary>
+        <summary>
+             The size of image is increased or decresed maintaining the aspect ratio.
+            </summary>
       </Docs>
     </Member>
   </Members>

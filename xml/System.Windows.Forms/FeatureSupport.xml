@@ -1,4 +1,4 @@
-﻿<Type Name="FeatureSupport" FullName="System.Windows.Forms.FeatureSupport">
+<Type Name="FeatureSupport" FullName="System.Windows.Forms.FeatureSupport">
   <TypeSignature Language="C#" Value="public abstract class FeatureSupport : System.Windows.Forms.IFeatureSupport" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit FeatureSupport extends System.Object implements class System.Windows.Forms.IFeatureSupport" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FeatureSupport" />
@@ -20,7 +20,10 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Provides <see langword="static" /> methods for retrieving feature information from the current system.</summary>
+    <summary>
+             Provides <see langword="static" /> methods for retrieving feature information from the
+             current system.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -59,11 +62,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.FeatureSupport" /> class.</summary>
@@ -104,7 +102,10 @@
       </Parameters>
       <Docs>
         <param name="feature">The feature whose version is requested.</param>
-        <summary>When overridden in a derived class, gets the version of the specified feature that is available on the system.</summary>
+        <summary>
+             When overridden in a derived class, gets the version of the specified feature that
+             is available on the system.
+            </summary>
         <returns>A <see cref="T:System.Version" /> representing the version number of the specified feature available on the system; or <see langword="null" /> if the feature is not installed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -155,7 +156,9 @@
       <Docs>
         <param name="featureClassName">The fully qualified name of the class to query for information about the specified feature. This class must implement the <see cref="T:System.Windows.Forms.IFeatureSupport" /> interface or inherit from a class that implements this interface.</param>
         <param name="featureConstName">The fully qualified name of the feature to look for.</param>
-        <summary>Gets the version of the specified feature that is available on the system.</summary>
+        <summary>
+             Gets the version of the specified feature that is available on the system.
+            </summary>
         <returns>A <see cref="T:System.Version" /> with the version number of the specified feature available on the system; or <see langword="null" /> if the feature is not installed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -205,7 +208,9 @@
       </Parameters>
       <Docs>
         <param name="feature">The feature to look for.</param>
-        <summary>Determines whether any version of the specified feature is installed in the system.</summary>
+        <summary>
+             Determines whether any version of the specified feature is installed in the system.
+            </summary>
         <returns>
           <see langword="true" /> if the feature is present; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -252,7 +257,10 @@
       <Docs>
         <param name="feature">The feature to look for.</param>
         <param name="minimumVersion">A <see cref="T:System.Version" /> representing the minimum version number of the feature to look for.</param>
-        <summary>Determines whether the specified or newer version of the specified feature is installed in the system.</summary>
+        <summary>
+             Determines whether the specified or newer version of the specified feature is
+             installed in the system.
+            </summary>
         <returns>
           <see langword="true" /> if the feature is present and its version number is greater than or equal to the specified minimum version number; <see langword="false" /> if the feature is not installed or its version number is below the specified minimum number.</returns>
         <remarks>To be added.</remarks>
@@ -285,7 +293,10 @@
       <Docs>
         <param name="featureClassName">The fully qualified name of the class to query for information about the specified feature. This class must implement the <see cref="T:System.Windows.Forms.IFeatureSupport" /> interface or inherit from a class that implements this interface.</param>
         <param name="featureConstName">The fully qualified name of the feature to look for.</param>
-        <summary>Determines whether any version of the specified feature is installed in the system. This method is <see langword="static" />.</summary>
+        <summary>
+             Determines whether any version of the specified feature is installed in the system.
+             This method is <see langword="static" />.
+            </summary>
         <returns>
           <see langword="true" /> if the specified feature is present; <see langword="false" /> if the specified feature is not present or if the product containing the feature is not installed.</returns>
         <remarks>
@@ -325,7 +336,10 @@
         <param name="featureClassName">The fully qualified name of the class to query for information about the specified feature. This class must implement the <see cref="T:System.Windows.Forms.IFeatureSupport" /> interface or inherit from a class that implements this interface.</param>
         <param name="featureConstName">The fully qualified name of the feature to look for.</param>
         <param name="minimumVersion">A <see cref="T:System.Version" /> representing the minimum version number of the feature.</param>
-        <summary>Determines whether the specified or newer version of the specified feature is installed in the system. This method is <see langword="static" />.</summary>
+        <summary>
+             Determines whether the specified or newer version of the specified feature is
+             installed in the system. This method is <see langword="static" />.
+            </summary>
         <returns>
           <see langword="true" /> if the feature is present and its version number is greater than or equal to the specified minimum version number; <see langword="false" /> if the feature is not installed or its version number is below the specified minimum number.</returns>
         <remarks>

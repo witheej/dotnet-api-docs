@@ -1,4 +1,4 @@
-﻿<Type Name="PreviewKeyDownEventArgs" FullName="System.Windows.Forms.PreviewKeyDownEventArgs">
+<Type Name="PreviewKeyDownEventArgs" FullName="System.Windows.Forms.PreviewKeyDownEventArgs">
   <TypeSignature Language="C#" Value="public class PreviewKeyDownEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PreviewKeyDownEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PreviewKeyDownEventArgs" />
@@ -15,7 +15,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.Forms.Control.PreviewKeyDown" /> event.</summary>
+    <summary>
+             Provides data for the PreviewKeyDownEvent
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -50,11 +52,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="keyData" Type="System.Windows.Forms.Keys" />
       </Parameters>
@@ -116,7 +113,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the CTRL key was pressed.</summary>
+        <summary>
+             Gets a value indicating whether the CTRL key was pressed.
+            </summary>
         <value>
           <see langword="true" /> if the CTRL key was pressed; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -147,14 +146,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
@@ -194,7 +185,10 @@
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the keyboard code for a <see cref="E:System.Windows.Forms.Control.KeyDown" /> or <see cref="E:System.Windows.Forms.Control.KeyUp" /> event.</summary>
+        <summary>
+             Gets the keyboard code for a <see cref="E:System.Windows.Forms.Control.KeyDown" />
+             or <see cref="E:System.Windows.Forms.Control.KeyUp" /> event.
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.Keys" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -224,16 +218,14 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the key code combined with key modifiers such as the SHIFT, CONTROL, and ALT keys for a <see cref="E:System.Windows.Forms.Control.KeyDown" /> or <see cref="E:System.Windows.Forms.Control.KeyUp" /> event.</summary>
+        <summary>
+             Gets the key data for a <see cref="E:System.Windows.Forms.Control.KeyDown" />
+             or <see cref="E:System.Windows.Forms.Control.KeyUp" /> event.
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.Keys" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -267,7 +259,10 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the keyboard value for a <see cref="E:System.Windows.Forms.Control.KeyDown" /> or <see cref="E:System.Windows.Forms.Control.KeyUp" /> event.</summary>
+        <summary>
+             Gets the keyboard value for a <see cref="E:System.Windows.Forms.Control.KeyDown" />
+             or <see cref="E:System.Windows.Forms.Control.KeyUp" /> event.
+            </summary>
         <value>An <see cref="T:System.Int32" /> representing the keyboard value.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -301,7 +296,11 @@
         <ReturnType>System.Windows.Forms.Keys</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the modifier flags for a <see cref="E:System.Windows.Forms.Control.KeyDown" /> or <see cref="E:System.Windows.Forms.Control.KeyUp" /> event.</summary>
+        <summary>
+             Gets the modifier flags for a <see cref="E:System.Windows.Forms.Control.KeyDown" />
+             or <see cref="E:System.Windows.Forms.Control.KeyUp" /> event.
+             This indicates which modifier keys (CTRL, SHIFT, and/or ALT) were pressed.
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.Keys" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -335,7 +334,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the SHIFT key was pressed.</summary>
+        <summary>
+             Gets a value indicating whether the SHIFT key was pressed.
+            </summary>
         <value>
           <see langword="true" /> if the SHIFT key was pressed; otherwise, <see langword="false" />.</value>
         <remarks>

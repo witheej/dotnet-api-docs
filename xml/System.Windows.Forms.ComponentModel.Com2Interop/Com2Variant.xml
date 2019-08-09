@@ -1,4 +1,4 @@
-﻿<Type Name="Com2Variant" FullName="System.Windows.Forms.ComponentModel.Com2Interop.Com2Variant">
+<Type Name="Com2Variant" FullName="System.Windows.Forms.ComponentModel.Com2Interop.Com2Variant">
   <TypeSignature Language="C#" Value="public class Com2Variant" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit Com2Variant extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ComponentModel.Com2Interop.Com2Variant" />
@@ -16,7 +16,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Facilitates proper recognition of a variant type.</summary>
+    <summary>
+             A class included so we can recognize a variant properly.
+            </summary>
     <remarks>To be added.</remarks>
     <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />, <see cref="F:System.Security.Permissions.SecurityAction.InheritanceDemand" />. Associated state:</permission>
     <forInternalUseOnly />
@@ -35,11 +37,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ComponentModel.Com2Interop.Com2Variant" /> class.</summary>

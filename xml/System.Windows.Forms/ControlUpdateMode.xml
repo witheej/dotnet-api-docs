@@ -1,4 +1,4 @@
-﻿<Type Name="ControlUpdateMode" FullName="System.Windows.Forms.ControlUpdateMode">
+<Type Name="ControlUpdateMode" FullName="System.Windows.Forms.ControlUpdateMode">
   <TypeSignature Language="C#" Value="public enum ControlUpdateMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ControlUpdateMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ControlUpdateMode" />
@@ -14,7 +14,10 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Determines when changes to a data source value get propagated to the corresponding data-bound control property.</summary>
+    <summary>
+             Determines when changes to a data source property get propagated up to
+             the corresponding data-bound control property.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -43,7 +46,11 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The bound control is never updated when a data source value changes. The data source is write-only.</summary>
+        <summary>
+             Control property is never updated. Binding is "write-only" with respect
+             to the data source. To force the control property to be updated, use
+             the Binding.ReadValue method.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="OnPropertyChanged">
@@ -64,7 +71,11 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>The bound control is updated when the data source value changes, or the data source position changes.</summary>
+        <summary>
+             Control property is updated whenever the data source property changes, or
+             the data source position changes.
+             This is the default update mode.
+            </summary>
       </Docs>
     </Member>
   </Members>

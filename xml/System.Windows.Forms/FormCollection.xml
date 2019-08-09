@@ -1,4 +1,4 @@
-﻿<Type Name="FormCollection" FullName="System.Windows.Forms.FormCollection">
+<Type Name="FormCollection" FullName="System.Windows.Forms.FormCollection">
   <TypeSignature Language="C#" Value="public class FormCollection : System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit FormCollection extends System.Collections.ReadOnlyCollectionBase" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.FormCollection" />
@@ -15,7 +15,10 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a collection of <see cref="T:System.Windows.Forms.Form" /> objects.</summary>
+    <summary>
+             This is a read only collection of Forms exposed as a static property of the
+             Application class. This is used to store all the currently loaded forms in an app.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -39,11 +42,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.FormCollection" /> class.</summary>
@@ -80,7 +78,9 @@
       </Parameters>
       <Docs>
         <param name="index">The location of the <see cref="T:System.Windows.Forms.Form" /> within the collection.</param>
-        <summary>Gets or sets an element in the collection by its numeric index.</summary>
+        <summary>
+             Gets a form specified by index.
+            </summary>
         <value>The form at the specified index.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -106,7 +106,10 @@
       </Parameters>
       <Docs>
         <param name="name">The name of the <see cref="T:System.Windows.Forms.Form" />.</param>
-        <summary>Gets or sets an element in the collection by the name of the associated <see cref="T:System.Windows.Forms.Form" /> object.</summary>
+        <summary>
+             Gets a form specified by name, if present, else returns null. If there are multiple
+             forms with matching names, the first form found is returned.
+            </summary>
         <value>The form with the specified name.</value>
         <remarks>To be added.</remarks>
       </Docs>

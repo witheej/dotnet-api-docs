@@ -1,4 +1,4 @@
-﻿<Type Name="SystemParameter" FullName="System.Windows.Forms.SystemParameter">
+<Type Name="SystemParameter" FullName="System.Windows.Forms.SystemParameter">
   <TypeSignature Language="C#" Value="public enum SystemParameter" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed SystemParameter extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.SystemParameter" />
@@ -52,7 +52,9 @@
       </ReturnValue>
       <MemberValue>8</MemberValue>
       <Docs>
-        <summary>Identifies the caret width, in pixels, for edit controls. Use the <see cref="P:System.Windows.Forms.SystemInformation.CaretWidth" /> property to access this system-wide parameter. The corresponding Platform SDK system-wide parameters are SPI_GETCARETWIDTH and SPI_SETCARETWIDTH.</summary>
+        <summary>
+             CaretWidthMetric.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="DropShadow">
@@ -73,7 +75,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Identifies the drop shadow effect. Use the <see cref="P:System.Windows.Forms.SystemInformation.IsDropShadowEnabled" /> property to determine if this effect is enabled. The corresponding Platform SDK system-wide parameters are SPI_GETDROPSHADOW and SPI_SETDROPSHADOW.</summary>
+        <summary>
+             DropShadow.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="FlatMenu">
@@ -94,7 +98,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Identifies the flat menu appearance feature. Use the <see cref="P:System.Windows.Forms.SystemInformation.IsFlatMenuEnabled" /> property to determine if this feature is enabled. The corresponding Platform SDK system-wide parameters are SPI_GETFLATMENU and SPI_SETFLATMENU.</summary>
+        <summary>
+             Flat Menu.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="FontSmoothingContrastMetric">
@@ -115,7 +121,9 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Identifies the contrast value used in ClearType font smoothing. Use the <see cref="P:System.Windows.Forms.SystemInformation.FontSmoothingContrast" /> property to access this system-wide parameter. The corresponding Platform SDK system-wide parameters are SPI_GETFONTSMOOTHINGCONTRAST and SPI_SETFONTSMOOTHINGCONTRAST.</summary>
+        <summary>
+             FontSmoothingContrastMetric.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="FontSmoothingTypeMetric">
@@ -136,7 +144,9 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>Identifies the type of font smoothing. Use the <see cref="P:System.Windows.Forms.SystemInformation.FontSmoothingType" /> property to access this system-wide parameter. The corresponding Platform SDK system-wide parameters are SPI_GETFONTSMOOTHINGTYPE and SPI_SETFONTSMOOTHINGTYPE.</summary>
+        <summary>
+             FontSmoothingTypeMetric.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="HorizontalFocusThicknessMetric">
@@ -157,7 +167,9 @@
       </ReturnValue>
       <MemberValue>10</MemberValue>
       <Docs>
-        <summary>Identifies the thickness of the left and right edges of the system focus rectangle. Use the <see cref="P:System.Windows.Forms.SystemInformation.HorizontalFocusThickness" /> property to access this system-wide parameter. The corresponding Platform SDK system-wide parameter is SM_CXFOCUSBORDER.</summary>
+        <summary>
+             HorizontalFocusThicknessMetric.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="MenuFadeEnabled">
@@ -178,7 +190,9 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>Identifies the menu fade animation feature. Use the <see cref="P:System.Windows.Forms.SystemInformation.IsMenuFadeEnabled" /> property to determine if this feature is enabled. The corresponding Platform SDK system-wide parameters are SPI_GETMENUFADE and SPI_SETMENUFADE.</summary>
+        <summary>
+             MenuFadeEnabled.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="SelectionFade">
@@ -199,7 +213,9 @@
       </ReturnValue>
       <MemberValue>5</MemberValue>
       <Docs>
-        <summary>Identifies the selection fade effect. Use the <see cref="P:System.Windows.Forms.SystemInformation.IsSelectionFadeEnabled" /> property to determine if this feature is enabled. The corresponding Platform SDK system-wide parameters are SPI_GETSELECTIONFADE and SPI_SETSELECTIONFADE.</summary>
+        <summary>
+             SelectionFade.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="ToolTipAnimationMetric">
@@ -220,7 +236,9 @@
       </ReturnValue>
       <MemberValue>6</MemberValue>
       <Docs>
-        <summary>Identifies the ToolTip animation feature. Use the <see cref="P:System.Windows.Forms.SystemInformation.IsToolTipAnimationEnabled" /> property to determine if this feature is enabled. The corresponding Platform SDK system-wide parameters are SPI_GETTOOLTIPANIMATION and SPI_SETTOOLTIPANIMATION.</summary>
+        <summary>
+             ToolTipAnimationMetric.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="UIEffects">
@@ -241,7 +259,9 @@
       </ReturnValue>
       <MemberValue>7</MemberValue>
       <Docs>
-        <summary>Identifies the user interface (UI) effects feature. Use the <see cref="P:System.Windows.Forms.SystemInformation.UIEffectsEnabled" /> property to determine if this feature is enabled. The corresponding Platform SDK system-wide parameters are SPI_GETUIEFFECTS and SPI_SETUIEFFECTS.</summary>
+        <summary>
+             UIEffects.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="VerticalFocusThicknessMetric">
@@ -262,7 +282,9 @@
       </ReturnValue>
       <MemberValue>9</MemberValue>
       <Docs>
-        <summary>Identifies the thickness of the top and bottom edges of the system focus rectangle. Use the <see cref="P:System.Windows.Forms.SystemInformation.VerticalFocusThickness" /> property to access this system-wide parameter. The corresponding Platform SDK system-wide parameter is SM_CYFOCUSBORDER.</summary>
+        <summary>
+             VerticalFocusThicknessMetric.
+            </summary>
       </Docs>
     </Member>
   </Members>

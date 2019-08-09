@@ -1,4 +1,4 @@
-﻿<Type Name="WebBrowserReadyState" FullName="System.Windows.Forms.WebBrowserReadyState">
+<Type Name="WebBrowserReadyState" FullName="System.Windows.Forms.WebBrowserReadyState">
   <TypeSignature Language="C#" Value="public enum WebBrowserReadyState" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed WebBrowserReadyState extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.WebBrowserReadyState" />
@@ -14,7 +14,10 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies constants that define the state of the <see cref="T:System.Windows.Forms.WebBrowser" /> control.</summary>
+    <summary>
+             Specifies the ReadyState of the WebBrowser control.
+             Returned by the <see cref="P:System.Windows.Forms.WebBrowser.ReadyState" /> property.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

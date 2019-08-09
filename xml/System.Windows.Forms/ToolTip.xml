@@ -1,4 +1,4 @@
-﻿<Type Name="ToolTip" FullName="System.Windows.Forms.ToolTip">
+<Type Name="ToolTip" FullName="System.Windows.Forms.ToolTip">
   <TypeSignature Language="C#" Value="public class ToolTip : System.ComponentModel.Component, System.ComponentModel.IExtenderProvider" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolTip extends System.ComponentModel.Component implements class System.ComponentModel.IExtenderProvider" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolTip" />
@@ -31,7 +31,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a small rectangular pop-up window that displays a brief description of a control's purpose when the user rests the pointer on the control.</summary>
+    <summary>
+             Provides a small pop-up window containing a line of text that describes the purpose of a
+             tool or control (usually represented as a graphical object) in a program.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -97,7 +100,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolTip" /> without a specified container.</summary>
+        <summary>
+             Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolTip" /> class in its default state.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -138,7 +143,9 @@
       </Parameters>
       <Docs>
         <param name="cont">An <see cref="T:System.ComponentModel.IContainer" /> that represents the container of the <see cref="T:System.Windows.Forms.ToolTip" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolTip" /> class with a specified container.</summary>
+        <summary>
+             Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolTip" /> class, given the container.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -168,15 +175,14 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the ToolTip is currently active.</summary>
+        <summary>
+             Gets or sets a value indicating whether the <see cref="T:System.Windows.Forms.ToolTip" /> control is currently active.
+            </summary>
         <value>
           <see langword="true" /> if the ToolTip is currently active; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
@@ -219,7 +225,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the automatic delay for the ToolTip.</summary>
+        <summary>
+             Gets or sets the time (in milliseconds) that passes before the <see cref="T:System.Windows.Forms.ToolTip" /> appears.
+            </summary>
         <value>The automatic delay, in milliseconds. The default is 500.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -267,7 +275,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the period of time the ToolTip remains visible if the pointer is stationary on a control with specified ToolTip text.</summary>
+        <summary>
+             Gets or sets the initial delay for the <see cref="T:System.Windows.Forms.ToolTip" /> control.
+            </summary>
         <value>The period of time, in milliseconds, that the <see cref="T:System.Windows.Forms.ToolTip" /> remains visible when the pointer is stationary on a control. The default value is 5000.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -314,15 +324,14 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "Info")</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the background color for the ToolTip.</summary>
+        <summary>
+             Gets or sets the BackColor for the <see cref="T:System.Windows.Forms.ToolTip" /> control.
+            </summary>
         <value>The background <see cref="T:System.Drawing.Color" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -365,7 +374,9 @@
       </Parameters>
       <Docs>
         <param name="target">The target object to add an extender property to.</param>
-        <summary>Returns <see langword="true" /> if the ToolTip can offer an extender property to the specified target component.</summary>
+        <summary>
+             Returns true if the tooltip can offer an extender property to the specified target component.
+            </summary>
         <returns>
           <see langword="true" /> if the <see cref="T:System.Windows.Forms.ToolTip" /> class can offer one or more extender properties; otherwise, <see langword="false" />.</returns>
         <remarks>
@@ -396,7 +407,9 @@
         <ReturnType>System.Windows.Forms.CreateParams</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the creation parameters for the ToolTip window.</summary>
+        <summary>
+             The CreateParams to create the window.
+            </summary>
         <value>A <see cref="T:System.Windows.Forms.CreateParams" /> containing the information needed to create the ToolTip.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -437,7 +450,9 @@
       <Docs>
         <param name="disposing">
           <see langword="true" /> to release both managed and unmanaged resources; <see langword="false" /> to release only unmanaged resources.</param>
-        <summary>Releases the unmanaged resources used by the <see cref="T:System.ComponentModel.Component" /> and optionally releases the managed resources.</summary>
+        <summary>
+             Disposes of the <see cref="T:System.Windows.Forms.ToolTip" /> component.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.ComponentModel.Component.Dispose(System.Boolean)" />
       </Docs>
@@ -459,7 +474,9 @@
         <ReturnType>System.Windows.Forms.DrawToolTipEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the ToolTip is drawn and the <see cref="P:System.Windows.Forms.ToolTip.OwnerDraw" /> property is set to <see langword="true" /> and the <see cref="P:System.Windows.Forms.ToolTip.IsBalloon" /> property is <see langword="false" />.</summary>
+        <summary>
+             Fires in OwnerDraw mode when the tooltip needs to be drawn.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -509,7 +526,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Releases the unmanaged resources and performs other cleanup operations before the <see cref="T:System.Windows.Forms.Cursor" /> is reclaimed by the garbage collector.</summary>
+        <summary>
+             Finalizes garbage collection.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -540,15 +559,14 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.DefaultValue(typeof(System.Drawing.Color), "InfoText")</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the foreground color for the ToolTip.</summary>
+        <summary>
+             Gets or sets the ForeColor for the <see cref="T:System.Windows.Forms.ToolTip" /> control.
+            </summary>
         <value>The foreground <see cref="T:System.Drawing.Color" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -587,8 +605,8 @@
         <Attribute>
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5">
-          <AttributeName>System.ComponentModel.Editor("System.ComponentModel.Design.MultilineStringEditor, System.Design, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a", typeof(System.Drawing.Design.UITypeEditor))</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Description("ToolTipToolTipDescr")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -599,7 +617,9 @@
       </Parameters>
       <Docs>
         <param name="control">The <see cref="T:System.Windows.Forms.Control" /> for which to retrieve the <see cref="T:System.Windows.Forms.ToolTip" /> text.</param>
-        <summary>Retrieves the ToolTip text associated with the specified control.</summary>
+        <summary>
+             Retrieves the <see cref="T:System.Windows.Forms.ToolTip" /> text associated with the specified control.
+            </summary>
         <returns>A <see cref="T:System.String" /> containing the ToolTip text for the specified control.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -633,11 +653,13 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="win" Type="System.Windows.Forms.IWin32Window" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="win" Type="System.Windows.Forms.IWin32Window" />
       </Parameters>
       <Docs>
         <param name="win">The <see cref="T:System.Windows.Forms.IWin32Window" /> of the associated window or control that the ToolTip is associated with.</param>
-        <summary>Hides the specified ToolTip window.</summary>
+        <summary>
+             Hides <see cref="T:System.Windows.Forms.ToolTip" /> with the specified control.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -678,12 +700,17 @@
         <Attribute>
           <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
         </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Description("ToolTipInitialDelayDescr")</AttributeName>
+        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the time that passes before the ToolTip appears.</summary>
+        <summary>
+             Gets or sets the initial delay for the <see cref="T:System.Windows.Forms.ToolTip" /> control.
+            </summary>
         <value>The period of time, in milliseconds, that the pointer must remain stationary on a control before the ToolTip window is displayed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -730,15 +757,14 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the ToolTip should use a balloon window.</summary>
+        <summary>
+             Gets or sets the IsBalloon for the <see cref="T:System.Windows.Forms.ToolTip" /> control.
+            </summary>
         <value>
           <see langword="true" /> if a balloon window should be used; otherwise, <see langword="false" /> if a standard rectangular window should be used. The default is <see langword="false" />.</value>
         <remarks>
@@ -772,18 +798,17 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Description("ToolTipOwnerDrawDescr")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the ToolTip is drawn by the operating system or by code that you provide.</summary>
+        <summary>
+             Indicates whether the ToolTip will be drawn by the system or the user.
+            </summary>
         <value>
           <see langword="true" /> if the <see cref="T:System.Windows.Forms.ToolTip" /> is drawn by code that you provide; <see langword="false" /> if the <see cref="T:System.Windows.Forms.ToolTip" /> is drawn by the operating system. The default is <see langword="false" />.</value>
         <remarks>
@@ -830,7 +855,9 @@
         <ReturnType>System.Windows.Forms.PopupEventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs before a ToolTip is initially displayed. This is the default event for the <see cref="T:System.Windows.Forms.ToolTip" /> class.</summary>
+        <summary>
+             Fires when the tooltip is just about to be shown.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -878,7 +905,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Removes all ToolTip text currently associated with the ToolTip component.</summary>
+        <summary>
+             Removes all of the tooltips currently associated with the <see cref="T:System.Windows.Forms.ToolTip" /> control.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -910,12 +939,18 @@
         <Attribute>
           <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
         </Attribute>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Description("ToolTipReshowDelayDescr")</AttributeName>
+        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the length of time that must transpire before subsequent ToolTip windows appear as the pointer moves from one control to another.</summary>
+        <summary>
+             Gets or sets the length of time (in milliseconds) that it takes subsequent ToolTip
+             instances to appear as the mouse pointer moves from one ToolTip region to another.
+            </summary>
         <value>The length of time, in milliseconds, that it takes subsequent ToolTip windows to appear.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -966,7 +1001,9 @@
       <Docs>
         <param name="control">The <see cref="T:System.Windows.Forms.Control" /> to associate the ToolTip text with.</param>
         <param name="caption">The ToolTip text to display when the pointer is on the control.</param>
-        <summary>Associates ToolTip text with the specified control.</summary>
+        <summary>
+             Associates <see cref="T:System.Windows.Forms.ToolTip" /> text with the specified control.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1019,13 +1056,15 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="text" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="window" Type="System.Windows.Forms.IWin32Window" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="window" Type="System.Windows.Forms.IWin32Window" />
       </Parameters>
       <Docs>
         <param name="text">A <see cref="T:System.String" /> containing the new ToolTip text.</param>
         <param name="window">The <see cref="T:System.Windows.Forms.Control" /> to display the ToolTip for.</param>
-        <summary>Sets the ToolTip text associated with the specified control, and displays the ToolTip modally.</summary>
+        <summary>
+             Associates <see cref="T:System.Windows.Forms.ToolTip" /> with the specified control and displays it.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1065,15 +1104,17 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="text" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="window" Type="System.Windows.Forms.IWin32Window" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="point" Type="System.Drawing.Point" Index="2" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="window" Type="System.Windows.Forms.IWin32Window" />
+        <Parameter Name="point" Type="System.Drawing.Point" />
       </Parameters>
       <Docs>
         <param name="text">A <see cref="T:System.String" /> containing the new ToolTip text.</param>
         <param name="window">The <see cref="T:System.Windows.Forms.Control" /> to display the ToolTip for.</param>
         <param name="point">A <see cref="T:System.Drawing.Point" /> containing the offset, in pixels, relative to the upper-left corner of the associated control window, to display the ToolTip.</param>
-        <summary>Sets the ToolTip text associated with the specified control, and then displays the ToolTip modally at the specified relative position.</summary>
+        <summary>
+             Associates <see cref="T:System.Windows.Forms.ToolTip" /> with the specified control and displays it.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1114,15 +1155,18 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="text" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="window" Type="System.Windows.Forms.IWin32Window" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="duration" Type="System.Int32" Index="2" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="window" Type="System.Windows.Forms.IWin32Window" />
+        <Parameter Name="duration" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="text">A <see cref="T:System.String" /> containing the new ToolTip text.</param>
         <param name="window">The <see cref="T:System.Windows.Forms.Control" /> to display the ToolTip for.</param>
         <param name="duration">An <see cref="T:System.Int32" /> containing the duration, in milliseconds, to display the ToolTip.</param>
-        <summary>Sets the ToolTip text associated with the specified control, and then displays the ToolTip for the specified duration.</summary>
+        <summary>
+             Associates <see cref="T:System.Windows.Forms.ToolTip" /> with the specified control and displays it for the
+             specified duration.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1164,17 +1208,19 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="text" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="window" Type="System.Windows.Forms.IWin32Window" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="point" Type="System.Drawing.Point" Index="2" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="duration" Type="System.Int32" Index="3" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="window" Type="System.Windows.Forms.IWin32Window" />
+        <Parameter Name="point" Type="System.Drawing.Point" />
+        <Parameter Name="duration" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="text">A <see cref="T:System.String" /> containing the new ToolTip text.</param>
         <param name="window">The <see cref="T:System.Windows.Forms.Control" /> to display the ToolTip for.</param>
         <param name="point">A <see cref="T:System.Drawing.Point" /> containing the offset, in pixels, relative to the upper-left corner of the associated control window, to display the ToolTip.</param>
         <param name="duration">An <see cref="T:System.Int32" /> containing the duration, in milliseconds, to display the ToolTip.</param>
-        <summary>Sets the ToolTip text associated with the specified control, and then displays the ToolTip for the specified duration at the specified relative position.</summary>
+        <summary>
+             Associates <see cref="T:System.Windows.Forms.ToolTip" /> with the specified control and displays it.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1217,17 +1263,19 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="text" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="window" Type="System.Windows.Forms.IWin32Window" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="x" Type="System.Int32" Index="2" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="y" Type="System.Int32" Index="3" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="window" Type="System.Windows.Forms.IWin32Window" />
+        <Parameter Name="x" Type="System.Int32" />
+        <Parameter Name="y" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="text">A <see cref="T:System.String" /> containing the new ToolTip text.</param>
         <param name="window">The <see cref="T:System.Windows.Forms.Control" /> to display the ToolTip for.</param>
         <param name="x">The horizontal offset, in pixels, relative to the upper-left corner of the associated control window, to display the ToolTip.</param>
         <param name="y">The vertical offset, in pixels, relative to the upper-left corner of the associated control window, to display the ToolTip.</param>
-        <summary>Sets the ToolTip text associated with the specified control, and then displays the ToolTip modally at the specified relative position.</summary>
+        <summary>
+             Associates <see cref="T:System.Windows.Forms.ToolTip" /> with the specified control and displays it.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1267,11 +1315,11 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="text" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="window" Type="System.Windows.Forms.IWin32Window" Index="1" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="x" Type="System.Int32" Index="2" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="y" Type="System.Int32" Index="3" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="duration" Type="System.Int32" Index="4" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="text" Type="System.String" />
+        <Parameter Name="window" Type="System.Windows.Forms.IWin32Window" />
+        <Parameter Name="x" Type="System.Int32" />
+        <Parameter Name="y" Type="System.Int32" />
+        <Parameter Name="duration" Type="System.Int32" />
       </Parameters>
       <Docs>
         <param name="text">A <see cref="T:System.String" /> containing the new ToolTip text.</param>
@@ -1279,7 +1327,9 @@
         <param name="x">The horizontal offset, in pixels, relative to the upper-left corner of the associated control window, to display the ToolTip.</param>
         <param name="y">The vertical offset, in pixels, relative to the upper-left corner of the associated control window, to display the ToolTip.</param>
         <param name="duration">An <see cref="T:System.Int32" /> containing the duration, in milliseconds, to display the ToolTip.</param>
-        <summary>Sets the ToolTip text associated with the specified control, and then displays the ToolTip for the specified duration at the specified relative position.</summary>
+        <summary>
+             Associates <see cref="T:System.Windows.Forms.ToolTip" /> with the specified control and displays it.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1323,15 +1373,18 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Description("ToolTipShowAlwaysDescr")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether a ToolTip window is displayed, even when its parent control is not active.</summary>
+        <summary>
+             Gets or sets a value indicating whether the <see cref="T:System.Windows.Forms.ToolTip" /> appears even when its
+             parent control is not active.
+            </summary>
         <value>
           <see langword="true" /> if the ToolTip is always displayed; otherwise, <see langword="false" />. The default is <see langword="false" />.</value>
         <remarks>
@@ -1374,7 +1427,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Stops the timer that hides displayed ToolTips.</summary>
+        <summary>
+             Stops the timer for hiding Positioned ToolTips
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1409,15 +1464,14 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that determines how ampersand (&amp;) characters are treated.</summary>
+        <summary>
+             When set to true, any ampersands in the Text property are not displayed.
+            </summary>
         <value>
           <see langword="true" /> if ampersand characters are stripped from the ToolTip text; otherwise, <see langword="false" />. The default is false.</value>
         <remarks>
@@ -1458,11 +1512,8 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ComponentModel.StringConverter))</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Description("ControlTagDescr")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1499,15 +1550,17 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Description("ToolTipToolTipIconDescr")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolTipIcon</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that defines the type of icon to be displayed alongside the ToolTip text.</summary>
+        <summary>
+             Gets or sets an Icon on the ToolTip.
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.ToolTipIcon" /> enumerated values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1543,15 +1596,17 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.DefaultValue("")</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
+        <Attribute>
+          <AttributeName>System.ComponentModel.Description("ToolTipTitleDescr")</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a title for the ToolTip window.</summary>
+        <summary>
+             Gets or sets the title of the ToolTip.
+            </summary>
         <value>A <see cref="T:System.String" /> containing the window title.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1589,7 +1644,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a string representation for this control.</summary>
+        <summary>
+             Returns a string representation for this control.
+            </summary>
         <returns>A <see cref="T:System.String" /> containing a description of the <see cref="T:System.Windows.Forms.ToolTip" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1624,15 +1681,14 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value determining whether an animation effect should be used when displaying the ToolTip.</summary>
+        <summary>
+             When set to true, animations are used when tooltip is shown or hidden.
+            </summary>
         <value>
           <see langword="true" /> if window animation should be used; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
@@ -1667,15 +1723,14 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value determining whether a fade effect should be used when displaying the ToolTip.</summary>
+        <summary>
+             When set to true, a fade effect is used when tooltips are shown or hidden.
+            </summary>
         <value>
           <see langword="true" /> if window fading should be used; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>

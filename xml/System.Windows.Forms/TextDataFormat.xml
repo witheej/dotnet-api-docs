@@ -1,4 +1,4 @@
-﻿<Type Name="TextDataFormat" FullName="System.Windows.Forms.TextDataFormat">
+<Type Name="TextDataFormat" FullName="System.Windows.Forms.TextDataFormat">
   <TypeSignature Language="C#" Value="public enum TextDataFormat" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TextDataFormat extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TextDataFormat" />
@@ -14,7 +14,10 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the formats used with text-related methods of the <see cref="T:System.Windows.Forms.Clipboard" /> and <see cref="T:System.Windows.Forms.DataObject" /> classes.</summary>
+    <summary>
+             Specifies the formats that can be used with Clipboard.GetText and
+             Clipboard.SetText methods
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

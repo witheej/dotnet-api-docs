@@ -1,4 +1,4 @@
-﻿<Type Name="ToolStripItemAlignment" FullName="System.Windows.Forms.ToolStripItemAlignment">
+<Type Name="ToolStripItemAlignment" FullName="System.Windows.Forms.ToolStripItemAlignment">
   <TypeSignature Language="C#" Value="public enum ToolStripItemAlignment" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ToolStripItemAlignment extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripItemAlignment" />
@@ -14,7 +14,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Determines the alignment of a <see cref="T:System.Windows.Forms.ToolStripItem" /> in a <see cref="T:System.Windows.Forms.ToolStrip" />.</summary>
+    <summary>
+             This enum is used to determine alignment of the ToolStripItem on the ToolStrip.
+            </summary>
     <remarks>To be added.</remarks>
     <altmember cref="T:System.Windows.Forms.RightToLeft" />
     <altmember cref="P:System.Windows.Forms.ToolStripItem.Alignment" />

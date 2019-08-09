@@ -1,4 +1,4 @@
-﻿<Type Name="ShortcutKeysEditor" FullName="System.Windows.Forms.Design.ShortcutKeysEditor">
+<Type Name="ShortcutKeysEditor" FullName="System.Windows.Forms.Design.ShortcutKeysEditor">
   <TypeSignature Language="C#" Value="public class ShortcutKeysEditor : System.Drawing.Design.UITypeEditor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ShortcutKeysEditor extends System.Drawing.Design.UITypeEditor" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.ShortcutKeysEditor" />
@@ -19,15 +19,14 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8">
-      <AttributeName>System.Security.SecurityCritical</AttributeName>
-    </Attribute>
-    <Attribute FrameworkAlternate="netcore-3.0">
+    <Attribute>
       <AttributeName>System.CLSCompliant(false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides an editor for picking shortcut keys.</summary>
+    <summary>
+             Provides an editor for picking shortcut keys.
+            </summary>
     <remarks>To be added.</remarks>
     <permission cref="T:System.Security.NamedPermissionSet">for full access to system resources. Demand values: <see cref="F:System.Security.Permissions.SecurityAction.LinkDemand" />. Associated state:</permission>
     <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
@@ -49,11 +48,6 @@
         <AssemblyName>System.Windows.Forms.Design.Editors</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.ShortcutKeysEditor" /> class.</summary>
@@ -89,7 +83,9 @@
         <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that can be used to gain additional context information.</param>
         <param name="provider">An <see cref="T:System.IServiceProvider" /> that this editor can use to obtain services.</param>
         <param name="value">The <see cref="T:System.Object" /> to edit.</param>
-        <summary>Edits the given object value using the editor style provided by the <see cref="M:System.Windows.Forms.Design.ShortcutKeysEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)" /> method.</summary>
+        <summary>
+             Edits the given object value using the editor style provided by ShortcutKeysEditor.GetEditStyle.
+            </summary>
         <returns>The new value of the <see cref="T:System.Object" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -119,7 +115,9 @@
       </Parameters>
       <Docs>
         <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that can be used to gain additional context information.</param>
-        <summary>Gets the editor style used by the <see cref="Overload:System.Windows.Forms.Design.ShortcutKeysEditor.EditValue" /> method.</summary>
+        <summary>
+             Gets the editing style of the Edit method.
+            </summary>
         <returns>A <see cref="T:System.Drawing.Design.UITypeEditorEditStyle" /> value that indicates the style of editor used by the <see cref="Overload:System.Windows.Forms.Design.ShortcutKeysEditor.EditValue" /> method.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

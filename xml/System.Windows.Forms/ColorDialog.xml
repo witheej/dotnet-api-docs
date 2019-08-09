@@ -1,4 +1,4 @@
-﻿<Type Name="ColorDialog" FullName="System.Windows.Forms.ColorDialog">
+<Type Name="ColorDialog" FullName="System.Windows.Forms.ColorDialog">
   <TypeSignature Language="C#" Value="public class ColorDialog : System.Windows.Forms.CommonDialog" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ColorDialog extends System.Windows.Forms.CommonDialog" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ColorDialog" />
@@ -21,7 +21,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a common dialog box that displays available colors along with controls that enable the user to define custom colors.</summary>
+    <summary>
+             Represents a common dialog box that displays available colors along with
+             controls that allow the user to define custom colors.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -59,7 +62,10 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ColorDialog" /> class.</summary>
+        <summary>
+             Initializes a new instance of the <see cref="T:System.Windows.Forms.ColorDialog" />
+             class.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -105,7 +111,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the user can use the dialog box to define custom colors.</summary>
+        <summary>
+             Gets or sets a value indicating whether the user can use the dialog box
+             to define custom colors.
+            </summary>
         <value>
           <see langword="true" /> if the user can define custom colors; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
@@ -146,18 +155,15 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the dialog box displays all available colors in the set of basic colors.</summary>
+        <summary>
+             Gets or sets a value indicating whether the dialog box displays all available colors in
+             the set of basic colors.
+            </summary>
         <value>
           <see langword="true" /> if the dialog box displays all available colors in the set of basic colors; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
@@ -189,16 +195,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the color selected by the user.</summary>
+        <summary>
+             Gets or sets the color selected by the user.
+            </summary>
         <value>The color selected by the user. If a color is not selected, the default value is black.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -246,7 +249,10 @@
         <ReturnType>System.Int32[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the set of custom colors shown in the dialog box.</summary>
+        <summary>
+             Gets or sets the set of
+             custom colors shown in the dialog box.
+            </summary>
         <value>A set of custom colors shown by the dialog box. The default value is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -288,18 +294,15 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the controls used to create custom colors are visible when the dialog box is opened</summary>
+        <summary>
+             Gets or sets a value indicating whether the controls used to create custom
+             colors are visible when the dialog box is opened
+            </summary>
         <value>
           <see langword="true" /> if the custom color controls are available when the dialog box is opened; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
@@ -334,7 +337,9 @@
         <ReturnType>System.IntPtr</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the underlying window instance handle (HINSTANCE).</summary>
+        <summary>
+             Our HINSTANCE from Windows.
+            </summary>
         <value>An <see cref="T:System.IntPtr" /> that contains the HINSTANCE value of the window handle.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -365,16 +370,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets values to initialize the <see cref="T:System.Windows.Forms.ColorDialog" />.</summary>
+        <summary>
+             Returns our CHOOSECOLOR options.
+            </summary>
         <value>A bitwise combination of internal values that initializes the <see cref="T:System.Windows.Forms.ColorDialog" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -405,7 +407,12 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Resets all options to their default values, the last selected color to black, and the custom colors to their default values.</summary>
+        <summary>
+             Resets
+             all options to their
+             default values, the last selected color to black, and the custom
+             colors to their default values.
+            </summary>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.Windows.Forms.ColorDialog" />
       </Docs>
@@ -457,18 +464,15 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether a Help button appears in the color dialog box.</summary>
+        <summary>
+             Gets or sets a value indicating whether a Help button appears
+             in the color dialog box.
+            </summary>
         <value>
           <see langword="true" /> if the Help button is shown in the dialog box; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
@@ -503,18 +507,17 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the dialog box will restrict users to selecting solid colors only.</summary>
+        <summary>
+             Gets
+             or sets a value indicating
+             whether the dialog
+             box will restrict users to selecting solid colors only.
+            </summary>
         <value>
           <see langword="true" /> if users can select only solid colors; otherwise, <see langword="false" />. The default value is <see langword="false" />.</value>
         <remarks>
@@ -555,7 +558,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns a string that represents the <see cref="T:System.Windows.Forms.ColorDialog" />.</summary>
+        <summary>
+             Provides a string version of this object.
+            </summary>
         <returns>A <see cref="T:System.String" /> that represents the current <see cref="T:System.Windows.Forms.ColorDialog" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

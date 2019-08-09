@@ -1,4 +1,4 @@
-﻿<Type Name="DataGridViewSelectedColumnCollection" FullName="System.Windows.Forms.DataGridViewSelectedColumnCollection">
+<Type Name="DataGridViewSelectedColumnCollection" FullName="System.Windows.Forms.DataGridViewSelectedColumnCollection">
   <TypeSignature Language="C#" Value="public class DataGridViewSelectedColumnCollection : System.Windows.Forms.BaseCollection, System.Collections.IList" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewSelectedColumnCollection extends System.Windows.Forms.BaseCollection implements class System.Collections.ICollection, class System.Collections.IEnumerable, class System.Collections.IList" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewSelectedColumnCollection" />
@@ -66,7 +66,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -109,7 +109,9 @@
       </Parameters>
       <Docs>
         <param name="dataGridViewColumn">A <see cref="T:System.Windows.Forms.DataGridViewColumn" /> to locate in the <see cref="T:System.Windows.Forms.DataGridViewSelectedColumnCollection" />.</param>
-        <summary>Determines whether the specified column is contained in the collection.</summary>
+        <summary>
+             Checks to see if a DataGridViewCell is contained in this collection.
+            </summary>
         <returns>
           <see langword="true" /> if the <paramref name="dataGridViewColumn" /> parameter is in the collection; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -171,7 +173,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -246,11 +248,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Collections.ArrayList</ReturnType>
       </ReturnValue>

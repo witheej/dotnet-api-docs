@@ -1,4 +1,4 @@
-﻿<Type Name="ToolboxComponentsCreatingEventHandler" FullName="System.Drawing.Design.ToolboxComponentsCreatingEventHandler">
+<Type Name="ToolboxComponentsCreatingEventHandler" FullName="System.Drawing.Design.ToolboxComponentsCreatingEventHandler">
   <TypeSignature Language="C#" Value="public delegate void ToolboxComponentsCreatingEventHandler(object sender, ToolboxComponentsCreatingEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ToolboxComponentsCreatingEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Design.ToolboxComponentsCreatingEventHandler" />
@@ -28,7 +28,9 @@
   <Docs>
     <param name="sender">The source of the event.</param>
     <param name="e">A <see cref="T:System.Drawing.Design.ToolboxComponentsCreatingEventArgs" /> that provides data for the event.</param>
-    <summary>Represents the method that handles the <see cref="E:System.Drawing.Design.ToolboxItem.ComponentsCreating" /> event.</summary>
+    <summary>
+             Represents a method that will handle the <see cref="E:System.Drawing.Design.ToolboxItem.ComponentsCreating" /> event.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

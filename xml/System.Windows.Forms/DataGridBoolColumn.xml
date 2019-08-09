@@ -1,4 +1,4 @@
-﻿<Type Name="DataGridBoolColumn" FullName="System.Windows.Forms.DataGridBoolColumn">
+<Type Name="DataGridBoolColumn" FullName="System.Windows.Forms.DataGridBoolColumn">
   <TypeSignature Language="C#" Value="public class DataGridBoolColumn : System.Windows.Forms.DataGridColumnStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridBoolColumn extends System.Windows.Forms.DataGridColumnStyle" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridBoolColumn" />
@@ -16,7 +16,11 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Specifies a column in which each cell contains a check box for representing a Boolean value.</summary>
+    <summary>
+             Specifies a column in
+             which each cell contains a check box for representing
+             a boolean value.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -68,7 +72,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridBoolColumn" /> class.</summary>
+        <summary>
+             Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridBoolColumn" /> class.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -111,7 +117,9 @@
       </Parameters>
       <Docs>
         <param name="prop">The <see cref="T:System.ComponentModel.PropertyDescriptor" /> associated with the column.</param>
-        <summary>Initializes a new instance of a <see cref="T:System.Windows.Forms.DataGridBoolColumn" /> with the specified <see cref="T:System.ComponentModel.PropertyDescriptor" />.</summary>
+        <summary>
+             Initializes a new instance of a <see cref="T:System.Windows.Forms.DataGridBoolColumn" /> with the specified <see cref="T:System.Data.DataColumn" />.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -192,7 +200,9 @@
       </Parameters>
       <Docs>
         <param name="rowNum">The number of the row in which an operation is being interrupted.</param>
-        <summary>Initiates a request to interrupt an edit procedure.</summary>
+        <summary>
+             Initiates a request to interrupt an edit procedure.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -214,15 +224,14 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether null values are allowed.</summary>
+        <summary>
+             Gets or sets a value indicating whether null values are allowed.
+            </summary>
         <value>
           <see langword="true" /> if null values are allowed, otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
@@ -304,7 +313,9 @@
       <Docs>
         <param name="dataSource">The <see cref="T:System.Data.DataView" /> of the edited column.</param>
         <param name="rowNum">The number of the edited row.</param>
-        <summary>Initiates a request to complete an editing procedure.</summary>
+        <summary>
+             Initiates a request to complete an editing procedure.
+            </summary>
         <returns>
           <see langword="true" /> if the editing procedure committed successfully; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -337,10 +348,10 @@
     <Member MemberName="Edit">
       <MemberSignature Language="C#" Value="protected internal override void Edit (System.Windows.Forms.CurrencyManager source, int rowNum, System.Drawing.Rectangle bounds, bool readOnly, string instantText, bool cellIsVisible);" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Edit(class System.Windows.Forms.CurrencyManager source, int32 rowNum, valuetype System.Drawing.Rectangle bounds, bool readOnly, string instantText, bool cellIsVisible) cil managed" FrameworkAlternate="netframework-1.1" />
-      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridBoolColumn.Edit(System.Windows.Forms.CurrencyManager,System.Int32,System.Drawing.Rectangle,System.Boolean,System.String,System.Boolean)" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.DataGridBoolColumn.Edit(System.Windows.Forms.CurrencyManager,System.Int32,System.Drawing.Rectangle,System.Boolean,System.String,System.Boolean)" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Edit (source As CurrencyManager, rowNum As Integer, bounds As Rectangle, readOnly As Boolean, instantText As String, cellIsVisible As Boolean)" FrameworkAlternate="netframework-1.1" />
       <MemberSignature Language="C++ CLI" Value="protected public:&#xA; override void Edit(System::Windows::Forms::CurrencyManager ^ source, int rowNum, System::Drawing::Rectangle bounds, bool readOnly, System::String ^ instantText, bool cellIsVisible);" FrameworkAlternate="netframework-1.1" />
-      <MemberSignature Language="F#" Value="override this.Edit : System.Windows.Forms.CurrencyManager * int * System.Drawing.Rectangle * bool * string * bool -&gt; unit" Usage="dataGridBoolColumn.Edit (source, rowNum, bounds, readOnly, instantText, cellIsVisible)" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+      <MemberSignature Language="F#" Value="override this.Edit : System.Windows.Forms.CurrencyManager * int * System.Drawing.Rectangle * bool * string * bool -&gt; unit" Usage="dataGridBoolColumn.Edit (source, rowNum, bounds, readOnly, instantText, cellIsVisible)" FrameworkAlternate="netframework-1.1;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       <MemberSignature Language="C#" Value="protected internal override void Edit (System.Windows.Forms.CurrencyManager source, int rowNum, System.Drawing.Rectangle bounds, bool readOnly, string displayText, bool cellIsVisible);" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig virtual instance void Edit(class System.Windows.Forms.CurrencyManager source, int32 rowNum, valuetype System.Drawing.Rectangle bounds, bool readOnly, string displayText, bool cellIsVisible) cil managed" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
       <MemberSignature Language="VB.NET" Value="Protected Friend Overrides Sub Edit (source As CurrencyManager, rowNum As Integer, bounds As Rectangle, readOnly As Boolean, displayText As String, cellIsVisible As Boolean)" FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0" />
@@ -358,25 +369,25 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="source" Type="System.Windows.Forms.CurrencyManager" Index="0" />
-        <Parameter Name="rowNum" Type="System.Int32" Index="1" />
-        <Parameter Name="bounds" Type="System.Drawing.Rectangle" Index="2" />
-        <Parameter Name="readOnly" Type="System.Boolean" Index="3" />
-        <Parameter Name="displayText" Type="System.String" Index="4" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
-        <Parameter Name="instantText" Type="System.String" Index="4" FrameworkAlternate="netframework-1.1" />
-        <Parameter Name="cellIsVisible" Type="System.Boolean" Index="5" />
+        <Parameter Name="source" Type="System.Windows.Forms.CurrencyManager" />
+        <Parameter Name="rowNum" Type="System.Int32" />
+        <Parameter Name="bounds" Type="System.Drawing.Rectangle" />
+        <Parameter Name="readOnly" Type="System.Boolean" />
+        <Parameter Name="displayText" Type="System.String" />
+        <Parameter Name="cellIsVisible" Type="System.Boolean" />
       </Parameters>
       <Docs>
         <param name="source">The <see cref="T:System.Data.DataView" /> of the edited cell.</param>
-        <param name="displayText">The text to display in the cell.</param>
         <param name="rowNum">The row number of the edited cell.</param>
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> in which the control is to be sited.</param>
         <param name="readOnly">
           <see langword="true" /> if the value is read only; otherwise, <see langword="false" />.</param>
-        <param name="instantText">The text to display in the cell.</param>
+        <param name="displayText">The text to display in the cell.</param>
         <param name="cellIsVisible">
           <see langword="true" /> to show the cell; otherwise, <see langword="false" />.</param>
-        <summary>Prepares the cell for editing a value.</summary>
+        <summary>
+             Prepares the cell for editing a value.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -406,7 +417,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Enters a <see cref="F:System.DBNull.Value" /> into the column.</summary>
+        <summary>
+             Enters a <see langword="null" /> into the column.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -450,15 +463,15 @@
         <Attribute>
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ComponentModel.StringConverter))</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the actual value used when setting the value of the column to <see langword="false" />.</summary>
+        <summary>
+             Gets or sets the actual value used when setting the value of the column to
+             <see langword="false" />.
+            </summary>
         <value>The value, typed as <see cref="T:System.Object" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -536,7 +549,9 @@
       <Docs>
         <param name="lm">The <see cref="T:System.Windows.Forms.CurrencyManager" /> for the column.</param>
         <param name="row">The row number.</param>
-        <summary>Gets the value at the specified row.</summary>
+        <summary>
+             Gets the value at the specified row.
+            </summary>
         <returns>The value, typed as <see cref="T:System.Object" />.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -560,7 +575,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Gets the height of a cell in a column.</summary>
+        <summary>
+             Gets
+             the height of a cell in a column.
+            </summary>
         <returns>The height of the column. The default is 16.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.DataGridBoolColumn.GetPreferredHeight(System.Drawing.Graphics,System.Object)" />
@@ -591,7 +609,9 @@
       <Docs>
         <param name="g">A <see cref="T:System.Drawing.Graphics" /> that draws on the screen.</param>
         <param name="value">An <see cref="T:System.Object" /> that contains the value to be drawn to the screen.</param>
-        <summary>Gets the height used when resizing columns.</summary>
+        <summary>
+             Gets the height used when resizing columns.
+            </summary>
         <returns>The height used to automatically resize cells in a column.</returns>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.DataGridBoolColumn.GetPreferredSize(System.Drawing.Graphics,System.Object)" />
@@ -622,7 +642,10 @@
       <Docs>
         <param name="g">A <see cref="T:System.Drawing.Graphics" /> that draws the cell.</param>
         <param name="value">The value that must fit in the cell.</param>
-        <summary>Gets the optimum width and height of a cell given a specific value to contain.</summary>
+        <summary>
+             Gets the optimum width and height of a cell given
+             a specific value to contain.
+            </summary>
         <returns>A <see cref="T:System.Drawing.Size" /> that contains the drawing information for the cell.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -656,15 +679,15 @@
         <Attribute>
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ComponentModel.StringConverter))</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the actual value used when setting the value of the column to <see cref="F:System.DBNull.Value" />.</summary>
+        <summary>
+             Gets or sets the actual value used when setting the value of the column to
+             <see langword="null" />.
+            </summary>
         <value>The value, typed as <see cref="T:System.Object" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -727,7 +750,11 @@
         <param name="bounds">The bounding <see cref="T:System.Drawing.Rectangle" /> to paint into.</param>
         <param name="source">The <see cref="T:System.Windows.Forms.CurrencyManager" /> of the column.</param>
         <param name="rowNum">The number of the row referred to in the underlying data.</param>
-        <summary>Draws the <see cref="T:System.Windows.Forms.DataGridBoolColumn" /> with the given <see cref="T:System.Drawing.Graphics" />, <see cref="T:System.Drawing.Rectangle" /> and row number.</summary>
+        <summary>
+             Draws the <see cref="T:System.Windows.Forms.DataGridBoolColumn" />
+             with the given <see cref="T:System.Drawing.Graphics" />,
+            <see cref="T:System.Drawing.Rectangle" /> and row number.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -768,7 +795,11 @@
         <param name="source">The <see cref="T:System.Windows.Forms.CurrencyManager" /> of the column.</param>
         <param name="rowNum">The number of the row in the underlying data table being referred to.</param>
         <param name="alignToRight">A value indicating whether to align the content to the right. <see langword="true" /> if the content is aligned to the right, otherwise, <see langword="false" />.</param>
-        <summary>Draws the <see cref="T:System.Windows.Forms.DataGridBoolColumn" /> with the given <see cref="T:System.Drawing.Graphics" />, <see cref="T:System.Drawing.Rectangle" />, row number, and alignment settings.</summary>
+        <summary>
+             Draws the <see cref="T:System.Windows.Forms.DataGridBoolColumn" />
+             with the given <see cref="T:System.Drawing.Graphics" />, <see cref="T:System.Drawing.Rectangle" />,
+             row number, and alignment settings.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -806,7 +837,10 @@
         <param name="backBrush">A <see cref="T:System.Drawing.Brush" /> used to paint the background color.</param>
         <param name="foreBrush">A <see cref="T:System.Drawing.Color" /> used to paint the foreground color.</param>
         <param name="alignToRight">A value indicating whether to align the content to the right. <see langword="true" /> if the content is aligned to the right, otherwise, <see langword="false" />.</param>
-        <summary>Draws the <see cref="T:System.Windows.Forms.DataGridBoolColumn" /> with the given <see cref="T:System.Drawing.Graphics" />, <see cref="T:System.Drawing.Rectangle" />, row number, <see cref="T:System.Drawing.Brush" />, and <see cref="T:System.Drawing.Color" />.</summary>
+        <summary>
+             Draws the <see cref="T:System.Windows.Forms.DataGridBoolColumn" /> with the given <see cref="T:System.Drawing.Graphics" />, <see cref="T:System.Drawing.Rectangle" />,
+             row number, <see cref="T:System.Drawing.Brush" />, and <see cref="T:System.Drawing.Color" />.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -844,7 +878,9 @@
         <param name="lm">The <see cref="T:System.Windows.Forms.CurrencyManager" /> for the column.</param>
         <param name="row">The row number.</param>
         <param name="value">The value to set, typed as <see cref="T:System.Object" />.</param>
-        <summary>Sets the value of a specified row.</summary>
+        <summary>
+             Sets the value a a specified row.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -869,15 +905,15 @@
         <Attribute>
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ComponentModel.StringConverter))</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the actual value used when setting the value of the column to <see langword="true" />.</summary>
+        <summary>
+             Gets or sets the actual value used when setting the
+             value of the column to <see langword="true" /> .
+            </summary>
         <value>The value, typed as <see cref="T:System.Object" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

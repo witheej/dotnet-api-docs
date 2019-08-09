@@ -1,4 +1,4 @@
-﻿<Type Name="ObjectSelectorEditor" FullName="System.ComponentModel.Design.ObjectSelectorEditor">
+<Type Name="ObjectSelectorEditor" FullName="System.ComponentModel.Design.ObjectSelectorEditor">
   <TypeSignature Language="C#" Value="public abstract class ObjectSelectorEditor : System.Drawing.Design.UITypeEditor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract beforefieldinit ObjectSelectorEditor extends System.Drawing.Design.UITypeEditor" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.ObjectSelectorEditor" />
@@ -50,14 +50,11 @@
         <AssemblyName>System.Windows.Forms.Design.Editors</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.ObjectSelectorEditor" /> class.</summary>
+        <summary>
+             Default constructor for ObjectSelectorEditor
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -79,17 +76,14 @@
         <AssemblyName>System.Windows.Forms.Design.Editors</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="subObjectSelector" Type="System.Boolean" />
       </Parameters>
       <Docs>
         <param name="subObjectSelector">The specified sub-object selector value.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.ObjectSelectorEditor" /> class.</summary>
+        <summary>
+             Constructor for ObjectSelectorEditor which sets SubObjectSelector equal to parameter subObjectSelector
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -111,11 +105,13 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="treeView" Type="System.Windows.Forms.TreeView" Index="0" FrameworkAlternate="netcore-3.0" />
+        <Parameter Name="treeView" Type="System.Windows.Forms.TreeView" />
       </Parameters>
       <Docs>
-        <param name="treeView">To be added.</param>
-        <summary>To be added.</summary>
+        <param name="treeView">The tree view control to modify</param>
+        <summary>
+             Modify a WinForms TreeView control to use the new Explorer style theme
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -175,7 +171,9 @@
         <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that can be used to gain additional context information.</param>
         <param name="provider">An <see cref="T:System.IServiceProvider" /> that this editor can use to obtain services.</param>
         <param name="value">The object to edit.</param>
-        <summary>Edits the value of the specified object using the editor style indicated by <see cref="Overload:System.ComponentModel.Design.ObjectSelectorEditor.GetEditStyle" />.</summary>
+        <summary>
+             Edits the given object value using the editor style provided by ObjectSelectorEditor.GetEditStyle.
+            </summary>
         <returns>The new value of the object. If the value of the object has not changed, the method should return the same object it was passed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -188,11 +186,11 @@
       </Docs>
     </Member>
     <Member MemberName="EqualsToValue">
-      <MemberSignature Language="C#" Value="public bool EqualsToValue (object value);" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool EqualsToValue(object value) cil managed" />
+      <MemberSignature Language="C#" Value="protected internal bool EqualsToValue (object value);" />
+      <MemberSignature Language="ILAsm" Value=".method familyorassemblyhidebysig instance bool EqualsToValue(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.ObjectSelectorEditor.EqualsToValue(System.Object)" />
-      <MemberSignature Language="VB.NET" Value="Public Function EqualsToValue (value As Object) As Boolean" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool EqualsToValue(System::Object ^ value);" />
+      <MemberSignature Language="VB.NET" Value="Protected Friend Function EqualsToValue (value As Object) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="protected public:&#xA; bool EqualsToValue(System::Object ^ value);" />
       <MemberSignature Language="F#" Value="member this.EqualsToValue : obj -&gt; bool" Usage="objectSelectorEditor.EqualsToValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
@@ -335,7 +333,9 @@
       </Parameters>
       <Docs>
         <param name="value">The specified value.</param>
-        <summary>Sets the current <see cref="T:System.ComponentModel.Design.ObjectSelectorEditor" /> to the specified value.</summary>
+        <summary>
+             Override this method to add validation code for new value
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>

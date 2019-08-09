@@ -1,4 +1,4 @@
-﻿<Type Name="WebBrowserProgressChangedEventArgs" FullName="System.Windows.Forms.WebBrowserProgressChangedEventArgs">
+<Type Name="WebBrowserProgressChangedEventArgs" FullName="System.Windows.Forms.WebBrowserProgressChangedEventArgs">
   <TypeSignature Language="C#" Value="public class WebBrowserProgressChangedEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit WebBrowserProgressChangedEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.WebBrowserProgressChangedEventArgs" />
@@ -15,7 +15,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.Forms.WebBrowser.ProgressChanged" /> event.</summary>
+    <summary>
+             Provides data for the <see cref="M:System.Windows.Forms.WebBrowser.OnProgressChanged(System.Windows.Forms.WebBrowserProgressChangedEventArgs)" /> event.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -53,11 +55,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="currentProgress" Type="System.Int64" />
         <Parameter Name="maximumProgress" Type="System.Int64" />
@@ -65,7 +62,9 @@
       <Docs>
         <param name="currentProgress">The number of bytes that are loaded already.</param>
         <param name="maximumProgress">The total number of bytes to be loaded.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.WebBrowserProgressChangedEventArgs" /> class.</summary>
+        <summary>
+             Creates an instance of the <see cref="T:System.Windows.Forms.WebBrowserProgressChangedEventArgs" /> class.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -82,16 +81,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of bytes that have been downloaded.</summary>
+        <summary>
+             Specifies current number of bytes donwloaded. CurrentProgress/MaximumProgress*100 = progress percentage.
+            </summary>
         <value>The number of bytes that have been loaded or -1 to indicate that the download has completed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -130,16 +126,14 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int64</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the total number of bytes in the document being loaded.</summary>
+        <summary>
+             Specifies total number of bytes of item being downloaded.
+             CurrentProgress/MaximumProgress*100 = progress percentage.
+            </summary>
         <value>The total number of bytes to be loaded.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

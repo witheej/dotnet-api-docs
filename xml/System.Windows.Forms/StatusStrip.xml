@@ -1,4 +1,4 @@
-﻿<Type Name="StatusStrip" FullName="System.Windows.Forms.StatusStrip">
+<Type Name="StatusStrip" FullName="System.Windows.Forms.StatusStrip">
   <TypeSignature Language="C#" Value="public class StatusStrip : System.Windows.Forms.ToolStrip" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StatusStrip extends System.Windows.Forms.ToolStrip" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.StatusStrip" />
@@ -529,7 +529,11 @@ Use the `LayoutStyle` property to get or set how items are arranged on the <xref
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Provides custom table layout for a <see cref="T:System.Windows.Forms.StatusStrip" />.</summary>
+        <summary>
+             Override this function if you want to do custom table layouts for the
+             StatusStrip.  The default layoutstyle is tablelayout, and we need to play
+             with the row/column styles
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

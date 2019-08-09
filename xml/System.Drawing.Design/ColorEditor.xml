@@ -1,4 +1,4 @@
-﻿<Type Name="ColorEditor" FullName="System.Drawing.Design.ColorEditor">
+<Type Name="ColorEditor" FullName="System.Drawing.Design.ColorEditor">
   <TypeSignature Language="C#" Value="public class ColorEditor : System.Drawing.Design.UITypeEditor" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ColorEditor extends System.Drawing.Design.UITypeEditor" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Design.ColorEditor" />
@@ -20,12 +20,14 @@
   </Base>
   <Interfaces />
   <Attributes>
-    <Attribute FrameworkAlternate="netcore-3.0">
+    <Attribute>
       <AttributeName>System.CLSCompliant(false)</AttributeName>
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides a <see cref="T:System.Drawing.Design.UITypeEditor" /> for visually picking a color.</summary>
+    <summary>
+             Provides an editor for visually picking a color.
+            </summary>
     <remarks>To be added.</remarks>
     <permission cref="T:System.Security.Permissions.SecurityPermission">for access to unmanaged code. Associated enumeration: <see cref="F:System.Security.Permissions.SecurityPermissionFlag.UnmanagedCode" /></permission>
   </Docs>
@@ -47,11 +49,6 @@
         <AssemblyName>System.Windows.Forms.Design.Editors</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Drawing.Design.ColorEditor" /> class.</summary>
@@ -88,7 +85,9 @@
         <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that can be used to gain additional context information.</param>
         <param name="provider">An <see cref="T:System.IServiceProvider" /> through which editing services may be obtained.</param>
         <param name="value">An instance of the value being edited.</param>
-        <summary>Edits the given object value using the editor style provided by the <see cref="M:System.Drawing.Design.ColorEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)" /> method.</summary>
+        <summary>
+             Edits the given object value using the editor style provided by ColorEditor.GetEditStyle.
+            </summary>
         <returns>The new value of the object. If the value of the object has not changed, this should return the same object it was passed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -126,7 +125,10 @@
       </Parameters>
       <Docs>
         <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that can be used to gain additional context information.</param>
-        <summary>Gets the editing style of the Edit method. If the method is not supported, this will return <see cref="F:System.Drawing.Design.UITypeEditorEditStyle.None" />.</summary>
+        <summary>
+             Gets the editing style of the Edit method.
+             If the method is not supported, this will return UITypeEditorEditStyle.None.
+            </summary>
         <returns>An enum value indicating the provided editing style.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -157,7 +159,10 @@
       </Parameters>
       <Docs>
         <param name="context">An <see cref="T:System.ComponentModel.ITypeDescriptorContext" /> that can be used to gain additional context information.</param>
-        <summary>Gets a value indicating if this editor supports the painting of a representation of an object's value.</summary>
+        <summary>
+             Gets a value indicating if this editor supports the painting of a representation
+             of an object's value.
+            </summary>
         <returns>
           <see langword="true" /> if <see cref="Overload:System.Drawing.Design.ColorEditor.PaintValue" /> is implemented; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>
@@ -189,7 +194,10 @@
       </Parameters>
       <Docs>
         <param name="e">What to paint and where to paint it.</param>
-        <summary>Paints a representative value of the given object to the provided canvas.</summary>
+        <summary>
+             Paints a representative value of the given object to the provided canvas.
+             Painting should be done within the boundaries of the provided rectangle.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

@@ -1,4 +1,4 @@
-﻿<Type Name="HtmlWindowCollection" FullName="System.Windows.Forms.HtmlWindowCollection">
+<Type Name="HtmlWindowCollection" FullName="System.Windows.Forms.HtmlWindowCollection">
   <TypeSignature Language="C#" Value="public class HtmlWindowCollection : System.Collections.ICollection" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit HtmlWindowCollection extends System.Object implements class System.Collections.ICollection, class System.Collections.IEnumerable" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.HtmlWindowCollection" />
@@ -68,7 +68,9 @@
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the number of elements in the collection.</summary>
+        <summary>
+             Returns the total number of elements in the collection.
+            </summary>
         <value>The number of <see cref="T:System.Windows.Forms.HtmlWindow" /> objects in the current <see cref="T:System.Windows.Forms.HtmlWindowCollection" />.</value>
         <remarks>To be added.</remarks>
         <related type="ExternalDocumentation" href="https://msdn.microsoft.com/library/default.asp?url=/workshop/browser/mshtml/reference/ifaces/framescollection2/get_length.asp?frame=true">length Property</related>

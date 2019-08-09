@@ -1,4 +1,4 @@
-﻿<Type Name="AxImporter+Options" FullName="System.Windows.Forms.Design.AxImporter+Options">
+<Type Name="AxImporter+Options" FullName="System.Windows.Forms.Design.AxImporter+Options">
   <TypeSignature Language="C#" Value="public sealed class AxImporter.Options" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi sealed beforefieldinit AxImporter/Options extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.AxImporter.Options" />
@@ -41,11 +41,6 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.Design.AxImporter.Options" /> class.</summary>
@@ -74,7 +69,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies whether the generated assembly is strongly named and will be signed later.</summary>
+        <summary>
+             The flag that controls when we sign the generated assemblies.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -107,7 +104,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies whether sources for the type library wrapper should be generated.</summary>
+        <summary>
+             Flag that controls whether we are to generate sources for the ActiveX control wrapper.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -138,7 +137,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies whether to use only input from the command line instead relying on a registered version.</summary>
+        <summary>
+             Regardless of which version of the library is registered, if at all, use the
+             path supplied on the command line for AxImp to generate the Windows Forms wrappers.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -164,7 +166,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the path to the file that contains the strong name key container for the generated assemblies.</summary>
+        <summary>
+             The file containing the strong name key container for the generated assemblies.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -197,7 +201,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the path to the file that contains the strong name key for the generated assemblies.</summary>
+        <summary>
+             The file containing the strong name key for the generated assemblies.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -230,7 +236,9 @@
         <ReturnType>System.Reflection.StrongNameKeyPair</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the strong name used for the generated assemblies.</summary>
+        <summary>
+             The strong name used for the generated assemblies.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -262,7 +270,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies whether errors are output in the Microsoft Build Engine (MSBuild) format.</summary>
+        <summary>
+             Flag that controls whether we should output errors in the MSBuild format.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -295,7 +305,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates whether the ActiveX importer tool logo will be displayed when the control is imported.</summary>
+        <summary>
+             Flag that controls whether we should show the logo.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -361,7 +373,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the filename to generate the ActiveX control wrapper to.</summary>
+        <summary>
+             The path-included filename of type library containing the definition of the ActiveX control.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -394,7 +408,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies whether to overwrite existing files when generating assemblies.</summary>
+        <summary>
+             The flag that controls whether we try to overwrite existing generated assemblies.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -427,7 +443,9 @@
         <ReturnType>System.Byte[]</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the public key used to sign the generated assemblies.</summary>
+        <summary>
+             The public key used to sign the generated assemblies.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -460,7 +478,9 @@
         <ReturnType>System.Windows.Forms.Design.AxImporter+IReferenceResolver</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the <see cref="T:System.Windows.Forms.Design.AxImporter.IReferenceResolver" /> to use to resolve types and references when generating assemblies.</summary>
+        <summary>
+             The object that allows us to resolve types and references needed to generate assemblies.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -494,7 +514,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies whether to compile in silent mode, which generates less displayed information at compile time.</summary>
+        <summary>
+             Flag that controls the output generated.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -527,7 +549,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies whether to compile in verbose mode, which generates more displayed information at compile time.</summary>
+        <summary>
+             Flag that controls the output generated.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

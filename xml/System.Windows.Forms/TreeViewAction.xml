@@ -1,4 +1,4 @@
-﻿<Type Name="TreeViewAction" FullName="System.Windows.Forms.TreeViewAction">
+<Type Name="TreeViewAction" FullName="System.Windows.Forms.TreeViewAction">
   <TypeSignature Language="C#" Value="public enum TreeViewAction" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TreeViewAction extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TreeViewAction" />
@@ -15,7 +15,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the action that raised a <see cref="T:System.Windows.Forms.TreeViewEventArgs" /> event.</summary>
+    <summary>
+             This enum is used to specify the action that caused a TreeViewEventArgs.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -55,7 +57,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The event was caused by a keystroke.</summary>
+        <summary>
+             The event was caused by a keystroke.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="ByMouse">
@@ -77,7 +81,9 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>The event was caused by a mouse operation.</summary>
+        <summary>
+             The event was caused by a mouse click.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Collapse">
@@ -99,7 +105,9 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>The event was caused by the <see cref="T:System.Windows.Forms.TreeNode" /> collapsing.</summary>
+        <summary>
+             The tree node is collapsing.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Expand">
@@ -121,7 +129,9 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>The event was caused by the <see cref="T:System.Windows.Forms.TreeNode" /> expanding.</summary>
+        <summary>
+             The tree node is expanding.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Unknown">
@@ -143,7 +153,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>The action that caused the event is unknown.</summary>
+        <summary>
+             The action is unknown.
+            </summary>
       </Docs>
     </Member>
   </Members>

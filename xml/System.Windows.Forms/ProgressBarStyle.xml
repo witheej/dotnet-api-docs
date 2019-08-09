@@ -1,4 +1,4 @@
-﻿<Type Name="ProgressBarStyle" FullName="System.Windows.Forms.ProgressBarStyle">
+<Type Name="ProgressBarStyle" FullName="System.Windows.Forms.ProgressBarStyle">
   <TypeSignature Language="C#" Value="public enum ProgressBarStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ProgressBarStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ProgressBarStyle" />
@@ -14,7 +14,10 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the style that a <see cref="T:System.Windows.Forms.ProgressBar" /> uses to indicate the progress of an operation.</summary>
+    <summary>
+             This Enumeration represents the styles the ProgressBar can take.
+             Blocks and Continuous.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -44,7 +47,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Indicates progress by increasing the number of segmented blocks in a <see cref="T:System.Windows.Forms.ProgressBar" />.</summary>
+        <summary>
+             The progress bar displays the progress status as a segmented bar.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Continuous">
@@ -65,7 +70,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Indicates progress by increasing the size of a smooth, continuous bar in a <see cref="T:System.Windows.Forms.ProgressBar" />.</summary>
+        <summary>
+             The progress bar displays the progress status in a smooth scrolling bar.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Marquee">
@@ -86,7 +93,9 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Indicates progress by continuously scrolling a block across a <see cref="T:System.Windows.Forms.ProgressBar" /> in a marquee fashion.</summary>
+        <summary>
+             The progress bar displays the progress status in the marquee style.
+            </summary>
       </Docs>
     </Member>
   </Members>

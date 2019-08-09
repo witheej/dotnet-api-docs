@@ -1,4 +1,4 @@
-﻿<Type Name="TabDrawMode" FullName="System.Windows.Forms.TabDrawMode">
+<Type Name="TabDrawMode" FullName="System.Windows.Forms.TabDrawMode">
   <TypeSignature Language="C#" Value="public enum TabDrawMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TabDrawMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TabDrawMode" />
@@ -15,7 +15,11 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies whether the tabs in a tab control are owner-drawn (drawn by the parent window), or drawn by the operating system.</summary>
+    <summary>
+             The TabStrip and TabControl both support ownerdraw functionality, but
+             only one type, in which you can paint the tabs individually.  This
+             enumeration contains the valid values for it's drawMode property.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -48,7 +52,10 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>The tabs are drawn by the operating system, and are of the same size.</summary>
+        <summary>
+             All the items in the control are painted by the system and are of the
+             same size
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="OwnerDrawFixed">
@@ -70,7 +77,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The tabs are drawn by the parent window, and are of the same size.</summary>
+        <summary>
+             The user paints the items in the control manually
+            </summary>
       </Docs>
     </Member>
   </Members>

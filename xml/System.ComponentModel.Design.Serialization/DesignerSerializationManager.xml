@@ -1,4 +1,4 @@
-﻿<Type Name="DesignerSerializationManager" FullName="System.ComponentModel.Design.Serialization.DesignerSerializationManager">
+<Type Name="DesignerSerializationManager" FullName="System.ComponentModel.Design.Serialization.DesignerSerializationManager">
   <TypeSignature Language="C#" Value="public class DesignerSerializationManager : IServiceProvider, System.ComponentModel.Design.Serialization.IDesignerSerializationManager" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DesignerSerializationManager extends System.Object implements class System.ComponentModel.Design.Serialization.IDesignerSerializationManager, class System.IServiceProvider" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.DesignerSerializationManager" />
@@ -26,7 +26,9 @@
     </Interface>
   </Interfaces>
   <Docs>
-    <summary>Provides an implementation of the <see cref="T:System.ComponentModel.Design.Serialization.IDesignerSerializationManager" /> interface.</summary>
+    <summary>
+             This object is a complete implementation of IDesignerSerializationManager.  It can be used to  begin the serialization / deserialization process for any serialization scheme that utilizes  IDesignerSerializationManager.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -129,7 +131,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Serialization.DesignerSerializationManager" /> class.</summary>
+        <summary>
+             Creates a new serialization manager.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -164,7 +168,9 @@
       </Parameters>
       <Docs>
         <param name="provider">An <see cref="T:System.IServiceProvider" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Serialization.DesignerSerializationManager" /> class with the given service provider.</summary>
+        <summary>
+             Creates a new serialization manager.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -203,7 +209,9 @@
         <ReturnType>System.ComponentModel.IContainer</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets to the container for this serialization manager.</summary>
+        <summary>
+             Provides access to the container that components will be added to.  The default implementation searches for IDesignerHost in the service provider and uses its container if it exists.
+            </summary>
         <value>The <see cref="T:System.ComponentModel.IContainer" /> to which the serialization manager will add components.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -223,9 +231,6 @@
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual System::Object ^ CreateInstance(Type ^ type, System::Collections::ICollection ^ arguments, System::String ^ name, bool addToContainer);" />
       <MemberSignature Language="F#" Value="abstract member CreateInstance : Type * System.Collections.ICollection * string * bool -&gt; obj&#xA;override this.CreateInstance : Type * System.Collections.ICollection * string * bool -&gt; obj" Usage="designerSerializationManager.CreateInstance (type, arguments, name, addToContainer)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.CreateInstance(System.Type,System.Collections.ICollection,System.String,System.Boolean)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -250,7 +255,9 @@
         <param name="name">A name to give the object. If <see langword="null" />, the object will not be given a name, unless the object is added to a container and the container gives the object a name.</param>
         <param name="addToContainer">
           <see langword="true" /> to add the object to the container if the object implements <see cref="T:System.ComponentModel.IComponent" />; otherwise, <see langword="false" />.</param>
-        <summary>Creates an instance of a type.</summary>
+        <summary>
+             Creates an instance of the specified type.  The default implementation will create the object.  If the object implements IComponent and only requires an empty or IContainer style constructor, this will search for IDesignerHost and create through the host.  Otherwise it will use reflection.  If addToContainer is true, this will add to the container using this class's Conainer property, using the name provided if it is not null.
+            </summary>
         <returns>A new instance of the type specified by <paramref name="type" />.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -290,7 +297,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Creates a new serialization session.</summary>
+        <summary>
+             Creates a new serialization session.  Most data within the serialization manager is transient and only lives for the life of a serialization session.  When a session is disposed, serialization is considered to be complete and this transient state is cleared.  This allows a single instance of a serialization manager to be used to serialize multiple object trees.  Some state, including the service provider and any custom serialization providers that were added to the serialization manager, span sessions.	
+            </summary>
         <returns>An <see cref="T:System.IDisposable" /> that represents a new serialization session.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -326,7 +335,9 @@
         <ReturnType>System.Collections.IList</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the list of errors that occurred during serialization or deserialization.</summary>
+        <summary>
+             This retrieves the collection of errors that have been reported to the serialization manager.  Additionaly, new errors can be added to the list by accessing this property.
+            </summary>
         <value>The list of errors that occurred during serialization or deserialization.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -359,11 +370,13 @@
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="typeName" Type="System.String" Index="0" FrameworkAlternate="netcore-3.0;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="typeName" Type="System.String" />
       </Parameters>
       <Docs>
         <param name="typeName">The name of the type to get.</param>
-        <summary>Gets the type corresponding to the specified type name.</summary>
+        <summary>
+             Use this one for Serializer, converter, designer and editor types, types which  are only used by the IDE internally
+            </summary>
         <returns>The specified type.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -376,9 +389,6 @@
       <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Object ^ GetSerializer(Type ^ objectType, Type ^ serializerType);" />
       <MemberSignature Language="F#" Value="member this.GetSerializer : Type * Type -&gt; obj" Usage="designerSerializationManager.GetSerializer (objectType, serializerType)" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.GetSerializer(System.Type,System.Type)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -398,7 +408,9 @@
       <Docs>
         <param name="objectType">The type of object for which to retrieve the serializer.</param>
         <param name="serializerType">The type of serializer to retrieve.</param>
-        <summary>Gets the serializer for the given object type.</summary>
+        <summary>
+             This retrieves the serializer for the given object type. You can request what type of serializer you would like. It is possible for this method to return null if there is no serializer of the requested type.
+            </summary>
         <returns>The serializer for <paramref name="objectType" />, or <see langword="null" />, if not found.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -442,7 +454,9 @@
       </Parameters>
       <Docs>
         <param name="serviceType">The type of service to retrieve.</param>
-        <summary>Gets the requested service.</summary>
+        <summary>
+             Provides access to the underlying IServiceProvider
+            </summary>
         <returns>The requested service, or <see langword="null" /> if the service cannot be resolved.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -462,9 +476,6 @@
       <MemberSignature Language="C++ CLI" Value="protected:&#xA; virtual Type ^ GetType(System::String ^ typeName);" />
       <MemberSignature Language="F#" Value="override this.GetType : string -&gt; Type" Usage="designerSerializationManager.GetType typeName" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.GetType(System.String)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -482,7 +493,9 @@
       </Parameters>
       <Docs>
         <param name="typeName">The name of the type to retrieve.</param>
-        <summary>Gets the requested type.</summary>
+        <summary>
+             Retrieves the type for the given name using the type resolution service, if available.
+            </summary>
         <returns>The requested type, or <see langword="null" /> if the type cannot be resolved.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -519,7 +532,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.ComponentModel.Design.Serialization.ResolveNameEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.ResolveName" /> event.</summary>
+        <summary>
+             Event that is raised when a name needs to be resolved to an object instance..
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -563,7 +578,9 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.ComponentModel.Design.Serialization.DesignerSerializationManager.SessionCreated" /> event.</summary>
+        <summary>
+             Event that is raised when a session is created.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -606,7 +623,9 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.ComponentModel.Design.Serialization.DesignerSerializationManager.SessionDisposed" /> event.</summary>
+        <summary>
+             Event that is raised when a session is disposed.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -641,16 +660,13 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the <see cref="M:System.ComponentModel.Design.Serialization.DesignerSerializationManager.CreateInstance(System.Type,System.Collections.ICollection,System.String,System.Boolean)" /> method should check for the presence of the given name in the container.</summary>
+        <summary>
+             This property determines the behavior of the CreateInstance method.  If true, CreateInstance will  pass the given component name.  If false, CreateInstance will check for the presence of the given name in the container.  If it does not exist, it will use the given name. If it does exist, it will pass a null value as the name of a component when adding  it to the container, thereby giving it a new name. This second variation is useful for implementing a serializer that always duplicates objects, rather than assuming those objects do not exist.  Paste commands often use this type of serializer. The default value of this property is true.
+            </summary>
         <value>
           <see langword="true" /> if <see cref="M:System.ComponentModel.Design.Serialization.DesignerSerializationManager.CreateInstance(System.Type,System.Collections.ICollection,System.String,System.Boolean)" /> will pass the given component name; <see langword="false" /> if <see cref="M:System.ComponentModel.Design.Serialization.DesignerSerializationManager.CreateInstance(System.Type,System.Collections.ICollection,System.String,System.Boolean)" /> will check for the presence of the given name in the container. The default is <see langword="true" />.</value>
         <remarks>
@@ -685,16 +701,13 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the object that should be used to provide properties to the serialization manager's <see cref="P:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.Properties" /> property.</summary>
+        <summary>
+             This property returns the object that should be used to provide properties to the serialization manager's Propeties property.  This object's  public properties will be inspected and wrapped in new property descriptors that have a target object of the serialization manager.
+            </summary>
         <value>The object that should be used to provide properties to the serialization manager's <see cref="P:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.Properties" /> property.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -725,16 +738,13 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether <see cref="M:System.ComponentModel.Design.Serialization.DesignerSerializationManager.CreateInstance(System.Type,System.Collections.ICollection,System.String,System.Boolean)" /> will always create a new instance of a type.</summary>
+        <summary>
+             This property determines the behavior of the CreateInstance method.  If false, CreateInstance will always create a new instance of an object.  If true, CreateInstance will first search the nametable and container for an object of the same name.  If such an object exists and is of the same type, CreateInstance will return the existing object instance.  This second variation is useful for implemeting a serializer that applies serialization state to an existing set of objects, rather than always creating a new tree.  Undo often uses this type of serializer. The default value of this property is false.
+            </summary>
         <value>
           <see langword="true" /> if <see cref="M:System.ComponentModel.Design.Serialization.DesignerSerializationManager.CreateInstance(System.Type,System.Collections.ICollection,System.String,System.Boolean)" /> will return the existing instance; <see langword="false" /> if <see cref="M:System.ComponentModel.Design.Serialization.DesignerSerializationManager.CreateInstance(System.Type,System.Collections.ICollection,System.String,System.Boolean)" /> will create a new instance of a type. The default is <see langword="false" />.</value>
         <remarks>
@@ -773,7 +783,9 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a session is created.</summary>
+        <summary>
+             Event that is raised when a session is created.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -798,7 +810,9 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when a session is disposed.</summary>
+        <summary>
+             Event that is raised when a session is disposed.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -809,9 +823,6 @@
       <MemberSignature Language="VB.NET" Value="Sub AddSerializationProvider (provider As IDesignerSerializationProvider) Implements IDesignerSerializationManager.AddSerializationProvider" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.Design.Serialization.IDesignerSerializationManager.AddSerializationProvider(System::ComponentModel::Design::Serialization::IDesignerSerializationProvider ^ provider) = System::ComponentModel::Design::Serialization::IDesignerSerializationManager::AddSerializationProvider;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.AddSerializationProvider(System.ComponentModel.Design.Serialization.IDesignerSerializationProvider)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -829,7 +840,9 @@
       </Parameters>
       <Docs>
         <param name="provider">The serialization provider to add.</param>
-        <summary>Adds a custom serialization provider to the serialization manager.</summary>
+        <summary>
+             This method adds a custom serialization provider to the serialization manager. A custom serialization provider will get the opportunity to return a serializer for a data type before the serialization manager looks in the type's metadata.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -850,9 +863,6 @@
       <MemberSignature Language="C++ CLI" Value="property System::ComponentModel::Design::Serialization::ContextStack ^ System::ComponentModel::Design::Serialization::IDesignerSerializationManager::Context { System::ComponentModel::Design::Serialization::ContextStack ^ get(); };" />
       <MemberSignature Language="F#" Usage="System.ComponentModel.Design.Serialization.IDesignerSerializationManager.Context" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.Context</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -866,7 +876,9 @@
         <ReturnType>System.ComponentModel.Design.Serialization.ContextStack</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the context stack for this serialization session.</summary>
+        <summary>
+             The Context property provides a user-defined storage area implemented as a stack.  This storage area is a useful way to provide communication across serializers, as serialization is a generally hierarchial process.
+            </summary>
         <value>A <see cref="T:System.ComponentModel.Design.Serialization.ContextStack" /> that stores data.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -887,9 +899,6 @@
       <MemberSignature Language="DocId" Value="M:System.ComponentModel.Design.Serialization.DesignerSerializationManager.System#ComponentModel#Design#Serialization#IDesignerSerializationManager#CreateInstance(System.Type,System.Collections.ICollection,System.String,System.Boolean)" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ComponentModel.Design.Serialization.IDesignerSerializationManager.CreateInstance(Type ^ type, System::Collections::ICollection ^ arguments, System::String ^ name, bool addToContainer) = System::ComponentModel::Design::Serialization::IDesignerSerializationManager::CreateInstance;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.CreateInstance(System.Type,System.Collections.ICollection,System.String,System.Boolean)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -914,7 +923,9 @@
         <param name="name">The name of the object. This name can be used to access the object later through <see cref="M:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.GetInstance(System.String)" />. If <see langword="null" /> is passed, the object is still created but cannot be accessed by name.</param>
         <param name="addToContainer">
           <see langword="true" /> to add this object to the design container. The object must implement <see cref="T:System.ComponentModel.IComponent" /> for this to have any effect.</param>
-        <summary>Implements the <see cref="M:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.CreateInstance(System.Type,System.Collections.ICollection,System.String,System.Boolean)" /> method.</summary>
+        <summary>
+             Creates an instance of the given type and adds it to a collection of named instances.  Objects that implement IComponent will be added to the design time container if addToContainer is true.
+            </summary>
         <returns>The newly created object instance.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -926,9 +937,6 @@
       <MemberSignature Language="VB.NET" Value="Function GetInstance (name As String) As Object Implements IDesignerSerializationManager.GetInstance" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ComponentModel.Design.Serialization.IDesignerSerializationManager.GetInstance(System::String ^ name) = System::ComponentModel::Design::Serialization::IDesignerSerializationManager::GetInstance;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.GetInstance(System.String)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -946,7 +954,9 @@
       </Parameters>
       <Docs>
         <param name="name">The name of the object to retrieve.</param>
-        <summary>Retrieves an instance of a created object of the specified name.</summary>
+        <summary>
+             Retrieves an instance of a created object of the given name, or null if that object does not exist.
+            </summary>
         <returns>An instance of the object with the given name, or <see langword="null" /> if no object by that name can be found.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentNullException">
@@ -963,9 +973,6 @@
       <MemberSignature Language="VB.NET" Value="Function GetName (value As Object) As String Implements IDesignerSerializationManager.GetName" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::String ^ System.ComponentModel.Design.Serialization.IDesignerSerializationManager.GetName(System::Object ^ value) = System::ComponentModel::Design::Serialization::IDesignerSerializationManager::GetName;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.GetName(System.Object)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -983,7 +990,9 @@
       </Parameters>
       <Docs>
         <param name="value">The object for which to retrieve the name.</param>
-        <summary>Retrieves a name for the specified object.</summary>
+        <summary>
+             Retrieves a name for the specified object, or null if the object has no name.
+            </summary>
         <returns>The name of the object, or <see langword="null" /> if the object is unnamed.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -1009,9 +1018,6 @@
       <MemberSignature Language="VB.NET" Value="Function GetSerializer (objectType As Type, serializerType As Type) As Object Implements IDesignerSerializationManager.GetSerializer" />
       <MemberSignature Language="C++ CLI" Value=" virtual System::Object ^ System.ComponentModel.Design.Serialization.IDesignerSerializationManager.GetSerializer(Type ^ objectType, Type ^ serializerType) = System::ComponentModel::Design::Serialization::IDesignerSerializationManager::GetSerializer;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.GetSerializer(System.Type,System.Type)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1021,11 +1027,6 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -1036,7 +1037,9 @@
       <Docs>
         <param name="objectType">The type of the object to get the serializer for.</param>
         <param name="serializerType">The type of the serializer to retrieve.</param>
-        <summary>Gets a serializer of the requested type for the specified object type.</summary>
+        <summary>
+             Retrieves a serializer of the requested type for the given object type.
+            </summary>
         <returns>An instance of the requested serializer, or <see langword="null" /> if no appropriate serializer can be located.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1048,9 +1051,6 @@
       <MemberSignature Language="VB.NET" Value="Function GetType (typeName As String) As Type Implements IDesignerSerializationManager.GetType" />
       <MemberSignature Language="C++ CLI" Value=" virtual Type ^ System.ComponentModel.Design.Serialization.IDesignerSerializationManager.GetType(System::String ^ typeName) = System::ComponentModel::Design::Serialization::IDesignerSerializationManager::GetType;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.GetType(System.String)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1068,7 +1068,9 @@
       </Parameters>
       <Docs>
         <param name="typeName">The fully qualified name of the type to load.</param>
-        <summary>Gets a type of the specified name.</summary>
+        <summary>
+             Retrieves a type of the given name.
+            </summary>
         <returns>An instance of the type, or <see langword="null" /> if the type cannot be loaded.</returns>
         <remarks>To be added.</remarks>
         <exception cref="T:System.InvalidOperationException">This property was accessed outside of a serialization session.</exception>
@@ -1082,9 +1084,6 @@
       <MemberSignature Language="C++ CLI" Value="property System::ComponentModel::PropertyDescriptorCollection ^ System::ComponentModel::Design::Serialization::IDesignerSerializationManager::Properties { System::ComponentModel::PropertyDescriptorCollection ^ get(); };" />
       <MemberSignature Language="F#" Usage="System.ComponentModel.Design.Serialization.IDesignerSerializationManager.Properties" />
       <MemberType>Property</MemberType>
-      <Implements>
-        <InterfaceMember>P:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.Properties</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1098,7 +1097,9 @@
         <ReturnType>System.ComponentModel.PropertyDescriptorCollection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Implements the <see cref="P:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.Properties" /> property.</summary>
+        <summary>
+             The Properties property provides a set of custom properties the serialization manager may surface.  The set of properties exposed here is defined by the implementor of  IDesignerSerializationManager.
+            </summary>
         <value>A <see cref="T:System.ComponentModel.PropertyDescriptorCollection" /> containing the properties to be serialized.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -1110,9 +1111,6 @@
       <MemberSignature Language="VB.NET" Value="Sub RemoveSerializationProvider (provider As IDesignerSerializationProvider) Implements IDesignerSerializationManager.RemoveSerializationProvider" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.Design.Serialization.IDesignerSerializationManager.RemoveSerializationProvider(System::ComponentModel::Design::Serialization::IDesignerSerializationProvider ^ provider) = System::ComponentModel::Design::Serialization::IDesignerSerializationManager::RemoveSerializationProvider;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.RemoveSerializationProvider(System.ComponentModel.Design.Serialization.IDesignerSerializationProvider)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1130,7 +1128,9 @@
       </Parameters>
       <Docs>
         <param name="provider">The <see cref="T:System.ComponentModel.Design.Serialization.IDesignerSerializationProvider" /> to remove.</param>
-        <summary>Removes a previously added serialization provider.</summary>
+        <summary>
+             Removes a previously added serialization provider.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1150,9 +1150,6 @@
       <MemberSignature Language="VB.NET" Value="Sub ReportError (errorInformation As Object) Implements IDesignerSerializationManager.ReportError" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.Design.Serialization.IDesignerSerializationManager.ReportError(System::Object ^ errorInformation) = System::ComponentModel::Design::Serialization::IDesignerSerializationManager::ReportError;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.ReportError(System.Object)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1170,7 +1167,9 @@
       </Parameters>
       <Docs>
         <param name="errorInformation">An object containing the error information, usually of type <see cref="T:System.String" /> or <see cref="T:System.Exception" />.</param>
-        <summary>Used to report a recoverable error in serialization.</summary>
+        <summary>
+             Reports a non-fatal error in serialization.  The serialization manager may implement a logging scheme to alert the caller to all non-fatal errors at once.  If it doesn't, it should immediately throw in this method, which should abort serialization.   Serialization may continue after calling this function.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1186,83 +1185,6 @@
         <altmember cref="M:System.Collections.ArrayList.Add(System.Object)" />
       </Docs>
     </Member>
-    <Member MemberName="System.ComponentModel.Design.Serialization.IDesignerSerializationManager.ResolveName">
-      <MemberSignature Language="C#" Value="event System.ComponentModel.Design.Serialization.ResolveNameEventHandler System.ComponentModel.Design.Serialization.IDesignerSerializationManager.ResolveName;" />
-      <MemberSignature Language="ILAsm" Value=".event class System.ComponentModel.Design.Serialization.ResolveNameEventHandler System.ComponentModel.Design.Serialization.IDesignerSerializationManager.ResolveName" />
-      <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.Serialization.DesignerSerializationManager.System#ComponentModel#Design#Serialization#IDesignerSerializationManager#ResolveName" />
-      <MemberSignature Language="VB.NET" Value="Custom Event ResolveName As ResolveNameEventHandler Implements System.ComponentModel.Design.Serialization.IDesignerSerializationManager" />
-      <MemberType>Event</MemberType>
-      <Implements>
-        <InterfaceMember>E:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.ResolveName</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.ComponentModel.Design.Serialization.ResolveNameEventHandler</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Occurs when <see cref="M:System.ComponentModel.Design.Serialization.DesignerSerializationManager.System#ComponentModel#Design#Serialization#IDesignerSerializationManager#GetName(System.Object)" /> cannot locate the specified name in the serialization manager's name table.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[
-
-## Remarks  
-The `ResolveName` event is raised when the <xref:System.ComponentModel.Design.Serialization.DesignerSerializationManager.System%23ComponentModel%23Design%23Serialization%23IDesignerSerializationManager%23GetName%2A> method is called, but it fails to find the specified name in the serialization manager's name table.
-
-This event provides a way for a serializer to demand-create an object so the serializer does not have to order object creation by dependency. This delegate is cleared immediately after serialization or deserialization is complete.
-
-]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The serialization manager does not have an active serialization session.</exception>
-        <altmember cref="M:System.ComponentModel.Design.Serialization.DesignerSerializationManager.OnResolveName(System.ComponentModel.Design.Serialization.ResolveNameEventArgs)" />
-        <altmember cref="M:System.ComponentModel.Design.Serialization.DesignerSerializationManager.System#ComponentModel#Design#Serialization#IDesignerSerializationManager#GetName(System.Object)" />
-      </Docs>
-    </Member>
-    <Member MemberName="System.ComponentModel.Design.Serialization.IDesignerSerializationManager.SerializationComplete">
-      <MemberSignature Language="C#" Value="event EventHandler System.ComponentModel.Design.Serialization.IDesignerSerializationManager.SerializationComplete;" />
-      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler System.ComponentModel.Design.Serialization.IDesignerSerializationManager.SerializationComplete" />
-      <MemberSignature Language="DocId" Value="E:System.ComponentModel.Design.Serialization.DesignerSerializationManager.System#ComponentModel#Design#Serialization#IDesignerSerializationManager#SerializationComplete" />
-      <MemberSignature Language="VB.NET" Value="Custom Event SerializationComplete As EventHandler Implements System.ComponentModel.Design.Serialization.IDesignerSerializationManager" />
-      <MemberType>Event</MemberType>
-      <Implements>
-        <InterfaceMember>E:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.SerializationComplete</InterfaceMember>
-      </Implements>
-      <AssemblyInfo>
-        <AssemblyName>System.Design</AssemblyName>
-        <AssemblyVersion>2.0.0.0</AssemblyVersion>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms.Design</AssemblyName>
-        <AssemblyVersion>4.0.0.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.EventHandler</ReturnType>
-      </ReturnValue>
-      <Docs>
-        <summary>Occurs when serialization is complete.</summary>
-        <remarks>
-          <format type="text/markdown"><![CDATA[
-
-## Remarks  
-Typically the serialization process is single-threaded and should be stateless. When these characteristics are not true, the <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.SerializationComplete> event can be used to help to organize the process. A serializer can track this event to know that the serialization process is complete.
-
-For example, sometimes a serializer needs to write to another file, such as a resource file. In such a case, it would be inefficient to design the serializer to close the file when it is finished because serialization of an object graph generally requires several serializers; therefore, the resource file would be opened and closed many times. Instead, the resource file could be accessed through an object that tracked the <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.SerializationComplete> event, and that object could close the resource file at the end of serialization.
-
-In a related use, this event can be used to remove a temporary service installed in the serialization manager.
-
-]]></format>
-        </remarks>
-        <exception cref="T:System.InvalidOperationException">The serialization manager does not have an active serialization session.</exception>
-        <altmember cref="M:System.ComponentModel.Design.Serialization.DesignerSerializationManager.GetSerializer(System.Type,System.Type)" />
-      </Docs>
-    </Member>
     <Member MemberName="System.ComponentModel.Design.Serialization.IDesignerSerializationManager.SetName">
       <MemberSignature Language="C#" Value="void IDesignerSerializationManager.SetName (object instance, string name);" />
       <MemberSignature Language="ILAsm" Value=".method hidebysig newslot virtual instance void System.ComponentModel.Design.Serialization.IDesignerSerializationManager.SetName(object instance, string name) cil managed" />
@@ -1270,9 +1192,6 @@ In a related use, this event can be used to remove a temporary service installed
       <MemberSignature Language="VB.NET" Value="Sub SetName (instance As Object, name As String) Implements IDesignerSerializationManager.SetName" />
       <MemberSignature Language="C++ CLI" Value=" virtual void System.ComponentModel.Design.Serialization.IDesignerSerializationManager.SetName(System::Object ^ instance, System::String ^ name) = System::ComponentModel::Design::Serialization::IDesignerSerializationManager::SetName;" />
       <MemberType>Method</MemberType>
-      <Implements>
-        <InterfaceMember>M:System.ComponentModel.Design.Serialization.IDesignerSerializationManager.SetName(System.Object,System.String)</InterfaceMember>
-      </Implements>
       <AssemblyInfo>
         <AssemblyName>System.Design</AssemblyName>
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
@@ -1292,7 +1211,9 @@ In a related use, this event can be used to remove a temporary service installed
       <Docs>
         <param name="instance">The object to set the name.</param>
         <param name="name">A <see cref="T:System.String" /> used as the name of the object.</param>
-        <summary>Sets the name for the specified object.</summary>
+        <summary>
+             Provides a way to set the name of an existing object. This is useful when it is necessary to create an  instance of an object without going through CreateInstance. An exception will be thrown if you try to rename an existing object or if you try to give a new object a name that is already taken.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1328,11 +1249,6 @@ In a related use, this event can be used to remove a temporary service installed
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -1341,7 +1257,9 @@ In a related use, this event can be used to remove a temporary service installed
       </Parameters>
       <Docs>
         <param name="serviceType">An object that specifies the type of service object to get.</param>
-        <summary>For a description of this member, see the <see cref="M:System.IServiceProvider.GetService(System.Type)" /> method.</summary>
+        <summary>
+             IServiceProvider implementation.
+            </summary>
         <returns>A service object of type <paramref name="serviceType" />.  
   
  -or-  
@@ -1374,16 +1292,13 @@ In a related use, this event can be used to remove a temporary service installed
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that indicates whether the <see cref="M:System.ComponentModel.Design.Serialization.DesignerSerializationManager.CreateInstance(System.Type,System.Collections.ICollection,System.String,System.Boolean)" /> method will verify that matching names refer to the same type.</summary>
+        <summary>
+             This property determines the behavior of the CreateInstance method and only applies if RecyleInstances is true.  If true, and  an existing instance is found for the given name, it will only be returned if the two types match.  If false, the instance will be returned even if the two types do not match.  This is useful for "morphing" one type of object to another if they have similar properties but share no common parent or interface. The default value of this property is true.
+            </summary>
         <value>
           <see langword="true" /> if <see cref="M:System.ComponentModel.Design.Serialization.DesignerSerializationManager.CreateInstance(System.Type,System.Collections.ICollection,System.String,System.Boolean)" /> verifies types; otherwise, <see langword="false" /> if it does not. The default is <see langword="true" />.</value>
         <remarks>

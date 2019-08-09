@@ -1,4 +1,4 @@
-﻿<Type Name="StatusBarPanel" FullName="System.Windows.Forms.StatusBarPanel">
+<Type Name="StatusBarPanel" FullName="System.Windows.Forms.StatusBarPanel">
   <TypeSignature Language="C#" Value="public class StatusBarPanel : System.ComponentModel.Component, System.ComponentModel.ISupportInitialize" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit StatusBarPanel extends System.ComponentModel.Component implements class System.ComponentModel.ISupportInitialize" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.StatusBarPanel" />
@@ -31,7 +31,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Represents a panel in a <see cref="T:System.Windows.Forms.StatusBar" /> control. Although the <see cref="T:System.Windows.Forms.StatusStrip" /> control replaces and adds functionality to the <see cref="T:System.Windows.Forms.StatusBar" /> control of previous versions, <see cref="T:System.Windows.Forms.StatusBar" /> is retained for both backward compatibility and future use if you choose.</summary>
+    <summary>
+             Stores the <see cref="T:System.Windows.Forms.StatusBar" />
+             control panel's information.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -75,7 +78,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.StatusBarPanel" /> class.</summary>
+        <summary>
+             Initializes a new default instance of the <see cref="T:System.Windows.Forms.StatusBarPanel" /> class.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -130,15 +135,15 @@
         <Attribute>
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.HorizontalAlignment</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the alignment of text and icons within the status bar panel.</summary>
+        <summary>
+             Gets or sets the <see cref="P:System.Windows.Forms.StatusBarPanel.Alignment" />
+             property.
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.HorizontalAlignment" /> values. The default is <see cref="F:System.Windows.Forms.HorizontalAlignment.Left" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -185,15 +190,15 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.StatusBarPanelAutoSize</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the status bar panel is automatically resized.</summary>
+        <summary>
+             Gets or sets the <see cref="P:System.Windows.Forms.StatusBarPanel.AutoSize" />
+             property.
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.StatusBarPanelAutoSize" /> values. The default is <see cref="F:System.Windows.Forms.StatusBarPanelAutoSize.None" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -240,7 +245,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Begins the initialization of a <see cref="T:System.Windows.Forms.StatusBarPanel" />.</summary>
+        <summary>
+             Handles tasks required when the control is being initialized.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -273,15 +280,16 @@
         <Attribute>
           <AttributeName>System.Runtime.InteropServices.DispId(-504)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.StatusBarPanelBorderStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the border style of the status bar panel.</summary>
+        <summary>
+              Gets or sets the <see cref="P:System.Windows.Forms.StatusBarPanel.BorderStyle" />
+            
+              property.
+             </summary>
         <value>One of the <see cref="T:System.Windows.Forms.StatusBarPanelBorderStyle" /> values. The default is <see cref="F:System.Windows.Forms.StatusBarPanelBorderStyle.Sunken" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -368,7 +376,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Ends the initialization of a <see cref="T:System.Windows.Forms.StatusBarPanel" />.</summary>
+        <summary>
+             Called when initialization of the control is complete.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -401,15 +411,15 @@
         <Attribute>
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Icon</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the icon to display within the status bar panel.</summary>
+        <summary>
+             Gets or sets the <see cref="P:System.Windows.Forms.StatusBarPanel.Icon" />
+             property.
+            </summary>
         <value>An <see cref="T:System.Drawing.Icon" /> that represents the icon to display in the panel.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -450,15 +460,15 @@
         <Attribute>
           <AttributeName>System.ComponentModel.RefreshProperties(System.ComponentModel.RefreshProperties.All)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the minimum allowed width of the status bar panel within the <see cref="T:System.Windows.Forms.StatusBar" /> control.</summary>
+        <summary>
+             Gets or sets the minimum width the <see cref="T:System.Windows.Forms.StatusBarPanel" /> can be within the <see cref="T:System.Windows.Forms.StatusBar" />
+             control.
+            </summary>
         <value>The minimum width, in pixels, of the <see cref="T:System.Windows.Forms.StatusBarPanel" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -495,7 +505,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the name to apply to the <see cref="T:System.Windows.Forms.StatusBarPanel" />.</summary>
+        <summary>
+             Gets or sets the name of the panel.
+            </summary>
         <value>The name of the <see cref="T:System.Windows.Forms.StatusBarPanel" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -525,15 +537,16 @@
         <Attribute>
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.StatusBar</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the <see cref="T:System.Windows.Forms.StatusBar" /> control that hosts the status bar panel.</summary>
+        <summary>
+             Represents the <see cref="T:System.Windows.Forms.StatusBar" />
+             control which hosts the
+             panel.
+            </summary>
         <value>The <see cref="T:System.Windows.Forms.StatusBar" /> that contains the panel.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -565,15 +578,14 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(Mono.Cecil.CustomAttributeArgument)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.StatusBarPanelStyle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the style of the status bar panel.</summary>
+        <summary>
+             Gets or sets the style of the panel.
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.StatusBarPanelStyle" /> values. The default is <see cref="F:System.Windows.Forms.StatusBarPanelStyle.Text" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -622,12 +634,6 @@
         <Attribute FrameworkAlternate="netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8;netcore-3.0">
           <AttributeName>System.ComponentModel.TypeConverter(typeof(System.ComponentModel.StringConverter))</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
@@ -664,7 +670,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text of the status bar panel.</summary>
+        <summary>
+             Gets or sets the text of the panel.
+            </summary>
         <value>The text displayed in the panel.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -712,7 +720,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets ToolTip text associated with the status bar panel.</summary>
+        <summary>
+             Gets
+             or sets the panel's tool tip text.
+            </summary>
         <value>The ToolTip text for the panel.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -755,7 +766,10 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Retrieves a string that contains information about the panel.</summary>
+        <summary>
+             Retrieves a string that contains information about the
+             panel.
+            </summary>
         <returns>Returns a string that contains the class name for the control and the text it contains.</returns>
         <remarks>To be added.</remarks>
       </Docs>
@@ -781,15 +795,15 @@
         <Attribute>
           <AttributeName>System.ComponentModel.Localizable(true)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the width of the status bar panel within the <see cref="T:System.Windows.Forms.StatusBar" /> control.</summary>
+        <summary>
+             Gets or sets the width of the <see cref="T:System.Windows.Forms.StatusBarPanel" /> within the <see cref="T:System.Windows.Forms.StatusBar" />
+             control.
+            </summary>
         <value>The width, in pixels, of the <see cref="T:System.Windows.Forms.StatusBarPanel" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -1,4 +1,4 @@
-﻿<Type Name="PropertyManager" FullName="System.Windows.Forms.PropertyManager">
+<Type Name="PropertyManager" FullName="System.Windows.Forms.PropertyManager">
   <TypeSignature Language="C#" Value="public class PropertyManager : System.Windows.Forms.BindingManagerBase" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit PropertyManager extends System.Windows.Forms.BindingManagerBase" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.PropertyManager" />
@@ -40,11 +40,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.PropertyManager" /> class.</summary>
@@ -137,11 +132,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
@@ -180,28 +170,6 @@
         <summary>When overridden in a derived class, ends the current edit.</summary>
         <remarks>To be added.</remarks>
         <altmember cref="M:System.Windows.Forms.BindingManagerBase.EndCurrentEdit" />
-      </Docs>
-    </Member>
-    <Member MemberName="GetItemProperties">
-      <MemberSignature Language="C#" Value="public override System.ComponentModel.PropertyDescriptorCollection GetItemProperties ();" />
-      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.ComponentModel.PropertyDescriptorCollection GetItemProperties() cil managed" />
-      <MemberSignature Language="DocId" Value="M:System.Windows.Forms.PropertyManager.GetItemProperties" />
-      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetItemProperties () As PropertyDescriptorCollection" />
-      <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::ComponentModel::PropertyDescriptorCollection ^ GetItemProperties();" />
-      <MemberSignature Language="F#" Value="override this.GetItemProperties : unit -&gt; System.ComponentModel.PropertyDescriptorCollection" Usage="propertyManager.GetItemProperties " />
-      <MemberType>Method</MemberType>
-      <AssemblyInfo>
-        <AssemblyName>System.Windows.Forms</AssemblyName>
-        <AssemblyVersion>1.0.5000.0</AssemblyVersion>
-      </AssemblyInfo>
-      <ReturnValue>
-        <ReturnType>System.ComponentModel.PropertyDescriptorCollection</ReturnType>
-      </ReturnValue>
-      <Parameters />
-      <Docs>
-        <summary>Gets the collection of property descriptions for the binding.</summary>
-        <returns>A collection of property descriptors for the binding.</returns>
-        <remarks>To be added.</remarks>
       </Docs>
     </Member>
     <Member MemberName="GetListName">
@@ -275,7 +243,7 @@
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
       <Parameters>
-        <Parameter Name="ea" Type="System.EventArgs" Index="0" FrameworkAlternate="netcore-3.0;netframework-2.0;netframework-3.0;netframework-3.5;netframework-4.0;netframework-4.5;netframework-4.5.1;netframework-4.5.2;netframework-4.6;netframework-4.6.1;netframework-4.6.2;netframework-4.7;netframework-4.7.1;netframework-4.7.2;netframework-4.8" />
+        <Parameter Name="ea" Type="System.EventArgs" />
       </Parameters>
       <Docs>
         <param name="ea">An <see cref="T:System.EventArgs" /> containing the event data.</param>
@@ -310,7 +278,9 @@
       <Docs>
         <summary>When overridden in a derived class, gets or sets the position in the underlying list that controls bound to this data source point to.</summary>
         <value>A zero-based index that specifies a position in the underlying list.</value>
-        <remarks>To be added.</remarks>
+        <remarks>
+             no op on the propertyManager
+            </remarks>
       </Docs>
     </Member>
     <Member MemberName="RemoveAt">

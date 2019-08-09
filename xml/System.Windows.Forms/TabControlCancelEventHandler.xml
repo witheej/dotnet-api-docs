@@ -1,4 +1,4 @@
-﻿<Type Name="TabControlCancelEventHandler" FullName="System.Windows.Forms.TabControlCancelEventHandler">
+<Type Name="TabControlCancelEventHandler" FullName="System.Windows.Forms.TabControlCancelEventHandler">
   <TypeSignature Language="C#" Value="public delegate void TabControlCancelEventHandler(object sender, TabControlCancelEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TabControlCancelEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TabControlCancelEventHandler" />
@@ -23,7 +23,10 @@
   <Docs>
     <param name="sender">The source of the event.</param>
     <param name="e">A <see cref="T:System.Windows.Forms.TabControlCancelEventArgs" /> that contains the event data.</param>
-    <summary>Represents the method that will handle the <see cref="E:System.Windows.Forms.TabControl.Selecting" /> or <see cref="E:System.Windows.Forms.TabControl.Deselecting" /> event of a <see cref="T:System.Windows.Forms.TabControl" /> control.</summary>
+    <summary>
+             Represents a method that handles the <see cref="E:System.Windows.Forms.TabControl.Deselected" /> and 
+             <see cref="E:System.Windows.Forms.TabControl.Deselecting" /> events of a <see cref="T:System.Windows.Forms.TabControl" />.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

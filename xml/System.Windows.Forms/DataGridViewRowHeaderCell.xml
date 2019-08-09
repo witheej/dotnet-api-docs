@@ -1,4 +1,4 @@
-﻿<Type Name="DataGridViewRowHeaderCell" FullName="System.Windows.Forms.DataGridViewRowHeaderCell">
+<Type Name="DataGridViewRowHeaderCell" FullName="System.Windows.Forms.DataGridViewRowHeaderCell">
   <TypeSignature Language="C#" Value="public class DataGridViewRowHeaderCell : System.Windows.Forms.DataGridViewHeaderCell" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataGridViewRowHeaderCell extends System.Windows.Forms.DataGridViewHeaderCell" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewRowHeaderCell" />
@@ -49,11 +49,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
         <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataGridViewRowHeaderCell" /> class.</summary>
@@ -490,7 +485,7 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>Returns the string representation of the cell.</summary>
+        <summary />
         <returns>A string that represents the current cell.</returns>
         <remarks>To be added.</remarks>
       </Docs>

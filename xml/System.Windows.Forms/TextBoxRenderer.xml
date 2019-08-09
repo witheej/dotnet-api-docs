@@ -1,4 +1,4 @@
-﻿<Type Name="TextBoxRenderer" FullName="System.Windows.Forms.TextBoxRenderer">
+<Type Name="TextBoxRenderer" FullName="System.Windows.Forms.TextBoxRenderer">
   <TypeSignature Language="C#" Value="public sealed class TextBoxRenderer" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit TextBoxRenderer extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TextBoxRenderer" />
@@ -15,7 +15,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides methods used to render a text box control with visual styles. This class cannot be inherited.</summary>
+    <summary>
+             This is a rendering class for the TextBox control.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -75,7 +77,9 @@
         <param name="g">The <see cref="T:System.Drawing.Graphics" /> used to draw the text box.</param>
         <param name="bounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of the text box.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.TextBoxState" /> values that specifies the visual state of the text box.</param>
-        <summary>Draws a text box control in the specified state and bounds.</summary>
+        <summary>
+             Renders a TextBox control.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -107,11 +111,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -128,7 +127,9 @@
         <param name="textBoxText">The <see cref="T:System.String" /> to draw in the text box.</param>
         <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <paramref name="textBoxText" />.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.TextBoxState" /> values that specifies the visual state of the text box.</param>
-        <summary>Draws a text box control in the specified state and bounds, and with the specified text.</summary>
+        <summary>
+             Renders a TextBox control.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -160,11 +161,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Void</ReturnType>
       </ReturnValue>
@@ -183,7 +179,9 @@
         <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <paramref name="textBoxText" />.</param>
         <param name="textBounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of <paramref name="textBoxText" />.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.TextBoxState" /> values that specifies the visual state of the text box.</param>
-        <summary>Draws a text box control in the specified state and bounds, and with the specified text and text bounds.</summary>
+        <summary>
+             Renders a TextBox control.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -233,7 +231,9 @@
         <param name="font">The <see cref="T:System.Drawing.Font" /> to apply to <paramref name="textBoxText" />.</param>
         <param name="flags">A bitwise combination of the <see cref="T:System.Windows.Forms.TextFormatFlags" /> values.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.TextBoxState" /> values that specifies the visual state of the text box.</param>
-        <summary>Draws a text box control in the specified state and bounds, and with the specified text and text formatting.</summary>
+        <summary>
+             Renders a TextBox control.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -285,7 +285,9 @@
         <param name="textBounds">The <see cref="T:System.Drawing.Rectangle" /> that specifies the bounds of <paramref name="textBoxText" />.</param>
         <param name="flags">A bitwise combination of the <see cref="T:System.Windows.Forms.TextFormatFlags" /> values.</param>
         <param name="state">One of the <see cref="T:System.Windows.Forms.VisualStyles.TextBoxState" /> values that specifies the visual state of the text box.</param>
-        <summary>Draws a text box control in the specified state and bounds, and with the specified text, text bounds, and text formatting.</summary>
+        <summary>
+             Renders a TextBox control.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -331,7 +333,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the <see cref="T:System.Windows.Forms.TextBoxRenderer" /> class can be used to draw a text box with visual styles.</summary>
+        <summary>
+             Returns true if this class is supported for the current OS and user/application settings,
+             otherwise returns false.
+            </summary>
         <value>
           <see langword="true" /> if the user has enabled visual styles in the operating system and visual styles are applied to the client area of application windows; otherwise, <see langword="false" />.</value>
         <remarks>

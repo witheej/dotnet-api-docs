@@ -1,9 +1,9 @@
-﻿<Type Name="DataFormats" FullName="System.Windows.Forms.DataFormats">
-  <TypeSignature Language="C#" Value="public class DataFormats" />
-  <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DataFormats extends System.Object" />
+<Type Name="DataFormats" FullName="System.Windows.Forms.DataFormats">
+  <TypeSignature Language="C#" Value="public static class DataFormats" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed beforefieldinit DataFormats extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataFormats" />
   <TypeSignature Language="VB.NET" Value="Public Class DataFormats" />
-  <TypeSignature Language="C++ CLI" Value="public ref class DataFormats" />
+  <TypeSignature Language="C++ CLI" Value="public ref class DataFormats abstract sealed" />
   <TypeSignature Language="F#" Value="type DataFormats = class" />
   <AssemblyInfo>
     <AssemblyName>System.Windows.Forms</AssemblyName>
@@ -16,7 +16,12 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides <see langword="static" />, predefined <see cref="T:System.Windows.Forms.Clipboard" /> format names. Use them to identify the format of data that you store in an <see cref="T:System.Windows.Forms.IDataObject" />.</summary>
+    <summary>
+             Translates between WinForms text-based <see cref="T:System.Windows.Forms.Clipboard" />
+             formats and Win32 32-bit signed integer-based clipboard
+             formats. Provides <see langword="static" /> methods to create new
+            <see cref="T:System.Windows.Forms.Clipboard" /> formats and add them to the Windows Registry.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -76,7 +81,9 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies a Windows bitmap format. This <see langword="static" /> field is read-only.</summary>
+        <summary>
+             Specifies a Windows bitmap format.
+             This <see langword="static" /> field is read-only. </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -122,7 +129,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies a comma-separated value (CSV) format, which is a common interchange format used by spreadsheets. This format is not used directly by Windows Forms. This <see langword="static" /> field is read-only.</summary>
+        <summary>
+             Specifies a comma-separated value (CSV) format, which is a common interchange format
+             used by spreadsheets. This format is not used directly by WinForms.
+             This <see langword="static" /> field is read-only.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -166,7 +177,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the Windows device-independent bitmap (DIB) format. This <see langword="static" /> field is read-only.</summary>
+        <summary>
+             Specifies the Windows Device Independent Bitmap (DIB) format.
+             This <see langword="static" /> field is read-only.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -212,7 +226,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the Windows Data Interchange Format (DIF), which Windows Forms does not directly use. This <see langword="static" /> field is read-only.</summary>
+        <summary>
+             Specifies the Windows data interchange format, which WinForms does not directly use.
+             This <see langword="static" /> field is read-only.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -267,7 +284,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the Windows enhanced metafile format. This <see langword="static" /> field is read-only.</summary>
+        <summary>
+             Specifies the Windows enhanced metafile format.
+             This <see langword="static" /> field is read-only.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -316,7 +336,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the Windows file drop format, which Windows Forms does not directly use. This <see langword="static" /> field is read-only.</summary>
+        <summary>
+             Specifies the Windows file drop format, which WinForms does not directly use.
+             This <see langword="static" /> field is read-only.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -367,11 +390,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.DataFormats+Format</ReturnType>
       </ReturnValue>
@@ -380,7 +398,10 @@
       </Parameters>
       <Docs>
         <param name="id">The format ID.</param>
-        <summary>Returns a <see cref="T:System.Windows.Forms.DataFormats.Format" /> with the Windows Clipboard numeric ID and name for the specified ID.</summary>
+        <summary>
+             Gets a <see cref="T:System.Windows.Forms.DataFormats.Format" /> with the Windows
+             Clipboard numeric ID and name for the specified ID.
+            </summary>
         <returns>A <see cref="T:System.Windows.Forms.DataFormats.Format" /> that has the Windows Clipboard numeric ID and the name of the format.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -427,7 +448,10 @@
       </Parameters>
       <Docs>
         <param name="format">The format name.</param>
-        <summary>Returns a <see cref="T:System.Windows.Forms.DataFormats.Format" /> with the Windows Clipboard numeric ID and name for the specified format.</summary>
+        <summary>
+             Gets a <see cref="T:System.Windows.Forms.DataFormats.Format" /> with the Windows
+             Clipboard numeric ID and name for the specified format.
+            </summary>
         <returns>A <see cref="T:System.Windows.Forms.DataFormats.Format" /> that has the Windows Clipboard numeric ID and the name of the format.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -472,7 +496,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies text in the HTML Clipboard format. This <see langword="static" /> field is read-only.</summary>
+        <summary>
+             Specifies text consisting of HTML data.
+             This <see langword="static" /> field is read-only.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -516,7 +543,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the Windows culture format, which Windows Forms does not directly use. This <see langword="static" /> field is read-only.</summary>
+        <summary>
+             Specifies the Windows culture format, which WinForms does not directly use.
+             This <see langword="static" /> field is read-only.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -560,7 +590,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the Windows metafile format, which Windows Forms does not directly use. This <see langword="static" /> field is read-only.</summary>
+        <summary>
+             Specifies the Windows metafile format, which WinForms does not directly use.
+             This <see langword="static" /> field is read-only.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -609,7 +642,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the standard Windows original equipment manufacturer (OEM) text format. This <see langword="static" /> field is read-only.</summary>
+        <summary>
+             Specifies the standard Windows original equipment manufacturer (OEM) text format.
+             This <see langword="static" /> field is read-only.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -653,7 +689,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the Windows palette format. This <see langword="static" /> field is read-only.</summary>
+        <summary>
+             Specifies the Windows palette format.
+             This <see langword="static" /> field is read-only.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -699,7 +738,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the Windows pen data format, which consists of pen strokes for handwriting software; Windows Forms does not use this format. This <see langword="static" /> field is read-only.</summary>
+        <summary>
+             Specifies the Windows pen data format, which consists of pen strokes for handwriting
+             software; Win Formsdoes not use this format.
+             This <see langword="static" /> field is read-only.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -743,7 +786,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the Resource Interchange File Format (RIFF) audio format, which Windows Forms does not directly use. This <see langword="static" /> field is read-only.</summary>
+        <summary>
+             Specifies the Resource Interchange File Format (RIFF) audio format, which WinForms
+             does not directly use.
+             This <see langword="static" /> field is read-only.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -789,7 +836,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies text consisting of Rich Text Format (RTF) data. This <see langword="static" /> field is read-only.</summary>
+        <summary>
+             Specifies text consisting of Rich Text Format (RTF) data.
+             This <see langword="static" /> field is read-only.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -837,7 +887,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies a format that encapsulates any type of Windows Forms object. This <see langword="static" /> field is read-only.</summary>
+        <summary>
+             Specifies a format that encapsulates any type of WinForms object.
+             This <see langword="static" /> field is read-only.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -884,7 +937,11 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the Windows Forms string class format, which Windows Forms uses to store string objects. This <see langword="static" /> field is read-only.</summary>
+        <summary>
+             Specifies the Win Forms string class format, which WinForms uses to store string
+             objects.
+             This <see langword="static" /> field is read-only.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -940,7 +997,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the Windows symbolic link format, which Windows Forms does not directly use. This <see langword="static" /> field is read-only.</summary>
+        <summary>
+             Specifies the Windows symbolic link format, which WinForms does not directly use.
+             This <see langword="static" /> field is read-only.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -986,7 +1046,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the standard ANSI text format. This <see langword="static" /> field is read-only.</summary>
+        <summary>
+             Specifies the standard ANSI text format. This <see langword="static" />
+             field is read-only.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1039,7 +1102,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the Tagged Image File Format (TIFF), which Windows Forms does not directly use. This <see langword="static" /> field is read-only.</summary>
+        <summary>
+             Specifies the Tagged Image File Format (TIFF), which WinForms does not directly use.
+             This <see langword="static" /> field is read-only.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1085,7 +1151,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the standard Windows Unicode text format. This <see langword="static" /> field is read-only.</summary>
+        <summary>
+             Specifies the standard Windows Unicode text format.
+             This <see langword="static" /> field is read-only.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1138,7 +1207,10 @@
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Specifies the wave audio format, which Windows Forms does not directly use. This <see langword="static" /> field is read-only.</summary>
+        <summary>
+             Specifies the wave audio format, which Win Forms does not
+             directly use. This <see langword="static" /> field is read-only.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

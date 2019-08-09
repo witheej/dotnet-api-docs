@@ -1,4 +1,4 @@
-﻿<Type Name="TableLayoutPanelGrowStyle" FullName="System.Windows.Forms.TableLayoutPanelGrowStyle">
+<Type Name="TableLayoutPanelGrowStyle" FullName="System.Windows.Forms.TableLayoutPanelGrowStyle">
   <TypeSignature Language="C#" Value="public enum TableLayoutPanelGrowStyle" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed TableLayoutPanelGrowStyle extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TableLayoutPanelGrowStyle" />
@@ -14,7 +14,12 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies how a <see cref="T:System.Windows.Forms.TableLayoutPanel" /> will gain additional rows or columns after its existing cells are full.</summary>
+    <summary>
+             Specifies if a TableLayoutPanel will gain additional rows or columns once
+             its existing cells become full.  If the value is 'None' then the
+             TableLayoutPanel will throw an exception when the TableLayoutPanel is
+             over-filled.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -53,7 +58,9 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>The <see cref="T:System.Windows.Forms.TableLayoutPanel" /> gains additional columns after it is full.</summary>
+        <summary>
+             The TableLayoutPanel will gain additional columns once it becomes full.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="AddRows">
@@ -74,7 +81,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The <see cref="T:System.Windows.Forms.TableLayoutPanel" /> gains additional rows after it is full.</summary>
+        <summary>
+             The TableLayoutPanel will gain additional rows once it becomes full.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="FixedSize">
@@ -95,7 +104,10 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>The <see cref="T:System.Windows.Forms.TableLayoutPanel" /> does not allow additional rows or columns after it is full.</summary>
+        <summary>
+             The TableLayoutPanel will not allow additional rows or columns once
+             it is full.
+            </summary>
       </Docs>
     </Member>
   </Members>

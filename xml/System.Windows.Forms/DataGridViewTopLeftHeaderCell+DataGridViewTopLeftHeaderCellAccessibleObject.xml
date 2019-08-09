@@ -1,4 +1,4 @@
-﻿<Type Name="DataGridViewTopLeftHeaderCell+DataGridViewTopLeftHeaderCellAccessibleObject" FullName="System.Windows.Forms.DataGridViewTopLeftHeaderCell+DataGridViewTopLeftHeaderCellAccessibleObject">
+<Type Name="DataGridViewTopLeftHeaderCell+DataGridViewTopLeftHeaderCellAccessibleObject" FullName="System.Windows.Forms.DataGridViewTopLeftHeaderCell+DataGridViewTopLeftHeaderCellAccessibleObject">
   <TypeSignature Language="C#" Value="protected class DataGridViewTopLeftHeaderCell.DataGridViewTopLeftHeaderCellAccessibleObject : System.Windows.Forms.DataGridViewColumnHeaderCell.DataGridViewColumnHeaderCellAccessibleObject" />
   <TypeSignature Language="ILAsm" Value=".class nested protected auto ansi beforefieldinit DataGridViewTopLeftHeaderCell/DataGridViewTopLeftHeaderCellAccessibleObject extends System.Windows.Forms.DataGridViewColumnHeaderCell/DataGridViewColumnHeaderCellAccessibleObject" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataGridViewTopLeftHeaderCell.DataGridViewTopLeftHeaderCellAccessibleObject" />
@@ -59,11 +59,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="owner" Type="System.Windows.Forms.DataGridViewTopLeftHeaderCell" />
       </Parameters>
@@ -315,11 +310,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>

@@ -1,4 +1,4 @@
-﻿<Type Name="ToolBarAppearance" FullName="System.Windows.Forms.ToolBarAppearance">
+<Type Name="ToolBarAppearance" FullName="System.Windows.Forms.ToolBarAppearance">
   <TypeSignature Language="C#" Value="public enum ToolBarAppearance" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ToolBarAppearance extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolBarAppearance" />
@@ -15,7 +15,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the type of toolbar to display.</summary>
+    <summary>
+             Specifies the type of toolbar to display.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -57,7 +59,10 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The toolbar and buttons appear flat, but the buttons change to three-dimensional as the mouse pointer moves over them.</summary>
+        <summary>
+             The toolbar and buttons appear flat, but the buttons change to three
+             dimensional as the mouse pointer moves over them.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Normal">
@@ -79,7 +84,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>The toolbar and buttons appear as standard three-dimensional controls.</summary>
+        <summary>
+             The toolbar and buttons appear as standard three dimensional controls.
+            </summary>
       </Docs>
     </Member>
   </Members>

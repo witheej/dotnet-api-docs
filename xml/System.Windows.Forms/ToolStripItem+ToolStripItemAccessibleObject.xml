@@ -1,4 +1,4 @@
-﻿<Type Name="ToolStripItem+ToolStripItemAccessibleObject" FullName="System.Windows.Forms.ToolStripItem+ToolStripItemAccessibleObject">
+<Type Name="ToolStripItem+ToolStripItemAccessibleObject" FullName="System.Windows.Forms.ToolStripItem+ToolStripItemAccessibleObject">
   <TypeSignature Language="C#" Value="public class ToolStripItem.ToolStripItemAccessibleObject : System.Windows.Forms.AccessibleObject" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit ToolStripItem/ToolStripItemAccessibleObject extends System.Windows.Forms.AccessibleObject" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripItem.ToolStripItemAccessibleObject" />
@@ -20,7 +20,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides information that accessibility applications use to adjust the user interface of a <see cref="T:System.Windows.Forms.ToolStripItem" /> for users with impairments.</summary>
+    <summary>
+             An implementation of AccessibleChild for use with ToolStripItems
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -89,7 +91,9 @@
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the bounds of the accessible object, in screen coordinates.</summary>
+        <summary>
+             Gets the bounds of the accessible object, in screen coordinates.
+            </summary>
         <value>An object of type <see cref="T:System.Drawing.Rectangle" /> representing the bounds.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -295,7 +299,9 @@
         <ReturnType>System.Windows.Forms.AccessibleObject</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the parent of an accessible object.</summary>
+        <summary>
+             When overridden in a derived class, gets or sets the parent of an accessible object.
+            </summary>
         <value>An object of type <see cref="T:System.Windows.Forms.AccessibleObject" /> representing the parent.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -350,7 +356,7 @@
       <MemberSignature Language="DocId" Value="M:System.Windows.Forms.ToolStripItem.ToolStripItemAccessibleObject.ToString" />
       <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberSignature Language="C++ CLI" Value="public:&#xA; override System::String ^ ToString();" />
-      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="toolStripItemAccessibleObject.ToString " />
+      <MemberSignature Language="F#" Value="abstract member ToString : unit -&gt; string&#xA;override this.ToString : unit -&gt; string" Usage="toolStripItemAccessibleObject.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>System.Windows.Forms</AssemblyName>

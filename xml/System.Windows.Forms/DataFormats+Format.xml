@@ -1,4 +1,4 @@
-﻿<Type Name="DataFormats+Format" FullName="System.Windows.Forms.DataFormats+Format">
+<Type Name="DataFormats+Format" FullName="System.Windows.Forms.DataFormats+Format">
   <TypeSignature Language="C#" Value="public class DataFormats.Format" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit DataFormats/Format extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.DataFormats.Format" />
@@ -16,7 +16,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Represents a Clipboard format type.</summary>
+    <summary>
+             Represents a format type.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -56,11 +58,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="name" Type="System.String" />
         <Parameter Name="id" Type="System.Int32" />
@@ -68,7 +65,10 @@
       <Docs>
         <param name="name">The name of this format.</param>
         <param name="id">The ID number for this format.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.DataFormats.Format" /> class with a Boolean that indicates whether a <see langword="Win32" /> handle is expected.</summary>
+        <summary>
+             Initializes a new instance of the <see cref="T:System.Windows.Forms.DataFormats.Format" /> class and 
+             specifies whether a Win32 handle is expected with this format.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -97,16 +97,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the ID number for this format.</summary>
+        <summary>
+             Specifies the ID number for this format.
+            </summary>
         <value>The ID number for this format.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -125,16 +122,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the name of this format.</summary>
+        <summary>
+             Specifies the name of this format.
+            </summary>
         <value>The name of this format.</value>
         <remarks>To be added.</remarks>
       </Docs>

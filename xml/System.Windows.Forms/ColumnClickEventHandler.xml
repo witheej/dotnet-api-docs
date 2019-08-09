@@ -1,4 +1,4 @@
-﻿<Type Name="ColumnClickEventHandler" FullName="System.Windows.Forms.ColumnClickEventHandler">
+<Type Name="ColumnClickEventHandler" FullName="System.Windows.Forms.ColumnClickEventHandler">
   <TypeSignature Language="C#" Value="public delegate void ColumnClickEventHandler(object sender, ColumnClickEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ColumnClickEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ColumnClickEventHandler" />
@@ -24,7 +24,9 @@
   <Docs>
     <param name="sender">The source of the event.</param>
     <param name="e">A <see cref="T:System.Windows.Forms.ColumnClickEventArgs" /> that contains the event data.</param>
-    <summary>Represents the method that will handle the <see cref="E:System.Windows.Forms.ListView.ColumnClick" /> event of a <see cref="T:System.Windows.Forms.ListView" />.</summary>
+    <summary>
+             Represents a method that will handle the the <see cref="M:System.Windows.Forms.ListView.OnColumnClick(System.Windows.Forms.ColumnClickEventArgs)" />
+             event of a <see cref="T:System.Windows.Forms.ListView" /></summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

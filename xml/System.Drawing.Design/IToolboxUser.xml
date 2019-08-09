@@ -1,4 +1,4 @@
-﻿<Type Name="IToolboxUser" FullName="System.Drawing.Design.IToolboxUser">
+<Type Name="IToolboxUser" FullName="System.Drawing.Design.IToolboxUser">
   <TypeSignature Language="C#" Value="public interface IToolboxUser" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IToolboxUser" />
   <TypeSignature Language="DocId" Value="T:System.Drawing.Design.IToolboxUser" />
@@ -17,7 +17,9 @@
   </AssemblyInfo>
   <Interfaces />
   <Docs>
-    <summary>Defines an interface for setting the currently selected toolbox item and indicating whether a designer supports a particular toolbox item.</summary>
+    <summary>
+             Provides notifications of toolbox actions to designers which implement this interface.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -64,7 +66,9 @@
       </Parameters>
       <Docs>
         <param name="tool">The <see cref="T:System.Drawing.Design.ToolboxItem" /> to be tested for toolbox support.</param>
-        <summary>Gets a value indicating whether the specified tool is supported by the current designer.</summary>
+        <summary>
+             Gets a value indicating whether the specified tool is supported by the current designer
+            </summary>
         <returns>
           <see langword="true" /> if the tool is supported by the toolbox and can be enabled; <see langword="false" /> if the document designer does not know how to use the tool.</returns>
         <remarks>
@@ -112,8 +116,10 @@
         <Parameter Name="tool" Type="System.Drawing.Design.ToolboxItem" />
       </Parameters>
       <Docs>
-        <param name="tool">The <see cref="T:System.Drawing.Design.ToolboxItem" /> to select.</param>
-        <summary>Selects the specified tool.</summary>
+        <param name="tool">toolbox item</param>
+        <summary>
+             Selects the specified tool.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   

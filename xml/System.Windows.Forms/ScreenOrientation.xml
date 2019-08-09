@@ -1,4 +1,4 @@
-﻿<Type Name="ScreenOrientation" FullName="System.Windows.Forms.ScreenOrientation">
+<Type Name="ScreenOrientation" FullName="System.Windows.Forms.ScreenOrientation">
   <TypeSignature Language="C#" Value="public enum ScreenOrientation" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ScreenOrientation extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ScreenOrientation" />
@@ -14,7 +14,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the angle of the screen.</summary>
+    <summary>
+             Specifies the angle of screen orientation
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -44,7 +46,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>The screen is oriented at 0 degrees.</summary>
+        <summary>
+             The screen is oriented at 0 degrees
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Angle180">
@@ -65,7 +69,9 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>The screen is oriented at 180 degrees.</summary>
+        <summary>
+             The screen is oriented at 180 degrees.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Angle270">
@@ -86,7 +92,9 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>The screen is oriented at 270 degrees.</summary>
+        <summary>
+             The screen is oriented at 270 degrees.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Angle90">
@@ -107,7 +115,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The screen is oriented at 90 degrees</summary>
+        <summary>
+             The screen is oriented at 90 degrees
+            </summary>
       </Docs>
     </Member>
   </Members>

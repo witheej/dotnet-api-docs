@@ -1,4 +1,4 @@
-﻿<Type Name="SelectedGridItemChangedEventArgs" FullName="System.Windows.Forms.SelectedGridItemChangedEventArgs">
+<Type Name="SelectedGridItemChangedEventArgs" FullName="System.Windows.Forms.SelectedGridItemChangedEventArgs">
   <TypeSignature Language="C#" Value="public class SelectedGridItemChangedEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit SelectedGridItemChangedEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.SelectedGridItemChangedEventArgs" />
@@ -16,7 +16,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.Forms.PropertyGrid.SelectedGridItemChanged" /> event of the <see cref="T:System.Windows.Forms.PropertyGrid" /> control.</summary>
+    <summary>
+             The event class that is created when the selected GridItem in the PropertyGrid is changed by the user.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -51,11 +53,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="oldSel" Type="System.Windows.Forms.GridItem" />
         <Parameter Name="newSel" Type="System.Windows.Forms.GridItem" />
@@ -63,7 +60,9 @@
       <Docs>
         <param name="oldSel">The previously selected grid item.</param>
         <param name="newSel">The newly selected grid item.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.SelectedGridItemChangedEventArgs" /> class.</summary>
+        <summary>
+             Constructs a SelectedGridItemChangedEventArgs object.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -81,16 +80,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.GridItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the newly selected <see cref="T:System.Windows.Forms.GridItem" />.</summary>
+        <summary>
+             The newly selected GridItem object
+            </summary>
         <value>The new <see cref="T:System.Windows.Forms.GridItem" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -121,16 +117,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.GridItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the previously selected <see cref="T:System.Windows.Forms.GridItem" />.</summary>
+        <summary>
+             The previously selected GridItem object. This can be null.
+            </summary>
         <value>The old <see cref="T:System.Windows.Forms.GridItem" />. This can be <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

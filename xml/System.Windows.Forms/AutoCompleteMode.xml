@@ -1,4 +1,4 @@
-﻿<Type Name="AutoCompleteMode" FullName="System.Windows.Forms.AutoCompleteMode">
+<Type Name="AutoCompleteMode" FullName="System.Windows.Forms.AutoCompleteMode">
   <TypeSignature Language="C#" Value="public enum AutoCompleteMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AutoCompleteMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.AutoCompleteMode" />
@@ -14,7 +14,9 @@
     <BaseTypeName>System.Enum</BaseTypeName>
   </Base>
   <Docs>
-    <summary>Specifies the mode for the automatic completion feature used in the <see cref="T:System.Windows.Forms.ComboBox" /> and <see cref="T:System.Windows.Forms.TextBox" /> controls.</summary>
+    <summary>
+             Specifies the autocomplete mode for ComboBox and TextBox AutoComplete Feature.
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -36,7 +38,10 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Appends the remainder of the most likely candidate string to the existing characters, highlighting the appended characters.</summary>
+        <summary>
+             Appends the remainder of the most likely candidate string to the existing
+             characters, hightlighting the appended characters.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -57,7 +62,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Disables the automatic completion feature for the <see cref="T:System.Windows.Forms.ComboBox" /> and <see cref="T:System.Windows.Forms.TextBox" /> controls.</summary>
+        <summary>
+             Disables the AutoComplete Feature for ComboBox and TextBox.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Suggest">
@@ -78,7 +85,10 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Displays the auxiliary drop-down list associated with the edit control. This drop-down is populated with one or more suggested completion strings.</summary>
+        <summary>
+             Displays the auxiliary drop-down list associated with the edit control,
+             this drop-down is populated with one or more suggested completed strings.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="SuggestAppend">
@@ -99,7 +109,9 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>Applies both <see langword="Suggest" /> and <see langword="Append" /> options.</summary>
+        <summary>
+             The AutoSuggest and AutoAppend are applied in conjuction.
+            </summary>
       </Docs>
     </Member>
   </Members>

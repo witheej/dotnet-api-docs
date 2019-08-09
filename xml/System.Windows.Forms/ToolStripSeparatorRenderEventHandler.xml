@@ -1,4 +1,4 @@
-﻿<Type Name="ToolStripSeparatorRenderEventHandler" FullName="System.Windows.Forms.ToolStripSeparatorRenderEventHandler">
+<Type Name="ToolStripSeparatorRenderEventHandler" FullName="System.Windows.Forms.ToolStripSeparatorRenderEventHandler">
   <TypeSignature Language="C#" Value="public delegate void ToolStripSeparatorRenderEventHandler(object sender, ToolStripSeparatorRenderEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ToolStripSeparatorRenderEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripSeparatorRenderEventHandler" />
@@ -23,7 +23,9 @@
   <Docs>
     <param name="sender">The source of the event.</param>
     <param name="e">A <see cref="T:System.Windows.Forms.ToolStripSeparatorRenderEventArgs" /> that contains the event data.</param>
-    <summary>Represents the method that will handle the <see cref="E:System.Windows.Forms.ToolStripRenderer.RenderSeparator" /> event of a <see cref="T:System.Windows.Forms.ToolStripRenderer" /> class.</summary>
+    <summary>
+             Called when the background of a ToolStrip item is being rendered
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

@@ -1,4 +1,4 @@
-﻿<Type Name="ToolStripSplitButton" FullName="System.Windows.Forms.ToolStripSplitButton">
+<Type Name="ToolStripSplitButton" FullName="System.Windows.Forms.ToolStripSplitButton">
   <TypeSignature Language="C#" Value="public class ToolStripSplitButton : System.Windows.Forms.ToolStripDropDownItem" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolStripSplitButton extends System.Windows.Forms.ToolStripDropDownItem" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripSplitButton" />
@@ -62,7 +62,9 @@
       </AssemblyInfo>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripSplitButton" /> class.</summary>
+        <summary>
+             Summary of ToolStripSplitButton.
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -174,7 +176,7 @@
         <Parameter Name="image" Type="System.Drawing.Image" />
         <Parameter Name="dropDownItems" Type="System.Windows.Forms.ToolStripItem[]">
           <Attributes>
-            <Attribute FrameworkAlternate="netcore-3.0">
+            <Attribute>
               <AttributeName>System.ParamArray</AttributeName>
             </Attribute>
           </Attributes>
@@ -272,7 +274,9 @@
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the size and location of the standard button portion of a <see cref="T:System.Windows.Forms.ToolStripSplitButton" />.</summary>
+        <summary>
+             Summary of ToolStripSplitButton.
+            </summary>
         <value>A <see cref="T:System.Drawing.Rectangle" /> that represents the size and location of the standard button portion of a <see cref="T:System.Windows.Forms.ToolStripSplitButton" />.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Windows.Forms.ToolStripSplitButton.DropDownButtonBounds" />
@@ -295,7 +299,9 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the standard button portion of a <see cref="T:System.Windows.Forms.ToolStripSplitButton" /> is clicked.</summary>
+        <summary>
+             Occurs when the button portion of a split button is clicked.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -333,7 +339,9 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the standard button portion of a <see cref="T:System.Windows.Forms.ToolStripSplitButton" /> is double-clicked.</summary>
+        <summary>
+             Occurs when the utton portion of a split button  is double clicked.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -376,7 +384,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the button portion of the <see cref="T:System.Windows.Forms.ToolStripSplitButton" /> is in the pressed state.</summary>
+        <summary>
+             Summary of ButtonPressed.
+            </summary>
         <value>
           <see langword="true" /> if the button portion of the <see cref="T:System.Windows.Forms.ToolStripSplitButton" /> is in the pressed state; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -404,7 +414,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the standard button portion of a <see cref="T:System.Windows.Forms.ToolStripSplitButton" /> is selected or the <see cref="P:System.Windows.Forms.ToolStripSplitButton.DropDownButtonPressed" /> property is <see langword="true" />.</summary>
+        <summary>
+             Summary of ButtonPressed.
+            </summary>
         <value>
           <see langword="true" /> if the button portion of a <see cref="T:System.Windows.Forms.ToolStripSplitButton" /> is selected or whether <see cref="P:System.Windows.Forms.ToolStripSplitButton.DropDownButtonPressed" /> is <see langword="true" />; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -501,15 +513,14 @@
         <Attribute>
           <AttributeName>System.ComponentModel.DefaultValue(null)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolStripItem</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the portion of the <see cref="T:System.Windows.Forms.ToolStripSplitButton" /> that is activated when the control is first selected.</summary>
+        <summary>
+             Summary of DefaultItem.
+            </summary>
         <value>A <see langword="Forms.ToolStripItem" /> representing the portion of the <see cref="T:System.Windows.Forms.ToolStripSplitButton" /> that is activated when first selected. The default value is <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -540,7 +551,9 @@
         <ReturnType>System.EventHandler</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Occurs when the <see cref="P:System.Windows.Forms.ToolStripSplitButton.DefaultItem" /> has changed.</summary>
+        <summary>
+             Occurs when the default item has changed
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -578,7 +591,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether items on a <see cref="T:System.Windows.Forms.ToolStripSplitButton" /> are hidden after they are clicked.</summary>
+        <summary>
+             specifies the default behavior of these items on ToolStripDropDowns when clicked.
+            </summary>
         <value>
           <see langword="true" /> if the items are hidden after they are clicked; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -601,15 +616,14 @@
         <Attribute>
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the size and location, in screen coordinates, of the drop-down button portion of a <see cref="T:System.Windows.Forms.ToolStripSplitButton" />.</summary>
+        <summary>
+             The bounds of the DropDown in ToolStrip coordinates.
+            </summary>
         <value>A <see cref="T:System.Drawing.Rectangle" /> that represents the size and location of the drop-down button portion of a <see cref="T:System.Windows.Forms.ToolStripSplitButton" />, in screen coordinates.</value>
         <remarks>To be added.</remarks>
         <altmember cref="P:System.Windows.Forms.ToolStripSplitButton.ButtonBounds" />
@@ -637,7 +651,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the drop-down portion of the <see cref="T:System.Windows.Forms.ToolStripSplitButton" /> is in the pressed state.</summary>
+        <summary>
+             Summary of DropDownButtonBounds.
+            </summary>
         <value>
           <see langword="true" /> if the drop-down portion of the <see cref="T:System.Windows.Forms.ToolStripSplitButton" /> is in the pressed state; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -665,7 +681,9 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the drop-down button portion of a <see cref="T:System.Windows.Forms.ToolStripSplitButton" /> is selected.</summary>
+        <summary>
+             Summary of DropDownButtonSelected.
+            </summary>
         <value>
           <see langword="true" /> if the drop-down button portion of a <see cref="T:System.Windows.Forms.ToolStripSplitButton" /> is selected; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -685,16 +703,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>The width, in pixels, of the drop-down button portion of a <see cref="T:System.Windows.Forms.ToolStripSplitButton" />.</summary>
+        <summary>
+             Summary of DropDownButtonWidth.
+            </summary>
         <value>An <see cref="T:System.Int32" /> representing the width in pixels. The default is 11. Starting with the .NET Framework 4.6, the default value is based on the DPI setting of the device running the app.</value>
         <remarks>To be added.</remarks>
         <exception cref="T:System.ArgumentOutOfRangeException">The specified value is less than zero (0).</exception>
@@ -748,7 +763,10 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripSplitButton.ButtonClick" /> event.</summary>
+        <summary>
+             called when the button portion of a split button is clicked
+             if there is a default item, this will route the click to the default item
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -785,7 +803,10 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripSplitButton.ButtonDoubleClick" /> event.</summary>
+        <summary>
+             called when the button portion of a split button is double clicked
+             if there is a default item, this will route the double click to the default item
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -822,7 +843,9 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.ToolStripSplitButton.DefaultItemChanged" /> event.</summary>
+        <summary>
+             Inheriting classes should override this method to handle this event.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -859,7 +882,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.MouseDown" /> event.</summary>
+        <summary>
+             Summary of OnMouseDown.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -933,7 +958,9 @@
       </Parameters>
       <Docs>
         <param name="e">A <see cref="T:System.Windows.Forms.MouseEventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.MouseUp" /> event.</summary>
+        <summary>
+             Summary of OnMouseUp.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -996,7 +1023,9 @@
       </Parameters>
       <Docs>
         <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
-        <summary>Raises the <see cref="E:System.Windows.Forms.Control.RightToLeftChanged" /> event.</summary>
+        <summary>
+             Summary of OnRightToLeftChanged.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1116,7 +1145,7 @@
       </AssemblyInfo>
       <Attributes>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Never)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -1124,7 +1153,9 @@
       </ReturnValue>
       <Parameters />
       <Docs>
-        <summary>This method is not relevant to this class.</summary>
+        <summary>
+             Resets the RightToLeft to be the default.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -1153,15 +1184,15 @@
         <Attribute>
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the boundaries of the separator between the standard and drop-down button portions of a <see cref="T:System.Windows.Forms.ToolStripSplitButton" />.</summary>
+        <summary>
+             the boundaries of the separator between the default and drop down button, exposed for custom
+             painting purposes.
+            </summary>
         <value>A <see cref="T:System.Drawing.Rectangle" /> that represents the size and location of the separator.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

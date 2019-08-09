@@ -1,4 +1,4 @@
-﻿<Type Name="TypeValidationEventArgs" FullName="System.Windows.Forms.TypeValidationEventArgs">
+<Type Name="TypeValidationEventArgs" FullName="System.Windows.Forms.TypeValidationEventArgs">
   <TypeSignature Language="C#" Value="public class TypeValidationEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit TypeValidationEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.TypeValidationEventArgs" />
@@ -15,7 +15,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.Forms.MaskedTextBox.TypeValidationCompleted" /> event.</summary>
+    <summary>
+             Provides data for the TypeValidationEventHandler event.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -55,11 +57,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="validatingType" Type="System.Type" />
         <Parameter Name="isValidInput" Type="System.Boolean" />
@@ -99,19 +96,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value indicating whether the event should be canceled.</summary>
+        <summary>
+             Specifies whether focus should be allowed to be shifted from the control.
+            </summary>
         <value>
           <see langword="true" /> if the event should be canceled and focus retained by the <see cref="T:System.Windows.Forms.MaskedTextBox" /> control; otherwise, <see langword="false" /> to continue validation processing.</value>
         <remarks>
@@ -151,16 +142,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the formatted input string was successfully converted to the validating type.</summary>
+        <summary>
+             The exception thrown by the validating object while performing the data validation.
+            </summary>
         <value>
           <see langword="true" /> if the formatted input string can be converted into the type specified by the <see cref="P:System.Windows.Forms.TypeValidationEventArgs.ValidatingType" /> property; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -208,16 +196,14 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a text message describing the conversion process.</summary>
+        <summary>
+             A message about the validation operation. Intended to be populated with
+             an exception information if any thrown.
+            </summary>
         <value>A <see cref="T:System.String" /> containing a description of the conversion process.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -254,16 +240,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Object</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the object that results from the conversion of the formatted input string.</summary>
+        <summary>
+             The value returned from the Parse method.
+            </summary>
         <value>If the validation is successful, an <see cref="T:System.Object" /> that represents the converted type; otherwise, <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -301,16 +284,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Type</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the type that the formatted input string is being validated against.</summary>
+        <summary>
+             The position where the test failed the mask constraint.
+            </summary>
         <value>The target <see cref="T:System.Type" /> of the conversion process. This should never be <see langword="null" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

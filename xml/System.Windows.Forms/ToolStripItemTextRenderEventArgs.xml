@@ -1,4 +1,4 @@
-﻿<Type Name="ToolStripItemTextRenderEventArgs" FullName="System.Windows.Forms.ToolStripItemTextRenderEventArgs">
+<Type Name="ToolStripItemTextRenderEventArgs" FullName="System.Windows.Forms.ToolStripItemTextRenderEventArgs">
   <TypeSignature Language="C#" Value="public class ToolStripItemTextRenderEventArgs : System.Windows.Forms.ToolStripItemRenderEventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ToolStripItemTextRenderEventArgs extends System.Windows.Forms.ToolStripItemRenderEventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolStripItemTextRenderEventArgs" />
@@ -15,7 +15,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.Forms.ToolStripRenderer.RenderItemText" /> event.</summary>
+    <summary>
+             This class represents all the information to render the ToolStrip
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -70,7 +72,9 @@
         <param name="textColor">The <see cref="T:System.Drawing.Color" /> used to draw the text.</param>
         <param name="textFont">The <see cref="T:System.Drawing.Font" /> used to draw the text.</param>
         <param name="textAlign">The <see cref="T:System.Drawing.ContentAlignment" /> that specifies the vertical and horizontal alignment of the text in the bounding area.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripItemTextRenderEventArgs" /> class with the specified text and text properties.</summary>
+        <summary>
+             This class represents all the information to render the ToolStrip
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -104,7 +108,9 @@
         <param name="textColor">The <see cref="T:System.Drawing.Color" /> used to draw the text.</param>
         <param name="textFont">The <see cref="T:System.Drawing.Font" /> used to draw the text.</param>
         <param name="format">The display and layout information for text strings.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ToolStripItemTextRenderEventArgs" /> class with the specified text and text properties format.</summary>
+        <summary>
+             This class represents all the information to render the ToolStrip
+            </summary>
         <remarks>To be added.</remarks>
       </Docs>
     </Member>
@@ -121,19 +127,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.String</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the text to be drawn on the <see cref="T:System.Windows.Forms.ToolStripItem" />.</summary>
+        <summary>
+             The string to draw
+            </summary>
         <value>A string that represents the text to be painted on the <see cref="T:System.Windows.Forms.ToolStripItem" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -167,7 +167,9 @@
         <ReturnType>System.Drawing.Color</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the color of the <see cref="T:System.Windows.Forms.ToolStripItem" /> text.</summary>
+        <summary>
+             The color to draw the text
+            </summary>
         <value>A <see cref="T:System.Drawing.Color" /> that represents the color of the <see cref="T:System.Windows.Forms.ToolStripItem" /> text.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -197,19 +199,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.ToolStripTextDirection</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets whether the text is drawn vertically or horizontally.</summary>
+        <summary>
+             The angle at which the text should be drawn in tenths of degrees.
+            </summary>
         <value>One of the <see cref="T:System.Windows.Forms.ToolStripTextDirection" /> values.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -239,19 +235,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Font</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the font of the text drawn on the <see cref="T:System.Windows.Forms.ToolStripItem" />.</summary>
+        <summary>
+             The font to draw the text
+            </summary>
         <value>The <see cref="T:System.Drawing.Font" /> of the text drawn on the <see cref="T:System.Windows.Forms.ToolStripItem" />.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -281,19 +271,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Windows.Forms.TextFormatFlags</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the display and layout information of the text drawn on the <see cref="T:System.Windows.Forms.ToolStripItem" />.</summary>
+        <summary>
+             The rectangle to draw the text in
+            </summary>
         <value>A bitwise combination of the <see cref="T:System.Windows.Forms.TextFormatFlags" /> values that specify the display and layout information of the drawn text.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -323,19 +307,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Rectangle</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets the rectangle that represents the bounds to draw the text in.</summary>
+        <summary>
+             The rectangle to draw the text in
+            </summary>
         <value>The <see cref="T:System.Drawing.Rectangle" /> that represents the bounds to draw the text in.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

@@ -1,4 +1,4 @@
-﻿<Type Name="ListViewItemStates" FullName="System.Windows.Forms.ListViewItemStates">
+<Type Name="ListViewItemStates" FullName="System.Windows.Forms.ListViewItemStates">
   <TypeSignature Language="C#" Value="public enum ListViewItemStates" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ListViewItemStates extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ListViewItemStates" />
@@ -19,7 +19,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Defines constants that represent the possible states of a <see cref="T:System.Windows.Forms.ListViewItem" />.</summary>
+    <summary>
+             Gives state information about a ListView item/sub-item. Used with owner draw.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

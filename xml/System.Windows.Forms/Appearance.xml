@@ -1,4 +1,4 @@
-﻿<Type Name="Appearance" FullName="System.Windows.Forms.Appearance">
+<Type Name="Appearance" FullName="System.Windows.Forms.Appearance">
   <TypeSignature Language="C#" Value="public enum Appearance" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed Appearance extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Appearance" />
@@ -20,7 +20,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies the appearance of a control.</summary>
+    <summary>
+             Specifies the appearance of a control.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -50,7 +52,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The appearance of a Windows button.</summary>
+        <summary>
+             The appearance of a Windows button.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Normal">
@@ -72,7 +76,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>The default appearance defined by the control class.</summary>
+        <summary>
+             The default appearance defined by the control class.
+            </summary>
       </Docs>
     </Member>
   </Members>

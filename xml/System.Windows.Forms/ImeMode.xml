@@ -1,4 +1,4 @@
-﻿<Type Name="ImeMode" FullName="System.Windows.Forms.ImeMode">
+<Type Name="ImeMode" FullName="System.Windows.Forms.ImeMode">
   <TypeSignature Language="C#" Value="public enum ImeMode" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ImeMode extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ImeMode" />
@@ -20,7 +20,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Specifies a value that determines the Input Method Editor (IME) status of an object when the object is selected.</summary>
+    <summary>
+             Specifies a value that determines the IME (Input Method Editor) status
+             of the object when that object is selected.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -67,7 +70,9 @@
       </ReturnValue>
       <MemberValue>8</MemberValue>
       <Docs>
-        <summary>Alphanumeric single-byte characters(SBC). This setting is valid for Korean and Japanese IME only.</summary>
+        <summary>
+             Alphanumeric SBC. This setting is valid for Japanese IME only.
+            </summary>
         <forInternalUseOnly />
         <altmember cref="P:System.Windows.Forms.Control.ImeMode" />
         <altmember cref="T:System.Windows.Forms.InputLanguageChangedEventArgs" />
@@ -92,7 +97,9 @@
       </ReturnValue>
       <MemberValue>7</MemberValue>
       <Docs>
-        <summary>Alphanumeric double-byte characters. This setting is valid for Korean and Japanese IME only.</summary>
+        <summary>
+             Alphanumeric DBC. This setting is valid for Japanese IME only.
+            </summary>
         <forInternalUseOnly />
         <altmember cref="P:System.Windows.Forms.Control.ImeMode" />
         <altmember cref="T:System.Windows.Forms.InputLanguageChangedEventArgs" />
@@ -116,7 +123,9 @@
       </ReturnValue>
       <MemberValue>11</MemberValue>
       <Docs>
-        <summary>IME closed. This setting is valid for Chinese IME only.</summary>
+        <summary>
+             Ime Closed. This setting is valid for Chinese IME only.
+            </summary>
         <forInternalUseOnly />
         <altmember cref="P:System.Windows.Forms.Control.ImeMode" />
         <altmember cref="T:System.Windows.Forms.InputLanguageChangedEventArgs" />
@@ -141,7 +150,12 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>The IME is disabled. With this setting, the users cannot turn the IME on from the keyboard, and the IME floating window is hidden.</summary>
+        <summary>
+             IME disabled. This mode is similar to IMEMode = 2, except the value 3
+             disables IME. With this setting, the users cannot turn the IME on from
+             the keyboard, and the IME floating window is hidden. This setting is
+             valid for Japanese IME only.
+            </summary>
         <forInternalUseOnly />
         <altmember cref="P:System.Windows.Forms.Control.ImeMode" />
         <altmember cref="T:System.Windows.Forms.InputLanguageChangedEventArgs" />
@@ -166,7 +180,9 @@
       </ReturnValue>
       <MemberValue>10</MemberValue>
       <Docs>
-        <summary>Hangul SBC. This setting is valid for the Korean IME only.</summary>
+        <summary>
+             Hangeul SBC. This setting is valid for Korean IME only.
+            </summary>
         <forInternalUseOnly />
         <altmember cref="P:System.Windows.Forms.Control.ImeMode" />
         <altmember cref="T:System.Windows.Forms.InputLanguageChangedEventArgs" />
@@ -191,7 +207,9 @@
       </ReturnValue>
       <MemberValue>9</MemberValue>
       <Docs>
-        <summary>Hangul DBC. This setting is valid for the Korean IME only.</summary>
+        <summary>
+             Hangeul DBC. This setting is valid for Korean IME only.
+            </summary>
         <forInternalUseOnly />
         <altmember cref="P:System.Windows.Forms.Control.ImeMode" />
         <altmember cref="T:System.Windows.Forms.InputLanguageChangedEventArgs" />
@@ -216,7 +234,10 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>Hiragana DBC. This setting is valid for the Japanese IME only.</summary>
+        <summary>
+             Hiragana double-byte characters (DBC). This setting is valid for
+             Japanese IME only.
+            </summary>
         <forInternalUseOnly />
         <altmember cref="P:System.Windows.Forms.Control.ImeMode" />
         <altmember cref="T:System.Windows.Forms.InputLanguageChangedEventArgs" />
@@ -241,7 +262,11 @@
       </ReturnValue>
       <MemberValue>-1</MemberValue>
       <Docs>
-        <summary>Inherits the IME mode of the parent control.</summary>
+        <summary>
+             Inherit (Default). This value indicates inherit the ImeMode from the
+             parent control. For controls with no parent, the ImeMode will default
+             to NoControl.
+            </summary>
         <forInternalUseOnly />
         <altmember cref="P:System.Windows.Forms.Control.ImeMode" />
         <altmember cref="T:System.Windows.Forms.InputLanguageChangedEventArgs" />
@@ -266,7 +291,9 @@
       </ReturnValue>
       <MemberValue>5</MemberValue>
       <Docs>
-        <summary>Katakana DBC. This setting is valid for the Japanese IME only.</summary>
+        <summary>
+             Katakana DBC. This setting is valid for Japanese IME only.
+            </summary>
         <forInternalUseOnly />
         <altmember cref="P:System.Windows.Forms.Control.ImeMode" />
         <altmember cref="T:System.Windows.Forms.InputLanguageChangedEventArgs" />
@@ -291,7 +318,10 @@
       </ReturnValue>
       <MemberValue>6</MemberValue>
       <Docs>
-        <summary>Katakana SBC. This setting is valid for the Japanese IME only.</summary>
+        <summary>
+             Katakana single-byte characters (SBC). This setting is valid for
+             Japanese IME only.
+            </summary>
         <forInternalUseOnly />
         <altmember cref="P:System.Windows.Forms.Control.ImeMode" />
         <altmember cref="T:System.Windows.Forms.InputLanguageChangedEventArgs" />
@@ -316,7 +346,11 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>None (Default).</summary>
+        <summary>
+             None. This value indicates "No control to IME". When the IMEMode
+             property is set to 0, you can use the IMEStatus function to determine
+             the current IME status.
+            </summary>
         <forInternalUseOnly />
         <altmember cref="P:System.Windows.Forms.Control.ImeMode" />
         <altmember cref="T:System.Windows.Forms.InputLanguageChangedEventArgs" />
@@ -341,7 +375,11 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>The IME is off. This mode indicates that the IME is off, meaning that the object behaves the same as English entry mode. This setting is valid for Japanese, Simplified Chinese, and Traditional Chinese IME only.</summary>
+        <summary>
+             IME off. This mode indicates that the IME is off, meaning that the
+             object behaves the same as English entry mode. This setting is valid
+             for Japanese, Simplified Chinese, and Traditional Chinese IME only.
+            </summary>
         <forInternalUseOnly />
         <altmember cref="P:System.Windows.Forms.Control.ImeMode" />
         <altmember cref="T:System.Windows.Forms.InputLanguageChangedEventArgs" />
@@ -366,7 +404,11 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The IME is on. This value indicates that the IME is on and characters specific to Chinese or Japanese can be entered. This setting is valid for Japanese, Simplified Chinese, and Traditional Chinese IME only.</summary>
+        <summary>
+             IME on. This value indicates that the IME is on and characters specific
+             to Chinese or Japanese can be entered. This setting is valid for
+             Japanese, Simplified Chinese, and Traditional Chinese IME only.
+            </summary>
         <forInternalUseOnly />
         <altmember cref="P:System.Windows.Forms.Control.ImeMode" />
         <altmember cref="T:System.Windows.Forms.InputLanguageChangedEventArgs" />
@@ -390,7 +432,10 @@
       </ReturnValue>
       <MemberValue>12</MemberValue>
       <Docs>
-        <summary>IME on HalfShape. This setting is valid for Chinese IME only.</summary>
+        <summary>
+             Ime On HalfShape. This setting is valid for Chinese IME only.
+             Note: This value is for internal use only - See QFE 4448.
+            </summary>
         <forInternalUseOnly />
         <altmember cref="P:System.Windows.Forms.Control.ImeMode" />
         <altmember cref="T:System.Windows.Forms.InputLanguageChangedEventArgs" />

@@ -1,4 +1,4 @@
-﻿<Type Name="ToolTipIcon" FullName="System.Windows.Forms.ToolTipIcon">
+<Type Name="ToolTipIcon" FullName="System.Windows.Forms.ToolTipIcon">
   <TypeSignature Language="C#" Value="public enum ToolTipIcon" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ToolTipIcon extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ToolTipIcon" />
@@ -45,7 +45,9 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>An error icon</summary>
+        <summary>
+             A Error Icon.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Info">
@@ -66,7 +68,9 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>An information icon.</summary>
+        <summary>
+             A Information Icon.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="None">
@@ -87,7 +91,9 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>Not a standard icon.</summary>
+        <summary>
+             No Icon.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="Warning">
@@ -108,7 +114,9 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>A warning icon.</summary>
+        <summary>
+             A Warning Icon.
+            </summary>
       </Docs>
     </Member>
   </Members>

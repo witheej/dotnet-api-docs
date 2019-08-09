@@ -1,4 +1,4 @@
-﻿<Type Name="MessageBoxButtons" FullName="System.Windows.Forms.MessageBoxButtons">
+<Type Name="MessageBoxButtons" FullName="System.Windows.Forms.MessageBoxButtons">
   <TypeSignature Language="C#" Value="public enum MessageBoxButtons" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MessageBoxButtons extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.MessageBoxButtons" />
@@ -55,7 +55,11 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>The message box contains Abort, Retry, and Ignore buttons.</summary>
+        <summary>
+             Specifies that the message box contains Abort, Retry, and Ignore
+             buttons.
+             This field is constant.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="OK">
@@ -77,7 +81,10 @@
       </ReturnValue>
       <MemberValue>0</MemberValue>
       <Docs>
-        <summary>The message box contains an OK button.</summary>
+        <summary>
+             Specifies that the message box contains an OK button. This field is
+             constant.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="OKCancel">
@@ -99,7 +106,10 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>The message box contains OK and Cancel buttons.</summary>
+        <summary>
+             Specifies that the message box contains OK and Cancel buttons. This
+             field is constant.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="RetryCancel">
@@ -121,7 +131,10 @@
       </ReturnValue>
       <MemberValue>5</MemberValue>
       <Docs>
-        <summary>The message box contains Retry and Cancel buttons.</summary>
+        <summary>
+             Specifies that the message box contains Retry and Cancel buttons.
+             This field is constant.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="YesNo">
@@ -143,7 +156,11 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>The message box contains Yes and No buttons.</summary>
+        <summary>
+             Specifies that the
+             message box contains Yes and No buttons. This field is
+             constant.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="YesNoCancel">
@@ -165,7 +182,10 @@
       </ReturnValue>
       <MemberValue>3</MemberValue>
       <Docs>
-        <summary>The message box contains Yes, No, and Cancel buttons.</summary>
+        <summary>
+             Specifies that the message box contains Yes, No, and Cancel buttons.
+             This field is constant.
+            </summary>
       </Docs>
     </Member>
   </Members>

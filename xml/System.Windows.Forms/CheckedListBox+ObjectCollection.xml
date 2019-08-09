@@ -1,4 +1,4 @@
-﻿<Type Name="CheckedListBox+ObjectCollection" FullName="System.Windows.Forms.CheckedListBox+ObjectCollection">
+<Type Name="CheckedListBox+ObjectCollection" FullName="System.Windows.Forms.CheckedListBox+ObjectCollection">
   <TypeSignature Language="C#" Value="public class CheckedListBox.ObjectCollection : System.Windows.Forms.ListBox.ObjectCollection" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit CheckedListBox/ObjectCollection extends System.Windows.Forms.ListBox/ObjectCollection" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.CheckedListBox.ObjectCollection" />
@@ -52,11 +52,6 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="owner" Type="System.Windows.Forms.CheckedListBox" />
       </Parameters>
@@ -100,7 +95,10 @@
         <param name="item">An object representing the item to add to the collection.</param>
         <param name="isChecked">
           <see langword="true" /> to check the item; otherwise, <see langword="false" />.</param>
-        <summary>Adds an item to the list of items for a <see cref="T:System.Windows.Forms.CheckedListBox" />, specifying the object to add and whether it is checked.</summary>
+        <summary>
+             Lets the user add an item to the listbox with the given initial value
+             for the Checked portion of the item.
+            </summary>
         <returns>The index of the newly added item.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -147,7 +145,10 @@
       <Docs>
         <param name="item">An object representing the item to add to the collection.</param>
         <param name="check">The initial <see cref="T:System.Windows.Forms.CheckState" /> for the checked portion of the item.</param>
-        <summary>Adds an item to the list of items for a <see cref="T:System.Windows.Forms.CheckedListBox" />, specifying the object to add and the initial checked value.</summary>
+        <summary>
+             Lets the user add an item to the listbox with the given initial value
+             for the Checked portion of the item.
+            </summary>
         <returns>The index of the newly added item.</returns>
         <remarks>
           <format type="text/markdown"><![CDATA[  

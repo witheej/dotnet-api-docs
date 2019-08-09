@@ -1,4 +1,4 @@
-﻿<Type Name="ListViewVirtualItemsSelectionRangeChangedEventArgs" FullName="System.Windows.Forms.ListViewVirtualItemsSelectionRangeChangedEventArgs">
+<Type Name="ListViewVirtualItemsSelectionRangeChangedEventArgs" FullName="System.Windows.Forms.ListViewVirtualItemsSelectionRangeChangedEventArgs">
   <TypeSignature Language="C#" Value="public class ListViewVirtualItemsSelectionRangeChangedEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit ListViewVirtualItemsSelectionRangeChangedEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ListViewVirtualItemsSelectionRangeChangedEventArgs" />
@@ -15,7 +15,9 @@
   </Base>
   <Interfaces />
   <Docs>
-    <summary>Provides data for the <see cref="E:System.Windows.Forms.ListView.VirtualItemsSelectionRangeChanged" /> event.</summary>
+    <summary>
+             The event class that is created when the selection state of a ListViewItem is changed.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   
@@ -59,7 +61,9 @@
         <param name="endIndex">The index of the last item in the range that has changed.</param>
         <param name="isSelected">
           <see langword="true" /> to indicate the items are selected; <see langword="false" /> to indicate the items are deselected.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.Windows.Forms.ListViewVirtualItemsSelectionRangeChangedEventArgs" /> class.</summary>
+        <summary>
+             Constructs a ListViewVirtualItemsSelectionRangeChangedEventArgs object.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -85,16 +89,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the index for the last item in the range of items whose selection state has changed</summary>
+        <summary>
+             Returns the end of the range where the selection changed
+            </summary>
         <value>The index of the last item in the range of items whose selection state has changed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  
@@ -124,16 +125,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets a value indicating whether the range of items is selected.</summary>
+        <summary>
+             Return true if the items are selected
+            </summary>
         <value>
           <see langword="true" /> if the range of items is selected; <see langword="false" /> if the range of items is deselected.</value>
         <remarks>
@@ -169,16 +167,13 @@
         <AssemblyVersion>2.0.0.0</AssemblyVersion>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Int32</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the index for the first item in the range of items whose selection state has changed.</summary>
+        <summary>
+             Returns the begining of the range where the selection changed
+            </summary>
         <value>The index of the first item in the range of items whose selection state has changed.</value>
         <remarks>
           <format type="text/markdown"><![CDATA[  

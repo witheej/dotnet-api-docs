@@ -1,4 +1,4 @@
-﻿<Type Name="DesignerOptions" FullName="System.Windows.Forms.Design.DesignerOptions">
+<Type Name="DesignerOptions" FullName="System.Windows.Forms.Design.DesignerOptions">
   <TypeSignature Language="C#" Value="public class DesignerOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit DesignerOptions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.Design.DesignerOptions" />
@@ -24,7 +24,9 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides access to get and set option values for a designer.</summary>
+    <summary>
+             Provides access to get and set option values for a designer.
+            </summary>
     <remarks>To be added.</remarks>
     <altmember cref="T:System.ComponentModel.Design.DesignerOptionService" />
   </Docs>
@@ -73,18 +75,14 @@
         <Attribute>
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
       </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that enables or disables in-place editing for <see cref="T:System.Windows.Forms.ToolStrip" /> controls.</summary>
+        <summary>
+             This property enables or disables the InSitu Editing for ToolStrips
+            </summary>
         <value>
           <see langword="true" /> if in-place editing for <see cref="T:System.Windows.Forms.ToolStrip" /> controls is enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
@@ -107,16 +105,13 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Drawing.Size</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a <see cref="T:System.Drawing.Size" /> representing the dimensions of a grid unit.</summary>
+        <summary>
+             Public GridSize property.
+            </summary>
         <value>A <see cref="T:System.Drawing.Size" /> representing the dimensions of a grid unit.</value>
         <remarks>To be added.</remarks>
         <altmember cref="T:System.ComponentModel.Design.DesignerOptionService" />
@@ -139,19 +134,13 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that specifies whether a designer shows a component's smart tag panel automatically on creation.</summary>
+        <summary>
+             This property enables or disables smart tags in the designer.
+            </summary>
         <value>
           <see langword="true" /> to allow a component's smart tag panel to open automatically upon creation; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
@@ -183,19 +172,13 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that enables or disables the grid in the designer.</summary>
+        <summary>
+             Public ShowGrid property.
+            </summary>
         <value>
           <see langword="true" /> if the grid is enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>To be added.</remarks>
@@ -219,19 +202,13 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that enables or disables whether controls are automatically placed at grid coordinates.</summary>
+        <summary>
+             Public SnapToGrid property.
+            </summary>
         <value>
           <see langword="true" /> if snapping is enabled; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>
@@ -255,19 +232,13 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that enables or disables the component cache.</summary>
+        <summary>
+             This property enables or disables the component cache
+            </summary>
         <value>
           <see langword="true" /> if the component cache is enabled; otherwise, <see langword="false" />. The default is <see langword="true" />.</value>
         <remarks>
@@ -298,19 +269,13 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that enables or disables smart tags in the designer.</summary>
+        <summary>
+             This property enables or disables smart tags in the designer.
+            </summary>
         <value>
           <see langword="true" /> if smart tags in the designer are enabled; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -342,19 +307,13 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>set: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets or sets a value that enables or disables snaplines in the designer.</summary>
+        <summary>
+             This property enables or disables snaplines in the designer.
+            </summary>
         <value>
           <see langword="true" /> if snaplines in the designer are enabled; otherwise, <see langword="false" />.</value>
         <remarks>To be added.</remarks>

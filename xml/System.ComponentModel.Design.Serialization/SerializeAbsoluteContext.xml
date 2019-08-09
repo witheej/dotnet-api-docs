@@ -1,4 +1,4 @@
-﻿<Type Name="SerializeAbsoluteContext" FullName="System.ComponentModel.Design.Serialization.SerializeAbsoluteContext">
+<Type Name="SerializeAbsoluteContext" FullName="System.ComponentModel.Design.Serialization.SerializeAbsoluteContext">
   <TypeSignature Language="C#" Value="public sealed class SerializeAbsoluteContext" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit SerializeAbsoluteContext extends System.Object" />
   <TypeSignature Language="DocId" Value="T:System.ComponentModel.Design.Serialization.SerializeAbsoluteContext" />
@@ -57,14 +57,12 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters />
       <Docs>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Serialization.SerializeAbsoluteContext" /> class.</summary>
+        <summary>
+             Creeates a new SerializeAbsoluteContext. Member can be null or
+             omitted to indicate this context should be used for all members.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -92,17 +90,15 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <Parameters>
         <Parameter Name="member" Type="System.ComponentModel.MemberDescriptor" />
       </Parameters>
       <Docs>
         <param name="member">The member to which this context is bound. Can be <see langword="null" />.</param>
-        <summary>Initializes a new instance of the <see cref="T:System.ComponentModel.Design.Serialization.SerializeAbsoluteContext" /> class with the option of binding to a specific member.</summary>
+        <summary>
+             Creeates a new SerializeAbsoluteContext. Member can be null or
+             omitted to indicate this context should be used for all members.
+            </summary>
         <remarks>
           <format type="text/markdown"><![CDATA[  
   
@@ -133,16 +129,13 @@
         <AssemblyName>System.Windows.Forms.Design</AssemblyName>
         <AssemblyVersion>4.0.0.0</AssemblyVersion>
       </AssemblyInfo>
-      <Attributes>
-        <Attribute FrameworkAlternate="netframework-4.0">
-          <AttributeName>get: System.Runtime.TargetedPatchingOptOut("Performance critical to inline this type of method across NGen image boundaries")</AttributeName>
-        </Attribute>
-      </Attributes>
       <ReturnValue>
         <ReturnType>System.ComponentModel.MemberDescriptor</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Gets the member to which this context is bound.</summary>
+        <summary>
+             This property returns the member this context is bound to. It may be null to indicate the context is bound to all members of an object.
+            </summary>
         <value>The member to which this context is bound, or <see langword="null" /> if the context is bound to all members of an object.</value>
         <remarks>To be added.</remarks>
       </Docs>
@@ -172,7 +165,9 @@
       </Parameters>
       <Docs>
         <param name="member">The member to be examined for serialization.</param>
-        <summary>Gets a value indicating whether the given member should be serialized in this context.</summary>
+        <summary>
+             Returns true if the given member should be serialized in this context.
+            </summary>
         <returns>
           <see langword="true" /> if the given member should be serialized in this context; otherwise, <see langword="false" />.</returns>
         <remarks>To be added.</remarks>

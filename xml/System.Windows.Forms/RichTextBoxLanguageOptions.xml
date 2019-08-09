@@ -1,4 +1,4 @@
-﻿<Type Name="RichTextBoxLanguageOptions" FullName="System.Windows.Forms.RichTextBoxLanguageOptions">
+<Type Name="RichTextBoxLanguageOptions" FullName="System.Windows.Forms.RichTextBoxLanguageOptions">
   <TypeSignature Language="C#" Value="public enum RichTextBoxLanguageOptions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed RichTextBoxLanguageOptions extends System.Enum" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.RichTextBoxLanguageOptions" />
@@ -19,7 +19,10 @@
     </Attribute>
   </Attributes>
   <Docs>
-    <summary>Provides <see cref="T:System.Windows.Forms.RichTextBox" /> settings for Input Method Editor (IME) and Asian language support.</summary>
+    <summary>
+             Rich edit control's option settings for Input Method Editor (IME) and
+             Asian language support
+            </summary>
     <remarks>To be added.</remarks>
   </Docs>
   <Members>
@@ -41,7 +44,10 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>Specifies that the control automatically changes fonts when the user explicitly changes to a different keyboard layout.</summary>
+        <summary>
+             If this flag is set, the control automatically changes fonts when the
+             user explicitly changes to a different keyboard layout.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="AutoFontSizeAdjust">
@@ -62,7 +68,11 @@
       </ReturnValue>
       <MemberValue>16</MemberValue>
       <Docs>
-        <summary>Specifies that font-bound font sizes are scaled from the insertion point size according to a script. For example, Asian fonts are slightly larger than Western fonts. This is the default.</summary>
+        <summary>
+             Font-bound font sizes are scaled from insertion point size according to
+             a script. For example, Asian fonts are slightly larger than Western.
+             This is the default.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="AutoKeyboard">
@@ -83,7 +93,12 @@
       </ReturnValue>
       <MemberValue>1</MemberValue>
       <Docs>
-        <summary>Specifies that the <see cref="T:System.Windows.Forms.RichTextBox" /> control automatically changes the keyboard layout when the user explicitly changes to a different font, or when the user explicitly changes the insertion point to a new location in the text.</summary>
+        <summary>
+             If this flag is set, the control automatically changes the keyboard
+             layout when the  user explicitly changes to a different font, or when
+             the user explicitly changes the insertion point to a new location in
+             the text.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="DualFont">
@@ -104,7 +119,11 @@
       </ReturnValue>
       <MemberValue>128</MemberValue>
       <Docs>
-        <summary>Sets the control to dual-font mode. Used for Asian language text. The <see cref="T:System.Windows.Forms.RichTextBox" /> control uses an English font for ASCII text and an Asian font for Asian text.</summary>
+        <summary>
+             Sets the control to dual-font mode. Used for Asian language text.
+             The control uses an English font for ASCII text and an Asian font for
+             Asian text.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="ImeAlwaysSendNotify">
@@ -125,7 +144,12 @@
       </ReturnValue>
       <MemberValue>8</MemberValue>
       <Docs>
-        <summary>Specifies how the client is notified during IME composition. A setting of 0 specifies that no EN_CHANGE or EN_SELCHANGE events occur during an undetermined state. Notification is sent when the final string comes in. This is the default. A setting of 1 specifies that EN_CHANGE and EN_SELCHANGE events occur during an undetermined state.</summary>
+        <summary>
+             Controls how Rich Edit notifies the client during IME composition:
+             0: No EN_CHANGE or EN_SELCHANGE notifications during undetermined state.
+             Send notification when final string comes in. (default)
+             1: Send EN_CHANGE and EN_SELCHANGE events during undetermined state.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="ImeCancelComplete">
@@ -146,7 +170,12 @@
       </ReturnValue>
       <MemberValue>4</MemberValue>
       <Docs>
-        <summary>Specifies how the control uses the composition string of an Input Method Editor (IME) if the user cancels it. If this flag is set, the control discards the composition string. If this flag is not set, the control uses the composition string as the result string.</summary>
+        <summary>
+             This flag determines how the control uses the composition string of an
+             IME if the user cancels it. If this flag is set, the control discards
+             the composition string. If this flag is not set, the control uses the
+             composition string as the result string.
+            </summary>
       </Docs>
     </Member>
     <Member MemberName="UIFonts">
@@ -167,7 +196,9 @@
       </ReturnValue>
       <MemberValue>32</MemberValue>
       <Docs>
-        <summary>Specifies that user-interface default fonts be used. This option is turned off by default.</summary>
+        <summary>
+             Use UI default fonts. This option is turned off by default.
+            </summary>
       </Docs>
     </Member>
   </Members>

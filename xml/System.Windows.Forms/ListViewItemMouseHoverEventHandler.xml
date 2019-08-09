@@ -1,4 +1,4 @@
-﻿<Type Name="ListViewItemMouseHoverEventHandler" FullName="System.Windows.Forms.ListViewItemMouseHoverEventHandler">
+<Type Name="ListViewItemMouseHoverEventHandler" FullName="System.Windows.Forms.ListViewItemMouseHoverEventHandler">
   <TypeSignature Language="C#" Value="public delegate void ListViewItemMouseHoverEventHandler(object sender, ListViewItemMouseHoverEventArgs e);" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ListViewItemMouseHoverEventHandler extends System.MulticastDelegate" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.ListViewItemMouseHoverEventHandler" />
@@ -23,7 +23,10 @@
   <Docs>
     <param name="sender">The source of the event.</param>
     <param name="e">A <see cref="T:System.Windows.Forms.ListViewItemMouseHoverEventArgs" /> that contains the event data.</param>
-    <summary>Represents the method that will handle the <see cref="E:System.Windows.Forms.ListView.ItemMouseHover" /> event of a <see cref="T:System.Windows.Forms.ListView" />.</summary>
+    <summary>
+             Represents a method that will handle the <see cref="E:System.Windows.Forms.ListView.ItemMouseHover" />
+             event of a <see cref="T:System.Windows.Forms.ListView" />.
+            </summary>
     <remarks>
       <format type="text/markdown"><![CDATA[  
   

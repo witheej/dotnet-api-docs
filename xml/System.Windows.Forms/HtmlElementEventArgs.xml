@@ -1,4 +1,4 @@
-﻿<Type Name="HtmlElementEventArgs" FullName="System.Windows.Forms.HtmlElementEventArgs">
+<Type Name="HtmlElementEventArgs" FullName="System.Windows.Forms.HtmlElementEventArgs">
   <TypeSignature Language="C#" Value="public sealed class HtmlElementEventArgs : EventArgs" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit HtmlElementEventArgs extends System.EventArgs" />
   <TypeSignature Language="DocId" Value="T:System.Windows.Forms.HtmlElementEventArgs" />
@@ -58,7 +58,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates whether the ALT key was pressed when this event occurred.</summary>
+        <summary>
+             Indicates whether the Alt key was pressed, if this information is
+             provided to the IHtmlEventObj
+            </summary>
         <value>
           <see langword="true" /> is the ALT key was pressed; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -198,7 +201,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates whether the CTRL key was pressed when this event occurred.</summary>
+        <summary>
+             Indicates whether the Ctrl key was pressed, if this information is
+             provided to the IHtmlEventObj
+            </summary>
         <value>
           <see langword="true" /> if the CTRL key was pressed; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -272,7 +278,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
@@ -535,7 +541,10 @@
         <ReturnType>System.Boolean</ReturnType>
       </ReturnValue>
       <Docs>
-        <summary>Indicates whether the SHIFT key was pressed when this event occurred.</summary>
+        <summary>
+             Indicates whether the Shift key was pressed, if this information is
+             provided to the IHtmlEventObj
+            </summary>
         <value>
           <see langword="true" /> if the SHIFT key was pressed; otherwise, <see langword="false" />.</value>
         <remarks>
@@ -572,7 +581,7 @@
           <AttributeName>System.ComponentModel.Browsable(false)</AttributeName>
         </Attribute>
         <Attribute>
-          <AttributeName>System.ComponentModel.EditorBrowsable(System.ComponentModel.EditorBrowsableState.Advanced)</AttributeName>
+          <AttributeName>System.ComponentModel.EditorBrowsable</AttributeName>
         </Attribute>
       </Attributes>
       <ReturnValue>
